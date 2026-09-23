@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1E40AF" />
+  <meta name="description" content="Beyond The Imagination — an accessible pharmacy examination and study platform by Dr.Abdullah Hazem Khalifa." />
+  <title>Beyond The Imagination | Pharmacy Exam Platform</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            royal: '#1E40AF',
+            skyx: '#0EA5E9',
+            ink: '#0F172A',
+            warmred: '#EF4444',
+            warmyellow: '#F59E0B',
+            softblue: '#E0F2FE'
+          },
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    :root { color-scheme: light; }
+    body { font-family: Inter, ui-sans-serif, system-ui, sans-serif; }
+    .focus-ring:focus-visible, button:focus-visible, a:focus-visible, input:focus-visible {
+      outline: 3px solid rgba(14,165,233,.45); outline-offset: 3px;
+    }
+    .accent-stroke { stroke-dasharray: 280; stroke-dashoffset: 280; animation: draw 1s ease-out .35s forwards; }
+    @keyframes draw { to { stroke-dashoffset: 0; } }
+    .blob { animation: floatBlob 10s ease-in-out infinite alternate; transform-origin: center; }
+    @keyframes floatBlob { from { transform: translate(0,0) rotate(-2deg); } to { transform: translate(10px,-8px) rotate(2deg); } }
+    .lift { transition: transform .2s ease; }
+    .lift:hover { transform: translateY(-4px); }
+    .flip-card { perspective: 1000px; }
+    .flip-inner { transition: transform .5s; transform-style: preserve-3d; }
+    .flip-card.flipped .flip-inner { transform: rotateY(180deg); }
+    .flip-front, .flip-back { backface-visibility: hidden; -webkit-backface-visibility: hidden; }
+    .flip-back { transform: rotateY(180deg); }
+    .thin-scrollbar::-webkit-scrollbar { width: 8px; }
+    .thin-scrollbar::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 999px; }
+    .modal-backdrop { background: rgba(15, 23, 42, .62); }
+    .safe-bottom { padding-bottom: max(1rem, env(safe-area-inset-bottom)); }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; scroll-behavior: auto !important; }
+    }
+  </style>
+</head>
+<body class="bg-white text-ink antialiased">
+  <a href="#main" class="sr-only focus:not-sr-only focus-ring fixed left-4 top-4 z-[100] rounded-lg bg-ink px-4 py-3 text-white">Skip to content</a>
+
+  <header class="sticky top-0 z-40 border-b border-slate-100 bg-white/95 backdrop-blur-sm">
+    <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-4 lg:px-8">
+      <a href="#home" class="flex min-w-0 items-center gap-3 focus-ring" aria-label="Beyond The Imagination home">
+        <div class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-royal text-white">
+          <svg viewBox="0 0 48 48" class="h-7 w-7" aria-hidden="true">
+            <path d="M10 12h15a5 5 0 0 1 5 5v18H15a5 5 0 0 0-5 5V12Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+            <path d="M30 17a5 5 0 0 1 5-5h3v28H35a5 5 0 0 0-5 5V17Z" fill="currentColor" opacity=".2"/>
+            <path d="M23 7v10M18 12h10" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="min-w-0">
+          <div class="truncate text-sm font-black leading-tight tracking-tight sm:text-base">Beyond The Imagination</div>
+          <div class="truncate text-[11px] font-semibold text-slate-500">Dr.Abdullah Hazem Khalifa</div>
+        </div>
+      </a>
+
+      <nav class="hidden items-center gap-7 md:flex" aria-label="Primary navigation">
+        <a class="nav-link focus-ring rounded-md px-2 py-1 text-sm font-semibold text-royal" href="#home" data-nav="home">Home</a>
+        <a class="nav-link focus-ring rounded-md px-2 py-1 text-sm font-semibold text-slate-500 hover:text-royal" href="#curriculum" data-nav="curriculum">Curriculum</a>
+        <a class="nav-link focus-ring rounded-md px-2 py-1 text-sm font-semibold text-slate-500 hover:text-royal" href="#exam-portal" data-nav="exam-portal">Exam Portal</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <button id="mobileMenuBtn" type="button" class="focus-ring inline-grid h-10 w-10 place-items-center rounded-full border border-slate-200 text-slate-700 md:hidden" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open navigation">
+          <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+        <button id="getStartedBtn" type="button" class="focus-ring hidden rounded-full bg-royal px-5 py-2.5 text-sm font-bold text-white transition hover:bg-blue-800 sm:inline-flex">Get Started →</button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="hidden border-t border-slate-100 bg-white px-5 py-4 md:hidden" aria-label="Mobile navigation">
+      <div class="flex flex-col gap-2">
+        <a class="rounded-lg px-3 py-2 font-semibold text-royal" href="#home">Home</a>
+        <a class="rounded-lg px-3 py-2 font-semibold text-slate-600" href="#curriculum">Curriculum</a>
+        <a class="rounded-lg px-3 py-2 font-semibold text-slate-600" href="#exam-portal">Exam Portal</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="home" class="relative overflow-hidden">
+      <div class="mx-auto grid max-w-7xl items-center gap-10 px-5 pb-20 pt-14 sm:pt-20 lg:grid-cols-[1.05fr_.95fr] lg:px-8 lg:pb-24 lg:pt-24">
+        <div class="max-w-2xl">
+          <div class="mb-5 inline-flex items-center gap-2 rounded-full bg-blue-50 px-3 py-1.5 text-xs font-extrabold uppercase tracking-[.16em] text-royal">
+            Pharmacy • Learn → Practice → Perform
+          </div>
+          <h1 class="text-5xl font-black leading-[1.02] tracking-[-.045em] text-ink sm:text-6xl lg:text-[5.3rem]">
+            Master Pharmacy Exams With <span class="relative inline-block whitespace-nowrap">Precision
+              <svg class="pointer-events-none absolute -bottom-4 left-0 h-5 w-full" viewBox="0 0 290 22" fill="none" aria-hidden="true">
+                <path class="accent-stroke" d="M5 14C55 2 90 10 130 12C175 15 215 8 285 7" stroke="#0EA5E9" stroke-width="5" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </h1>
+          <p class="mt-8 max-w-xl text-base leading-7 text-slate-500 sm:text-lg">
+            Turn every lecture into a repeatable study loop: build the high-yield foundation, test it with focused questions, then use analytics to target exactly what needs another pass.
+          </p>
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+            <button id="heroCurriculumBtn" type="button" class="focus-ring rounded-full bg-royal px-6 py-3.5 text-sm font-bold text-white shadow-none transition hover:bg-blue-800">Explore Curriculum →</button>
+            <button id="heroDemoBtn" type="button" class="focus-ring rounded-full border-2 border-slate-200 px-6 py-3.5 text-sm font-bold text-ink transition hover:border-royal hover:text-royal">Try Demo Exam</button>
+          </div>
+          <div class="mt-10 flex flex-wrap items-center gap-6 text-xs font-bold text-slate-400">
+            <span>✓ Keyboard friendly</span>
+            <span>✓ Timed + Practice modes</span>
+            <span>✓ Weakness analytics</span>
+          </div>
+        </div>
+
+        <div class="relative min-h-[390px] sm:min-h-[470px] lg:min-h-[550px]" aria-label="Illustration of a pharmacy student preparing for an exam">
+          <svg class="blob absolute inset-0 h-full w-full" viewBox="0 0 600 540" fill="none" aria-hidden="true">
+            <path d="M104 108C168 37 312 12 424 61C533 110 548 237 515 340C482 443 348 514 220 486C90 458 27 340 48 232C63 174 71 145 104 108Z" fill="#E0F2FE"/>
+            <path d="M115 122C169 65 277 45 380 67C471 86 515 159 491 221C462 296 373 297 338 366C289 460 160 466 92 385C27 308 54 188 115 122Z" fill="#BAE6FD" opacity=".5"/>
+          </svg>
+          <svg class="relative z-10 h-full w-full" viewBox="0 0 600 540" fill="none" role="img" aria-label="Flat vector illustration of a monitor, clipboard, books, and student">
+            <circle cx="492" cy="74" r="20" fill="#EF4444"/>
+            <circle cx="103" cy="448" r="27" fill="#1E40AF"/>
+            <rect x="137" y="128" width="290" height="188" rx="18" fill="white" stroke="#1E40AF" stroke-width="6"/>
+            <rect x="166" y="158" width="232" height="124" rx="12" fill="#EFF6FF"/>
+            <rect x="186" y="181" width="124" height="14" rx="7" fill="#1E40AF"/>
+            <rect x="186" y="208" width="175" height="10" rx="5" fill="#CBD5E1"/>
+            <rect x="186" y="230" width="146" height="10" rx="5" fill="#CBD5E1"/>
+            <rect x="329" y="177" width="41" height="52" rx="8" fill="#0EA5E9"/>
+            <path d="M193 272h178" stroke="#0EA5E9" stroke-width="7" stroke-linecap="round"/>
+            <path d="M280 316v27M225 343h110" stroke="#1E40AF" stroke-width="8" stroke-linecap="round"/>
+            <g transform="rotate(-7 437 300)">
+              <rect x="388" y="220" width="130" height="170" rx="14" fill="white" stroke="#0F172A" stroke-width="5"/>
+              <rect x="421" y="204" width="63" height="34" rx="10" fill="#1E40AF"/>
+              <rect x="414" y="262" width="72" height="9" rx="4.5" fill="#CBD5E1"/>
+              <rect x="414" y="282" width="80" height="9" rx="4.5" fill="#CBD5E1"/>
+              <rect x="414" y="302" width="55" height="9" rx="4.5" fill="#CBD5E1"/>
+              <path d="m417 342 12 13 27-32" stroke="#F59E0B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            <g>
+              <path d="M236 398c0-47 35-74 74-74s74 27 74 74v45H236v-45Z" fill="#1E40AF"/>
+              <circle cx="309" cy="306" r="42" fill="#FDE68A"/>
+              <path d="M270 302c4-33 32-51 61-50 20 1 39 13 48 29-17-8-33-10-48-2-20 10-43 6-61 23Z" fill="#0F172A"/>
+              <path d="M287 319c10 7 23 9 34 5" stroke="#0F172A" stroke-width="4" stroke-linecap="round"/>
+              <circle cx="294" cy="306" r="3.5" fill="#0F172A"/>
+              <circle cx="326" cy="306" r="3.5" fill="#0F172A"/>
+              <path d="M271 386c19-15 46-22 76-14 15 4 28 12 37 23" stroke="#0EA5E9" stroke-width="7" stroke-linecap="round"/>
+            </g>
+            <g>
+              <rect x="82" y="416" width="168" height="34" rx="8" fill="#F59E0B"/>
+              <rect x="105" y="381" width="168" height="34" rx="8" fill="#EF4444"/>
+              <rect x="128" y="346" width="168" height="34" rx="8" fill="#1E40AF"/>
+              <path d="M105 430h120M128 395h120M151 360h120" stroke="white" stroke-width="5" stroke-linecap="round" opacity=".75"/>
+            </g>
+            <circle cx="508" cy="388" r="8" fill="#F59E0B"/>
+            <circle cx="75" cy="188" r="8" fill="#EF4444"/>
+          </svg>
+          <div class="absolute bottom-3 left-8 z-20 rounded-2xl border border-slate-100 bg-white px-5 py-4" style="box-shadow: 0 12px 0 rgba(30,64,175,.08);">
+            <div class="text-[10px] font-black uppercase tracking-[.18em] text-slate-400">Study engine</div>
+            <div class="mt-1 text-sm font-black text-ink">Understand → Retrieve → Apply</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="curriculum" class="border-t border-slate-100 bg-slate-50/50 py-16 lg:py-20">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <div class="flex flex-col justify-between gap-5 md:flex-row md:items-end">
+          <div>
+            <div class="text-xs font-black uppercase tracking-[.18em] text-skyx">Curriculum</div>
+            <h2 class="mt-2 text-3xl font-black tracking-tight sm:text-4xl">Your pharmacy exam map</h2>
+            <p class="mt-3 max-w-2xl text-slate-500">Open a level, choose a semester, then jump straight into a lecture or a comprehensive exam.</p>
+          </div>
+          <div class="rounded-full border border-slate-200 bg-white px-4 py-2 text-xs font-bold text-slate-500" id="curriculumStatus" aria-live="polite">Loading courses…</div>
+        </div>
+
+        <div id="curriculumAccordion" class="mt-8 space-y-3" aria-label="Pharmacy curriculum"></div>
+      </div>
+    </section>
+
+    <section id="exam-portal" class="py-16 lg:py-20">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <div class="grid items-stretch gap-5 lg:grid-cols-[1.25fr_.75fr]">
+          <div class="rounded-[2rem] bg-royal p-7 text-white sm:p-9">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <div class="text-xs font-black uppercase tracking-[.18em] text-blue-200">Exam Portal</div>
+                <h2 class="mt-2 text-3xl font-black tracking-tight">Make your next attempt count.</h2>
+              </div>
+              <div class="hidden rounded-full bg-white/10 px-3 py-2 text-xs font-bold sm:block">Live engine</div>
+            </div>
+            <p class="mt-4 max-w-2xl text-sm leading-6 text-blue-100 sm:text-base">Choose Practice Mode for coaching or Exam Mode for a strict timed simulation. Every question can be flagged and rated for confidence.</p>
+            <div class="mt-7 grid gap-3 sm:grid-cols-3">
+              <div class="rounded-2xl bg-white/10 p-4"><div class="text-xl font-black">01</div><div class="mt-1 text-xs font-bold text-blue-100">Answer sequentially</div></div>
+              <div class="rounded-2xl bg-white/10 p-4"><div class="text-xl font-black">02</div><div class="mt-1 text-xs font-bold text-blue-100">Rate confidence</div></div>
+              <div class="rounded-2xl bg-white/10 p-4"><div class="text-xl font-black">03</div><div class="mt-1 text-xs font-bold text-blue-100">Review weaknesses</div></div>
+            </div>
+          </div>
+          <div class="rounded-[2rem] border border-slate-200 bg-white p-7 sm:p-9">
+            <div class="text-xs font-black uppercase tracking-[.18em] text-slate-400">Demo</div>
+            <h3 class="mt-2 text-2xl font-black">Test the interface now.</h3>
+            <p class="mt-3 text-sm leading-6 text-slate-500">A built-in sample lecture launches the same preparation and assessment pipeline used by the curriculum.</p>
+            <button id="portalDemoBtn" type="button" class="focus-ring mt-6 w-full rounded-full bg-skyx px-5 py-3.5 text-sm font-black text-white hover:bg-sky-600">Launch Demo Exam →</button>
+            <div class="mt-4 text-center text-xs font-semibold text-slate-400">No account required</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-100 bg-white py-8">
+    <div class="mx-auto flex max-w-7xl flex-col gap-2 px-5 text-xs text-slate-400 sm:flex-row sm:items-center sm:justify-between lg:px-8">
+      <div>© <span id="year"></span> Beyond The Imagination</div>
+      <div class="font-semibold">Dr.Abdullah Hazem Khalifa</div>
+    </div>
+  </footer>
+
+  <!-- Preparation / exam / analytics modal -->
+  <div id="appModal" class="modal-backdrop fixed inset-0 z-50 hidden p-0 sm:p-4" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-describedby="modalDescription">
+    <div class="flex h-full items-end justify-center sm:items-center">
+      <div id="modalPanel" class="flex h-full w-full max-w-5xl flex-col overflow-hidden bg-white sm:h-[92vh] sm:rounded-[2rem]">
+        <div class="flex shrink-0 items-center justify-between gap-4 border-b border-slate-100 px-5 py-4 sm:px-7">
+          <div class="min-w-0">
+            <div id="modalKicker" class="text-[10px] font-black uppercase tracking-[.18em] text-royal">Preparation</div>
+            <h2 id="modalTitle" class="truncate text-lg font-black text-ink sm:text-xl">Lecture</h2>
+            <p id="modalDescription" class="truncate text-xs font-semibold text-slate-400">Ready</p>
+          </div>
+          <button id="modalCloseBtn" type="button" class="focus-ring inline-grid h-10 w-10 shrink-0 place-items-center rounded-full border border-slate-200 text-slate-600 hover:bg-slate-50" aria-label="Close dialog">
+            <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+          </button>
+        </div>
+
+        <div id="modalBody" class="min-h-0 flex-1 overflow-y-auto thin-scrollbar"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" class="pointer-events-none fixed bottom-5 left-1/2 z-[80] hidden -translate-x-1/2 rounded-full bg-ink px-4 py-3 text-xs font-bold text-white" role="status" aria-live="polite"></div>
+
+  <script>
+    const state = {
+      courses: null,
+      lecture: null,
+      currentQuestion: 0,
+      answers: [],
+      confidence: [],
+      flagged: new Set(),
+      mode: 'practice',
+      timer: null,
+      secondsLeft: 0,
+      examStarted: false,
+      result: null,
+      modalScreen: 'prep',
+      previousFocus: null,
+      activeTab: 'summary',
+      flashIndex: 0,
+      flashRepetition: false,
+      redoMode: false,
+      redoQuestions: []
+    };
+
+    const $ = (id) => document.getElementById(id);
+    const esc = (value='') => String(value).replace(/[&<>"']/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    const safeId = (value='') => value.replace(/[^a-z0-9_-]/gi, '-').toLowerCase();
+
+    function showToast(message) {
+      const el = $('toast');
+      el.textContent = message;
+      el.classList.remove('hidden');
+      clearTimeout(showToast._t);
+      showToast._t = setTimeout(() => el.classList.add('hidden'), 2400);
+    }
+
+    async function loadJSON(path) {
+      const response = await fetch(path, { cache: 'no-store' });
+      if (!response.ok) throw new Error(`Could not load ${path} (${response.status})`);
+      return response.json();
+    }
+
+    function setActiveNav(id) {
+      document.querySelectorAll('.nav-link').forEach((link) => {
+        const active = link.dataset.nav === id;
+        link.classList.toggle('text-royal', active);
+        link.classList.toggle('text-slate-500', !active);
+        link.setAttribute('aria-current', active ? 'page' : 'false');
+      });
+    }
+
+    function initNav() {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => { if (entry.isIntersecting) setActiveNav(entry.target.id); });
+      }, { rootMargin: '-35% 0px -55% 0px', threshold: 0.01 });
+      ['home','curriculum','exam-portal'].forEach(id => observer.observe($(id)));
+      document.querySelectorAll('a[href^="#"]').forEach(a => a.addEventListener('click', () => $('mobileMenu').classList.add('hidden')));
+      $('mobileMenuBtn').addEventListener('click', () => {
+        const open = $('mobileMenuBtn').getAttribute('aria-expanded') === 'true';
+        $('mobileMenuBtn').setAttribute('aria-expanded', String(!open));
+        $('mobileMenu').classList.toggle('hidden', open);
+      });
+      $('getStartedBtn').addEventListener('click', () => document.querySelector('#curriculum').scrollIntoView({ behavior: 'smooth' }));
+      $('heroCurriculumBtn').addEventListener('click', () => document.querySelector('#curriculum').scrollIntoView({ behavior: 'smooth' }));
+      $('heroDemoBtn').addEventListener('click', openDemoExam);
+      $('portalDemoBtn').addEventListener('click', openDemoExam);
+      $('modalCloseBtn').addEventListener('click', closeModal);
+      document.addEventListener('keydown', handleGlobalKeydown);
+    }
+
+    async function loadCourses() {
+      try {
+        state.courses = await loadJSON('./data/courses.json');
+        renderCurriculum();
+        $('curriculumStatus').textContent = `${state.courses.levels.length} levels loaded locally`;
+      } catch (error) {
+        console.error(error);
+        $('curriculumStatus').textContent = 'Could not load courses.json';
+        $('curriculumAccordion').innerHTML = `<div class="rounded-2xl border border-red-200 bg-red-50 p-5 text-sm font-semibold text-red-700">The curriculum file could not be loaded. On GitHub Pages, confirm <code>data/courses.json</code> is deployed. For local testing, use a local web server rather than opening <code>index.html</code> directly.</div>`;
+      }
+    }
+
+    function renderCurriculum() {
+      const wrap = $('curriculumAccordion');
+      wrap.innerHTML = state.courses.levels.map((level, index) => {
+        const levelId = `level-${safeId(level.id || index)}`;
+        const comingSoon = level.status === 'coming_soon';
+        return `
+          <div class="overflow-hidden rounded-2xl border border-slate-200 bg-white">
+            <button type="button" class="focus-ring flex w-full items-center justify-between gap-4 px-5 py-5 text-left hover:bg-slate-50" aria-expanded="false" aria-controls="${levelId}" data-level-button="${esc(level.id)}">
+              <div class="flex min-w-0 items-center gap-4">
+                <span class="grid h-10 w-10 shrink-0 place-items-center rounded-xl ${comingSoon ? 'bg-slate-100 text-slate-400' : 'bg-blue-50 text-royal'} text-sm font-black">${esc(level.number)}</span>
+                <span class="min-w-0"><span class="block text-base font-black">${esc(level.title)}</span><span class="block text-xs font-semibold text-slate-400">${comingSoon ? 'Content Coming Soon' : 'Open semesters and subjects'}</span></span>
+              </div>
+              <svg class="h-5 w-5 shrink-0 text-slate-400 transition" data-chevron="${levelId}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m7 10 5 5 5-5"/></svg>
+            </button>
+            <div id="${levelId}" class="hidden border-t border-slate-100 px-4 pb-4" role="region" aria-label="${esc(level.title)} contents"></div>
+          </div>`;
+      }).join('');
+      wrap.querySelectorAll('[data-level-button]').forEach(btn => btn.addEventListener('click', () => toggleLevel(btn.dataset.levelButton, btn)));
+    }
+
+    function toggleLevel(levelId, button) {
+      const level = state.courses.levels.find(item => String(item.id) === String(levelId));
+      const region = $(`level-${safeId(levelId)}`);
+      const isOpen = !region.classList.contains('hidden');
+      document.querySelectorAll('[role="region"]').forEach(el => { if (el.id !== region.id) el.classList.add('hidden'); });
+      document.querySelectorAll('[data-level-button]').forEach(el => { if (el !== button) el.setAttribute('aria-expanded','false'); });
+      if (isOpen) {
+        region.classList.add('hidden');
+        button.setAttribute('aria-expanded','false');
+        return;
+      }
+      button.setAttribute('aria-expanded','true');
+      region.classList.remove('hidden');
+      const comingSoon = level.status === 'coming_soon';
+      region.innerHTML = comingSoon ? `<div class="m-3 rounded-xl bg-slate-50 p-4 text-sm font-semibold text-slate-500">Content Coming Soon</div>` : renderSemesters(level);
+      bindSemesterAndSubjectControls(region);
+    }
+
+    function renderSemesters(level) {
+      return `<div class="space-y-3 pt-3">${(level.semesters || []).map((semester, sIndex) => {
+        const semId = `sem-${safeId(level.id)}-${sIndex}`;
+        const hasSubjects = (semester.subjects || []).length > 0;
+        return `<div class="rounded-xl border border-slate-100 bg-slate-50/60">
+          <button type="button" class="focus-ring flex w-full items-center justify-between gap-4 px-4 py-4 text-left" data-semester-button="${semId}" data-level-id="${esc(level.id)}" data-semester-index="${sIndex}" aria-controls="${semId}" aria-expanded="false">
+            <span><span class="block text-sm font-black">${esc(semester.name)}</span><span class="block text-xs font-semibold text-slate-400">${hasSubjects ? `${semester.subjects.length} subjects` : 'Content Coming Soon'}</span></span>
+            <svg class="h-4 w-4 text-slate-400 transition" data-chevron="${semId}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m7 10 5 5 5-5"/></svg>
+          </button>
+          <div id="${semId}" class="hidden px-3 pb-3"></div>
+        </div>`;
+      }).join('')}</div>`;
+    }
+
+    function bindSemesterAndSubjectControls(region) {
+      region.querySelectorAll('[data-semester-button]').forEach(btn => btn.addEventListener('click', () => {
+        const box = $(btn.dataset.semesterButton);
+        const open = !box.classList.contains('hidden');
+        box.classList.toggle('hidden', open);
+        btn.setAttribute('aria-expanded', String(!open));
+        const chevron = document.querySelector(`[data-chevron="${btn.dataset.semesterButton}"]`);
+        if (chevron) chevron.style.transform = open ? '' : 'rotate(180deg)';
+        if (!open && box.innerHTML === '') {
+          const level = state.courses.levels.find(l => String(l.id) === String(btn.dataset.levelId));
+          const semester = level?.semesters?.[Number(btn.dataset.semesterIndex)];
+          box.innerHTML = renderSubjects(semester);
+          bindSubjectControls(box);
+        }
+      }));
+    }
+
+    function renderSubjects(semester) {
+      if (!semester || !semester.subjects?.length) return `<div class="rounded-lg bg-white p-4 text-sm font-semibold text-slate-500">Content Coming Soon</div>`;
+      return `<div class="grid gap-2">${semester.subjects.map(subject => {
+        const subjId = `subj-${safeId(subject.id)}`;
+        return `<div class="overflow-hidden rounded-xl border border-slate-200 bg-white">
+          <button type="button" class="focus-ring flex w-full items-center justify-between gap-4 px-4 py-4 text-left" data-subject-button="${subjId}" aria-controls="${subjId}" aria-expanded="false">
+            <span><span class="block text-sm font-black">${esc(subject.name)}</span><span class="block text-xs font-semibold text-slate-400">${subject.lectures.length} lecture exams + comprehensive</span></span>
+            <svg class="h-4 w-4 text-slate-400 transition" data-chevron="${subjId}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m7 10 5 5 5-5"/></svg>
+          </button>
+          <div id="${subjId}" class="hidden border-t border-slate-100 bg-slate-50/60 px-3 pb-3"></div>
+        </div>`;
+      }).join('')}</div>`;
+    }
+
+    function bindSubjectControls(container) {
+      container.querySelectorAll('[data-subject-button]').forEach(btn => btn.addEventListener('click', () => {
+        const box = $(btn.dataset.subjectButton);
+        const open = !box.classList.contains('hidden');
+        box.classList.toggle('hidden', open);
+        btn.setAttribute('aria-expanded', String(!open));
+        const chevron = document.querySelector(`[data-chevron="${btn.dataset.subjectButton}"]`);
+        if (chevron) chevron.style.transform = open ? '' : 'rotate(180deg)';
+        if (!open && box.innerHTML === '') {
+          const subjectId = btn.dataset.subjectButton.replace(/^subj-/,'');
+          const subject = findSubject(subjectId);
+          box.innerHTML = renderLectureList(subject);
+          box.querySelectorAll('[data-lecture]').forEach(link => link.addEventListener('click', () => openLecture(link.dataset.lecture, subject)));
+          const comprehensive = box.querySelector('[data-comprehensive]');
+          if (comprehensive) comprehensive.addEventListener('click', () => openComprehensive(subject));
+        }
+      }));
+    }
+
+    function findSubject(subjectId) {
+      for (const level of state.courses.levels || []) {
+        for (const sem of level.semesters || []) {
+          const found = (sem.subjects || []).find(s => safeId(s.id) === subjectId || safeId(s.name) === subjectId);
+          if (found) return found;
+        }
+      }
+      return null;
+    }
+
+    function renderLectureList(subject) {
+      if (!subject) return `<div class="p-4 text-sm text-red-600">Subject not found.</div>`;
+      return `<div class="space-y-2 pt-3">
+        ${subject.lectures.map((lecture, i) => `<button type="button" class="focus-ring group flex w-full items-center gap-3 rounded-xl border border-slate-200 bg-white p-3 text-left transition hover:-translate-y-0.5 hover:border-sky-200" data-lecture="${esc(lecture.file)}">
+          <span class="grid h-9 w-9 shrink-0 place-items-center rounded-lg bg-blue-50 text-xs font-black text-royal">${String(i+1).padStart(2,'0')}</span>
+          <span class="min-w-0 flex-1"><span class="block truncate text-sm font-black">${esc(lecture.title)}</span><span class="block text-xs font-semibold text-slate-400">${esc(lecture.readTime || '10-min read')} • ${esc(lecture.examTime || '15-min exam')}</span></span>
+          <span class="text-xs font-black text-royal opacity-70 group-hover:opacity-100">Open →</span>
+        </button>`).join('')}
+        <button type="button" class="focus-ring mt-2 flex w-full items-center justify-between gap-3 rounded-xl border-2 border-dashed border-royal/30 bg-blue-50 p-3 text-left hover:border-royal" data-comprehensive>
+          <span><span class="block text-sm font-black text-royal">Comprehensive Exam</span><span class="block text-xs font-semibold text-blue-500">Merge, shuffle, and assess all lecture banks</span></span>
+          <span class="text-lg">↗</span>
+        </button>
+      </div>`;
+    }
+
+    async function openLecture(file, subject) {
+      state.redoMode = false;
+      state.previousFocus = document.activeElement;
+      openModal();
+      try {
+        const lecture = await loadJSON(`./data/lectures/${file}`);
+        state.lecture = { ...lecture, subjectName: subject.name, subjectId: subject.id };
+        state.activeTab = 'summary';
+        renderPrep();
+      } catch (error) {
+        console.error(error);
+        renderErrorScreen('Lecture data could not be loaded. Check the JSON file path in courses.json.');
+      }
+    }
+
+    async function openComprehensive(subject) {
+      state.redoMode = false;
+      state.previousFocus = document.activeElement;
+      openModal();
+      try {
+        const banks = await Promise.all(subject.lectures.map(l => loadJSON(`./data/lectures/${l.file}`)));
+        const questions = banks.flatMap(bank => (bank.questions || []).map(q => ({ ...q, lectureTitle: bank.title })));
+        shuffle(questions);
+        const base = banks[0];
+        state.lecture = {
+          id: `comprehensive-${safeId(subject.id)}`,
+          title: `${subject.name} — Comprehensive Exam`,
+          subjectName: subject.name,
+          estimatedReadTime: 'Variable',
+          estimatedExamTime: `${Math.max(20, questions.length * 1.5)}-min exam`,
+          summary: [`Cumulative assessment across ${subject.lectures.length} lectures.`],
+          keyTerms: [], resources: [], flashcards: [], questions,
+          passMark: base.passMark || 70
+        };
+        state.activeTab = 'summary';
+        renderPrep();
+      } catch (error) {
+        console.error(error);
+        renderErrorScreen('The comprehensive question bank could not be assembled.');
+      }
+    }
+
+    function renderPrep() {
+      const l = state.lecture;
+      $('modalKicker').textContent = 'Preparation';
+      $('modalTitle').textContent = l.title;
+      $('modalDescription').textContent = `${l.subjectName || 'Pharmacy'} • ${l.estimatedReadTime || '10-min read'} • ${l.estimatedExamTime || '15-min exam'}`;
+      $('modalBody').innerHTML = `
+        <div class="space-y-6 p-5 sm:p-7">
+          <div class="grid gap-3 sm:grid-cols-2">
+            <button type="button" class="mode-card focus-ring rounded-2xl bg-royal p-5 text-left text-white hover:bg-blue-800" data-mode="practice">
+              <div class="text-xs font-black uppercase tracking-[.16em] text-blue-200">Recommended to learn</div>
+              <div class="mt-2 text-xl font-black">Practice Mode →</div>
+              <div class="mt-2 text-sm leading-6 text-blue-100">Untimed, instant feedback, hints enabled. Build accuracy before speed.</div>
+            </button>
+            <button type="button" class="mode-card focus-ring rounded-2xl border-2 border-slate-200 bg-white p-5 text-left hover:border-royal" data-mode="exam">
+              <div class="text-xs font-black uppercase tracking-[.16em] text-slate-400">Strict simulation</div>
+              <div class="mt-2 text-xl font-black">Exam Mode →</div>
+              <div class="mt-2 text-sm leading-6 text-slate-500">Timed, no instant feedback, strict submission and countdown.</div>
+            </button>
+          </div>
+
+          <div class="border-b border-slate-200" role="tablist" aria-label="Preparation resources">
+            ${[['summary','High-Yield Summary'],['terms','Key Terms'],['resources','Resources'],['flashcards','Flashcards']].map(([id,label]) => `<button type="button" role="tab" aria-selected="${state.activeTab===id}" class="prep-tab focus-ring mr-5 border-b-2 px-1 py-3 text-sm font-black ${state.activeTab===id ? 'border-royal text-royal' : 'border-transparent text-slate-400'}" data-tab="${id}">${label}</button>`).join('')}
+          </div>
+          <div id="prepTabContent"></div>
+        </div>`;
+      $('modalBody').querySelectorAll('[data-mode]').forEach(btn => btn.addEventListener('click', () => startExam(btn.dataset.mode)));
+      $('modalBody').querySelectorAll('[data-tab]').forEach(btn => btn.addEventListener('click', () => { state.activeTab = btn.dataset.tab; renderPrep(); }));
+      renderPrepTabContent();
+    }
+
+    function renderPrepTabContent() {
+      const l = state.lecture;
+      const target = $('prepTabContent');
+      if (!target) return;
+      if (state.activeTab === 'summary') {
+        target.innerHTML = `<div class="grid gap-3">${(l.summary || []).map((item,i)=>`<div class="flex gap-3 rounded-2xl border border-slate-200 p-4"><span class="mt-0.5 grid h-7 w-7 shrink-0 place-items-center rounded-full bg-blue-50 text-xs font-black text-royal">${i+1}</span><div class="text-sm leading-6 text-slate-600">${esc(item)}</div></div>`).join('')}</div>`;
+      } else if (state.activeTab === 'terms') {
+        target.innerHTML = `<div class="grid gap-3 sm:grid-cols-2">${(l.keyTerms || []).map(term => `<div class="rounded-2xl border border-slate-200 p-4"><div class="text-sm font-black text-ink">${esc(term.term)}</div><div class="mt-2 text-sm leading-6 text-slate-500">${esc(term.definition)}</div></div>`).join('') || `<div class="rounded-2xl bg-slate-50 p-5 text-sm text-slate-500">No term cards supplied for this lecture.</div>`}</div>`;
+      } else if (state.activeTab === 'resources') {
+        target.innerHTML = `<div class="space-y-3">${(l.resources || []).map(r => `<a class="focus-ring flex items-center justify-between rounded-2xl border border-slate-200 p-4 hover:border-sky-300" href="${esc(r.url)}" target="_blank" rel="noopener"><span><span class="block text-sm font-black">${esc(r.title)}</span><span class="block text-xs font-semibold text-slate-400">PDF / slide resource</span></span><span class="text-royal">↗</span></a>`).join('') || `<div class="rounded-2xl bg-slate-50 p-5 text-sm text-slate-500">No downloadable resources supplied.</div>`}</div>`;
+      } else {
+        target.innerHTML = renderFlashcards();
+        bindFlashcards();
+      }
+    }
+
+    function renderFlashcards() {
+      const cards = state.lecture.flashcards || [];
+      if (!cards.length) return `<div class="rounded-2xl bg-slate-50 p-5 text-sm text-slate-500">No flashcards supplied.</div>`;
+      const current = cards[state.flashIndex % cards.length];
+      return `<div class="grid gap-5 lg:grid-cols-[1fr_auto]">
+        <button type="button" id="flashCard" class="flip-card focus-ring min-h-56 w-full text-left" aria-label="Flip flashcard">
+          <div class="flip-inner relative min-h-56 w-full">
+            <div class="flip-front absolute inset-0 rounded-2xl border-2 border-blue-100 bg-blue-50 p-7">
+              <div class="text-xs font-black uppercase tracking-[.17em] text-royal">Prompt ${state.flashIndex+1} / ${cards.length}</div>
+              <div class="mt-5 text-2xl font-black leading-tight">${esc(current.front)}</div>
+              <div class="mt-6 text-xs font-bold text-slate-400">Press Enter / Space or click to flip</div>
+            </div>
+            <div class="flip-back absolute inset-0 rounded-2xl border-2 border-amber-100 bg-amber-50 p-7">
+              <div class="text-xs font-black uppercase tracking-[.17em] text-warmyellow">Answer</div>
+              <div class="mt-5 text-lg font-bold leading-7 text-slate-700">${esc(current.back)}</div>
+            </div>
+          </div>
+        </button>
+        <div class="flex flex-row gap-2 lg:flex-col">
+          <button type="button" id="flashPrev" class="focus-ring rounded-xl border border-slate-200 px-4 py-3 text-sm font-black">← Prev</button>
+          <button type="button" id="flashNext" class="focus-ring rounded-xl bg-royal px-4 py-3 text-sm font-black text-white">Next →</button>
+          <label class="flex items-center gap-2 rounded-xl border border-slate-200 px-4 py-3 text-xs font-bold text-slate-600"><input id="flashRepeat" type="checkbox" ${state.flashRepetition?'checked':''} class="h-4 w-4"/> Spaced repetition</label>
+        </div>
+      </div>`;
+    }
+
+    function bindFlashcards() {
+      const card = $('flashCard');
+      const flip = () => card.classList.toggle('flipped');
+      card.addEventListener('click', flip);
+      card.addEventListener('keydown', (e)=>{ if(e.key==='Enter'||e.key===' '){e.preventDefault();flip();} });
+      $('flashPrev').addEventListener('click', () => { state.flashIndex = (state.flashIndex - 1 + state.lecture.flashcards.length) % state.lecture.flashcards.length; renderPrep(); });
+      $('flashNext').addEventListener('click', () => { state.flashIndex = (state.flashIndex + 1) % state.lecture.flashcards.length; renderPrep(); });
+      $('flashRepeat').addEventListener('change', (e) => { state.flashRepetition = e.target.checked; showToast(e.target.checked ? 'Spaced repetition enabled.' : 'Spaced repetition disabled.'); });
+    }
+
+    function shuffle(array) { for (let i=array.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1)); [array[i],array[j]]=[array[j],array[i]];} return array; }
+
+    function startExam(mode='practice', questionsOverride=null) {
+      state.mode = mode;
+      state.modalScreen = 'exam';
+      state.currentQuestion = 0;
+      state.answers = Array((questionsOverride || state.lecture.questions || []).length).fill(null);
+      state.confidence = Array((questionsOverride || state.lecture.questions || []).length).fill(null);
+      state.flagged = new Set();
+      state.examStarted = true;
+      state.result = null;
+      state.redoQuestions = questionsOverride ? [...questionsOverride] : null;
+      const questions = questionsOverride ? [...questionsOverride] : [...state.lecture.questions];
+      if (!questionsOverride && mode === 'exam') shuffle(questions);
+      state.lecture = { ...state.lecture, activeQuestions: questions };
+      state.secondsLeft = mode === 'exam' ? (Number(state.lecture.durationMinutes) || Math.max(10, Math.ceil(questions.length * 1.5))) * 60 : 0;
+      renderExam();
+      if (mode === 'exam') startTimer(); else stopTimer();
+      setTimeout(() => document.querySelector('[data-option]')?.focus(), 50);
+    }
+
+    function startTimer() {
+      stopTimer();
+      state.timer = setInterval(() => {
+        state.secondsLeft -= 1;
+        const timerEl = $('examTimer');
+        if (timerEl) timerEl.textContent = formatTime(state.secondsLeft);
+        if (state.secondsLeft <= 60 && timerEl) timerEl.classList.add('text-red-600');
+        if (state.secondsLeft <= 0) {
+          stopTimer();
+          showToast('Time is up — submitting exam.');
+          submitExam(true);
+        }
+      }, 1000);
+    }
+
+    function stopTimer() { if (state.timer) { clearInterval(state.timer); state.timer = null; } }
+    function formatTime(seconds) { const s=Math.max(0,seconds); return `${String(Math.floor(s/60)).padStart(2,'0')}:${String(s%60).padStart(2,'0')}`; }
+
+    function renderExam() {
+      const qs = state.lecture.activeQuestions || [];
+      const q = qs[state.currentQuestion];
+      $('modalKicker').textContent = state.mode === 'exam' ? 'Exam Mode' : 'Practice Mode';
+      $('modalTitle').textContent = state.lecture.title;
+      $('modalDescription').textContent = `${qs.length} questions • ${state.lecture.subjectName || 'Pharmacy'}`;
+      $('modalBody').innerHTML = `
+        <div class="flex min-h-0 h-full flex-col">
+          <div class="shrink-0 border-b border-slate-100 px-5 py-4 sm:px-7">
+            <div class="flex flex-wrap items-center justify-between gap-3">
+              <div class="flex items-center gap-3"><span class="rounded-full bg-blue-50 px-3 py-1.5 text-xs font-black text-royal">Q${state.currentQuestion+1} / ${qs.length}</span><span class="text-xs font-bold text-slate-400">${state.mode === 'practice' ? 'Untimed • instant feedback' : 'Strict timed submission'}</span></div>
+              <div class="flex items-center gap-2">
+                ${state.mode === 'exam' ? `<div id="examTimer" class="rounded-full bg-slate-100 px-4 py-2 font-mono text-sm font-black text-ink" aria-live="off">${formatTime(state.secondsLeft)}</div>` : '<div class="rounded-full bg-slate-100 px-4 py-2 text-xs font-black text-slate-500">∞</div>'}
+                <button type="button" id="flagBtn" class="focus-ring rounded-full border px-3 py-2 text-xs font-black ${state.flagged.has(state.currentQuestion) ? 'border-warmyellow bg-amber-50 text-warmyellow' : 'border-slate-200 text-slate-500'}" aria-pressed="${state.flagged.has(state.currentQuestion)}">${state.flagged.has(state.currentQuestion) ? '★ Flagged' : '☆ Flag'}</button>
+              </div>
+            </div>
+            <div class="mt-4 h-1.5 overflow-hidden rounded-full bg-slate-100"><div class="h-full rounded-full bg-skyx transition-all" style="width:${((state.currentQuestion+1)/qs.length)*100}%"></div></div>
+          </div>
+
+          <div class="min-h-0 flex-1 overflow-y-auto thin-scrollbar p-5 sm:p-7">
+            <div class="grid gap-7 lg:grid-cols-[1fr_240px]">
+              <div>
+                <div class="text-xs font-black uppercase tracking-[.16em] text-slate-400">Question ${state.currentQuestion+1}</div>
+                <h3 class="mt-3 text-2xl font-black leading-tight text-ink sm:text-3xl">${esc(q.question)}</h3>
+                ${q.image ? `<img src="${esc(q.image)}" alt="" class="mt-5 max-h-64 rounded-2xl border border-slate-200 object-contain"/>` : ''}
+                <div class="mt-6 grid gap-3" role="radiogroup" aria-label="Answer options">
+                  ${q.options.map((opt, i) => {
+                    const letter = String.fromCharCode(65+i);
+                    const selected = state.answers[state.currentQuestion] === letter;
+                    return `<button type="button" class="option-btn focus-ring group flex w-full items-start gap-4 rounded-2xl border-2 ${selected ? 'border-royal bg-blue-50' : 'border-slate-200 bg-white'} p-4 text-left transition hover:border-blue-200" data-option="${letter}" aria-pressed="${selected}">
+                      <span class="grid h-8 w-8 shrink-0 place-items-center rounded-lg ${selected?'bg-royal text-white':'bg-slate-100 text-slate-500'} text-xs font-black">${letter}</span>
+                      <span class="pt-1 text-sm font-semibold leading-6 text-slate-700">${esc(opt)}</span>
+                    </button>`;
+                  }).join('')}
+                </div>
+                ${state.mode === 'practice' ? `<div class="mt-5 rounded-2xl border border-slate-200 bg-slate-50 p-4"><button id="hintBtn" type="button" class="focus-ring text-xs font-black text-royal">Need a hint?</button><div id="hintText" class="mt-2 hidden text-sm leading-6 text-slate-600">${esc(q.hint || 'Focus on the mechanism, definition, or discriminating feature described in the stem.')}</div></div>` : ''}
+                <div class="mt-7 rounded-2xl border border-slate-200 p-4">
+                  <div class="text-xs font-black uppercase tracking-[.15em] text-slate-400">Confidence</div>
+                  <div class="mt-3 flex flex-wrap gap-2">
+                    ${['Low','Medium','High'].map(c=>`<button type="button" class="confidence-btn focus-ring rounded-full border px-4 py-2 text-xs font-black ${state.confidence[state.currentQuestion]===c?'border-royal bg-blue-50 text-royal':'border-slate-200 text-slate-600'}" data-confidence="${c}">${c}</button>`).join('')}
+                  </div>
+                </div>
+              </div>
+
+              <aside class="h-max rounded-2xl bg-slate-50 p-4 lg:sticky lg:top-0" aria-label="Question navigator">
+                <div class="flex items-center justify-between"><div class="text-xs font-black uppercase tracking-[.15em] text-slate-400">Navigator</div><div class="text-xs font-bold text-slate-400">${state.flagged.size} flagged</div></div>
+                <div class="mt-3 grid grid-cols-5 gap-2">
+                  ${qs.map((_,i)=>`<button type="button" class="focus-ring aspect-square rounded-lg text-xs font-black ${i===state.currentQuestion?'bg-royal text-white':state.answers[i]?'bg-blue-100 text-royal':'bg-white text-slate-500 border border-slate-200'} ${state.flagged.has(i)?'ring-2 ring-warmyellow ring-offset-1':''}" data-qnav="${i}" aria-label="Go to question ${i+1}">${i+1}</button>`).join('')}
+                </div>
+              </aside>
+            </div>
+          </div>
+
+          <div class="safe-bottom shrink-0 border-t border-slate-100 bg-white px-5 py-4 sm:px-7">
+            <div class="flex flex-col-reverse gap-3 sm:flex-row sm:items-center sm:justify-between">
+              <button type="button" id="prevQuestionBtn" class="focus-ring rounded-full border border-slate-200 px-5 py-3 text-sm font-black text-slate-600 disabled:opacity-40" ${state.currentQuestion===0?'disabled':''}>← Previous</button>
+              <div class="flex flex-col gap-2 sm:flex-row">
+                ${state.currentQuestion===qs.length-1 ? `<button type="button" id="submitExamBtn" class="focus-ring rounded-full bg-royal px-6 py-3 text-sm font-black text-white">${state.mode==='exam'?'Submit Exam':'Finish Practice'} →</button>` : `<button type="button" id="nextQuestionBtn" class="focus-ring rounded-full bg-royal px-6 py-3 text-sm font-black text-white">Next Question →</button>`}
+              </div>
+            </div>
+          </div>
+        </div>`;
+
+      $('flagBtn').addEventListener('click', () => { if(state.flagged.has(state.currentQuestion)) state.flagged.delete(state.currentQuestion); else state.flagged.add(state.currentQuestion); renderExam(); });
+      $('modalBody').querySelectorAll('[data-option]').forEach(btn => btn.addEventListener('click', () => chooseAnswer(btn.dataset.option)));
+      $('modalBody').querySelectorAll('[data-confidence]').forEach(btn => btn.addEventListener('click', () => { state.confidence[state.currentQuestion]=btn.dataset.confidence; renderExam(); }));
+      $('modalBody').querySelectorAll('[data-qnav]').forEach(btn => btn.addEventListener('click', () => { state.currentQuestion=Number(btn.dataset.qnav); renderExam(); }));
+      $('prevQuestionBtn').addEventListener('click', () => { if(state.currentQuestion>0){state.currentQuestion--;renderExam();} });
+      const next = $('nextQuestionBtn'); if(next) next.addEventListener('click', goNext);
+      const submit = $('submitExamBtn'); if(submit) submit.addEventListener('click', () => submitExam(false));
+      const hint = $('hintBtn'); if(hint) hint.addEventListener('click', () => $('hintText').classList.toggle('hidden'));
+    }
+
+    function chooseAnswer(letter) {
+      state.answers[state.currentQuestion] = letter;
+      if (state.mode === 'practice') {
+        const q = state.lecture.activeQuestions[state.currentQuestion];
+        renderExam();
+        setTimeout(() => {
+          const correct = q.correctAnswer === letter;
+          showToast(correct ? 'Correct — strong retrieval.' : `Not quite. Correct answer: ${q.correctAnswer}`);
+        }, 10);
+      } else {
+        renderExam();
+      }
+    }
+
+    function goNext() {
+      const qs = state.lecture.activeQuestions || [];
+      if (state.currentQuestion < qs.length - 1) { state.currentQuestion++; renderExam(); }
+    }
+
+    function submitExam(auto=false) {
+      if (!auto) {
+        const unanswered = state.answers.filter(Boolean).length;
+        if (state.mode === 'exam' && unanswered < state.answers.length) {
+          const proceed = confirm(`You have ${state.answers.length-unanswered} unanswered question(s). Submit anyway?`);
+          if (!proceed) return;
+        }
+      }
+      stopTimer();
+      const qs = state.lecture.activeQuestions || [];
+      const results = qs.map((q,i)=>({
+        ...q,
+        userAnswer: state.answers[i],
+        confidence: state.confidence[i],
+        correct: state.answers[i] === q.correctAnswer,
+        flagged: state.flagged.has(i),
+        index: i
+      }));
+      const correctCount = results.filter(r=>r.correct).length;
+      const score = qs.length ? Math.round((correctCount/qs.length)*100) : 0;
+      state.result = { results, correctCount, score, pass: score >= Number(state.lecture.passMark || 70) };
+      state.modalScreen = 'analytics';
+      renderAnalytics();
+    }
+
+    function renderAnalytics() {
+      const r = state.result;
+      const missed = r.results.filter(x=>!x.correct);
+      const subtopics = {};
+      r.results.forEach(q=>{
+        const key=q.subtopic||'General';
+        if(!subtopics[key]) subtopics[key]={correct:0,total:0};
+        subtopics[key].total++;
+        if(q.correct) subtopics[key].correct++;
+      });
+      $('modalKicker').textContent = 'Post-Exam Analytics';
+      $('modalTitle').textContent = state.lecture.title;
+      $('modalDescription').textContent = `${r.correctCount}/${r.results.length} correct • ${r.score}%`;
+      $('modalBody').innerHTML = `<div class="space-y-7 p-5 sm:p-7">
+        <div class="grid gap-4 sm:grid-cols-[180px_1fr]">
+          <div class="grid place-items-center rounded-[2rem] bg-slate-50 p-7 text-center"><div class="text-5xl font-black tracking-tight text-ink">${r.score}%</div><div class="mt-2 rounded-full px-3 py-1 text-xs font-black ${r.pass?'bg-emerald-100 text-emerald-700':'bg-red-100 text-red-700'}">${r.pass?'PASS':'REVIEW & RETRY'}</div></div>
+          <div class="rounded-[2rem] border border-slate-200 p-6"><div class="text-xs font-black uppercase tracking-[.16em] text-slate-400">Attempt summary</div><div class="mt-4 grid gap-4 sm:grid-cols-3"><div><div class="text-2xl font-black">${r.correctCount}</div><div class="text-xs font-semibold text-slate-400">Correct</div></div><div><div class="text-2xl font-black">${r.results.length-r.correctCount}</div><div class="text-xs font-semibold text-slate-400">Missed</div></div><div><div class="text-2xl font-black">${r.results.filter(q=>q.confidence==='Low').length}</div><div class="text-xs font-semibold text-slate-400">Low confidence</div></div></div></div>
+        </div>
+
+        <section aria-labelledby="weaknessHeading"><div class="flex items-end justify-between gap-3"><div><div class="text-xs font-black uppercase tracking-[.16em] text-skyx">Weakness analytics</div><h3 id="weaknessHeading" class="mt-1 text-xl font-black">Performance by sub-topic</h3></div><div class="text-xs font-bold text-slate-400">Sorted by lowest accuracy</div></div>
+          <div class="mt-4 space-y-3">${Object.entries(subtopics).sort((a,b)=>(a[1].correct/a[1].total)-(b[1].correct/b[1].total)).map(([topic,v])=>{const p=Math.round((v.correct/v.total)*100);return `<div class="rounded-2xl border border-slate-200 p-4"><div class="flex items-center justify-between gap-3"><span class="text-sm font-black">${esc(topic)}</span><span class="text-xs font-black text-slate-500">${p}% • ${v.correct}/${v.total}</span></div><div class="mt-3 h-2 rounded-full bg-slate-100"><div class="h-full rounded-full ${p<60?'bg-warmred':p<80?'bg-warmyellow':'bg-royal'}" style="width:${p}%"></div></div></div>`;}).join('')}</div>
+        </section>
+
+        <section aria-labelledby="reviewHeading"><div class="flex flex-wrap items-end justify-between gap-3"><div><div class="text-xs font-black uppercase tracking-[.16em] text-skyx">Question review</div><h3 id="reviewHeading" class="mt-1 text-xl font-black">Why each choice works — or does not</h3></div><button id="redoMissedBtn" type="button" class="focus-ring rounded-full bg-royal px-5 py-3 text-xs font-black text-white disabled:opacity-40" ${missed.length?'':'disabled'}>Redo Missed Questions →</button></div>
+          <div class="mt-4 space-y-3">${r.results.map((q,i)=>renderReviewCard(q,i)).join('')}</div>
+        </section>
+
+        <div class="flex justify-between gap-3 border-t border-slate-100 pt-5"><button id="backToPrepBtn" type="button" class="focus-ring rounded-full border border-slate-200 px-5 py-3 text-sm font-black">Back to Lecture Prep</button><button id="closeAnalyticsBtn" type="button" class="focus-ring rounded-full bg-slate-900 px-5 py-3 text-sm font-black text-white">Close</button></div>
+      </div>`;
+      $('redoMissedBtn').addEventListener('click', () => {
+        if (!missed.length) return;
+        state.redoMode=true;
+        startExam('practice', missed);
+      });
+      $('backToPrepBtn').addEventListener('click', () => { state.activeTab='summary'; renderPrep(); });
+      $('closeAnalyticsBtn').addEventListener('click', closeModal);
+    }
+
+    function renderReviewCard(q,i) {
+      const correctText = q.options?.[q.correctAnswer.charCodeAt(0)-65] || q.correctAnswer;
+      const userText = q.userAnswer ? q.options?.[q.userAnswer.charCodeAt(0)-65] : 'No answer selected';
+      return `<details class="group rounded-2xl border border-slate-200 p-4" ${!q.correct?'open':''}>
+        <summary class="focus-ring cursor-pointer list-none rounded-xl"><div class="flex items-start gap-3"><div class="grid h-8 w-8 shrink-0 place-items-center rounded-lg ${q.correct?'bg-emerald-100 text-emerald-700':'bg-red-100 text-red-700'} text-xs font-black">${i+1}</div><div class="min-w-0 flex-1"><div class="text-sm font-black">${esc(q.question)}</div><div class="mt-1 text-xs font-semibold ${q.correct?'text-emerald-600':'text-red-600'}">${q.correct?'Correct':'Needs review'} • Confidence: ${esc(q.confidence||'Not rated')}</div></div><div class="text-xs font-black text-slate-400">⌄</div></div></summary>
+        <div class="mt-4 space-y-3 border-t border-slate-100 pt-4 text-sm leading-6">
+          <div class="rounded-xl bg-slate-50 p-3"><div class="text-[10px] font-black uppercase tracking-[.15em] text-slate-400">Your answer</div><div class="mt-1 font-semibold text-slate-700">${esc(userText)}</div></div>
+          <div class="rounded-xl bg-blue-50 p-3"><div class="text-[10px] font-black uppercase tracking-[.15em] text-royal">Correct answer</div><div class="mt-1 font-bold text-slate-700">${esc(correctText)}</div></div>
+          <div class="text-slate-600"><span class="font-black text-ink">Explanation:</span> ${esc(q.explanation || 'This answer best matches the principle tested in the question.')}</div>
+          ${q.optionExplanations ? `<div class="grid gap-2 sm:grid-cols-2">${q.optionExplanations.map((e,idx)=>`<div class="rounded-xl border border-slate-200 p-3 text-xs leading-5 text-slate-500"><span class="font-black text-slate-700">${String.fromCharCode(65+idx)}.</span> ${esc(e)}</div>`).join('')}</div>` : ''}
+        </div>
+      </details>`;
+    }
+
+    function renderErrorScreen(message) {
+      $('modalKicker').textContent = 'Data error';
+      $('modalTitle').textContent = 'Could not open this lecture';
+      $('modalDescription').textContent = 'Please check the local JSON data.';
+      $('modalBody').innerHTML = `<div class="m-5 rounded-2xl border border-red-200 bg-red-50 p-6 text-sm text-red-700">${esc(message)}</div>`;
+    }
+
+    function openModal() {
+      $('appModal').classList.remove('hidden');
+      document.body.classList.add('overflow-hidden');
+      setTimeout(() => $('modalCloseBtn').focus(), 50);
+    }
+
+    function closeModal() {
+      stopTimer();
+      $('appModal').classList.add('hidden');
+      document.body.classList.remove('overflow-hidden');
+      if (state.previousFocus && document.contains(state.previousFocus)) state.previousFocus.focus();
+      state.modalScreen = 'prep';
+    }
+
+    function handleGlobalKeydown(e) {
+      const modalOpen = !$('appModal').classList.contains('hidden');
+      if (!modalOpen) return;
+      if (e.key === 'Escape') { closeModal(); return; }
+      if (e.key === 'Tab') {
+        const focusable = [...$('appModal').querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])')].filter(el => !el.disabled && el.offsetParent !== null);
+        if (focusable.length) {
+          const first = focusable[0], last = focusable[focusable.length - 1];
+          if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+          else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+        }
+      }
+      if (state.modalScreen === 'exam' && !['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName)) {
+        if (e.key === 'ArrowRight') { e.preventDefault(); goNext(); }
+        if (e.key === 'ArrowLeft' && state.currentQuestion > 0) { e.preventDefault(); state.currentQuestion--; renderExam(); }
+      }
+    }
+
+    async function openDemoExam() {
+      try {
+        if (!state.courses) state.courses = await loadJSON('./data/courses.json');
+        let first = null, subject = null;
+        outer: for (const level of state.courses.levels) {
+          for (const sem of level.semesters || []) {
+            for (const s of sem.subjects || []) {
+              if (s.lectures?.length) { first = s.lectures[0]; subject = s; break outer; }
+            }
+          }
+        }
+        if (!first) throw new Error('No demo lecture is configured.');
+        await openLecture(first.file, subject);
+      } catch (error) {
+        console.error(error); showToast('Demo exam could not be loaded.');
+      }
+    }
+
+    $('year').textContent = new Date().getFullYear();
+    initNav();
+    loadCourses();
+  </script>
+</body>
+</html>
