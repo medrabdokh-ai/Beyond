@@ -374,6 +374,206 @@
       "hint": "Compare enveloped with non-enveloped viruses under heat."
     },
     {
+  "question": "What is the main function of the viral genome?",
+  "options": [
+    "Coding for virus-specific macromolecules",
+    "Capsid assembly only",
+    "ATP production",
+    "Host-cell division"
+  ],
+  "correctAnswer": "A"
+},
+{
+  "question": "What is the capsid?",
+  "options": [
+    "Lipid membrane",
+    "An impermeable protein shell around viral nucleic acid",
+    "RNA enzyme",
+    "Host receptor"
+  ],
+  "correctAnswer": "B"
+},
+{
+  "question": "What are capsomers?",
+  "options": [
+    "Lipid molecules",
+    "Host receptors",
+    "Protein subunits composed of polypeptide molecules",
+    "Viral genomes"
+  ],
+  "correctAnswer": "C"
+},
+{
+  "question": "Which is NOT a listed function of the viral capsid?",
+  "options": [
+    "Determination of antigenic characteristics",
+    "Protection from nucleases",
+    "Delivery of viral nucleic acid into the host cell",
+    "ATP synthesis"
+  ],
+  "correctAnswer": "D"
+},
+{
+  "question": "What does viral symmetry describe?",
+  "options": [
+    "The morphological shape of the viral capsid based on the arrangement of capsomers",
+    "The age of the host cell",
+    "The temperature required for viral replication",
+    "The length of the viral genome only"
+  ],
+  "correctAnswer": "A"
+},
+{
+  "question": "Which set contains all three types of viral symmetry described in the lecture?",
+  "options": [
+    "Cubic, spherical, and linear",
+    "Icosahedral, helical, and complex",
+    "Helical, circular, and segmented",
+    "Complex, spherical, and nuclear"
+  ],
+  "correctAnswer": "B"
+},
+{
+  "question": "How many equilateral triangles are involved in the icosahedral arrangement described in the lecture?",
+  "options": [
+    "Twelve",
+    "Thirty",
+    "Twenty",
+    "Sixty"
+  ],
+  "correctAnswer": "C"
+},
+{
+  "question": "In the icosahedral symmetry described in the lecture, what are the protein subunits at the angles of each triangular capsomer called?",
+  "options": [
+    "Hexamers",
+    "Peplomers",
+    "Polymers",
+    "Pentamers"
+  ],
+  "correctAnswer": "D"
+},
+{
+  "question": "How are the capsomers and viral genome arranged in helical symmetry?",
+  "options": [
+    "They are twisted together to form a helical or spiral tube",
+    "They are completely separated from each other",
+    "They are located only inside the nucleus",
+    "They are absent from RNA viruses"
+  ],
+  "correctAnswer": "A"
+},
+{
+  "question": "Which virus was given as an example of complex viral symmetry?",
+  "options": [
+    "Picornavirus",
+    "Poxvirus",
+    "Herpesvirus",
+    "Orthomyxovirus"
+  ],
+  "correctAnswer": "B"
+},
+{
+  "question": "What is the lipid portion of the viral envelope mainly derived from?",
+  "options": [
+    "The viral capsid",
+    "Viral RNA",
+    "Host cell membrane phospholipids",
+    "Host cell DNA"
+  ],
+  "correctAnswer": "C"
+},
+{
+  "question": "What are the protein spikes projecting from the viral envelope also called?",
+  "options": [
+    "Capsomers",
+    "Matrix proteins",
+    "Nucleotides",
+    "Peplomers"
+  ],
+  "correctAnswer": "D"
+},
+{
+  "question": "Which function of the viral envelope is directly related to binding to specific receptors on a host cell?",
+  "options": [
+    "Determination of viral tropism",
+    "ATP production",
+    "Genome transcription",
+    "Capsid digestion"
+  ],
+  "correctAnswer": "A"
+},
+{
+  "question": "Which of the following is another function of the viral envelope?",
+  "options": [
+    "Genome replication",
+    "Evasion of the host immune system",
+    "ATP synthesis",
+    "Ribosome formation"
+  ],
+  "correctAnswer": "B"
+},
+{
+  "question": "Which set contains possible sources of viral envelopes inside the host cell?",
+  "options": [
+    "Mitochondria only",
+    "Plasma membrane only",
+    "Plasma membrane, nuclear membrane, Golgi apparatus membrane, and endoplasmic reticulum",
+    "Nucleus only"
+  ],
+  "correctAnswer": "C"
+},
+{
+  "question": "Most viruses can be inactivated by heating at 56 °C for approximately:",
+  "options": [
+    "A few seconds",
+    "8 weeks",
+    "8 hours",
+    "30 minutes"
+  ],
+  "correctAnswer": "D"
+},
+{
+  "question": "Most viruses are stable at approximately which temperature range?",
+  "options": [
+    "-40 to -70 °C",
+    "0 to -10 °C",
+    "+56 °C",
+    "100 °C"
+  ],
+  "correctAnswer": "A"
+},
+{
+  "question": "Which virus was described in the lecture as unable to survive longer than 8 hours on hard dry surfaces?",
+  "options": [
+    "Herpesvirus",
+    "Rotavirus",
+    "Poxvirus",
+    "HIV"
+  ],
+  "correctAnswer": "B"
+},
+{
+  "question": "Which genome types are less susceptible to ultraviolet germicidal irradiation (UVGI) than ssDNA and ssRNA viruses?",
+  "options": [
+    "dsDNA and ssRNA",
+    "ssDNA and ssRNA",
+    "dsDNA and dsRNA",
+    "ssDNA and dsRNA"
+  ],
+  "correctAnswer": "C"
+},
+{
+  "question": "Which statement about ether and chloroform is correct?",
+  "options": [
+    "Non-enveloped viruses are sensitive to both",
+    "Both enveloped and non-enveloped viruses are always resistant",
+    "Only RNA viruses are sensitive",
+    "Enveloped viruses are sensitive, while non-enveloped viruses are resistant"
+  ],
+  "correctAnswer": "D"
+    },
+    {
       "question": "Which statement correctly matches a chemical agent with viral sensitivity?",
       "options": [
         "Enveloped viruses are sensitive to ether and chloroform",
@@ -448,6 +648,806 @@
         "Incorrect. Coreless viruses lack nucleic acid and cannot replicate even with a helper virus."
       ],
       "hint": "Compare what is inside the particle."
+    },
+    {
+  "question": "Which chemical agents are viruses sensitive to according to the lecture?",
+  "options": [
+    "Formaldehyde, chlorine, and iodine",
+    "Glycerol only",
+    "Ether only",
+    "Glycerol, chlorine, and iodine"
+  ],
+  "correctAnswer": "A"
+},
+{
+  "question": "Why is glycerol added to viral suspensions?",
+  "options": [
+    "To destroy the viral genome",
+    "To prevent bacterial contamination",
+    "To increase viral tropism",
+    "To promote viral replication"
+  ],
+  "correctAnswer": "B"
+},
+{
+  "question": "What is viral tropism?",
+  "options": [
+    "The ability of a virus to survive drying",
+    "The ability of a virus to form a capsid",
+    "The ability of a virus to specifically infect a particular cell, tissue, or host that supports its replication",
+    "The ability of a virus to resist ultraviolet radiation"
+  ],
+  "correctAnswer": "C"
+},
+{
+  "question": "Which two factors affect viral tropism?",
+  "options": [
+    "Envelope thickness and genome size",
+    "Capsid shape and temperature",
+    "Genome type and viral color",
+    "Specific receptors and required transcription factors"
+  ],
+  "correctAnswer": "D"
+},
+{
+  "question": "According to target organs, which classification is based on the site of viral infection?",
+  "options": [
+    "Respiratory, gastrointestinal, urogenital, and hepatitis viruses",
+    "DNA and RNA viruses",
+    "Enveloped and non-enveloped viruses",
+    "Large and small viruses"
+  ],
+  "correctAnswer": "A"
+},
+{
+  "question": "Why does a virus require the machinery of a host cell for replication?",
+  "options": [
+    "Because viruses contain no genetic material",
+    "Because viruses are metabolically inert and require cellular machinery for protein synthesis",
+    "Because viruses cannot attach to cells",
+    "Because viruses are unable to contain proteins"
+  ],
+  "correctAnswer": "B"
+},
+{
+  "question": "Which cellular component provides the protein-synthesizing machinery required for viral replication?",
+  "options": [
+    "Capsids",
+    "Peplomers",
+    "Ribosomes",
+    "Viral envelopes"
+  ],
+  "correctAnswer": "C"
+},
+{
+  "question": "Which molecule provides the energy required for protein synthesis during viral replication?",
+  "options": [
+    "DNA",
+    "RNA",
+    "Amino acids",
+    "ATP"
+  ],
+  "correctAnswer": "D"
+},
+{
+  "question": "Which small biological precursors must the host cell provide for viral replication?",
+  "options": [
+    "Amino acids and nucleotides",
+    "Only ATP",
+    "Only proteins",
+    "Only lipids"
+  ],
+  "correctAnswer": "A"
+},
+{
+  "question": "How does a virus redirect the host cell to produce viral-specific proteins?",
+  "options": [
+    "By destroying all host ribosomes",
+    "Through viral mRNA, which is translated into viral-specific proteins",
+    "By converting ATP into DNA",
+    "Through the viral envelope alone"
+  ],
+  "correctAnswer": "B"
+},
+{
+  "question": "Viral mRNA is synthesized by transcription of which viral genomes according to the lecture?",
+  "options": [
+    "Only double-stranded RNA",
+    "Only positive-sense RNA",
+    "DNA or negative-sense RNA",
+    "Only circular DNA"
+  ],
+  "correctAnswer": "C"
+},
+{
+  "question": "Which of the following is a structural viral protein?",
+  "options": [
+    "Reverse transcriptase",
+    "Regulatory protein",
+    "RNA-dependent RNA polymerase",
+    "Capsid protein"
+  ],
+  "correctAnswer": "D"
+},
+{
+  "question": "Which of the following is a non-structural viral protein?",
+  "options": [
+    "A viral enzyme involved in genome replication",
+    "Capsid protein",
+    "Peplomer",
+    "Envelope lipid"
+  ],
+  "correctAnswer": "A"
+},
+{
+  "question": "Which enzyme is carried as a virion component by retroviruses?",
+  "options": [
+    "DNA polymerase",
+    "Reverse transcriptase",
+    "Peptidase",
+    "ATP synthase"
+  ],
+  "correctAnswer": "B"
+},
+{
+  "question": "Which enzyme is carried by negative-sense RNA viruses as a virion component?",
+  "options": [
+    "Reverse transcriptase",
+    "DNA ligase",
+    "RNA-dependent RNA polymerase",
+    "ATP synthase"
+  ],
+  "correctAnswer": "C"
+},
+{
+  "question": "Which statement about the number of proteins encoded by viruses is correct?",
+  "options": [
+    "All viruses encode exactly the same number of proteins",
+    "Small viruses always encode more proteins than large viruses",
+    "The number of proteins is unrelated to genome size",
+    "Large viruses can produce many proteins because they have larger genomes"
+  ],
+  "correctAnswer": "D"
+},
+{
+  "question": "What is the correct sequence of the six major steps of viral replication?",
+  "options": [
+    "Adsorption → penetration → uncoating → synthesis → assembly → release",
+    "Penetration → adsorption → synthesis → assembly → uncoating → release",
+    "Adsorption → synthesis → penetration → assembly → release → uncoating",
+    "Uncoating → adsorption → penetration → synthesis → release → assembly"
+  ],
+  "correctAnswer": "A"
+},
+{
+  "question": "What is viral adsorption?",
+  "options": [
+    "Release of viral particles from the host cell",
+    "Recognition and attachment of the virus to the host cell through viral attachment proteins binding to specific receptors",
+    "Separation of the viral genome from the capsid",
+    "Formation of new viral particles"
+  ],
+  "correctAnswer": "B"
+},
+{
+  "question": "What do viral attachment proteins (VAPs) bind to during viral adsorption?",
+  "options": [
+    "ATP molecules",
+    "Host DNA",
+    "Specific protein or carbohydrate receptors on the host cell",
+    "Host ribosomes"
+  ],
+  "correctAnswer": "C"
+},
+{
+  "question": "What is the term used for viral penetration by endocytosis?",
+  "options": [
+    "Tropism",
+    "Budding",
+    "Assembly",
+    "Viropexis"
+  ],
+  "correctAnswer": "D"
+    },
+    {
+  "question": "How do non-enveloped viruses generally enter the host cell?",
+  "options": [
+    "By budding",
+    "By endocytosis",
+    "By nuclear membrane fusion only",
+    "By direct genome injection into the nucleus"
+  ],
+  "correctAnswer": "B"
+},
+{
+  "question": "During endocytosis of a non-enveloped virus, what is formed inside the host cell?",
+  "options": [
+    "A viral envelope",
+    "A new capsid",
+    "An endosomal vesicle containing the virus",
+    "A viral nucleus"
+  ],
+  "correctAnswer": "C"
+},
+{
+  "question": "How can enveloped viruses enter a host cell according to the lecture?",
+  "options": [
+    "Only by endocytosis",
+    "Only by membrane fusion",
+    "Only by direct penetration",
+    "By endocytosis or membrane fusion"
+  ],
+  "correctAnswer": "D"
+},
+{
+  "question": "In membrane fusion, what part of an enveloped virus is internalized into the host cell?",
+  "options": [
+    "Only the envelope",
+    "Only the viral spikes",
+    "The nucleocapsid",
+    "Only the matrix protein"
+  ],
+  "correctAnswer": "C"
+},
+{
+  "question": "What is viral uncoating?",
+  "options": [
+    "Formation of the viral envelope",
+    "Separation of the viral genome from the outer viral structures",
+    "Attachment of the virus to the host receptor",
+    "Release of mature virions from the cell"
+  ],
+  "correctAnswer": "B"
+},
+{
+  "question": "Where does the process of viral uncoating occur according to the lecture?",
+  "options": [
+    "In the extracellular space",
+    "In the nucleus only",
+    "In the cytoplasm",
+    "Inside the viral envelope"
+  ],
+  "correctAnswer": "C"
+},
+{
+  "question": "What happens to the infectivity of the internalized virus during uncoating?",
+  "options": [
+    "It increases permanently",
+    "It is abolished at this stage",
+    "It becomes independent of the host cell",
+    "It changes into bacterial infectivity"
+  ],
+  "correctAnswer": "B"
+},
+{
+  "question": "Where is the genome of most DNA viruses delivered after uncoating?",
+  "options": [
+    "The cytoplasm",
+    "The plasma membrane",
+    "The nucleus",
+    "The Golgi apparatus"
+  ],
+  "correctAnswer": "C"
+},
+{
+  "question": "Which DNA virus is the exception whose genome remains in the cytoplasm?",
+  "options": [
+    "Herpesvirus",
+    "Poxvirus",
+    "Adenovirus",
+    "Papillomavirus"
+  ],
+  "correctAnswer": "B"
+},
+{
+  "question": "Where does the genome of most RNA viruses remain after uncoating?",
+  "options": [
+    "The nucleus",
+    "The cytoplasm",
+    "The Golgi apparatus",
+    "The extracellular space"
+  ],
+  "correctAnswer": "B"
+},
+{
+  "question": "Which RNA virus group is the exception whose genome is delivered to the nucleus?",
+  "options": [
+    "Retroviruses",
+    "Picornaviruses",
+    "Coronaviruses",
+    "Rotaviruses"
+  ],
+  "correctAnswer": "A"
+},
+{
+  "question": "What is the stage of viral replication in which viral macromolecules are synthesized called?",
+  "options": [
+    "Adsorption phase",
+    "Penetration phase",
+    "Eclipse phase",
+    "Release phase"
+  ],
+  "correctAnswer": "C"
+},
+{
+  "question": "Why is the synthesis stage called the eclipse phase?",
+  "options": [
+    "Because the virus becomes visible under a microscope",
+    "Because no viral particles can be detected inside the infected host cell during this phase",
+    "Because the host cell immediately dies",
+    "Because the virus leaves the host cell"
+  ],
+  "correctAnswer": "B"
+},
+{
+  "question": "What occurs during the eclipse phase?",
+  "options": [
+    "The viral genome is transcribed and translated into proteins required for viral macromolecule synthesis",
+    "The virus attaches to the host receptor",
+    "The mature virus buds from the cell",
+    "The viral envelope is destroyed outside the cell"
+  ],
+  "correctAnswer": "A"
+},
+{
+  "question": "What is produced during early transcription and translation?",
+  "options": [
+    "Only mature capsids",
+    "Early viral proteins such as polymerases and regulatory proteins",
+    "Only viral envelopes",
+    "Only complete virions"
+  ],
+  "correctAnswer": "B"
+},
+{
+  "question": "Which of the following is an example of an early viral protein?",
+  "options": [
+    "A regulatory protein",
+    "A mature envelope lipid",
+    "A host-cell ribosome",
+    "A viral capsid only"
+  ],
+  "correctAnswer": "A"
+},
+{
+  "question": "What is one major event occurring during late transcription and translation?",
+  "options": [
+    "Initial attachment of the virus to the host cell",
+    "Replication of the viral genome",
+    "Destruction of all host receptors",
+    "Viral adsorption"
+  ],
+  "correctAnswer": "B"
+},
+{
+  "question": "Which type of proteins is synthesized during the late stage of transcription and translation?",
+  "options": [
+    "Only host proteins",
+    "Late viral proteins such as structural proteins and certain viral enzymes",
+    "Only viral receptors",
+    "Only cellular DNA"
+  ],
+  "correctAnswer": "B"
+},
+{
+  "question": "What is another term for viral assembly?",
+  "options": [
+    "Viral adsorption",
+    "Viral maturation",
+    "Viral tropism",
+    "Viral penetration"
+  ],
+  "correctAnswer": "B"
+},
+{
+  "question": "What happens during viral assembly?",
+  "options": [
+    "All synthesized viral components irreversibly combine to form mature viral particles",
+    "The virus attaches to a host receptor",
+    "The viral genome is destroyed",
+    "The host cell produces bacterial particles"
+  ],
+  "correctAnswer": "A"
+},
+{
+  "question": "What does functional viral packaging mean?",
+  "options": [
+    "Enclosing the complete viral genome inside its capsid",
+    "Removing the viral genome from the capsid",
+    "Replacing the viral genome with host DNA",
+    "Removing the viral envelope"
+  ],
+  "correctAnswer": "A"
+},
+{
+  "question": "What can result from non-functional viral packaging?",
+  "options": [
+    "Only complete viruses",
+    "Defective viruses, pseudoviruses, and coreless viruses",
+    "Only enveloped viruses",
+    "Only naked viruses"
+  ],
+  "correctAnswer": "B"
+},
+{
+  "question": "What is a complete virus?",
+  "options": [
+    "A capsid without nucleic acid",
+    "A virus containing only host chromosome material",
+    "A fully mature virus containing a complete viral genome and capsid, with or without an envelope",
+    "A virus containing an incomplete viral genome"
+  ],
+  "correctAnswer": "C"
+},
+{
+  "question": "What characterizes a defective virus?",
+  "options": [
+    "It contains no nucleic acid",
+    "It contains only host chromosome material",
+    "It contains a complete viral genome and always replicates independently",
+    "It contains an incomplete viral genome and cannot replicate without a helper virus"
+  ],
+  "correctAnswer": "D"
+},
+{
+  "question": "Which virus was given as an example of a defective virus?",
+  "options": [
+    "Hepatitis D virus (HDV)",
+    "Herpesvirus",
+    "Coronavirus",
+    "Adenovirus"
+  ],
+  "correctAnswer": "A"
+},
+{
+  "question": "Which virus is required as a helper virus for hepatitis D virus replication?",
+  "options": [
+    "Hepatitis A virus",
+    "Hepatitis B virus",
+    "Hepatitis C virus",
+    "Hepatitis E virus"
+  ],
+  "correctAnswer": "B"
+},
+{
+  "question": "What is the process by which a defective virus is formed called?",
+  "options": [
+    "Capsid mispackaging",
+    "Viral budding",
+    "Premature capsid inclusion",
+    "Membrane fusion"
+  ],
+  "correctAnswer": "C"
+},
+{
+  "question": "What is a pseudovirus composed of?",
+  "options": [
+    "A complete viral genome and capsid",
+    "Only viral proteins",
+    "Only a viral envelope",
+    "Part of the host chromosome instead of viral nucleic acid, enclosed by a capsid with or without an envelope"
+  ],
+  "correctAnswer": "D"
+},
+{
+  "question": "Why can a pseudovirus not replicate even in the presence of a helper virus?",
+  "options": [
+    "It contains no viral nucleic acid",
+    "It has no capsid",
+    "It has no envelope",
+    "It cannot enter a host cell"
+  ],
+  "correctAnswer": "A"
+},
+{
+  "question": "What is the process by which a pseudovirus is formed called?",
+  "options": [
+    "Premature capsid inclusion",
+    "Capsid mispackaging",
+    "Viral budding",
+    "Genome replication"
+  ],
+  "correctAnswer": "B"
+},
+{
+  "question": "What is a coreless virus?",
+  "options": [
+    "A virus containing only viral RNA",
+    "A virus containing only host DNA",
+    "A particle composed only of capsid with or without an envelope and lacking a nucleic acid core",
+    "A virus containing an incomplete genome"
+  ],
+  "correctAnswer": "C"
+},
+{
+  "question": "What is the ability of a coreless virus to infect or replicate?",
+  "options": [
+    "It can infect and replicate normally",
+    "It can infect but cannot replicate",
+    "It can replicate but cannot infect",
+    "It cannot infect or replicate"
+  ],
+  "correctAnswer": "D"
+},
+{
+  "question": "What is the last step of the viral replication cycle?",
+  "options": [
+    "Adsorption",
+    "Uncoating",
+    "Viral release",
+    "Assembly"
+  ],
+  "correctAnswer": "C"
+},
+{
+  "question": "By which two mechanisms can assembled viral particles be released from the infected cell?",
+  "options": [
+    "Fusion and endocytosis",
+    "Cell lysis and budding",
+    "Adsorption and penetration",
+    "Transcription and translation"
+  ],
+  "correctAnswer": "B"
+},
+{
+  "question": "How are non-enveloped (naked) viruses released from the infected cell?",
+  "options": [
+    "Only by budding",
+    "Only by membrane fusion",
+    "Only by cell lysis",
+    "By either budding or cell lysis"
+  ],
+  "correctAnswer": "C"
+},
+{
+  "question": "When can an enveloped virus be released by budding according to the lecture?",
+  "options": [
+    "When it does not acquire its envelope in the cytoplasm",
+    "When it has no nucleic acid",
+    "When it is a defective virus",
+    "When it loses its capsid"
+  ],
+  "correctAnswer": "A"
+},
+{
+  "question": "When can an enveloped virus be released by cell lysis according to the lecture?",
+  "options": [
+    "When it acquires its envelope in the cytoplasm",
+    "When it has no envelope",
+    "When it contains only host DNA",
+    "When it enters by endocytosis"
+  ],
+  "correctAnswer": "A"
+},
+{
+  "question": "What is viral budding?",
+  "options": [
+    "The first attachment of a virus to a host cell",
+    "A late stage in replication in which nucleocapsids acquire a membrane and are released as enveloped viruses",
+    "The separation of the viral genome from its capsid",
+    "The destruction of the viral genome"
+  ],
+  "correctAnswer": "B"
+},
+{
+  "question": "From where is the membrane acquired during viral budding derived?",
+  "options": [
+    "The viral genome",
+    "The viral capsid",
+    "The host cell membrane",
+    "The host cell DNA"
+  ],
+  "correctAnswer": "C"
+},
+{
+  "question": "Which sequence correctly describes the major steps of viral budding?",
+  "options": [
+    "Genome destruction → capsid removal → cell lysis",
+    "Spike protein acquisition → M protein coating of the membrane's inner side → attraction of the nucleocapsid → envelopment and release",
+    "Adsorption → penetration → uncoating → genome replication",
+    "Capsid formation → genome destruction → endocytosis"
+  ],
+  "correctAnswer": "B"
+    },
+    {
+  "question": "Which cellular membranes can serve as sites for viral budding?",
+  "options": [
+    "Only the plasma membrane",
+    "Only the nuclear membrane",
+    "Only the endoplasmic reticulum",
+    "The plasma membrane, nuclear membrane, endoplasmic reticulum, or Golgi apparatus"
+  ],
+  "correctAnswer": "D"
+},
+{
+  "question": "Which viral component is involved in attracting the nucleocapsid toward the membrane during budding?",
+  "options": [
+    "M protein",
+    "Viral RNA",
+    "Host ribosome",
+    "Capsomer"
+  ],
+  "correctAnswer": "A"
+},
+{
+  "question": "During budding, where does the M protein coat the membrane?",
+  "options": [
+    "The outer surface of the host cell",
+    "The inner side of the membrane",
+    "The viral genome",
+    "The host cell nucleus"
+  ],
+  "correctAnswer": "B"
+},
+{
+  "question": "What happens to the nucleocapsid after it is attracted to the membrane during budding?",
+  "options": [
+    "It is destroyed",
+    "It enters the nucleus",
+    "It becomes enveloped by the membrane and is released as a viral particle",
+    "It loses its genome"
+  ],
+  "correctAnswer": "C"
+},
+{
+  "question": "Which viral particle form contains both a nucleic acid genome and a capsid?",
+  "options": [
+    "Complete virus",
+    "Coreless virus",
+    "Pseudovirus",
+    "Viroid"
+  ],
+  "correctAnswer": "A"
+},
+{
+  "question": "Which viral particle lacks a nucleic acid core?",
+  "options": [
+    "Defective virus",
+    "Coreless virus",
+    "Complete virus",
+    "Pseudovirus"
+  ],
+  "correctAnswer": "B"
+},
+{
+  "question": "Which particle contains part of the host chromosome instead of viral nucleic acid?",
+  "options": [
+    "Complete virus",
+    "Coreless virus",
+    "Pseudovirus",
+    "Defective virus"
+  ],
+  "correctAnswer": "C"
+},
+{
+  "question": "Which particle contains an incomplete viral genome and requires a helper virus for replication?",
+  "options": [
+    "Pseudovirus",
+    "Coreless virus",
+    "Complete virus",
+    "Defective virus"
+  ],
+  "correctAnswer": "D"
+},
+{
+  "question": "Which of the following best distinguishes a defective virus from a pseudovirus?",
+  "options": [
+    "A defective virus contains an incomplete viral genome, whereas a pseudovirus contains part of the host chromosome",
+    "A defective virus has no capsid, whereas a pseudovirus has a capsid",
+    "A defective virus contains host DNA, whereas a pseudovirus contains viral DNA",
+    "There is no difference between them"
+  ],
+  "correctAnswer": "A"
+},
+{
+  "question": "Which of the following best describes a coreless virus?",
+  "options": [
+    "It contains an incomplete viral genome",
+    "It contains host chromosome material",
+    "It consists of a capsid with or without an envelope but lacks a nucleic acid core",
+    "It contains a complete viral genome"
+  ],
+  "correctAnswer": "C"
+},
+{
+  "question": "What is a prion?",
+  "options": [
+    "An infectious RNA molecule",
+    "An infectious protein particle",
+    "A complete virus",
+    "A bacterial toxin"
+  ],
+  "correctAnswer": "B"
+},
+{
+  "question": "Which statement about prions is correct?",
+  "options": [
+    "They contain both DNA and RNA",
+    "They contain RNA but no protein",
+    "They are composed of infectious protein and lack nucleic acid",
+    "They are complete enveloped viruses"
+  ],
+  "correctAnswer": "C"
+},
+{
+  "question": "What is a viroid?",
+  "options": [
+    "A small infectious RNA molecule",
+    "An infectious protein",
+    "A complete virus with a capsid",
+    "A defective DNA virus"
+  ],
+  "correctAnswer": "A"
+},
+{
+  "question": "Which type of nucleic acid is characteristic of viroids?",
+  "options": [
+    "Double-stranded DNA",
+    "Single-stranded RNA",
+    "Double-stranded RNA",
+    "Single-stranded DNA"
+  ],
+  "correctAnswer": "B"
+},
+{
+  "question": "Which major structural component is absent from viroids?",
+  "options": [
+    "RNA",
+    "Nucleic acid",
+    "Capsid",
+    "Genetic material"
+  ],
+  "correctAnswer": "C"
+},
+{
+  "question": "Which statement correctly compares prions and viroids?",
+  "options": [
+    "Both contain DNA",
+    "Prions are infectious proteins, whereas viroids are small infectious RNA molecules",
+    "Prions are RNA molecules, whereas viroids are proteins",
+    "Both are complete viruses"
+  ],
+  "correctAnswer": "B"
+},
+{
+  "question": "Which of the following is NOT considered a complete viral particle?",
+  "options": [
+    "A mature virus containing its complete genome",
+    "A complete enveloped virion",
+    "A coreless virus",
+    "A mature non-enveloped virus containing its genome"
+  ],
+  "correctAnswer": "C"
+},
+{
+  "question": "Which viral replication stage follows uncoating?",
+  "options": [
+    "Viral release",
+    "Synthesis of viral macromolecules",
+    "Adsorption",
+    "Budding"
+  ],
+  "correctAnswer": "B"
+},
+{
+  "question": "Which viral replication stage directly precedes viral release?",
+  "options": [
+    "Assembly",
+    "Adsorption",
+    "Uncoating",
+    "Penetration"
+  ],
+  "correctAnswer": "A"
+},
+{
+  "question": "Which sequence represents the complete viral replication cycle described in the lecture?",
+  "options": [
+    "Adsorption → penetration → uncoating → synthesis → assembly → release",
+    "Penetration → adsorption → assembly → synthesis → release → uncoating",
+    "Uncoating → synthesis → adsorption → penetration → release → assembly",
+    "Synthesis → adsorption → penetration → assembly → uncoating → release"
+  ],
+  "correctAnswer": "A"
     },
     {
       "question": "Which pair identifies the two subviral agents discussed at the end of the lecture?",
