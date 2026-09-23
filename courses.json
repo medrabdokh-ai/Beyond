@@ -1,0 +1,139 @@
+{
+  "platform": "Beyond The Imagination",
+  "author": "Dr.Abdullah Hazem Khalifa",
+  "levels": [
+    {
+      "id": "level-1",
+      "number": "1",
+      "title": "Level 1 — Foundation Pharmacy",
+      "status": "coming_soon",
+      "semesters": []
+    },
+    {
+      "id": "level-2",
+      "number": "2",
+      "title": "Level 2 — Core Sciences",
+      "status": "coming_soon",
+      "semesters": []
+    },
+    {
+      "id": "level-3",
+      "number": "3",
+      "title": "Level 3 — Pharmaceutical Core",
+      "status": "active",
+      "semesters": [
+        {
+          "name": "Semester 1",
+          "subjects": [
+            {
+              "id": "pharmacology-1",
+              "name": "Pharmacology 1",
+              "lectures": [
+                { "title": "Lecture 1", "file": "pharmacology-1-lecture-01.json" },
+                { "title": "Lecture 2", "file": "pharmacology-1-lecture-02.json" },
+                { "title": "Lecture 3", "file": "pharmacology-1-lecture-03.json" },
+                { "title": "Lecture 4", "file": "pharmacology-1-lecture-04.json" },
+                { "title": "Lecture 5", "file": "pharmacology-1-lecture-05.json" },
+                { "title": "Lecture 6", "file": "pharmacology-1-lecture-06.json" },
+                { "title": "Lecture 7", "file": "pharmacology-1-lecture-07.json" },
+                { "title": "Lecture 8", "file": "pharmacology-1-lecture-08.json" },
+                { "title": "Lecture 9", "file": "pharmacology-1-lecture-09.json" },
+                { "title": "Lecture 10", "file": "pharmacology-1-lecture-10.json" },
+                { "title": "Lecture 11", "file": "pharmacology-1-lecture-11.json" }
+              ]
+            },
+            {
+              "id": "phytochemistry",
+              "name": "Phytochemistry",
+              "lectures": [
+                { "title": "Lecture 1", "file": "phytochemistry-lecture-01.json" },
+                { "title": "Lecture 2", "file": "phytochemistry-lecture-02.json" },
+                { "title": "Lecture 3", "file": "phytochemistry-lecture-03.json" },
+                { "title": "Lecture 4", "file": "phytochemistry-lecture-04.json" },
+                { "title": "Lecture 5", "file": "phytochemistry-lecture-05.json" },
+                { "title": "Lecture 6", "file": "phytochemistry-lecture-06.json" },
+                { "title": "Lecture 7", "file": "phytochemistry-lecture-07.json" },
+                { "title": "Lecture 8", "file": "phytochemistry-lecture-08.json" }
+              ]
+            },
+            {
+              "id": "drug-design",
+              "name": "Drug Design",
+              "lectures": [
+                { "title": "Lecture 1", "file": "drug-design-lecture-01.json" },
+                { "title": "Lecture 2", "file": "drug-design-lecture-02.json" },
+                { "title": "Lecture 3", "file": "drug-design-lecture-03.json" },
+                { "title": "Lecture 4", "file": "drug-design-lecture-04.json" },
+                { "title": "Lecture 5", "file": "drug-design-lecture-05.json" },
+                { "title": "Lecture 6", "file": "drug-design-lecture-06.json" },
+                { "title": "Lecture 7", "file": "drug-design-lecture-07.json" },
+                { "title": "Lecture 8", "file": "drug-design-lecture-08.json" },
+                { "title": "Lecture 9", "file": "drug-design-lecture-09.json" },
+                { "title": "Lecture 10", "file": "drug-design-lecture-10.json" }
+              ]
+            },
+            {
+              "id": "pharmaceutics-3",
+              "name": "Pharmaceutics 3",
+              "lectures": [
+                { "title": "Lecture 1", "file": "pharmaceutics-3-lecture-01.json" },
+                { "title": "Lecture 2", "file": "pharmaceutics-3-lecture-02.json" },
+                { "title": "Lecture 3", "file": "pharmaceutics-3-lecture-03.json" },
+                { "title": "Lecture 4", "file": "pharmaceutics-3-lecture-04.json" },
+                { "title": "Lecture 5", "file": "pharmaceutics-3-lecture-05.json" },
+                { "title": "Lecture 6", "file": "pharmaceutics-3-lecture-06.json" },
+                { "title": "Lecture 7", "file": "pharmaceutics-3-lecture-07.json" }
+              ]
+            },
+            {
+              "id": "biochemistry-2",
+              "name": "Biochemistry 2",
+              "lectures": [
+                { "title": "Lecture 1", "file": "biochemistry-2-lecture-01.json" },
+                { "title": "Lecture 2", "file": "biochemistry-2-lecture-02.json" },
+                { "title": "Lecture 3", "file": "biochemistry-2-lecture-03.json" },
+                { "title": "Lecture 4", "file": "biochemistry-2-lecture-04.json" },
+                { "title": "Lecture 5", "file": "biochemistry-2-lecture-05.json" },
+                { "title": "Lecture 6", "file": "biochemistry-2-lecture-06.json" },
+                { "title": "Lecture 7", "file": "biochemistry-2-lecture-07.json" }
+              ]
+            },
+            {
+              "id": "parasitology-virology",
+              "name": "Parasitology and Virology",
+              "lectures": [
+                { "title": "Lecture 1", "file": "parasitology-virology-lecture-01.json" },
+                { "title": "Lecture 2", "file": "parasitology-virology-lecture-02.json" },
+                { "title": "Lecture 3", "file": "parasitology-virology-lecture-03.json" },
+                { "title": "Lecture 4", "file": "parasitology-virology-lecture-04.json" },
+                { "title": "Lecture 5", "file": "parasitology-virology-lecture-05.json" },
+                { "title": "Lecture 6", "file": "parasitology-virology-lecture-06.json" },
+                { "title": "Lecture 7", "file": "parasitology-virology-lecture-07.json" },
+                { "title": "Lecture 8", "file": "parasitology-virology-lecture-08.json" },
+                { "title": "Lecture 9", "file": "parasitology-virology-lecture-09.json" }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Semester 2",
+          "subjects": []
+        }
+      ]
+    },
+    {
+      "id": "level-4",
+      "number": "4",
+      "title": "Level 4 — Applied Pharmacy",
+      "status": "coming_soon",
+      "semesters": []
+    },
+    {
+      "id": "level-5",
+      "number": "5",
+      "title": "Level 5 — Professional Practice",
+      "status": "coming_soon",
+      "semesters": []
+    }
+  ]
+}
