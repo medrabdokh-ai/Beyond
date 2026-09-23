@@ -216,10 +216,9 @@
     </div>
   </footer>
 
-  <!-- Preparation / exam / analytics modal -->
-  <div id="appModal" class="modal-backdrop fixed inset-0 z-50 hidden p-0 sm:p-4" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-describedby="modalDescription">
-    <div class="flex h-full items-end justify-center sm:items-center">
-      <div id="modalPanel" class="flex h-full w-full max-w-5xl flex-col overflow-hidden bg-white sm:h-[92vh] sm:rounded-[2rem]">
+  <!-- Full-screen exam workspace -->
+  <div id="appModal" class="fixed inset-0 z-50 hidden bg-white" aria-labelledby="modalTitle" aria-describedby="modalDescription">
+    <div id="modalPanel" class="flex h-full w-full flex-col overflow-hidden bg-white">
         <div class="flex shrink-0 items-center justify-between gap-4 border-b border-slate-100 px-5 py-4 sm:px-7">
           <div class="min-w-0">
             <div id="modalKicker" class="text-[10px] font-black uppercase tracking-[.18em] text-royal">Preparation</div>
@@ -232,7 +231,6 @@
         </div>
 
         <div id="modalBody" class="min-h-0 flex-1 overflow-y-auto thin-scrollbar"></div>
-      </div>
     </div>
   </div>
 
@@ -251,11 +249,8 @@
       secondsLeft: 0,
       examStarted: false,
       result: null,
-      modalScreen: 'prep',
+      modalScreen: 'exam',
       previousFocus: null,
-      activeTab: 'summary',
-      flashIndex: 0,
-      flashRepetition: false,
       redoMode: false,
       redoQuestions: []
     };
@@ -313,7 +308,7 @@
       } catch (error) {
         console.error(error);
         $('curriculumStatus').textContent = 'Could not load courses.json';
-        $('curriculumAccordion').innerHTML = `<div class="rounded-2xl border border-red-200 bg-red-50 p-5 text-sm font-semibold text-red-700">The curriculum file could not be loaded. On GitHub Pages, confirm <code>data/courses.json</code> is deployed. For local testing, use a local web server rather than opening <code>index.html</code> directly.</div>`;
+        $('curriculumAccordion').innerHTML = `<div class="rounded-2xl border border-red-200 bg-red-50 p-5 text-sm font-semibold text-red-700">The curriculum file could not be loaded. On GitHub Pages, confirm <code>courses.json</code> is deployed. For local testing, use a local web server rather than opening <code>index.html</code> directly.</div>`;
       }
     }
 
@@ -451,8 +446,7 @@
       try {
         const lecture = await loadJSON(`./${file}`);
         state.lecture = { ...lecture, subjectName: subject.name, subjectId: subject.id };
-        state.activeTab = 'summary';
-        renderPrep();
+        startExam('practice');
       } catch (error) {
         console.error(error);
         renderErrorScreen('Lecture data could not be loaded. Check the JSON file path in courses.json.');
@@ -464,7 +458,7 @@
       state.previousFocus = document.activeElement;
       openModal();
       try {
-        const banks = await Promise.all(subject.lectures.map(l => loadJSON(`./data/lectures/${l.file}`)));
+        const banks = await Promise.all(subject.lectures.map(l => loadJSON(`./${l.file}`)));
         const questions = banks.flatMap(bank => (bank.questions || []).map(q => ({ ...q, lectureTitle: bank.title })));
         shuffle(questions);
         const base = banks[0];
@@ -472,100 +466,15 @@
           id: `comprehensive-${safeId(subject.id)}`,
           title: `${subject.name} — Comprehensive Exam`,
           subjectName: subject.name,
-          estimatedReadTime: 'Variable',
           estimatedExamTime: `${Math.max(20, questions.length * 1.5)}-min exam`,
-          summary: [`Cumulative assessment across ${subject.lectures.length} lectures.`],
-          keyTerms: [], resources: [], flashcards: [], questions,
+          questions,
           passMark: base.passMark || 70
         };
-        state.activeTab = 'summary';
-        renderPrep();
+        startExam('practice');
       } catch (error) {
         console.error(error);
         renderErrorScreen('The comprehensive question bank could not be assembled.');
       }
-    }
-
-    function renderPrep() {
-      const l = state.lecture;
-      $('modalKicker').textContent = 'Preparation';
-      $('modalTitle').textContent = l.title;
-      $('modalDescription').textContent = `${l.subjectName || 'Pharmacy'} • ${l.estimatedReadTime || '10-min read'} • ${l.estimatedExamTime || '15-min exam'}`;
-      $('modalBody').innerHTML = `
-        <div class="space-y-6 p-5 sm:p-7">
-          <div class="grid gap-3 sm:grid-cols-2">
-            <button type="button" class="mode-card focus-ring rounded-2xl bg-royal p-5 text-left text-white hover:bg-blue-800" data-mode="practice">
-              <div class="text-xs font-black uppercase tracking-[.16em] text-blue-200">Recommended to learn</div>
-              <div class="mt-2 text-xl font-black">Practice Mode →</div>
-              <div class="mt-2 text-sm leading-6 text-blue-100">Untimed, instant feedback, hints enabled. Build accuracy before speed.</div>
-            </button>
-            <button type="button" class="mode-card focus-ring rounded-2xl border-2 border-slate-200 bg-white p-5 text-left hover:border-royal" data-mode="exam">
-              <div class="text-xs font-black uppercase tracking-[.16em] text-slate-400">Strict simulation</div>
-              <div class="mt-2 text-xl font-black">Exam Mode →</div>
-              <div class="mt-2 text-sm leading-6 text-slate-500">Timed, no instant feedback, strict submission and countdown.</div>
-            </button>
-          </div>
-
-          <div class="border-b border-slate-200" role="tablist" aria-label="Preparation resources">
-            ${[['summary','High-Yield Summary'],['terms','Key Terms'],['resources','Resources'],['flashcards','Flashcards']].map(([id,label]) => `<button type="button" role="tab" aria-selected="${state.activeTab===id}" class="prep-tab focus-ring mr-5 border-b-2 px-1 py-3 text-sm font-black ${state.activeTab===id ? 'border-royal text-royal' : 'border-transparent text-slate-400'}" data-tab="${id}">${label}</button>`).join('')}
-          </div>
-          <div id="prepTabContent"></div>
-        </div>`;
-      $('modalBody').querySelectorAll('[data-mode]').forEach(btn => btn.addEventListener('click', () => startExam(btn.dataset.mode)));
-      $('modalBody').querySelectorAll('[data-tab]').forEach(btn => btn.addEventListener('click', () => { state.activeTab = btn.dataset.tab; renderPrep(); }));
-      renderPrepTabContent();
-    }
-
-    function renderPrepTabContent() {
-      const l = state.lecture;
-      const target = $('prepTabContent');
-      if (!target) return;
-      if (state.activeTab === 'summary') {
-        target.innerHTML = `<div class="grid gap-3">${(l.summary || []).map((item,i)=>`<div class="flex gap-3 rounded-2xl border border-slate-200 p-4"><span class="mt-0.5 grid h-7 w-7 shrink-0 place-items-center rounded-full bg-blue-50 text-xs font-black text-royal">${i+1}</span><div class="text-sm leading-6 text-slate-600">${esc(item)}</div></div>`).join('')}</div>`;
-      } else if (state.activeTab === 'terms') {
-        target.innerHTML = `<div class="grid gap-3 sm:grid-cols-2">${(l.keyTerms || []).map(term => `<div class="rounded-2xl border border-slate-200 p-4"><div class="text-sm font-black text-ink">${esc(term.term)}</div><div class="mt-2 text-sm leading-6 text-slate-500">${esc(term.definition)}</div></div>`).join('') || `<div class="rounded-2xl bg-slate-50 p-5 text-sm text-slate-500">No term cards supplied for this lecture.</div>`}</div>`;
-      } else if (state.activeTab === 'resources') {
-        target.innerHTML = `<div class="space-y-3">${(l.resources || []).map(r => `<a class="focus-ring flex items-center justify-between rounded-2xl border border-slate-200 p-4 hover:border-sky-300" href="${esc(r.url)}" target="_blank" rel="noopener"><span><span class="block text-sm font-black">${esc(r.title)}</span><span class="block text-xs font-semibold text-slate-400">PDF / slide resource</span></span><span class="text-royal">↗</span></a>`).join('') || `<div class="rounded-2xl bg-slate-50 p-5 text-sm text-slate-500">No downloadable resources supplied.</div>`}</div>`;
-      } else {
-        target.innerHTML = renderFlashcards();
-        bindFlashcards();
-      }
-    }
-
-    function renderFlashcards() {
-      const cards = state.lecture.flashcards || [];
-      if (!cards.length) return `<div class="rounded-2xl bg-slate-50 p-5 text-sm text-slate-500">No flashcards supplied.</div>`;
-      const current = cards[state.flashIndex % cards.length];
-      return `<div class="grid gap-5 lg:grid-cols-[1fr_auto]">
-        <button type="button" id="flashCard" class="flip-card focus-ring min-h-56 w-full text-left" aria-label="Flip flashcard">
-          <div class="flip-inner relative min-h-56 w-full">
-            <div class="flip-front absolute inset-0 rounded-2xl border-2 border-blue-100 bg-blue-50 p-7">
-              <div class="text-xs font-black uppercase tracking-[.17em] text-royal">Prompt ${state.flashIndex+1} / ${cards.length}</div>
-              <div class="mt-5 text-2xl font-black leading-tight">${esc(current.front)}</div>
-              <div class="mt-6 text-xs font-bold text-slate-400">Press Enter / Space or click to flip</div>
-            </div>
-            <div class="flip-back absolute inset-0 rounded-2xl border-2 border-amber-100 bg-amber-50 p-7">
-              <div class="text-xs font-black uppercase tracking-[.17em] text-warmyellow">Answer</div>
-              <div class="mt-5 text-lg font-bold leading-7 text-slate-700">${esc(current.back)}</div>
-            </div>
-          </div>
-        </button>
-        <div class="flex flex-row gap-2 lg:flex-col">
-          <button type="button" id="flashPrev" class="focus-ring rounded-xl border border-slate-200 px-4 py-3 text-sm font-black">← Prev</button>
-          <button type="button" id="flashNext" class="focus-ring rounded-xl bg-royal px-4 py-3 text-sm font-black text-white">Next →</button>
-          <label class="flex items-center gap-2 rounded-xl border border-slate-200 px-4 py-3 text-xs font-bold text-slate-600"><input id="flashRepeat" type="checkbox" ${state.flashRepetition?'checked':''} class="h-4 w-4"/> Spaced repetition</label>
-        </div>
-      </div>`;
-    }
-
-    function bindFlashcards() {
-      const card = $('flashCard');
-      const flip = () => card.classList.toggle('flipped');
-      card.addEventListener('click', flip);
-      card.addEventListener('keydown', (e)=>{ if(e.key==='Enter'||e.key===' '){e.preventDefault();flip();} });
-      $('flashPrev').addEventListener('click', () => { state.flashIndex = (state.flashIndex - 1 + state.lecture.flashcards.length) % state.lecture.flashcards.length; renderPrep(); });
-      $('flashNext').addEventListener('click', () => { state.flashIndex = (state.flashIndex + 1) % state.lecture.flashcards.length; renderPrep(); });
-      $('flashRepeat').addEventListener('change', (e) => { state.flashRepetition = e.target.checked; showToast(e.target.checked ? 'Spaced repetition enabled.' : 'Spaced repetition disabled.'); });
     }
 
     function shuffle(array) { for (let i=array.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1)); [array[i],array[j]]=[array[j],array[i]];} return array; }
@@ -607,64 +516,92 @@
     function stopTimer() { if (state.timer) { clearInterval(state.timer); state.timer = null; } }
     function formatTime(seconds) { const s=Math.max(0,seconds); return `${String(Math.floor(s/60)).padStart(2,'0')}:${String(s%60).padStart(2,'0')}`; }
 
+    function answerText(q, letter) {
+      if (!letter) return 'No answer selected';
+      const index = letter.charCodeAt(0) - 65;
+      return q.options?.[index] || letter;
+    }
+
     function renderExam() {
       const qs = state.lecture.activeQuestions || [];
       const q = qs[state.currentQuestion];
-      $('modalKicker').textContent = state.mode === 'exam' ? 'Exam Mode' : 'Practice Mode';
+      const selected = state.answers[state.currentQuestion];
+      const answered = Boolean(selected);
+      const correct = answered && selected === q.correctAnswer;
+      const correctText = answerText(q, q.correctAnswer);
+      const userText = answerText(q, selected);
+
+      state.modalScreen = 'exam';
+      $('modalKicker').textContent = 'Exam';
       $('modalTitle').textContent = state.lecture.title;
       $('modalDescription').textContent = `${qs.length} questions • ${state.lecture.subjectName || 'Pharmacy'}`;
       $('modalBody').innerHTML = `
-        <div class="flex min-h-0 h-full flex-col">
-          <div class="shrink-0 border-b border-slate-100 px-5 py-4 sm:px-7">
-            <div class="flex flex-wrap items-center justify-between gap-3">
-              <div class="flex items-center gap-3"><span class="rounded-full bg-blue-50 px-3 py-1.5 text-xs font-black text-royal">Q${state.currentQuestion+1} / ${qs.length}</span><span class="text-xs font-bold text-slate-400">${state.mode === 'practice' ? 'Untimed • instant feedback' : 'Strict timed submission'}</span></div>
+        <div class="flex min-h-0 h-full flex-col bg-slate-50/40">
+          <div class="shrink-0 border-b border-slate-100 bg-white px-5 py-4 sm:px-8">
+            <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3">
+              <div class="flex items-center gap-3">
+                <span class="rounded-full bg-blue-50 px-3 py-1.5 text-xs font-black text-royal">Q${state.currentQuestion+1} / ${qs.length}</span>
+                <span class="text-xs font-bold text-slate-400">Immediate feedback</span>
+              </div>
               <div class="flex items-center gap-2">
-                ${state.mode === 'exam' ? `<div id="examTimer" class="rounded-full bg-slate-100 px-4 py-2 font-mono text-sm font-black text-ink" aria-live="off">${formatTime(state.secondsLeft)}</div>` : '<div class="rounded-full bg-slate-100 px-4 py-2 text-xs font-black text-slate-500">∞</div>'}
+                ${state.mode === 'exam' ? `<div id="examTimer" class="rounded-full bg-slate-100 px-4 py-2 font-mono text-sm font-black text-ink" aria-live="off">${formatTime(state.secondsLeft)}</div>` : '<div class="rounded-full bg-slate-100 px-4 py-2 text-xs font-black text-slate-500">Practice</div>'}
                 <button type="button" id="flagBtn" class="focus-ring rounded-full border px-3 py-2 text-xs font-black ${state.flagged.has(state.currentQuestion) ? 'border-warmyellow bg-amber-50 text-warmyellow' : 'border-slate-200 text-slate-500'}" aria-pressed="${state.flagged.has(state.currentQuestion)}">${state.flagged.has(state.currentQuestion) ? '★ Flagged' : '☆ Flag'}</button>
               </div>
             </div>
-            <div class="mt-4 h-1.5 overflow-hidden rounded-full bg-slate-100"><div class="h-full rounded-full bg-skyx transition-all" style="width:${((state.currentQuestion+1)/qs.length)*100}%"></div></div>
+            <div class="mx-auto mt-4 h-1.5 max-w-6xl overflow-hidden rounded-full bg-slate-100"><div class="h-full rounded-full bg-skyx transition-all" style="width:${((state.currentQuestion+1)/qs.length)*100}%"></div></div>
           </div>
 
-          <div class="min-h-0 flex-1 overflow-y-auto thin-scrollbar p-5 sm:p-7">
-            <div class="grid gap-7 lg:grid-cols-[1fr_240px]">
-              <div>
+          <div class="min-h-0 flex-1 overflow-y-auto thin-scrollbar px-5 py-6 sm:px-8 sm:py-10">
+            <div class="mx-auto grid max-w-6xl gap-8 lg:grid-cols-[minmax(0,1fr)_250px]">
+              <main>
                 <div class="text-xs font-black uppercase tracking-[.16em] text-slate-400">Question ${state.currentQuestion+1}</div>
-                <h3 class="mt-3 text-2xl font-black leading-tight text-ink sm:text-3xl">${esc(q.question)}</h3>
-                ${q.image ? `<img src="${esc(q.image)}" alt="" class="mt-5 max-h-64 rounded-2xl border border-slate-200 object-contain"/>` : ''}
-                <div class="mt-6 grid gap-3" role="radiogroup" aria-label="Answer options">
+                <h3 class="mt-3 text-2xl font-black leading-tight text-ink sm:text-4xl">${esc(q.question)}</h3>
+                ${q.image ? `<img src="${esc(q.image)}" alt="" class="mt-6 max-h-72 rounded-2xl border border-slate-200 bg-white object-contain"/>` : ''}
+
+                <div class="mt-8 grid gap-3" role="radiogroup" aria-label="Answer options">
                   ${q.options.map((opt, i) => {
                     const letter = String.fromCharCode(65+i);
-                    const selected = state.answers[state.currentQuestion] === letter;
-                    return `<button type="button" class="option-btn focus-ring group flex w-full items-start gap-4 rounded-2xl border-2 ${selected ? 'border-royal bg-blue-50' : 'border-slate-200 bg-white'} p-4 text-left transition hover:border-blue-200" data-option="${letter}" aria-pressed="${selected}">
-                      <span class="grid h-8 w-8 shrink-0 place-items-center rounded-lg ${selected?'bg-royal text-white':'bg-slate-100 text-slate-500'} text-xs font-black">${letter}</span>
-                      <span class="pt-1 text-sm font-semibold leading-6 text-slate-700">${esc(opt)}</span>
+                    const isSelected = selected === letter;
+                    const isCorrectOption = answered && q.correctAnswer === letter;
+                    const isWrongSelection = isSelected && !correct;
+                    const border = isCorrectOption ? 'border-emerald-500 bg-emerald-50' : isWrongSelection ? 'border-red-500 bg-red-50' : isSelected ? 'border-royal bg-blue-50' : 'border-slate-200 bg-white';
+                    const badge = isCorrectOption ? 'bg-emerald-600 text-white' : isWrongSelection ? 'bg-red-600 text-white' : isSelected ? 'bg-royal text-white' : 'bg-slate-100 text-slate-500';
+                    return `<button type="button" class="option-btn focus-ring group flex w-full items-start gap-4 rounded-2xl border-2 ${border} p-5 text-left transition hover:border-blue-200" data-option="${letter}" aria-pressed="${isSelected}">
+                      <span class="grid h-9 w-9 shrink-0 place-items-center rounded-xl ${badge} text-xs font-black">${letter}</span>
+                      <span class="pt-1 text-sm font-semibold leading-6 text-slate-700 sm:text-base">${esc(opt)}</span>
                     </button>`;
                   }).join('')}
                 </div>
-                ${state.mode === 'practice' ? `<div class="mt-5 rounded-2xl border border-slate-200 bg-slate-50 p-4"><button id="hintBtn" type="button" class="focus-ring text-xs font-black text-royal">Need a hint?</button><div id="hintText" class="mt-2 hidden text-sm leading-6 text-slate-600">${esc(q.hint || 'Focus on the mechanism, definition, or discriminating feature described in the stem.')}</div></div>` : ''}
-                <div class="mt-7 rounded-2xl border border-slate-200 p-4">
+
+                ${answered ? `
+                  <div class="mt-6 rounded-2xl border ${correct ? 'border-emerald-200 bg-emerald-50' : 'border-red-200 bg-red-50'} p-5" aria-live="polite">
+                    <div class="text-sm font-black ${correct ? 'text-emerald-700' : 'text-red-700'}">${correct ? 'Correct' : 'Wrong'}</div>
+                    <div class="mt-2 text-sm leading-6 text-slate-700"><span class="font-black">Your answer:</span> ${esc(userText)}</div>
+                    <div class="mt-1 text-sm leading-6 text-slate-700"><span class="font-black">Correct answer:</span> ${esc(correctText)}</div>
+                  </div>` : ''}
+
+                <div class="mt-7 rounded-2xl border border-slate-200 bg-white p-4">
                   <div class="text-xs font-black uppercase tracking-[.15em] text-slate-400">Confidence</div>
                   <div class="mt-3 flex flex-wrap gap-2">
                     ${['Low','Medium','High'].map(c=>`<button type="button" class="confidence-btn focus-ring rounded-full border px-4 py-2 text-xs font-black ${state.confidence[state.currentQuestion]===c?'border-royal bg-blue-50 text-royal':'border-slate-200 text-slate-600'}" data-confidence="${c}">${c}</button>`).join('')}
                   </div>
                 </div>
-              </div>
+              </main>
 
-              <aside class="h-max rounded-2xl bg-slate-50 p-4 lg:sticky lg:top-0" aria-label="Question navigator">
+              <aside class="h-max rounded-2xl bg-white p-4 lg:sticky lg:top-2" aria-label="Question navigator">
                 <div class="flex items-center justify-between"><div class="text-xs font-black uppercase tracking-[.15em] text-slate-400">Navigator</div><div class="text-xs font-bold text-slate-400">${state.flagged.size} flagged</div></div>
                 <div class="mt-3 grid grid-cols-5 gap-2">
-                  ${qs.map((_,i)=>`<button type="button" class="focus-ring aspect-square rounded-lg text-xs font-black ${i===state.currentQuestion?'bg-royal text-white':state.answers[i]?'bg-blue-100 text-royal':'bg-white text-slate-500 border border-slate-200'} ${state.flagged.has(i)?'ring-2 ring-warmyellow ring-offset-1':''}" data-qnav="${i}" aria-label="Go to question ${i+1}">${i+1}</button>`).join('')}
+                  ${qs.map((_,i)=>`<button type="button" class="focus-ring aspect-square rounded-lg text-xs font-black ${i===state.currentQuestion?'bg-royal text-white':state.answers[i]?'bg-blue-100 text-royal':'bg-slate-50 text-slate-500 border border-slate-200'} ${state.flagged.has(i)?'ring-2 ring-warmyellow ring-offset-1':''}" data-qnav="${i}" aria-label="Go to question ${i+1}">${i+1}</button>`).join('')}
                 </div>
               </aside>
             </div>
           </div>
 
-          <div class="safe-bottom shrink-0 border-t border-slate-100 bg-white px-5 py-4 sm:px-7">
-            <div class="flex flex-col-reverse gap-3 sm:flex-row sm:items-center sm:justify-between">
+          <div class="safe-bottom shrink-0 border-t border-slate-100 bg-white px-5 py-4 sm:px-8">
+            <div class="mx-auto flex max-w-6xl flex-col-reverse gap-3 sm:flex-row sm:items-center sm:justify-between">
               <button type="button" id="prevQuestionBtn" class="focus-ring rounded-full border border-slate-200 px-5 py-3 text-sm font-black text-slate-600 disabled:opacity-40" ${state.currentQuestion===0?'disabled':''}>← Previous</button>
               <div class="flex flex-col gap-2 sm:flex-row">
-                ${state.currentQuestion===qs.length-1 ? `<button type="button" id="submitExamBtn" class="focus-ring rounded-full bg-royal px-6 py-3 text-sm font-black text-white">${state.mode==='exam'?'Submit Exam':'Finish Practice'} →</button>` : `<button type="button" id="nextQuestionBtn" class="focus-ring rounded-full bg-royal px-6 py-3 text-sm font-black text-white">Next Question →</button>`}
+                ${state.currentQuestion===qs.length-1 ? `<button type="button" id="submitExamBtn" class="focus-ring rounded-full bg-royal px-6 py-3 text-sm font-black text-white">Finish Exam →</button>` : `<button type="button" id="nextQuestionBtn" class="focus-ring rounded-full bg-royal px-6 py-3 text-sm font-black text-white">Next Question →</button>`}
               </div>
             </div>
           </div>
@@ -677,21 +614,11 @@
       $('prevQuestionBtn').addEventListener('click', () => { if(state.currentQuestion>0){state.currentQuestion--;renderExam();} });
       const next = $('nextQuestionBtn'); if(next) next.addEventListener('click', goNext);
       const submit = $('submitExamBtn'); if(submit) submit.addEventListener('click', () => submitExam(false));
-      const hint = $('hintBtn'); if(hint) hint.addEventListener('click', () => $('hintText').classList.toggle('hidden'));
     }
 
     function chooseAnswer(letter) {
       state.answers[state.currentQuestion] = letter;
-      if (state.mode === 'practice') {
-        const q = state.lecture.activeQuestions[state.currentQuestion];
-        renderExam();
-        setTimeout(() => {
-          const correct = q.correctAnswer === letter;
-          showToast(correct ? 'Correct — strong retrieval.' : `Not quite. Correct answer: ${q.correctAnswer}`);
-        }, 10);
-      } else {
-        renderExam();
-      }
+      renderExam();
     }
 
     function goNext() {
@@ -751,14 +678,13 @@
           <div class="mt-4 space-y-3">${r.results.map((q,i)=>renderReviewCard(q,i)).join('')}</div>
         </section>
 
-        <div class="flex justify-between gap-3 border-t border-slate-100 pt-5"><button id="backToPrepBtn" type="button" class="focus-ring rounded-full border border-slate-200 px-5 py-3 text-sm font-black">Back to Lecture Prep</button><button id="closeAnalyticsBtn" type="button" class="focus-ring rounded-full bg-slate-900 px-5 py-3 text-sm font-black text-white">Close</button></div>
+        <div class="flex justify-end gap-3 border-t border-slate-100 pt-5"><button id="closeAnalyticsBtn" type="button" class="focus-ring rounded-full bg-slate-900 px-5 py-3 text-sm font-black text-white">Close</button></div>
       </div>`;
       $('redoMissedBtn').addEventListener('click', () => {
         if (!missed.length) return;
         state.redoMode=true;
         startExam('practice', missed);
       });
-      $('backToPrepBtn').addEventListener('click', () => { state.activeTab='summary'; renderPrep(); });
       $('closeAnalyticsBtn').addEventListener('click', closeModal);
     }
 
@@ -794,21 +720,13 @@
       $('appModal').classList.add('hidden');
       document.body.classList.remove('overflow-hidden');
       if (state.previousFocus && document.contains(state.previousFocus)) state.previousFocus.focus();
-      state.modalScreen = 'prep';
+      state.modalScreen = 'exam';
     }
 
     function handleGlobalKeydown(e) {
-      const modalOpen = !$('appModal').classList.contains('hidden');
-      if (!modalOpen) return;
+      const examOpen = !$('appModal').classList.contains('hidden');
+      if (!examOpen) return;
       if (e.key === 'Escape') { closeModal(); return; }
-      if (e.key === 'Tab') {
-        const focusable = [...$('appModal').querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])')].filter(el => !el.disabled && el.offsetParent !== null);
-        if (focusable.length) {
-          const first = focusable[0], last = focusable[focusable.length - 1];
-          if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
-          else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
-        }
-      }
       if (state.modalScreen === 'exam' && !['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName)) {
         if (e.key === 'ArrowRight') { e.preventDefault(); goNext(); }
         if (e.key === 'ArrowLeft' && state.currentQuestion > 0) { e.preventDefault(); state.currentQuestion--; renderExam(); }
