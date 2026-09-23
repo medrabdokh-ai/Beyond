@@ -98,7 +98,7 @@
       <div class="mx-auto grid max-w-7xl items-center gap-10 px-5 pb-20 pt-14 sm:pt-20 lg:grid-cols-[1.05fr_.95fr] lg:px-8 lg:pb-24 lg:pt-24">
         <div class="max-w-2xl">
           <div class="mb-5 inline-flex items-center gap-2 rounded-full bg-blue-50 px-3 py-1.5 text-xs font-extrabold uppercase tracking-[.16em] text-royal">
-            Pharmacy • Learn → Perform
+            Pharmacy • Learn → Practice → Perform
           </div>
           <h1 class="text-5xl font-black leading-[1.02] tracking-[-.045em] text-ink sm:text-6xl lg:text-[5.3rem]">
             Master Pharmacy Exams With <span class="relative inline-block whitespace-nowrap">Precision
@@ -116,7 +116,7 @@
           </div>
           <div class="mt-10 flex flex-wrap items-center gap-6 text-xs font-bold text-slate-400">
             <span>✓ Keyboard friendly</span>
-            <span>✓ Exam mode</span>
+            <span>✓ Practice + Exam modes</span>
             <span>✓ Performance analytics</span>
           </div>
         </div>
@@ -197,7 +197,7 @@
               </div>
               <div class="hidden rounded-full bg-white/10 px-3 py-2 text-xs font-bold sm:block">Live engine</div>
             </div>
-            <p class="mt-4 max-w-2xl text-sm leading-6 text-blue-100 sm:text-base">Start Exam Mode for a focused assessment. Your exam remains open until you finish.</p>
+            <p class="mt-4 max-w-2xl text-sm leading-6 text-blue-100 sm:text-base">Choose Practice Mode for coaching or Exam Mode for a focused assessment. Your exam remains open until you finish.</p>
             <div class="mt-7 grid gap-3 sm:grid-cols-3">
               <div class="rounded-2xl bg-white/10 p-4"><div class="text-xl font-black">01</div><div class="mt-1 text-xs font-bold text-blue-100">Answer sequentially</div></div>
               <div class="rounded-2xl bg-white/10 p-4"><div class="text-xl font-black">02</div><div class="mt-1 text-xs font-bold text-blue-100">Answer each question</div></div>
@@ -252,7 +252,7 @@
       currentQuestion: 0,
       answers: [],
       flagged: new Set(),
-      mode: 'exam',
+      mode: 'practice',
       timer: null,
       elapsedSeconds: 0,
       examStarted: false,
@@ -298,9 +298,11 @@
         entries.forEach((entry) => { if (entry.isIntersecting) setActiveNav(entry.target.id); });
       }, { rootMargin: '-35% 0px -55% 0px', threshold: 0.01 });
       ['home','curriculum','exam-portal'].forEach(id => observer.observe($(id)));
-      document.querySelectorAll('a[href^="#"]').forEach(a => a.addEventListener('click', () => $('mobileMenu').classList.add('hidden')));$('mobileMenuBtn').addEventListener('click', () => {
+      document.querySelectorAll('a[href^="#"]').forEach(a => a.addEventListener('click', () => $('mobileMenu').classList.add('hidden')));
+      $('mobileMenuBtn').addEventListener('click', () => {
         const open = $('mobileMenuBtn').getAttribute('aria-expanded') === 'true';
-        $('mobileMenuBtn').setAttribute('aria-expanded', String(!open));$('mobileMenu').classList.toggle('hidden', open);
+        $('mobileMenuBtn').setAttribute('aria-expanded', String(!open));
+        $('mobileMenu').classList.toggle('hidden', open);
       });
       $('getStartedBtn').addEventListener('click', () => document.querySelector('#curriculum').scrollIntoView({ behavior: 'smooth' }));
       $('heroCurriculumBtn').addEventListener('click', () => document.querySelector('#curriculum').scrollIntoView({ behavior: 'smooth' }));
@@ -315,7 +317,8 @@
         $('curriculumStatus').textContent = `${state.courses.levels.length} levels loaded locally`;
       } catch (error) {
         console.error(error);
-        $('curriculumStatus').textContent = 'Could not load courses.json';$('curriculumAccordion').innerHTML = `<div class="rounded-2xl border border-red-200 bg-red-50 p-5 text-sm font-semibold text-red-700">The curriculum file could not be loaded. On GitHub Pages, confirm <code>data/courses.json</code> is deployed. For local testing, use a local web server rather than opening <code>index.html</code> directly.</div>`;
+        $('curriculumStatus').textContent = 'Could not load courses.json';
+        $('curriculumAccordion').innerHTML = `<div class="rounded-2xl border border-red-200 bg-red-50 p-5 text-sm font-semibold text-red-700">The curriculum file could not be loaded. On GitHub Pages, confirm <code>data/courses.json</code> is deployed. For local testing, use a local web server rather than opening <code>index.html</code> directly.</div>`;
       }
     }
 
@@ -490,15 +493,21 @@
 
     function renderPrep() {
       const l = state.lecture;
-      $('modalKicker').textContent = 'Preparation';$('modalTitle').textContent = l.title;
+      $('modalKicker').textContent = 'Preparation';
+      $('modalTitle').textContent = l.title;
       $('modalDescription').textContent = `${l.subjectName || 'Pharmacy'} • ${l.estimatedReadTime || '10-min read'}`;
       $('modalBody').innerHTML = `
         <div class="space-y-6 p-5 sm:p-7">
-          <div class="grid gap-3">
-            <button type="button" class="mode-card focus-ring rounded-2xl bg-royal p-5 text-left text-white hover:bg-blue-800" data-mode="exam">
-              <div class="text-xs font-black uppercase tracking-[.16em] text-blue-200">Strict simulation</div>
+          <div class="grid gap-3 sm:grid-cols-2">
+            <button type="button" class="mode-card focus-ring rounded-2xl bg-royal p-5 text-left text-white hover:bg-blue-800" data-mode="practice">
+              <div class="text-xs font-black uppercase tracking-[.16em] text-blue-200">Recommended to learn</div>
+              <div class="mt-2 text-xl font-black">Practice Mode →</div>
+              <div class="mt-2 text-sm leading-6 text-blue-100">Untimed, instant feedback, hints enabled. Build accuracy before speed.</div>
+            </button>
+            <button type="button" class="mode-card focus-ring rounded-2xl border-2 border-slate-200 bg-white p-5 text-left hover:border-royal" data-mode="exam">
+              <div class="text-xs font-black uppercase tracking-[.16em] text-slate-400">Strict simulation</div>
               <div class="mt-2 text-xl font-black">Exam Mode →</div>
-              <div class="mt-2 text-sm leading-6 text-blue-100">Open time, no countdown, and finish when you are ready.</div>
+              <div class="mt-2 text-sm leading-6 text-slate-500">Open time, no countdown, and finish when you are ready.</div>
             </button>
           </div>
 
@@ -507,7 +516,8 @@
           </div>
           <div id="prepTabContent"></div>
         </div>`;
-      $('modalBody').querySelectorAll('[data-mode]').forEach(btn => btn.addEventListener('click', () => startExam(btn.dataset.mode)));$('modalBody').querySelectorAll('[data-tab]').forEach(btn => btn.addEventListener('click', () => { state.activeTab = btn.dataset.tab; renderPrep(); }));
+      $('modalBody').querySelectorAll('[data-mode]').forEach(btn => btn.addEventListener('click', () => startExam(btn.dataset.mode)));
+      $('modalBody').querySelectorAll('[data-tab]').forEach(btn => btn.addEventListener('click', () => { state.activeTab = btn.dataset.tab; renderPrep(); }));
       renderPrepTabContent();
     }
 
@@ -559,12 +569,13 @@
       card.addEventListener('click', flip);
       card.addEventListener('keydown', (e)=>{ if(e.key==='Enter'||e.key===' '){e.preventDefault();flip();} });
       $('flashPrev').addEventListener('click', () => { state.flashIndex = (state.flashIndex - 1 + state.lecture.flashcards.length) % state.lecture.flashcards.length; renderPrep(); });
-      $('flashNext').addEventListener('click', () => { state.flashIndex = (state.flashIndex + 1) \% state.lecture.flashcards.length; renderPrep(); });$('flashRepeat').addEventListener('change', (e) => { state.flashRepetition = e.target.checked; showToast(e.target.checked ? 'Spaced repetition enabled.' : 'Spaced repetition disabled.'); });
+      $('flashNext').addEventListener('click', () => { state.flashIndex = (state.flashIndex + 1) % state.lecture.flashcards.length; renderPrep(); });
+      $('flashRepeat').addEventListener('change', (e) => { state.flashRepetition = e.target.checked; showToast(e.target.checked ? 'Spaced repetition enabled.' : 'Spaced repetition disabled.'); });
     }
 
     function shuffle(array) { for (let i=array.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1)); [array[i],array[j]]=[array[j],array[i]];} return array; }
 
-    function startExam(mode='exam', questionsOverride=null) {
+    function startExam(mode='practice', questionsOverride=null) {
       state.mode = mode;
       state.modalScreen = 'exam';
       state.currentQuestion = 0;
@@ -574,11 +585,11 @@
       state.result = null;
       state.redoQuestions = questionsOverride ? [...questionsOverride] : null;
       const questions = questionsOverride ? [...questionsOverride] : [...state.lecture.questions];
-      if (!questionsOverride) shuffle(questions);
+      if (!questionsOverride && mode === 'exam') shuffle(questions);
       state.lecture = { ...state.lecture, activeQuestions: questions };
       state.elapsedSeconds = 0;
       renderExam();
-      startTimer();
+      if (mode === 'exam') startTimer(); else stopTimer();
       setTimeout(() => document.querySelector('[data-option]')?.focus(), 50);
     }
 
@@ -600,13 +611,14 @@
     function renderExam() {
       const qs = state.lecture.activeQuestions || [];
       const q = qs[state.currentQuestion];
-      $('modalKicker').textContent = 'Exam Mode';$('modalTitle').textContent = state.lecture.title;
+      $('modalKicker').textContent = state.mode === 'exam' ? 'Exam Mode' : 'Practice Mode';
+      $('modalTitle').textContent = state.lecture.title;
       $('modalDescription').textContent = `${qs.length} questions • ${state.lecture.subjectName || 'Pharmacy'}`;
       $('modalBody').innerHTML = `
         <div class="flex min-h-0 h-full flex-col">
           <div class="shrink-0 border-b border-slate-100 px-5 py-4 sm:px-7">
             <div class="flex flex-wrap items-center justify-between gap-3">
-              <div class="flex items-center gap-3"><span class="rounded-full bg-blue-50 px-3 py-1.5 text-xs font-black text-royal">Q${state.currentQuestion+1} / ${qs.length}</span></div>
+              <div class="flex items-center gap-3"><span class="rounded-full bg-blue-50 px-3 py-1.5 text-xs font-black text-royal">Q${state.currentQuestion+1} / ${qs.length}</span><span class="text-xs font-bold text-slate-400">Open time • instant feedback</span></div>
               <div class="flex items-center gap-2">
                 <div id="examTimer" class="rounded-full bg-slate-100 px-4 py-2 font-mono text-sm font-black text-ink" aria-live="off">${formatTime(state.elapsedSeconds)}</div>
                 <button type="button" id="flagBtn" class="focus-ring rounded-full border px-3 py-2 text-xs font-black ${state.flagged.has(state.currentQuestion) ? 'border-warmyellow bg-amber-50 text-warmyellow' : 'border-slate-200 text-slate-500'}" aria-pressed="${state.flagged.has(state.currentQuestion)}">${state.flagged.has(state.currentQuestion) ? '★ Flagged' : '☆ Flag'}</button>
@@ -631,7 +643,8 @@
                     </button>`;
                   }).join('')}
                 </div>
-              </div>
+                ${state.mode === 'practice' ? `<div class="mt-5 rounded-2xl border border-slate-200 bg-slate-50 p-4"><button id="hintBtn" type="button" class="focus-ring text-xs font-black text-royal">Need a hint?</button><div id="hintText" class="mt-2 hidden text-sm leading-6 text-slate-600">${esc(q.hint || 'Focus on the mechanism, definition, or discriminating feature described in the stem.')}</div></div>` : ''}
+                </div>
 
               <aside class="h-max rounded-2xl bg-slate-50 p-4 lg:sticky lg:top-0" aria-label="Question navigator">
                 <div class="flex items-center justify-between"><div class="text-xs font-black uppercase tracking-[.15em] text-slate-400">Navigator</div><div class="text-xs font-bold text-slate-400">${state.flagged.size} flagged</div></div>
@@ -646,21 +659,33 @@
             <div class="flex flex-col-reverse gap-3 sm:flex-row sm:items-center sm:justify-between">
               <button type="button" id="prevQuestionBtn" class="focus-ring rounded-full border border-slate-200 px-5 py-3 text-sm font-black text-slate-600 disabled:opacity-40" ${state.currentQuestion===0?'disabled':''}>← Previous</button>
               <div class="flex flex-col gap-2 sm:flex-row">
-                ${state.currentQuestion===qs.length-1 ? `<button type="button" id="submitExamBtn" class="focus-ring rounded-full bg-royal px-6 py-3 text-sm font-black text-white">Submit Exam →</button>` : `<button type="button" id="nextQuestionBtn" class="focus-ring rounded-full bg-royal px-6 py-3 text-sm font-black text-white">Next Question →</button>`}
+                ${state.currentQuestion===qs.length-1 ? `<button type="button" id="submitExamBtn" class="focus-ring rounded-full bg-royal px-6 py-3 text-sm font-black text-white">${state.mode==='exam'?'Submit Exam':'Finish Practice'} →</button>` : `<button type="button" id="nextQuestionBtn" class="focus-ring rounded-full bg-royal px-6 py-3 text-sm font-black text-white">Next Question →</button>`}
               </div>
             </div>
           </div>
         </div>`;
 
-      $('flagBtn').addEventListener('click', () => { if(state.flagged.has(state.currentQuestion)) state.flagged.delete(state.currentQuestion); else state.flagged.add(state.currentQuestion); renderExam(); });$('modalBody').querySelectorAll('[data-option]').forEach(btn => btn.addEventListener('click', () => chooseAnswer(btn.dataset.option)));
-      $('modalBody').querySelectorAll('[data-qnav]').forEach(btn => btn.addEventListener('click', () => { state.currentQuestion=Number(btn.dataset.qnav); renderExam(); }));$('prevQuestionBtn').addEventListener('click', () => { if(state.currentQuestion>0){state.currentQuestion--;renderExam();} });
+      $('flagBtn').addEventListener('click', () => { if(state.flagged.has(state.currentQuestion)) state.flagged.delete(state.currentQuestion); else state.flagged.add(state.currentQuestion); renderExam(); });
+      $('modalBody').querySelectorAll('[data-option]').forEach(btn => btn.addEventListener('click', () => chooseAnswer(btn.dataset.option)));
+      $('modalBody').querySelectorAll('[data-qnav]').forEach(btn => btn.addEventListener('click', () => { state.currentQuestion=Number(btn.dataset.qnav); renderExam(); }));
+      $('prevQuestionBtn').addEventListener('click', () => { if(state.currentQuestion>0){state.currentQuestion--;renderExam();} });
       const next = $('nextQuestionBtn'); if(next) next.addEventListener('click', goNext);
       const submit = $('submitExamBtn'); if(submit) submit.addEventListener('click', () => submitExam(false));
+      const hint = $('hintBtn'); if(hint) hint.addEventListener('click', () => $('hintText').classList.toggle('hidden'));
     }
 
     function chooseAnswer(letter) {
       state.answers[state.currentQuestion] = letter;
-      renderExam();
+      if (state.mode === 'practice') {
+        const q = state.lecture.activeQuestions[state.currentQuestion];
+        renderExam();
+        setTimeout(() => {
+          const correct = q.correctAnswer === letter;
+          showToast(correct ? 'Correct — strong retrieval.' : `Not quite. Correct answer: ${q.correctAnswer}`);
+        }, 10);
+      } else {
+        renderExam();
+      }
     }
 
     function goNext() {
@@ -671,7 +696,7 @@
     function submitExam(auto=false) {
       if (!auto) {
         const unanswered = state.answers.filter(Boolean).length;
-        if (unanswered < state.answers.length) {
+        if (state.mode === 'exam' && unanswered < state.answers.length) {
           const proceed = confirm(`You have ${state.answers.length-unanswered} unanswered question(s). Submit anyway?`);
           if (!proceed) return;
         }
@@ -702,7 +727,8 @@
         subtopics[key].total++;
         if(q.correct) subtopics[key].correct++;
       });
-      $('modalKicker').textContent = 'Post-Exam Analytics';$('modalTitle').textContent = state.lecture.title;
+      $('modalKicker').textContent = 'Post-Exam Analytics';
+      $('modalTitle').textContent = state.lecture.title;
       $('modalDescription').textContent = `${r.correctCount}/${r.results.length} correct • ${r.score}% • Time: ${formatTime(r.elapsedSeconds)}`;
       $('modalBody').innerHTML = `<div class="space-y-7 p-5 sm:p-7">
         <div class="grid gap-4 sm:grid-cols-[180px_1fr]">
@@ -710,7 +736,7 @@
           <div class="rounded-[2rem] border border-slate-200 p-6"><div class="text-xs font-black uppercase tracking-[.16em] text-slate-400">Attempt summary</div><div class="mt-4 grid gap-4 sm:grid-cols-3"><div><div class="text-2xl font-black">${r.correctCount}</div><div class="text-xs font-semibold text-slate-400">Correct</div></div><div><div class="text-2xl font-black">${r.results.length-r.correctCount}</div><div class="text-xs font-semibold text-slate-400">Missed</div></div><div><div class="text-2xl font-black">${formatTime(r.elapsedSeconds)}</div><div class="text-xs font-semibold text-slate-400">Time taken</div></div></div></div>
         </div>
 
-        <section aria-labelledby="weaknessHeading"><div class="flex items-end justify-between gap-3"><div><div class="text-xs font-black uppercase tracking-[.18em] text-skyx">Weakness analytics</div><h3 id="weaknessHeading" class="mt-1 text-xl font-black">Performance by sub-topic</h3></div><div class="text-xs font-bold text-slate-400">Sorted by lowest accuracy</div></div>
+        <section aria-labelledby="weaknessHeading"><div class="flex items-end justify-between gap-3"><div><div class="text-xs font-black uppercase tracking-[.16em] text-skyx">Weakness analytics</div><h3 id="weaknessHeading" class="mt-1 text-xl font-black">Performance by sub-topic</h3></div><div class="text-xs font-bold text-slate-400">Sorted by lowest accuracy</div></div>
           <div class="mt-4 space-y-3">${Object.entries(subtopics).sort((a,b)=>(a[1].correct/a[1].total)-(b[1].correct/b[1].total)).map(([topic,v])=>{const p=Math.round((v.correct/v.total)*100);return `<div class="rounded-2xl border border-slate-200 p-4"><div class="flex items-center justify-between gap-3"><span class="text-sm font-black">${esc(topic)}</span><span class="text-xs font-black text-slate-500">${p}% • ${v.correct}/${v.total}</span></div><div class="mt-3 h-2 rounded-full bg-slate-100"><div class="h-full rounded-full ${p<60?'bg-warmred':p<80?'bg-warmyellow':'bg-royal'}" style="width:${p}%"></div></div></div>`;}).join('')}</div>
         </section>
 
@@ -723,9 +749,10 @@
       $('redoMissedBtn').addEventListener('click', () => {
         if (!missed.length) return;
         state.redoMode=true;
-        startExam('exam', missed);
+        startExam('practice', missed);
       });
-      $('backToPrepBtn').addEventListener('click', () => { state.activeTab='summary'; renderPrep(); });$('closeAnalyticsBtn').addEventListener('click', closeModal);
+      $('backToPrepBtn').addEventListener('click', () => { state.activeTab='summary'; renderPrep(); });
+      $('closeAnalyticsBtn').addEventListener('click', closeModal);
     }
 
     function renderReviewCard(q,i) {
@@ -743,8 +770,10 @@
     }
 
     function renderErrorScreen(message) {
-      $('modalKicker').textContent = 'Data error';$('modalTitle').textContent = 'Could not open this lecture';
-      $('modalDescription').textContent = 'Please check the local JSON data.';$('modalBody').innerHTML = `<div class="m-5 rounded-2xl border border-red-200 bg-red-50 p-6 text-sm text-red-700">${esc(message)}</div>`;
+      $('modalKicker').textContent = 'Data error';
+      $('modalTitle').textContent = 'Could not open this lecture';
+      $('modalDescription').textContent = 'Please check the local JSON data.';
+      $('modalBody').innerHTML = `<div class="m-5 rounded-2xl border border-red-200 bg-red-50 p-6 text-sm text-red-700">${esc(message)}</div>`;
     }
 
     function openModal() {
@@ -802,5 +831,4 @@
     loadCourses();
   </script>
 </body>
-</html>
-
+  </html>
