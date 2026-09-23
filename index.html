@@ -450,18 +450,17 @@
     }
 
     async function openLecture(file, subject) {
-      state.redoMode = false;
-      state.previousFocus = document.activeElement;
-      openModal();
-      try {
-        const lecture = await loadJSON(`./${file}`);
-        state.lecture = { ...lecture, subjectName: subject.name, subjectId: subject.id };
-        state.activeTab = 'summary';
-        renderPrep();
-      } catch (error) {
-        console.error(error);
-        renderErrorScreen('Lecture data could not be loaded. Check the JSON file path in courses.json.');
-      }
+  try {
+    const lecture = await loadJSON(`./${file}`);
+
+    state.currentLecture = lecture;
+    state.currentSubject = subject;
+
+    startExam('exam', lecture.questions);
+  } catch (error) {
+    console.error(error);
+    showToast('Could not load the lecture.');
+  }
     }
 
     async function openComprehensive(subject) {
