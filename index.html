@@ -315,7 +315,7 @@
 
     async function loadCourses() {
       try {
-        state.courses = await loadJSON('./data/courses.json');
+        state.courses = await loadJSON('./courses.json');
         renderCurriculum();
         $('curriculumStatus').textContent = `${state.courses.levels.length} levels loaded locally`;
       } catch (error) {
@@ -825,7 +825,7 @@
 
     async function openDemoExam() {
       try {
-        if (!state.courses) state.courses = await loadJSON('./data/courses.json');
+        if (!state.courses) state.courses = await loadJSON('./courses.json');
         let first = null, subject = null;
         outer: for (const level of state.courses.levels) {
           for (const sem of level.semesters || []) {
