@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1E40AF" />
+  <meta name="description" content="Beyond The Imagination — free demonstration of the pharmacy exam experience." />
+  <title>Demo Exam | Beyond The Imagination</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            royal: '#1E40AF',
+            skyx: '#0EA5E9',
+            ink: '#0F172A',
+            warmred: '#EF4444',
+            warmyellow: '#F59E0B'
+          },
+          fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'] }
+        }
+      }
+    };
+  </script>
+  <style>
+    :root { color-scheme: light; }
+    body { font-family: Inter, ui-sans-serif, system-ui, sans-serif; }
+    .focus-ring:focus-visible, button:focus-visible, a:focus-visible {
+      outline: 3px solid rgba(14,165,233,.45); outline-offset: 3px;
+    }
+    .thin-scrollbar::-webkit-scrollbar { width: 8px; }
+    .thin-scrollbar::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 999px; }
+    .safe-bottom { padding-bottom: max(1rem, env(safe-area-inset-bottom)); }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; scroll-behavior: auto !important; }
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-slate-50 text-ink antialiased">
+  <header class="border-b border-slate-200 bg-white">
+    <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-4 lg:px-8">
+      <a href="./index.html" class="focus-ring flex items-center gap-3 rounded-xl" aria-label="Back to Beyond The Imagination home">
+        <div class="grid h-10 w-10 place-items-center rounded-xl bg-royal text-white">
+          <svg viewBox="0 0 48 48" class="h-6 w-6" aria-hidden="true">
+            <path d="M10 12h15a5 5 0 0 1 5 5v18H15a5 5 0 0 0-5 5V12Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+            <path d="M30 17a5 5 0 0 1 5-5h3v28H35a5 5 0 0 0-5 5V17Z" fill="currentColor" opacity=".2"/>
+            <path d="M23 7v10M18 12h10" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div>
+          <div class="text-sm font-black leading-tight">Beyond The Imagination</div>
+          <div class="text-[11px] font-semibold text-slate-500">Demo Exam</div>
+        </div>
+      </a>
+      <a href="./index.html" class="focus-ring rounded-full border border-slate-200 px-4 py-2 text-sm font-bold text-slate-600 hover:border-royal hover:text-royal">← Home</a>
+    </div>
+  </header>
+
+  <main id="app" class="mx-auto max-w-6xl px-5 py-10 lg:px-8 lg:py-14"></main>
+
+  <script>
+    const state = {
+      screen: 'intro',
+      questions: [],
+      current: 0,
+      answers: [],
+      elapsedSeconds: 0,
+      timer: null,
+      submitted: false
+    };
+
+    const $ = (id) => document.getElementById(id);
+    const esc = (value='') => String(value).replace(/[&<>"']/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    const formatTime = (seconds) => `${String(Math.floor(seconds / 60)).padStart(2,'0')}:${String(seconds % 60).padStart(2,'0')}`;
+
+    function startClock() {
+      clearInterval(state.timer);
+      state.timer = setInterval(() => {
+        state.elapsedSeconds += 1;
+        const el = document.getElementById('demoTimer');
+        if (el) el.textContent = formatTime(state.elapsedSeconds);
+      }, 1000);
+    }
+
+    function stopClock() {
+      clearInterval(state.timer);
+      state.timer = null;
+    }
+
+    async function loadJSON(path) {
+      const response = await fetch(path, { cache: 'no-store' });
+      if (!response.ok) throw new Error(`Could not load ${path} (${response.status})`);
+      return response.json();
+    }
+
+    async function getDemoQuestions() {
+      const courses = await loadJSON('./courses.json');
+      let lecture = null;
+      outer:
+      for (const level of courses.levels || []) {
+        for (const semester of level.semesters || []) {
+          for (const subject of semester.subjects || []) {
+            if (subject.lectures?.length) {
+              lecture = subject.lectures[0];
+              break outer;
+            }
+          }
+        }
+      }
+      if (!lecture) throw new Error('No lecture is available for the demo.');
+      const bank = await loadJSON(`./${lecture.file}`);
+      const questions = Array.isArray(bank.questions) ? bank.questions.slice(0, 5) : [];
+      if (!questions.length) throw new Error('The demo question bank is empty.');
+      return questions;
+    }
+
+    function renderIntro() {
+      $('app').innerHTML = `
+        <section class="mx-auto max-w-3xl rounded-[2rem] border border-slate-200 bg-white p-7 shadow-sm sm:p-10">
+          <div class="text-xs font-black uppercase tracking-[.2em] text-skyx">DEMO EXAM</div>
+          <h1 class="mt-3 text-4xl font-black tracking-tight sm:text-5xl">You know what “Demo” means, right? 🙂</h1>
+          <p class="mt-5 text-base leading-7 text-slate-600 sm:text-lg">
+            <span class="font-black text-ink">Demo</span> comes from <span class="font-black text-ink">demonstration</span>.
+            This is a free demonstration of the exam experience, so you can see how the platform works before using the full system.
+          </p>
+          <div class="mt-6 rounded-2xl bg-blue-50 p-5 text-sm leading-6 text-blue-900">
+            Try a few real questions, answer normally, and see the feedback and final result. There is no account and no payment required for this demo.
+          </div>
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+            <button id="startDemoBtn" type="button" class="focus-ring rounded-full bg-royal px-6 py-3.5 text-sm font-black text-white hover:bg-blue-800">Start Demo Exam →</button>
+            <a href="./index.html" class="focus-ring rounded-full border-2 border-slate-200 px-6 py-3.5 text-center text-sm font-black text-slate-700 hover:border-royal hover:text-royal">Back to Home</a>
+          </div>
+        </section>`;
+      $('startDemoBtn').addEventListener('click', startDemo);
+    }
+
+    function renderLoading() {
+      $('app').innerHTML = `<section class="mx-auto max-w-3xl rounded-[2rem] border border-slate-200 bg-white p-8 text-center"><div class="text-sm font-black text-slate-500">Loading demo questions…</div></section>`;
+    }
+
+    function renderError(error) {
+      $('app').innerHTML = `<section class="mx-auto max-w-3xl rounded-[2rem] border border-red-200 bg-red-50 p-8"><div class="text-xs font-black uppercase tracking-[.16em] text-red-600">Demo error</div><h1 class="mt-2 text-2xl font-black text-red-900">Could not load the demo</h1><p class="mt-3 text-sm leading-6 text-red-800">${esc(error.message || 'Please check courses.json and the lecture JSON file.')}</p><a href="./index.html" class="focus-ring mt-6 inline-flex rounded-full bg-slate-900 px-5 py-3 text-sm font-black text-white">Back to Home</a></section>`;
+    }
+
+    async function startDemo() {
+      renderLoading();
+      try {
+        state.questions = await getDemoQuestions();
+        state.current = 0;
+        state.answers = Array(state.questions.length).fill(null);
+        state.elapsedSeconds = 0;
+        state.submitted = false;
+        state.screen = 'exam';
+        renderExam();
+        startClock();
+        setTimeout(() => document.querySelector('[data-option]')?.focus(), 50);
+      } catch (error) {
+        console.error(error);
+        renderError(error);
+      }
+    }
+
+    function chooseAnswer(letter) {
+      if (state.submitted) return;
+      state.answers[state.current] = letter;
+      renderExam();
+    }
+
+    function renderExam() {
+      const q = state.questions[state.current];
+      const selected = state.answers[state.current];
+      $('app').innerHTML = `
+        <section class="min-h-[calc(100vh-180px)] rounded-[2rem] border border-slate-200 bg-white shadow-sm">
+          <div class="border-b border-slate-100 px-5 py-4 sm:px-7">
+            <div class="flex flex-wrap items-center justify-between gap-3">
+              <div class="flex items-center gap-3">
+                <span class="rounded-full bg-blue-50 px-3 py-1.5 text-xs font-black text-royal">Question ${state.current + 1} / ${state.questions.length}</span>
+                <span class="text-xs font-bold text-slate-400">Free demo • open time</span>
+              </div>
+              <div id="demoTimer" class="rounded-full bg-slate-100 px-4 py-2 font-mono text-sm font-black text-ink">${formatTime(state.elapsedSeconds)}</div>
+            </div>
+            <div class="mt-4 h-1.5 overflow-hidden rounded-full bg-slate-100"><div class="h-full rounded-full bg-skyx" style="width:${((state.current + 1) / state.questions.length) * 100}%"></div></div>
+          </div>
+
+          <div class="p-5 sm:p-8">
+            <div class="text-xs font-black uppercase tracking-[.16em] text-slate-400">Demo question</div>
+            <h1 class="mt-3 max-w-4xl text-2xl font-black leading-tight sm:text-3xl">${esc(q.question)}</h1>
+            <div class="mt-7 grid max-w-4xl gap-3">
+              ${q.options.map((option, i) => {
+                const letter = String.fromCharCode(65 + i);
+                const isSelected = selected === letter;
+                return `<button type="button" class="option-btn focus-ring flex w-full items-start gap-4 rounded-2xl border-2 ${isSelected ? 'border-royal bg-blue-50' : 'border-slate-200 bg-white'} p-4 text-left hover:border-blue-200" data-option="${letter}" aria-pressed="${isSelected}">
+                  <span class="grid h-8 w-8 shrink-0 place-items-center rounded-lg ${isSelected ? 'bg-royal text-white' : 'bg-slate-100 text-slate-500'} text-xs font-black">${letter}</span>
+                  <span class="pt-1 text-sm font-semibold leading-6 text-slate-700">${esc(option)}</span>
+                </button>`;
+              }).join('')}
+            </div>
+            <div class="mt-8 flex flex-col-reverse gap-3 border-t border-slate-100 pt-5 sm:flex-row sm:items-center sm:justify-between">
+              <button id="prevBtn" type="button" class="focus-ring rounded-full border border-slate-200 px-5 py-3 text-sm font-black text-slate-600 disabled:opacity-40" ${state.current === 0 ? 'disabled' : ''}>← Previous</button>
+              <button id="nextBtn" type="button" class="focus-ring rounded-full bg-royal px-6 py-3 text-sm font-black text-white disabled:opacity-40" ${selected ? '' : 'disabled'}>${state.current === state.questions.length - 1 ? 'Finish Demo →' : 'Next Question →'}</button>
+            </div>
+          </div>
+        </section>`;
+
+      document.querySelectorAll('[data-option]').forEach(btn => btn.addEventListener('click', () => chooseAnswer(btn.dataset.option)));
+      $('prevBtn').addEventListener('click', () => { if (state.current > 0) { state.current -= 1; renderExam(); } });
+      $('nextBtn').addEventListener('click', () => {
+        if (!state.answers[state.current]) return;
+        if (state.current < state.questions.length - 1) {
+          state.current += 1;
+          renderExam();
+          setTimeout(() => document.querySelector('[data-option]')?.focus(), 50);
+        } else {
+          finishDemo();
+        }
+      });
+    }
+
+    function finishDemo() {
+      stopClock();
+      state.submitted = true;
+      const correct = state.questions.reduce((count, q, i) => count + (state.answers[i] === q.correctAnswer ? 1 : 0), 0);
+      const score = Math.round((correct / state.questions.length) * 100);
+      state.screen = 'result';
+      $('app').innerHTML = `
+        <section class="mx-auto max-w-4xl rounded-[2rem] border border-slate-200 bg-white p-7 shadow-sm sm:p-10">
+          <div class="text-xs font-black uppercase tracking-[.2em] text-skyx">DEMO COMPLETED</div>
+          <h1 class="mt-3 text-4xl font-black tracking-tight sm:text-5xl">That was the demonstration.</h1>
+          <div class="mt-7 grid gap-4 sm:grid-cols-3">
+            <div class="rounded-2xl bg-slate-50 p-5"><div class="text-3xl font-black">${score}%</div><div class="mt-1 text-xs font-bold text-slate-400">Score</div></div>
+            <div class="rounded-2xl bg-slate-50 p-5"><div class="text-3xl font-black">${correct}/${state.questions.length}</div><div class="mt-1 text-xs font-bold text-slate-400">Correct</div></div>
+            <div class="rounded-2xl bg-slate-50 p-5"><div class="text-3xl font-black">${formatTime(state.elapsedSeconds)}</div><div class="mt-1 text-xs font-bold text-slate-400">Time taken</div></div>
+          </div>
+          <div class="mt-8 space-y-3">
+            ${state.questions.map((q, i) => {
+              const ok = state.answers[i] === q.correctAnswer;
+              const correctText = q.options?.[q.correctAnswer.charCodeAt(0) - 65] || q.correctAnswer;
+              const userText = q.options?.[state.answers[i]?.charCodeAt(0) - 65] || 'No answer';
+              return `<details class="rounded-2xl border border-slate-200 p-4" ${ok ? '' : 'open'}>
+                <summary class="focus-ring cursor-pointer list-none font-black"><span class="mr-2 inline-grid h-7 w-7 place-items-center rounded-lg ${ok ? 'bg-emerald-100 text-emerald-700' : 'bg-red-100 text-red-700'} text-xs">${i + 1}</span>${esc(q.question)}</summary>
+                <div class="mt-4 grid gap-3 border-t border-slate-100 pt-4 text-sm">
+                  <div class="rounded-xl bg-slate-50 p-3"><div class="text-[10px] font-black uppercase tracking-[.15em] text-slate-400">Your answer</div><div class="mt-1 font-semibold text-slate-700">${esc(userText)}</div></div>
+                  <div class="rounded-xl bg-blue-50 p-3"><div class="text-[10px] font-black uppercase tracking-[.15em] text-royal">Correct answer</div><div class="mt-1 font-bold text-slate-700">${esc(correctText)}</div></div>
+                </div>
+              </details>`;
+            }).join('')}
+          </div>
+          <div class="mt-8 flex flex-wrap gap-3 border-t border-slate-100 pt-6">
+            <button id="tryAgainBtn" type="button" class="focus-ring rounded-full bg-royal px-6 py-3.5 text-sm font-black text-white hover:bg-blue-800">Try Demo Again →</button>
+            <a href="./index.html" class="focus-ring rounded-full border-2 border-slate-200 px-6 py-3.5 text-sm font-black text-slate-700 hover:border-royal hover:text-royal">Back to Home</a>
+          </div>
+        </section>`;
+      $('tryAgainBtn').addEventListener('click', startDemo);
+    }
+
+    renderIntro();
+  </script>
+</body>
+</html>
