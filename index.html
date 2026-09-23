@@ -298,11 +298,9 @@
         entries.forEach((entry) => { if (entry.isIntersecting) setActiveNav(entry.target.id); });
       }, { rootMargin: '-35% 0px -55% 0px', threshold: 0.01 });
       ['home','curriculum','exam-portal'].forEach(id => observer.observe($(id)));
-      document.querySelectorAll('a[href^="#"]').forEach(a => a.addEventListener('click', () => $('mobileMenu').classList.add('hidden')));
-      $('mobileMenuBtn').addEventListener('click', () => {
+      document.querySelectorAll('a[href^="#"]').forEach(a => a.addEventListener('click', () => $('mobileMenu').classList.add('hidden')));$('mobileMenuBtn').addEventListener('click', () => {
         const open = $('mobileMenuBtn').getAttribute('aria-expanded') === 'true';
-        $('mobileMenuBtn').setAttribute('aria-expanded', String(!open));
-        $('mobileMenu').classList.toggle('hidden', open);
+        $('mobileMenuBtn').setAttribute('aria-expanded', String(!open));$('mobileMenu').classList.toggle('hidden', open);
       });
       $('getStartedBtn').addEventListener('click', () => document.querySelector('#curriculum').scrollIntoView({ behavior: 'smooth' }));
       $('heroCurriculumBtn').addEventListener('click', () => document.querySelector('#curriculum').scrollIntoView({ behavior: 'smooth' }));
@@ -317,8 +315,7 @@
         $('curriculumStatus').textContent = `${state.courses.levels.length} levels loaded locally`;
       } catch (error) {
         console.error(error);
-        $('curriculumStatus').textContent = 'Could not load courses.json';
-        $('curriculumAccordion').innerHTML = `<div class="rounded-2xl border border-red-200 bg-red-50 p-5 text-sm font-semibold text-red-700">The curriculum file could not be loaded. On GitHub Pages, confirm <code>data/courses.json</code> is deployed. For local testing, use a local web server rather than opening <code>index.html</code> directly.</div>`;
+        $('curriculumStatus').textContent = 'Could not load courses.json';$('curriculumAccordion').innerHTML = `<div class="rounded-2xl border border-red-200 bg-red-50 p-5 text-sm font-semibold text-red-700">The curriculum file could not be loaded. On GitHub Pages, confirm <code>data/courses.json</code> is deployed. For local testing, use a local web server rather than opening <code>index.html</code> directly.</div>`;
       }
     }
 
@@ -450,17 +447,20 @@
     }
 
     async function openLecture(file, subject) {
-  try {
-    const lecture = await loadJSON(`./${file}`);
-
-    state.currentLecture = lecture;
-    state.currentSubject = subject;
-
-    startExam('exam', lecture.questions);
-  } catch (error) {
-    console.error(error);
-    showToast('Could not load the lecture.');
-  }
+      state.redoMode = false;
+      state.previousFocus = document.activeElement;
+      openModal();
+      try {
+        const lecture = await loadJSON(`./data/lectures/${file}`);
+        state.lecture = {
+          ...lecture,
+          subjectName: subject ? subject.name : 'Pharmacy'
+        };
+        startExam('exam');
+      } catch (error) {
+        console.error(error);
+        renderErrorScreen('The lecture question bank could not be loaded.');
+      }
     }
 
     async function openComprehensive(subject) {
@@ -482,8 +482,7 @@
           keyTerms: [], resources: [], flashcards: [], questions,
           passMark: base.passMark || 70
         };
-        state.activeTab = 'summary';
-        renderPrep();
+        startExam('exam');
       } catch (error) {
         console.error(error);
         renderErrorScreen('The comprehensive question bank could not be assembled.');
@@ -492,8 +491,7 @@
 
     function renderPrep() {
       const l = state.lecture;
-      $('modalKicker').textContent = 'Preparation';
-      $('modalTitle').textContent = l.title;
+      $('modalKicker').textContent = 'Preparation';$('modalTitle').textContent = l.title;
       $('modalDescription').textContent = `${l.subjectName || 'Pharmacy'} • ${l.estimatedReadTime || '10-min read'}`;
       $('modalBody').innerHTML = `
         <div class="space-y-6 p-5 sm:p-7">
@@ -515,8 +513,7 @@
           </div>
           <div id="prepTabContent"></div>
         </div>`;
-      $('modalBody').querySelectorAll('[data-mode]').forEach(btn => btn.addEventListener('click', () => startExam(btn.dataset.mode)));
-      $('modalBody').querySelectorAll('[data-tab]').forEach(btn => btn.addEventListener('click', () => { state.activeTab = btn.dataset.tab; renderPrep(); }));
+      $('modalBody').querySelectorAll('[data-mode]').forEach(btn => btn.addEventListener('click', () => startExam(btn.dataset.mode)));$('modalBody').querySelectorAll('[data-tab]').forEach(btn => btn.addEventListener('click', () => { state.activeTab = btn.dataset.tab; renderPrep(); }));
       renderPrepTabContent();
     }
 
@@ -568,8 +565,7 @@
       card.addEventListener('click', flip);
       card.addEventListener('keydown', (e)=>{ if(e.key==='Enter'||e.key===' '){e.preventDefault();flip();} });
       $('flashPrev').addEventListener('click', () => { state.flashIndex = (state.flashIndex - 1 + state.lecture.flashcards.length) % state.lecture.flashcards.length; renderPrep(); });
-      $('flashNext').addEventListener('click', () => { state.flashIndex = (state.flashIndex + 1) % state.lecture.flashcards.length; renderPrep(); });
-      $('flashRepeat').addEventListener('change', (e) => { state.flashRepetition = e.target.checked; showToast(e.target.checked ? 'Spaced repetition enabled.' : 'Spaced repetition disabled.'); });
+      $('flashNext').addEventListener('click', () => { state.flashIndex = (state.flashIndex + 1) \% state.lecture.flashcards.length; renderPrep(); });$('flashRepeat').addEventListener('change', (e) => { state.flashRepetition = e.target.checked; showToast(e.target.checked ? 'Spaced repetition enabled.' : 'Spaced repetition disabled.'); });
     }
 
     function shuffle(array) { for (let i=array.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1)); [array[i],array[j]]=[array[j],array[i]];} return array; }
@@ -610,8 +606,7 @@
     function renderExam() {
       const qs = state.lecture.activeQuestions || [];
       const q = qs[state.currentQuestion];
-      $('modalKicker').textContent = state.mode === 'exam' ? 'Exam Mode' : 'Practice Mode';
-      $('modalTitle').textContent = state.lecture.title;
+      $('modalKicker').textContent = state.mode === 'exam' ? 'Exam Mode' : 'Practice Mode';$('modalTitle').textContent = state.lecture.title;
       $('modalDescription').textContent = `${qs.length} questions • ${state.lecture.subjectName || 'Pharmacy'}`;
       $('modalBody').innerHTML = `
         <div class="flex min-h-0 h-full flex-col">
@@ -664,13 +659,11 @@
           </div>
         </div>`;
 
-      $('flagBtn').addEventListener('click', () => { if(state.flagged.has(state.currentQuestion)) state.flagged.delete(state.currentQuestion); else state.flagged.add(state.currentQuestion); renderExam(); });
-      $('modalBody').querySelectorAll('[data-option]').forEach(btn => btn.addEventListener('click', () => chooseAnswer(btn.dataset.option)));
-      $('modalBody').querySelectorAll('[data-qnav]').forEach(btn => btn.addEventListener('click', () => { state.currentQuestion=Number(btn.dataset.qnav); renderExam(); }));
-      $('prevQuestionBtn').addEventListener('click', () => { if(state.currentQuestion>0){state.currentQuestion--;renderExam();} });
+      $('flagBtn').addEventListener('click', () => { if(state.flagged.has(state.currentQuestion)) state.flagged.delete(state.currentQuestion); else state.flagged.add(state.currentQuestion); renderExam(); });$('modalBody').querySelectorAll('[data-option]').forEach(btn => btn.addEventListener('click', () => chooseAnswer(btn.dataset.option)));
+      $('modalBody').querySelectorAll('[data-qnav]').forEach(btn => btn.addEventListener('click', () => { state.currentQuestion=Number(btn.dataset.qnav); renderExam(); }));$('prevQuestionBtn').addEventListener('click', () => { if(state.currentQuestion>0){state.currentQuestion--;renderExam();} });
       const next = $('nextQuestionBtn'); if(next) next.addEventListener('click', goNext);
       const submit = $('submitExamBtn'); if(submit) submit.addEventListener('click', () => submitExam(false));
-      const hint = $('hintBtn'); if(hint) hint.addEventListener('click', () => $('hintText').classList.toggle('hidden'));
+      const hint = $('hintBtn'); if(hint) hint.addEventListener('click', () =>$('hintText').classList.toggle('hidden'));
     }
 
     function chooseAnswer(letter) {
@@ -726,8 +719,7 @@
         subtopics[key].total++;
         if(q.correct) subtopics[key].correct++;
       });
-      $('modalKicker').textContent = 'Post-Exam Analytics';
-      $('modalTitle').textContent = state.lecture.title;
+      $('modalKicker').textContent = 'Post-Exam Analytics';$('modalTitle').textContent = state.lecture.title;
       $('modalDescription').textContent = `${r.correctCount}/${r.results.length} correct • ${r.score}% • Time: ${formatTime(r.elapsedSeconds)}`;
       $('modalBody').innerHTML = `<div class="space-y-7 p-5 sm:p-7">
         <div class="grid gap-4 sm:grid-cols-[180px_1fr]">
@@ -750,8 +742,7 @@
         state.redoMode=true;
         startExam('practice', missed);
       });
-      $('backToPrepBtn').addEventListener('click', () => { state.activeTab='summary'; renderPrep(); });
-      $('closeAnalyticsBtn').addEventListener('click', closeModal);
+      $('backToPrepBtn').addEventListener('click', () => { state.activeTab='summary'; renderPrep(); });$('closeAnalyticsBtn').addEventListener('click', closeModal);
     }
 
     function renderReviewCard(q,i) {
@@ -769,10 +760,8 @@
     }
 
     function renderErrorScreen(message) {
-      $('modalKicker').textContent = 'Data error';
-      $('modalTitle').textContent = 'Could not open this lecture';
-      $('modalDescription').textContent = 'Please check the local JSON data.';
-      $('modalBody').innerHTML = `<div class="m-5 rounded-2xl border border-red-200 bg-red-50 p-6 text-sm text-red-700">${esc(message)}</div>`;
+      $('modalKicker').textContent = 'Data error';$('modalTitle').textContent = 'Could not open this lecture';
+      $('modalDescription').textContent = 'Please check the local JSON data.';$('modalBody').innerHTML = `<div class="m-5 rounded-2xl border border-red-200 bg-red-50 p-6 text-sm text-red-700">${esc(message)}</div>`;
     }
 
     function openModal() {
@@ -831,3 +820,4 @@
   </script>
 </body>
 </html>
+
