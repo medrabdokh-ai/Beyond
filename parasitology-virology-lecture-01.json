@@ -1,0 +1,472 @@
+{
+  "id": "parasitology-virology-lecture-01",
+  "title": "Introduction to Medical Virology — Lecture I",
+  "subjectName": "Parasitology and Virology",
+  "estimatedReadTime": "25-min read",
+  "estimatedExamTime": "20-min exam",
+  "durationMinutes": 20,
+  "passMark": 70,
+  "summary": [
+    "Viruses are obligate intracellular submicroscopic infectious agents that replicate only inside living cells and can infect animal, plant, bacterial, and protozoal cells.",
+    "The term virus comes from Latin and means poison or toxic fluid; the discovery history begins with Dmitri Ivanovsky's 1892 tobacco-mosaic-virus filtration experiment and Martinus Beijerinck's 1898 interpretation.",
+    "Three hypotheses have been proposed for virus origin: regressive, escape/progressive, and co-evolution/virus-first; none has been clearly confirmed to date.",
+    "Viruses are classified according to size, structure, genome, physical properties, chemical properties, and target tissue.",
+    "Viral particles contain a core and capsid, with an envelope present in some viruses and matrix protein in enveloped viruses; capsid plus nucleic-acid core forms the nucleocapsid.",
+    "The viral genome contains either DNA or RNA, not both, and may be single- or double-stranded, linear or circular, and segmented or non-segmented.",
+    "The capsid protects viral nucleic acid, participates in delivery into host cells through attachment proteins, determines antigenic characteristics, and determines viral symmetry.",
+    "Major viral symmetry patterns are icosahedral, helical, and complex. Viral envelopes are lipoprotein structures whose lipid portion is derived from host membranes.",
+    "Physical and chemical stability varies with heat, cold, dryness, ultraviolet radiation, ether/chloroform, glycerol, formaldehyde, chlorine, and iodine. Target-cell specificity is described by viral tropism.",
+    "Viral replication proceeds through adsorption, penetration, uncoating, synthesis of viral macromolecules, assembly, and release; viral particles may be complete, defective, pseudoviruses, or coreless, while subviral agents include prions and viroids."
+  ],
+  "keyTerms": [
+    {
+      "term": "Obligate intracellular agent",
+      "definition": "An agent that requires a living host cell for replication and cannot thrive and reproduce outside the living cell."
+    },
+    {
+      "term": "Contagium vivum fluidum",
+      "definition": "The term used by Martinus Beijerinck for the filtered infectious agent; infectious, living, fluid."
+    },
+    {
+      "term": "Regressive hypothesis",
+      "definition": "The hypothesis that viruses began as small pre-virus cells that lost metabolic and reproductive abilities and became dependent on host-cell pathways."
+    },
+    {
+      "term": "Nucleocapsid",
+      "definition": "The capsid together with the viral nucleic-acid core."
+    },
+    {
+      "term": "Viral tropism",
+      "definition": "The ability of a virus to specifically infect a particular cell, tissue, or host that supports its replication."
+    },
+    {
+      "term": "Eclipse phase",
+      "definition": "The phase during viral macromolecule synthesis when no viral particles can be detected inside the infected host cell."
+    },
+    {
+      "term": "Defective virus",
+      "definition": "A premature virus with an incomplete genome that can require a helper virus for replication."
+    },
+    {
+      "term": "Prion",
+      "definition": "A small proteinaceous infectious particle made of misfolded protein without detected nucleic acid."
+    }
+  ],
+  "resources": [],
+  "flashcards": [
+    {
+      "front": "Why are viruses called obligate intracellular agents?",
+      "back": "They replicate only inside living cells because they cannot thrive and reproduce outside the living cell."
+    },
+    {
+      "front": "Who first discovered the infectious agent later identified as tobacco mosaic virus?",
+      "back": "Dmitri Ivanovsky in 1892, after filtration of infected tobacco-plant extracts."
+    },
+    {
+      "front": "What did Beijerinck call the new infectious agent?",
+      "back": "Contagium vivum fluidum."
+    },
+    {
+      "front": "What are the three hypotheses for virus origin?",
+      "back": "Regressive (reduction), escape (progressive), and co-evolution (virus-first)."
+    },
+    {
+      "front": "What forms the nucleocapsid?",
+      "back": "The capsid plus the nucleic-acid core."
+    },
+    {
+      "front": "What is the difference between +sense and -sense RNA?",
+      "back": "+sense RNA acts as mRNA and is directly translated; -sense RNA acts as a template for mRNA synthesis first."
+    },
+    {
+      "front": "What are the three viral symmetry types?",
+      "back": "Icosahedral, helical, and complex symmetry."
+    },
+    {
+      "front": "What are the two main methods of viral release?",
+      "back": "Cell lysis and budding."
+    }
+  ],
+  "questions": [
+    {
+      "question": "Which statement best defines viruses according to the lecture?",
+      "options": [
+        "They are free-living microorganisms that reproduce on ordinary culture media",
+        "They are obligate intracellular submicroscopic infectious agents that replicate only inside living cells",
+        "They are protein-only particles that infect plants exclusively",
+        "They are bacteria that have lost their cell walls"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The lecture defines viruses as obligate intracellular submicroscopic infectious agents that replicate only inside living cells.",
+      "subtopic": "Introduction and definition",
+      "optionExplanations": [
+        "Incorrect. Viruses require living cells for replication.",
+        "Correct. This matches the lecture definition.",
+        "Incorrect. Prions are proteinaceous subviral agents, while viruses infect many types of cells.",
+        "Incorrect. Viruses are not bacteria lacking cell walls."
+      ],
+      "hint": "Focus on the requirement for a living cell."
+    },
+    {
+      "question": "Why did Ivanovsky's filtration experiment suggest that the tobacco-mosaic infectious agent was not an ordinary bacterium?",
+      "options": [
+        "The agent grew rapidly on ordinary culture media",
+        "The infectious filtrate passed through a Chamberland filter that normally retains bacteria and fungi",
+        "The agent was easily seen by the light microscope",
+        "The agent became noninfectious after filtration"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Ivanovsky found that the filtrate remained infectious after passage through a Chamberland filter that normally retains bacteria and fungi.",
+      "subtopic": "Discovery of viruses",
+      "optionExplanations": [
+        "Incorrect. Growth on ordinary culture media was not the key observation.",
+        "Correct. Continued infectivity after filtration was the key finding.",
+        "Incorrect. The lecture does not identify that as the discovery basis.",
+        "Incorrect. The filtrate remained infectious."
+      ],
+      "hint": "Remember what the Chamberland filter normally retains."
+    },
+    {
+      "question": "Who repeated Ivanovsky's experiment in 1898 and used the term 'contagium vivum fluidum'?",
+      "options": [
+        "Dmitri Ivanovsky",
+        "Stanley B. Prusiner",
+        "Martinus Beijerinck",
+        "Louis Pasteur"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Martinus Beijerinck repeated the experiment in 1898 and described the filtered infectious agent as contagium vivum fluidum.",
+      "subtopic": "Discovery of viruses",
+      "optionExplanations": [
+        "Incorrect. Ivanovsky performed the earlier 1892 experiment.",
+        "Incorrect. Prusiner coined the term prion in 1982.",
+        "Correct. Beijerinck made the 1898 interpretation.",
+        "Incorrect. Pasteur is not identified here as the scientist who named the agent."
+      ],
+      "hint": "Think of the 1898 scientist."
+    },
+    {
+      "question": "Which hypothesis proposes that viruses arose from small cells that lost metabolic and reproductive abilities?",
+      "options": [
+        "Escape (progressive) hypothesis",
+        "Co-evolution (virus-first) hypothesis",
+        "Regressive (reduction) hypothesis",
+        "Capsid mispackaging hypothesis"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The regressive hypothesis proposes that pre-virus cells lost metabolic and reproductive abilities and became dependent on host-cell pathways.",
+      "subtopic": "Origin of viruses",
+      "optionExplanations": [
+        "Incorrect. Escape involves mobile genetic elements leaving their original cellular environment.",
+        "Incorrect. Co-evolution proposes evolution before or alongside the host cell.",
+        "Correct. This is the regressive/reduction hypothesis.",
+        "Incorrect. Capsid mispackaging is related to pseudovirus formation."
+      ],
+      "hint": "Look for the theory involving reduction or loss of functions."
+    },
+    {
+      "question": "Which of the following is NOT listed as a criterion for classification of viruses?",
+      "options": [
+        "Genome",
+        "Target tissue",
+        "Physical properties",
+        "Antibiotic susceptibility"
+      ],
+      "correctAnswer": "D",
+      "explanation": "The listed criteria are size, structure, genome, physical properties, chemical properties, and target tissue.",
+      "subtopic": "Classification of viruses",
+      "optionExplanations": [
+        "Incorrect. Genome is listed.",
+        "Incorrect. Target tissue is listed.",
+        "Incorrect. Physical properties are listed.",
+        "Correct. Antibiotic susceptibility is not listed."
+      ],
+      "hint": "Review the six classification criteria."
+    },
+    {
+      "question": "According to the lecture, viruses generally range in size from approximately:",
+      "options": [
+        "2 to 4 nm",
+        "20 to 400 nm",
+        "400 to 4000 nm",
+        "20 to 400 micrometers"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The lecture states that viruses range from about 20 to 400 nm; giant viruses can exceed 400 nm.",
+      "subtopic": "Viral size",
+      "optionExplanations": [
+        "Incorrect. This is below the stated range.",
+        "Correct. This is the general range given.",
+        "Incorrect. This is not the stated general range.",
+        "Incorrect. The lecture gives the unit as nanometers."
+      ],
+      "hint": "Remember the unit as well as the endpoints."
+    },
+    {
+      "question": "Which method determines viral size indirectly using a collodion membrane of graded porosity?",
+      "options": [
+        "Electron microscopy",
+        "Ultracentrifugation",
+        "Ultrafiltration",
+        "Light microscopy"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Ultrafiltration uses a collodion membrane with graded pore sizes to estimate viral size.",
+      "subtopic": "Methods for determining viral size",
+      "optionExplanations": [
+        "Incorrect. Electron microscopy directly determines size.",
+        "Incorrect. Ultracentrifugation uses sedimentation rate.",
+        "Correct. This is the collodion membrane method.",
+        "Incorrect. Light microscopy is not the method described."
+      ],
+      "hint": "Think about the membrane-filter method."
+    },
+    {
+      "question": "Which statement about basic viral structure is correct?",
+      "options": [
+        "Every virus has an envelope and matrix protein",
+        "The nucleocapsid consists of the capsid plus the nucleic-acid core",
+        "The capsid is made only of host phospholipids",
+        "The viral genome is always outside the capsid"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The lecture defines the nucleocapsid as capsid plus nucleic-acid core. Envelope and matrix protein occur only in enveloped viruses.",
+      "subtopic": "Viral structure",
+      "optionExplanations": [
+        "Incorrect. Not every virus is enveloped.",
+        "Correct. This is the lecture's definition of nucleocapsid.",
+        "Incorrect. The capsid is a protein coat.",
+        "Incorrect. The viral genome is enclosed by the capsid."
+      ],
+      "hint": "Recall the definition of nucleocapsid."
+    },
+    {
+      "question": "Which statement correctly describes the viral genome?",
+      "options": [
+        "It contains both DNA and RNA in every virus",
+        "It contains either DNA or RNA, not both",
+        "It is always double-stranded DNA",
+        "It is always single-stranded RNA"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The viral genome contains either DNA or RNA, not both. Either type may be single- or double-stranded.",
+      "subtopic": "Viral genome",
+      "optionExplanations": [
+        "Incorrect. The lecture explicitly says DNA or RNA, not both.",
+        "Correct. This is the central statement about viral genome composition.",
+        "Incorrect. DNA viral genomes can be single- or double-stranded.",
+        "Incorrect. RNA genomes can also be double-stranded."
+      ],
+      "hint": "The key phrase is DNA OR RNA."
+    },
+    {
+      "question": "A positive-sense RNA viral genome is one that:",
+      "options": [
+        "Must first be converted to DNA before translation",
+        "Acts as mRNA and is directly translated to protein",
+        "Cannot serve as a template for protein synthesis",
+        "Is always double-stranded"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Positive-sense RNA acts as mRNA and is directly translated into protein.",
+      "subtopic": "Positive- and negative-sense RNA",
+      "optionExplanations": [
+        "Incorrect. This is not the lecture's definition of positive-sense RNA.",
+        "Correct. Positive-sense RNA functions directly as mRNA.",
+        "Incorrect. It is directly translated.",
+        "Incorrect. Sense refers to coding orientation, not strand number."
+      ],
+      "hint": "Positive-sense RNA behaves like mRNA."
+    },
+    {
+      "question": "Which is a function of the viral capsid?",
+      "options": [
+        "Protecting viral nucleic acid from nucleases",
+        "Supplying all ATP for viral replication",
+        "Replacing host ribosomes",
+        "Preventing every viral mutation"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Protection of the viral nucleic acid from nucleases is one of the four capsid functions listed in the lecture.",
+      "subtopic": "Viral capsid",
+      "optionExplanations": [
+        "Correct. The lecture explicitly lists protection from nucleases.",
+        "Incorrect. ATP is supplied by the host cell.",
+        "Incorrect. Host ribosomes remain necessary for protein synthesis.",
+        "Incorrect. The capsid is not a universal anti-mutation mechanism."
+      ],
+      "hint": "Think of the capsid's protective role."
+    },
+    {
+      "question": "Which statement correctly describes icosahedral viral symmetry?",
+      "options": [
+        "Capsomers and genome are twisted into a spiral tube",
+        "It results from twenty equilateral triangles and provides a highly rigid structure",
+        "It has no defined capsomer arrangement",
+        "It occurs only in enveloped RNA viruses"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The lecture describes icosahedral symmetry as an arrangement of twenty equilateral triangles that provides a highly rigid structure.",
+      "subtopic": "Viral symmetry",
+      "optionExplanations": [
+        "Incorrect. A spiral tube describes helical symmetry.",
+        "Correct. This matches the lecture's description.",
+        "Incorrect. Complex symmetry is the one without icosahedral or helical orientation.",
+        "Incorrect. The lecture does not restrict icosahedral symmetry this way."
+      ],
+      "hint": "Think of the 20 triangular faces of an icosahedron."
+    },
+    {
+      "question": "Which pairing is correctly matched?",
+      "options": [
+        "Helical symmetry — capsomers and genome twist together; Orthomyxoviridae is an example",
+        "Complex symmetry — twenty equilateral triangular faces",
+        "Icosahedral symmetry — capsomers and genome form a spiral tube",
+        "Complex symmetry — all RNA viruses"
+      ],
+      "correctAnswer": "A",
+      "explanation": "The lecture defines helical symmetry as capsomers and genome twisted together and lists Orthomyxoviridae as an example.",
+      "subtopic": "Viral symmetry",
+      "optionExplanations": [
+        "Correct. This matches the lecture.",
+        "Incorrect. Twenty triangles describe icosahedral symmetry.",
+        "Incorrect. The spiral tube describes helical symmetry.",
+        "Incorrect. Complex symmetry is exemplified by poxvirus and bacteriophage."
+      ],
+      "hint": "Match the geometry to the description."
+    },
+    {
+      "question": "The viral envelope is composed of:",
+      "options": [
+        "Only viral DNA and RNA",
+        "Lipoproteins, with lipid derived from host membrane and protein encoded by viral nucleic acid",
+        "Only host carbohydrates",
+        "Only capsomers"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The lecture states that the envelope is a lipoprotein structure: host membrane provides the lipid portion, while the viral genome encodes the protein portion.",
+      "subtopic": "Viral envelope",
+      "optionExplanations": [
+        "Incorrect. Nucleic acid forms the viral genome, not the envelope.",
+        "Correct. This is the lecture's description of envelope composition.",
+        "Incorrect. Carbohydrates are not the described main structure.",
+        "Incorrect. Capsomers form the capsid."
+      ],
+      "hint": "Remember host-derived lipid plus virus-encoded protein."
+    },
+    {
+      "question": "Which statement about heat sensitivity is correct according to the lecture?",
+      "options": [
+        "Enveloped viruses are generally heat sensitive while non-enveloped viruses are more heat resistant",
+        "All viruses are immediately destroyed by cold storage",
+        "Non-enveloped viruses are always heat sensitive",
+        "Most viruses are most unstable at -70 °C"
+      ],
+      "correctAnswer": "A",
+      "explanation": "The lecture states that enveloped viruses are heat sensitive while non-enveloped viruses are heat resistant. It also notes that most viruses are stable at -40 to -70 °C.",
+      "subtopic": "Physical properties",
+      "optionExplanations": [
+        "Correct. This is the lecture's heat classification.",
+        "Incorrect. Most viruses are stable at -40 to -70 °C.",
+        "Incorrect. The lecture gives the opposite comparison.",
+        "Incorrect. The lecture says most viruses are stable in that cold range."
+      ],
+      "hint": "Compare enveloped with non-enveloped viruses under heat."
+    },
+    {
+      "question": "Which statement correctly matches a chemical agent with viral sensitivity?",
+      "options": [
+        "Enveloped viruses are sensitive to ether and chloroform",
+        "Glycerol destroys viruses and is used as a virucide",
+        "Viruses are resistant to formaldehyde, chlorine, and iodine",
+        "Non-enveloped viruses are more ether sensitive than enveloped viruses"
+      ],
+      "correctAnswer": "A",
+      "explanation": "The lecture states that enveloped viruses are sensitive to ether and chloroform. Viruses are glycerol resistant, while formaldehyde, chlorine, and iodine are listed as inactivating agents.",
+      "subtopic": "Chemical properties",
+      "optionExplanations": [
+        "Correct. Ether and chloroform are listed as inactivating agents for enveloped viruses.",
+        "Incorrect. Viruses are glycerol resistant.",
+        "Incorrect. The lecture says they are sensitive to these agents.",
+        "Incorrect. Enveloped viruses are the ether-sensitive group."
+      ],
+      "hint": "Ether and chloroform point to the envelope."
+    },
+    {
+      "question": "Which factor listed in the lecture affects viral tropism?",
+      "options": [
+        "Specific receptors on target cells",
+        "Patient blood group only",
+        "Capsid color",
+        "Laboratory temperature only"
+      ],
+      "correctAnswer": "A",
+      "explanation": "The lecture identifies specific receptors on target cells and required transcription factors as factors affecting viral tropism.",
+      "subtopic": "Viral tropism",
+      "optionExplanations": [
+        "Correct. Receptors allow attachment and entry into the target cell.",
+        "Incorrect. Blood group is not listed as the determining factor here.",
+        "Incorrect. Capsid color is not a tropism factor.",
+        "Incorrect. Laboratory temperature alone is not listed as a tropism factor."
+      ],
+      "hint": "Tropism begins with selective recognition of target cells."
+    },
+    {
+      "question": "Which sequence correctly lists the six general steps of viral replication in the order given in the lecture?",
+      "options": [
+        "Assembly → adsorption → release → penetration → uncoating → synthesis",
+        "Adsorption → penetration → uncoating → synthesis of viral macromolecules → assembly → release",
+        "Penetration → adsorption → synthesis → release → assembly → uncoating",
+        "Adsorption → assembly → penetration → uncoating → release → synthesis"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The six sequential steps are adsorption, penetration, uncoating, synthesis of viral macromolecules, assembly, and release.",
+      "subtopic": "Viral replication overview",
+      "optionExplanations": [
+        "Incorrect. The lecture places adsorption first and assembly later.",
+        "Correct. This is the exact order given.",
+        "Incorrect. The order of adsorption and later events is wrong.",
+        "Incorrect. Assembly does not occur immediately after adsorption."
+      ],
+      "hint": "Start with attachment and end with release."
+    },
+    {
+      "question": "Which statement correctly distinguishes a defective virus from a coreless virus?",
+      "options": [
+        "A defective virus has an incomplete genome; a coreless virus has no nucleic-acid core",
+        "A defective virus has no capsid; a coreless virus has a complete genome",
+        "Both are complete mature viruses with complete genomes",
+        "A coreless virus can replicate with a helper virus"
+      ],
+      "correctAnswer": "A",
+      "explanation": "A defective virus contains an incomplete genome and may replicate with a helper virus, whereas a coreless virus contains no nucleic-acid core and cannot infect or replicate.",
+      "subtopic": "Forms of viral particles",
+      "optionExplanations": [
+        "Correct. This matches the lecture definitions.",
+        "Incorrect. Defective viruses still have capsids.",
+        "Incorrect. Neither description matches the lecture.",
+        "Incorrect. Coreless viruses lack nucleic acid and cannot replicate even with a helper virus."
+      ],
+      "hint": "Compare what is inside the particle."
+    },
+    {
+      "question": "Which pair identifies the two subviral agents discussed at the end of the lecture?",
+      "options": [
+        "Prions and viroids",
+        "Capsomers and peplomers",
+        "Poxviruses and bacteriophages",
+        "Retroviruses and orthomyxoviruses"
+      ],
+      "correctAnswer": "A",
+      "explanation": "The lecture names prions and viroids as subviral infectious agents that do not meet the classical definition of a virus.",
+      "subtopic": "Subviral agents",
+      "optionExplanations": [
+        "Correct. These are the two subviral agents described.",
+        "Incorrect. These are viral structural terms.",
+        "Incorrect. These are viruses.",
+        "Incorrect. These are virus groups."
+      ],
+      "hint": "Think of the agents discussed after viral particles."
+    }
+  ]
+}
