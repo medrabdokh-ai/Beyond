@@ -457,7 +457,7 @@
       state.previousFocus = document.activeElement;
       openModal();
       try {
-        const lecture = await loadJSON(`./data/lectures/${file}`);
+        const lecture = await loadJSON(`./${file}`);
         state.lecture = { ...lecture, subjectName: subject.name, subjectId: subject.id };
         state.activeTab = 'summary';
         renderPrep();
