@@ -1,0 +1,1222 @@
+{
+  "id": "drug-discovery-design-pmc304-lecture-01",
+  "title": "Drug Discovery and Design — Lecture I",
+  "subjectName": "Drug Discovery and Design",
+  "estimatedReadTime": "30-min read",
+  "estimatedExamTime": "30-min exam",
+  "durationMinutes": 30,
+  "passMark": 70,
+  "summary": [
+    "Drug discovery and development is a multi-stage process beginning with disease selection and target identification, followed by lead compound discovery, optimization, preclinical testing, clinical trials, and marketing.",
+    "Drug design aims to improve the activity and properties of a lead compound based on knowledge of biological targets such as enzymes, receptors, and nucleic acids.",
+    "A lead compound is a chemical compound with biological activity whose structure serves as a starting point for chemical modifications to improve potency, selectivity, or pharmacokinetic parameters.",
+    "Major sources of lead compounds include natural products (plants, microbes, marine organisms), natural ligands for receptors, natural enzyme substrates, synthetic compound banks, known drug side-effects, serendipity, and database mining.",
+    "Natural products have provided many important drugs: morphine, cocaine, quinine, and nicotine from plants; penicillin G from microbes; and curacin A from marine organisms.",
+    "Natural ligands such as adrenaline and noradrenaline led to the development of adrenergic beta-agonists like salbutamol and dobutamine.",
+    "Natural enzyme substrates such as acetylcholine led to the development of acetylcholinesterase inhibitors like rivastigmine for dementia treatment.",
+    "Synthetic compound banks have yielded drugs like isoniazid, while known drug side-effects led to tolbutamide (antidiabetic) and chlorothiazide (diuretic).",
+    "Serendipity has played a role in discovering cisplatin, penicillin G, chlorpromazine, imipramine, and clonidine.",
+    "Major drug targets include G protein-coupled receptors (45%), enzymes (28%), hormones and factors (11%), ion channels (5%), nuclear receptors (2%), and nucleic acids (2%)."
+  ],
+  "keyTerms": [
+    {
+      "term": "Lead compound",
+      "definition": "A chemical compound that has biological activity and whose chemical structure is used as a starting point for chemical modifications to improve potency, selectivity, or pharmacokinetic parameters."
+    },
+    {
+      "term": "Pharmacophore",
+      "definition": "The important binding groups required for activity and their relative positions in space with respect to each other."
+    },
+    {
+      "term": "Structure-activity relationship (SAR)",
+      "definition": "The relationship between the chemical structure of a compound and its biological activity."
+    },
+    {
+      "term": "Serendipity",
+      "definition": "The occurrence of a fortunate discovery by chance, such as finding a lead compound unexpectedly."
+    },
+    {
+      "term": "Database mining",
+      "definition": "Computerized searching of structural databanks to find new lead compounds based on knowledge of the pharmacophore."
+    },
+    {
+      "term": "Drug design",
+      "definition": "The inventive process of finding new medications based on the knowledge of biological targets, aiming to improve the activity and properties of a lead compound."
+    },
+    {
+      "term": "G protein-coupled receptors",
+      "definition": "The most common drug target class, accounting for approximately 45% of drug targets."
+    },
+    {
+      "term": "Enzymes",
+      "definition": "The second most common drug target class, accounting for approximately 28% of drug targets."
+    }
+  ],
+  "resources": [],
+  "flashcards": [
+    {
+      "front": "What are the first two steps in drug discovery and development?",
+      "back": "1) Choose a disease and know its cause; 2) Choose a drug target (receptor, enzyme, ion channel, nucleic acid)."
+    },
+    {
+      "front": "What is the definition of drug design?",
+      "back": "The design of new drugs aiming to improve the activity and properties of a lead compound, based on knowledge of biological targets."
+    },
+    {
+      "front": "What is a lead compound?",
+      "back": "A chemical compound with biological activity whose structure is used as a starting point for chemical modifications to improve potency, selectivity, or pharmacokinetic parameters."
+    },
+    {
+      "front": "What are four goals of drug design?",
+      "back": "1) Improve binding interactions (pharmacodynamics); 2) Improve pharmacokinetic properties; 3) Identify SAR; 4) Identify the pharmacophore."
+    },
+    {
+      "front": "Name six sources of lead compounds.",
+      "back": "Natural products, natural ligands for receptors, natural enzyme substrates, synthetic compound banks, known drug side-effects, serendipity, and database mining."
+    },
+    {
+      "front": "What plant-derived drugs were developed from cocaine?",
+      "back": "Local anaesthetics such as procaine and benzocaine."
+    },
+    {
+      "front": "What narcotic analgesics were developed from morphine?",
+      "back": "Pethidine and methadone."
+    },
+    {
+      "front": "What drug was developed from salicin?",
+      "back": "Aspirin (antipyretic analgesic)."
+    },
+    {
+      "front": "What was the starting point for the development of salbutamol and dobutamine?",
+      "back": "Natural neurotransmitters adrenaline and noradrenaline."
+    },
+    {
+      "front": "What was the ultimate starting point for rivastigmine?",
+      "back": "Acetylcholine, the natural substrate for acetylcholinesterase enzyme."
+    },
+    {
+      "front": "What drug was discovered from screening synthetic compound banks?",
+      "back": "Isoniazid (antitubercular drug)."
+    },
+    {
+      "front": "What antidiabetic agent was developed from sulphonamides with convulsive side effects?",
+      "back": "Tolbutamide."
+    },
+    {
+      "front": "What diuretic was developed from sulphanilamide?",
+      "back": "Chlorothiazide."
+    },
+    {
+      "front": "Name two drugs discovered by serendipity.",
+      "back": "Cisplatin and penicillin G (also chlorpromazine, imipramine, clonidine)."
+    },
+    {
+      "front": "What was clonidine originally designed for and what was it found to do?",
+      "back": "Originally designed as a nasal vasoconstrictor; found to cause a marked fall in blood pressure and became an antihypertensive."
+    }
+  ],
+  "questions": [
+    {
+      "question": "What is the first step in the stages of drug discovery and development?",
+      "options": [
+        "Find a lead compound",
+        "Choose a disease and know its cause",
+        "Improve target interactions",
+        "Design a manufacturing process"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The first step is to choose a disease and know its cause.",
+      "subtopic": "Stages of Drug Discovery",
+      "optionExplanations": [
+        "Incorrect. Finding a lead compound occurs later.",
+        "Correct. This is step 1.",
+        "Incorrect. This is step 5.",
+        "Incorrect. This is step 8."
+      ],
+      "hint": "Start with disease selection."
+    },
+    {
+      "question": "Which of the following is NOT a drug target mentioned in the lecture?",
+      "options": [
+        "Receptor",
+        "Enzyme",
+        "Ion channel",
+        "Ribosome"
+      ],
+      "correctAnswer": "D",
+      "explanation": "The lecture lists receptors, enzymes, ion channels, and nucleic acids as drug targets. Ribosomes are not mentioned.",
+      "subtopic": "Drug Targets",
+      "optionExplanations": [
+        "Incorrect. Receptors are listed.",
+        "Incorrect. Enzymes are listed.",
+        "Incorrect. Ion channels are listed.",
+        "Correct. Ribosomes are not listed as a drug target in this lecture."
+      ],
+      "hint": "Review the list of drug targets on page 4."
+    },
+    {
+      "question": "What is the definition of drug design according to the lecture?",
+      "options": [
+        "The process of marketing a new drug",
+        "The design of new drugs aiming to improve the activity and properties of a lead compound",
+        "The synthesis of natural products",
+        "The clinical testing of new compounds"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Drug design is the design of new drugs aiming to improve the activity and properties of the lead compound.",
+      "subtopic": "Drug Design Definition",
+      "optionExplanations": [
+        "Incorrect. Marketing is a later stage.",
+        "Correct. This matches the lecture definition.",
+        "Incorrect. Synthesis is part of the process but not the definition of drug design.",
+        "Incorrect. Clinical testing occurs later in development."
+      ],
+      "hint": "Focus on improving the lead compound."
+    },
+    {
+      "question": "Which of the following is NOT a goal of drug design?",
+      "options": [
+        "Improve binding interactions",
+        "Improve pharmacokinetic properties",
+        "Identify structure-activity relationships",
+        "Increase the cost of production"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Increasing cost is not a goal of drug design. The goals are improving binding, pharmacokinetics, SAR, and pharmacophore identification.",
+      "subtopic": "Goals of Drug Design",
+      "optionExplanations": [
+        "Incorrect. This is a goal.",
+        "Incorrect. This is a goal.",
+        "Incorrect. This is a goal.",
+        "Correct. Cost reduction, not increase, would be desirable."
+      ],
+      "hint": "Consider what improves a drug."
+    },
+    {
+      "question": "What is a pharmacophore?",
+      "options": [
+        "A drug that acts on the liver",
+        "The important binding groups required for activity and their relative positions in space",
+        "A type of receptor",
+        "A natural product"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The pharmacophore summarizes the important binding groups required for activity and their relative positions in space.",
+      "subtopic": "Pharmacophore",
+      "optionExplanations": [
+        "Incorrect. This is not the definition.",
+        "Correct. This matches the lecture definition.",
+        "Incorrect. A pharmacophore is not a receptor.",
+        "Incorrect. A pharmacophore is not a natural product."
+      ],
+      "hint": "Think about binding groups and spatial arrangement."
+    },
+    {
+      "question": "What is a lead compound?",
+      "options": [
+        "A compound that has been approved for clinical use",
+        "A chemical compound with biological activity used as a starting point for chemical modifications",
+        "A compound that is toxic to all cells",
+        "A compound that has no biological activity"
+      ],
+      "correctAnswer": "B",
+      "explanation": "A lead compound is a chemical compound with biological activity whose structure is used as a starting point for chemical modifications.",
+      "subtopic": "Lead Compound",
+      "optionExplanations": [
+        "Incorrect. A lead compound is not yet an approved drug.",
+        "Correct. This matches the lecture definition.",
+        "Incorrect. Toxicity is not the defining feature.",
+        "Incorrect. A lead compound must have biological activity."
+      ],
+      "hint": "It is a starting point for modification."
+    },
+    {
+      "question": "Which of the following is NOT listed as a source of lead compounds?",
+      "options": [
+        "Natural products",
+        "Synthetic compound banks",
+        "Known drug side-effects",
+        "Computer-generated random molecules"
+      ],
+      "correctAnswer": "D",
+      "explanation": "The lecture lists natural products, natural ligands, natural enzyme substrates, synthetic compound banks, known drug side-effects, serendipity, and database mining. Computer-generated random molecules are not listed.",
+      "subtopic": "Sources of Lead Compounds",
+      "optionExplanations": [
+        "Incorrect. Natural products are listed.",
+        "Incorrect. Synthetic compound banks are listed.",
+        "Incorrect. Known drug side-effects are listed.",
+        "Correct. This is not a listed source."
+      ],
+      "hint": "Review the list on page 9."
+    },
+    {
+      "question": "Which plant-derived compound was the starting point for the development of local anaesthetics?",
+      "options": [
+        "Morphine",
+        "Cocaine",
+        "Quinine",
+        "Nicotine"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Cocaine was the starting point for local anaesthetics such as procaine and benzocaine.",
+      "subtopic": "Natural Products - Plant Origin",
+      "optionExplanations": [
+        "Incorrect. Morphine led to narcotic analgesics.",
+        "Correct. Cocaine led to local anaesthetics.",
+        "Incorrect. Quinine is an antimalarial.",
+        "Incorrect. Nicotine is a stimulant."
+      ],
+      "hint": "Think of procaine and benzocaine."
+    },
+    {
+      "question": "Which narcotic analgesics were developed from morphine?",
+      "options": [
+        "Procaine and benzocaine",
+        "Pethidine and methadone",
+        "Aspirin and salicin",
+        "Penicillin and curacin A"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Pethidine and methadone were developed from morphine.",
+      "subtopic": "Natural Products - Plant Origin",
+      "optionExplanations": [
+        "Incorrect. These are local anaesthetics from cocaine.",
+        "Correct. These are narcotic analgesics from morphine.",
+        "Incorrect. Aspirin was developed from salicin.",
+        "Incorrect. Penicillin is from microbes and curacin A from marine organisms."
+      ],
+      "hint": "Think of synthetic narcotic analgesics."
+    },
+    {
+      "question": "Which drug was developed from salicin?",
+      "options": [
+        "Morphine",
+        "Quinine",
+        "Aspirin",
+        "Penicillin"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Aspirin (an antipyretic analgesic) was developed from salicin.",
+      "subtopic": "Natural Products - Plant Origin",
+      "optionExplanations": [
+        "Incorrect. Morphine is from opium poppy.",
+        "Incorrect. Quinine is from cinchona bark.",
+        "Correct. Aspirin was developed from salicin.",
+        "Incorrect. Penicillin is from microbes."
+      ],
+      "hint": "It is an antipyretic analgesic."
+    },
+    {
+      "question": "Which microorganism is the source of penicillin G?",
+      "options": [
+        "Bacteria",
+        "Fungi",
+        "Viruses",
+        "Marine cyanobacteria"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Penicillin G is obtained from fungi (microorganisms).",
+      "subtopic": "Natural Products - Microbial Origin",
+      "optionExplanations": [
+        "Incorrect. Bacteria are a source of some antibiotics, but penicillin G is from fungi.",
+        "Correct. Penicillin G is from fungi.",
+        "Incorrect. Viruses do not produce antibiotics.",
+        "Incorrect. Marine cyanobacteria produce curacin A."
+      ],
+      "hint": "Penicillin is from a mold."
+    },
+    {
+      "question": "Curacin A is obtained from which source?",
+      "options": [
+        "Plants",
+        "Fungi",
+        "Marine cyanobacterium",
+        "Synthetic compound banks"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Curacin A is obtained from a marine cyanobacterium and shows potent antitumour activity.",
+      "subtopic": "Natural Products - Marine Origin",
+      "optionExplanations": [
+        "Incorrect. Plants are a source of morphine, cocaine, etc.",
+        "Incorrect. Fungi are a source of penicillin.",
+        "Correct. Curacin A is from a marine cyanobacterium.",
+        "Incorrect. It is a natural product, not synthetic."
+      ],
+      "hint": "It is from a marine organism."
+    },
+    {
+      "question": "What was the starting point for the development of salbutamol and dobutamine?",
+      "options": [
+        "Acetylcholine",
+        "Adrenaline and noradrenaline",
+        "Morphine",
+        "Penicillin G"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The natural neurotransmitters adrenaline and noradrenaline were the starting points for adrenergic beta-agonists such as salbutamol and dobutamine.",
+      "subtopic": "Natural Ligands for Receptors",
+      "optionExplanations": [
+        "Incorrect. Acetylcholine led to rivastigmine.",
+        "Correct. Adrenaline and noradrenaline led to salbutamol and dobutamine.",
+        "Incorrect. Morphine led to pethidine and methadone.",
+        "Incorrect. Penicillin G is an antibiotic."
+      ],
+      "hint": "Think of adrenergic agonists."
+    },
+    {
+      "question": "What is the natural substrate for acetylcholinesterase enzyme?",
+      "options": [
+        "Adrenaline",
+        "Noradrenaline",
+        "Acetylcholine",
+        "Salbutamol"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Acetylcholine is the natural substrate for acetylcholinesterase enzyme.",
+      "subtopic": "Natural Enzyme Substrates",
+      "optionExplanations": [
+        "Incorrect. Adrenaline is a neurotransmitter but not the substrate for acetylcholinesterase.",
+        "Incorrect. Noradrenaline is a neurotransmitter but not the substrate for acetylcholinesterase.",
+        "Correct. Acetylcholine is the natural substrate for acetylcholinesterase.",
+        "Incorrect. Salbutamol is a synthetic drug."
+      ],
+      "hint": "Think of the neurotransmitter involved in Alzheimer's treatment."
+    },
+    {
+      "question": "Which drug is an acetylcholinesterase inhibitor prescribed for dementia?",
+      "options": [
+        "Salbutamol",
+        "Dobutamine",
+        "Rivastigmine",
+        "Isoniazid"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Rivastigmine is an acetylcholinesterase inhibitor prescribed as a treatment for dementia.",
+      "subtopic": "Natural Enzyme Substrates",
+      "optionExplanations": [
+        "Incorrect. Salbutamol is a beta-agonist.",
+        "Incorrect. Dobutamine is a beta-agonist.",
+        "Correct. Rivastigmine is an acetylcholinesterase inhibitor.",
+        "Incorrect. Isoniazid is an antitubercular drug."
+      ],
+      "hint": "It was derived from acetylcholine."
+    },
+    {
+      "question": "Which antitubercular drug was discovered by screening synthetic compound banks?",
+      "options": [
+        "Penicillin G",
+        "Isoniazid",
+        "Tolbutamide",
+        "Chlorothiazide"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Isoniazid was discovered by screening synthetic compound banks.",
+      "subtopic": "Synthetic Compound Banks",
+      "optionExplanations": [
+        "Incorrect. Penicillin G is a natural product.",
+        "Correct. Isoniazid was discovered this way.",
+        "Incorrect. Tolbutamide was developed from sulphonamide side effects.",
+        "Incorrect. Chlorothiazide was developed from sulphanilamide."
+      ],
+      "hint": "It is used to treat tuberculosis."
+    },
+    {
+      "question": "What was the undesirable side effect of some sulphonamides that led to the development of tolbutamide?",
+      "options": [
+        "Convulsions brought by hypoglycaemia",
+        "Diuresis",
+        "Hypertension",
+        "Sedation"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Some sulphonamides had convulsive side effects brought by hypoglycaemia, which led to the development of the antidiabetic agent tolbutamide.",
+      "subtopic": "Known Drug Side-Effects",
+      "optionExplanations": [
+        "Correct. Hypoglycaemia and convulsions led to tolbutamide.",
+        "Incorrect. Diuresis led to chlorothiazide.",
+        "Incorrect. Hypertension was not the side effect.",
+        "Incorrect. Sedation was not the side effect."
+      ],
+      "hint": "Think of blood sugar."
+    },
+    {
+      "question": "Which diuretic was developed from the observation that sulphanilamide has a diuretic effect?",
+      "options": [
+        "Tolbutamide",
+        "Chlorothiazide",
+        "Isoniazid",
+        "Rivastigmine"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Chlorothiazide was developed from sulphanilamide's diuretic effect.",
+      "subtopic": "Known Drug Side-Effects",
+      "optionExplanations": [
+        "Incorrect. Tolbutamide is an antidiabetic.",
+        "Correct. Chlorothiazide is a diuretic.",
+        "Incorrect. Isoniazid is an antitubercular.",
+        "Incorrect. Rivastigmine is for dementia."
+      ],
+      "hint": "It is a thiazide diuretic."
+    },
+    {
+      "question": "Which of the following drugs was discovered by serendipity?",
+      "options": [
+        "Aspirin",
+        "Cisplatin",
+        "Salbutamol",
+        "Rivastigmine"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Cisplatin was discovered by serendipity (chance).",
+      "subtopic": "Serendipity",
+      "optionExplanations": [
+        "Incorrect. Aspirin was developed from salicin.",
+        "Correct. Cisplatin was discovered by chance.",
+        "Incorrect. Salbutamol was developed from adrenaline.",
+        "Incorrect. Rivastigmine was developed from acetylcholine."
+      ],
+      "hint": "It is a platinum-based anticancer drug."
+    },
+    {
+      "question": "Clonidine was originally designed as a nasal vasoconstrictor but was found to be effective as what?",
+      "options": [
+        "Antihistamine",
+        "Antihypertensive",
+        "Antidepressant",
+        "Antipsychotic"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Clonidine was originally designed as a nasal vasoconstrictor, but clinical trials revealed a marked fall in blood pressure and it became an antihypertensive.",
+      "subtopic": "Serendipity",
+      "optionExplanations": [
+        "Incorrect. Chlorpromazine was an antihistamine.",
+        "Correct. Clonidine became an antihypertensive.",
+        "Incorrect. Imipramine became an antidepressant.",
+        "Incorrect. Chlorpromazine became an antipsychotic."
+      ],
+      "hint": "It lowers blood pressure."
+    },
+    {
+      "question": "Chlorpromazine was originally synthesized as what type of drug?",
+      "options": [
+        "Antihistamine",
+        "Antihypertensive",
+        "Antidepressant",
+        "Antibiotic"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Chlorpromazine was synthesized as an antihistamine and was found to have tranquillizing effects.",
+      "subtopic": "Serendipity",
+      "optionExplanations": [
+        "Correct. It was originally an antihistamine.",
+        "Incorrect. Clonidine became an antihypertensive.",
+        "Incorrect. Imipramine became an antidepressant.",
+        "Incorrect. It is not an antibiotic."
+      ],
+      "hint": "It became the first neuroleptic drug."
+    },
+    {
+      "question": "Imipramine was initially synthesized for use as what type of drug?",
+      "options": [
+        "Antihistamine",
+        "Antipsychotic",
+        "Antidepressant",
+        "Diuretic"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Imipramine was synthesized as an analogue of chlorpromazine, initially for use as an antipsychotic, but was found to be effective in alleviating depression.",
+      "subtopic": "Serendipity",
+      "optionExplanations": [
+        "Incorrect. Chlorpromazine was the antihistamine.",
+        "Correct. It was initially for antipsychotic use.",
+        "Incorrect. It was found to be an antidepressant, but this was not the initial intention.",
+        "Incorrect. Chlorothiazide is a diuretic."
+      ],
+      "hint": "It became a tricyclic antidepressant."
+    },
+    {
+      "question": "What is database mining?",
+      "options": [
+        "Mining for natural products",
+        "Computerized searching of structural databanks to find new lead compounds",
+        "Testing drugs in animals",
+        "Synthesizing new compounds in the lab"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Database mining is computerized searching of structural databanks, which requires knowledge of the pharmacophore.",
+      "subtopic": "Database Mining",
+      "optionExplanations": [
+        "Incorrect. This is not database mining.",
+        "Correct. This is the definition of database mining.",
+        "Incorrect. This is preclinical testing.",
+        "Incorrect. This is chemical synthesis."
+      ],
+      "hint": "It involves computers and structural databases."
+    },
+    {
+      "question": "Which of the following is NOT a major drug target class?",
+      "options": [
+        "G protein-coupled receptors",
+        "Enzymes",
+        "Ion channels",
+        "Ribosomes"
+      ],
+      "correctAnswer": "D",
+      "explanation": "The major drug target classes are G protein-coupled receptors, enzymes, ion channels, enzyme-linked receptors, nuclear receptors, nucleic acids, structural proteins, and membrane transport proteins. Ribosomes are not listed.",
+      "subtopic": "Drug Targets",
+      "optionExplanations": [
+        "Incorrect. GPCRs are the most common target.",
+        "Incorrect. Enzymes are a major target.",
+        "Incorrect. Ion channels are a major target.",
+        "Correct. Ribosomes are not listed as a drug target in this lecture."
+      ],
+      "hint": "Review the list of drug targets on page 22."
+    },
+    {
+      "question": "What percentage of drug targets are G protein-coupled receptors?",
+      "options": [
+        "28%",
+        "45%",
+        "11%",
+        "5%"
+      ],
+      "correctAnswer": "B",
+      "explanation": "G protein-coupled receptors account for approximately 45% of drug targets.",
+      "subtopic": "Drug Targets",
+      "optionExplanations": [
+        "Incorrect. 28% are enzymes.",
+        "Correct. 45% are GPCRs.",
+        "Incorrect. 11% are hormones and factors.",
+        "Incorrect. 5% are ion channels."
+      ],
+      "hint": "It is the largest class."
+    },
+    {
+      "question": "What percentage of drug targets are enzymes?",
+      "options": [
+        "45%",
+        "28%",
+        "11%",
+        "2%"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Enzymes account for approximately 28% of drug targets.",
+      "subtopic": "Drug Targets",
+      "optionExplanations": [
+        "Incorrect. 45% are GPCRs.",
+        "Correct. 28% are enzymes.",
+        "Incorrect. 11% are hormones and factors.",
+        "Incorrect. 2% are nucleic acids."
+      ],
+      "hint": "It is the second largest class."
+    },
+    {
+      "question": "Which of the following is NOT a step in the drug discovery and development process?",
+      "options": [
+        "Find a lead compound",
+        "Improve target interactions",
+        "Study drug metabolism",
+        "Market the drug before clinical trials"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Marketing the drug before clinical trials is not a step. Clinical trials are step 9, and marketing occurs after.",
+      "subtopic": "Stages of Drug Discovery",
+      "optionExplanations": [
+        "Incorrect. Finding a lead compound is step 3.",
+        "Incorrect. Improving target interactions is step 5.",
+        "Incorrect. Studying drug metabolism is step 6.",
+        "Correct. Marketing occurs after clinical trials."
+      ],
+      "hint": "Consider the correct order of steps."
+    },
+    {
+      "question": "What is the final step in the drug discovery and development process as listed in the lecture?",
+      "options": [
+        "Carry out clinical trials",
+        "Design a manufacturing process",
+        "Make money",
+        "Test for toxicity"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The final step listed is 'Make money'.",
+      "subtopic": "Stages of Drug Discovery",
+      "optionExplanations": [
+        "Incorrect. Clinical trials are step 9.",
+        "Incorrect. Designing a manufacturing process is step 8.",
+        "Correct. Making money is step 10.",
+        "Incorrect. Testing for toxicity is step 7."
+      ],
+      "hint": "It is the last step on page 4."
+    },
+    {
+      "question": "Which of the following is a natural product from plant origin?",
+      "options": [
+        "Penicillin G",
+        "Curacin A",
+        "Quinine",
+        "Isoniazid"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Quinine is a natural product from plant origin.",
+      "subtopic": "Natural Products",
+      "optionExplanations": [
+        "Incorrect. Penicillin G is from microbes.",
+        "Incorrect. Curacin A is from marine organisms.",
+        "Correct. Quinine is from plants.",
+        "Incorrect. Isoniazid is synthetic."
+      ],
+      "hint": "It is used to treat malaria."
+    },
+    {
+      "question": "Which of the following is a natural product from microbial origin?",
+      "options": [
+        "Morphine",
+        "Penicillin G",
+        "Curacin A",
+        "Salicin"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Penicillin G is from microbial origin (fungi).",
+      "subtopic": "Natural Products",
+      "optionExplanations": [
+        "Incorrect. Morphine is from plants.",
+        "Correct. Penicillin G is from microbes.",
+        "Incorrect. Curacin A is from marine organisms.",
+        "Incorrect. Salicin is from plants."
+      ],
+      "hint": "It is an antibiotic."
+    },
+    {
+      "question": "Which of the following is a natural product from marine origin?",
+      "options": [
+        "Morphine",
+        "Penicillin G",
+        "Curacin A",
+        "Quinine"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Curacin A is obtained from a marine cyanobacterium.",
+      "subtopic": "Natural Products",
+      "optionExplanations": [
+        "Incorrect. Morphine is from plants.",
+        "Incorrect. Penicillin G is from microbes.",
+        "Correct. Curacin A is from marine organisms.",
+        "Incorrect. Quinine is from plants."
+      ],
+      "hint": "It has antitumour activity."
+    },
+    {
+      "question": "Which of the following drugs is a natural ligand for a receptor used as a lead compound?",
+      "options": [
+        "Acetylcholine",
+        "Adrenaline",
+        "Morphine",
+        "Penicillin"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Adrenaline (and noradrenaline) are natural ligands for adrenergic receptors and were used as lead compounds.",
+      "subtopic": "Natural Ligands for Receptors",
+      "optionExplanations": [
+        "Incorrect. Acetylcholine is a natural enzyme substrate.",
+        "Correct. Adrenaline is a natural ligand for receptors.",
+        "Incorrect. Morphine is a natural product from plants.",
+        "Incorrect. Penicillin is a natural product from microbes."
+      ],
+      "hint": "It is a neurotransmitter that led to salbutamol."
+    },
+    {
+      "question": "Which of the following drugs is a natural enzyme substrate used as a lead compound?",
+      "options": [
+        "Adrenaline",
+        "Noradrenaline",
+        "Acetylcholine",
+        "Salbutamol"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Acetylcholine is the natural substrate for acetylcholinesterase enzyme and was used as a lead compound for rivastigmine.",
+      "subtopic": "Natural Enzyme Substrates",
+      "optionExplanations": [
+        "Incorrect. Adrenaline is a natural ligand for receptors.",
+        "Incorrect. Noradrenaline is a natural ligand for receptors.",
+        "Correct. Acetylcholine is a natural enzyme substrate.",
+        "Incorrect. Salbutamol is a synthetic drug."
+      ],
+      "hint": "It is the substrate for acetylcholinesterase."
+    },
+    {
+      "question": "Which drug was developed from the side effect of sulphonamides causing hypoglycaemia?",
+      "options": [
+        "Chlorothiazide",
+        "Tolbutamide",
+        "Isoniazid",
+        "Rivastigmine"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Tolbutamide was developed from sulphonamides that caused hypoglycaemia.",
+      "subtopic": "Known Drug Side-Effects",
+      "optionExplanations": [
+        "Incorrect. Chlorothiazide was developed from the diuretic effect of sulphanilamide.",
+        "Correct. Tolbutamide was developed from the hypoglycaemic side effect.",
+        "Incorrect. Isoniazid was from synthetic compound banks.",
+        "Incorrect. Rivastigmine was from acetylcholine."
+      ],
+      "hint": "It is an antidiabetic agent."
+    },
+    {
+      "question": "Which drug was developed from the observation that sulphanilamide has a diuretic effect?",
+      "options": [
+        "Tolbutamide",
+        "Chlorothiazide",
+        "Isoniazid",
+        "Salbutamol"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Chlorothiazide was developed from sulphanilamide's diuretic effect.",
+      "subtopic": "Known Drug Side-Effects",
+      "optionExplanations": [
+        "Incorrect. Tolbutamide is an antidiabetic.",
+        "Correct. Chlorothiazide is a diuretic.",
+        "Incorrect. Isoniazid is an antitubercular.",
+        "Incorrect. Salbutamol is a beta-agonist."
+      ],
+      "hint": "It is a thiazide diuretic."
+    },
+    {
+      "question": "Which drug was originally designed as a nasal vasoconstrictor but became an antihypertensive?",
+      "options": [
+        "Chlorpromazine",
+        "Imipramine",
+        "Clonidine",
+        "Cisplatin"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Clonidine was originally designed as a nasal vasoconstrictor but was found to lower blood pressure and became an antihypertensive.",
+      "subtopic": "Serendipity",
+      "optionExplanations": [
+        "Incorrect. Chlorpromazine became an antipsychotic.",
+        "Incorrect. Imipramine became an antidepressant.",
+        "Correct. Clonidine became an antihypertensive.",
+        "Incorrect. Cisplatin is an anticancer drug."
+      ],
+      "hint": "It was for nasal drops."
+    },
+    {
+      "question": "Which drug was synthesized as an antihistamine and became the first neuroleptic drug?",
+      "options": [
+        "Clonidine",
+        "Chlorpromazine",
+        "Imipramine",
+        "Cisplatin"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Chlorpromazine was synthesized as an antihistamine and became the first neuroleptic drug used for schizophrenia.",
+      "subtopic": "Serendipity",
+      "optionExplanations": [
+        "Incorrect. Clonidine became an antihypertensive.",
+        "Correct. Chlorpromazine became a neuroleptic.",
+        "Incorrect. Imipramine became an antidepressant.",
+        "Incorrect. Cisplatin is an anticancer drug."
+      ],
+      "hint": "It is used for schizophrenia."
+    },
+    {
+      "question": "Which drug was synthesized as an analogue of chlorpromazine and became a tricyclic antidepressant?",
+      "options": [
+        "Clonidine",
+        "Chlorpromazine",
+        "Imipramine",
+        "Cisplatin"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Imipramine was synthesized as an analogue of chlorpromazine and was found to be effective in alleviating depression.",
+      "subtopic": "Serendipity",
+      "optionExplanations": [
+        "Incorrect. Clonidine became an antihypertensive.",
+        "Incorrect. Chlorpromazine became an antipsychotic.",
+        "Correct. Imipramine became a tricyclic antidepressant.",
+        "Incorrect. Cisplatin is an anticancer drug."
+      ],
+      "hint": "It is a tricyclic antidepressant."
+    },
+    {
+      "question": "What is required to carry out database mining for lead compounds?",
+      "options": [
+        "Knowledge of the disease",
+        "Knowledge of the pharmacophore",
+        "Knowledge of the clinical trials",
+        "Knowledge of the manufacturing process"
+      ],
+      "correctAnswer": "B",
+      "explanation": "To carry out database mining, it is necessary to know the pharmacophore of the drug.",
+      "subtopic": "Database Mining",
+      "optionExplanations": [
+        "Incorrect. Disease knowledge is important but not specifically for database mining.",
+        "Correct. Knowledge of the pharmacophore is required.",
+        "Incorrect. Clinical trials occur much later.",
+        "Incorrect. Manufacturing is a later stage."
+      ],
+      "hint": "It involves the binding groups required for activity."
+    },
+    {
+      "question": "Which of the following is NOT a step in the drug discovery and development process?",
+      "options": [
+        "Identify structure activity relationships",
+        "Study drug metabolism",
+        "Test for toxicity",
+        "Conduct phase IV clinical trials before phase I"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Phase IV clinical trials occur after phase I, II, and III trials. The steps in order are: preclinical, phase I, II, III, approval, and then post-marketing (phase IV).",
+      "subtopic": "Stages of Drug Discovery",
+      "optionExplanations": [
+        "Incorrect. This is step 4.",
+        "Incorrect. This is step 6.",
+        "Incorrect. This is step 7.",
+        "Correct. Phase IV trials occur after phase I, II, and III."
+      ],
+      "hint": "Consider the correct order of clinical trials."
+    },
+    {
+      "question": "What is the correct order of the first three steps in drug discovery?",
+      "options": [
+        "Find a lead compound → Choose a disease → Choose a drug target",
+        "Choose a disease → Choose a drug target → Find a lead compound",
+        "Choose a drug target → Find a lead compound → Choose a disease",
+        "Find a lead compound → Choose a drug target → Choose a disease"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The order is: 1) Choose a disease and know its cause; 2) Choose a drug target; 3) Find a lead compound.",
+      "subtopic": "Stages of Drug Discovery",
+      "optionExplanations": [
+        "Incorrect. The disease is chosen first.",
+        "Correct. This is the correct order.",
+        "Incorrect. The disease must be chosen before the target.",
+        "Incorrect. The disease is chosen first, not the lead compound."
+      ],
+      "hint": "Start with the disease."
+    },
+    {
+      "question": "Which of the following is a function of the pharmacophore in drug design?",
+      "options": [
+        "It summarizes the important binding groups required for activity",
+        "It determines the color of the drug",
+        "It determines the cost of synthesis",
+        "It determines the route of administration"
+      ],
+      "correctAnswer": "A",
+      "explanation": "The pharmacophore summarizes the important binding groups required for activity and their relative positions in space.",
+      "subtopic": "Pharmacophore",
+      "optionExplanations": [
+        "Correct. This is the definition of a pharmacophore.",
+        "Incorrect. Color is not related to pharmacophore.",
+        "Incorrect. Cost is not determined by the pharmacophore.",
+        "Incorrect. Route of administration is not determined by the pharmacophore."
+      ],
+      "hint": "Think about binding groups."
+    },
+    {
+      "question": "What is the aim of lead optimization?",
+      "options": [
+        "To improve potency, selectivity, and pharmacokinetic parameters",
+        "To increase the toxicity of the compound",
+        "To reduce the cost of the drug",
+        "To change the color of the drug"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Lead optimization aims to improve potency, selectivity, and pharmacokinetic parameters of a lead compound.",
+      "subtopic": "Lead Optimization",
+      "optionExplanations": [
+        "Correct. This is the goal of lead optimization.",
+        "Incorrect. Toxicity should be reduced, not increased.",
+        "Incorrect. Cost reduction is not the primary aim of lead optimization.",
+        "Incorrect. Color is not relevant."
+      ],
+      "hint": "It improves the drug's properties."
+    },
+    {
+      "question": "Which of the following is a source of lead compounds from natural products?",
+      "options": [
+        "Synthetic compound banks",
+        "Plant origin",
+        "Database mining",
+        "Serendipity"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Plant origin is a source of natural product lead compounds.",
+      "subtopic": "Natural Products",
+      "optionExplanations": [
+        "Incorrect. Synthetic compound banks are a separate source.",
+        "Correct. Plant origin is a natural product source.",
+        "Incorrect. Database mining is a separate source.",
+        "Incorrect. Serendipity is a separate source."
+      ],
+      "hint": "Think of morphine and quinine."
+    },
+    {
+      "question": "Which of the following drugs was developed from a natural product?",
+      "options": [
+        "Isoniazid",
+        "Aspirin",
+        "Tolbutamide",
+        "Chlorothiazide"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Aspirin was developed from salicin, a natural product from plants.",
+      "subtopic": "Natural Products",
+      "optionExplanations": [
+        "Incorrect. Isoniazid was from synthetic compound banks.",
+        "Correct. Aspirin was from salicin.",
+        "Incorrect. Tolbutamide was from a side effect.",
+        "Incorrect. Chlorothiazide was from a side effect."
+      ],
+      "hint": "It was developed from willow bark."
+    },
+    {
+      "question": "What is the role of natural enzyme substrates in drug design?",
+      "options": [
+        "They are used as lead compounds for enzyme inhibitors",
+        "They are used as drugs directly",
+        "They are used to increase enzyme activity",
+        "They are used to diagnose diseases"
+      ],
+      "correctAnswer": "A",
+      "explanation": "The natural substrate for an enzyme can be used as a lead compound in the design of an enzyme inhibitor.",
+      "subtopic": "Natural Enzyme Substrates",
+      "optionExplanations": [
+        "Correct. They are used as lead compounds for inhibitors.",
+        "Incorrect. They are starting points, not necessarily drugs themselves.",
+        "Incorrect. They are substrates, not activators.",
+        "Incorrect. They are not used for diagnosis."
+      ],
+      "hint": "Think of acetylcholine and rivastigmine."
+    },
+    {
+      "question": "Which of the following is an example of a lead compound obtained from a synthetic compound bank?",
+      "options": [
+        "Penicillin G",
+        "Morphine",
+        "Isoniazid",
+        "Curacin A"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Isoniazid was discovered by screening synthetic compound banks.",
+      "subtopic": "Synthetic Compound Banks",
+      "optionExplanations": [
+        "Incorrect. Penicillin G is from microbes.",
+        "Incorrect. Morphine is from plants.",
+        "Correct. Isoniazid was from a synthetic compound bank.",
+        "Incorrect. Curacin A is from marine organisms."
+      ],
+      "hint": "It is an antitubercular drug."
+    },
+    {
+      "question": "Which of the following is NOT a natural product source of lead compounds?",
+      "options": [
+        "Plant origin",
+        "Microbial origin",
+        "Marine origin",
+        "Synthetic origin"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Synthetic origin is not a natural product source. The natural product sources are plant, microbial, and marine.",
+      "subtopic": "Natural Products",
+      "optionExplanations": [
+        "Incorrect. Plant origin is a natural product source.",
+        "Incorrect. Microbial origin is a natural product source.",
+        "Incorrect. Marine origin is a natural product source.",
+        "Correct. Synthetic origin is not a natural product source."
+      ],
+      "hint": "Which one is man-made?"
+    },
+    {
+      "question": "What is the significance of known drug side-effects in drug discovery?",
+      "options": [
+        "They can lead to the discovery of new drugs for other conditions",
+        "They always make the drug unusable",
+        "They are ignored in drug development",
+        "They are used to increase the drug's price"
+      ],
+      "correctAnswer": "A",
+      "explanation": "An existing drug may have an undesirable side-effect which might be of use in another area of medicine, leading to the discovery of new drugs.",
+      "subtopic": "Known Drug Side-Effects",
+      "optionExplanations": [
+        "Correct. Side effects can lead to new drug discoveries.",
+        "Incorrect. They can sometimes be beneficial.",
+        "Incorrect. They are studied and can be useful.",
+        "Incorrect. Price is not related to side effects."
+      ],
+      "hint": "Think of tolbutamide and chlorothiazide."
+    },
+    {
+      "question": "Which of the following is an example of a drug discovered by serendipity?",
+      "options": [
+        "Aspirin",
+        "Penicillin G",
+        "Isoniazid",
+        "Rivastigmine"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Penicillin G was discovered by serendipity (chance).",
+      "subtopic": "Serendipity",
+      "optionExplanations": [
+        "Incorrect. Aspirin was developed from salicin.",
+        "Correct. Penicillin G was discovered by chance.",
+        "Incorrect. Isoniazid was from synthetic compound banks.",
+        "Incorrect. Rivastigmine was from acetylcholine."
+      ],
+      "hint": "It was discovered by Alexander Fleming."
+    },
+    {
+      "question": "What is the main advantage of using natural ligands as lead compounds?",
+      "options": [
+        "They are already known to bind to the target receptor",
+        "They are always cheaper to produce",
+        "They have no side effects",
+        "They are always more potent than synthetic compounds"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Natural ligands of a target receptor have sometimes been used as lead compounds because they are already known to bind to the target receptor.",
+      "subtopic": "Natural Ligands for Receptors",
+      "optionExplanations": [
+        "Correct. They are known to bind to the receptor.",
+        "Incorrect. Cost is not the main advantage.",
+        "Incorrect. They may have side effects.",
+        "Incorrect. Potency can vary."
+      ],
+      "hint": "They have a known interaction with the target."
+    },
+    {
+      "question": "Which of the following is a drug target that is a nucleic acid?",
+      "options": [
+        "DNA",
+        "Enzyme",
+        "Receptor",
+        "Ion channel"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Nucleic acids such as DNA are drug targets.",
+      "subtopic": "Drug Targets",
+      "optionExplanations": [
+        "Correct. DNA is a nucleic acid drug target.",
+        "Incorrect. Enzymes are proteins.",
+        "Incorrect. Receptors are proteins.",
+        "Incorrect. Ion channels are proteins."
+      ],
+      "hint": "It is a macromolecule that carries genetic information."
+    },
+    {
+      "question": "Which of the following is NOT a stage in the drug discovery and development process?",
+      "options": [
+        "Lead optimization",
+        "Preclinical testing",
+        "Clinical trials",
+        "Post-marketing surveillance only"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Post-marketing surveillance (Phase IV) is a stage, but 'only' makes this option incorrect as there are many other stages.",
+      "subtopic": "Stages of Drug Discovery",
+      "optionExplanations": [
+        "Incorrect. Lead optimization is a stage.",
+        "Incorrect. Preclinical testing is a stage.",
+        "Incorrect. Clinical trials are a stage.",
+        "Correct. Post-marketing surveillance is a stage, but not the only one."
+      ],
+      "hint": "Consider all the stages involved."
+    },
+    {
+      "question": "What is the role of the pharmacophore in database mining?",
+      "options": [
+        "It is required to carry out the search",
+        "It is the result of the search",
+        "It is not related to database mining",
+        "It is used to synthesize new compounds"
+      ],
+      "correctAnswer": "A",
+      "explanation": "To carry out database mining, it is necessary to know the pharmacophore of the drug.",
+      "subtopic": "Database Mining",
+      "optionExplanations": [
+        "Correct. Knowledge of the pharmacophore is required.",
+        "Incorrect. It is a prerequisite, not the result.",
+        "Incorrect. It is directly related.",
+        "Incorrect. It is used for searching, not synthesis."
+      ],
+      "hint": "You need to know what you are looking for."
+    },
+    {
+      "question": "Which of the following drugs was developed from a natural product from plant origin?",
+      "options": [
+        "Penicillin G",
+        "Curacin A",
+        "Morphine",
+        "Isoniazid"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Morphine is a natural product from plant origin (opium poppy).",
+      "subtopic": "Natural Products",
+      "optionExplanations": [
+        "Incorrect. Penicillin G is from microbes.",
+        "Incorrect. Curacin A is from marine organisms.",
+        "Correct. Morphine is from plants.",
+        "Incorrect. Isoniazid is synthetic."
+      ],
+      "hint": "It is a narcotic analgesic."
+    },
+    {
+      "question": "Which of the following drugs was developed from a natural product from microbial origin?",
+      "options": [
+        "Morphine",
+        "Penicillin G",
+        "Curacin A",
+        "Quinine"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Penicillin G is from microbial origin (fungi).",
+      "subtopic": "Natural Products",
+      "optionExplanations": [
+        "Incorrect. Morphine is from plants.",
+        "Correct. Penicillin G is from microbes.",
+        "Incorrect. Curacin A is from marine organisms.",
+        "Incorrect. Quinine is from plants."
+      ],
+      "hint": "It is an antibiotic."
+    },
+    {
+      "question": "Which of the following drugs was developed from a natural product from marine origin?",
+      "options": [
+        "Morphine",
+        "Penicillin G",
+        "Curacin A",
+        "Quinine"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Curacin A is obtained from a marine cyanobacterium.",
+      "subtopic": "Natural Products",
+      "optionExplanations": [
+        "Incorrect. Morphine is from plants.",
+        "Incorrect. Penicillin G is from microbes.",
+        "Correct. Curacin A is from marine organisms.",
+        "Incorrect. Quinine is from plants."
+      ],
+      "hint": "It has antitumour activity."
+    },
+    {
+      "question": "What is the main difference between drug discovery and drug development?",
+      "options": [
+        "Drug discovery is the initial phase of finding a lead compound, while drug development is the later phase of testing and marketing",
+        "Drug discovery is done in animals, while drug development is done in humans",
+        "Drug discovery is done by chemists, while drug development is done by pharmacists",
+        "Drug discovery is cheap, while drug development is expensive"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Drug discovery is the initial phase (target discovery, lead discovery, lead optimization), while drug development is the later phase (preclinical, proof of concept, full development, registration/launch).",
+      "subtopic": "Overview of Drug Discovery and Development",
+      "optionExplanations": [
+        "Correct. This is the correct distinction.",
+        "Incorrect. Both phases involve animal and human studies at different stages.",
+        "Incorrect. Both involve multiple disciplines.",
+        "Incorrect. Cost is not the defining difference."
+      ],
+      "hint": "Think of the timeline in Figure 1.7."
+    }
+  ]
+    }
