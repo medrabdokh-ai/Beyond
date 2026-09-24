@@ -318,7 +318,7 @@
       } catch (error) {
         console.error(error);
         $('curriculumStatus').textContent = 'Could not load courses.json';
-        $('curriculumAccordion').innerHTML = `<div class="rounded-2xl border border-red-200 bg-red-50 p-5 text-sm font-semibold text-red-700">The curriculum file could not be loaded. On GitHub Pages, confirm <code>data/courses.json</code> is deployed. For local testing, use a local web server rather than opening <code>index.html</code> directly.</div>`;
+        $('curriculumAccordion').innerHTML = `<div class="rounded-2xl border border-red-200 bg-red-50 p-5 text-sm font-semibold text-red-700">The curriculum file could not be loaded. Confirm <code>courses.json</code> is in the same folder as this page.</div>`;
       }
     }
 
@@ -460,7 +460,7 @@
         renderPrep();
       } catch (error) {
         console.error(error);
-        renderErrorScreen('Lecture data could not be loaded. Check the JSON file path in courses.json.');
+        renderErrorScreen('Lecture data could not be loaded. Check the JSON file name in courses.json.');
       }
     }
 
@@ -469,7 +469,7 @@
       state.previousFocus = document.activeElement;
       openModal();
       try {
-        const banks = await Promise.all(subject.lectures.map(l => loadJSON(`./data/lectures/${l.file}`)));
+        const banks = await Promise.all(subject.lectures.map(l => loadJSON(`./${l.file}`)));
         const questions = banks.flatMap(bank => (bank.questions || []).map(q => ({ ...q, lectureTitle: bank.title })));
         shuffle(questions);
         const base = banks[0];
@@ -831,4 +831,4 @@
     loadCourses();
   </script>
 </body>
-  </html>
+</html>
