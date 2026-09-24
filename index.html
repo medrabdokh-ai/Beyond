@@ -36,8 +36,6 @@
     @keyframes draw { to { stroke-dashoffset: 0; } }
     .blob { animation: floatBlob 10s ease-in-out infinite alternate; transform-origin: center; }
     @keyframes floatBlob { from { transform: translate(0,0) rotate(-2deg); } to { transform: translate(10px,-8px) rotate(2deg); } }
-    .lift { transition: transform .2s ease; }
-    .lift:hover { transform: translateY(-4px); }
     .thin-scrollbar::-webkit-scrollbar { width: 8px; }
     .thin-scrollbar::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 999px; }
     .modal-backdrop { background: rgba(15, 23, 42, .62); }
@@ -111,7 +109,7 @@
           </div>
           <div class="mt-10 flex flex-wrap items-center gap-6 text-xs font-bold text-slate-400">
             <span>✓ Keyboard friendly</span>
-            <span>✓ Practice + Exam modes</span>
+            <span>✓ Instant feedback</span>
             <span>✓ Performance analytics</span>
           </div>
         </div>
@@ -192,10 +190,10 @@
               </div>
               <div class="hidden rounded-full bg-white/10 px-3 py-2 text-xs font-bold sm:block">Live engine</div>
             </div>
-            <p class="mt-4 max-w-2xl text-sm leading-6 text-blue-100 sm:text-base">Pick a lecture and jump straight in. Answer each question and receive instant feedback, then review your weaknesses at the end.</p>
+            <p class="mt-4 max-w-2xl text-sm leading-6 text-blue-100 sm:text-base">Pick a lecture and jump straight in. Answer each question and see the correct answer instantly, then review your weaknesses at the end.</p>
             <div class="mt-7 grid gap-3 sm:grid-cols-3">
               <div class="rounded-2xl bg-white/10 p-4"><div class="text-xl font-black">01</div><div class="mt-1 text-xs font-bold text-blue-100">Answer sequentially</div></div>
-              <div class="rounded-2xl bg-white/10 p-4"><div class="text-xl font-black">02</div><div class="mt-1 text-xs font-bold text-blue-100">Answer each question</div></div>
+              <div class="rounded-2xl bg-white/10 p-4"><div class="text-xl font-black">02</div><div class="mt-1 text-xs font-bold text-blue-100">Instant feedback</div></div>
               <div class="rounded-2xl bg-white/10 p-4"><div class="text-xl font-black">03</div><div class="mt-1 text-xs font-bold text-blue-100">Review weaknesses</div></div>
             </div>
           </div>
@@ -250,7 +248,6 @@
       mode: 'practice',
       timer: null,
       elapsedSeconds: 0,
-      examStarted: false,
       result: null,
       modalScreen: 'exam',
       previousFocus: null,
@@ -441,7 +438,7 @@
       </div>`;
     }
 
-    // Clicking a lecture launches the exam directly (Practice Mode gives instant feedback).
+    // Clicking a lecture launches Practice Mode directly (instant feedback after each answer).
     async function openLecture(file, subject) {
       state.redoMode = false;
       state.previousFocus = document.activeElement;
@@ -487,7 +484,6 @@
       state.currentQuestion = 0;
       state.answers = Array((questionsOverride || state.lecture.questions || []).length).fill(null);
       state.flagged = new Set();
-      state.examStarted = true;
       state.result = null;
       state.redoQuestions = questionsOverride ? [...questionsOverride] : null;
       const questions = questionsOverride ? [...questionsOverride] : [...state.lecture.questions];
@@ -517,9 +513,13 @@
     function renderExam() {
       const qs = state.lecture.activeQuestions || [];
       const q = qs[state.currentQuestion];
+      const userAnswer = state.answers[state.currentQuestion];
+      const answered = state.mode === 'practice' && userAnswer !== null;
+
       $('modalKicker').textContent = state.mode === 'exam' ? 'Exam Mode' : 'Practice Mode';
       $('modalTitle').textContent = state.lecture.title;
       $('modalDescription').textContent = `${qs.length} questions • ${state.lecture.subjectName || 'Pharmacy'}`;
+
       $('modalBody').innerHTML = `
         <div class="flex min-h-0 h-full flex-col">
           <div class="shrink-0 border-b border-slate-100 px-5 py-4 sm:px-7">
@@ -542,15 +542,37 @@
                 <div class="mt-6 grid gap-3" role="radiogroup" aria-label="Answer options">
                   ${q.options.map((opt, i) => {
                     const letter = String.fromCharCode(65+i);
-                    const selected = state.answers[state.currentQuestion] === letter;
-                    return `<button type="button" class="option-btn focus-ring group flex w-full items-start gap-4 rounded-2xl border-2 ${selected ? 'border-royal bg-blue-50' : 'border-slate-200 bg-white'} p-4 text-left transition hover:border-blue-200" data-option="${letter}" aria-pressed="${selected}">
-                      <span class="grid h-8 w-8 shrink-0 place-items-center rounded-lg ${selected?'bg-royal text-white':'bg-slate-100 text-slate-500'} text-xs font-black">${letter}</span>
+                    const isSelected = userAnswer === letter;
+                    const isCorrect = letter === q.correctAnswer;
+                    let cls = 'border-slate-200 bg-white hover:border-blue-200';
+                    let badge = 'bg-slate-100 text-slate-500';
+                    if (answered) {
+                      if (isCorrect) { cls = 'border-emerald-500 bg-emerald-50'; badge = 'bg-emerald-500 text-white'; }
+                      else if (isSelected) { cls = 'border-red-500 bg-red-50'; badge = 'bg-red-500 text-white'; }
+                      else { cls = 'border-slate-200 bg-white opacity-70'; }
+                    } else if (isSelected) {
+                      cls = 'border-royal bg-blue-50'; badge = 'bg-royal text-white';
+                    }
+                    return `<button type="button" class="option-btn focus-ring flex w-full items-start gap-4 rounded-2xl border-2 ${cls} p-4 text-left transition" data-option="${letter}" aria-pressed="${isSelected}" ${answered ? 'disabled' : ''}>
+                      <span class="grid h-8 w-8 shrink-0 place-items-center rounded-lg ${badge} text-xs font-black">${letter}</span>
                       <span class="pt-1 text-sm font-semibold leading-6 text-slate-700">${esc(opt)}</span>
+                      ${answered && isCorrect ? '<span class="ml-auto text-emerald-600 font-black">✓</span>' : ''}
+                      ${answered && isSelected && !isCorrect ? '<span class="ml-auto text-red-600 font-black">✗</span>' : ''}
                     </button>`;
                   }).join('')}
                 </div>
-                ${state.mode === 'practice' ? `<div class="mt-5 rounded-2xl border border-slate-200 bg-slate-50 p-4"><button id="hintBtn" type="button" class="focus-ring text-xs font-black text-royal">Need a hint?</button><div id="hintText" class="mt-2 hidden text-sm leading-6 text-slate-600">${esc(q.hint || 'Focus on the mechanism, definition, or discriminating feature described in the stem.')}</div></div>` : ''}
-                </div>
+
+                ${answered ? `
+                  <div class="mt-5 rounded-2xl border-2 ${userAnswer === q.correctAnswer ? 'border-emerald-200 bg-emerald-50' : 'border-red-200 bg-red-50'} p-5">
+                    <div class="text-xs font-black uppercase tracking-[.15em] ${userAnswer === q.correctAnswer ? 'text-emerald-700' : 'text-red-700'}">
+                      ${userAnswer === q.correctAnswer ? '✓ Correct' : '✗ Incorrect — the correct answer is ' + q.correctAnswer}
+                    </div>
+                    ${q.explanation ? `<div class="mt-3 text-sm leading-6 text-slate-700"><span class="font-black">Explanation:</span> ${esc(q.explanation)}</div>` : ''}
+                  </div>
+                ` : ''}
+
+                ${state.mode === 'practice' && !answered ? `<div class="mt-5 rounded-2xl border border-slate-200 bg-slate-50 p-4"><button id="hintBtn" type="button" class="focus-ring text-xs font-black text-royal">Need a hint?</button><div id="hintText" class="mt-2 hidden text-sm leading-6 text-slate-600">${esc(q.hint || 'Focus on the mechanism, definition, or discriminating feature described in the stem.')}</div></div>` : ''}
+              </div>
 
               <aside class="h-max rounded-2xl bg-slate-50 p-4 lg:sticky lg:top-0" aria-label="Question navigator">
                 <div class="flex items-center justify-between"><div class="text-xs font-black uppercase tracking-[.15em] text-slate-400">Navigator</div><div class="text-xs font-bold text-slate-400">${state.flagged.size} flagged</div></div>
@@ -581,16 +603,16 @@
     }
 
     function chooseAnswer(letter) {
+      // In practice mode, once an answer is locked in, it cannot be changed.
+      if (state.mode === 'practice' && state.answers[state.currentQuestion] !== null) return;
       state.answers[state.currentQuestion] = letter;
+      renderExam();
       if (state.mode === 'practice') {
         const q = state.lecture.activeQuestions[state.currentQuestion];
-        renderExam();
         setTimeout(() => {
           const correct = q.correctAnswer === letter;
-          showToast(correct ? 'Correct — strong retrieval.' : `Not quite. Correct answer: ${q.correctAnswer}`);
+          showToast(correct ? '✓ Correct — strong retrieval.' : `✗ Correct answer: ${q.correctAnswer}`);
         }, 10);
-      } else {
-        renderExam();
       }
     }
 
@@ -710,24 +732,6 @@
       if (state.modalScreen === 'exam' && !['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName)) {
         if (e.key === 'ArrowRight') { e.preventDefault(); goNext(); }
         if (e.key === 'ArrowLeft' && state.currentQuestion > 0) { e.preventDefault(); state.currentQuestion--; renderExam(); }
-      }
-    }
-
-    async function openDemoExam() {
-      try {
-        if (!state.courses) state.courses = await loadJSON('./courses.json');
-        let first = null, subject = null;
-        outer: for (const level of state.courses.levels) {
-          for (const sem of level.semesters || []) {
-            for (const s of sem.subjects || []) {
-              if (s.lectures?.length) { first = s.lectures[0]; subject = s; break outer; }
-            }
-          }
-        }
-        if (!first) throw new Error('No demo lecture is configured.');
-        await openLecture(first.file, subject);
-      } catch (error) {
-        console.error(error); showToast('Demo exam could not be loaded.');
       }
     }
 
