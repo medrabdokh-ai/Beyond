@@ -627,7 +627,7 @@
       state.lecture = { ...state.lecture, activeQuestions: questions };
       state.elapsedSeconds = 0;
       renderExam();
-      if (mode === 'exam') startTimer(); else stopTimer();
+      startTimer();
       setTimeout(() => document.querySelector('[data-option]')?.focus(), 50);
     }
 
