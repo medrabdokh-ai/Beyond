@@ -2948,7 +2948,24 @@
       ],
       "hint": "Two components of plant starch."
     },
-    {
+      {
       "question": "Why are starches usually insoluble in water?",
       "options": [
-        "
+        "Because they contain no OH groups",
+        "Because of their high molecular weight",
+        "Because they are ionic compounds",
+        "Because they are made of fructose"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The lecture states that starches (and other glucose polymers) are usually insoluble in water because of their high molecular weight.",
+      "subtopic": "Homo polysaccharides — starch",
+      "optionExplanations": [
+        "Incorrect. Starch has many OH groups.",
+        "Correct. High molecular weight reduces solubility.",
+        "Incorrect. Starch is not ionic.",
+        "Incorrect. Starch is made of glucose."
+      ],
+      "hint": "Molecular size."
+    }
+  ]
+}
