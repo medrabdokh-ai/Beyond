@@ -40,6 +40,51 @@
     .thin-scrollbar::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 999px; }
     .modal-backdrop { background: rgba(15, 23, 42, .62); }
     .safe-bottom { padding-bottom: max(1rem, env(safe-area-inset-bottom)); }
+
+    /* === Accordion animation === */
+    .accordion-region {
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows .35s cubic-bezier(.4,0,.2,1), opacity .25s ease;
+      opacity: 0;
+    }
+    .accordion-region > .accordion-inner {
+      overflow: hidden;
+      min-height: 0;
+    }
+    .accordion-region.open {
+      grid-template-rows: 1fr;
+      opacity: 1;
+    }
+
+    /* === Lecture items stagger === */
+    @keyframes slideInUp {
+      from { opacity: 0; transform: translateY(8px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .lecture-item {
+      animation: slideInUp .35s ease-out backwards;
+    }
+
+    /* === Option buttons === */
+    .option-btn {
+      transition: transform .15s ease, border-color .15s ease, background-color .15s ease;
+    }
+    .option-btn:not(:disabled):hover {
+      transform: translateX(4px);
+    }
+    .option-btn:not(:disabled):active {
+      transform: scale(.99);
+    }
+    @keyframes pulseGlow {
+      0%   { box-shadow: 0 0 0 0 rgba(16,185,129,.55); }
+      70%  { box-shadow: 0 0 0 12px rgba(16,185,129,0); }
+      100% { box-shadow: 0 0 0 0 rgba(16,185,129,0); }
+    }
+    .option-btn.correct-revealed {
+      animation: pulseGlow .7s ease-out;
+    }
+
     @media (prefers-reduced-motion: reduce) {
       *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; scroll-behavior: auto !important; }
     }
@@ -164,15 +209,17 @@
       </div>
     </section>
 
-    <section id="curriculum" class="border-t border-slate-100 bg-slate-50/50 py-16 lg:py-20">
-      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+    <section id="curriculum" class="relative overflow-hidden border-t border-slate-100 bg-gradient-to-b from-slate-50 via-sky-50/40 to-white py-16 lg:py-20">
+      <div class="pointer-events-none absolute -top-24 -right-24 h-80 w-80 rounded-full bg-sky-100/60 blur-3xl"></div>
+      <div class="pointer-events-none absolute -bottom-24 -left-24 h-80 w-80 rounded-full bg-blue-100/50 blur-3xl"></div>
+      <div class="relative mx-auto max-w-7xl px-5 lg:px-8">
         <div class="flex flex-col justify-between gap-5 md:flex-row md:items-end">
           <div>
             <div class="text-xs font-black uppercase tracking-[.18em] text-skyx">Curriculum</div>
             <h2 class="mt-2 text-3xl font-black tracking-tight sm:text-4xl">Your pharmacy exam map</h2>
             <p class="mt-3 max-w-2xl text-slate-500">Open a level, choose a semester, then jump straight into a lecture or a comprehensive exam.</p>
           </div>
-          <div class="rounded-full border border-slate-200 bg-white px-4 py-2 text-xs font-bold text-slate-500" id="curriculumStatus" aria-live="polite">Loading courses…</div>
+          <div class="rounded-full border border-slate-200 bg-white px-4 py-2 text-xs font-bold text-slate-500 shadow-sm" id="curriculumStatus" aria-live="polite">Loading courses…</div>
         </div>
 
         <div id="curriculumAccordion" class="mt-8 space-y-3" aria-label="Pharmacy curriculum"></div>
@@ -259,6 +306,17 @@
     const esc = (value='') => String(value).replace(/[&<>"']/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
     const safeId = (value='') => value.replace(/[^a-z0-9_-]/gi, '-').toLowerCase();
 
+    // Subject → icon + accent gradient
+    const SUBJECT_STYLE = {
+      'pharmacology-1':         { icon: '🧬', grad: 'from-violet-100 to-purple-100' },
+      'phytochemistry':         { icon: '🌿', grad: 'from-emerald-100 to-green-100' },
+      'drug-design':            { icon: '💊', grad: 'from-blue-100 to-sky-100' },
+      'pharmaceutics-3':        { icon: '💉', grad: 'from-rose-100 to-pink-100' },
+      'biochemistry-2':         { icon: '⚗️', grad: 'from-amber-100 to-yellow-100' },
+      'parasitology-virology':  { icon: '🦠', grad: 'from-teal-100 to-cyan-100' }
+    };
+    const LEVEL_ACCENTS = ['bg-royal', 'bg-skyx', 'bg-violet-500', 'bg-emerald-500', 'bg-amber-500'];
+
     function showToast(message) {
       const el = $('toast');
       el.textContent = message;
@@ -316,16 +374,25 @@
       wrap.innerHTML = state.courses.levels.map((level, index) => {
         const levelId = `level-${safeId(level.id || index)}`;
         const comingSoon = level.status === 'coming_soon';
+        const accent = comingSoon ? 'bg-slate-300' : LEVEL_ACCENTS[index % LEVEL_ACCENTS.length];
         return `
-          <div class="overflow-hidden rounded-2xl border border-slate-200 bg-white">
-            <button type="button" class="focus-ring flex w-full items-center justify-between gap-4 px-5 py-5 text-left hover:bg-slate-50" aria-expanded="false" aria-controls="${levelId}" data-level-button="${esc(level.id)}">
+          <div class="relative overflow-hidden rounded-2xl border border-slate-200 bg-white transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:border-sky-200">
+            <span class="absolute left-0 top-0 h-full w-1.5 ${accent}"></span>
+            <button type="button" class="focus-ring flex w-full items-center justify-between gap-4 px-5 py-5 pl-6 text-left" aria-expanded="false" aria-controls="${levelId}" data-level-button="${esc(level.id)}">
               <div class="flex min-w-0 items-center gap-4">
-                <span class="grid h-10 w-10 shrink-0 place-items-center rounded-xl ${comingSoon ? 'bg-slate-100 text-slate-400' : 'bg-blue-50 text-royal'} text-sm font-black">${esc(level.number)}</span>
-                <span class="min-w-0"><span class="block text-base font-black">${esc(level.title)}</span><span class="block text-xs font-semibold text-slate-400">${comingSoon ? 'Content Coming Soon' : 'Open semesters and subjects'}</span></span>
+                <span class="grid h-11 w-11 shrink-0 place-items-center rounded-xl ${comingSoon ? 'bg-slate-100 text-slate-400' : 'bg-gradient-to-br from-blue-50 to-sky-100 text-royal'} text-sm font-black shadow-sm">${esc(level.number)}</span>
+                <span class="min-w-0">
+                  <span class="block text-base font-black">${esc(level.title)}</span>
+                  <span class="block text-xs font-semibold text-slate-400">${comingSoon ? 'Content Coming Soon' : 'Open semesters and subjects'}</span>
+                </span>
               </div>
-              <svg class="h-5 w-5 shrink-0 text-slate-400 transition" data-chevron="${levelId}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m7 10 5 5 5-5"/></svg>
+              <svg class="h-5 w-5 shrink-0 text-slate-400 transition-transform duration-300" data-chevron="${levelId}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m7 10 5 5 5-5"/></svg>
             </button>
-            <div id="${levelId}" class="hidden border-t border-slate-100 px-4 pb-4" role="region" aria-label="${esc(level.title)} contents"></div>
+            <div id="${levelId}" class="accordion-region" role="region" aria-label="${esc(level.title)} contents">
+              <div class="accordion-inner">
+                <div class="border-t border-slate-100 px-4 pb-4 pl-5"></div>
+              </div>
+            </div>
           </div>`;
       }).join('');
       wrap.querySelectorAll('[data-level-button]').forEach(btn => btn.addEventListener('click', () => toggleLevel(btn.dataset.levelButton, btn)));
@@ -334,31 +401,63 @@
     function toggleLevel(levelId, button) {
       const level = state.courses.levels.find(item => String(item.id) === String(levelId));
       const region = $(`level-${safeId(levelId)}`);
-      const isOpen = !region.classList.contains('hidden');
-      document.querySelectorAll('[role="region"]').forEach(el => { if (el.id !== region.id) el.classList.add('hidden'); });
-      document.querySelectorAll('[data-level-button]').forEach(el => { if (el !== button) el.setAttribute('aria-expanded','false'); });
+      const inner = region.querySelector('.accordion-inner > div');
+      const isOpen = region.classList.contains('open');
+
+      // Close all other regions
+      document.querySelectorAll('.accordion-region.open').forEach(el => { if (el.id !== region.id) el.classList.remove('open'); });
+      document.querySelectorAll('[data-level-button]').forEach(el => {
+        if (el !== button) {
+          el.setAttribute('aria-expanded','false');
+          const ch = document.querySelector(`[data-chevron="${el.getAttribute('aria-controls')}"]`);
+          if (ch) ch.style.transform = '';
+        }
+      });
+
+      const chevron = document.querySelector(`[data-chevron="${region.id}"]`);
+
       if (isOpen) {
-        region.classList.add('hidden');
+        region.classList.remove('open');
         button.setAttribute('aria-expanded','false');
+        if (chevron) chevron.style.transform = '';
         return;
       }
+
       button.setAttribute('aria-expanded','true');
-      region.classList.remove('hidden');
-      const comingSoon = level.status === 'coming_soon';
-      region.innerHTML = comingSoon ? `<div class="m-3 rounded-xl bg-slate-50 p-4 text-sm font-semibold text-slate-500">Content Coming Soon</div>` : renderSemesters(level);
-      bindSemesterAndSubjectControls(region);
+      if (chevron) chevron.style.transform = 'rotate(180deg)';
+
+      if (inner.innerHTML === '') {
+        const comingSoon = level.status === 'coming_soon';
+        inner.innerHTML = comingSoon
+          ? `<div class="mt-3 rounded-xl bg-slate-50 p-4 text-sm font-semibold text-slate-500">Content Coming Soon</div>`
+          : renderSemesters(level);
+        if (!comingSoon) bindSemesterAndSubjectControls(inner);
+      }
+
+      // Trigger animation on next frame so transition runs
+      requestAnimationFrame(() => region.classList.add('open'));
     }
 
     function renderSemesters(level) {
       return `<div class="space-y-3 pt-3">${(level.semesters || []).map((semester, sIndex) => {
         const semId = `sem-${safeId(level.id)}-${sIndex}`;
         const hasSubjects = (semester.subjects || []).length > 0;
-        return `<div class="rounded-xl border border-slate-100 bg-slate-50/60">
-          <button type="button" class="focus-ring flex w-full items-center justify-between gap-4 px-4 py-4 text-left" data-semester-button="${semId}" data-level-id="${esc(level.id)}" data-semester-index="${sIndex}" aria-controls="${semId}" aria-expanded="false">
-            <span><span class="block text-sm font-black">${esc(semester.name)}</span><span class="block text-xs font-semibold text-slate-400">${hasSubjects ? `${semester.subjects.length} subjects` : 'Content Coming Soon'}</span></span>
-            <svg class="h-4 w-4 text-slate-400 transition" data-chevron="${semId}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m7 10 5 5 5-5"/></svg>
+        return `<div class="overflow-hidden rounded-xl border border-slate-100 bg-white/70">
+          <button type="button" class="focus-ring flex w-full items-center justify-between gap-4 px-4 py-4 text-left transition hover:bg-slate-50/60" data-semester-button="${semId}" data-level-id="${esc(level.id)}" data-semester-index="${sIndex}" aria-controls="${semId}" aria-expanded="false">
+            <span class="flex items-center gap-3">
+              <span class="grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-slate-100 text-xs font-black text-slate-500">${sIndex + 1}</span>
+              <span>
+                <span class="block text-sm font-black">${esc(semester.name)}</span>
+                <span class="block text-xs font-semibold text-slate-400">${hasSubjects ? `${semester.subjects.length} subjects` : 'Content Coming Soon'}</span>
+              </span>
+            </span>
+            <svg class="h-4 w-4 text-slate-400 transition-transform duration-300" data-chevron="${semId}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m7 10 5 5 5-5"/></svg>
           </button>
-          <div id="${semId}" class="hidden px-3 pb-3"></div>
+          <div id="${semId}" class="accordion-region">
+            <div class="accordion-inner">
+              <div class="px-3 pb-3"></div>
+            </div>
+          </div>
         </div>`;
       }).join('')}</div>`;
     }
@@ -366,17 +465,19 @@
     function bindSemesterAndSubjectControls(region) {
       region.querySelectorAll('[data-semester-button]').forEach(btn => btn.addEventListener('click', () => {
         const box = $(btn.dataset.semesterButton);
-        const open = !box.classList.contains('hidden');
-        box.classList.toggle('hidden', open);
+        const inner = box.querySelector('.accordion-inner > div');
+        const open = box.classList.contains('open');
         btn.setAttribute('aria-expanded', String(!open));
         const chevron = document.querySelector(`[data-chevron="${btn.dataset.semesterButton}"]`);
         if (chevron) chevron.style.transform = open ? '' : 'rotate(180deg)';
-        if (!open && box.innerHTML === '') {
+
+        if (!open && inner.innerHTML === '') {
           const level = state.courses.levels.find(l => String(l.id) === String(btn.dataset.levelId));
           const semester = level?.semesters?.[Number(btn.dataset.semesterIndex)];
-          box.innerHTML = renderSubjects(semester);
-          bindSubjectControls(box);
+          inner.innerHTML = renderSubjects(semester);
+          bindSubjectControls(inner);
         }
+        requestAnimationFrame(() => box.classList.toggle('open', !open));
       }));
     }
 
@@ -384,12 +485,23 @@
       if (!semester || !semester.subjects?.length) return `<div class="rounded-lg bg-white p-4 text-sm font-semibold text-slate-500">Content Coming Soon</div>`;
       return `<div class="grid gap-2">${semester.subjects.map(subject => {
         const subjId = `subj-${safeId(subject.id)}`;
-        return `<div class="overflow-hidden rounded-xl border border-slate-200 bg-white">
-          <button type="button" class="focus-ring flex w-full items-center justify-between gap-4 px-4 py-4 text-left" data-subject-button="${subjId}" aria-controls="${subjId}" aria-expanded="false">
-            <span><span class="block text-sm font-black">${esc(subject.name)}</span><span class="block text-xs font-semibold text-slate-400">${subject.lectures.length} lecture exams + comprehensive</span></span>
-            <svg class="h-4 w-4 text-slate-400 transition" data-chevron="${subjId}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m7 10 5 5 5-5"/></svg>
+        const style = SUBJECT_STYLE[subject.id] || { icon: '📖', grad: 'from-slate-100 to-slate-50' };
+        return `<div class="overflow-hidden rounded-xl border border-slate-200 bg-white transition-all duration-200 hover:border-skyx/60 hover:shadow-md">
+          <button type="button" class="focus-ring group flex w-full items-center justify-between gap-4 px-4 py-4 text-left" data-subject-button="${subjId}" aria-controls="${subjId}" aria-expanded="false">
+            <span class="flex min-w-0 items-center gap-3">
+              <span class="grid h-10 w-10 shrink-0 place-items-center rounded-lg bg-gradient-to-br ${style.grad} text-lg">${style.icon}</span>
+              <span class="min-w-0">
+                <span class="block text-sm font-black transition-colors group-hover:text-royal">${esc(subject.name)}</span>
+                <span class="block text-xs font-semibold text-slate-400">${subject.lectures.length} lecture exams + comprehensive</span>
+              </span>
+            </span>
+            <svg class="h-4 w-4 shrink-0 text-slate-400 transition-transform duration-300" data-chevron="${subjId}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m7 10 5 5 5-5"/></svg>
           </button>
-          <div id="${subjId}" class="hidden border-t border-slate-100 bg-slate-50/60 px-3 pb-3"></div>
+          <div id="${subjId}" class="accordion-region">
+            <div class="accordion-inner">
+              <div class="border-t border-slate-100 bg-slate-50/60 px-3 pb-3"></div>
+            </div>
+          </div>
         </div>`;
       }).join('')}</div>`;
     }
@@ -397,19 +509,21 @@
     function bindSubjectControls(container) {
       container.querySelectorAll('[data-subject-button]').forEach(btn => btn.addEventListener('click', () => {
         const box = $(btn.dataset.subjectButton);
-        const open = !box.classList.contains('hidden');
-        box.classList.toggle('hidden', open);
+        const inner = box.querySelector('.accordion-inner > div');
+        const open = box.classList.contains('open');
         btn.setAttribute('aria-expanded', String(!open));
         const chevron = document.querySelector(`[data-chevron="${btn.dataset.subjectButton}"]`);
         if (chevron) chevron.style.transform = open ? '' : 'rotate(180deg)';
-        if (!open && box.innerHTML === '') {
+
+        if (!open && inner.innerHTML === '') {
           const subjectId = btn.dataset.subjectButton.replace(/^subj-/,'');
           const subject = findSubject(subjectId);
-          box.innerHTML = renderLectureList(subject);
-          box.querySelectorAll('[data-lecture]').forEach(link => link.addEventListener('click', () => openLecture(link.dataset.lecture, subject)));
-          const comprehensive = box.querySelector('[data-comprehensive]');
+          inner.innerHTML = renderLectureList(subject);
+          inner.querySelectorAll('[data-lecture]').forEach(link => link.addEventListener('click', () => openLecture(link.dataset.lecture, subject)));
+          const comprehensive = inner.querySelector('[data-comprehensive]');
           if (comprehensive) comprehensive.addEventListener('click', () => openComprehensive(subject));
         }
+        requestAnimationFrame(() => box.classList.toggle('open', !open));
       }));
     }
 
@@ -426,14 +540,28 @@
     function renderLectureList(subject) {
       if (!subject) return `<div class="p-4 text-sm text-red-600">Subject not found.</div>`;
       return `<div class="space-y-2 pt-3">
-        ${subject.lectures.map((lecture, i) => `<button type="button" class="focus-ring group flex w-full items-center gap-3 rounded-xl border border-slate-200 bg-white p-3 text-left transition hover:-translate-y-0.5 hover:border-sky-200" data-lecture="${esc(lecture.file)}">
-          <span class="grid h-9 w-9 shrink-0 place-items-center rounded-lg bg-blue-50 text-xs font-black text-royal">${String(i+1).padStart(2,'0')}</span>
-          <span class="min-w-0 flex-1"><span class="block truncate text-sm font-black">${esc(lecture.title)}</span></span>
-          <span class="text-xs font-black text-royal opacity-70 group-hover:opacity-100">Start →</span>
+        ${subject.lectures.map((lecture, i) => `<button type="button" class="lecture-item focus-ring group relative flex w-full items-center gap-4 overflow-hidden rounded-xl border border-slate-200 bg-white p-4 text-left transition-all hover:-translate-y-0.5 hover:border-skyx hover:shadow-md" data-lecture="${esc(lecture.file)}" style="animation-delay:${i * 40}ms">
+          <span class="absolute inset-y-0 left-0 w-1 bg-gradient-to-b from-skyx to-royal opacity-0 transition-opacity duration-200 group-hover:opacity-100"></span>
+          <span class="grid h-10 w-10 shrink-0 place-items-center rounded-lg bg-gradient-to-br from-blue-50 to-sky-100 text-sm font-black text-royal">
+            ${String(i+1).padStart(2,'0')}
+          </span>
+          <span class="min-w-0 flex-1">
+            <span class="block truncate text-sm font-black transition-colors group-hover:text-royal">${esc(lecture.title)}</span>
+            <span class="block text-xs font-semibold text-slate-400">Tap to start the exam</span>
+          </span>
+          <span class="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-slate-100 text-slate-500 transition-all duration-200 group-hover:bg-royal group-hover:text-white group-hover:translate-x-1">
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M9 6l6 6-6 6"/></svg>
+          </span>
         </button>`).join('')}
-        <button type="button" class="focus-ring mt-2 flex w-full items-center justify-between gap-3 rounded-xl border-2 border-dashed border-royal/30 bg-blue-50 p-3 text-left hover:border-royal" data-comprehensive>
-          <span><span class="block text-sm font-black text-royal">Comprehensive Exam</span><span class="block text-xs font-semibold text-blue-500">Merge, shuffle, and assess all lecture banks</span></span>
-          <span class="text-lg">↗</span>
+        <button type="button" class="focus-ring group mt-2 flex w-full items-center justify-between gap-3 rounded-xl border-2 border-dashed border-royal/30 bg-gradient-to-r from-blue-50 to-sky-50 p-4 text-left transition-all hover:-translate-y-0.5 hover:border-royal hover:shadow-md" data-comprehensive>
+          <span class="flex items-center gap-3">
+            <span class="grid h-10 w-10 shrink-0 place-items-center rounded-lg bg-white text-lg shadow-sm">🏆</span>
+            <span>
+              <span class="block text-sm font-black text-royal">Comprehensive Exam</span>
+              <span class="block text-xs font-semibold text-blue-500">Merge, shuffle, and assess all lecture banks</span>
+            </span>
+          </span>
+          <span class="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-white text-royal shadow-sm transition-transform duration-200 group-hover:translate-x-1">↗</span>
         </button>
       </div>`;
     }
@@ -546,14 +674,15 @@
                     const isCorrect = letter === q.correctAnswer;
                     let cls = 'border-slate-200 bg-white hover:border-blue-200';
                     let badge = 'bg-slate-100 text-slate-500';
+                    let pulse = '';
                     if (answered) {
-                      if (isCorrect) { cls = 'border-emerald-500 bg-emerald-50'; badge = 'bg-emerald-500 text-white'; }
+                      if (isCorrect) { cls = 'border-emerald-500 bg-emerald-50'; badge = 'bg-emerald-500 text-white'; pulse = 'correct-revealed'; }
                       else if (isSelected) { cls = 'border-red-500 bg-red-50'; badge = 'bg-red-500 text-white'; }
                       else { cls = 'border-slate-200 bg-white opacity-70'; }
                     } else if (isSelected) {
                       cls = 'border-royal bg-blue-50'; badge = 'bg-royal text-white';
                     }
-                    return `<button type="button" class="option-btn focus-ring flex w-full items-start gap-4 rounded-2xl border-2 ${cls} p-4 text-left transition" data-option="${letter}" aria-pressed="${isSelected}" ${answered ? 'disabled' : ''}>
+                    return `<button type="button" class="option-btn ${pulse} focus-ring flex w-full items-start gap-4 rounded-2xl border-2 ${cls} p-4 text-left" data-option="${letter}" aria-pressed="${isSelected}" ${answered ? 'disabled' : ''}>
                       <span class="grid h-8 w-8 shrink-0 place-items-center rounded-lg ${badge} text-xs font-black">${letter}</span>
                       <span class="pt-1 text-sm font-semibold leading-6 text-slate-700">${esc(opt)}</span>
                       ${answered && isCorrect ? '<span class="ml-auto text-emerald-600 font-black">✓</span>' : ''}
@@ -577,7 +706,7 @@
               <aside class="h-max rounded-2xl bg-slate-50 p-4 lg:sticky lg:top-0" aria-label="Question navigator">
                 <div class="flex items-center justify-between"><div class="text-xs font-black uppercase tracking-[.15em] text-slate-400">Navigator</div><div class="text-xs font-bold text-slate-400">${state.flagged.size} flagged</div></div>
                 <div class="mt-3 grid grid-cols-5 gap-2">
-                  ${qs.map((_,i)=>`<button type="button" class="focus-ring aspect-square rounded-lg text-xs font-black ${i===state.currentQuestion?'bg-royal text-white':state.answers[i]?'bg-blue-100 text-royal':'bg-white text-slate-500 border border-slate-200'} ${state.flagged.has(i)?'ring-2 ring-warmyellow ring-offset-1':''}" data-qnav="${i}" aria-label="Go to question ${i+1}">${i+1}</button>`).join('')}
+                  ${qs.map((_,i)=>`<button type="button" class="focus-ring aspect-square rounded-lg text-xs font-black transition-all ${i===state.currentQuestion?'bg-royal text-white scale-105 shadow-md':state.answers[i]?'bg-blue-100 text-royal':'bg-white text-slate-500 border border-slate-200 hover:border-skyx'} ${state.flagged.has(i)?'ring-2 ring-warmyellow ring-offset-1':''}" data-qnav="${i}" aria-label="Go to question ${i+1}">${i+1}</button>`).join('')}
                 </div>
               </aside>
             </div>
@@ -585,9 +714,9 @@
 
           <div class="safe-bottom shrink-0 border-t border-slate-100 bg-white px-5 py-4 sm:px-7">
             <div class="flex flex-col-reverse gap-3 sm:flex-row sm:items-center sm:justify-between">
-              <button type="button" id="prevQuestionBtn" class="focus-ring rounded-full border border-slate-200 px-5 py-3 text-sm font-black text-slate-600 disabled:opacity-40" ${state.currentQuestion===0?'disabled':''}>← Previous</button>
+              <button type="button" id="prevQuestionBtn" class="focus-ring rounded-full border border-slate-200 px-5 py-3 text-sm font-black text-slate-600 transition hover:border-slate-300 disabled:opacity-40" ${state.currentQuestion===0?'disabled':''}>← Previous</button>
               <div class="flex flex-col gap-2 sm:flex-row">
-                ${state.currentQuestion===qs.length-1 ? `<button type="button" id="submitExamBtn" class="focus-ring rounded-full bg-royal px-6 py-3 text-sm font-black text-white">${state.mode==='exam'?'Submit Exam':'Finish Practice'} →</button>` : `<button type="button" id="nextQuestionBtn" class="focus-ring rounded-full bg-royal px-6 py-3 text-sm font-black text-white">Next Question →</button>`}
+                ${state.currentQuestion===qs.length-1 ? `<button type="button" id="submitExamBtn" class="focus-ring rounded-full bg-royal px-6 py-3 text-sm font-black text-white transition hover:bg-blue-800">${state.mode==='exam'?'Submit Exam':'Finish Practice'} →</button>` : `<button type="button" id="nextQuestionBtn" class="focus-ring rounded-full bg-royal px-6 py-3 text-sm font-black text-white transition hover:bg-blue-800">Next Question →</button>`}
               </div>
             </div>
           </div>
@@ -603,7 +732,6 @@
     }
 
     function chooseAnswer(letter) {
-      // In practice mode, once an answer is locked in, it cannot be changed.
       if (state.mode === 'practice' && state.answers[state.currentQuestion] !== null) return;
       state.answers[state.currentQuestion] = letter;
       renderExam();
@@ -660,19 +788,19 @@
       $('modalDescription').textContent = `${r.correctCount}/${r.results.length} correct • ${r.score}% • Time: ${formatTime(r.elapsedSeconds)}`;
       $('modalBody').innerHTML = `<div class="space-y-7 p-5 sm:p-7">
         <div class="grid gap-4 sm:grid-cols-[180px_1fr]">
-          <div class="grid place-items-center rounded-[2rem] bg-slate-50 p-7 text-center"><div class="text-5xl font-black tracking-tight text-ink">${r.score}%</div><div class="mt-2 rounded-full px-3 py-1 text-xs font-black ${r.pass?'bg-emerald-100 text-emerald-700':'bg-red-100 text-red-700'}">${r.pass?'PASS':'REVIEW & RETRY'}</div></div>
+          <div class="grid place-items-center rounded-[2rem] bg-gradient-to-br from-slate-50 to-blue-50 p-7 text-center"><div class="text-5xl font-black tracking-tight text-ink">${r.score}%</div><div class="mt-2 rounded-full px-3 py-1 text-xs font-black ${r.pass?'bg-emerald-100 text-emerald-700':'bg-red-100 text-red-700'}">${r.pass?'PASS':'REVIEW & RETRY'}</div></div>
           <div class="rounded-[2rem] border border-slate-200 p-6"><div class="text-xs font-black uppercase tracking-[.16em] text-slate-400">Attempt summary</div><div class="mt-4 grid gap-4 sm:grid-cols-3"><div><div class="text-2xl font-black">${r.correctCount}</div><div class="text-xs font-semibold text-slate-400">Correct</div></div><div><div class="text-2xl font-black">${r.results.length-r.correctCount}</div><div class="text-xs font-semibold text-slate-400">Missed</div></div><div><div class="text-2xl font-black">${formatTime(r.elapsedSeconds)}</div><div class="text-xs font-semibold text-slate-400">Time taken</div></div></div></div>
         </div>
 
         <section aria-labelledby="weaknessHeading"><div class="flex items-end justify-between gap-3"><div><div class="text-xs font-black uppercase tracking-[.16em] text-skyx">Weakness analytics</div><h3 id="weaknessHeading" class="mt-1 text-xl font-black">Performance by sub-topic</h3></div><div class="text-xs font-bold text-slate-400">Sorted by lowest accuracy</div></div>
-          <div class="mt-4 space-y-3">${Object.entries(subtopics).sort((a,b)=>(a[1].correct/a[1].total)-(b[1].correct/b[1].total)).map(([topic,v])=>{const p=Math.round((v.correct/v.total)*100);return `<div class="rounded-2xl border border-slate-200 p-4"><div class="flex items-center justify-between gap-3"><span class="text-sm font-black">${esc(topic)}</span><span class="text-xs font-black text-slate-500">${p}% • ${v.correct}/${v.total}</span></div><div class="mt-3 h-2 rounded-full bg-slate-100"><div class="h-full rounded-full ${p<60?'bg-warmred':p<80?'bg-warmyellow':'bg-royal'}" style="width:${p}%"></div></div></div>`;}).join('')}</div>
+          <div class="mt-4 space-y-3">${Object.entries(subtopics).sort((a,b)=>(a[1].correct/a[1].total)-(b[1].correct/b[1].total)).map(([topic,v])=>{const p=Math.round((v.correct/v.total)*100);return `<div class="rounded-2xl border border-slate-200 p-4 transition hover:shadow-md"><div class="flex items-center justify-between gap-3"><span class="text-sm font-black">${esc(topic)}</span><span class="text-xs font-black text-slate-500">${p}% • ${v.correct}/${v.total}</span></div><div class="mt-3 h-2 rounded-full bg-slate-100"><div class="h-full rounded-full ${p<60?'bg-warmred':p<80?'bg-warmyellow':'bg-royal'}" style="width:${p}%"></div></div></div>`;}).join('')}</div>
         </section>
 
-        <section aria-labelledby="reviewHeading"><div class="flex flex-wrap items-end justify-between gap-3"><div><div class="text-xs font-black uppercase tracking-[.16em] text-skyx">Question review</div><h3 id="reviewHeading" class="mt-1 text-xl font-black">Why each choice works — or does not</h3></div><button id="redoMissedBtn" type="button" class="focus-ring rounded-full bg-royal px-5 py-3 text-xs font-black text-white disabled:opacity-40" ${missed.length?'':'disabled'}>Redo Missed Questions →</button></div>
+        <section aria-labelledby="reviewHeading"><div class="flex flex-wrap items-end justify-between gap-3"><div><div class="text-xs font-black uppercase tracking-[.16em] text-skyx">Question review</div><h3 id="reviewHeading" class="mt-1 text-xl font-black">Why each choice works — or does not</h3></div><button id="redoMissedBtn" type="button" class="focus-ring rounded-full bg-royal px-5 py-3 text-xs font-black text-white transition hover:bg-blue-800 disabled:opacity-40" ${missed.length?'':'disabled'}>Redo Missed Questions →</button></div>
           <div class="mt-4 space-y-3">${r.results.map((q,i)=>renderReviewCard(q,i)).join('')}</div>
         </section>
 
-        <div class="flex justify-end gap-3 border-t border-slate-100 pt-5"><button id="closeAnalyticsBtn" type="button" class="focus-ring rounded-full bg-slate-900 px-6 py-3 text-sm font-black text-white">Close</button></div>
+        <div class="flex justify-end gap-3 border-t border-slate-100 pt-5"><button id="closeAnalyticsBtn" type="button" class="focus-ring rounded-full bg-slate-900 px-6 py-3 text-sm font-black text-white transition hover:bg-slate-800">Close</button></div>
       </div>`;
       $('redoMissedBtn').addEventListener('click', () => {
         if (!missed.length) return;
@@ -685,8 +813,8 @@
     function renderReviewCard(q,i) {
       const correctText = q.options?.[q.correctAnswer.charCodeAt(0)-65] || q.correctAnswer;
       const userText = q.userAnswer ? q.options?.[q.userAnswer.charCodeAt(0)-65] : 'No answer selected';
-      return `<details class="group rounded-2xl border border-slate-200 p-4" ${!q.correct?'open':''}>
-        <summary class="focus-ring cursor-pointer list-none rounded-xl"><div class="flex items-start gap-3"><div class="grid h-8 w-8 shrink-0 place-items-center rounded-lg ${q.correct?'bg-emerald-100 text-emerald-700':'bg-red-100 text-red-700'} text-xs font-black">${i+1}</div><div class="min-w-0 flex-1"><div class="text-sm font-black">${esc(q.question)}</div><div class="mt-1 text-xs font-semibold ${q.correct?'text-emerald-600':'text-red-600'}">${q.correct?'Correct':'Needs review'}</div></div><div class="text-xs font-black text-slate-400">⌄</div></div></summary>
+      return `<details class="group rounded-2xl border border-slate-200 p-4 transition hover:shadow-sm" ${!q.correct?'open':''}>
+        <summary class="focus-ring cursor-pointer list-none rounded-xl"><div class="flex items-start gap-3"><div class="grid h-8 w-8 shrink-0 place-items-center rounded-lg ${q.correct?'bg-emerald-100 text-emerald-700':'bg-red-100 text-red-700'} text-xs font-black">${i+1}</div><div class="min-w-0 flex-1"><div class="text-sm font-black">${esc(q.question)}</div><div class="mt-1 text-xs font-semibold ${q.correct?'text-emerald-600':'text-red-600'}">${q.correct?'Correct':'Needs review'}</div></div><div class="text-xs font-black text-slate-400 transition-transform group-open:rotate-180">⌄</div></div></summary>
         <div class="mt-4 space-y-3 border-t border-slate-100 pt-4 text-sm leading-6">
           <div class="rounded-xl bg-slate-50 p-3"><div class="text-[10px] font-black uppercase tracking-[.15em] text-slate-400">Your answer</div><div class="mt-1 font-semibold text-slate-700">${esc(userText)}</div></div>
           <div class="rounded-xl bg-blue-50 p-3"><div class="text-[10px] font-black uppercase tracking-[.15em] text-royal">Correct answer</div><div class="mt-1 font-bold text-slate-700">${esc(correctText)}</div></div>
