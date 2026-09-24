@@ -1,0 +1,2954 @@
+{
+  "id": "biochemistry-2-lecture-01-carbohydrate-chemistry",
+  "title": "Carbohydrate Chemistry — Lecture I",
+  "subjectName": "Biochemistry 2",
+  "estimatedReadTime": "60-min read",
+  "estimatedExamTime": "120-min exam",
+  "durationMinutes": 120,
+  "passMark": 70,
+  "summary": [
+    "Carbohydrates are polyhydroxy aldehydes or ketones, or substances that yield these on hydrolysis; they contain C, H, and O with H:O in a 2:1 ratio, giving the general formula (CH2O)n and the name 'hydrates of carbon'.",
+    "Biologically, carbohydrates provide energy through oxidation, supply carbon for cell components (e.g., ribose in nucleic acids), serve as stored chemical energy, and form part of cell and tissue structures.",
+    "Carbohydrates are classified into monosaccharides (simplest), disaccharides (2 monosaccharides on hydrolysis), oligosaccharides (3–10 monosaccharides), and polysaccharides (more than 10 monosaccharides).",
+    "Monosaccharides are classified by carbon number (triose, tetrose, pentose, hexose) and by functional group as aldoses (aldehyde prefix aldo-) or ketoses (ketone prefix keto-).",
+    "Chirality arises when a carbon is attached to four different groups; a molecule with n chiral carbons has at most 2^n possible stereoisomers.",
+    "Fischer projections place the carbonyl group at the top and the last CH2OH at the bottom; D/L designation is determined by the chiral carbon farthest from the carbonyl group.",
+    "Optical activity: levorotatory (−) rotates polarized light left, dextrorotatory (+) rotates it right; a racemic mixture is optically inactive because the two enantiomers cancel each other.",
+    "Epimers are stereoisomers that differ at only one asymmetric carbon; monosaccharides exist in solution mainly as cyclic hemiacetals/hemiketals with α and β anomers at the anomeric carbon.",
+    "Chemical reactions include oxidation (gluconic, glucuronic, glucaric acids), phosphate ester formation at C6, and glycoside formation; reducing sugars react with Benedict's reagent.",
+    "Polysaccharides include starch (amylose and amylopectin), glycogen (highly branched), cellulose (β-linkages, structural), and heteropolysaccharides (hyaluronic acid, heparin, chondroitin)."
+  ],
+  "keyTerms": [
+    {
+      "term": "Carbohydrate",
+      "definition": "A polyhydroxy aldehyde or ketone, or a substance that yields such compounds on hydrolysis; contains C, H, and O with the general formula (CH2O)n."
+    },
+    {
+      "term": "Monosaccharide",
+      "definition": "The simplest carbohydrate, containing only one polyhydroxy aldehyde or ketone unit; classified by carbon number and functional group."
+    },
+    {
+      "term": "Chiral carbon (asymmetric carbon)",
+      "definition": "A carbon atom attached to four different groups; it produces two non-superimposable mirror images and is a center of chirality."
+    },
+    {
+      "term": "Enantiomers",
+      "definition": "Two stereoisomers that are non-superimposable mirror images of each other, such as D- and L-glyceraldehyde."
+    },
+    {
+      "term": "Fischer projection",
+      "definition": "A 2D representation of a molecule placing the carbonyl group at or near the top and the last achiral CH2OH at the bottom; horizontal bonds point toward the viewer, vertical bonds away."
+    },
+    {
+      "term": "Epimers",
+      "definition": "Stereoisomers that differ in the configuration of the OH group at only one asymmetric carbon."
+    },
+    {
+      "term": "Anomeric carbon",
+      "definition": "The carbon that carries the aldehyde or ketone group and is involved in cyclization; it becomes a new chiral center generating α and β anomers."
+    },
+    {
+      "term": "Reducing sugar",
+      "definition": "A sugar with a free hemiacetal that reduces Cu2+ in Benedict's reagent to a red-orange precipitate of Cu2O; all monosaccharides are reducing sugars."
+    },
+    {
+      "term": "Glycosidic linkage",
+      "definition": "The new carbon-oxygen bond formed between the anomeric carbon of a sugar and an alcohol (or another sugar), producing a glycoside."
+    },
+    {
+      "term": "Heteropolysaccharide (mucopolysaccharide)",
+      "definition": "A long unbranched chain of repeating disaccharide units composed of amino sugars and uronic acids; when bound to protein it forms glycoproteins."
+    },
+    {
+      "term": "Amino sugar",
+      "definition": "A monosaccharide in which a hydroxyl group (usually at C2) has been replaced by an amino group; examples include D-glucosamine and D-galactosamine."
+    },
+    {
+      "term": "Uronic acid",
+      "definition": "A monosaccharide in which the terminal CH2OH has been oxidized to a carboxylic acid (e.g., D-glucuronic acid)."
+    },
+    {
+      "term": "Mutarotation",
+      "definition": "The change in optical rotation when α- and β-anomers of a sugar interconvert in solution via the open-chain form."
+    },
+    {
+      "term": "Biomolecule",
+      "definition": "A compound closely associated with living organisms; includes carbohydrates, lipids, proteins, and nucleic acids."
+    }
+  ],
+  "resources": [],
+  "flashcards": [
+    {
+      "front": "What is the general formula of carbohydrates and why are they called 'hydrates of carbon'?",
+      "back": "(CH2O)n; the name comes from the observation that heating sugars yields carbon and water, with H and O in a 2:1 ratio."
+    },
+    {
+      "front": "How are carbohydrates classified on hydrolysis?",
+      "back": "Monosaccharides (simplest, one unit), disaccharides (2 units), oligosaccharides (3–10 units), and polysaccharides (more than 10 units)."
+    },
+    {
+      "front": "What is the maximum number of stereoisomers for a molecule with n chiral carbons?",
+      "back": "2^n possible stereoisomers (e.g., 2^8 = 256 for cholesterol)."
+    },
+    {
+      "front": "How do you assign D or L configuration in a Fischer projection of a carbohydrate?",
+      "back": "Look at the chiral carbon farthest from the carbonyl group: OH on the right = D-isomer; OH on the left = L-isomer."
+    },
+    {
+      "front": "What is the difference between enantiomers and epimers?",
+      "back": "Enantiomers are non-superimposable mirror images differing at all chiral centers; epimers differ at only one chiral center."
+    },
+    {
+      "front": "Why is sucrose a non-reducing sugar?",
+      "back": "Both anomeric carbons of glucose and fructose are involved in the glycosidic linkage, so neither ring can open to the free aldehyde/ketone."
+    },
+    {
+      "front": "What color does amylose give with iodine and why?",
+      "back": "A deep blue-purple color, because amylose helices trap iodine molecules inside the helical chain."
+    },
+    {
+      "front": "What monosaccharide units make up heparin, and what is its biological role?",
+      "back": "Sulfated glucuronic acid and sulfated glucosamine joined by α-1,4 bonds; heparin acts as an anticoagulant."
+    },
+    {
+      "front": "What is the difference between a homo-polysaccharide and a heteropolysaccharide?",
+      "back": "Homo-polysaccharides yield only one type of monosaccharide on hydrolysis (e.g., starch, glycogen, cellulose); heteropolysaccharides contain a mixture of monosaccharides and include amino sugars and uronic acids."
+    },
+    {
+      "front": "Which polysaccharide is the single most abundant organic compound on Earth?",
+      "back": "Cellulose, the structural polysaccharide of plant cell walls; wood is about 50% cellulose."
+    },
+    {
+      "front": "How do ruminants (cows, sheep, goats) digest cellulose?",
+      "back": "They rely on colonies of symbiotic bacteria in the digestive system that produce enzymes capable of breaking down cellulose, plus a series of stomachs to give cellulose more time to digest."
+    },
+    {
+      "front": "What is an amino sugar, and give two examples.",
+      "back": "An amino sugar has an OH replaced by an NH2 group (usually at C2); examples are D-glucosamine and D-galactosamine."
+    },
+    {
+      "front": "What is mutarotation?",
+      "back": "The interconversion of α- and β-anomers through the open-chain form in solution, producing a change in optical rotation until equilibrium is reached."
+    },
+    {
+      "front": "What is the difference between a glycoprotein and a mucopolysaccharide?",
+      "back": "Glycoproteins are proteins covalently linked to carbohydrate chains; mucopolysaccharides (heteropolysaccharides) are long carbohydrate chains that, when bound to protein, form glycoproteins."
+    }
+  ],
+  "questions": [
+    {
+      "question": "Which of the following statements best defines carbohydrates according to the lecture?",
+      "options": [
+        "They are polyhydroxy aldehydes or ketones, or substances that yield such compounds on hydrolysis",
+        "They are polyhydroxy alcohols that never contain a carbonyl group",
+        "They are polymers of amino acids linked by peptide bonds",
+        "They are nonpolar lipids composed entirely of carbon and hydrogen"
+      ],
+      "correctAnswer": "A",
+      "explanation": "The lecture defines carbohydrates (saccharides) as polyhydroxy aldehydes or ketones, or substances that yield such compounds on hydrolysis.",
+      "subtopic": "Definition and general formula",
+      "optionExplanations": [
+        "Correct. This matches the definition in the lecture.",
+        "Incorrect. Polyhydroxy alcohols lack the carbonyl group that defines carbohydrates.",
+        "Incorrect. Amino acid polymers are proteins.",
+        "Incorrect. Lipids are not carbohydrates and are not defined by carbonyl groups."
+      ],
+      "hint": "Focus on the carbonyl (aldehyde/ketone) functional group."
+    },
+    {
+      "question": "Why are carbohydrates referred to as 'hydrates of carbon'?",
+      "options": [
+        "Because they contain only hydrogen and water",
+        "Because heating sugars yields carbon and water, and H:O is roughly 2:1",
+        "Because they are always crystalline solids that dissolve in water",
+        "Because they contain nitrogen and sulfur in addition to carbon"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The name comes from heating sugars, which produces carbon and water; the H:O ratio is 2:1, giving the general formula (CH2O)n.",
+      "subtopic": "Definition and general formula",
+      "optionExplanations": [
+        "Incorrect. Carbohydrates contain carbon, hydrogen, and oxygen.",
+        "Correct. Carbon and water are products of heating, matching the 2:1 H:O ratio.",
+        "Incorrect. Solubility in water does not explain the name.",
+        "Incorrect. Carbohydrates do not characteristically contain nitrogen or sulfur."
+      ],
+      "hint": "Think about what happens when sugar is heated."
+    },
+    {
+      "question": "Which of the following is NOT a biological role of carbohydrates listed in the lecture?",
+      "options": [
+        "Providing energy through oxidation",
+        "Supplying carbon for synthesis of cell components such as ribose in nucleic acids",
+        "Serving as stored chemical energy",
+        "Acting as the primary catalyst of enzyme reactions"
+      ],
+      "correctAnswer": "D",
+      "explanation": "The lecture lists energy supply, carbon supply, storage of chemical energy, and structural roles. Carbohydrates are not described as the primary catalysts of enzyme reactions.",
+      "subtopic": "Biological importance",
+      "optionExplanations": [
+        "Incorrect. Energy through oxidation is listed.",
+        "Incorrect. Supplying carbon for ribose synthesis is listed.",
+        "Incorrect. Stored chemical energy is listed.",
+        "Correct. Enzymes are typically proteins, not carbohydrates."
+      ],
+      "hint": "Which option sounds like a protein function?"
+    },
+    {
+      "question": "According to the classification scheme in the lecture, an oligosaccharide yields on hydrolysis:",
+      "options": [
+        "Exactly 2 monosaccharides",
+        "3 to 10 monosaccharides",
+        "More than 10 monosaccharides",
+        "Only one monosaccharide unit"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Oligosaccharides on hydrolysis give 3 to 10 monosaccharides.",
+      "subtopic": "Classification of carbohydrates",
+      "optionExplanations": [
+        "Incorrect. That describes a disaccharide.",
+        "Correct. This is the lecture's definition of oligosaccharides.",
+        "Incorrect. That describes a polysaccharide.",
+        "Incorrect. That describes a monosaccharide."
+      ],
+      "hint": "Look at the range quoted for oligosaccharides."
+    },
+    {
+      "question": "A polysaccharide is defined in the lecture as a carbohydrate that on hydrolysis gives:",
+      "options": [
+        "Two monosaccharides",
+        "Between 3 and 10 monosaccharides",
+        "More than 10 monosaccharides",
+        "Amino sugars only"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Polysaccharides on hydrolysis give more than 10 monosaccharide units.",
+      "subtopic": "Classification of carbohydrates",
+      "optionExplanations": [
+        "Incorrect. That describes a disaccharide.",
+        "Incorrect. That describes an oligosaccharide.",
+        "Correct. Polysaccharides yield more than 10 monosaccharides.",
+        "Incorrect. Amino sugars are a component of some heteropolysaccharides, not the definition of a polysaccharide."
+      ],
+      "hint": "Compare with the oligosaccharide threshold."
+    },
+    {
+      "question": "Which of the following correctly pairs a monosaccharide class with its carbon count?",
+      "options": [
+        "Triose — 6 carbons",
+        "Tetrose — 5 carbons",
+        "Pentose — 5 carbons",
+        "Hexose — 4 carbons"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Pentoses contain 5 carbon atoms, as listed in the classification table.",
+      "subtopic": "Classification of monosaccharides",
+      "optionExplanations": [
+        "Incorrect. Trioses contain 3 carbons.",
+        "Incorrect. Tetroses contain 4 carbons.",
+        "Correct. Pentoses contain 5 carbons.",
+        "Incorrect. Hexoses contain 6 carbons."
+      ],
+      "hint": "Match the prefix to the number: tri-, tetr-, pent-, hex-."
+    },
+    {
+      "question": "Which of the following is the correct ketose example for a hexose?",
+      "options": [
+        "Glucose",
+        "Fructose",
+        "Ribose",
+        "Erythrose"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Fructose is the ketose example for hexoses in the lecture's classification.",
+      "subtopic": "Classification of monosaccharides",
+      "optionExplanations": [
+        "Incorrect. Glucose is an aldose hexose.",
+        "Correct. Fructose is the ketose hexose example.",
+        "Incorrect. Ribose is an aldose pentose.",
+        "Incorrect. Erythrose is an aldose tetrose."
+      ],
+      "hint": "Look at the C6H12O6 ketose row."
+    },
+    {
+      "question": "The prefixes aldo- and keto- in monosaccharide names indicate:",
+      "options": [
+        "The number of carbons in the chain",
+        "The presence of an aldehyde or a ketone group respectively",
+        "The stereochemistry at the anomeric carbon",
+        "The type of glycosidic linkage present"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Aldo- indicates an aldehyde group, and keto- indicates a ketone group, per the lecture's classification rule.",
+      "subtopic": "Classification of monosaccharides",
+      "optionExplanations": [
+        "Incorrect. Carbon number is described by tri-, tetr-, pent-, hex-.",
+        "Correct. Aldo- = aldehyde; keto- = ketone.",
+        "Incorrect. Anomeric configuration is described by α- and β-.",
+        "Incorrect. Glycosidic linkages are described by α/β and the carbon numbers involved."
+      ],
+      "hint": "Match each prefix to the functional group."
+    },
+    {
+      "question": "Which of the following statements about chirality is correct according to the lecture?",
+      "options": [
+        "A carbon attached to four identical groups is chiral",
+        "A carbon attached to four different groups is chiral and has two non-superimposable mirror images",
+        "All carbons in organic compounds are chiral",
+        "Chirality requires at least two asymmetric carbons"
+      ],
+      "correctAnswer": "B",
+      "explanation": "A chiral carbon is bonded to four different groups and exists as two non-superimposable mirror images.",
+      "subtopic": "Stereochemistry and chirality",
+      "optionExplanations": [
+        "Incorrect. Four identical groups would make the carbon achiral.",
+        "Correct. This is the definition of a chiral carbon.",
+        "Incorrect. Many carbons (e.g., CH3) are achiral.",
+        "Incorrect. A single chiral carbon is enough for chirality (e.g., glyceraldehyde)."
+      ],
+      "hint": "All four substituents must be different."
+    },
+    {
+      "question": "Which of the following objects is described in the lecture as achiral?",
+      "options": [
+        "Left hand",
+        "Right glove",
+        "Drinking glass",
+        "Shoe"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The lecture lists drinking glasses, spheres, and cubes as achiral objects that can be superimposed on their mirror images.",
+      "subtopic": "Stereochemistry and chirality",
+      "optionExplanations": [
+        "Incorrect. Hands are chiral.",
+        "Incorrect. Gloves are chiral.",
+        "Correct. Drinking glasses are listed as achiral.",
+        "Incorrect. Shoes are chiral."
+      ],
+      "hint": "Achiral = superimposable on its mirror image."
+    },
+    {
+      "question": "If a molecule has 4 chiral carbons, what is the maximum number of possible stereoisomers according to the lecture?",
+      "options": [
+        "4",
+        "8",
+        "16",
+        "32"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The formula is 2^n; with n = 4, that gives 2^4 = 16 stereoisomers.",
+      "subtopic": "Number of stereoisomers",
+      "optionExplanations": [
+        "Incorrect. This equals n, not 2^n.",
+        "Incorrect. 2^3 = 8 corresponds to 3 chiral carbons.",
+        "Correct. 2^4 = 16.",
+        "Incorrect. 2^5 = 32 corresponds to 5 chiral carbons."
+      ],
+      "hint": "Use the formula 2^n."
+    },
+    {
+      "question": "Cholesterol has 8 chiral carbons. How many stereoisomers are theoretically possible, and how many does nature make?",
+      "options": [
+        "256; nature makes only one",
+        "128; nature makes four",
+        "64; nature makes two",
+        "512; nature makes eight"
+      ],
+      "correctAnswer": "A",
+      "explanation": "The lecture computes 2^8 = 256 possible stereoisomers, but nature makes only one.",
+      "subtopic": "Number of stereoisomers",
+      "optionExplanations": [
+        "Correct. 2^8 = 256; only one occurs in nature.",
+        "Incorrect. 2^7 = 128 corresponds to 7 chiral carbons.",
+        "Incorrect. 2^6 = 64 corresponds to 6 chiral carbons.",
+        "Incorrect. 2^9 = 512 corresponds to 9 chiral carbons."
+      ],
+      "hint": "Watch both halves of the answer."
+    },
+    {
+      "question": "In a Fischer projection of a carbohydrate, the D- or L- designation is determined by the orientation of the OH group on:",
+      "options": [
+        "The anomeric carbon",
+        "The chiral carbon farthest from the carbonyl group",
+        "The chiral carbon nearest the carbonyl group",
+        "The terminal CH2OH carbon"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The lecture specifies that for carbohydrates with more than one chiral center, the D/L designation looks at the chiral carbon farthest from the carbonyl group.",
+      "subtopic": "Fischer projections and D/L",
+      "optionExplanations": [
+        "Incorrect. The anomeric carbon determines α/β, not D/L.",
+        "Correct. This is the standard rule stated in the lecture.",
+        "Incorrect. The nearest chiral carbon does not determine D/L.",
+        "Incorrect. The terminal CH2OH is achiral."
+      ],
+      "hint": "Look at the 'last' chiral carbon."
+    },
+    {
+      "question": "In carbohydrate chemistry, the D/L designation of a monosaccharide refers to the configuration at the chiral carbon farthest from the carbonyl group and is independent of which property?",
+      "options": [
+        "Melting point",
+        "Optical rotation direction (+/−)",
+        "Solubility in water",
+        "Molecular weight"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The D/L nomenclature reflects the spatial configuration of the reference carbon and does NOT indicate the direction in which the molecule rotates plane-polarized light; that is described by (+) and (−).",
+      "subtopic": "Fischer projections and optical activity",
+      "optionExplanations": [
+        "Incorrect. Melting point is a physical property unrelated to D/L notation.",
+        "Correct. D/L is independent of optical rotation direction.",
+        "Incorrect. Solubility does not define D or L.",
+        "Incorrect. Molecular weight is identical for both enantiomers."
+      ],
+      "hint": "D does not automatically mean dextrorotatory."
+    },
+    {
+      "question": "Which compound is described as the simplest carbohydrate, existing in two isomeric mirror-image forms?",
+      "options": [
+        "Glucose",
+        "Glyceraldehyde",
+        "Fructose",
+        "Erythrose"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Glyceraldehyde is described as the simplest carbohydrate and exists as two mirror-image isomers (D and L).",
+      "subtopic": "Stereochemistry and chirality",
+      "optionExplanations": [
+        "Incorrect. Glucose is a hexose with four chiral centers.",
+        "Correct. Glyceraldehyde is the simplest carbohydrate.",
+        "Incorrect. Fructose is a ketohexose.",
+        "Incorrect. Erythrose is a tetrose."
+      ],
+      "hint": "The simplest carbohydrate is a triose."
+    },
+    {
+      "question": "Why are most animals, including humans, unable to digest cellulose?",
+      "options": [
+        "Cellulose is not a polymer of glucose",
+        "Cellulose contains β(1→4) linkages that most animals lack the enzymes to break",
+        "Cellulose contains no glycosidic bonds at all",
+        "Cellulose is too large to enter the digestive system"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Most animals lack the enzyme capable of breaking the β(1→4) glycosidic linkages in cellulose; ruminants rely on symbiotic bacteria instead.",
+      "subtopic": "Homo polysaccharides — cellulose",
+      "optionExplanations": [
+        "Incorrect. Cellulose is a polymer of D-glucose.",
+        "Correct. The β(1→4) linkages resist normal digestive enzymes.",
+        "Incorrect. Cellulose contains β(1→4) glycosidic bonds.",
+        "Incorrect. Size is not the reason for indigestibility."
+      ],
+      "hint": "What type of linkage does cellulose use?"
+    },
+    {
+      "question": "Which of the following pairs are enantiomers of each other?",
+      "options": [
+        "Glucose and fructose",
+        "Maltose and sucrose",
+        "A D-monosaccharide and its L-enantiomer",
+        "Amylose and cellulose"
+      ],
+      "correctAnswer": "C",
+      "explanation": "By definition, the D- and L- forms of the same monosaccharide are enantiomers (non-superimposable mirror images).",
+      "subtopic": "Stereochemistry and chirality",
+      "optionExplanations": [
+        "Incorrect. Glucose and fructose are structural isomers with different functional groups.",
+        "Incorrect. Maltose and sucrose are different disaccharides.",
+        "Correct. D and L forms of the same sugar are enantiomers.",
+        "Incorrect. Amylose and cellulose are different glucose polymers with different linkages."
+      ],
+      "hint": "Enantiomers are mirror images of the same molecule."
+    },
+    {
+      "question": "Which of the following best defines epimers?",
+      "options": [
+        "Stereoisomers that are mirror images of each other at every chiral center",
+        "Stereoisomers that differ in the position of the OH group at only one asymmetric carbon",
+        "Structural isomers with different functional groups",
+        "Compounds that rotate polarized light in opposite directions but are not mirror images"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Epimers are stereoisomers that differ at only one asymmetric carbon.",
+      "subtopic": "Epimers",
+      "optionExplanations": [
+        "Incorrect. Differing at every chiral center describes enantiomers.",
+        "Correct. This is the lecture's definition of epimers.",
+        "Incorrect. Structural isomers differ in connectivity, not stereochemistry.",
+        "Incorrect. This describes enantiomers with opposite optical rotation."
+      ],
+      "hint": "Only one asymmetric carbon differs."
+    },
+    {
+      "question": "A dextrorotatory substance is one that:",
+      "options": [
+        "Rotates polarized light to the left",
+        "Rotates polarized light to the right",
+        "Does not affect polarized light",
+        "Is always optically inactive"
+      ],
+      "correctAnswer": "B",
+      "explanation": "A dextrorotatory (+) substance rotates polarized light to the right; a levorotatory (−) substance rotates it to the left.",
+      "subtopic": "Optical activity",
+      "optionExplanations": [
+        "Incorrect. Rotating to the left is levorotatory.",
+        "Correct. Dextrorotatory = rotates to the right.",
+        "Incorrect. Optically inactive substances do not rotate light; dextrorotatory substances do.",
+        "Incorrect. Dextrorotatory substances are optically active."
+      ],
+      "hint": "Dextro- relates to 'right'."
+    },
+    {
+      "question": "A racemic mixture is optically inactive because:",
+      "options": [
+        "It contains only one enantiomer",
+        "It contains equal quantities of two enantiomers whose rotatory effects cancel each other",
+        "It contains no chiral carbons",
+        "It contains only achiral molecules"
+      ],
+      "correctAnswer": "B",
+      "explanation": "A racemate contains equal amounts of the (+) and (−) enantiomers; their rotatory effects cancel, making the mixture optically inactive.",
+      "subtopic": "Optical activity",
+      "optionExplanations": [
+        "Incorrect. One enantiomer alone would be optically active.",
+        "Correct. Equal and opposite rotations cancel out.",
+        "Incorrect. Racemic mixtures contain chiral molecules.",
+        "Incorrect. Racemates are made of chiral molecules."
+      ],
+      "hint": "Equal and opposite rotations cancel."
+    },
+    {
+      "question": "Which statement best describes the relationship between enantiomers and optical rotation?",
+      "options": [
+        "Enantiomers rotate plane-polarized light in the same direction",
+        "Enantiomers rotate plane-polarized light in opposite directions by the same magnitude",
+        "Enantiomers are optically inactive",
+        "Enantiomers do not contain chiral carbons"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Enantiomers have identical physical properties except that they rotate plane-polarized light in opposite directions by the same magnitude.",
+      "subtopic": "Optical activity",
+      "optionExplanations": [
+        "Incorrect. They rotate in opposite directions.",
+        "Correct. Opposite rotations of equal magnitude.",
+        "Incorrect. Enantiomers are optically active.",
+        "Incorrect. Enantiomers are chiral by definition."
+      ],
+      "hint": "Only the direction, not the amount, differs."
+    },
+    {
+      "question": "Which biological fact is stated in the lecture about L- and D-lactic acid?",
+      "options": [
+        "L-lactic acid is found in living muscles; D-lactic acid is present in sour milk",
+        "L-lactic acid is present in sour milk; D-lactic acid is found in living muscles",
+        "Both forms are equally abundant in human muscle",
+        "Neither form is optically active"
+      ],
+      "correctAnswer": "A",
+      "explanation": "The lecture states that L-lactic acid is found in living muscles while D-lactic acid is present in sour milk.",
+      "subtopic": "Optical activity and biological relevance",
+      "optionExplanations": [
+        "Correct. This matches the lecture statement.",
+        "Incorrect. The two assignments are reversed.",
+        "Incorrect. The two forms occur in different biological contexts.",
+        "Incorrect. Both forms are optically active."
+      ],
+      "hint": "Muscles vs. sour milk."
+    },
+    {
+      "question": "Which drug is mentioned in the lecture as an example where one enantiomer is beneficial and the other is a poison?",
+      "options": [
+        "Penicillin",
+        "Thalidomide",
+        "Aspirin",
+        "Ibuprofen"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The lecture cites thalidomide as a case where one enantiomer is beneficial while the enantiomer is a poison.",
+      "subtopic": "Optical activity and biological relevance",
+      "optionExplanations": [
+        "Incorrect. Penicillin is not used as the enantiomer example.",
+        "Correct. Thalidomide is the classic example cited.",
+        "Incorrect. Aspirin is not discussed for chirality in this lecture.",
+        "Incorrect. Ibuprofen is not mentioned in this lecture."
+      ],
+      "hint": "It is a famous historical chiral drug."
+    },
+    {
+      "question": "According to the lecture, which statement about human metabolism of monosaccharides is correct?",
+      "options": [
+        "Humans can metabolize both D- and L-monosaccharides equally",
+        "Humans can metabolize D-monosaccharides but not L-isomers",
+        "Humans can metabolize only L-monosaccharides",
+        "Human metabolism does not depend on stereochemistry"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The lecture states that humans can metabolize D-monosaccharides but not L-isomers; only L-amino acids are used in protein synthesis.",
+      "subtopic": "Optical activity and biological relevance",
+      "optionExplanations": [
+        "Incorrect. Humans cannot metabolize L-monosaccharides.",
+        "Correct. This matches the lecture.",
+        "Incorrect. The reverse is stated: only D-monosaccharides are metabolized.",
+        "Incorrect. The lecture emphasizes stereochemical specificity."
+      ],
+      "hint": "Which isomer is used for energy?"
+    },
+    {
+      "question": "Which of the following physical properties of monosaccharides is stated in the lecture?",
+      "options": [
+        "They are gases at room temperature",
+        "They are sweet-tasting solids, with fructose being the sweetest",
+        "They are insoluble in water",
+        "They are always colored crystals"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The lecture states monosaccharides are sweet-tasting solids at room temperature, with fructose being the sweetest (73% sweeter than sucrose).",
+      "subtopic": "Physical properties of monosaccharides",
+      "optionExplanations": [
+        "Incorrect. They are solids at room temperature.",
+        "Correct. They are sweet solids; fructose is the sweetest.",
+        "Incorrect. They are extremely water soluble due to their many OH groups.",
+        "Incorrect. The lecture does not state they are colored."
+      ],
+      "hint": "Sweet, solid, and very soluble."
+    },
+    {
+      "question": "Which monosaccharide is described in the lecture as the sweetest, being about 73% sweeter than sucrose?",
+      "options": [
+        "Glucose",
+        "Fructose",
+        "Galactose",
+        "Ribose"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Fructose is the sweetest monosaccharide — about 73% sweeter than sucrose, which is why less fructose is needed to sweeten foods.",
+      "subtopic": "Physical properties of monosaccharides",
+      "optionExplanations": [
+        "Incorrect. Glucose is less sweet than fructose.",
+        "Correct. Fructose is the sweetest monosaccharide.",
+        "Incorrect. Galactose is less sweet than fructose.",
+        "Incorrect. Ribose is not noted for its sweetness."
+      ],
+      "hint": "It is present in honey and fruits."
+    },
+    {
+      "question": "Why are monosaccharides so soluble in water despite their relatively high molecular weights?",
+      "options": [
+        "Because they contain many hydroxyl (OH) groups capable of hydrogen bonding with water",
+        "Because they are ionic compounds",
+        "Because they contain long hydrocarbon chains",
+        "Because they contain heavy-metal ions"
+      ],
+      "correctAnswer": "A",
+      "explanation": "The presence of large numbers of OH groups makes monosaccharides much more water soluble than most molecules of similar molecular weight.",
+      "subtopic": "Physical properties of monosaccharides",
+      "optionExplanations": [
+        "Correct. OH groups hydrogen bond with water.",
+        "Incorrect. Monosaccharides are generally nonionic in their cyclic form.",
+        "Incorrect. Long hydrocarbon chains would decrease solubility.",
+        "Incorrect. Monosaccharides do not contain heavy metals."
+      ],
+      "hint": "Think about hydrogen bonding."
+    },
+    {
+      "question": "The approximate solubility of glucose in water, as stated in the lecture, is:",
+      "options": [
+        "1 g per 1 mL of water, forming a syrup",
+        "1 g per 1 L of water",
+        "1 mg per 1 mL of water",
+        "Insoluble"
+      ],
+      "correctAnswer": "A",
+      "explanation": "The lecture notes that glucose can dissolve in minute amounts of water to make a syrup (1 g / 1 mL H2O).",
+      "subtopic": "Physical properties of monosaccharides",
+      "optionExplanations": [
+        "Correct. 1 g / 1 mL H2O forming a syrup.",
+        "Incorrect. That would be very dilute.",
+        "Incorrect. That would be extremely dilute.",
+        "Incorrect. Glucose is highly soluble."
+      ],
+      "hint": "It forms a syrup at this concentration."
+    },
+    {
+      "question": "Monosaccharides in solution usually exist primarily as:",
+      "options": [
+        "Open-chain aldehyde or ketone forms",
+        "Cyclic hemiacetal or hemiketal ring structures",
+        "Free radicals",
+        "Linear hydrocarbons"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Monosaccharides do not usually exist in solution in their open-chain forms; an alcohol group adds to the carbonyl to form a stable cyclic hemiacetal or hemiketal.",
+      "subtopic": "Chemical properties — ring formation",
+      "optionExplanations": [
+        "Incorrect. Open-chain forms are a very small fraction in solution.",
+        "Correct. Cyclic hemiacetal/hemiketal forms dominate.",
+        "Incorrect. Monosaccharides are not free radicals.",
+        "Incorrect. They are not hydrocarbons."
+      ],
+      "hint": "Ring forms dominate in solution."
+    },
+    {
+      "question": "The six-membered cyclic form of a monosaccharide is called a pyranose. The five-membered cyclic form is called:",
+      "options": [
+        "Furanose",
+        "Pyranose",
+        "Anomer",
+        "Epimer"
+      ],
+      "correctAnswer": "A",
+      "explanation": "The five-membered ring is a furanose; the six-membered ring is a pyranose.",
+      "subtopic": "Chemical properties — ring formation",
+      "optionExplanations": [
+        "Correct. Five-membered rings are furanoses.",
+        "Incorrect. Pyranose is the six-membered ring.",
+        "Incorrect. Anomer refers to α/β configuration at C1.",
+        "Incorrect. Epimer refers to differences at one chiral carbon."
+      ],
+      "hint": "Fructose forms this ring type."
+    },
+    {
+      "question": "Which of the following statements about the anomeric carbon is correct?",
+      "options": [
+        "It is only present in ketoses",
+        "It is the carbon that carries the carbonyl group and becomes a new chiral center on cyclization",
+        "It is always the terminal CH2OH carbon",
+        "It is never involved in glycosidic bond formation"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The anomeric carbon carries the aldehyde or ketone group and, on cyclization, becomes a new chiral center generating α and β anomers.",
+      "subtopic": "Anomers",
+      "optionExplanations": [
+        "Incorrect. Anomeric carbons exist in both aldoses and ketoses.",
+        "Correct. This is the definition of the anomeric carbon.",
+        "Incorrect. The terminal CH2OH is not the anomeric carbon.",
+        "Incorrect. It is the site of glycosidic bond formation."
+      ],
+      "hint": "It is the carbonyl carbon of the open-chain form."
+    },
+    {
+      "question": "In the α-anomer of D-glucose, the OH group on the anomeric carbon points:",
+      "options": [
+        "Down",
+        "Up",
+        "Left",
+        "Right"
+      ],
+      "correctAnswer": "A",
+      "explanation": "In α-D-glucose the OH group on C1 points down; in β-D-glucose it points up.",
+      "subtopic": "Anomers",
+      "optionExplanations": [
+        "Correct. α = OH down.",
+        "Incorrect. OH up corresponds to β.",
+        "Incorrect. Left/right is not the α/β designation.",
+        "Incorrect. Left/right is not the α/β designation."
+      ],
+      "hint": "α = down (in the standard Haworth drawing for D-glucose)."
+    },
+    {
+      "question": "In the pyranose form of glucose, β-D-glucose is the anomer in which the OH on C1 points:",
+      "options": [
+        "Down",
+        "Up",
+        "Left",
+        "Right"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The β-anomer has the OH group on the anomeric carbon pointing up in the standard Haworth representation for D-glucose.",
+      "subtopic": "Anomers",
+      "optionExplanations": [
+        "Incorrect. OH down is α.",
+        "Correct. β = OH up.",
+        "Incorrect. Left/right is not α/β.",
+        "Incorrect. Left/right is not α/β."
+      ],
+      "hint": "β rhymes with 'up'."
+    },
+    {
+      "question": "Fructose in solution predominantly forms which ring type?",
+      "options": [
+        "Pyranose",
+        "Furanose",
+        "Linear chain",
+        "Bicyclic structure"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Fructose closes on itself to form a furanose (five-membered) ring.",
+      "subtopic": "Anomers",
+      "optionExplanations": [
+        "Incorrect. Pyranose is the six-membered form, typical of glucose.",
+        "Correct. Fructose forms a furanose ring.",
+        "Incorrect. The open-chain form is a minor fraction.",
+        "Incorrect. Fructose does not form a bicyclic structure."
+      ],
+      "hint": "Ketoses commonly form five-membered rings."
+    },
+    {
+      "question": "In fructose, the anomeric carbon is:",
+      "options": [
+        "C1",
+        "C2",
+        "C5",
+        "C6"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Fructose is a ketose; the ketone carbon is C2, so C2 is the anomeric carbon.",
+      "subtopic": "Anomers",
+      "optionExplanations": [
+        "Incorrect. C1 is the anomeric carbon of aldoses like glucose.",
+        "Correct. In fructose the ketone is at C2.",
+        "Incorrect. C5 is the ring oxygen-bearing carbon.",
+        "Incorrect. C6 is a terminal CH2OH."
+      ],
+      "hint": "The anomeric carbon is the carbonyl carbon."
+    },
+    {
+      "question": "Reducing sugars are defined in the lecture as sugars that:",
+      "options": [
+        "React with a basic Cu2+ solution (Benedict's reagent) to form a red-orange precipitate of Cu2O",
+        "Do not react with Benedict's reagent",
+        "Contain only ketone groups",
+        "Are never found in nature"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Sugars with a free hemiacetal react with Benedict's reagent (basic Cu2+) to form a red-orange precipitate of Cu2O and are called reducing sugars.",
+      "subtopic": "Oxidation of monosaccharides",
+      "optionExplanations": [
+        "Correct. This is the definition of reducing sugars.",
+        "Incorrect. Non-reacting sugars are non-reducing sugars.",
+        "Incorrect. Ketoses can also reduce.",
+        "Incorrect. All monosaccharides are reducing sugars."
+      ],
+      "hint": "Benedict's reagent turns red-orange."
+    },
+    {
+      "question": "Which of the following statements about monosaccharides and Benedict's reagent is correct?",
+      "options": [
+        "All monosaccharides are reducing sugars",
+        "Only ketoses are reducing sugars",
+        "Monosaccharides do not react with Benedict's reagent",
+        "Only hexoses are reducing sugars"
+      ],
+      "correctAnswer": "A",
+      "explanation": "The lecture explicitly states that all monosaccharides are reducing sugars.",
+      "subtopic": "Oxidation of monosaccharides",
+      "optionExplanations": [
+        "Correct. All monosaccharides reduce Benedict's reagent.",
+        "Incorrect. Aldoses are also reducing sugars.",
+        "Incorrect. They react to give a red-orange precipitate.",
+        "Incorrect. Pentoses and trioses also reduce."
+      ],
+      "hint": "All monosaccharides contain a free hemiacetal."
+    },
+    {
+      "question": "Oxidation of the aldehyde carbon (C1) of glucose produces:",
+      "options": [
+        "Glucuronic acid",
+        "Gluconic acid",
+        "Glucaric acid",
+        "Sorbitol"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Oxidation at C1 (the aldehyde carbon) of glucose gives gluconic acid.",
+      "subtopic": "Oxidation of monosaccharides",
+      "optionExplanations": [
+        "Incorrect. Glucuronic acid results from oxidation at C6.",
+        "Correct. C1 oxidation gives gluconic acid.",
+        "Incorrect. Glucaric acid results from oxidation at both C1 and C6.",
+        "Incorrect. Sorbitol is a reduction product, not an oxidation product."
+      ],
+      "hint": "C1 oxidation = gluconic acid."
+    },
+    {
+      "question": "Oxidation of the terminal CH2OH carbon (C6) of glucose produces:",
+      "options": [
+        "Gluconic acid",
+        "Glucuronic acid",
+        "Glucaric acid",
+        "Galactose"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Oxidation at C6 of glucose produces glucuronic acid.",
+      "subtopic": "Oxidation of monosaccharides",
+      "optionExplanations": [
+        "Incorrect. Gluconic acid results from C1 oxidation.",
+        "Correct. C6 oxidation gives glucuronic acid.",
+        "Incorrect. Glucaric acid results from oxidation at both ends.",
+        "Incorrect. Galactose is a C4 epimer, not an oxidation product."
+      ],
+      "hint": "C6 oxidation = glucuronic acid."
+    },
+    {
+      "question": "Which product forms when both C1 and C6 of glucose are oxidized?",
+      "options": [
+        "Gluconic acid",
+        "Glucuronic acid",
+        "Glucaric acid",
+        "Glucose 6-phosphate"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Oxidation at both ends of glucose yields glucaric acid.",
+      "subtopic": "Oxidation of monosaccharides",
+      "optionExplanations": [
+        "Incorrect. Gluconic acid arises only from C1 oxidation.",
+        "Incorrect. Glucuronic acid arises only from C6 oxidation.",
+        "Correct. Glucaric acid = oxidation at both C1 and C6.",
+        "Incorrect. Glucose 6-phosphate is a phosphate ester, not an oxidation product."
+      ],
+      "hint": "Two oxidations, one product."
+    },
+    {
+      "question": "Phosphate esters of monosaccharides typically form at which carbon of aldohexoses according to the lecture?",
+      "options": [
+        "C1",
+        "C2",
+        "C6",
+        "C4"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The lecture states that phosphate esters can form at the 6-carbon of aldohexoses and aldoketoses (e.g., glucose 6-phosphate, fructose 6-phosphate).",
+      "subtopic": "Phosphate esters",
+      "optionExplanations": [
+        "Incorrect. C1 is the anomeric carbon.",
+        "Incorrect. C2 is the anomeric carbon for ketoses.",
+        "Correct. C6 is the phosphate ester site.",
+        "Incorrect. C4 is the site of the glucose/galactose epimer difference."
+      ],
+      "hint": "The phosphate attaches to the terminal CH2OH."
+    },
+    {
+      "question": "Which of the following is NOT a place where phosphate esters of monosaccharides are found according to the lecture?",
+      "options": [
+        "Sugar-phosphate backbone of DNA and RNA",
+        "ATP",
+        "Intermediates in carbohydrate metabolism",
+        "The lipid bilayer of cell membranes"
+      ],
+      "correctAnswer": "D",
+      "explanation": "The lecture lists DNA/RNA backbones, ATP, and metabolic intermediates as sites where monosaccharide phosphate esters occur, not membrane lipids.",
+      "subtopic": "Phosphate esters",
+      "optionExplanations": [
+        "Incorrect. DNA/RNA backbones are listed.",
+        "Incorrect. ATP is listed.",
+        "Incorrect. Metabolic intermediates are listed.",
+        "Correct. Membrane lipids are not listed in this context."
+      ],
+      "hint": "Which option is unrelated to nucleotides or metabolism?"
+    },
+    {
+      "question": "A glycosidic linkage is best described as:",
+      "options": [
+        "The new carbon-oxygen bond formed when the hemiacetal/hemiketal of a sugar reacts with an alcohol",
+        "A peptide bond between two amino acids",
+        "A carbon-carbon bond between two monosaccharides",
+        "An ester bond between a fatty acid and glycerol"
+      ],
+      "correctAnswer": "A",
+      "explanation": "The lecture defines the glycosidic linkage as the new carbon-oxygen bond formed between the anomeric carbon and the alcohol oxygen.",
+      "subtopic": "Glycosides",
+      "optionExplanations": [
+        "Correct. This matches the lecture's definition.",
+        "Incorrect. Peptide bonds are in proteins.",
+        "Incorrect. Glycosidic bonds are C–O, not C–C.",
+        "Incorrect. That describes a triglyceride."
+      ],
+      "hint": "It involves the anomeric carbon and an oxygen."
+    },
+    {
+      "question": "Which of the following is true of glycosides?",
+      "options": [
+        "They are reducing sugars because their ring can open",
+        "They cannot reduce Benedict's reagent because the ring can no longer open to the open-chain form",
+        "They contain only ketone groups",
+        "They always have a free anomeric carbon"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Once a glycoside is formed, the ring can no longer open to the open-chain form, so glycosides are not reducing sugars and do not react with Cu2+.",
+      "subtopic": "Glycosides",
+      "optionExplanations": [
+        "Incorrect. Glycosides are not reducing sugars.",
+        "Correct. Ring-opening is blocked, so no reduction occurs.",
+        "Incorrect. Glycosides are not limited to ketones.",
+        "Incorrect. The anomeric carbon is involved in the glycosidic bond, not free."
+      ],
+      "hint": "A locked ring cannot open."
+    },
+    {
+      "question": "When α-D-glucose reacts with methanol under acid catalysis, the product is:",
+      "options": [
+        "Methyl α-D-glucopyranoside (a glycoside)",
+        "Gluconic acid",
+        "Glucose 6-phosphate",
+        "Sorbitol"
+      ],
+      "correctAnswer": "A",
+      "explanation": "The hemiacetal of α-D-glucose reacts with methanol under acid catalysis to give methyl α-D-glucopyranoside, a glycoside.",
+      "subtopic": "Glycosides",
+      "optionExplanations": [
+        "Correct. This is the glycoside formed with methanol.",
+        "Incorrect. Gluconic acid is an oxidation product.",
+        "Incorrect. Phosphate esters use phosphoric acid, not methanol.",
+        "Incorrect. Sorbitol is a reduction product."
+      ],
+      "hint": "Methanol + anomeric OH → methyl glycoside."
+    },
+    {
+      "question": "Maltose is composed of:",
+      "options": [
+        "α-D-glucose and β-D-fructose joined by α-1,β-2 linkage",
+        "Two α-D-glucose units joined by an α(1→4) glycosidic linkage",
+        "β-D-galactose and α-D-glucose joined by a β(1→4) linkage",
+        "Glucuronic acid and N-acetylglucosamine"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The lecture describes maltose as two α-D-glucose units linked by an α(1→4) glycosidic linkage.",
+      "subtopic": "Important disaccharides",
+      "optionExplanations": [
+        "Incorrect. That describes sucrose.",
+        "Correct. Maltose = glucose + glucose (α-1,4).",
+        "Incorrect. That describes lactose.",
+        "Incorrect. That describes hyaluronic acid repeating units."
+      ],
+      "hint": "Maltose = two glucose molecules."
+    },
+    {
+      "question": "Lactose is composed of:",
+      "options": [
+        "Two glucose units joined by an α(1→4) linkage",
+        "Glucose and fructose joined by α-1,β-2 linkage",
+        "β-D-galactose and α-D-glucose joined by a β(1→4) linkage",
+        "Sulfated glucuronic acid and sulfated glucosamine"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Lactose consists of β-D-galactose linked to α-D-glucose by a β(1→4) glycosidic linkage.",
+      "subtopic": "Important disaccharides",
+      "optionExplanations": [
+        "Incorrect. That is maltose.",
+        "Incorrect. That is sucrose.",
+        "Correct. Lactose = galactose + glucose (β-1,4).",
+        "Incorrect. That describes heparin."
+      ],
+      "hint": "Milk sugar = galactose + glucose."
+    },
+    {
+      "question": "Which of the following statements about sucrose is correct according to the lecture?",
+      "options": [
+        "Sucrose is a reducing sugar",
+        "Both anomeric carbons of glucose and fructose are involved in the glycosidic linkage, so sucrose is not a reducing sugar",
+        "Sucrose is composed of two galactose units",
+        "Sucrose contains a free anomeric carbon on glucose"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The lecture states that both anomeric carbons of glucose and fructose are tied together in the glycosidic linkage, so neither ring can open and sucrose is not a reducing sugar.",
+      "subtopic": "Important disaccharides",
+      "optionExplanations": [
+        "Incorrect. Sucrose is not a reducing sugar.",
+        "Correct. Both anomeric carbons are locked in the glycosidic bond.",
+        "Incorrect. Sucrose is glucose + fructose.",
+        "Incorrect. The glucose anomeric carbon is involved in the glycosidic bond."
+      ],
+      "hint": "Sucrose = glucose + fructose, non-reducing."
+    },
+    {
+      "question": "Raffinose is described in the lecture as:",
+      "options": [
+        "A monosaccharide found in milk",
+        "An oligosaccharide found in peas and beans, largely undigested until reaching intestinal flora",
+        "A polysaccharide made of glucose and galactose",
+        "A disaccharide composed of glucose and fructose"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Raffinose is an oligosaccharide found in peas and beans; it is largely undigested until reaching the intestinal flora in the large intestine, releasing hydrogen, carbon dioxide, and methane.",
+      "subtopic": "Oligosaccharides",
+      "optionExplanations": [
+        "Incorrect. It is not a milk monosaccharide.",
+        "Correct. This matches the lecture.",
+        "Incorrect. It is an oligosaccharide, not a polysaccharide.",
+        "Incorrect. Sucrose is glucose + fructose; raffinose contains galactose, glucose, and fructose."
+      ],
+      "hint": "Legumes are the source."
+    },
+    {
+      "question": "Which of the following correctly distinguishes amylose from amylopectin?",
+      "options": [
+        "Amylose is branched; amylopectin is unbranched",
+        "Amylose is unbranched with α(1→4) linkages; amylopectin has α(1→4) chains with α(1→6) branches",
+        "Both are entirely made of β(1→4) linkages",
+        "Both are made of fructose units"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Amylose consists of long unbranched chains of glucose with α(1→4) linkages; amylopectin has α(1→4) chains with α(1→6) branches every 24–30 glucose units.",
+      "subtopic": "Homo polysaccharides — starch",
+      "optionExplanations": [
+        "Incorrect. The branching pattern is reversed.",
+        "Correct. This matches the lecture.",
+        "Incorrect. Cellulose uses β(1→4) linkages, not starch components.",
+        "Incorrect. Starch is made of glucose, not fructose."
+      ],
+      "hint": "Unbranched vs branched."
+    },
+    {
+      "question": "Approximately what percentage of plant starch is amylose?",
+      "options": [
+        "10%–20%",
+        "40%–50%",
+        "70%–80%",
+        "90%–100%"
+      ],
+      "correctAnswer": "A",
+      "explanation": "The lecture states 10%–20% of plant starch is amylose, with 80%–90% being amylopectin.",
+      "subtopic": "Homo polysaccharides — starch",
+      "optionExplanations": [
+        "Correct. Amylose = 10%–20% of plant starch.",
+        "Incorrect. This range is not stated.",
+        "Incorrect. This range is more consistent with amylopectin.",
+        "Incorrect. Plant starch is not 90%–100% amylose."
+      ],
+      "hint": "Amylose is the minor component."
+    },
+    {
+      "question": "Which starch component gives a deep blue-purple color with iodine?",
+      "options": [
+        "Amylopectin only",
+        "Amylose, because its helices trap iodine molecules",
+        "Cellulose",
+        "Glycogen only"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Amylose helices can trap iodine molecules, forming a characteristic deep blue-purple color.",
+      "subtopic": "Homo polysaccharides — starch",
+      "optionExplanations": [
+        "Incorrect. The iodine color test is attributed to amylose.",
+        "Correct. Iodine trapped inside amylose helices gives the color.",
+        "Incorrect. Cellulose does not give this characteristic color.",
+        "Incorrect. Glycogen gives a different (reddish-brown) color with iodine."
+      ],
+      "hint": "The helical structure traps iodine."
+    },
+    {
+      "question": "Which statement about glycogen is correct according to the lecture?",
+      "options": [
+        "Glycogen is a starch found in plants with α(1→4) and α(1→6) linkages",
+        "Glycogen is structurally similar to amylopectin but more highly branched, with branches every 8–12 glucose units",
+        "Glycogen is a polymer of fructose found in the liver",
+        "Glycogen contains β(1→4) glycosidic linkages"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Glycogen is structurally similar to amylopectin but is even more highly branched (every 8–12 glucose units) and is abundant in liver and muscle.",
+      "subtopic": "Homo polysaccharides — glycogen",
+      "optionExplanations": [
+        "Incorrect. Glycogen is the animal starch, not a plant starch.",
+        "Correct. This matches the lecture.",
+        "Incorrect. Glycogen is a polymer of glucose, not fructose.",
+        "Incorrect. Glycogen uses α linkages, not β."
+      ],
+      "hint": "Animal starch with denser branching than amylopectin."
+    },
+    {
+      "question": "Which of the following is TRUE about cellulose?",
+      "options": [
+        "Cellulose is a branched polymer of glucose with α(1→4) and α(1→6) linkages",
+        "Cellulose is an unbranched polymer of D-glucose with β(1→4) glycosidic linkages",
+        "Cellulose is a polymer of fructose linked by α(1→4) bonds",
+        "Cellulose is a heteropolysaccharide of aminosugars and uronic acids"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Cellulose consists of long unbranched chains of D-glucose connected by β(1→4) glycosidic linkages (300–3000 glucose units per molecule).",
+      "subtopic": "Homo polysaccharides — cellulose",
+      "optionExplanations": [
+        "Incorrect. That describes amylopectin/glycogen.",
+        "Correct. Cellulose = unbranched glucose + β(1→4) linkages.",
+        "Incorrect. Cellulose contains glucose, not fructose.",
+        "Incorrect. That describes heteropolysaccharides."
+      ],
+      "hint": "β-linkages give cellulose its rigid structure."
+    },
+    {
+      "question": "Which statement about heteropolysaccharides (mucopolysaccharides) is correct?",
+      "options": [
+        "They contain only glucose units linked by α(1→4) bonds",
+        "They are long, unbranched chains of repeating disaccharides composed of amino sugars and uronic acids",
+        "They are made exclusively of monosaccharides joined by β(1→4) bonds",
+        "They are insoluble in water and provide no lubrication"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The lecture defines heteropolysaccharides as long unbranched chains of repeating disaccharide units composed of amino sugars and uronic acids.",
+      "subtopic": "Heteropolysaccharides",
+      "optionExplanations": [
+        "Incorrect. That describes starch, not heteropolysaccharides.",
+        "Correct. This is the definition from the lecture.",
+        "Incorrect. Not all heteropolysaccharides use β(1→4) linkages.",
+        "Incorrect. They attract water, forming viscous mucus and acting as lubricants."
+      ],
+      "hint": "Aminosugars + uronic acids."
+    },
+    {
+      "question": "Hyaluronic acid is composed of which repeating disaccharide unit?",
+      "options": [
+        "Sulfated glucuronic acid and sulfated glucosamine joined by α-1,4 bonds",
+        "D-glucuronic acid and N-acetylglucosamine joined by β-1,3 bonds",
+        "Glucuronic acid and N-acetylgalactosamine joined by β-1,3 bonds",
+        "Two glucose units joined by α(1→4) bonds"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Hyaluronic acid is a repeating disaccharide of D-glucuronic acid and N-acetylglucosamine joined by β-1,3 bonds; it acts as a lubricant and shock absorbent in joints.",
+      "subtopic": "Heteropolysaccharides",
+      "optionExplanations": [
+        "Incorrect. That describes heparin.",
+        "Correct. Hyaluronic acid = glucuronic acid + N-acetylglucosamine (β-1,3).",
+        "Incorrect. That describes chondroitin.",
+        "Incorrect. Hyaluronic acid contains amino sugars and uronic acids."
+      ],
+      "hint": "Found in joints as a lubricant."
+    },
+    {
+      "question": "Heparin is composed of which repeating disaccharide unit, and what is its main biological function?",
+      "options": [
+        "Sulfated glucuronic acid and sulfated glucosamine joined by α-1,4 bonds; acts as an anticoagulant",
+        "D-glucuronic acid and N-acetylgalactosamine joined by β-1,3 bonds; acts as a lubricant",
+        "Glucose and galactose joined by β-1,4 bonds; acts as an anticoagulant",
+        "Two fructose units joined by α-1,2 bonds; acts as a shock absorber"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Heparin is made of sulfated glucuronic acid and sulfated glucosamine joined by α-1,4 bonds; it is used as an anticoagulant.",
+      "subtopic": "Heteropolysaccharides",
+      "optionExplanations": [
+        "Correct. This matches the lecture.",
+        "Incorrect. That describes chondroitin.",
+        "Incorrect. Lactose is glucose + galactose (β-1,4), not an anticoagulant.",
+        "Incorrect. Fructose does not make up heparin."
+      ],
+      "hint": "Think anticoagulant."
+    },
+    {
+      "question": "Chondroitin is composed of which repeating disaccharide unit?",
+      "options": [
+        "Glucuronic acid and N-acetylgalactosamine joined by β-1,3 bonds",
+        "Sulfated glucuronic acid and sulfated glucosamine joined by α-1,4 bonds",
+        "D-glucuronic acid and N-acetylglucosamine joined by β-1,3 bonds",
+        "Two glucose units joined by α-1,6 bonds"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Chondroitin is composed of glucuronic acid and N-acetylgalactosamine joined by β-1,3 bonds; it is found in bone, cartilage, tendons, ligaments, and aorta.",
+      "subtopic": "Heteropolysaccharides",
+      "optionExplanations": [
+        "Correct. Chondroitin = glucuronic acid + N-acetylgalactosamine (β-1,3).",
+        "Incorrect. That describes heparin.",
+        "Incorrect. That describes hyaluronic acid.",
+        "Incorrect. That describes a branch point in amylopectin, not chondroitin."
+      ],
+      "hint": "Found in cartilage and connective tissue."
+    },
+    {
+      "question": "Which of the following correctly describes the structural role of heteropolysaccharides when bound to proteins?",
+      "options": [
+        "They lose their ability to attract water",
+        "They form glycoproteins and, because of charged groups, attract large amounts of water to produce viscous mucous secretions, acting as lubricants",
+        "They become reducing sugars",
+        "They are converted into cellulose"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Heteropolysaccharides bind to proteins to form glycoproteins; charged groups attract water, producing viscous mucous secretions that act as lubricants (hence the name mucopolysaccharides).",
+      "subtopic": "Heteropolysaccharides",
+      "optionExplanations": [
+        "Incorrect. They attract water.",
+        "Correct. This matches the lecture.",
+        "Incorrect. Glycoproteins are not classified as reducing sugars.",
+        "Incorrect. Cellulose is a plant homo-polysaccharide."
+      ],
+      "hint": "Charged groups hold water."
+    },
+    {
+      "question": "Which of the following is NOT a hexose?",
+      "options": [
+        "Glucose",
+        "Fructose",
+        "Galactose",
+        "Ribose"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Ribose is a pentose (5 carbons); glucose, fructose, and galactose are all hexoses (6 carbons).",
+      "subtopic": "Classification of monosaccharides",
+      "optionExplanations": [
+        "Incorrect. Glucose is a hexose.",
+        "Incorrect. Fructose is a hexose.",
+        "Incorrect. Galactose is a hexose.",
+        "Correct. Ribose is a pentose, not a hexose."
+      ],
+      "hint": "Count the carbons."
+    },
+    {
+      "question": "Which of the following best describes the relationship between carbohydrates and the term 'saccharide'?",
+      "options": [
+        "Saccharide is an obsolete term no longer used in biochemistry",
+        "Saccharide is a synonym for carbohydrate, derived from the Greek word for sugar",
+        "Saccharide refers only to disaccharides",
+        "Saccharide refers only to the sugar portion of a glycoprotein"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The lecture states that carbohydrates are also called saccharides, from the Greek 'saccharo' meaning sugar.",
+      "subtopic": "Definition and nomenclature",
+      "optionExplanations": [
+        "Incorrect. Saccharide is still commonly used.",
+        "Correct. Saccharide = sugar (Greek).",
+        "Incorrect. Saccharide covers all carbohydrate classes.",
+        "Incorrect. Saccharide is a general term, not restricted to glycoproteins."
+      ],
+      "hint": "Greek origin of the word."
+    },
+    {
+      "question": "Which of the following statements correctly distinguishes monosaccharides from oligosaccharides?",
+      "options": [
+        "Monosaccharides are polymers; oligosaccharides are monomers",
+        "Monosaccharides cannot be hydrolyzed into smaller sugars; oligosaccharides yield 3–10 monosaccharides on hydrolysis",
+        "Both always contain 6 carbons",
+        "Oligosaccharides are found only in animals"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Monosaccharides are the simplest carbohydrates (cannot be hydrolyzed further), while oligosaccharides give 3–10 monosaccharide units on hydrolysis.",
+      "subtopic": "Classification of carbohydrates",
+      "optionExplanations": [
+        "Incorrect. The two classes are reversed.",
+        "Correct. Monosaccharides = simplest; oligosaccharides = 3–10 units.",
+        "Incorrect. Carbon numbers vary by class.",
+        "Incorrect. Oligosaccharides like raffinose are found in plants."
+      ],
+      "hint": "Mono = one; oligo = few."
+    },
+    {
+      "question": "Which of the following biological roles of carbohydrates is NOT explicitly listed in the lecture?",
+      "options": [
+        "Providing energy through oxidation",
+        "Forming part of the structures of some cells and tissues",
+        "Serving as coenzymes for redox reactions",
+        "Acting as a form of stored chemical energy"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The lecture lists energy through oxidation, carbon supply, stored chemical energy, and structural roles; coenzyme function is not among them.",
+      "subtopic": "Biological importance",
+      "optionExplanations": [
+        "Incorrect. Energy through oxidation is listed.",
+        "Incorrect. Structural roles are listed.",
+        "Correct. Coenzyme function is not listed.",
+        "Incorrect. Stored chemical energy is listed."
+      ],
+      "hint": "Which role belongs to vitamins rather than carbohydrates?"
+    },
+    {
+      "question": "Which statement about the classification of monosaccharides by carbon number is correct?",
+      "options": [
+        "A tetrose has 6 carbons and a hexose has 4 carbons",
+        "A triose has 3 carbons, a tetrose has 4, a pentose has 5, and a hexose has 6",
+        "All monosaccharides have 6 carbons",
+        "Only ketoses can have 3 carbons"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The lecture lists trioses (3 C), tetroses (4 C), pentoses (5 C), and hexoses (6 C).",
+      "subtopic": "Classification of monosaccharides",
+      "optionExplanations": [
+        "Incorrect. The numbers are reversed.",
+        "Correct. Matches the classification table.",
+        "Incorrect. Monosaccharides range from 3 to 6 carbons and beyond.",
+        "Incorrect. Trioses can be aldoses (glyceraldehyde) or ketoses (dihydroxyacetone)."
+      ],
+      "hint": "Match prefixes: tri = 3, tetr = 4, pent = 5, hex = 6."
+    },
+    {
+      "question": "Dihydroxyacetone is best classified as:",
+      "options": [
+        "An aldose triose",
+        "A ketose triose",
+        "An aldose tetrose",
+        "A ketose hexose"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Dihydroxyacetone has three carbons and a ketone group, so it is a ketose triose.",
+      "subtopic": "Classification of monosaccharides",
+      "optionExplanations": [
+        "Incorrect. It is a ketose, not an aldose.",
+        "Correct. Ketose + 3 carbons.",
+        "Incorrect. It has 3 carbons, not 4.",
+        "Incorrect. It has 3 carbons, not 6."
+      ],
+      "hint": "How many carbons and which functional group?"
+    },
+    {
+      "question": "Which of the following is an example of an aldose tetrose?",
+      "options": [
+        "Glyceraldehyde",
+        "Erythrose",
+        "Ribose",
+        "Glucose"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The lecture's classification table lists erythrose as the aldose tetrose example.",
+      "subtopic": "Classification of monosaccharides",
+      "optionExplanations": [
+        "Incorrect. Glyceraldehyde is a triose.",
+        "Correct. Erythrose is the aldose tetrose.",
+        "Incorrect. Ribose is a pentose.",
+        "Incorrect. Glucose is a hexose."
+      ],
+      "hint": "Match: tetr- = 4 carbons."
+    },
+    {
+      "question": "Which property distinguishes a ketose from an aldose?",
+      "options": [
+        "The number of chiral carbons",
+        "The presence of a ketone carbonyl versus an aldehyde carbonyl",
+        "The direction of optical rotation",
+        "The type of ring formed in solution"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Aldoses contain an aldehyde group; ketoses contain a ketone group, per the lecture's classification rule (aldo- vs keto-).",
+      "subtopic": "Classification of monosaccharides",
+      "optionExplanations": [
+        "Incorrect. Chiral carbon count varies by carbon number.",
+        "Correct. Aldose vs ketose is defined by the carbonyl type.",
+        "Incorrect. Optical rotation direction is not related to aldo/keto.",
+        "Incorrect. Ring type depends on sugar identity, not aldo/keto classification directly."
+      ],
+      "hint": "Look at the carbonyl functional group."
+    },
+    {
+      "question": "A molecule of 2,3-dihydroxybutanedioic acid has how many chiral carbons and how many stereoisomers (maximum)?",
+      "options": [
+        "2 chiral carbons; 4 stereoisomers",
+        "1 chiral carbon; 2 stereoisomers",
+        "3 chiral carbons; 8 stereoisomers",
+        "0 chiral carbons; 1 stereoisomer"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Each central carbon is attached to four different groups and is chiral; 2^2 = 4 possible stereoisomers.",
+      "subtopic": "Number of stereoisomers",
+      "optionExplanations": [
+        "Correct. 2 chiral carbons give 2^2 = 4 stereoisomers.",
+        "Incorrect. Two carbons are chiral here.",
+        "Incorrect. Only two carbons are chiral.",
+        "Incorrect. Both central carbons are chiral."
+      ],
+      "hint": "Apply 2^n."
+    },
+    {
+      "question": "Which of the following statements is TRUE about chiral molecules?",
+      "options": [
+        "They have identical physical properties to their enantiomers except for the direction of polarized light rotation",
+        "They have completely different melting points from their enantiomers",
+        "They are always biologically inactive",
+        "They have no relationship to their mirror images"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Enantiomers have identical melting points, boiling points, and refractive indices; they differ only in the direction of polarized light rotation and in biological interactions.",
+      "subtopic": "Stereochemistry and chirality",
+      "optionExplanations": [
+        "Correct. Only optical rotation and biological interactions differ.",
+        "Incorrect. Melting points are identical for enantiomers.",
+        "Incorrect. Many chiral molecules are biologically active.",
+        "Incorrect. Chirality implies a mirror-image relationship."
+      ],
+      "hint": "Enantiomers share physical properties."
+    },
+    {
+      "question": "Which set contains only molecules that are typically chiral?",
+      "options": [
+        "Drinking glasses, spheres, and cubes",
+        "Hands, gloves, and shoes",
+        "Salt crystals, water, and methane",
+        "Circles, squares, and lines"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The lecture explicitly lists hands, gloves, and shoes as chiral objects and drinking glasses, spheres, and cubes as achiral.",
+      "subtopic": "Stereochemistry and chirality",
+      "optionExplanations": [
+        "Incorrect. Those are achiral.",
+        "Correct. Hands, gloves, shoes are chiral examples.",
+        "Incorrect. Those molecules are achiral.",
+        "Incorrect. Those are geometric shapes, not chiral molecules."
+      ],
+      "hint": "Which set has mirror-image forms that cannot be superimposed?"
+    },
+    {
+      "question": "How many chiral carbons are present in a molecule with 2^4 = 16 maximum stereoisomers?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "correctAnswer": "C",
+      "explanation": "2^n = 16 means n = 4 chiral carbons.",
+      "subtopic": "Number of stereoisomers",
+      "optionExplanations": [
+        "Incorrect. 2^2 = 4.",
+        "Incorrect. 2^3 = 8.",
+        "Correct. 2^4 = 16.",
+        "Incorrect. 2^5 = 32."
+      ],
+      "hint": "Solve 2^n = 16."
+    },
+    {
+      "question": "Which of the following correctly describes an asymmetric carbon?",
+      "options": [
+        "A carbon bonded to four identical atoms",
+        "A carbon bonded to four different groups",
+        "A carbon in a double bond",
+        "A carbon with no hydrogens"
+      ],
+      "correctAnswer": "B",
+      "explanation": "An asymmetric (chiral) carbon is bonded to four different groups.",
+      "subtopic": "Stereochemistry and chirality",
+      "optionExplanations": [
+        "Incorrect. Four identical groups would be achiral (e.g., CH4).",
+        "Correct. Four different groups = chiral.",
+        "Incorrect. Double-bonded carbons are not chiral centers.",
+        "Incorrect. CH2Cl2 has no hydrogens on one carbon yet is achiral."
+      ],
+      "hint": "All four groups must be different."
+    },
+    {
+      "question": "Which of the following statements about Fischer projections is correct?",
+      "options": [
+        "Horizontal bonds point away from the viewer and vertical bonds point toward the viewer",
+        "Horizontal bonds point toward the viewer and vertical bonds point away from the viewer",
+        "All bonds lie in the plane of the paper",
+        "The carbonyl group is placed at the bottom and the CH2OH is at the top"
+      ],
+      "correctAnswer": "B",
+      "explanation": "In a Fischer projection, horizontal bonds point toward the viewer, vertical bonds point away; the carbonyl is placed at or near the top and CH2OH at the bottom.",
+      "subtopic": "Fischer projections",
+      "optionExplanations": [
+        "Incorrect. The directions are reversed.",
+        "Correct. Horizontal = toward; vertical = away.",
+        "Incorrect. The projection represents a 3D molecule in 2D.",
+        "Incorrect. The carbonyl is at the top, CH2OH at the bottom."
+      ],
+      "hint": "Horizontal comes toward you."
+    },
+    {
+      "question": "In the D-family of monosaccharides, the OH group on the reference (farthest) chiral carbon is oriented to the:",
+      "options": [
+        "Right when the carbonyl is drawn at the top",
+        "Left when the carbonyl is drawn at the top",
+        "Top of the Fischer projection",
+        "Bottom of the Fischer projection"
+      ],
+      "correctAnswer": "A",
+      "explanation": "The D-isomer has the OH group on the reference chiral carbon pointing right when the carbonyl is at the top.",
+      "subtopic": "Fischer projections and D/L",
+      "optionExplanations": [
+        "Correct. D = OH right.",
+        "Incorrect. OH left corresponds to L.",
+        "Incorrect. 'Top' is where the carbonyl is.",
+        "Incorrect. 'Bottom' is where CH2OH is."
+      ],
+      "hint": "D for 'right' (dexter in Latin)."
+    },
+    {
+      "question": "How is the D- or L- configuration of a monosaccharide determined?",
+      "options": [
+        "By the direction of polarized light rotation",
+        "By the position of the OH group on the anomeric carbon",
+        "By the position of the OH group on the chiral carbon farthest from the carbonyl",
+        "By the number of carbons in the chain"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The D/L designation is based on the configuration at the chiral carbon farthest from the carbonyl group.",
+      "subtopic": "Fischer projections and D/L",
+      "optionExplanations": [
+        "Incorrect. Optical rotation direction is not the same as D/L.",
+        "Incorrect. The anomeric carbon determines α/β, not D/L.",
+        "Correct. Farthest chiral carbon determines D/L.",
+        "Incorrect. Carbon number is unrelated to D/L."
+      ],
+      "hint": "The 'reference' carbon."
+    },
+    {
+      "question": "Which of the following statements is TRUE about the relationship between D/L configuration and optical activity (+/−)?",
+      "options": [
+        "All D-sugars are dextrorotatory",
+        "All L-sugars are levorotatory",
+        "D/L designation and the direction of optical rotation are independent properties",
+        "Optical rotation is determined by the number of chiral carbons only"
+      ],
+      "correctAnswer": "C",
+      "explanation": "D/L is a configurational descriptor based on the reference chiral carbon; the direction of optical rotation (+ or −) is a separate experimental property.",
+      "subtopic": "Optical activity",
+      "optionExplanations": [
+        "Incorrect. Some D-sugars are levorotatory (e.g., D-fructose).",
+        "Incorrect. Not all L-sugars are levorotatory.",
+        "Correct. They are independent properties.",
+        "Incorrect. Rotation direction is determined by the whole molecule's structure, not just the count."
+      ],
+      "hint": "D does not automatically mean +."
+    },
+    {
+      "question": "A solution of an unknown sugar rotates plane-polarized light to the left. This sugar is:",
+      "options": [
+        "Dextrorotatory",
+        "Levorotatory",
+        "Racemic",
+        "Optically inactive"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Levorotatory (−) substances rotate plane-polarized light to the left.",
+      "subtopic": "Optical activity",
+      "optionExplanations": [
+        "Incorrect. Dextrorotatory rotates right.",
+        "Correct. Left rotation = levorotatory.",
+        "Incorrect. A racemic mixture is optically inactive.",
+        "Incorrect. Optically inactive means no rotation."
+      ],
+      "hint": "Levo = left."
+    },
+    {
+      "question": "Which of the following is TRUE about a racemic mixture?",
+      "options": [
+        "It consists of only one enantiomer",
+        "It consists of equal amounts of two enantiomers and is optically inactive",
+        "It always rotates light to the right",
+        "It has no chiral carbons"
+      ],
+      "correctAnswer": "B",
+      "explanation": "A racemate contains equal quantities of two enantiomers whose rotatory effects cancel, making the mixture optically inactive.",
+      "subtopic": "Optical activity",
+      "optionExplanations": [
+        "Incorrect. A racemate contains both enantiomers.",
+        "Correct. Equal amounts → no net rotation.",
+        "Incorrect. Racemates are optically inactive.",
+        "Incorrect. Racemates contain chiral molecules."
+      ],
+      "hint": "Equal and opposite = cancel."
+    },
+    {
+      "question": "A pair of enantiomers has the same:",
+      "options": [
+        "Direction of optical rotation",
+        "Biological activity in a chiral environment",
+        "Melting point",
+        "Interaction with an enzyme active site"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Enantiomers have identical physical constants (melting point, boiling point, refraction) but differ in optical rotation direction and in interactions with other chiral environments (like enzyme active sites).",
+      "subtopic": "Optical activity",
+      "optionExplanations": [
+        "Incorrect. They rotate light in opposite directions.",
+        "Incorrect. Biological activity often differs dramatically.",
+        "Correct. Melting points are identical.",
+        "Incorrect. Enzyme interactions can differ (e.g., thalidomide)."
+      ],
+      "hint": "Only chiral-related properties differ."
+    },
+    {
+      "question": "Which of the following monosaccharides is the sweetest, as stated in the lecture?",
+      "options": [
+        "Glucose",
+        "Fructose",
+        "Galactose",
+        "Sucrose"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Fructose is the sweetest of the monosaccharides, about 73% sweeter than sucrose.",
+      "subtopic": "Physical properties of monosaccharides",
+      "optionExplanations": [
+        "Incorrect. Glucose is less sweet than fructose.",
+        "Correct. Fructose is the sweetest.",
+        "Incorrect. Galactose is less sweet.",
+        "Incorrect. Sucrose is a disaccharide and is less sweet than fructose."
+      ],
+      "hint": "Present in honey and fruits."
+    },
+    {
+      "question": "Which of the following is TRUE about the solubility of monosaccharides?",
+      "options": [
+        "They are insoluble in water due to their high molecular weights",
+        "Their many OH groups make them much more water soluble than molecules of similar molecular weight",
+        "They dissolve only in nonpolar solvents",
+        "Their solubility decreases with temperature"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The many OH groups in monosaccharides make them highly water soluble; glucose, for instance, dissolves 1 g per 1 mL of water forming a syrup.",
+      "subtopic": "Physical properties of monosaccharides",
+      "optionExplanations": [
+        "Incorrect. They are highly soluble in water.",
+        "Correct. Many OH groups → high water solubility.",
+        "Incorrect. They are water-soluble, not nonpolar-soluble.",
+        "Incorrect. Solubility generally increases with temperature."
+      ],
+      "hint": "Hydrogen bonding with water."
+    },
+    {
+      "question": "Monosaccharides in aqueous solution predominantly exist as:",
+      "options": [
+        "Open-chain aldehyde or ketone forms",
+        "Cyclic hemiacetal or hemiketal forms",
+        "Fully ionized species",
+        "Anhydrous crystals"
+      ],
+      "correctAnswer": "B",
+      "explanation": "In solution, monosaccharides exist primarily as cyclic hemiacetals (aldoses) or hemiketals (ketoses) formed by intramolecular attack of an OH on the carbonyl group.",
+      "subtopic": "Chemical properties — ring formation",
+      "optionExplanations": [
+        "Incorrect. Only a tiny fraction remains as the open-chain form.",
+        "Correct. Cyclic forms dominate in solution.",
+        "Incorrect. Monosaccharides are not fully ionized.",
+        "Incorrect. Crystal form does not describe solution behavior."
+      ],
+      "hint": "Intramolecular hemiacetal/hemiketal."
+    },
+    {
+      "question": "The reaction that converts an open-chain monosaccharide into a cyclic hemiacetal involves:",
+      "options": [
+        "Attack of a hydroxyl group on the carbonyl carbon",
+        "Loss of water from two hydroxyl groups only",
+        "Addition of a phosphate group",
+        "Oxidation of the aldehyde to an acid"
+      ],
+      "correctAnswer": "A",
+      "explanation": "An alcohol (OH) group in the same molecule attacks the carbonyl carbon, forming a stable cyclic hemiacetal (or hemiketal for ketoses).",
+      "subtopic": "Chemical properties — ring formation",
+      "optionExplanations": [
+        "Correct. Intramolecular OH attack on the carbonyl.",
+        "Incorrect. Water loss is not the essential step here.",
+        "Incorrect. Phosphorylation is a separate reaction.",
+        "Incorrect. Oxidation produces acids like gluconic acid."
+      ],
+      "hint": "Which group attacks the C=O?"
+    },
+    {
+      "question": "Which of the following statements correctly describes the anomeric carbon?",
+      "options": [
+        "It is the terminal CH2OH carbon",
+        "It is the carbon derived from the carbonyl carbon upon cyclization",
+        "It is always achiral in cyclic sugars",
+        "It is not involved in glycosidic bond formation"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The anomeric carbon is the carbonyl carbon that becomes a new chiral center on cyclization, giving α and β forms.",
+      "subtopic": "Anomers",
+      "optionExplanations": [
+        "Incorrect. The CH2OH is at the other end.",
+        "Correct. This is the definition of the anomeric carbon.",
+        "Incorrect. It is a chiral center.",
+        "Incorrect. Glycosidic bonds form at the anomeric carbon."
+      ],
+      "hint": "Comes from the C=O carbon."
+    },
+    {
+      "question": "Which of the following is TRUE about α- and β-anomers?",
+      "options": [
+        "They differ only in the position of the OH group on the anomeric carbon",
+        "They are enantiomers of each other",
+        "They have different numbers of carbons",
+        "They can never interconvert in solution"
+      ],
+      "correctAnswer": "A",
+      "explanation": "α and β anomers differ only in the orientation of the OH group on the anomeric carbon; they readily interconvert in solution via the open-chain form (mutarotation).",
+      "subtopic": "Anomers",
+      "optionExplanations": [
+        "Correct. Difference is only at C1.",
+        "Incorrect. They are diastereomers, not enantiomers.",
+        "Incorrect. Carbon count is identical.",
+        "Incorrect. They interconvert in solution."
+      ],
+      "hint": "Look at C1 only."
+    },
+    {
+      "question": "Which of the following rings is a furanose?",
+      "options": [
+        "Six-membered ring with one oxygen",
+        "Five-membered ring with one oxygen",
+        "Three-membered ring with one oxygen",
+        "Seven-membered ring with two oxygens"
+      ],
+      "correctAnswer": "B",
+      "explanation": "A furanose is a five-membered ring containing one oxygen; a pyranose is a six-membered ring.",
+      "subtopic": "Chemical properties — ring formation",
+      "optionExplanations": [
+        "Incorrect. That is a pyranose.",
+        "Correct. Five-membered = furanose.",
+        "Incorrect. That would be an epoxide-type ring.",
+        "Incorrect. That would be an oxepane-type ring."
+      ],
+      "hint": "Furanose = furan-like."
+    },
+    {
+      "question": "Which type of sugar usually forms a furanose ring?",
+      "options": [
+        "Aldohexoses",
+        "Ketohexoses such as fructose",
+        "Aldopentoses such as ribose only in RNA",
+        "All monosaccharides"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Fructose, a ketohexose, closes on itself to form a furanose ring; glucose (an aldohexose) forms a pyranose.",
+      "subtopic": "Chemical properties — ring formation",
+      "optionExplanations": [
+        "Incorrect. Aldohexoses typically form pyranose rings.",
+        "Correct. Fructose forms a furanose.",
+        "Incorrect. Ribose in RNA forms a furanose but the question is about which type of sugar does so as its major ring.",
+        "Incorrect. Not all monosaccharides form furanose rings."
+      ],
+      "hint": "Which ketose is present in honey?"
+    },
+    {
+      "question": "A reducing sugar is best defined as one that:",
+      "options": [
+        "Contains only ketone groups",
+        "Has a free hemiacetal that can reduce Cu2+ in Benedict's reagent",
+        "Cannot react with oxidizing agents",
+        "Contains no OH groups"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Reducing sugars have a free hemiacetal at the anomeric carbon, which reduces Cu2+ (Benedict's reagent) to Cu2O (red-orange precipitate).",
+      "subtopic": "Oxidation of monosaccharides",
+      "optionExplanations": [
+        "Incorrect. Ketoses can also be reducing.",
+        "Correct. Free hemiacetal = reducing sugar.",
+        "Incorrect. Reducing sugars react with oxidizing agents.",
+        "Incorrect. All sugars have OH groups."
+      ],
+      "hint": "Benedict's reagent."
+    },
+    {
+      "question": "Which of the following compounds is NOT a reducing sugar?",
+      "options": [
+        "Glucose",
+        "Fructose",
+        "Maltose",
+        "Sucrose"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Sucrose is not a reducing sugar because both anomeric carbons (glucose and fructose) are locked in the glycosidic linkage, preventing ring-opening.",
+      "subtopic": "Reducing sugars",
+      "optionExplanations": [
+        "Incorrect. Glucose is reducing.",
+        "Incorrect. Fructose is reducing.",
+        "Incorrect. Maltose has a free hemiacetal on one glucose unit.",
+        "Correct. Sucrose is non-reducing."
+      ],
+      "hint": "Which one has both anomeric carbons locked?"
+    },
+    {
+      "question": "What is the product when the aldehyde carbon of glucose is oxidized but the terminal CH2OH is not?",
+      "options": [
+        "Glucaric acid",
+        "Gluconic acid",
+        "Glucuronic acid",
+        "Sorbitol"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Oxidation of only the aldehyde carbon (C1) produces gluconic acid; oxidation of only C6 produces glucuronic acid; oxidation of both produces glucaric acid.",
+      "subtopic": "Oxidation of monosaccharides",
+      "optionExplanations": [
+        "Incorrect. Glucaric acid comes from oxidation at both C1 and C6.",
+        "Correct. C1-only oxidation gives gluconic acid.",
+        "Incorrect. Glucuronic acid comes from C6-only oxidation.",
+        "Incorrect. Sorbitol is a reduction product."
+      ],
+      "hint": "C1-only oxidation."
+    },
+    {
+      "question": "Which enzyme-related reaction product is derived from oxidizing C6 of glucose and is used in detoxification and connective tissue synthesis?",
+      "options": [
+        "Gluconic acid",
+        "Glucuronic acid",
+        "Glucaric acid",
+        "Sorbitol"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Glucuronic acid, produced by oxidation of C6, is used in detoxification reactions and is a component of connective tissue polysaccharides.",
+      "subtopic": "Oxidation of monosaccharides",
+      "optionExplanations": [
+        "Incorrect. Gluconic acid arises from C1 oxidation.",
+        "Correct. Glucuronic acid is used in detoxification and connective tissue.",
+        "Incorrect. Glucaric acid comes from oxidation at both ends.",
+        "Incorrect. Sorbitol is a reduction product."
+      ],
+      "hint": "Which acid ends in '-uronic'?"
+    },
+    {
+      "question": "Phosphate esters of monosaccharides are important in all of the following EXCEPT:",
+      "options": [
+        "Sugar-phosphate backbone of DNA and RNA",
+        "ATP energy storage",
+        "Intermediates in carbohydrate metabolism",
+        "Ribosomal protein synthesis directly"
+      ],
+      "correctAnswer": "D",
+      "explanation": "The lecture lists DNA/RNA backbones, ATP, and metabolic intermediates; phosphorylation is not directly part of ribosomal protein synthesis.",
+      "subtopic": "Phosphate esters",
+      "optionExplanations": [
+        "Incorrect. DNA/RNA backbones are listed.",
+        "Incorrect. ATP is listed.",
+        "Incorrect. Metabolic intermediates are listed.",
+        "Correct. Ribosomal protein synthesis is a different process."
+      ],
+      "hint": "Which option is not related to phosphate esters?"
+    },
+    {
+      "question": "The formation of a glycoside from a sugar and an alcohol:",
+      "options": [
+        "Increases the number of free anomeric carbons",
+        "Converts a reducing sugar into a non-reducing sugar",
+        "Oxidizes the anomeric carbon",
+        "Requires a basic medium only"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Formation of a glycosidic bond locks the anomeric carbon into a full acetal/ketal, so the ring can no longer open; the resulting glycoside is non-reducing.",
+      "subtopic": "Glycosides",
+      "optionExplanations": [
+        "Incorrect. It removes the free anomeric carbon.",
+        "Correct. Glycosides are non-reducing.",
+        "Incorrect. Glycoside formation is not an oxidation.",
+        "Incorrect. Acid catalysis is typically required."
+      ],
+      "hint": "The ring can no longer open."
+    },
+    {
+      "question": "Which of the following disaccharides has both anomeric carbons involved in the glycosidic bond?",
+      "options": [
+        "Maltose",
+        "Lactose",
+        "Sucrose",
+        "Cellobiose"
+      ],
+      "correctAnswer": "C",
+      "explanation": "In sucrose, both anomeric carbons (of glucose and fructose) participate in the glycosidic linkage, so it is non-reducing.",
+      "subtopic": "Important disaccharides",
+      "optionExplanations": [
+        "Incorrect. Maltose has a free anomeric carbon on one glucose.",
+        "Incorrect. Lactose has a free anomeric carbon on glucose.",
+        "Correct. Sucrose has both anomeric carbons locked.",
+        "Incorrect. Cellobiose has a free hemiacetal."
+      ],
+      "hint": "Which one is not a reducing sugar?"
+    },
+    {
+      "question": "When sucrose is hydrolyzed under acidic conditions, the products are:",
+      "options": [
+        "Two glucose units",
+        "Glucose and galactose",
+        "Glucose and fructose (invert sugar)",
+        "Galactose and fructose"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Acid hydrolysis of sucrose yields glucose and fructose; this mixture is called invert sugar and is sweeter than sucrose.",
+      "subtopic": "Important disaccharides",
+      "optionExplanations": [
+        "Incorrect. That is maltose hydrolysis.",
+        "Incorrect. That is lactose hydrolysis.",
+        "Correct. Sucrose → glucose + fructose (invert sugar).",
+        "Incorrect. Sucrose does not contain galactose."
+      ],
+      "hint": "Sucrose is made of glucose and fructose."
+    },
+    {
+      "question": "Which statement about the sweetness of invert sugar is correct?",
+      "options": [
+        "Invert sugar is less sweet than sucrose",
+        "Invert sugar is sweeter than sucrose due to its fructose content",
+        "Invert sugar has the same sweetness as sucrose",
+        "Invert sugar is tasteless"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Invert sugar — the acid-hydrolysis product of sucrose — is sweeter than sucrose because of the fructose released.",
+      "subtopic": "Important disaccharides",
+      "optionExplanations": [
+        "Incorrect. It is sweeter, not less sweet.",
+        "Correct. Fructose makes invert sugar sweeter.",
+        "Incorrect. Sweetness differs.",
+        "Incorrect. Invert sugar is sweet."
+      ],
+      "hint": "Fructose is the sweetest monosaccharide."
+    },
+    {
+      "question": "Caramel is best described as:",
+      "options": [
+        "A mixture of monosaccharides formed by enzyme hydrolysis of starch",
+        "The solid residue formed from heating sucrose",
+        "A synthetic disaccharide",
+        "An oligosaccharide found in peas"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The lecture states that caramel is the solid residue formed from heating sucrose.",
+      "subtopic": "Important disaccharides",
+      "optionExplanations": [
+        "Incorrect. Caramel is not an enzymatic product.",
+        "Correct. Caramel = heated sucrose residue.",
+        "Incorrect. Caramel is not a disaccharide.",
+        "Incorrect. Raffinose is the pea oligosaccharide."
+      ],
+      "hint": "Think of cooking sugar."
+    },
+    {
+      "question": "Which of the following is TRUE about maltose?",
+      "options": [
+        "It is a non-reducing disaccharide",
+        "It is produced during the germination of grains and during starch digestion",
+        "It consists of galactose and glucose",
+        "It contains a β(1→4) glycosidic linkage"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Maltose (malt sugar) is produced in germinating grain as starch is broken down during malting, and it also forms during starch hydrolysis to glucose in digestion.",
+      "subtopic": "Important disaccharides",
+      "optionExplanations": [
+        "Incorrect. Maltose is a reducing sugar.",
+        "Correct. Maltose is produced during germination and starch digestion.",
+        "Incorrect. Maltose = glucose + glucose.",
+        "Incorrect. Maltose uses α(1→4) linkage."
+      ],
+      "hint": "Malt = germinating grain."
+    },
+    {
+      "question": "Which disaccharide is digested by the enzyme lactase?",
+      "options": [
+        "Maltose",
+        "Sucrose",
+        "Lactose",
+        "Cellobiose"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The lecture states that lactose is digested by the enzyme lactase; lactose intolerance results from reduced lactase activity.",
+      "subtopic": "Important disaccharides",
+      "optionExplanations": [
+        "Incorrect. Maltose is digested by maltase.",
+        "Incorrect. Sucrose is digested by sucrase.",
+        "Correct. Lactose is digested by lactase.",
+        "Incorrect. Cellobiose is not a major dietary disaccharide."
+      ],
+      "hint": "The enzyme name matches the sugar name."
+    },
+    {
+      "question": "Raffinose is best classified as:",
+      "options": [
+        "A monosaccharide found in milk",
+        "An oligosaccharide found in peas and beans",
+        "A polysaccharide made of glucose and galactose",
+        "A disaccharide made of glucose and fructose"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Raffinose is an oligosaccharide found in peas and beans, containing galactose, glucose, and fructose units.",
+      "subtopic": "Oligosaccharides",
+      "optionExplanations": [
+        "Incorrect. It is not a milk monosaccharide.",
+        "Correct. Raffinose is an oligosaccharide in legumes.",
+        "Incorrect. It is an oligosaccharide, not a polysaccharide.",
+        "Incorrect. Raffinose has three sugar units."
+      ],
+      "hint": "Legumes cause gas due to this sugar."
+    },
+    {
+      "question": "Why does eating beans cause flatulence according to the lecture?",
+      "options": [
+        "Beans contain excess glucose",
+        "Raffinose is largely undigested until reaching intestinal flora, which release hydrogen, carbon dioxide, and methane",
+        "Beans contain cellulose that humans digest",
+        "Beans contain amylose that ferments in the stomach"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Raffinose from peas and beans is largely undigested until it reaches the intestinal flora in the large intestine, where it is fermented, releasing hydrogen, carbon dioxide, and methane.",
+      "subtopic": "Oligosaccharides",
+      "optionExplanations": [
+        "Incorrect. Glucose is not the source of gas.",
+        "Correct. Raffinose fermentation causes flatulence.",
+        "Incorrect. Humans cannot digest cellulose.",
+        "Incorrect. Amylose is digested by human enzymes."
+      ],
+      "hint": "It involves undigested oligosaccharides."
+    },
+    {
+      "question": "Which of the following correctly describes the difference between amylose and amylopectin?",
+      "options": [
+        "Amylose is branched; amylopectin is unbranched",
+        "Amylose is unbranched with α(1→4) linkages; amylopectin has α(1→4) chains with α(1→6) branches",
+        "Both are made entirely of β(1→4) linkages",
+        "Both are found in animal tissues"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Amylose is a long unbranched chain of glucose linked by α(1→4) bonds; amylopectin has α(1→4) chains with α(1→6) branch points every 24–30 glucose units.",
+      "subtopic": "Homo polysaccharides — starch",
+      "optionExplanations": [
+        "Incorrect. Branching is reversed.",
+        "Correct. Matches the lecture.",
+        "Incorrect. Cellulose, not starch, uses β(1→4).",
+        "Incorrect. Both are plant polysaccharides; glycogen is animal."
+      ],
+      "hint": "Branched vs unbranched."
+    },
+    {
+      "question": "Which polysaccharide is described as 'animal starch'?",
+      "options": [
+        "Amylose",
+        "Amylopectin",
+        "Glycogen",
+        "Cellulose"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Glycogen is also known as animal starch; it is stored in the liver and muscles and is highly branched.",
+      "subtopic": "Homo polysaccharides — glycogen",
+      "optionExplanations": [
+        "Incorrect. Amylose is a plant starch component.",
+        "Incorrect. Amylopectin is a plant starch component.",
+        "Correct. Glycogen = animal starch.",
+        "Incorrect. Cellulose is structural in plants."
+      ],
+      "hint": "Stored in liver and muscle."
+    },
+    {
+      "question": "The branching frequency in glycogen (every 8–12 glucose units) compared with amylopectin (every 24–30 glucose units) means that:",
+      "options": [
+        "Glycogen is less branched than amylopectin",
+        "Glycogen is more highly branched than amylopectin",
+        "Both have the same degree of branching",
+        "Branching has no biological significance"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Because branches occur more frequently in glycogen, glycogen is more highly branched than amylopectin; this allows rapid mobilization of glucose when needed.",
+      "subtopic": "Homo polysaccharides — glycogen",
+      "optionExplanations": [
+        "Incorrect. Glycogen is more branched.",
+        "Correct. Every 8–12 units vs every 24–30 units.",
+        "Incorrect. The frequencies differ.",
+        "Incorrect. Branching affects the speed of glucose release."
+      ],
+      "hint": "Smaller interval = more branching."
+    },
+    {
+      "question": "Which of the following statements about glycogen is correct?",
+      "options": [
+        "Glycogen contains β(1→4) linkages",
+        "Glycogen is a polymer of fructose",
+        "Glycogen is abundant in liver and muscles and on hydrolysis gives D-glucose",
+        "Glycogen is a heteropolysaccharide"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Glycogen is abundant in the liver and muscles; on hydrolysis it forms D-glucose, which maintains blood sugar levels and provides energy.",
+      "subtopic": "Homo polysaccharides — glycogen",
+      "optionExplanations": [
+        "Incorrect. Glycogen uses α(1→4) and α(1→6) linkages.",
+        "Incorrect. Glycogen is made of glucose, not fructose.",
+        "Correct. Matches the lecture.",
+        "Incorrect. Glycogen is a homopolysaccharide."
+      ],
+      "hint": "Where is glycogen stored, and what does it yield?"
+    },
+    {
+      "question": "Which of the following correctly distinguishes cellulose from amylose?",
+      "options": [
+        "Cellulose is branched; amylose is unbranched",
+        "Cellulose uses β(1→4) linkages and is straight-chained; amylose uses α(1→4) linkages and can form helices",
+        "Cellulose contains fructose; amylose contains glucose",
+        "Both are digestible by humans"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Cellulose's β(1→4) linkages give it extended straight chains with rigid hydrogen bonding, whereas amylose's α(1→4) linkages allow helical coiling.",
+      "subtopic": "Homo polysaccharides — cellulose",
+      "optionExplanations": [
+        "Incorrect. Cellulose is unbranched.",
+        "Correct. β vs α linkages, straight vs helical.",
+        "Incorrect. Both are glucose polymers.",
+        "Incorrect. Only amylose is digestible by humans."
+      ],
+      "hint": "Linkage geometry changes shape."
+    },
+    {
+      "question": "Which is the single most abundant organic compound on Earth, as stated in the lecture?",
+      "options": [
+        "Starch",
+        "Glycogen",
+        "Cellulose",
+        "Hyaluronic acid"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The lecture states that cellulose is the most important structural polysaccharide and the single most abundant organic compound on Earth; wood is 50% cellulose.",
+      "subtopic": "Homo polysaccharides — cellulose",
+      "optionExplanations": [
+        "Incorrect. Starch is abundant but not the most abundant.",
+        "Incorrect. Glycogen is stored in animals and is less abundant overall.",
+        "Correct. Cellulose is the most abundant organic compound.",
+        "Incorrect. Hyaluronic acid is a heteropolysaccharide found in connective tissue."
+      ],
+      "hint": "Think of plant cell walls."
+    },
+    {
+      "question": "Which statement about cellulose digestion in animals is correct?",
+      "options": [
+        "All animals can digest cellulose using their own enzymes",
+        "Most animals lack the enzymes to digest cellulose, but ruminants use symbiotic bacteria",
+        "Cellulose is fully absorbed without digestion",
+        "Cellulose is digested by pancreatic amylase"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Most animals cannot digest cellulose due to lack of β-glucosidase enzymes; ruminants (cows, sheep, goats) rely on symbiotic gut bacteria that break down cellulose.",
+      "subtopic": "Homo polysaccharides — cellulose",
+      "optionExplanations": [
+        "Incorrect. Most animals lack the required enzymes.",
+        "Correct. Ruminants use bacteria to digest cellulose.",
+        "Incorrect. Cellulose is not absorbed intact.",
+        "Incorrect. Amylase cannot hydrolyze β-linkages."
+      ],
+      "hint": "Which animals have multiple stomachs?"
+    },
+    {
+      "question": "How does cellulose provide nutritional benefit to humans even though we cannot digest it?",
+      "options": [
+        "It provides energy through glycolysis",
+        "It acts as roughage (dietary fiber), stimulating intestinal contraction and helping food pass through the digestive system",
+        "It is converted to glucose in the liver",
+        "It acts as an enzyme cofactor"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Cellulose provides roughage (dietary fiber), stimulating intestinal contractions and helping food pass through the digestive system.",
+      "subtopic": "Homo polysaccharides — cellulose",
+      "optionExplanations": [
+        "Incorrect. Human enzymes cannot break cellulose down for energy.",
+        "Correct. Roughage stimulates digestion.",
+        "Incorrect. Cellulose is not converted to glucose in humans.",
+        "Incorrect. Cellulose is not an enzyme cofactor."
+      ],
+      "hint": "Fiber is the keyword."
+    },
+    {
+      "question": "Which of the following industrial products is derived from cellulose according to the lecture?",
+      "options": [
+        "Insulin",
+        "Wood, paper, cotton, cellophane, rayon, and nitrocellulose",
+        "Aspirin",
+        "Vitamin C"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The lecture lists wood, paper, cotton, cellophane, rayon, linen, nitrocellulose (guncotton), and photographic films (cellulose acetate) as cellulose-derived industrial products.",
+      "subtopic": "Homo polysaccharides — cellulose",
+      "optionExplanations": [
+        "Incorrect. Insulin is a protein hormone.",
+        "Correct. All are cellulose-derived.",
+        "Incorrect. Aspirin is a synthetic drug.",
+        "Incorrect. Vitamin C is a water-soluble vitamin."
+      ],
+      "hint": "Think paper and textiles."
+    },
+    {
+      "question": "Heteropolysaccharides are also called mucopolysaccharides because:",
+      "options": [
+        "They are found in muscles",
+        "They produce viscous mucous secretions and act as lubricants due to their charged groups attracting water",
+        "They contain only neutral sugars",
+        "They are always colored"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Because of the presence of charged groups, heteropolysaccharides attract large amounts of water, producing viscous mucous secretions, hence the name mucopolysaccharides.",
+      "subtopic": "Heteropolysaccharides",
+      "optionExplanations": [
+        "Incorrect. 'Muco' relates to mucus, not muscle.",
+        "Correct. Charged groups attract water → mucous secretions.",
+        "Incorrect. They contain amino sugars and uronic acids.",
+        "Incorrect. Color is not relevant."
+      ],
+      "hint": "Mucus-like secretions."
+    },
+    {
+      "question": "Which of the following correctly pairs a heteropolysaccharide with its biological function?",
+      "options": [
+        "Hyaluronic acid — anticoagulant",
+        "Heparin — lubricant in joints",
+        "Chondroitin — component of bone, cartilage, tendons, ligaments, and aorta",
+        "Cellulose — anticoagulant"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Chondroitin is found in bone, cartilage, tendons, ligaments, and aorta; hyaluronic acid is the joint lubricant; heparin is the anticoagulant.",
+      "subtopic": "Heteropolysaccharides",
+      "optionExplanations": [
+        "Incorrect. Hyaluronic acid is a joint lubricant.",
+        "Incorrect. Heparin is an anticoagulant.",
+        "Correct. Chondroitin is found in connective tissues.",
+        "Incorrect. Cellulose is a structural plant polysaccharide."
+      ],
+      "hint": "Match the molecule to its tissue or function."
+    },
+    {
+      "question": "Which of the following best explains why carbohydrates are called 'biomolecules'?",
+      "options": [
+        "They are only found in non-living matter",
+        "They are closely associated with living organisms and include carbohydrates, lipids, proteins, and nucleic acids",
+        "They are always small molecules",
+        "They are only synthesized in the laboratory"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The lecture groups carbohydrates with lipids, proteins, and nucleic acids as biomolecules because they are closely associated with living organisms.",
+      "subtopic": "Biological importance",
+      "optionExplanations": [
+        "Incorrect. They are found in living organisms.",
+        "Correct. This is the definition given in the lecture.",
+        "Incorrect. Carbohydrates include large polysaccharides.",
+        "Incorrect. They occur naturally."
+      ],
+      "hint": "Biomolecules = associated with life."
+    },
+    {
+      "question": "Which two elements are present in carbohydrates in a fixed 2:1 ratio according to the lecture?",
+      "options": [
+        "Carbon and nitrogen",
+        "Hydrogen and oxygen",
+        "Nitrogen and oxygen",
+        "Carbon and hydrogen"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The lecture states that H and O are present in a 2:1 ratio in carbohydrates, which gives the general formula (CH2O)n.",
+      "subtopic": "Definition and general formula",
+      "optionExplanations": [
+        "Incorrect. Nitrogen is not characteristic of carbohydrates.",
+        "Correct. H:O = 2:1.",
+        "Incorrect. Nitrogen is not characteristic of carbohydrates.",
+        "Incorrect. C:H ratio is not fixed at 2:1."
+      ],
+      "hint": "Which pair matches the water ratio?"
+    },
+    {
+      "question": "Ribose, a pentose found in nucleic acids, is best classified as:",
+      "options": [
+        "An aldopentose",
+        "A ketopentose",
+        "An aldohexose",
+        "A ketotetrose"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Ribose contains 5 carbons and an aldehyde group, so it is an aldopentose.",
+      "subtopic": "Classification of monosaccharides",
+      "optionExplanations": [
+        "Correct. Aldose + pentose.",
+        "Incorrect. Ribose is an aldose, not a ketose.",
+        "Incorrect. It has 5 carbons, not 6.",
+        "Incorrect. It has 5 carbons, not 4."
+      ],
+      "hint": "5 carbons + aldehyde group."
+    },
+    {
+      "question": "Which statement correctly describes the relationship between D-erythrose and L-erythrose?",
+      "options": [
+        "They are structural isomers",
+        "They are enantiomers",
+        "They are epimers",
+        "They are anomers"
+      ],
+      "correctAnswer": "B",
+      "explanation": "D- and L-erythrose are non-superimposable mirror images of each other, making them enantiomers.",
+      "subtopic": "Stereochemistry and chirality",
+      "optionExplanations": [
+        "Incorrect. They have the same connectivity.",
+        "Correct. They are mirror images = enantiomers.",
+        "Incorrect. Epimers differ at only one chiral center; these differ at all chiral centers.",
+        "Incorrect. Anomers are α/β forms at the anomeric carbon."
+      ],
+      "hint": "Mirror images = enantiomers."
+    },
+    {
+      "question": "How many chiral carbons are present in a ketohexose such as fructose (in the open-chain form)?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Fructose has 3 chiral carbons in the open-chain form (C3, C4, C5); C1 and C6 are CH2OH and C2 is the carbonyl, so none of those are chiral.",
+      "subtopic": "Stereochemistry and chirality",
+      "optionExplanations": [
+        "Incorrect. Only the terminal carbons and the C=O are achiral.",
+        "Incorrect. There are three chiral carbons.",
+        "Correct. C3, C4, C5 are chiral in open-chain fructose.",
+        "Incorrect. That would be the case for aldohexoses (glucose has 4)."
+      ],
+      "hint": "Count between the CH2OH and C=O groups."
+    },
+    {
+      "question": "If a compound has 3 chiral carbons, what is the maximum number of stereoisomers it can have?",
+      "options": [
+        "3",
+        "6",
+        "8",
+        "9"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Using the formula 2^n with n = 3, the maximum is 2^3 = 8 stereoisomers.",
+      "subtopic": "Number of stereoisomers",
+      "optionExplanations": [
+        "Incorrect. That is n, not 2^n.",
+        "Incorrect. Not a valid calculation here.",
+        "Correct. 2^3 = 8.",
+        "Incorrect. Not a valid calculation here."
+      ],
+      "hint": "2^3."
+    },
+    {
+      "question": "Which of the following statements about mutarotation is correct?",
+      "options": [
+        "It is the interconversion of α- and β-anomers through the open-chain form in solution",
+        "It is the conversion of D-sugars into L-sugars",
+        "It is the hydrolysis of a glycosidic bond",
+        "It is the oxidation of the aldehyde group"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Mutarotation is the change in optical rotation observed when α- and β-anomers of a sugar interconvert in solution via the open-chain form until equilibrium is established.",
+      "subtopic": "Anomers",
+      "optionExplanations": [
+        "Correct. This is the definition of mutarotation.",
+        "Incorrect. D/L interconversion does not occur spontaneously.",
+        "Incorrect. Hydrolysis of a glycosidic bond is a different reaction.",
+        "Incorrect. Oxidation is separate from mutarotation."
+      ],
+      "hint": "Interconversion via open-chain form."
+    },
+    {
+      "question": "The fact that α- and β-D-glucose interconvert in solution demonstrates that:",
+      "options": [
+        "The cyclic forms cannot open",
+        "The open-chain form is accessible in solution",
+        "Glucose has no anomeric carbon",
+        "Glucose is not a reducing sugar"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Mutarotation occurs because the cyclic hemiacetal can open to the free aldehyde, allowing re-closure in either α or β form.",
+      "subtopic": "Anomers",
+      "optionExplanations": [
+        "Incorrect. They can open via the free aldehyde.",
+        "Correct. The open-chain form is accessible.",
+        "Incorrect. C1 is the anomeric carbon.",
+        "Incorrect. Glucose is a reducing sugar."
+      ],
+      "hint": "Ring-opening is needed for interconversion."
+    },
+    {
+      "question": "Which of the following monosaccharides would be classified as a ketose?",
+      "options": [
+        "Glucose",
+        "Galactose",
+        "Ribose",
+        "Fructose"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Fructose contains a ketone group at C2 and is a ketose.",
+      "subtopic": "Classification of monosaccharides",
+      "optionExplanations": [
+        "Incorrect. Glucose is an aldose.",
+        "Incorrect. Galactose is an aldose.",
+        "Incorrect. Ribose is an aldose.",
+        "Correct. Fructose is a ketose."
+      ],
+      "hint": "Which one has a ketone group?"
+    },
+    {
+      "question": "Which of the following is TRUE about the structure of a monosaccharide ring in solution?",
+      "options": [
+        "The ring contains one oxygen atom as part of the ring itself",
+        "The ring contains no oxygen",
+        "The ring is always planar in 3D",
+        "The ring contains only carbon"
+      ],
+      "correctAnswer": "A",
+      "explanation": "In the cyclic hemiacetal/hemiketal form, the ring oxygen comes from the hydroxyl group that attacked the carbonyl carbon.",
+      "subtopic": "Chemical properties — ring formation",
+      "optionExplanations": [
+        "Correct. One oxygen is part of the ring.",
+        "Incorrect. The ring contains an oxygen.",
+        "Incorrect. Rings are puckered, not planar.",
+        "Incorrect. Oxygen is part of the ring."
+      ],
+      "hint": "The oxygen comes from an OH group."
+    },
+    {
+      "question": "Which property of monosaccharides allows them to form syrups at high concentration?",
+      "options": [
+        "Their low molecular weight",
+        "Their many OH groups that strongly hydrogen bond with water",
+        "Their ability to form covalent bonds with water",
+        "Their high melting points"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Glucose dissolves 1 g per 1 mL H2O to make a syrup, thanks to extensive hydrogen bonding between its OH groups and water.",
+      "subtopic": "Physical properties of monosaccharides",
+      "optionExplanations": [
+        "Incorrect. Low MW alone does not explain syrup formation.",
+        "Correct. Extensive H-bonding with water.",
+        "Incorrect. Water does not form covalent bonds with sugars here.",
+        "Incorrect. Melting point is not the reason."
+      ],
+      "hint": "Hydrogen bonding."
+    },
+    {
+      "question": "Which of the following is NOT a reducing sugar?",
+      "options": [
+        "Glucose",
+        "Fructose",
+        "Maltose",
+        "Methyl α-D-glucopyranoside"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Methyl α-D-glucopyranoside is a glycoside; because its anomeric carbon is locked in a glycosidic bond, it cannot open and is not a reducing sugar.",
+      "subtopic": "Reducing sugars / glycosides",
+      "optionExplanations": [
+        "Incorrect. Glucose is reducing.",
+        "Incorrect. Fructose is reducing.",
+        "Incorrect. Maltose is reducing.",
+        "Correct. Glycosides are non-reducing."
+      ],
+      "hint": "Which one is a glycoside?"
+    },
+    {
+      "question": "A sugar that gives a red-orange precipitate with Benedict's reagent is described as:",
+      "options": [
+        "Non-reducing",
+        "Reducing",
+        "Racemic",
+        "Optically inactive"
+      ],
+      "correctAnswer": "B",
+      "explanation": "A red-orange precipitate of Cu2O indicates the sugar reduced Cu2+, meaning it is a reducing sugar.",
+      "subtopic": "Reducing sugars",
+      "optionExplanations": [
+        "Incorrect. Non-reducing sugars do not react.",
+        "Correct. Reducing = positive Benedict's test.",
+        "Incorrect. Racemic refers to optical activity.",
+        "Incorrect. Optically inactive is a different property."
+      ],
+      "hint": "Positive test = reducing sugar."
+    },
+    {
+      "question": "Which of the following statements about glycosides is TRUE?",
+      "options": [
+        "They are always reducing sugars",
+        "The anomeric carbon is free",
+        "The ring cannot open to the open-chain form",
+        "They are formed by oxidation of the anomeric carbon"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Once the anomeric carbon is part of a glycosidic bond, the ring cannot open to the open-chain form, so glycosides are not reducing sugars.",
+      "subtopic": "Glycosides",
+      "optionExplanations": [
+        "Incorrect. Glycosides are non-reducing.",
+        "Incorrect. The anomeric carbon is locked in the glycosidic bond.",
+        "Correct. Ring-opening is blocked.",
+        "Incorrect. Glycoside formation is not oxidation."
+      ],
+      "hint": "Locked anomeric carbon."
+    },
+    {
+      "question": "Which acid is formed when only the terminal CH2OH of glucose is oxidized?",
+      "options": [
+        "Gluconic acid",
+        "Glucuronic acid",
+        "Glucaric acid",
+        "Galacturonic acid"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Oxidation of the C6 CH2OH of glucose produces glucuronic acid.",
+      "subtopic": "Oxidation of monosaccharides",
+      "optionExplanations": [
+        "Incorrect. Gluconic acid comes from C1 oxidation.",
+        "Correct. C6 oxidation = glucuronic acid.",
+        "Incorrect. Glucaric acid requires oxidation at both C1 and C6.",
+        "Incorrect. Galacturonic acid comes from galactose, not glucose."
+      ],
+      "hint": "C6 oxidation."
+    },
+    {
+      "question": "Which of the following reactions produces glucaric acid from glucose?",
+      "options": [
+        "Reduction with NaBH4",
+        "Oxidation at C1 only",
+        "Oxidation at C6 only",
+        "Oxidation at both C1 and C6"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Glucaric acid (saccharic acid) forms when both terminal carbons of glucose (C1 and C6) are oxidized to COOH.",
+      "subtopic": "Oxidation of monosaccharides",
+      "optionExplanations": [
+        "Incorrect. Reduction gives sorbitol.",
+        "Incorrect. C1 oxidation gives gluconic acid.",
+        "Incorrect. C6 oxidation gives glucuronic acid.",
+        "Correct. Both ends oxidized = glucaric acid."
+      ],
+      "hint": "Two oxidations needed."
+    },
+    {
+      "question": "Which of the following is TRUE about glucuronic acid?",
+      "options": [
+        "It is formed by reduction of glucose",
+        "It is formed by oxidation of the terminal CH2OH of glucose and is used in detoxification",
+        "It is a ketose",
+        "It cannot form glycosidic bonds"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Glucuronic acid is formed by oxidation of C6 of glucose and plays important roles in detoxification and connective tissue synthesis.",
+      "subtopic": "Oxidation of monosaccharides",
+      "optionExplanations": [
+        "Incorrect. It is an oxidation product, not a reduction product.",
+        "Correct. C6 oxidation = glucuronic acid.",
+        "Incorrect. It is an aldose derivative.",
+        "Incorrect. It can participate in glycosidic linkages (e.g., in heparin)."
+      ],
+      "hint": "Detoxification and connective tissue."
+    },
+    {
+      "question": "Phosphate esters of monosaccharides are formed most commonly at which carbon of aldohexoses?",
+      "options": [
+        "C1",
+        "C2",
+        "C4",
+        "C6"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Phosphate esters form at the 6-carbon (the terminal CH2OH) of aldohexoses and aldoketoses, producing compounds like glucose 6-phosphate.",
+      "subtopic": "Phosphate esters",
+      "optionExplanations": [
+        "Incorrect. C1 is the anomeric carbon.",
+        "Incorrect. C2 is the anomeric carbon in ketoses.",
+        "Incorrect. C4 is the epimeric site of galactose.",
+        "Correct. C6 = site of phosphorylation."
+      ],
+      "hint": "Terminal CH2OH carbon."
+    },
+    {
+      "question": "Which important molecule contains a phosphate ester of a monosaccharide?",
+      "options": [
+        "ATP",
+        "Cholesterol",
+        "Triglyceride",
+        "Heme"
+      ],
+      "correctAnswer": "A",
+      "explanation": "ATP contains a ribose-phosphate unit; the lecture lists ATP, DNA/RNA backbones, and metabolic intermediates as sites of monosaccharide phosphate esters.",
+      "subtopic": "Phosphate esters",
+      "optionExplanations": [
+        "Correct. ATP contains a sugar-phosphate.",
+        "Incorrect. Cholesterol is a lipid.",
+        "Incorrect. Triglycerides do not contain sugar phosphates.",
+        "Incorrect. Heme contains no carbohydrate."
+      ],
+      "hint": "Energy currency of the cell."
+    },
+    {
+      "question": "Which of the following correctly describes the difference between a disaccharide and an oligosaccharide?",
+      "options": [
+        "Disaccharides yield 2 monosaccharides; oligosaccharides yield 3–10 monosaccharides",
+        "Disaccharides yield 3–10; oligosaccharides yield more than 10",
+        "Both yield the same number of monosaccharides",
+        "Disaccharides are reducing; oligosaccharides are never reducing"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Disaccharides hydrolyze to 2 monosaccharides; oligosaccharides hydrolyze to 3–10 monosaccharides.",
+      "subtopic": "Classification of carbohydrates",
+      "optionExplanations": [
+        "Correct. This is the classification rule.",
+        "Incorrect. That describes oligosaccharides vs polysaccharides.",
+        "Incorrect. They yield different numbers.",
+        "Incorrect. Both can be reducing depending on their anomeric carbons."
+      ],
+      "hint": "Di = 2; oligo = 3–10."
+    },
+    {
+      "question": "Which disaccharide contains an α(1→4) glycosidic linkage?",
+      "options": [
+        "Lactose",
+        "Sucrose",
+        "Maltose",
+        "Cellobiose"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Maltose consists of two α-D-glucose units joined by an α(1→4) glycosidic linkage.",
+      "subtopic": "Important disaccharides",
+      "optionExplanations": [
+        "Incorrect. Lactose uses a β(1→4) linkage.",
+        "Incorrect. Sucrose uses an α-1,β-2 linkage.",
+        "Correct. Maltose = α(1→4).",
+        "Incorrect. Cellobiose uses a β(1→4) linkage."
+      ],
+      "hint": "Two glucose units with α-linkage."
+    },
+    {
+      "question": "Which disaccharide contains a β(1→4) glycosidic linkage?",
+      "options": [
+        "Maltose",
+        "Lactose",
+        "Sucrose",
+        "Isomaltose"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Lactose (milk sugar) is composed of β-D-galactose and α-D-glucose joined by a β(1→4) linkage.",
+      "subtopic": "Important disaccharides",
+      "optionExplanations": [
+        "Incorrect. Maltose uses α(1→4).",
+        "Correct. Lactose = β(1→4).",
+        "Incorrect. Sucrose uses α-1,β-2.",
+        "Incorrect. Isomaltose uses α(1→6)."
+      ],
+      "hint": "Milk sugar."
+    },
+    {
+      "question": "Sucrose is composed of which two monosaccharides?",
+      "options": [
+        "Glucose and glucose",
+        "Glucose and galactose",
+        "Glucose and fructose",
+        "Fructose and fructose"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Sucrose (table sugar) is composed of glucose and fructose linked through both anomeric carbons.",
+      "subtopic": "Important disaccharides",
+      "optionExplanations": [
+        "Incorrect. That is maltose.",
+        "Incorrect. That is lactose.",
+        "Correct. Sucrose = glucose + fructose.",
+        "Incorrect. Sucrose has one glucose and one fructose."
+      ],
+      "hint": "Table sugar."
+    },
+    {
+      "question": "Which disaccharide is described as 'milk sugar'?",
+      "options": [
+        "Maltose",
+        "Lactose",
+        "Sucrose",
+        "Cellobiose"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Lactose constitutes 5% of cow's milk and 7% of human milk; it is called milk sugar.",
+      "subtopic": "Important disaccharides",
+      "optionExplanations": [
+        "Incorrect. Maltose is malt sugar.",
+        "Correct. Lactose = milk sugar.",
+        "Incorrect. Sucrose is table sugar.",
+        "Incorrect. Cellobiose is a cellulose-derived disaccharide."
+      ],
+      "hint": "Found in milk."
+    },
+    {
+      "question": "Which enzyme digests lactose?",
+      "options": [
+        "Maltase",
+        "Sucrase",
+        "Lactase",
+        "Amylase"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The lecture states that lactose is digested by lactase; lactose intolerance results from reduced lactase activity.",
+      "subtopic": "Important disaccharides",
+      "optionExplanations": [
+        "Incorrect. Maltase digests maltose.",
+        "Incorrect. Sucrase digests sucrose.",
+        "Correct. Lactase digests lactose.",
+        "Incorrect. Amylase digests starch."
+      ],
+      "hint": "Enzyme name matches the sugar."
+    },
+    {
+      "question": "Which of the following is TRUE about lactose?",
+      "options": [
+        "It is found in plant cell walls",
+        "It is present in milk and digested by lactase",
+        "It is a polysaccharide of glucose",
+        "It is a non-reducing sugar"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Lactose is present in milk (5% of cow's milk, 7% of human milk) and is digested by lactase.",
+      "subtopic": "Important disaccharides",
+      "optionExplanations": [
+        "Incorrect. Lactose is a milk sugar, not a plant cell wall component.",
+        "Correct. Present in milk, digested by lactase.",
+        "Incorrect. Lactose is a disaccharide, not a polysaccharide.",
+        "Incorrect. Lactose is a reducing sugar."
+      ],
+      "hint": "Milk sugar."
+    },
+    {
+      "question": "Where is pure lactose found according to the lecture?",
+      "options": [
+        "In whey, the watery byproduct of cheese production",
+        "In honey",
+        "In sugar cane",
+        "In maple syrup"
+      ],
+      "correctAnswer": "A",
+      "explanation": "The lecture states that pure lactose is found in whey, the watery byproduct of cheese production.",
+      "subtopic": "Important disaccharides",
+      "optionExplanations": [
+        "Correct. Cheese byproduct.",
+        "Incorrect. Honey contains glucose and fructose.",
+        "Incorrect. Sugar cane contains sucrose.",
+        "Incorrect. Maple syrup contains sucrose."
+      ],
+      "hint": "Byproduct of cheese making."
+    },
+    {
+      "question": "Malt sugar is produced during:",
+      "options": [
+        "Fermentation of milk",
+        "Germination of grains such as barley",
+        "Photosynthesis in leaves",
+        "Digestion of cellulose"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The lecture states that maltose is produced in germinating grain (such as barley) as starch is broken down during malting.",
+      "subtopic": "Important disaccharides",
+      "optionExplanations": [
+        "Incorrect. That produces lactose-related products.",
+        "Correct. Germinating grains produce maltose.",
+        "Incorrect. Photosynthesis produces glucose.",
+        "Incorrect. Humans cannot digest cellulose."
+      ],
+      "hint": "Malt = germinating grain."
+    },
+    {
+      "question": "Which of the following is a characteristic of raffinose?",
+      "options": [
+        "It is a monosaccharide found in milk",
+        "It is an oligosaccharide found in peas and beans",
+        "It is a polysaccharide of glucose",
+        "It is a reducing sugar"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Raffinose is an oligosaccharide found in peas and beans; it consists of galactose, glucose, and fructose units.",
+      "subtopic": "Oligosaccharides",
+      "optionExplanations": [
+        "Incorrect. Raffinose is not a milk monosaccharide.",
+        "Correct. Peas and beans contain raffinose.",
+        "Incorrect. It is an oligosaccharide, not a polysaccharide.",
+        "Incorrect. Raffinose is not a reducing sugar."
+      ],
+      "hint": "Legume oligosaccharide."
+    },
+    {
+      "question": "Why does eating beans cause flatulence?",
+      "options": [
+        "Beans contain excess glucose",
+        "Undigested raffinose is fermented by intestinal flora, releasing hydrogen, carbon dioxide, and methane",
+        "Beans contain cellulose that humans can digest",
+        "Beans contain amylose that ferments in the stomach"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Raffinose from peas and beans passes undigested to the large intestine, where intestinal flora ferment it, releasing hydrogen, carbon dioxide, and methane.",
+      "subtopic": "Oligosaccharides",
+      "optionExplanations": [
+        "Incorrect. Excess glucose would not cause this gas profile.",
+        "Correct. Fermentation of raffinose by gut bacteria.",
+        "Incorrect. Humans cannot digest cellulose.",
+        "Incorrect. Amylose is digested by human enzymes."
+      ],
+      "hint": "Undigested oligosaccharide + gut bacteria."
+    },
+    {
+      "question": "Which of the following polysaccharides is a homo-polysaccharide?",
+      "options": [
+        "Hyaluronic acid",
+        "Heparin",
+        "Cellulose",
+        "Chondroitin"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Cellulose is a homo-polysaccharide (all glucose units). Hyaluronic acid, heparin, and chondroitin are heteropolysaccharides.",
+      "subtopic": "Homo vs hetero polysaccharides",
+      "optionExplanations": [
+        "Incorrect. Hyaluronic acid is a heteropolysaccharide.",
+        "Incorrect. Heparin is a heteropolysaccharide.",
+        "Correct. Cellulose is a homopolymer of glucose.",
+        "Incorrect. Chondroitin is a heteropolysaccharide."
+      ],
+      "hint": "Which one contains only glucose?"
+    },
+    {
+      "question": "Which of the following polysaccharides is a heteropolysaccharide?",
+      "options": [
+        "Amylose",
+        "Amylopectin",
+        "Glycogen",
+        "Heparin"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Heparin is a heteropolysaccharide composed of sulfated glucuronic acid and sulfated glucosamine. Amylose, amylopectin, and glycogen are all homopolymers of glucose.",
+      "subtopic": "Homo vs hetero polysaccharides",
+      "optionExplanations": [
+        "Incorrect. Amylose is a homopolymer of glucose.",
+        "Incorrect. Amylopectin is a homopolymer of glucose.",
+        "Incorrect. Glycogen is a homopolymer of glucose.",
+        "Correct. Heparin is a heteropolysaccharide."
+      ],
+      "hint": "Contains amino sugars and uronic acids."
+    },
+    {
+      "question": "Which of the following correctly describes the branching pattern of amylopectin?",
+      "options": [
+        "Linear chains with no branches",
+        "Branches every 24–30 glucose units",
+        "Branches every 8–12 glucose units",
+        "Branches at every glucose unit"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Amylopectin has α(1→4) chains with α(1→6) branch points every 24–30 glucose units.",
+      "subtopic": "Homo polysaccharides — starch",
+      "optionExplanations": [
+        "Incorrect. Amylose is unbranched, but amylopectin is branched.",
+        "Correct. Amylopectin branches every 24–30 units.",
+        "Incorrect. This describes glycogen (every 8–12 units).",
+        "Incorrect. Branching frequency is not that high."
+      ],
+      "hint": "Intermediate branching frequency."
+    },
+    {
+      "question": "Which polysaccharide has the highest degree of branching?",
+      "options": [
+        "Amylose",
+        "Amylopectin",
+        "Glycogen",
+        "Cellulose"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Glycogen has branches every 8–12 glucose units, which is more frequent than amylopectin (every 24–30 units). Amylose and cellulose are unbranched.",
+      "subtopic": "Homo polysaccharides — glycogen",
+      "optionExplanations": [
+        "Incorrect. Amylose is unbranched.",
+        "Incorrect. Amylopectin is branched but less than glycogen.",
+        "Correct. Glycogen is the most highly branched.",
+        "Incorrect. Cellulose is unbranched."
+      ],
+      "hint": "Animal starch."
+    },
+    {
+      "question": "Why does glycogen have more branches than amylopectin?",
+      "options": [
+        "Because it is found in plants",
+        "Because it provides rapid glucose release when needed (e.g., during exercise)",
+        "Because it is made of fructose",
+        "Because it contains β-linkages"
+      ],
+      "correctAnswer": "B",
+      "explanation": "More branching means more non-reducing ends for enzymes to act on simultaneously, allowing faster glucose mobilization — important in muscle and liver.",
+      "subtopic": "Homo polysaccharides — glycogen",
+      "optionExplanations": [
+        "Incorrect. Glycogen is found in animals.",
+        "Correct. Dense branching = rapid glucose release.",
+        "Incorrect. Glycogen is a polymer of glucose.",
+        "Incorrect. Glycogen contains α-linkages."
+      ],
+      "hint": "Think about fast energy needs."
+    },
+    {
+      "question": "Which of the following statements about starch is TRUE?",
+      "options": [
+        "Starch is a polymer of fructose",
+        "Starch contains both amylose and amylopectin",
+        "Starch is soluble in cold water",
+        "Starch is a heteropolysaccharide"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Starch is a polymer of D-glucose and consists of two forms: amylose (10%–20%) and amylopectin (80%–90%).",
+      "subtopic": "Homo polysaccharides — starch",
+      "optionExplanations": [
+        "Incorrect. Starch is a polymer of glucose.",
+        "Correct. Amylose + amylopectin.",
+        "Incorrect. Starches are usually insoluble in water.",
+        "Incorrect. Starch is a homopolysaccharide of glucose."
+      ],
+      "hint": "Two components of plant starch."
+    },
+    {
+      "question": "Why are starches usually insoluble in water?",
+      "options": [
+        "
