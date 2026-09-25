@@ -828,16 +828,15 @@
         "Profiling metabolic stability and identifying major metabolites using liver microsomes."
       ],
       "correctAnswer": "B",
-      {
-  "explanation": "Evaluating post-market safety profiles and rare adverse drug reactions is a Phase IV clinical activity (pharmacovigilance) that takes place after drug approval, whereas preclinical stages focus on lead optimization, SAR, in vitro/in vivo toxicity, and metabolic profiling prior to any human clinical trials.",
-  "subtopic": "Stages of Drug Discovery",
-  "optionExplanations": [
-    "Incorrect. Establishing SAR through analogue synthesis is a core component of the lead optimization phase within preclinical discovery.",
-    "Correct. Post-market safety surveillance in human populations represents Phase IV clinical trials, which occur long after the preclinical testing phase is complete.",
-    "Incorrect. Assessing toxicity and determining the therapeutic index in animal models and cell lines are required preclinical safety evaluations.",
-    "Incorrect. Evaluating drug metabolism (ADME profile) using liver microsomes or animal tissue is a fundamental preclinical requirement before human administration."
-     ],
-  "hint": "Focus on the distinction between preclinical evaluations (lab/animal models before human testing) and post-approval clinical surveillance in patient populations."
+      "explanation": "Evaluating post-market safety profiles and rare adverse drug reactions is a Phase IV clinical activity (pharmacovigilance) that takes place after drug approval, whereas preclinical stages focus on lead optimization, SAR, in vitro/in vivo toxicity, and metabolic profiling prior to any human clinical trials.",
+      "subtopic": "Stages of Drug Discovery",
+      "optionExplanations": [
+        "Incorrect. Establishing SAR through analogue synthesis is a core component of the lead optimization phase within preclinical discovery.",
+        "Correct. Post-market safety surveillance in human populations represents Phase IV clinical trials, which occur long after the preclinical testing phase is complete.",
+        "Incorrect. Assessing toxicity and determining the therapeutic index in animal models and cell lines are required preclinical safety evaluations.",
+        "Incorrect. Evaluating drug metabolism (ADME profile) using liver microsomes or animal tissue is a fundamental preclinical requirement before human administration."
+      ],
+      "hint": "Focus on the distinction between preclinical evaluations (lab/animal models before human testing) and post-approval clinical surveillance in patient populations."
     },
     {
       "question": "What is the correct order of the first three steps in drug discovery?",
@@ -859,23 +858,23 @@
       "hint": "Start with the disease."
     },
     {
-  "question": "What is the primary objective of the lead optimization phase in drug discovery?",
-  "options": [
-    "To modify the chemical structure of a candidate to optimize its pharmacodynamic selectivity and pharmacokinetic/ADMET profile while reducing toxicophores.",
-    "To increase the structural complexity of the scaffold to maximize irreversible covalent target binding regardless of off-target activity.",
-    "To scale up industrial chemical synthesis from milligram to multi-kilogram quantities for commercial distribution.",
-    "To replace the active pharmacophoric core entirely with a structurally unrelated non-functional isomer."
-  ],
-  "correctAnswer": "A",
-  "explanation": "Lead optimization focuses on systematically modifying the lead structure (through analogue synthesis and SAR) to enhance target potency and selectivity (pharmacodynamics), improve absorption, distribution, metabolism, and excretion (pharmacokinetics/ADMET), and minimize off-target toxicity.",
-  "subtopic": "Lead Optimization",
-  "optionExplanations": [
-    "Correct. Lead optimization strategically alters functional groups to refine binding affinity, selectivity, ADMET properties, and safety profile.",
-    "Incorrect. Increasing complexity or forcing covalent binding without regard to off-target effects leads to higher toxicity and poor drug-like properties, which contradicts optimization goals.",
-    "Incorrect. Scaling up chemical synthesis for commercial manufacturing belongs to chemical development and process chemistry, not initial lead optimization.",
-    "Incorrect. Replacing or destroying the essential pharmacophoric core abolishes biological activity rather than optimizing it."
-  ],
-  "hint": "Think about fine-tuning SAR to balance biological potency (pharmacodynamics) with safety and ADMET properties (pharmacokinetics)."
+      "question": "What is the primary objective of the lead optimization phase in drug discovery?",
+      "options": [
+        "To modify the chemical structure of a candidate to optimize its pharmacodynamic selectivity and pharmacokinetic/ADMET profile while reducing toxicophores.",
+        "To increase the structural complexity of the scaffold to maximize irreversible covalent target binding regardless of off-target activity.",
+        "To scale up industrial chemical synthesis from milligram to multi-kilogram quantities for commercial distribution.",
+        "To replace the active pharmacophoric core entirely with a structurally unrelated non-functional isomer."
+      ],
+      "correctAnswer": "A",
+      "explanation": "Lead optimization focuses on systematically modifying the lead structure (through analogue synthesis and SAR) to enhance target potency and selectivity (pharmacodynamics), improve absorption, distribution, metabolism, and excretion (pharmacokinetics/ADMET), and minimize off-target toxicity.",
+      "subtopic": "Lead Optimization",
+      "optionExplanations": [
+        "Correct. Lead optimization strategically alters functional groups to refine binding affinity, selectivity, ADMET properties, and safety profile.",
+        "Incorrect. Increasing complexity or forcing covalent binding without regard to off-target effects leads to higher toxicity and poor drug-like properties, which contradicts optimization goals.",
+        "Incorrect. Scaling up chemical synthesis for commercial manufacturing belongs to chemical development and process chemistry, not initial lead optimization.",
+        "Incorrect. Replacing or destroying the essential pharmacophoric core abolishes biological activity rather than optimizing it."
+      ],
+      "hint": "Think about fine-tuning SAR to balance biological potency (pharmacodynamics) with safety and ADMET properties (pharmacokinetics)."
     },
     {
       "question": "Which of the following drugs was developed from a natural product?",
@@ -935,23 +934,23 @@
       "hint": "It is an antitubercular drug."
     },
     {
-  "question": "How can identified off-target side effects of an existing drug contribute constructively to the drug discovery pipeline?",
-  "options": [
-    "They can serve as initial pharmacodynamic leads for drug repositioning (repurposing) toward alternative therapeutic indications.",
-    "They automatically trigger the immediate withdrawal and complete cessation of all derivative drug research.",
-    "They are utilized during galenic formulation to intentionally alter the organoleptic and physicochemical properties.",
-    "They allow structural activity relationships (SAR) to be bypassed during phase III pivotal clinical trials."
-  ],
-  "correctAnswer": "A",
-  "explanation": "Unintended off-target side effects or secondary clinical responses can reveal unexpected bioactivities (a phenomenon known as Selective Optimization of Side Activities - SOSA or Drug Repurposing). These phenotypic observations serve as new lead mechanisms to develop novel therapeutic agents for unrelated clinical indications (e.g., development of thiazide diuretics from sulfonamide side effects, or sildenafil from antihypertensive testing).",
-  "subtopic": "Known Drug Side-Effects",
-  "optionExplanations": [
-    "Correct. Side effects caused by secondary targets often provide phenotypic lead concepts that can be optimized for entirely different medical applications through drug repurposing/SOSA.",
-    "Incorrect. While severe toxicities halt specific clinical indications, moderate or unique side effects frequently open new therapeutic avenues rather than terminating research altogether.",
-    "Incorrect. Side effects arise from biological interactions with target/off-target receptors or enzymes, not from pharmaceutical formulation modifications of physicochemical traits.",
-    "Incorrect. Identifying new indications or side-effect mechanisms requires rigorous SAR optimization and clinical validation; SAR can never be bypassed in drug development."
-  ],
-  "hint": "Think about how unexpected phenotypic observations (like the hypoglycemic effect of antibacterial sulfonamides or vasodilatory effects of sildenafil) inspired entirely new drug classes."
+      "question": "How can identified off-target side effects of an existing drug contribute constructively to the drug discovery pipeline?",
+      "options": [
+        "They can serve as initial pharmacodynamic leads for drug repositioning (repurposing) toward alternative therapeutic indications.",
+        "They automatically trigger the immediate withdrawal and complete cessation of all derivative drug research.",
+        "They are utilized during galenic formulation to intentionally alter the organoleptic and physicochemical properties.",
+        "They allow structural activity relationships (SAR) to be bypassed during phase III pivotal clinical trials."
+      ],
+      "correctAnswer": "A",
+      "explanation": "Unintended off-target side effects or secondary clinical responses can reveal unexpected bioactivities (a phenomenon known as Selective Optimization of Side Activities - SOSA or Drug Repurposing). These phenotypic observations serve as new lead mechanisms to develop novel therapeutic agents for unrelated clinical indications (e.g., development of thiazide diuretics from sulfonamide side effects, or sildenafil from antihypertensive testing).",
+      "subtopic": "Known Drug Side-Effects",
+      "optionExplanations": [
+        "Correct. Side effects caused by secondary targets often provide phenotypic lead concepts that can be optimized for entirely different medical applications through drug repurposing/SOSA.",
+        "Incorrect. While severe toxicities halt specific clinical indications, moderate or unique side effects frequently open new therapeutic avenues rather than terminating research altogether.",
+        "Incorrect. Side effects arise from biological interactions with target/off-target receptors or enzymes, not from pharmaceutical formulation modifications of physicochemical traits.",
+        "Incorrect. Identifying new indications or side-effect mechanisms requires rigorous SAR optimization and clinical validation; SAR can never be bypassed in drug development."
+      ],
+      "hint": "Think about how unexpected phenotypic observations (like the hypoglycemic effect of antibacterial sulfonamides or vasodilatory effects of sildenafil) inspired entirely new drug classes."
     },
     {
       "question": "Which of the following is an example of a drug discovered by serendipity?",
@@ -992,23 +991,23 @@
       "hint": "They have a known interaction with the target."
     },
     {
-  "question": "Which of the following activities is NOT considered part of the drug discovery and development pipeline prior to regulatory marketing authorization?",
-  "options": [
-    "High-throughput screening and hit identification to establish preliminary biological activity.",
-    "Systematic evaluation of ADMET profiles and target affinity during lead optimization.",
-    "Phase IV pharmacovigilance studies conducted in real-world patient populations.",
-    "Formulation development and stability testing under accelerated stress conditions."
-  ],
-  "correctAnswer": "C",
-  "explanation": "Phase IV trials and post-marketing pharmacovigilance occur strictly after a drug has received regulatory approval and marketing authorization, whereas all other options are essential discovery and development steps performed prior to market entry.",
-  "subtopic": "Stages of Drug Discovery",
-  "optionExplanations": [
-    "Incorrect. High-throughput screening (HTS) is a core early-stage drug discovery step used to identify hit compounds.",
-    "Incorrect. Assessing ADMET properties and target affinity during lead optimization is a fundamental preclinical development step.",
-    "Correct. Phase IV pharmacovigilance takes place exclusively post-approval and is therefore not a step conducted prior to regulatory marketing authorization.",
-    "Incorrect. Pharmaceutics, formulation design, and accelerated stability testing are critical preclinical and clinical development requirements needed for regulatory filing."
-  ],
-  "hint": "Focus on the temporal boundary set by 'regulatory marketing authorization' (FDA/EMA approval)—which step occurs after the drug is already commercialized?"
+      "question": "Which of the following activities is NOT considered part of the drug discovery and development pipeline prior to regulatory marketing authorization?",
+      "options": [
+        "High-throughput screening and hit identification to establish preliminary biological activity.",
+        "Systematic evaluation of ADMET profiles and target affinity during lead optimization.",
+        "Phase IV pharmacovigilance studies conducted in real-world patient populations.",
+        "Formulation development and stability testing under accelerated stress conditions."
+      ],
+      "correctAnswer": "C",
+      "explanation": "Phase IV trials and post-marketing pharmacovigilance occur strictly after a drug has received regulatory approval and marketing authorization, whereas all other options are essential discovery and development steps performed prior to market entry.",
+      "subtopic": "Stages of Drug Discovery",
+      "optionExplanations": [
+        "Incorrect. High-throughput screening (HTS) is a core early-stage drug discovery step used to identify hit compounds.",
+        "Incorrect. Assessing ADMET properties and target affinity during lead optimization is a fundamental preclinical development step.",
+        "Correct. Phase IV pharmacovigilance takes place exclusively post-approval and is therefore not a step conducted prior to regulatory marketing authorization.",
+        "Incorrect. Pharmaceutics, formulation design, and accelerated stability testing are critical preclinical and clinical development requirements needed for regulatory filing."
+      ],
+      "hint": "Focus on the temporal boundary set by 'regulatory marketing authorization' (FDA/EMA approval)—which step occurs after the drug is already commercialized?"
     },
     {
       "question": "What is the role of the pharmacophore in database mining?",
@@ -1087,4 +1086,4 @@
       "hint": "Think of the timeline in Figure 1.7."
     }
   ]
-    }
+}
