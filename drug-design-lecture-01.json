@@ -158,9 +158,9 @@
       "question": "What is the definition of drug design according to the lecture?",
       "options": [
         "The process of marketing a new drug",
-        "The design of new drugs aiming to improve the activity and properties of a lead compound",
-        "The synthesis of natural products",
-        "The clinical testing of new compounds"
+        "The design of new drugs to improve the activity of lead compound",
+        "The synthesis of natural products from plant, marine and bacterial origin",
+        "The clinical testing of new compounds in laboratories"
       ],
       "correctAnswer": "B",
       "explanation": "Drug design is the design of new drugs aiming to improve the activity and properties of the lead compound.",
@@ -195,19 +195,19 @@
     {
       "question": "What is a pharmacophore?",
       "options": [
-        "A drug that acts on the liver",
-        "The important binding groups required for activity and their relative positions in space",
-        "A type of receptor",
-        "A natural product"
+        "The minimal chemical moiety responsible for the drug’s physical solubility in plasma.",
+        "The ensemble of steric and electronic features necessary for optimal supramolecular interactions with a specific biological target.",
+        "The entire carbon skeleton of a bioactive compound required for hepatic metabolism.",
+        "A specific functional group that binds covalently to the receptor allosteric site."
       ],
       "correctAnswer": "B",
       "explanation": "The pharmacophore summarizes the important binding groups required for activity and their relative positions in space.",
       "subtopic": "Pharmacophore",
       "optionExplanations": [
-        "Incorrect. This is not the definition.",
-        "Correct. This matches the lecture definition.",
-        "Incorrect. A pharmacophore is not a receptor.",
-        "Incorrect. A pharmacophore is not a natural product."
+        "Incorrect. This describes parameters related to solubility or lipophilicity which govern pharmacokinetics rather than the pharmacophoric core necessary for target binding.",
+        "Correct. According to IUPAC, a pharmacophore is the ensemble of steric and electronic features (such as hydrogen bond donors/acceptors, aromatic rings, and charged centers) required for optimal supramolecular interaction with a biological target.",
+        "Incorrect. The entire carbon framework often contains the auxophore—groups that support the molecular scaffold or modulate ADME properties, rather than the core pharmacophoric features themselves.",
+        "Incorrect. Pharmacophoric interactions are predominantly non-covalent (e.g., ionic, hydrogen bonding, van der Waals); covalent binding is characteristic of specific reactive mechanisms or irreversible inhibitors."
       ],
       "hint": "Think about binding groups and spatial arrangement."
     },
@@ -215,9 +215,9 @@
       "question": "What is a lead compound?",
       "options": [
         "A compound that has been approved for clinical use",
-        "A chemical compound with biological activity used as a starting point for chemical modifications",
+        "A compound used as a starting point for chemical modifications",
         "A compound that is toxic to all cells",
-        "A compound that has no biological activity"
+        "A compound that has lower biological activity"
       ],
       "correctAnswer": "B",
       "explanation": "A lead compound is a chemical compound with biological activity whose structure is used as a starting point for chemical modifications.",
@@ -324,25 +324,6 @@
         "Incorrect. Marine cyanobacteria produce curacin A."
       ],
       "hint": "Penicillin is from a mold."
-    },
-    {
-      "question": "Curacin A is obtained from which source?",
-      "options": [
-        "Plants",
-        "Fungi",
-        "Marine cyanobacterium",
-        "Synthetic compound banks"
-      ],
-      "correctAnswer": "C",
-      "explanation": "Curacin A is obtained from a marine cyanobacterium and shows potent antitumour activity.",
-      "subtopic": "Natural Products - Marine Origin",
-      "optionExplanations": [
-        "Incorrect. Plants are a source of morphine, cocaine, etc.",
-        "Incorrect. Fungi are a source of penicillin.",
-        "Correct. Curacin A is from a marine cyanobacterium.",
-        "Incorrect. It is a natural product, not synthetic."
-      ],
-      "hint": "It is from a marine organism."
     },
     {
       "question": "What was the starting point for the development of salbutamol and dobutamine?",
@@ -538,9 +519,9 @@
       "question": "What is database mining?",
       "options": [
         "Mining for natural products",
-        "Computerized searching of structural databanks to find new lead compounds",
+        "Computerized searching to find new lead compounds",
         "Testing drugs in animals",
-        "Synthesizing new compounds in the lab"
+        "Synthesizing new compounds in the laboratories"
       ],
       "correctAnswer": "B",
       "explanation": "Database mining is computerized searching of structural databanks, which requires knowledge of the pharmacophore.",
@@ -708,7 +689,7 @@
     {
       "question": "Which of the following drugs is a natural ligand for a receptor used as a lead compound?",
       "options": [
-        "Acetylcholine",
+        "Salbutamol",
         "Adrenaline",
         "Morphine",
         "Penicillin"
@@ -717,31 +698,12 @@
       "explanation": "Adrenaline (and noradrenaline) are natural ligands for adrenergic receptors and were used as lead compounds.",
       "subtopic": "Natural Ligands for Receptors",
       "optionExplanations": [
-        "Incorrect. Acetylcholine is a natural enzyme substrate.",
+        "Incorrect. Salbutamol is a synthetic agonist designed through lead optimization.",
         "Correct. Adrenaline is a natural ligand for receptors.",
         "Incorrect. Morphine is a natural product from plants.",
         "Incorrect. Penicillin is a natural product from microbes."
       ],
       "hint": "It is a neurotransmitter that led to salbutamol."
-    },
-    {
-      "question": "Which of the following drugs is a natural enzyme substrate used as a lead compound?",
-      "options": [
-        "Adrenaline",
-        "Noradrenaline",
-        "Acetylcholine",
-        "Salbutamol"
-      ],
-      "correctAnswer": "C",
-      "explanation": "Acetylcholine is the natural substrate for acetylcholinesterase enzyme and was used as a lead compound for rivastigmine.",
-      "subtopic": "Natural Enzyme Substrates",
-      "optionExplanations": [
-        "Incorrect. Adrenaline is a natural ligand for receptors.",
-        "Incorrect. Noradrenaline is a natural ligand for receptors.",
-        "Correct. Acetylcholine is a natural enzyme substrate.",
-        "Incorrect. Salbutamol is a synthetic drug."
-      ],
-      "hint": "It is the substrate for acetylcholinesterase."
     },
     {
       "question": "Which drug was developed from the side effect of sulphonamides causing hypoglycaemia?",
@@ -858,23 +820,24 @@
       "hint": "It involves the binding groups required for activity."
     },
     {
-      "question": "Which of the following is NOT a step in the drug discovery and development process?",
+      "question": "Which of the following activities is NOT performed during the preclinical stage of drug discovery and development?",
       "options": [
-        "Identify structure activity relationships",
-        "Study drug metabolism",
-        "Test for toxicity",
-        "Conduct phase IV clinical trials before phase I"
+        "Establishing Structure-Activity Relationships (SAR) through analogue synthesis.",
+        "Evaluating post-market safety profiles and rare adverse drug reactions in large heterogenous human populations.",
+        "In vitro and in vivo toxicity screening to estimate the therapeutic index.",
+        "Profiling metabolic stability and identifying major metabolites using liver microsomes."
       ],
-      "correctAnswer": "D",
-      "explanation": "Phase IV clinical trials occur after phase I, II, and III trials. The steps in order are: preclinical, phase I, II, III, approval, and then post-marketing (phase IV).",
-      "subtopic": "Stages of Drug Discovery",
-      "optionExplanations": [
-        "Incorrect. This is step 4.",
-        "Incorrect. This is step 6.",
-        "Incorrect. This is step 7.",
-        "Correct. Phase IV trials occur after phase I, II, and III."
-      ],
-      "hint": "Consider the correct order of clinical trials."
+      "correctAnswer": "B",
+      {
+  "explanation": "Evaluating post-market safety profiles and rare adverse drug reactions is a Phase IV clinical activity (pharmacovigilance) that takes place after drug approval, whereas preclinical stages focus on lead optimization, SAR, in vitro/in vivo toxicity, and metabolic profiling prior to any human clinical trials.",
+  "subtopic": "Stages of Drug Discovery",
+  "optionExplanations": [
+    "Incorrect. Establishing SAR through analogue synthesis is a core component of the lead optimization phase within preclinical discovery.",
+    "Correct. Post-market safety surveillance in human populations represents Phase IV clinical trials, which occur long after the preclinical testing phase is complete.",
+    "Incorrect. Assessing toxicity and determining the therapeutic index in animal models and cell lines are required preclinical safety evaluations.",
+    "Incorrect. Evaluating drug metabolism (ADME profile) using liver microsomes or animal tissue is a fundamental preclinical requirement before human administration."
+     ],
+  "hint": "Focus on the distinction between preclinical evaluations (lab/animal models before human testing) and post-approval clinical surveillance in patient populations."
     },
     {
       "question": "What is the correct order of the first three steps in drug discovery?",
@@ -896,61 +859,23 @@
       "hint": "Start with the disease."
     },
     {
-      "question": "Which of the following is a function of the pharmacophore in drug design?",
-      "options": [
-        "It summarizes the important binding groups required for activity",
-        "It determines the color of the drug",
-        "It determines the cost of synthesis",
-        "It determines the route of administration"
-      ],
-      "correctAnswer": "A",
-      "explanation": "The pharmacophore summarizes the important binding groups required for activity and their relative positions in space.",
-      "subtopic": "Pharmacophore",
-      "optionExplanations": [
-        "Correct. This is the definition of a pharmacophore.",
-        "Incorrect. Color is not related to pharmacophore.",
-        "Incorrect. Cost is not determined by the pharmacophore.",
-        "Incorrect. Route of administration is not determined by the pharmacophore."
-      ],
-      "hint": "Think about binding groups."
-    },
-    {
-      "question": "What is the aim of lead optimization?",
-      "options": [
-        "To improve potency, selectivity, and pharmacokinetic parameters",
-        "To increase the toxicity of the compound",
-        "To reduce the cost of the drug",
-        "To change the color of the drug"
-      ],
-      "correctAnswer": "A",
-      "explanation": "Lead optimization aims to improve potency, selectivity, and pharmacokinetic parameters of a lead compound.",
-      "subtopic": "Lead Optimization",
-      "optionExplanations": [
-        "Correct. This is the goal of lead optimization.",
-        "Incorrect. Toxicity should be reduced, not increased.",
-        "Incorrect. Cost reduction is not the primary aim of lead optimization.",
-        "Incorrect. Color is not relevant."
-      ],
-      "hint": "It improves the drug's properties."
-    },
-    {
-      "question": "Which of the following is a source of lead compounds from natural products?",
-      "options": [
-        "Synthetic compound banks",
-        "Plant origin",
-        "Database mining",
-        "Serendipity"
-      ],
-      "correctAnswer": "B",
-      "explanation": "Plant origin is a source of natural product lead compounds.",
-      "subtopic": "Natural Products",
-      "optionExplanations": [
-        "Incorrect. Synthetic compound banks are a separate source.",
-        "Correct. Plant origin is a natural product source.",
-        "Incorrect. Database mining is a separate source.",
-        "Incorrect. Serendipity is a separate source."
-      ],
-      "hint": "Think of morphine and quinine."
+  "question": "What is the primary objective of the lead optimization phase in drug discovery?",
+  "options": [
+    "To modify the chemical structure of a candidate to optimize its pharmacodynamic selectivity and pharmacokinetic/ADMET profile while reducing toxicophores.",
+    "To increase the structural complexity of the scaffold to maximize irreversible covalent target binding regardless of off-target activity.",
+    "To scale up industrial chemical synthesis from milligram to multi-kilogram quantities for commercial distribution.",
+    "To replace the active pharmacophoric core entirely with a structurally unrelated non-functional isomer."
+  ],
+  "correctAnswer": "A",
+  "explanation": "Lead optimization focuses on systematically modifying the lead structure (through analogue synthesis and SAR) to enhance target potency and selectivity (pharmacodynamics), improve absorption, distribution, metabolism, and excretion (pharmacokinetics/ADMET), and minimize off-target toxicity.",
+  "subtopic": "Lead Optimization",
+  "optionExplanations": [
+    "Correct. Lead optimization strategically alters functional groups to refine binding affinity, selectivity, ADMET properties, and safety profile.",
+    "Incorrect. Increasing complexity or forcing covalent binding without regard to off-target effects leads to higher toxicity and poor drug-like properties, which contradicts optimization goals.",
+    "Incorrect. Scaling up chemical synthesis for commercial manufacturing belongs to chemical development and process chemistry, not initial lead optimization.",
+    "Incorrect. Replacing or destroying the essential pharmacophoric core abolishes biological activity rather than optimizing it."
+  ],
+  "hint": "Think about fine-tuning SAR to balance biological potency (pharmacodynamics) with safety and ADMET properties (pharmacokinetics)."
     },
     {
       "question": "Which of the following drugs was developed from a natural product?",
@@ -1010,42 +935,23 @@
       "hint": "It is an antitubercular drug."
     },
     {
-      "question": "Which of the following is NOT a natural product source of lead compounds?",
-      "options": [
-        "Plant origin",
-        "Microbial origin",
-        "Marine origin",
-        "Synthetic origin"
-      ],
-      "correctAnswer": "D",
-      "explanation": "Synthetic origin is not a natural product source. The natural product sources are plant, microbial, and marine.",
-      "subtopic": "Natural Products",
-      "optionExplanations": [
-        "Incorrect. Plant origin is a natural product source.",
-        "Incorrect. Microbial origin is a natural product source.",
-        "Incorrect. Marine origin is a natural product source.",
-        "Correct. Synthetic origin is not a natural product source."
-      ],
-      "hint": "Which one is man-made?"
-    },
-    {
-      "question": "What is the significance of known drug side-effects in drug discovery?",
-      "options": [
-        "They can lead to the discovery of new drugs for other conditions",
-        "They always make the drug unusable",
-        "They are ignored in drug development",
-        "They are used to increase the drug's price"
-      ],
-      "correctAnswer": "A",
-      "explanation": "An existing drug may have an undesirable side-effect which might be of use in another area of medicine, leading to the discovery of new drugs.",
-      "subtopic": "Known Drug Side-Effects",
-      "optionExplanations": [
-        "Correct. Side effects can lead to new drug discoveries.",
-        "Incorrect. They can sometimes be beneficial.",
-        "Incorrect. They are studied and can be useful.",
-        "Incorrect. Price is not related to side effects."
-      ],
-      "hint": "Think of tolbutamide and chlorothiazide."
+  "question": "How can identified off-target side effects of an existing drug contribute constructively to the drug discovery pipeline?",
+  "options": [
+    "They can serve as initial pharmacodynamic leads for drug repositioning (repurposing) toward alternative therapeutic indications.",
+    "They automatically trigger the immediate withdrawal and complete cessation of all derivative drug research.",
+    "They are utilized during galenic formulation to intentionally alter the organoleptic and physicochemical properties.",
+    "They allow structural activity relationships (SAR) to be bypassed during phase III pivotal clinical trials."
+  ],
+  "correctAnswer": "A",
+  "explanation": "Unintended off-target side effects or secondary clinical responses can reveal unexpected bioactivities (a phenomenon known as Selective Optimization of Side Activities - SOSA or Drug Repurposing). These phenotypic observations serve as new lead mechanisms to develop novel therapeutic agents for unrelated clinical indications (e.g., development of thiazide diuretics from sulfonamide side effects, or sildenafil from antihypertensive testing).",
+  "subtopic": "Known Drug Side-Effects",
+  "optionExplanations": [
+    "Correct. Side effects caused by secondary targets often provide phenotypic lead concepts that can be optimized for entirely different medical applications through drug repurposing/SOSA.",
+    "Incorrect. While severe toxicities halt specific clinical indications, moderate or unique side effects frequently open new therapeutic avenues rather than terminating research altogether.",
+    "Incorrect. Side effects arise from biological interactions with target/off-target receptors or enzymes, not from pharmaceutical formulation modifications of physicochemical traits.",
+    "Incorrect. Identifying new indications or side-effect mechanisms requires rigorous SAR optimization and clinical validation; SAR can never be bypassed in drug development."
+  ],
+  "hint": "Think about how unexpected phenotypic observations (like the hypoglycemic effect of antibacterial sulfonamides or vasodilatory effects of sildenafil) inspired entirely new drug classes."
     },
     {
       "question": "Which of the following is an example of a drug discovered by serendipity?",
@@ -1086,42 +992,23 @@
       "hint": "They have a known interaction with the target."
     },
     {
-      "question": "Which of the following is a drug target that is a nucleic acid?",
-      "options": [
-        "DNA",
-        "Enzyme",
-        "Receptor",
-        "Ion channel"
-      ],
-      "correctAnswer": "A",
-      "explanation": "Nucleic acids such as DNA are drug targets.",
-      "subtopic": "Drug Targets",
-      "optionExplanations": [
-        "Correct. DNA is a nucleic acid drug target.",
-        "Incorrect. Enzymes are proteins.",
-        "Incorrect. Receptors are proteins.",
-        "Incorrect. Ion channels are proteins."
-      ],
-      "hint": "It is a macromolecule that carries genetic information."
-    },
-    {
-      "question": "Which of the following is NOT a stage in the drug discovery and development process?",
-      "options": [
-        "Lead optimization",
-        "Preclinical testing",
-        "Clinical trials",
-        "Post-marketing surveillance only"
-      ],
-      "correctAnswer": "D",
-      "explanation": "Post-marketing surveillance (Phase IV) is a stage, but 'only' makes this option incorrect as there are many other stages.",
-      "subtopic": "Stages of Drug Discovery",
-      "optionExplanations": [
-        "Incorrect. Lead optimization is a stage.",
-        "Incorrect. Preclinical testing is a stage.",
-        "Incorrect. Clinical trials are a stage.",
-        "Correct. Post-marketing surveillance is a stage, but not the only one."
-      ],
-      "hint": "Consider all the stages involved."
+  "question": "Which of the following activities is NOT considered part of the drug discovery and development pipeline prior to regulatory marketing authorization?",
+  "options": [
+    "High-throughput screening and hit identification to establish preliminary biological activity.",
+    "Systematic evaluation of ADMET profiles and target affinity during lead optimization.",
+    "Phase IV pharmacovigilance studies conducted in real-world patient populations.",
+    "Formulation development and stability testing under accelerated stress conditions."
+  ],
+  "correctAnswer": "C",
+  "explanation": "Phase IV trials and post-marketing pharmacovigilance occur strictly after a drug has received regulatory approval and marketing authorization, whereas all other options are essential discovery and development steps performed prior to market entry.",
+  "subtopic": "Stages of Drug Discovery",
+  "optionExplanations": [
+    "Incorrect. High-throughput screening (HTS) is a core early-stage drug discovery step used to identify hit compounds.",
+    "Incorrect. Assessing ADMET properties and target affinity during lead optimization is a fundamental preclinical development step.",
+    "Correct. Phase IV pharmacovigilance takes place exclusively post-approval and is therefore not a step conducted prior to regulatory marketing authorization.",
+    "Incorrect. Pharmaceutics, formulation design, and accelerated stability testing are critical preclinical and clinical development requirements needed for regulatory filing."
+  ],
+  "hint": "Focus on the temporal boundary set by 'regulatory marketing authorization' (FDA/EMA approval)—which step occurs after the drug is already commercialized?"
     },
     {
       "question": "What is the role of the pharmacophore in database mining?",
@@ -1179,25 +1066,6 @@
         "Incorrect. Quinine is from plants."
       ],
       "hint": "It is an antibiotic."
-    },
-    {
-      "question": "Which of the following drugs was developed from a natural product from marine origin?",
-      "options": [
-        "Morphine",
-        "Penicillin G",
-        "Curacin A",
-        "Quinine"
-      ],
-      "correctAnswer": "C",
-      "explanation": "Curacin A is obtained from a marine cyanobacterium.",
-      "subtopic": "Natural Products",
-      "optionExplanations": [
-        "Incorrect. Morphine is from plants.",
-        "Incorrect. Penicillin G is from microbes.",
-        "Correct. Curacin A is from marine organisms.",
-        "Incorrect. Quinine is from plants."
-      ],
-      "hint": "It has antitumour activity."
     },
     {
       "question": "What is the main difference between drug discovery and drug development?",
