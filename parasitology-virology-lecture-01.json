@@ -130,7 +130,7 @@
       "question": "Why did Ivanovsky's filtration experiment suggest that the tobacco-mosaic infectious agent was not an ordinary bacterium?",
       "options": [
         "The agent grew rapidly on ordinary culture media",
-        "The infectious filtrate passed through a Chamberland filter that normally retains bacteria and fungi",
+        "The infectious filtrate passed through a Chamberland filter",
         "The agent was easily seen by the light microscope",
         "The agent became noninfectious after filtration"
       ],
@@ -355,25 +355,6 @@
       "hint": "Compare the dry surface survival times of rotavirus and herpesvirus."
     },
     {
-      "question": "Which statement about basic viral structure is correct?",
-      "options": [
-        "Every virus has an envelope and matrix protein",
-        "The nucleocapsid consists of the capsid plus the nucleic-acid core",
-        "The capsid is made only of host phospholipids",
-        "The viral genome is always outside the capsid"
-      ],
-      "correctAnswer": "B",
-      "explanation": "The lecture defines the nucleocapsid as capsid plus nucleic-acid core. Envelope and matrix protein occur only in enveloped viruses.",
-      "subtopic": "Viral structure",
-      "optionExplanations": [
-        "Incorrect. Not every virus is enveloped.",
-        "Correct. This is the lecture's definition of nucleocapsid.",
-        "Incorrect. The capsid is a protein coat.",
-        "Incorrect. The viral genome is enclosed by the capsid."
-      ],
-      "hint": "Recall the definition of nucleocapsid."
-    },
-    {
       "question": "Which of the following correctly describes the resistance of Adenovirus and Poliovirus to ultraviolet germicidal irradiation (UVGI)?",
       "options": [
         "Poliovirus is highly resistant, while Adenovirus is less resistant",
@@ -471,10 +452,10 @@
     {
       "question": "Which non-structural viral protein directly affects the viral release from the infected cell?",
       "options": [
-        "Reverse transcriptase",
-        "Capsid protein",
-        "Regulatory protein",
-        "Proteins that affect viral release (e.g., neuraminidase)"
+        "Reverse transcriptase (e.g., HIV-1 RT)",
+        "Capsid protein (e.g., HIV-1 p24)",
+        "Regulatory protein (e.g., HIV-1 Tat)",
+        "Proteins (e.g., neuraminidase)"
       ],
       "correctAnswer": "D",
       "explanation": "The lecture lists non-structural proteins that affect the viral release from the infected cell as a specific functional category.",
@@ -510,7 +491,7 @@
       "question": "Which of the following statements correctly differentiates early from late viral transcription and translation?",
       "options": [
         "Early processes synthesize polymerases and regulatory proteins, while late processes synthesize structural proteins and proteins required for viral release",
-        "Early processes synthesize structural proteins, while late processes synthesize polymerases",
+        "Early processes synthesize structural proteins and proteins required for viral release, while late processes synthesize polymerases and regulatory proteins",
         "Early processes synthesize viral genome replication, while late processes synthesize host DNA",
         "Early processes synthesize envelope lipids, while late processes synthesize capsid proteins"
       ],
@@ -528,10 +509,10 @@
     {
       "question": "Which statement correctly describes icosahedral viral symmetry?",
       "options": [
-        "Capsomers and genome are twisted into a spiral tube",
+        "Capsomers and genome are twisted into a spiral tube provides a flexible structure",
         "It results from twenty equilateral triangles and provides a highly rigid structure",
         "It has no defined capsomer arrangement",
-        "It occurs only in enveloped RNA viruses"
+        "It occurs only in enveloped DNA viruses"
       ],
       "correctAnswer": "B",
       "explanation": "The lecture describes icosahedral symmetry as an arrangement of twenty equilateral triangles that provides a highly rigid structure.",
@@ -547,7 +528,7 @@
     {
       "question": "Which pairing is correctly matched?",
       "options": [
-        "Helical symmetry — capsomers and genome twist together; Orthomyxoviridae is an example",
+        "Helical symmetry — capsomers and genome twist together",
         "Complex symmetry — twenty equilateral triangular faces",
         "Icosahedral symmetry — capsomers and genome form a spiral tube",
         "Complex symmetry — all RNA viruses"
@@ -579,7 +560,7 @@
     {
       "question": "Which statement about heat sensitivity is correct according to the lecture?",
       "options": [
-        "Enveloped viruses are generally heat sensitive while non-enveloped viruses are more heat resistant",
+        "Enveloped viruses are generally heat sensitive",
         "All viruses are immediately destroyed by cold storage",
         "Non-enveloped viruses are always heat sensitive",
         "Most viruses are most unstable at -70 °C"
@@ -644,7 +625,7 @@
       "question": "What is the capsid?",
       "options": [
         "Lipid membrane obtained from the host cell wall",
-        "An impermeable protein shell around viral nucleic acid",
+        "An impermeable protein shell",
         "RNA enzyme",
         "Host receptor"
       ],
@@ -677,7 +658,7 @@
       "options": [
         "Lipid molecules",
         "Host receptors",
-        "Protein subunits composed of polypeptide molecules",
+        "Capsid subunits",
         "Viral genomes "
       ],
       "correctAnswer": "C",
@@ -1007,7 +988,7 @@
     {
       "question": "Which set contains possible sources of viral envelopes inside the host cell?",
       "options": [
-        "Mitochondria only",
+        "organelles membrane only",
         "Plasma membrane only",
         "Plasma membrane, nuclear membrane, Golgi apparatus membrane, and endoplasmic reticulum",
         "Nucleus only"
@@ -1217,8 +1198,8 @@
       "question": "What is viral tropism?",
       "options": [
         "The ability of a virus to survive drying",
-        "The ability of a virus to form a capsid",
-        "The ability of a virus to specifically infect a particular cell, tissue, or host that supports its replication",
+        "The ability of a virus to divide in the host cell using host cell machinery",
+        "The ability of a virus to specifically infect a particular cell or tissue",
         "The ability of a virus to resist ultraviolet radiation"
       ],
       "correctAnswer": "C",
@@ -1331,7 +1312,7 @@
       "question": "How does a virus redirect the host cell to produce viral-specific proteins?",
       "options": [
         "By destroying all host ribosomes",
-        "Through viral mRNA, which is translated into viral-specific proteins",
+        "Through viral mRNA",
         "By converting ATP into DNA",
         "Through the viral envelope alone"
       ],
@@ -1482,16 +1463,16 @@
     {
       "question": "What is viral adsorption?",
       "options": [
-        "Release of viral particles from the host cell",
-        "Recognition and attachment of the virus to the host cell through viral attachment proteins binding to specific receptors",
+        "adhesion of the protein matrex to capsid shell to form envelopd virus",
+        "Recognition and attachment of the virus to the host cell",
         "Separation of the viral genome from the capsid",
-        "Formation of new viral particles"
+        "Formation of new viral particles through budding or cell lysis"
       ],
       "correctAnswer": "B",
       "explanation": "Viral adsorption is the recognition and attachment of the virus to the host cell through viral attachment proteins binding to specific receptors.",
       "subtopic": "Viral replication",
       "optionExplanations": [
-        "Incorrect. This describes release.",
+        "Incorrect. This is not the adsorption.",
         "Correct. This is the definition of adsorption.",
         "Incorrect. This describes uncoating.",
         "Incorrect. This describes assembly."
@@ -1506,7 +1487,7 @@
         "Host genomic promoter sequences containing canonical TATA-box motifs.",
         "Transmembrane ATP-binding cassette (ABC) transporter channels."
       ],
-      "correctAnswer": "Complementary protein, glycoprotein, or glycolipid cell-surface microdomains on the host plasma membrane.",
+      "correctAnswer": "B.",
       "explanation": "Viral attachment proteins (VAPs), such as hemagglutinin or envelope glycoproteins, specifically recognize and bind to cell-surface receptors (proteins, glycoproteins, or glycolipids) on the host plasma membrane during the initial attachment phase, which determines host range and cellular tropism.",
       "subtopic": "Viral Adsorption and Attachment",
       "optionExplanations": [
@@ -1901,7 +1882,7 @@
       "question": "What happens during viral assembly?",
       "options": [
         "All synthesized viral components irreversibly combine to form mature viral particles",
-        "The virus attaches to a host receptor",
+        "All synthesized viral components reversibly combine to form mature viral particles",
         "The viral genome is destroyed",
         "The host cell produces bacterial particles"
       ],
@@ -1910,7 +1891,7 @@
       "subtopic": "Viral replication",
       "optionExplanations": [
         "Correct. Components combine to form virions.",
-        "Incorrect. Attachment occurs early.",
+        "Incorrect. It binds eternally.",
         "Incorrect. The genome is packaged, not destroyed.",
         "Incorrect. Host cells do not produce bacteria."
       ],
@@ -2185,7 +2166,7 @@
     {
       "question": "Under which specific assembly and maturation pathway can an enveloped virus cause host cell lysis during release, rather than budding directly through the outer plasma membrane?",
       "options": [
-        "When virion morphogenesis and envelope acquisition occur at internal intracellular membranes (e.g., ER/Golgi) prior to exocytic transport or cell destruction.",
+        "When virion morphogenesis and envelope acquisition occur at internal intracellular membranes (e.g., ER/Golgi) prior to viropexis",
         "When virion maturation occurs strictly via direct plasma membrane budding without intracellular membrane accumulation.",
         "When viral genome replication relies exclusively on host nuclear DNA repair enzymes.",
         "When entry occurs via receptor-mediated endocytosis into low-pH endosomal compartments."
@@ -2221,25 +2202,6 @@
       "hint": "Where does the envelope come from in this case?"
     },
     {
-      "question": "What is viral budding?",
-      "options": [
-        "The first attachment of a virus to a host cell",
-        "A late stage in replication in which nucleocapsids acquire a membrane and are released as enveloped viruses",
-        "The separation of the viral genome from its capsid",
-        "The destruction of the viral genome"
-      ],
-      "correctAnswer": "B",
-      "explanation": "Viral budding is a late stage in replication in which nucleocapsids acquire a membrane and are released as enveloped viruses.",
-      "subtopic": "Viral replication",
-      "optionExplanations": [
-        "Incorrect. Attachment is early.",
-        "Correct. This is the definition of budding.",
-        "Incorrect. This describes uncoating.",
-        "Incorrect. The genome is not destroyed."
-      ],
-      "hint": "The virus takes a piece of membrane with it."
-    },
-    {
       "question": "From where is the membrane acquired during viral budding derived?",
       "options": [
         "The viral genome",
@@ -2259,42 +2221,23 @@
       "hint": "Where does the lipid envelope come from?"
     },
     {
-      "question": "Which sequence correctly describes the major steps of viral budding?",
-      "options": [
-        "Genome destruction → capsid removal → cell lysis",
-        "Spike protein acquisition → M protein coating of the membrane's inner side → attraction of the nucleocapsid → envelopment and release",
-        "Adsorption → penetration → uncoating → genome replication",
-        "Capsid formation → genome destruction → endocytosis"
-      ],
-      "correctAnswer": "B",
-      "explanation": "The major steps of viral budding are spike protein acquisition, M protein coating of the membrane's inner side, attraction of the nucleocapsid, and envelopment and release.",
-      "subtopic": "Viral replication",
-      "optionExplanations": [
-        "Incorrect. This is not the budding process.",
-        "Correct. This is the correct sequence for budding.",
-        "Incorrect. This is the general replication cycle.",
-        "Incorrect. This is not the budding process."
-      ],
-      "hint": "Think about how the virus pushes out of the membrane."
-    },
-    {
-      "question": "Which cellular membranes can serve as sites for viral budding?",
-      "options": [
-        "Only the plasma membrane",
-        "Only the nuclear membrane",
-        "Only the endoplasmic reticulum",
-        "The plasma membrane, nuclear membrane, endoplasmic reticulum, or Golgi apparatus"
-      ],
-      "correctAnswer": "D",
-      "explanation": "Viral budding can occur at the plasma membrane, nuclear membrane, endoplasmic reticulum, or Golgi apparatus.",
-      "subtopic": "Viral replication",
-      "optionExplanations": [
-        "Incorrect. Multiple membranes can be used.",
-        "Incorrect. Multiple membranes can be used.",
-        "Incorrect. Multiple membranes can be used.",
-        "Correct. All these membranes can serve as budding sites."
-      ],
-      "hint": "Multiple organelles can provide membranes."
+  "question": "During viral budding, which sequence best explains how an enveloped virion is assembled and released from the host cell?",
+  "options": [
+    "Nucleocapsid attaches to the membrane → M protein recruits spike proteins → membrane wraps around the nucleocapsid → virion is released",
+    "Spike proteins accumulate in the membrane → M protein lines the inner surface of the membrane → M protein attracts the nucleocapsid → membrane encloses the nucleocapsid and the virion buds off",
+    "M protein first forms the nucleocapsid → spike proteins attach to the nucleocapsid → the nucleocapsid enters the membrane → cell lysis releases the virion",
+    "Spike proteins penetrate the cytoplasm → nucleocapsid binds the outer surface of the membrane → M protein removes the membrane → virion is released by exocytosis"
+  ],
+  "correctAnswer": "B",
+  "explanation": "During budding, spike proteins are incorporated into the host-cell membrane first. The M protein then lines the inner surface of the membrane and recruits the nucleocapsid. The membrane subsequently wraps around the nucleocapsid, forming the envelope, and the virion buds from the cell.",
+  "subtopic": "Viral replication",
+  "optionExplanations": [
+    "Incorrect. The nucleocapsid is recruited after M protein has organized the membrane region.",
+    "Correct. Spike acquisition is followed by M protein coating of the inner membrane surface, nucleocapsid attraction, envelopment, and release.",
+    "Incorrect. M protein does not form the nucleocapsid, and budding does not require cell lysis.",
+    "Incorrect. Spike proteins are incorporated into the membrane rather than penetrating the cytoplasm, and budding does not occur by removal of the membrane."
+  ],
+  "hint": "Focus on the order in which the membrane components and nucleocapsid are brought together."
     },
     {
       "question": "Which viral component is involved in attracting the nucleocapsid toward the membrane during budding?",
@@ -2339,8 +2282,8 @@
       "options": [
         "It is destroyed",
         "It enters the nucleus",
-        "It becomes enveloped by the membrane and is released as a viral particle",
-        "It loses its genome"
+        "It becomes enveloped",
+        "It released out of the cell naked"
       ],
       "correctAnswer": "C",
       "explanation": "After being attracted to the membrane, the nucleocapsid becomes enveloped by the membrane and is released as a viral particle.",
@@ -2349,7 +2292,7 @@
         "Incorrect. It is not destroyed.",
         "Incorrect. It does not enter the nucleus.",
         "Correct. It becomes enveloped and released.",
-        "Incorrect. It retains its genome."
+        "Incorrect. It's envelopedvirus as there's M protein."
       ],
       "hint": "It gets wrapped up and released."
     },
@@ -2453,7 +2396,7 @@
       "options": [
         "It contains an incomplete viral genome",
         "It contains host chromosome material",
-        "It consists of a capsid with or without an envelope but lacks a nucleic acid core",
+        "It consists of a capsid only",
         "It contains a complete viral genome"
       ],
       "correctAnswer": "C",
@@ -2491,7 +2434,7 @@
       "options": [
         "They contain both DNA and RNA",
         "They contain RNA but no protein",
-        "They are composed of infectious protein and lack nucleic acid",
+        "They are composed of infectious protein",
         "They are complete enveloped viruses"
       ],
       "correctAnswer": "C",
