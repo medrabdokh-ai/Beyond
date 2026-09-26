@@ -108,6 +108,25 @@
       "hint": "Focus on the requirement for a living cell."
     },
     {
+      "question": "Which hypothesis for the origin of viruses suggests they began as pre-virus cells (like Chlamydia) that infected larger cells, subsequently losing metabolic and reproductive abilities to become inert, dependent particles?",
+      "options": [
+        "Co-evolution hypothesis",
+        "Escape hypothesis",
+        "Regressive (reduction) hypothesis",
+        "Progressive hypothesis"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The regressive hypothesis proposes that viruses originated from small pre-virus cells (similar to Chlamydia) that infected larger cells and gradually lost their metabolic and reproductive abilities, becoming dependent on host cellular pathways.",
+      "subtopic": "Origin of viruses",
+      "optionExplanations": [
+        "Incorrect. Co-evolution proposes viruses evolved alongside or before host cells.",
+        "Incorrect. The escape hypothesis involves mobile genetic elements leaving their cellular environment.",
+        "Correct. This accurately describes the regressive hypothesis using the Chlamydia example.",
+        "Incorrect. The progressive hypothesis involves MGEs gaining capsid genes."
+      ],
+      "hint": "Think about the theory involving reduction or loss of functions in pre-virus cells like Chlamydia."
+    },
+    {
       "question": "Why did Ivanovsky's filtration experiment suggest that the tobacco-mosaic infectious agent was not an ordinary bacterium?",
       "options": [
         "The agent grew rapidly on ordinary culture media",
@@ -125,6 +144,25 @@
         "Incorrect. The filtrate remained infectious."
       ],
       "hint": "Remember what the Chamberland filter normally retains."
+    },
+    {
+      "question": "According to the escape (progressive) hypothesis, viruses originated from mobile genetic elements (MGEs) like retrotransposons that gained capsid and enzyme genes. Which of the following is a classic example of a virus that evolved via this progressive mechanism?",
+      "options": [
+        "Pithovirus sibericum",
+        "Retrovirus",
+        "Parvovirus",
+        "Chlamydia"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The progressive (escape) hypothesis suggests viruses evolved from mobile genetic elements such as retrotransposons, which subsequently gained capsid protein and viral enzyme genes. Retroviruses are a classic example of this evolutionary pathway.",
+      "subtopic": "Origin of viruses",
+      "optionExplanations": [
+        "Incorrect. Pithovirus is a giant virus, not an example of the progressive hypothesis.",
+        "Correct. Retroviruses are cited as an example of the progressive (escape) hypothesis.",
+        "Incorrect. Parvoviruses are small DNA viruses, not the classic example for this hypothesis.",
+        "Incorrect. Chlamydia is used as an example for the regressive hypothesis, not the progressive one."
+      ],
+      "hint": "Recall which virus is linked to mobile genetic elements like retrotransposons."
     },
     {
       "question": "Who repeated Ivanovsky's experiment in 1898 and used the term 'contagium vivum fluidum'?",
@@ -146,6 +184,25 @@
       "hint": "Think of the 1898 scientist."
     },
     {
+      "question": "Which hypothesis proposes that viruses have evolved before their host cell or coevolved along with their host cell over time?",
+      "options": [
+        "Regressive hypothesis",
+        "Escape hypothesis",
+        "Progressive hypothesis",
+        "Co-evolution (virus-first) hypothesis"
+      ],
+      "correctAnswer": "D",
+      "explanation": "The co-evolution (virus-first) hypothesis proposes that viruses have been evolved before their host cell or coevolved along with their host cell.",
+      "subtopic": "Origin of viruses",
+      "optionExplanations": [
+        "Incorrect. The regressive hypothesis involves pre-virus cells losing functions.",
+        "Incorrect. The escape hypothesis involves MGEs.",
+        "Incorrect. The progressive hypothesis is another name for the escape hypothesis.",
+        "Correct. This matches the definition of the co-evolution hypothesis."
+      ],
+      "hint": "Look for the hypothesis name that directly mentions evolving alongside or before the host."
+    },
+    {
       "question": "Which hypothesis proposes that viruses arose from small cells that lost metabolic and reproductive abilities?",
       "options": [
         "Escape (progressive) hypothesis",
@@ -163,6 +220,25 @@
         "Incorrect. Capsid mispackaging is related to pseudovirus formation."
       ],
       "hint": "Look for the theory involving reduction or loss of functions."
+    },
+    {
+      "question": "What is the maximum magnification power of a Transmission Electron Microscope (TEM) as mentioned in the lecture?",
+      "options": [
+        "Up to 50,000,000x",
+        "Up to 2,000,000x",
+        "Up to 500,000x",
+        "Up to 100,000x"
+      ],
+      "correctAnswer": "A",
+      "explanation": "The lecture states that the Transmission Electron Microscope (TEM) has a magnification power of up to 50,000,000x.",
+      "subtopic": "Methods for determining viral size",
+      "optionExplanations": [
+        "Correct. The TEM has a maximum magnification of up to 50,000,000x.",
+        "Incorrect. This is not the stated maximum for TEM.",
+        "Incorrect. This is lower than the stated maximum.",
+        "Incorrect. This is lower than the stated maximum."
+      ],
+      "hint": "Remember the maximum magnification number given for TEM."
     },
     {
       "question": "Which of the following is NOT listed as a criterion for classification of viruses?",
@@ -184,6 +260,25 @@
       "hint": "Review the six classification criteria."
     },
     {
+      "question": "Which of the following correctly pairs a virus with its size category?",
+      "options": [
+        "Pithovirus sibericum - Medium size (200 nm)",
+        "Herpesviridae - Small size (20-30 nm)",
+        "Poxviridae - Large size (250-400 nm)",
+        "Picornaviridae - Very large (Giant) size (>400 nm)"
+      ],
+      "correctAnswer": "C",
+      "explanation": "According to the lecture, Poxviridae is classified as a large size virus measuring 250-400 nm. Parvoviridae and Picornaviridae are small (<20-30 nm), Herpesviridae is medium (150-200 nm), and Pithovirus sibericum is a very large (Giant) virus measuring 1500 nm.",
+      "subtopic": "Viral size",
+      "optionExplanations": [
+        "Incorrect. Pithovirus sibericum is a very large (Giant) virus (1500 nm).",
+        "Incorrect. Herpesviridae is a medium size virus (150-200 nm).",
+        "Correct. Poxviridae is classified as large (250-400 nm).",
+        "Incorrect. Picornaviridae is a small size virus (20-30 nm)."
+      ],
+      "hint": "Match the virus family to the correct size category as defined in the lecture."
+    },
+    {
       "question": "According to the lecture, viruses generally range in size from approximately:",
       "options": [
         "2 to 4 nm",
@@ -201,6 +296,25 @@
         "Incorrect. The lecture gives the unit as nanometers."
       ],
       "hint": "Remember the unit as well as the endpoints."
+    },
+    {
+      "question": "Which of the following statements regarding the visualization of viruses is correct?",
+      "options": [
+        "All viruses are visible under a light microscope",
+        "Some large viruses and all giruses are seen by the light microscope",
+        "Only small viruses (<30 nm) are visible under a light microscope",
+        "Viruses are never visible under a light microscope"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The lecture notes that some large viruses and all giruses (giant viruses) are visible under the light microscope.",
+      "subtopic": "Viral size",
+      "optionExplanations": [
+        "Incorrect. Most viruses are too small to be seen with a light microscope.",
+        "Correct. Large viruses and all giruses can be seen by light microscopy.",
+        "Incorrect. Small viruses are not visible under a light microscope.",
+        "Incorrect. Large and giant viruses are exceptions to this rule."
+      ],
+      "hint": "Consider the exceptions mentioned regarding large and giant viruses."
     },
     {
       "question": "Which method determines viral size indirectly using a collodion membrane of graded porosity?",
@@ -222,6 +336,25 @@
       "hint": "Think about the membrane-filter method."
     },
     {
+      "question": "How long can Herpesvirus survive on hard dry surfaces according to the lecture?",
+      "options": [
+        "8 hours",
+        "8 days",
+        "8 minutes",
+        "Up to 8 weeks"
+      ],
+      "correctAnswer": "D",
+      "explanation": "The lecture states that while rotavirus cannot survive longer than 8 hours on hard dry surfaces, herpesvirus can survive up to 8 weeks on hard dry surfaces.",
+      "subtopic": "Physical properties",
+      "optionExplanations": [
+        "Incorrect. This is the survival time for rotavirus.",
+        "Incorrect. The lecture specifies up to 8 weeks.",
+        "Incorrect. The lecture specifies up to 8 weeks.",
+        "Correct. Herpesvirus can survive up to 8 weeks on hard dry surfaces."
+      ],
+      "hint": "Compare the dry surface survival times of rotavirus and herpesvirus."
+    },
+    {
       "question": "Which statement about basic viral structure is correct?",
       "options": [
         "Every virus has an envelope and matrix protein",
@@ -239,6 +372,25 @@
         "Incorrect. The viral genome is enclosed by the capsid."
       ],
       "hint": "Recall the definition of nucleocapsid."
+    },
+    {
+      "question": "Which of the following correctly describes the resistance of Adenovirus and Poliovirus to ultraviolet germicidal irradiation (UVGI)?",
+      "options": [
+        "Poliovirus is highly resistant, while Adenovirus is less resistant",
+        "Adenovirus is highly resistant, while Poliovirus is less resistant",
+        "Both are equally resistant",
+        "Both are equally susceptible"
+      ],
+      "correctAnswer": "B",
+      "explanation": "According to the lecture, adenovirus is highly resistant to inactivation by UV radiation, while poliovirus is less resistant to inactivation by UV radiation.",
+      "subtopic": "Physical properties",
+      "optionExplanations": [
+        "Incorrect. Poliovirus is less resistant, not highly resistant.",
+        "Correct. Adenovirus is highly resistant, while poliovirus is less resistant.",
+        "Incorrect. Their resistance levels differ according to the lecture.",
+        "Incorrect. Adenovirus is noted for its high resistance."
+      ],
+      "hint": "Remember which virus was highlighted as highly resistant and which was less resistant."
     },
     {
       "question": "Which statement correctly describes the viral genome?",
@@ -260,6 +412,44 @@
       "hint": "The key phrase is DNA OR RNA."
     },
     {
+      "question": "Which non-structural viral protein is responsible for controlling the metabolic functions of the host cell?",
+      "options": [
+        "Regulatory proteins",
+        "Structural capsid proteins",
+        "Reverse transcriptase",
+        "Envelope glycoproteins"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Non-structural (functional) proteins include regulatory proteins that control the metabolic functions of the host cell, as outlined in the lecture.",
+      "subtopic": "Non-structural proteins",
+      "optionExplanations": [
+        "Correct. Regulatory proteins are non-structural proteins that control host cell metabolic functions.",
+        "Incorrect. Structural capsid proteins form the physical viral particle, not regulatory functions.",
+        "Incorrect. Reverse transcriptase is an enzyme carried in the virion, not primarily a host metabolic regulator.",
+        "Incorrect. Envelope glycoproteins are structural components."
+      ],
+      "hint": "Which non-structural protein type specifically controls host metabolic functions?"
+    },
+    {
+      "question": "Which of the following is an example of a non-structural viral protein that functions as an enzyme involved in the replication of the viral genome?",
+      "options": [
+        "Capsid protein",
+        "Peplomer",
+        "RNA-dependent RNA polymerase",
+        "Matrix protein"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Non-structural (functional) proteins include enzymes involved in the replication of the viral genome, such as RNA-dependent RNA polymerase in negative-sense RNA viruses.",
+      "subtopic": "Non-structural proteins",
+      "optionExplanations": [
+        "Incorrect. Capsid proteins are structural proteins.",
+        "Incorrect. Peplomers are envelope glycoprotein spikes (structural).",
+        "Correct. RNA-dependent RNA polymerase is a non-structural enzyme involved in viral genome replication.",
+        "Incorrect. Matrix proteins are structural components of enveloped viruses."
+      ],
+      "hint": "Which of these options is a non-structural enzyme specifically involved in viral genome replication?"
+    },
+    {
       "question": "A positive-sense RNA viral genome is one that:",
       "options": [
         "Must first be converted to DNA before translation",
@@ -279,6 +469,25 @@
       "hint": "Positive-sense RNA behaves like mRNA."
     },
     {
+      "question": "Which non-structural viral protein directly affects the viral release from the infected cell?",
+      "options": [
+        "Reverse transcriptase",
+        "Capsid protein",
+        "Regulatory protein",
+        "Proteins that affect viral release (e.g., neuraminidase)"
+      ],
+      "correctAnswer": "D",
+      "explanation": "The lecture lists non-structural proteins that affect the viral release from the infected cell as a specific functional category.",
+      "subtopic": "Non-structural proteins",
+      "optionExplanations": [
+        "Incorrect. Reverse transcriptase is involved in genome replication.",
+        "Incorrect. Capsid proteins are structural.",
+        "Incorrect. Regulatory proteins control host metabolic functions.",
+        "Correct. Proteins that affect viral release are a specific category of non-structural proteins."
+      ],
+      "hint": "Which protein category is explicitly linked to the release process?"
+    },
+    {
       "question": "Which is a function of the viral capsid?",
       "options": [
         "Protecting viral nucleic acid from nucleases",
@@ -296,6 +505,25 @@
         "Incorrect. The capsid is not a universal anti-mutation mechanism."
       ],
       "hint": "Think of the capsid's protective role."
+    },
+    {
+      "question": "Which of the following statements correctly differentiates early from late viral transcription and translation?",
+      "options": [
+        "Early processes synthesize polymerases and regulatory proteins, while late processes synthesize structural proteins and proteins required for viral release",
+        "Early processes synthesize structural proteins, while late processes synthesize polymerases",
+        "Early processes synthesize viral genome replication, while late processes synthesize host DNA",
+        "Early processes synthesize envelope lipids, while late processes synthesize capsid proteins"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Early transcription and translation are required for the synthesis of early viral proteins such as polymerases, regulatory proteins, and viral-specific antigens. Late transcription and translation are required for replication of the viral genome and synthesis of late viral proteins such as structural proteins, viral enzymes, and proteins required for viral release.",
+      "subtopic": "Viral gene expression",
+      "optionExplanations": [
+        "Correct. This accurately describes the products of early and late transcription/translation phases.",
+        "Incorrect. The order is reversed; polymerases are early, structural proteins are late.",
+        "Incorrect. Late processes include viral genome replication, not host DNA synthesis.",
+        "Incorrect. Envelope lipids are host-derived, and capsid proteins are late structural proteins."
+      ],
+      "hint": "Think about what needs to be made first (enzymes for replication) versus what is made later (structural components)."
     },
     {
       "question": "Which statement correctly describes icosahedral viral symmetry?",
@@ -336,23 +564,17 @@
       "hint": "Match the geometry to the description."
     },
     {
-      "question": "The viral envelope is composed of:",
+      "question": "Which of the following viruses is associated with Pharyngitis?",
       "options": [
-        "Only viral DNA and RNA",
-        "Lipoproteins, with lipid derived from host membrane and protein encoded by viral nucleic acid",
-        "Only host carbohydrates",
-        "Only capsomers"
+        "JC virus",
+        "Adenovirus",
+        "Mumps virus",
+        "Rotavirus"
       ],
       "correctAnswer": "B",
-      "explanation": "The lecture states that the envelope is a lipoprotein structure: host membrane provides the lipid portion, while the viral genome encodes the protein portion.",
-      "subtopic": "Viral envelope",
-      "optionExplanations": [
-        "Incorrect. Nucleic acid forms the viral genome, not the envelope.",
-        "Correct. This is the lecture's description of envelope composition.",
-        "Incorrect. Carbohydrates are not the described main structure.",
-        "Incorrect. Capsomers form the capsid."
-      ],
-      "hint": "Remember host-derived lipid plus virus-encoded protein."
+      "explanation": "Adenovirus is associated with Pharyngitis.",
+      "subtopic": "Viral infections",
+      "hint": "Think of the respiratory and throat infections."
     },
     {
       "question": "Which statement about heat sensitivity is correct according to the lecture?",
@@ -374,230 +596,508 @@
       "hint": "Compare enveloped with non-enveloped viruses under heat."
     },
     {
-  "question": "What is the main function of the viral genome?",
-  "options": [
-    "Coding for virus-specific macromolecules",
-    "Capsid assembly only",
-    "ATP production",
-    "Host-cell division"
-  ],
-  "correctAnswer": "A"
-},
-{
-  "question": "What is the capsid?",
-  "options": [
-    "Lipid membrane obtained from the host cell wall",
-    "An impermeable protein shell around viral nucleic acid",
-    "RNA enzyme",
-    "Host receptor"
-  ],
-  "correctAnswer": "B"
-},
-{
-  "question": "What are capsomers?",
-  "options": [
-    "Lipid molecules",
-    "Host receptors",
-    "Protein subunits composed of polypeptide molecules",
-    "Viral genomes "
-  ],
-  "correctAnswer": "C"
-},
-{
-  "question": "What are capsomers in structural virology?",
-  "options": [
-    "Morphological protein subunits that assemble to form the protective viral capsid around the nucleic acid.",
-    "Glycoprotein spikes projecting from the viral envelope that mediate host receptor binding.",
-    "Hydrophobic lipid bilayer domains derived from the host cell membrane during viral budding.",
-    "Internal non-structural proteins that stabilize the viral genome within the nucleocapsid matrix."
-  ],
-  "correctAnswer": "A",
-  "explanation": "Capsomers are the fundamental structural/morphological protein units (composed of one or more polypeptide chains) that self-assemble into a symmetrical outer shell called the capsid, which encloses and protects the viral genetic material.",
-  "subtopic": "Viral Structure and Classification",
-  "optionExplanations": [
-    "Correct. Capsomers are proteinaceous structural subunits that aggregate to constitute the viral capsid.",
-    "Incorrect. Glycoprotein spikes projecting from the envelope are termed peplomers, which mediate target receptor attachment.",
-    "Incorrect. Lipid bilayer domains belong to the viral envelope acquired from the host host membrane, not capsomers.",
-    "Incorrect. Non-structural or matrix proteins serve functional or scaffold roles inside the virion rather than forming the structural capsomeric shell."
-  ],
-  "hint": "Distinguish between the structural protein shell units (capsid) and outer envelope surface spikes (peplomers)."
-},
-{
-  "question": "What does viral symmetry describe in structural virology?",
-  "options": [
-    "The spatial arrangement and geometric pattern formed by capsomers in the viral capsid.",
-    "The precise stoichiometry and copy number of the enclosed viral genome.",
-    "The thermodynamic stability threshold of the lipid envelope under varying temperatures.",
-    "The degree of evolutionary conservation between host cell receptor binding sites."
-  ],
-  "correctAnswer": "A",
-  "explanation": "Viral symmetry refers to the geometric arrangement of protein subunits (capsomers) that assemble to form the protective capsid shell surrounding the viral genome, classically categorized into helical, icosahedral (cubic), or complex symmetries.",
-  "subtopic": "Viral Structure and Classification",
-  "optionExplanations": [
-    "Correct. Viral symmetry denotes the spatial architecture and geometric organization (e.g., icosahedral vs. helical) of the capsid proteins.",
-    "Incorrect. Genome stoichiometry and nucleic acid length relate to genomic organization, not structural capsid symmetry.",
-    "Incorrect. Environmental stability and temperature thresholds describe viral physical resistance, not spatial structural symmetry.",
-    "Incorrect. Evolutionary conservation of receptor binding domains involves sequence identity and host tropism, unrelated to capsid geometric symmetry."
-  ],
-  "hint": "Think about how capsomers repeat spatially in 3D to form geometric shapes like icosahedrons or helices."
-},
-{
-  "question": "Which set contains all three types of viral symmetry described in the lecture?",
-  "options": [
-    "Cubic, spherical, and linear",
-    "Icosahedral, helical, and complex",
-    "Helical, circular, and segmented",
-    "Complex, spherical, and nuclear"
-  ],
-  "correctAnswer": "B"
-},
-{
-  "question": "How many equilateral triangles are involved in the icosahedral arrangement described in the lecture?",
-  "options": [
-    "Twelve",
-    "Thirty",
-    "Twenty",
-    "Sixty"
-  ],
-  "correctAnswer": "C"
-},
-{
-  "question": "In the icosahedral symmetry described in the lecture, what are the protein subunits at the angles of each triangular capsomer called?",
-  "options": [
-    "Hexamers",
-    "Peplomers",
-    "Polymers",
-    "Pentamers"
-  ],
-  "correctAnswer": "D"
-},
-{
-  "question": "How are the capsomers and viral genome arranged in helical symmetry?",
-  "options": [
-    "They are twisted together to form a spiral tube",
-    "They are completely separated from each other",
-    "They are located only inside the nucleus",
-    "They are absent from RNA viruses"
-  ],
-  "correctAnswer": "A"
-},
-{
-  "question": "Which virus was given as an example of complex viral symmetry?",
-  "options": [
-    "Picornavirus",
-    "Poxvirus",
-    "Herpesvirus",
-    "Orthomyxovirus"
-  ],
-  "correctAnswer": "B"
-},
-{
-  "question": "What is the primary cellular origin of the lipid bilayer in an enveloped virus?",
-  "options": [
-    "Host cell membranes incorporated during viral budding or exocytosis.",
-    "De novo lipid biosynthesis encoded by non-structural viral enzymes.",
-    "Proteolytic cleavage of capsomeric protein complexes within the capsid matrix.",
-    "Polymerization of host nuclear DNA components during virion assembly."
-  ],
-  "correctAnswer": "A",
-  "explanation": "Enveloped viruses acquire their lipid bilayer directly from host cell membranes (such as the plasma membrane, endoplasmic reticulum, or Golgi apparatus) during the process of budding or exocytosis, while viral envelope glycoproteins are inserted prior to release.",
-  "subtopic": "Viral Structure and Classification",
-  "optionExplanations": [
-    "Correct. The lipid bilayer component of the viral envelope is host-derived, captured as the virus buds through host cellular membranes.",
-    "Incorrect. Viruses lack the machinery for de novo lipid synthesis and rely entirely on hijacking host cell lipid membranes.",
-    "Incorrect. Capsomers are proteinaceous structures that form the capsid, not lipid precursors.",
-    "Incorrect. Host cell DNA is a nucleic acid polymer and cannot synthesize or constitute membrane lipids."
-  ],
-  "hint": "Recall how enveloped virions acquire their outer membrane when exiting the host cell through budding."
-},
-{
-  "question": "What are the protein spikes projecting from the viral envelope also called?",
-  "options": [
-    "Capsomers",
-    "Matrix proteins",
-    "Nucleotides",
-    "Peplomers"
-  ],
-  "correctAnswer": "D"
-},
-{
-  "question": "Which function of the viral envelope is directly related to binding to specific receptors on a host cell?",
-  "options": [
-    "Determination of viral tropism",
-    "ATP production",
-    "Genome transcription",
-    "Capsid digestion"
-  ],
-  "correctAnswer": "A"
-},
-{
-  "question": "Which of the following is another function of the viral envelope?",
-  "options": [
-    "Genome replication",
-    "Evasion of the host immune system",
-    "ATP synthesis",
-    "Ribosome formation"
-  ],
-  "correctAnswer": "B"
-},
-{
-  "question": "Which set contains possible sources of viral envelopes inside the host cell?",
-  "options": [
-    "Mitochondria only",
-    "Plasma membrane only",
-    "Plasma membrane, nuclear membrane, Golgi apparatus membrane, and endoplasmic reticulum",
-    "Nucleus only"
-  ],
-  "correctAnswer": "C"
-},
-{
-  "question": "Which set encompasses the primary cellular membrane sources from which enveloped viruses can derive their lipid envelope during maturation and exit?",
-  "options": [
-    "Plasma membrane, nuclear membrane, Golgi apparatus, and endoplasmic reticulum.",
-    "Outer mitochondrial membrane, peroxisomal matrix, and lysosomal lumen.",
-    "Plasma membrane exclusively, as budding cannot occur across internal organellar membranes.",
-    "Ribosomal subunit membranes, nucleolar matrix, and centrosomes."
-  ],
-  "correctAnswer": "Plasma membrane, nuclear membrane, Golgi apparatus, and endoplasmic reticulum.",
-  "explanation": "Enveloped viruses acquire their lipid bilayer by budding through various host cellular membrane compartments depending on the virus family: Herpesviruses utilize the inner nuclear membrane, Flaviviruses and Coronaviruses bud into the Endoplasmic Reticulum-Golgi Intermediate Compartment (ERGIC), and Retroviruses or Influenza viruses bud predominantly from the plasma membrane.",
-  "subtopic": "Viral Structure and Maturation",
-  "optionExplanations": [
-    "Correct. Enveloped viruses can utilize a diverse array of host endomembrane systems (ER, Golgi, nuclear envelope) as well as the outer plasma membrane for envelope acquisition.",
-    "Incorrect. Mitochondria, peroxisomes, and lysosomes are not standard functional sites for viral envelope budding during virion assembly.",
-    "Incorrect. While many viruses bud at the plasma membrane, numerous families (e.g., Herpesviridae, Coronaviridae) routinely acquire their envelopes from internal organelle membranes.",
-    "Incorrect. Ribosomes, nucleoli, and centrosomes are non-membranous cellular structures or organelles lacking lipid bilayers, making envelope derivation impossible."
-  ],
-  "hint": "Consider both cell-surface egress (plasma membrane) and intracellular assembly routes involving the endomembrane network (ER, Golgi, nuclear envelope)."
-},
-{
-  "question": "Most viruses are stable at approximately which temperature range?",
-  "options": [
-    "-40 to -70 °C",
-    "0 to -10 °C",
-    "+56 °C",
-    "100 °C"
-  ],
-  "correctAnswer": "A"
-},
-{
-  "question": "Which virus was described in the lecture as unable to survive longer than 8 hours on hard dry surfaces?",
-  "options": [
-    "Herpesvirus",
-    "Rotavirus",
-    "Poxvirus",
-    "HIV"
-  ],
-  "correctAnswer": "B"
-},
-{
-  "question": "Which genome types are less susceptible to ultraviolet germicidal irradiation (UVGI) than ssDNA and ssRNA viruses?",
-  "options": [
-    "dsDNA and ssRNA",
-    "ssDNA and ssRNA",
-    "dsDNA and dsRNA",
-    "ssDNA and dsRNA"
-  ],
-  "correctAnswer": "C"
+      "question": "Which virus is the causative agent of Gingivostomatitis?",
+      "options": [
+        "Coxsackie A virus",
+        "Epstein-Barr virus",
+        "Herpes simplex type 1",
+        "Cytomegalovirus"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Herpes simplex type 1 is associated with Gingivostomatitis.",
+      "subtopic": "Viral infections",
+      "hint": "Think of the herpes virus types."
+    },
+    {
+      "question": "What is the main function of the viral genome?",
+      "options": [
+        "Coding for virus-specific macromolecules",
+        "Capsid assembly only",
+        "ATP production",
+        "Host-cell division"
+      ],
+      "correctAnswer": "A",
+      "explanation": "The viral genome codes for virus-specific macromolecules.",
+      "subtopic": "Viral genome",
+      "optionExplanations": [
+        "Correct. The genome carries the information for virus-specific macromolecules.",
+        "Incorrect. Capsid assembly is a downstream process.",
+        "Incorrect. Viruses do not produce ATP.",
+        "Incorrect. Viruses do not directly perform host-cell division."
+      ],
+      "hint": "The genome holds the genetic information."
+    },
+    {
+      "question": "Which virus is associated with Cardiovascular infections?",
+      "options": [
+        "Coxsackie B virus",
+        "Influenza virus",
+        "Poliovirus",
+        "Norovirus"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Coxsackie B virus is associated with Cardiovascular infections.",
+      "subtopic": "Viral infections",
+      "hint": "Think of the virus associated with heart infections."
+    },
+    {
+      "question": "What is the capsid?",
+      "options": [
+        "Lipid membrane obtained from the host cell wall",
+        "An impermeable protein shell around viral nucleic acid",
+        "RNA enzyme",
+        "Host receptor"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The capsid is an impermeable protein shell around viral nucleic acid.",
+      "subtopic": "Viral structure",
+      "optionExplanations": [
+        "Incorrect. This describes the envelope.",
+        "Correct. The capsid is the protein shell.",
+        "Incorrect. The capsid is made of protein, not RNA.",
+        "Incorrect. The capsid is viral, not a host receptor."
+      ],
+      "hint": "It is the protective protein shell."
+    },
+    {
+      "question": "Which of the following viruses cause Hepatitis?",
+      "options": [
+        "Types A, B, C, D, E",
+        "Types A and B only",
+        "Types C and D only",
+        "Types A, B, C, D, E"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Hepatitis viruses include types A, B, C, D, and E.",
+      "subtopic": "Viral infections",
+      "hint": "How many types of hepatitis viruses are there?"
+    },
+    {
+      "question": "What are capsomers?",
+      "options": [
+        "Lipid molecules",
+        "Host receptors",
+        "Protein subunits composed of polypeptide molecules",
+        "Viral genomes "
+      ],
+      "correctAnswer": "C",
+      "explanation": "Capsomers are protein subunits composed of polypeptide molecules.",
+      "subtopic": "Viral structure",
+      "optionExplanations": [
+        "Incorrect. They are not lipids.",
+        "Incorrect. They are viral structural units.",
+        "Correct. Capsomers are protein subunits.",
+        "Incorrect. They are structural proteins, not the genome."
+      ],
+      "hint": "They are the building blocks of the capsid."
+    },
+    {
+      "question": "Which virus is associated with Pancreatitis?",
+      "options": [
+        "Mumps virus",
+        "Coxsackie B virus",
+        "Herpes simplex type 2",
+        "HIV"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Coxsackie B virus is associated with Pancreatitis.",
+      "subtopic": "Viral infections",
+      "hint": "Think of the virus that also causes heart infections."
+    },
+    {
+      "question": "What are capsomers in structural virology?",
+      "options": [
+        "Morphological protein subunits that assemble to form the protective viral capsid around the nucleic acid.",
+        "Glycoprotein spikes projecting from the viral envelope that mediate host receptor binding.",
+        "Hydrophobic lipid bilayer domains derived from the host cell membrane during viral budding.",
+        "Internal non-structural proteins that stabilize the viral genome within the nucleocapsid matrix."
+      ],
+      "correctAnswer": "A",
+      "explanation": "Capsomers are the fundamental structural/morphological protein units (composed of one or more polypeptide chains) that self-assemble into a symmetrical outer shell called the capsid, which encloses and protects the viral genetic material.",
+      "subtopic": "Viral Structure and Classification",
+      "optionExplanations": [
+        "Correct. Capsomers are proteinaceous structural subunits that aggregate to constitute the viral capsid.",
+        "Incorrect. Glycoprotein spikes projecting from the envelope are termed peplomers, which mediate target receptor attachment.",
+        "Incorrect. Lipid bilayer domains belong to the viral envelope acquired from the host host membrane, not capsomers.",
+        "Incorrect. Non-structural or matrix proteins serve functional or scaffold roles inside the virion rather than forming the structural capsomeric shell."
+      ],
+      "hint": "Distinguish between the structural protein shell units (capsid) and outer envelope surface spikes (peplomers)."
+    },
+    {
+      "question": "What is the genome type of Parvovirus?",
+      "options": [
+        "Single-stranded DNA (linear)",
+        "Double-stranded DNA (linear)",
+        "Single-stranded RNA (linear)",
+        "Double-stranded RNA (linear)"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Parvovirus has a single-stranded DNA (linear) genome.",
+      "subtopic": "Viral genomes",
+      "hint": "It is a small DNA virus."
+    },
+    {
+      "question": "What does viral symmetry describe in structural virology?",
+      "options": [
+        "The spatial arrangement and geometric pattern formed by capsomers in the viral capsid.",
+        "The precise stoichiometry and copy number of the enclosed viral genome.",
+        "The thermodynamic stability threshold of the lipid envelope under varying temperatures.",
+        "The degree of evolutionary conservation between host cell receptor binding sites."
+      ],
+      "correctAnswer": "A",
+      "explanation": "Viral symmetry refers to the geometric arrangement of protein subunits (capsomers) that assemble to form the protective capsid shell surrounding the viral genome, classically categorized into helical, icosahedral (cubic), or complex symmetries.",
+      "subtopic": "Viral Structure and Classification",
+      "optionExplanations": [
+        "Correct. Viral symmetry denotes the spatial architecture and geometric organization (e.g., icosahedral vs. helical) of the capsid proteins.",
+        "Incorrect. Genome stoichiometry and nucleic acid length relate to genomic organization, not structural capsid symmetry.",
+        "Incorrect. Environmental stability and temperature thresholds describe viral physical resistance, not spatial structural symmetry.",
+        "Incorrect. Evolutionary conservation of receptor binding domains involves sequence identity and host tropism, unrelated to capsid geometric symmetry."
+      ],
+      "hint": "Think about how capsomers repeat spatially in 3D to form geometric shapes like icosahedrons or helices."
+    },
+    {
+      "question": "What is the genome type of Herpesvirus?",
+      "options": [
+        "Single-stranded DNA (circular)",
+        "Single-stranded RNA (circular)",
+        "Double-stranded DNA (linear)",
+        "Double-stranded RNA (linear)"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Herpesvirus has a double-stranded DNA (linear) genome.",
+      "subtopic": "Viral genomes",
+      "hint": "It is a large DNA virus."
+    },
+    {
+      "question": "Which set contains all three types of viral symmetry described in the lecture?",
+      "options": [
+        "Cubic, spherical, and linear",
+        "Icosahedral, helical, and complex",
+        "Helical, circular, and segmented",
+        "Complex, spherical, and nuclear"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The three types of viral symmetry are icosahedral, helical, and complex.",
+      "subtopic": "Viral symmetry",
+      "optionExplanations": [
+        "Incorrect. These are not the terms used.",
+        "Correct. These are the three types described.",
+        "Incorrect. These are not the three types.",
+        "Incorrect. These are not the three types."
+      ],
+      "hint": "Remember the three geometric arrangements."
+    },
+    {
+      "question": "What is the genome type of M13?",
+      "options": [
+        "Double-stranded DNA (circular)",
+        "Single-stranded DNA (circular)",
+        "Single-stranded RNA (linear)",
+        "Double-stranded RNA (circular)"
+      ],
+      "correctAnswer": "B",
+      "explanation": "M13 has a single-stranded DNA (circular) genome.",
+      "subtopic": "Viral genomes",
+      "hint": "It is a filamentous phage."
+    },
+    {
+      "question": "How many equilateral triangles are involved in the icosahedral arrangement described in the lecture?",
+      "options": [
+        "Twelve",
+        "Thirty",
+        "Twenty",
+        "Sixty"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The icosahedral arrangement involves twenty equilateral triangles.",
+      "subtopic": "Viral symmetry",
+      "optionExplanations": [
+        "Incorrect. There are twenty.",
+        "Incorrect. There are twenty.",
+        "Correct. Twenty equilateral triangles form an icosahedron.",
+        "Incorrect. There are twenty."
+      ],
+      "hint": "Think of a 20-sided die."
+    },
+    {
+      "question": "What is the genome type of Baculovirus?",
+      "options": [
+        "Single-stranded DNA (linear)",
+        "Double-stranded DNA (linear)",
+        "Single-stranded RNA (circular)",
+        "Double-stranded DNA (circular)"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Baculovirus has a double-stranded DNA (circular) genome.",
+      "subtopic": "Viral genomes",
+      "hint": "It is an insect virus with a circular genome."
+    },
+    {
+      "question": "In the icosahedral symmetry described in the lecture, what are the protein subunits at the angles of each triangular capsomer called?",
+      "options": [
+        "Hexamers",
+        "Peplomers",
+        "Polymers",
+        "Pentamers"
+      ],
+      "correctAnswer": "D",
+      "explanation": "The protein subunits at the angles of each triangular capsomer are called pentamers.",
+      "subtopic": "Viral symmetry",
+      "optionExplanations": [
+        "Incorrect. They are pentamers.",
+        "Incorrect. Peplomers are envelope spikes.",
+        "Incorrect. They are pentamers.",
+        "Correct. Pentamers form the vertices of the icosahedron."
+      ],
+      "hint": "Think of the 5-sided structure at the vertices."
+    },
+    {
+      "question": "What is the genome type of TMV?",
+      "options": [
+        "Single-stranded RNA (linear)",
+        "Double-stranded RNA (linear)",
+        "Single-stranded DNA (linear)",
+        "Double-stranded DNA (circular)"
+      ],
+      "correctAnswer": "A",
+      "explanation": "TMV (Tobacco Mosaic Virus) has a single-stranded RNA (linear) genome.",
+      "subtopic": "Viral genomes",
+      "hint": "It is a classic plant RNA virus."
+    },
+    {
+      "question": "How are the capsomers and viral genome arranged in helical symmetry?",
+      "options": [
+        "They are twisted together to form a spiral tube",
+        "They are completely separated from each other",
+        "They are located only inside the nucleus",
+        "They are absent from RNA viruses"
+      ],
+      "correctAnswer": "A",
+      "explanation": "In helical symmetry, the capsomers and viral genome are twisted together to form a spiral tube.",
+      "subtopic": "Viral symmetry",
+      "optionExplanations": [
+        "Correct. This matches the lecture description.",
+        "Incorrect. They are twisted together.",
+        "Incorrect. They are in the cytoplasm or virion.",
+        "Incorrect. RNA viruses can have helical symmetry."
+      ],
+      "hint": "Think of a spiral tube structure."
+    },
+    {
+      "question": "What is the genome type of Reovirus?",
+      "options": [
+        "Single-stranded RNA (linear)",
+        "Double-stranded DNA (linear)",
+        "Double-stranded RNA (linear)",
+        "Single-stranded DNA (circular)"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Reovirus has a double-stranded RNA (linear) genome.",
+      "subtopic": "Viral genomes",
+      "hint": "It is a respiratory enteric orphan virus."
+    },
+    {
+      "question": "Which virus was given as an example of complex viral symmetry?",
+      "options": [
+        "Picornavirus",
+        "Poxvirus",
+        "Herpesvirus",
+        "Orthomyxovirus"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Poxvirus is given as an example of complex viral symmetry.",
+      "subtopic": "Viral symmetry",
+      "optionExplanations": [
+        "Incorrect. Picornavirus has icosahedral symmetry.",
+        "Correct. Poxvirus is the classic example of complex symmetry.",
+        "Incorrect. Herpesvirus has icosahedral symmetry.",
+        "Incorrect. Orthomyxovirus has helical symmetry."
+      ],
+      "hint": "Which virus is known for its complex, brick-like shape?"
+    },
+    {
+      "question": "What is the genome type of Hepatitis D virus?",
+      "options": [
+        "Single-stranded DNA (circular)",
+        "Single-stranded RNA (circular)",
+        "Double-stranded RNA (linear)",
+        "Double-stranded DNA (linear)"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Hepatitis D virus has a single-stranded RNA (circular) genome.",
+      "subtopic": "Viral genomes",
+      "hint": "It is a defective RNA virus."
+    },
+    {
+      "question": "What is the primary cellular origin of the lipid bilayer in an enveloped virus?",
+      "options": [
+        "Host cell membranes incorporated during viral budding or exocytosis.",
+        "De novo lipid biosynthesis encoded by non-structural viral enzymes.",
+        "Proteolytic cleavage of capsomeric protein complexes within the capsid matrix.",
+        "Polymerization of host nuclear DNA components during virion assembly."
+      ],
+      "correctAnswer": "A",
+      "explanation": "Enveloped viruses acquire their lipid bilayer directly from host cell membranes (such as the plasma membrane, endoplasmic reticulum, or Golgi apparatus) during the process of budding or exocytosis, while viral envelope glycoproteins are inserted prior to release.",
+      "subtopic": "Viral Structure and Classification",
+      "optionExplanations": [
+        "Correct. The lipid bilayer component of the viral envelope is host-derived, captured as the virus buds through host cellular membranes.",
+        "Incorrect. Viruses lack the machinery for de novo lipid synthesis and rely entirely on hijacking host cell lipid membranes.",
+        "Incorrect. Capsomers are proteinaceous structures that form the capsid, not lipid precursors.",
+        "Incorrect. Host cell DNA is a nucleic acid polymer and cannot synthesize or constitute membrane lipids."
+      ],
+      "hint": "Recall how enveloped virions acquire their outer membrane when exiting the host cell through budding."
+    },
+    {
+      "question": "What are the protein spikes projecting from the viral envelope also called?",
+      "options": [
+        "Capsomers",
+        "Matrix proteins",
+        "Nucleotides",
+        "Peplomers"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Protein spikes projecting from the viral envelope are called peplomers.",
+      "subtopic": "Viral envelope",
+      "optionExplanations": [
+        "Incorrect. Capsomers form the capsid.",
+        "Incorrect. Matrix proteins are inside the envelope.",
+        "Incorrect. Nucleotides are nucleic acid building blocks.",
+        "Correct. Peplomers are the envelope spikes."
+      ],
+      "hint": "They are the glycoprotein spikes on the outside."
+    },
+    {
+      "question": "Which function of the viral envelope is directly related to binding to specific receptors on a host cell?",
+      "options": [
+        "Determination of viral tropism",
+        "ATP production",
+        "Genome transcription",
+        "Capsid digestion"
+      ],
+      "correctAnswer": "A",
+      "explanation": "The viral envelope's ability to bind to specific receptors determines viral tropism.",
+      "subtopic": "Viral envelope",
+      "optionExplanations": [
+        "Correct. Binding to specific receptors determines which cells the virus can infect (tropism).",
+        "Incorrect. ATP is produced by the host cell.",
+        "Incorrect. Genome transcription occurs after entry.",
+        "Incorrect. Capsid digestion occurs during uncoating."
+      ],
+      "hint": "Think about what determines which cells a virus can infect."
+    },
+    {
+      "question": "Which of the following is another function of the viral envelope?",
+      "options": [
+        "Genome replication",
+        "Evasion of the host immune system",
+        "ATP synthesis",
+        "Ribosome formation"
+      ],
+      "correctAnswer": "B",
+      "explanation": "A function of the viral envelope is to help the virus evade the host immune system.",
+      "subtopic": "Viral envelope",
+      "optionExplanations": [
+        "Incorrect. Genome replication occurs inside the host cell.",
+        "Correct. The envelope helps evade the host immune system.",
+        "Incorrect. ATP synthesis is a host cell function.",
+        "Incorrect. Ribosome formation is a host cell function."
+      ],
+      "hint": "How does the envelope protect the virus from antibodies?"
+    },
+    {
+      "question": "Which set contains possible sources of viral envelopes inside the host cell?",
+      "options": [
+        "Mitochondria only",
+        "Plasma membrane only",
+        "Plasma membrane, nuclear membrane, Golgi apparatus membrane, and endoplasmic reticulum",
+        "Nucleus only"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Viral envelopes can be derived from the plasma membrane, nuclear membrane, Golgi apparatus membrane, and endoplasmic reticulum.",
+      "subtopic": "Viral envelope",
+      "optionExplanations": [
+        "Incorrect. Mitochondria are not typically used.",
+        "Incorrect. Multiple sources are possible.",
+        "Correct. These are the sources listed in the lecture.",
+        "Incorrect. The nucleus is not a membrane source."
+      ],
+      "hint": "Which organelles have membranes that can be hijacked?"
+    },
+    {
+      "question": "Which set encompasses the primary cellular membrane sources from which enveloped viruses can derive their lipid envelope during maturation and exit?",
+      "options": [
+        "Plasma membrane, nuclear membrane, Golgi apparatus, and endoplasmic reticulum.",
+        "Outer mitochondrial membrane, peroxisomal matrix, and lysosomal lumen.",
+        "Plasma membrane exclusively, as budding cannot occur across internal organellar membranes.",
+        "Ribosomal subunit membranes, nucleolar matrix, and centrosomes."
+      ],
+      "correctAnswer": "Plasma membrane, nuclear membrane, Golgi apparatus, and endoplasmic reticulum.",
+      "explanation": "Enveloped viruses acquire their lipid bilayer by budding through various host cellular membrane compartments depending on the virus family: Herpesviruses utilize the inner nuclear membrane, Flaviviruses and Coronaviruses bud into the Endoplasmic Reticulum-Golgi Intermediate Compartment (ERGIC), and Retroviruses or Influenza viruses bud predominantly from the plasma membrane.",
+      "subtopic": "Viral Structure and Maturation",
+      "optionExplanations": [
+        "Correct. Enveloped viruses can utilize a diverse array of host endomembrane systems (ER, Golgi, nuclear envelope) as well as the outer plasma membrane for envelope acquisition.",
+        "Incorrect. Mitochondria, peroxisomes, and lysosomes are not standard functional sites for viral envelope budding during virion assembly.",
+        "Incorrect. While many viruses bud at the plasma membrane, numerous families (e.g., Herpesviridae, Coronaviridae) routinely acquire their envelopes from internal organelle membranes.",
+        "Incorrect. Ribosomes, nucleoli, and centrosomes are non-membranous cellular structures or organelles lacking lipid bilayers, making envelope derivation impossible."
+      ],
+      "hint": "Consider both cell-surface egress (plasma membrane) and intracellular assembly routes involving the endomembrane network (ER, Golgi, nuclear envelope)."
+    },
+    {
+      "question": "Most viruses are stable at approximately which temperature range?",
+      "options": [
+        "-40 to -70 °C",
+        "0 to -10 °C",
+        "+56 °C",
+        "100 °C"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Most viruses are stable at -40 to -70 °C.",
+      "subtopic": "Physical properties",
+      "optionExplanations": [
+        "Correct. This is the stable range for most viruses.",
+        "Incorrect. This is not the stated range.",
+        "Incorrect. This is a high temperature.",
+        "Incorrect. This is a very high temperature."
+      ],
+      "hint": "Think of standard cold storage temperatures."
+    },
+    {
+      "question": "Which virus was described in the lecture as unable to survive longer than 8 hours on hard dry surfaces?",
+      "options": [
+        "Herpesvirus",
+        "Rotavirus",
+        "Poxvirus",
+        "HIV"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Rotavirus cannot survive longer than 8 hours on hard dry surfaces.",
+      "subtopic": "Physical properties",
+      "optionExplanations": [
+        "Incorrect. Herpesvirus can survive up to 8 weeks.",
+        "Correct. Rotavirus is the virus mentioned with an 8-hour limit.",
+        "Incorrect. Poxvirus was not mentioned for this.",
+        "Incorrect. HIV was not mentioned for this."
+      ],
+      "hint": "Which virus is sensitive to dryness and survives less than a day?"
+    },
+    {
+      "question": "Which genome types are less susceptible to ultraviolet germicidal irradiation (UVGI) than ssDNA and ssRNA viruses?",
+      "options": [
+        "dsDNA and ssRNA",
+        "ssDNA and ssRNA",
+        "dsDNA and dsRNA",
+        "ssDNA and dsRNA"
+      ],
+      "correctAnswer": "C",
+      "explanation": "dsDNA and dsRNA viruses are less susceptible to UVGI than ssDNA and ssRNA viruses.",
+      "subtopic": "Physical properties",
+      "optionExplanations": [
+        "Incorrect. ssRNA is more susceptible.",
+        "Incorrect. These are the more susceptible types.",
+        "Correct. dsDNA and dsRNA are less susceptible.",
+        "Incorrect. ssDNA is more susceptible."
+      ],
+      "hint": "Double-stranded genomes are more resistant to UV damage."
     },
     {
       "question": "Which statement correctly matches a chemical agent with viral sensitivity?",
@@ -619,23 +1119,23 @@
       "hint": "Ether and chloroform point to the envelope."
     },
     {
-  "question": "Which of the following primary determinants governs cell and tissue tropism during viral infection?",
-  "options": [
-    "The presence and distribution of specific host cell surface receptors and essential cellular transcription factors.",
-    "The baseline metabolic rate and systemic core temperature of the host organism during incubation.",
-    "The physical stoichiometry and total molecular weight of the capsomeric protein subunits.",
-    "The post-translational lipidation state of host extracellular matrix fibronectin."
-  ],
-  "correctAnswer": "A",
-  "explanation": "Viral tropism—the specificity of a virus for infecting particular cell types, tissues, or host species—is primarily determined by susceptibility (expression of complementary surface receptors/co-receptors for entry) and permissiveness (availability of intracellular factors such as transcription factors required for viral replication).",
-  "subtopic": "Viral Tropism",
-  "optionExplanations": [
-    "Correct. Host cell receptor expression and intracellular transcriptional machinery directly dictate viral susceptibility and tissue tropism.",
-    "Incorrect. Host core temperature may influence systemic immunity or replication kinetics, but it does not define the cell-surface specificity of viral tropism.",
-    "Incorrect. Capsomer copy number and total capsid weight define virion architecture, not host tissue selectivity.",
-    "Incorrect. Matrix lipidation is an extracellular host trait unrelated to the specific receptor-ligand interactions that drive viral tropism."
-  ],
-  "hint": "Consider both cellular susceptibility (surface receptor recognition) and permissiveness (intracellular machinery for replication)."
+      "question": "Which of the following primary determinants governs cell and tissue tropism during viral infection?",
+      "options": [
+        "The presence and distribution of specific host cell surface receptors and essential cellular transcription factors.",
+        "The baseline metabolic rate and systemic core temperature of the host organism during incubation.",
+        "The physical stoichiometry and total molecular weight of the capsomeric protein subunits.",
+        "The post-translational lipidation state of host extracellular matrix fibronectin."
+      ],
+      "correctAnswer": "A",
+      "explanation": "Viral tropism—the specificity of a virus for infecting particular cell types, tissues, or host species—is primarily determined by susceptibility (expression of complementary surface receptors/co-receptors for entry) and permissiveness (availability of intracellular factors such as transcription factors required for viral replication).",
+      "subtopic": "Viral Tropism",
+      "optionExplanations": [
+        "Correct. Host cell receptor expression and intracellular transcriptional machinery directly dictate viral susceptibility and tissue tropism.",
+        "Incorrect. Host core temperature may influence systemic immunity or replication kinetics, but it does not define the cell-surface specificity of viral tropism.",
+        "Incorrect. Capsomer copy number and total capsid weight define virion architecture, not host tissue selectivity.",
+        "Incorrect. Matrix lipidation is an extracellular host trait unrelated to the specific receptor-ligand interactions that drive viral tropism."
+      ],
+      "hint": "Consider both cellular susceptibility (surface receptor recognition) and permissiveness (intracellular machinery for replication)."
     },
     {
       "question": "Which sequence correctly lists the six general steps of viral replication in the order given in the lecture?",
@@ -676,846 +1176,1467 @@
       "hint": "Compare what is inside the particle."
     },
     {
-  "question": "Which chemical agents are viruses sensitive to according to the lecture?",
-  "options": [
-    "Formaldehyde, chlorine, and iodine",
-    "Glycerol only",
-    "Ether only",
-    "Glycerol, chlorine, and iodine"
-  ],
-  "correctAnswer": "A"
-},
-{
-  "question": "Why is glycerol added to viral suspensions?",
-  "options": [
-    "To destroy the viral genome",
-    "To prevent bacterial contamination",
-    "To increase viral tropism",
-    "To promote viral replication"
-  ],
-  "correctAnswer": "B"
-},
-{
-  "question": "What is viral tropism?",
-  "options": [
-    "The ability of a virus to survive drying",
-    "The ability of a virus to form a capsid",
-    "The ability of a virus to specifically infect a particular cell, tissue, or host that supports its replication",
-    "The ability of a virus to resist ultraviolet radiation"
-  ],
-  "correctAnswer": "C"
-},
-{
-  "question": "Which set of biological determinants directly governs both viral susceptibility and cellular permissiveness to define viral tropism?",
-  "options": [
-    "Host cell wall thickness and ribosomal RNA sedimentation coefficients.",
-    "Viral envelope lipid composition and genomic segment length.",
-    "Capsid icosahedral symmetry and environmental incubation temperature.",
-    "Specific host cell surface receptors and essential intracellular transcription factors."
-  ],
-  "correctAnswer": "D",
-  "explanation": "Viral tropism relies on two key constraints: susceptibility (determined by specific cell-surface receptors and co-receptors that allow entry) and permissiveness (determined by intracellular host factors, such as specific transcription factors, necessary for viral gene expression and replication).",
-  "subtopic": "Viral Tropism",
-  "optionExplanations": [
-    "Incorrect. Animal host cells lack cell walls, and ribosomal sedimentation coefficients are general translational properties unrelated to viral tropism.",
-    "Incorrect. Envelope lipids and segment length affect biophysical stability and genome structure, but do not determine cell-type-specific tropism.",
-    "Incorrect. Capsid symmetry dictates physical geometry, and temperature influences enzymatic kinetics, but neither governs cellular recognition or permissiveness.",
-    "Correct. Surface receptors mediate attachment/entry (susceptibility), while intracellular transcription factors enable replication (permissiveness), jointly defining tropism."
-  ],
-  "hint": "Think about the two phases of infection: host cell entry (susceptibility) and intracellular replication (permissiveness)."
-},
-{
-  "question": "Which of the following virus groupings exemplifies an organ- or tissue-system classification scheme based primarily on viral tropism and clinical pathology?",
-  "options": [
-    "Respiratory viruses, enteric/gastrointestinal viruses, dermatotropic viruses, and neurotropic viruses.",
-    "Positive-sense single-stranded RNA viruses, double-stranded RNA viruses, and reverse-transcribing DNA viruses.",
-    "Enveloped helical viruses, non-enveloped icosahedral viruses, and complex symmetry viruses.",
-    "Fastidious viruses, obligate intracellular viruses, and environmental filterable agent viruses."
-  ],
-  "correctAnswer": "A",
-  "explanation": "Classifying viruses according to target organs or anatomical sites of pathology divides them based on tissue tropism and clinical presentation (e.g., respiratory, enteric/gastrointestinal, neurotropic, dermatotropic, or hepatotropic viruses), in contrast to structural, genomic, or Baltimore classification systems.",
-  "subtopic": "Viral Classification and Tropism",
-  "optionExplanations": [
-    "Correct. Grouping by organ system or target site (e.g., neurotropic, dermatotropic, respiratory, enteric) constitutes a pathology- and tropism-based anatomical classification.",
-    "Incorrect. Categorizing by positive/negative-sense ssRNA, dsRNA, or reverse transcription follows the Baltimore classification system based on genome replication strategy.",
-    "Incorrect. Distinguishing between enveloped/non-enveloped and helical/icosahedral arrangements reflects physical and morphological structural classification.",
-    "Incorrect. Terms like obligate intracellular or filterable agents represent historical physiological and microbiological characteristics, not a target-organ system classification."
-  ],
-  "hint": "Distinguish between biological classification based on target tissue/pathology versus structural morphology or genomic replication mechanisms."
-},
-{
-  "question": "Why does a virus require the machinery of a host cell for replication?",
-  "options": [
-    "Because viruses contain no genetic material",
-    "Because viruses are metabolically inert",
-    "Because viruses cannot attach to cells",
-    "Because viruses are unable to contain proteins"
-  ],
-  "correctAnswer": "B"
-},
-{
-  "question": "Which cellular component provides the protein-synthesizing machinery required for viral replication?",
-  "options": [
-    "Capsids",
-    "Peplomers",
-    "Ribosomes",
-    "Viral envelopes"
-  ],
-  "correctAnswer": "C"
-},
-{
-  "question": "Which set of low-molecular-weight biological precursors must be supplied by the host cell metabolic machinery to sustain viral protein synthesis and genomic replication?",
-  "options": [
-    "Intact cellular ribosomes and structural histone octamers.",
-    "Nucleoside triphosphates, amino acids, and tRNA molecules.",
-    "Fatty acyl-CoA esters and complex phospholipid monomers exclusively.",
-    "Pre-assembled viral capsomers and functional envelope glycoproteins."
-  ],
-  "correctAnswer": "B",
-  "explanation": "Because viruses lack independent metabolic pathways and biosynthetic machinery, they depend entirely on host cellular pools of low-molecular-weight building blocks—specifically nucleoside triphosphates (for genome replication) and amino acids charged on host tRNAs (for viral protein translation).",
-  "subtopic": "Viral Replication and Host Cell Machinery",
-  "optionExplanations": [
-    "Incorrect. While viruses utilize host translational machinery, ribosomes and histones are complex macro-assemblies rather than the fundamental small chemical precursors used as building blocks.",
-    "Correct. Nucleoside triphosphates (building blocks for RNA/DNA) and amino acids (building blocks for proteins) are the primary small-molecule precursors provided by the host cell.",
-    "Incorrect. While lipid precursors are required by enveloped viruses for membrane synthesis, replication strictly requires nucleotide and amino acid pools for genomic and proteomic synthesis.",
-    "Incorrect. Capsomers and glycoproteins are viral-encoded structural end-products of translation and assembly, not low-molecular-weight precursor substrates supplied by the host."
-  ],
-  "hint": "Focus on the fundamental building blocks required by polymerase and ribosomal enzymes to synthesize viral nucleic acids and proteins."
-},
-{
-  "question": "How does a virus redirect the host cell to produce viral-specific proteins?",
-  "options": [
-    "By destroying all host ribosomes",
-    "Through viral mRNA, which is translated into viral-specific proteins",
-    "By converting ATP into DNA",
-    "Through the viral envelope alone"
-  ],
-  "correctAnswer": "B"
-},
-{
-  "question": "Viral mRNA is synthesized by transcription of which viral genomes according to the lecture?",
-  "options": [
-    "Only double-stranded RNA",
-    "Only positive-sense RNA",
-    "DNA or negative-sense RNA",
-    "Only circular DNA"
-  ],
-  "correctAnswer": "C"
-},
-{
-  "question": "Which of the following is a structural viral protein?",
-  "options": [
-    "Reverse transcriptase",
-    "Regulatory protein",
-    "RNA-dependent RNA polymerase",
-    "Capsid protein"
-  ],
-  "correctAnswer": "D"
-},
-{
-  "question": "Which of the following is a non-structural viral protein?",
-  "options": [
-    "A viral enzymes",
-    "Capsid protein",
-    "Peplomer",
-    "Envelope lipid"
-  ],
-  "correctAnswer": "A"
-},
-{
-  "question": "Which enzyme is carried as a virion component by retroviruses?",
-  "options": [
-    "DNA polymerase",
-    "Reverse transcriptase",
-    "Peptidase",
-    "ATP synthase"
-  ],
-  "correctAnswer": "B"
-},
-{
-  "question": "Which enzyme is carried by negative-sense RNA viruses as a virion component?",
-  "options": [
-    "Reverse transcriptase",
-    "DNA ligase",
-    "RNA-dependent RNA polymerase",
-    "ATP synthase"
-  ],
-  "correctAnswer": "C"
-},
-{
-  "question": "Which statement about the number of proteins encoded by viruses is correct?",
-  "options": [
-    "All viruses encode exactly the same number of proteins",
-    "Small viruses always encode more proteins than large viruses",
-    "The number of proteins is unrelated to genome size",
-    "Large viruses can produce many proteins because they have larger genomes"
-  ],
-  "correctAnswer": "D"
-},
-{
-  "question": "What is the correct sequence of the six major steps of viral replication?",
-  "options": [
-    "Adsorption → penetration → uncoating → synthesis → assembly → release",
-    "Penetration → adsorption → synthesis → assembly → uncoating → release",
-    "Adsorption → synthesis → penetration → assembly → release → uncoating",
-    "Uncoating → adsorption → penetration → synthesis → release → assembly"
-  ],
-  "correctAnswer": "A"
-},
-{
-  "question": "What is viral adsorption?",
-  "options": [
-    "Release of viral particles from the host cell",
-    "Recognition and attachment of the virus to the host cell through viral attachment proteins binding to specific receptors",
-    "Separation of the viral genome from the capsid",
-    "Formation of new viral particles"
-  ],
-  "correctAnswer": "B"
-},
-{
-  "question": "Which of the following cellular structures serves as the specific ligand binding partner for Viral Attachment Proteins (VAPs) during the adsorption phase of infection?",
-  "options": [
-    "Intracellular eukaryotic translation initiation factors (eIFs) within host cytosol.",
-    "Complementary protein, glycoprotein, or glycolipid cell-surface microdomains on the host plasma membrane.",
-    "Host genomic promoter sequences containing canonical TATA-box motifs.",
-    "Transmembrane ATP-binding cassette (ABC) transporter channels."
-  ],
-  "correctAnswer": "Complementary protein, glycoprotein, or glycolipid cell-surface microdomains on the host plasma membrane.",
-  "explanation": "Viral attachment proteins (VAPs), such as hemagglutinin or envelope glycoproteins, specifically recognize and bind to cell-surface receptors (proteins, glycoproteins, or glycolipids) on the host plasma membrane during the initial attachment phase, which determines host range and cellular tropism.",
-  "subtopic": "Viral Adsorption and Attachment",
-  "optionExplanations": [
-    "Incorrect. Translation initiation factors are cytosolic cellular machinery involved in protein synthesis, not surface receptors for viral adsorption.",
-    "Correct. VAPs recognize specific surface molecules—including proteins, carbohydrate moieties of glycoproteins, or glycolipids—to mediate attachment.",
-    "Incorrect. Host genomic promoter sequences are nuclear nucleic acid structures, inaccessible during initial virion attachment at the cell exterior.",
-    "Incorrect. ABC transporters are functional transmembrane pumps and do not serve as general attachment receptors for viral adsorption."
-  ],
-  "hint": "Consider the extracellular surface structures that interact with virion surface proteins prior to entry or membrane fusion."
-},
-{
-  "question": "What is the term used for viral penetration by endocytosis?",
-  "options": [
-    "Tropism",
-    "Budding",
-    "Assembly",
-    "Viropexis"
-  ],
-  "correctAnswer": "D"
+      "question": "Which chemical agents are viruses sensitive to according to the lecture?",
+      "options": [
+        "Formaldehyde, chlorine, and iodine",
+        "Glycerol only",
+        "Ether only",
+        "Glycerol, chlorine, and iodine"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Viruses are sensitive to formaldehyde, chlorine, and iodine.",
+      "subtopic": "Chemical properties",
+      "optionExplanations": [
+        "Correct. These are the agents listed.",
+        "Incorrect. Viruses are glycerol resistant.",
+        "Incorrect. Ether affects enveloped viruses, but these are the general agents.",
+        "Incorrect. Viruses are resistant to glycerol."
+      ],
+      "hint": "Which agents are used as disinfectants?"
     },
     {
-  "question": "How do non-enveloped viruses generally enter the host cell?",
-  "options": [
-    "By budding",
-    "By endocytosis",
-    "By nuclear membrane fusion only",
-    "By direct genome injection into the nucleus"
-  ],
-  "correctAnswer": "B"
-},
-{
-  "question": "During endocytosis of a non-enveloped virus, what is formed inside the host cell?",
-  "options": [
-    "A viral envelope",
-    "A new capsid",
-    "An endosomal vesicle",
-    "A viral nucleus"
-  ],
-  "correctAnswer": "C"
-},
-{
-  "question": "How can enveloped viruses enter a host cell according to the lecture?",
-  "options": [
-    "Only by endocytosis",
-    "Only by membrane fusion",
-    "Only by direct penetration",
-    "By endocytosis or membrane fusion"
-  ],
-  "correctAnswer": "D"
-},
-{
-  "question": "In membrane fusion, what part of an enveloped virus is internalized into the host cell?",
-  "options": [
-    "Only the envelope",
-    "Only the viral spikes",
-    "The nucleocapsid",
-    "Only the matrix protein"
-  ],
-  "correctAnswer": "C"
-},
-{
-  "question": "What is viral uncoating?",
-  "options": [
-    "Formation of the viral envelope",
-    "Separation of the viral genome from the outer viral structures",
-    "Attachment of the virus to the host receptor",
-    "Release of mature virions from the cell"
-  ],
-  "correctAnswer": "B"
-},
-{
-  "question": "Where does the process of viral uncoating occur according to the lecture?",
-  "options": [
-    "In the extracellular space",
-    "In the nucleus only",
-    "In the cytoplasm",
-    "Inside the viral envelope"
-  ],
-  "correctAnswer": "C"
-},
-{
-  "question": "What happens to the infectivity of the internalized virus during uncoating?",
-  "options": [
-    "It increases permanently",
-    "It is abolished at this stage",
-    "It becomes independent of the host cell",
-    "It changes into bacterial infectivity"
-  ],
-  "correctAnswer": "B"
-},
-{
-  "question": "Where is the genome of most DNA viruses delivered after uncoating?",
-  "options": [
-    "The cytoplasm",
-    "The plasma membrane",
-    "The nucleus",
-    "The Golgi apparatus"
-  ],
-  "correctAnswer": "C"
-},
-{
-  "question": "Which DNA virus is the exception whose genome remains in the cytoplasm?",
-  "options": [
-    "Herpesvirus",
-    "Poxvirus",
-    "Adenovirus",
-    "Papillomavirus"
-  ],
-  "correctAnswer": "B"
-},
-{
-  "question": "Where does the genome of most RNA viruses remain after uncoating?",
-  "options": [
-    "The nucleus",
-    "The cytoplasm",
-    "The Golgi apparatus",
-    "The extracellular space"
-  ],
-  "correctAnswer": "B"
-},
-{
-  "question": "Which RNA virus group is the exception whose genome is delivered to the nucleus?",
-  "options": [
-    "Retroviruses",
-    "Picornaviruses",
-    "Coronaviruses",
-    "Rotaviruses"
-  ],
-  "correctAnswer": "A"
-},
-{
-  "question": "What is the stage of viral replication in which viral macromolecules are synthesized called?",
-  "options": [
-    "Adsorption phase",
-    "Penetration phase",
-    "Eclipse phase",
-    "Release phase"
-  ],
-  "correctAnswer": "C"
-},
-{
-  "question": "Why is the synthesis stage called the eclipse phase?",
-  "options": [
-    "Because the virus becomes visible under a microscope",
-    "Because no viral particles can be detected inside the infected host cell during this phase",
-    "Because the host cell immediately dies",
-    "Because the virus leaves the host cell"
-  ],
-  "correctAnswer": "B"
-},
-{
-  "question": "What occurs during the eclipse phase?",
-  "options": [
-    "The viral genome is transcribed and translated into proteins required for viral macromolecule synthesis",
-    "The virus attaches to the host receptor",
-    "The mature virus buds from the cell",
-    "The viral envelope is destroyed outside the cell"
-  ],
-  "correctAnswer": "A"
-},
-{
-  "question": "During the regulated gene expression cascade of DNA viruses, what is the primary functional class of viral products synthesized during the early transcription and translation phase?",
-  "options": [
-    "Structural capsomeric proteins and envelope glycoprotein spikes required for virion morphogenesis.",
-    "Non-structural enzymes, regulatory proteins, and replication factors necessary for viral genome replication.",
-    "Fully assembled mature virions ready for immediate exocytic cellular egress.",
-    "Host cell ribosomal subunits and cytoplasmic eukaryotic initiation factors."
-  ],
-  "correctAnswer": "B",
-  "explanation": "Early transcription and translation yield non-structural viral proteins—such as viral polymerases, helicases, and transcriptional regulators—which alter host metabolic pathways and execute genomic replication prior to the expression of late structural proteins.",
-  "subtopic": "Viral Gene Expression and Replication",
-  "optionExplanations": [
-    "Incorrect. Structural capsomers and envelope glycoproteins are encoded during late gene expression following genome replication.",
-    "Correct. Early gene expression produces non-structural regulatory factors and enzymes (e.g., polymerases) required to initiate viral replication.",
-    "Incorrect. Morphogenesis into complete virions requires late structural proteins and occurs after genome replication is complete.",
-    "Incorrect. Ribosomal subunits and initiation factors are host cellular machinery, not viral early gene products."
-  ],
-  "hint": "Think about which proteins are logically required *first* to copy the viral genome versus those needed later to build the outer physical shell."
-},
-{
-  "question": "Which of the following is an example of an early viral protein?",
-  "options": [
-    "A regulatory protein",
-    "A mature envelope lipid",
-    "A host-cell ribosome",
-    "A viral capsid only"
-  ],
-  "correctAnswer": "A"
-},
-{
-  "question": "What is one major event occurring during late transcription and translation?",
-  "options": [
-    "Initial attachment of the virus to the host cell",
-    "Replication of the viral genome",
-    "Destruction of all host receptors",
-    "Viral adsorption"
-  ],
-  "correctAnswer": "B"
-},
-{
-  "question": "In the temporally regulated replication cycle of DNA viruses, which functional class of viral proteins is predominantly translated during the late stage following genomic replication?",
-  "options": [
-    "Non-structural regulatory proteins, such as viral DNA polymerases and early transcriptional activators.",
-    "Structural proteins constituting capsomers, envelope glycoproteins, and virion assembly factors.",
-    "Host cell extracellular matrix proteins required for membrane fluidity.",
-    "Cellular ribosomal RNA molecules and nuclear histones."
-  ],
-  "correctAnswer": "B",
-  "explanation": "Viral gene expression is temporally orchestrated into early and late phases. The early phase encodes non-structural enzymes required for viral genome replication (such as DNA polymerases), whereas the late phase (occurring post-genome replication) encodes structural viral proteins (e.g., capsid proteins, envelope glycoproteins) needed for assembling progeny virions.",
-  "subtopic": "Viral Replication Cycle and Gene Expression",
-  "optionExplanations": [
-    "Incorrect. Non-structural enzymes (like DNA polymerases) are translated during the early phase to prepare for viral genome replication.",
-    "Correct. Late-stage transcription and translation focus on synthesizing structural proteins and assembly factors needed to build new virions.",
-    "Incorrect. Viruses shut down host translation and do not encode or upregulate host extracellular matrix proteins.",
-    "Incorrect. Ribosomal RNAs and histones are host cellular products, not viral proteins synthesized during late translation."
-  ],
-  "hint": "Distinguish between non-structural enzymatic proteins needed *before* replication (early) versus structural proteins needed for virion morphogenesis *after* replication (late)."
-},
-{
-  "question": "What is another term for viral assembly?",
-  "options": [
-    "Viral adsorption",
-    "Viral maturation",
-    "Viral tropism",
-    "Viral penetration"
-  ],
-  "correctAnswer": "B"
-},
-{
-  "question": "What happens during viral assembly?",
-  "options": [
-    "All synthesized viral components irreversibly combine to form mature viral particles",
-    "The virus attaches to a host receptor",
-    "The viral genome is destroyed",
-    "The host cell produces bacterial particles"
-  ],
-  "correctAnswer": "A"
-},
-{
-  "question": "What does functional viral packaging mean?",
-  "options": [
-    "Enclosing the complete viral genome inside its capsid",
-    "Removing the viral genome from the capsid",
-    "Replacing the viral genome with host DNA",
-    "Removing the viral envelope"
-  ],
-  "correctAnswer": "A"
-},
-{
-  "question": "Which set of aberrant physical structures typically arises when aberrant or non-functional viral packaging occurs during assembly?",
-  "options": [
-    "Fully infectious, wild-type progeny virions with enhanced replication kinetics.",
-    "Completely enveloped replication-competent helper viruses.",
-    "Defective interfering particles, pseudoviruses, and empty capsid shells lacking genomic core nucleic acid.",
-    "Obligate cell-wall-synthesizing bacterial spheroplasts."
-  ],
-  "correctAnswer": "C",
-  "explanation": "Non-functional or aberrant packaging during virion assembly leads to assembly errors such as empty capsid shells (coreless capsids), defective interfering particles containing truncated/damaged genomes, or pseudoviruses (capsids encapsidating host cellular nucleic acids or foreign viral genomes instead of the complete viral genome).",
-  "subtopic": "Viral Assembly and Aberrant Packaging",
-  "optionExplanations": [
-    "Incorrect. Aberrant or defective packaging compromises viral infectivity and replication kinetics rather than producing wild-type, highly infectious particles.",
-    "Incorrect. Helper viruses are fully functional intact viruses required to complement replication-defective strains, not defective assembly by-products.",
-    "Correct. Errors in genome packaging yield defective interfering particles, pseudoviruses, and genome-free empty capsids (coreless virions).",
-    "Incorrect. Bacterial spheroplasts are cell-wall-deficient prokaryotes, completely unrelated to eukaryotic viral capsid assembly errors."
-  ],
-  "hint": "Consider the structural and genomic defects that occur when a protein shell fails to correctly encapsidate its intended viral nucleic acid genome."
-},
-{
-  "question": "What is a complete virus?",
-  "options": [
-    "A capsid without nucleic acid",
-    "A virus containing only host chromosome material",
-    "A fully mature virus containing a complete viral genome and capsid, with or without an envelope",
-    "A virus containing an incomplete viral genome"
-  ],
-  "correctAnswer": "C"
-},
-{
-  "question": "What characterizes a defective virus?",
-  "options": [
-    "It contains no nucleic acid",
-    "It contains only host chromosome material",
-    "It contains a complete viral genome and always replicates independently",
-    "It contains an incomplete viral genome and cannot replicate without a helper virus"
-  ],
-  "correctAnswer": "D"
-},
-{
-  "question": "Which virus was given as an example of a defective virus?",
-  "options": [
-    "Hepatitis D virus",
-    "Herpesvirus",
-    "Coronavirus",
-    "Adenovirus"
-  ],
-  "correctAnswer": "A"
-},
-{
-  "question": "Which virus is required as a helper virus for hepatitis D virus replication?",
-  "options": [
-    "Hepatitis A virus",
-    "Hepatitis B virus",
-    "Hepatitis C virus",
-    "Hepatitis E virus"
-  ],
-  "correctAnswer": "B"
-},
-{
-  "question": "What is the process by which a defective virus is formed called?",
-  "options": [
-    "Capsid mispackaging",
-    "Viral budding",
-    "Premature capsid inclusion",
-    "Membrane fusion"
-  ],
-  "correctAnswer": "C"
-},
-{
-  "question": "What is a pseudovirus composed of?",
-  "options": [
-    "A complete viral genome and capsid",
-    "Only viral proteins",
-    "Only a viral envelope",
-    "Part of the host chromosome instead of viral nucleic acid, enclosed by a capsid with or without an envelope"
-  ],
-  "correctAnswer": "D"
-},
-{
-  "question": "Why can a pseudovirus not replicate even in the presence of a helper virus?",
-  "options": [
-    "It contains no viral nucleic acid",
-    "It has no capsid",
-    "It has no envelope",
-    "It cannot enter a host cell"
-  ],
-  "correctAnswer": "A"
-},
-{
-  "question": "What is the process by which a pseudovirus is formed called?",
-  "options": [
-    "Premature capsid inclusion",
-    "Capsid mispackaging",
-    "Viral budding",
-    "Genome replication"
-  ],
-  "correctAnswer": "B"
-},
-{
-  "question": "What is the ability of a coreless virus to infect or replicate?",
-  "options": [
-    "It can infect and replicate normally",
-    "It can infect but cannot replicate",
-    "It can replicate but cannot infect",
-    "It cannot infect or replicate"
-  ],
-  "correctAnswer": "D"
-},
-{
-  "question": "What is the last step of the viral replication cycle?",
-  "options": [
-    "Adsorption",
-    "Uncoating",
-    "Viral release",
-    "Assembly"
-  ],
-  "correctAnswer": "C"
-},
-{
-  "question": "By which two mechanisms can assembled viral particles be released from the infected cell?",
-  "options": [
-    "Fusion and endocytosis",
-    "Cell lysis and budding",
-    "Adsorption and penetration",
-    "Transcription and translation"
-  ],
-  "correctAnswer": "B"
-},
-{
-  "question": "How are non-enveloped (naked) viruses released from the infected cell?",
-  "options": [
-    "Only by budding",
-    "Only by membrane fusion",
-    "Only by cell lysis",
-    "By either budding or cell lysis"
-  ],
-  "correctAnswer": "C"
-},
-{
-  "question": "Under which specific assembly and maturation pathway can an enveloped virus cause host cell lysis during release, rather than budding directly through the outer plasma membrane?",
-  "options": [
-    "When virion morphogenesis and envelope acquisition occur at internal intracellular membranes (e.g., ER/Golgi) prior to exocytic transport or cell destruction.",
-    "When virion maturation occurs strictly via direct plasma membrane budding without intracellular membrane accumulation.",
-    "When viral genome replication relies exclusively on host nuclear DNA repair enzymes.",
-    "When entry occurs via receptor-mediated endocytosis into low-pH endosomal compartments."
-  ],
-  "correctAnswer": "A",
-  "explanation": "Enveloped viruses typically acquire their lipid bilayer by budding through cell membranes. While plasma-membrane budding is non-lytic, viruses that acquire their envelope internally (such as at the endoplasmic reticulum or Golgi membrane, e.g., flaviviruses or herpesviruses during intracellular maturation) accumulate within intracellular vesicles and can ultimately trigger cell destruction/lysis or exocytosis during viral egress.",
-  "subtopic": "Viral Assembly and Release",
-  "optionExplanations": [
-    "Correct. Internal envelope acquisition (at cytoplasmic endomembrane systems) allows mature enveloped virions to accumulate within intracellular compartments prior to release by exocytosis or host lysis.",
-    "Incorrect. Direct plasma membrane budding typically results in non-lytic, continuous virion shedding rather than cell lysis.",
-    "Incorrect. Dependence on host nuclear repair enzymes is a genomic replication trait and does not govern the physical mechanism of envelope acquisition or release.",
-    "Incorrect. Receptor-mediated endocytosis describes the entry/penetration phase, not the exit/release mechanism of progeny virions."
-  ],
-  "hint": "Differentiate between envelope acquisition at the outer cell surface (plasma membrane) versus internal cytoplasmic endomembranes (ER/Golgi)."
-},
-{
-  "question": "When can an enveloped virus be released by cell lysis according to the lecture?",
-  "options": [
-    "When it acquires its envelope in the cytoplasm",
-    "When it has no envelope",
-    "When it contains only host DNA",
-    "When it enters by endocytosis"
-  ],
-  "correctAnswer": "A"
-},
-{
-  "question": "What is viral budding?",
-  "options": [
-    "The first attachment of a virus to a host cell",
-    "A late stage in replication in which nucleocapsids acquire a membrane and are released as enveloped viruses",
-    "The separation of the viral genome from its capsid",
-    "The destruction of the viral genome"
-  ],
-  "correctAnswer": "B"
-},
-{
-  "question": "From where is the membrane acquired during viral budding derived?",
-  "options": [
-    "The viral genome",
-    "The viral capsid",
-    "The host cell membrane",
-    "The host cell DNA"
-  ],
-  "correctAnswer": "C"
-},
-{
-  "question": "Which sequence correctly describes the major steps of viral budding?",
-  "options": [
-    "Genome destruction → capsid removal → cell lysis",
-    "Spike protein acquisition → M protein coating of the membrane's inner side → attraction of the nucleocapsid → envelopment and release",
-    "Adsorption → penetration → uncoating → genome replication",
-    "Capsid formation → genome destruction → endocytosis"
-  ],
-  "correctAnswer": "B"
+      "question": "Why is glycerol added to viral suspensions?",
+      "options": [
+        "To destroy the viral genome",
+        "To prevent bacterial contamination",
+        "To increase viral tropism",
+        "To promote viral replication"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Glycerol is added to viral suspensions to prevent bacterial contamination, as viruses are glycerol resistant.",
+      "subtopic": "Chemical properties",
+      "optionExplanations": [
+        "Incorrect. Glycerol does not destroy the genome.",
+        "Correct. Glycerol prevents bacterial contamination.",
+        "Incorrect. Glycerol does not affect tropism.",
+        "Incorrect. Glycerol does not promote replication."
+      ],
+      "hint": "What is glycerol used for in a lab setting?"
     },
     {
-  "question": "Which cellular membranes can serve as sites for viral budding?",
-  "options": [
-    "Only the plasma membrane",
-    "Only the nuclear membrane",
-    "Only the endoplasmic reticulum",
-    "The plasma membrane, nuclear membrane, endoplasmic reticulum, or Golgi apparatus"
-  ],
-  "correctAnswer": "D"
-},
-{
-  "question": "Which viral component is involved in attracting the nucleocapsid toward the membrane during budding?",
-  "options": [
-    "M protein",
-    "Viral RNA",
-    "Host ribosome",
-    "Capsomer"
-  ],
-  "correctAnswer": "A"
-},
-{
-  "question": "During budding, where does the M protein coat the membrane?",
-  "options": [
-    "The outer surface of the host cell",
-    "The inner side of the membrane",
-    "The viral genome",
-    "The host cell nucleus"
-  ],
-  "correctAnswer": "B"
-},
-{
-  "question": "What happens to the nucleocapsid after it is attracted to the membrane during budding?",
-  "options": [
-    "It is destroyed",
-    "It enters the nucleus",
-    "It becomes enveloped by the membrane and is released as a viral particle",
-    "It loses its genome"
-  ],
-  "correctAnswer": "C"
-},
-{
-  "question": "Which viral particle form contains both a nucleic acid genome and a capsid?",
-  "options": [
-    "Complete virus",
-    "Coreless virus",
-    "Pseudovirus",
-    "Viroid"
-  ],
-  "correctAnswer": "A"
-},
-{
-  "question": "Which viral particle lacks a nucleic acid core?",
-  "options": [
-    "Defective virus",
-    "Coreless virus",
-    "Complete virus",
-    "Pseudovirus"
-  ],
-  "correctAnswer": "B"
-},
-{
-  "question": "Which particle contains part of the host chromosome instead of viral nucleic acid?",
-  "options": [
-    "Complete virus",
-    "Coreless virus",
-    "Pseudovirus",
-    "Defective virus"
-  ],
-  "correctAnswer": "C"
-},
-{
-  "question": "Which particle contains an incomplete viral genome and requires a helper virus for replication?",
-  "options": [
-    "Pseudovirus",
-    "Coreless virus",
-    "Complete virus",
-    "Defective virus"
-  ],
-  "correctAnswer": "D"
-},
-{
-  "question": "Which of the following best distinguishes a defective virus from a pseudovirus?",
-  "options": [
-    "A defective virus contains an incomplete viral genome, whereas a pseudovirus contains part of the host chromosome",
-    "A defective virus has no capsid, whereas a pseudovirus has a capsid",
-    "A defective virus contains host DNA, whereas a pseudovirus contains viral DNA",
-    "There is no difference between them"
-  ],
-  "correctAnswer": "A"
-},
-{
-  "question": "Which of the following best describes a coreless virus?",
-  "options": [
-    "It contains an incomplete viral genome",
-    "It contains host chromosome material",
-    "It consists of a capsid with or without an envelope but lacks a nucleic acid core",
-    "It contains a complete viral genome"
-  ],
-  "correctAnswer": "C"
-},
-{
-  "question": "What is a prion?",
-  "options": [
-    "An infectious RNA molecule",
-    "An infectious protein particle",
-    "A complete virus",
-    "A bacterial toxin"
-  ],
-  "correctAnswer": "B"
-},
-{
-  "question": "Which statement about prions is correct?",
-  "options": [
-    "They contain both DNA and RNA",
-    "They contain RNA but no protein",
-    "They are composed of infectious protein and lack nucleic acid",
-    "They are complete enveloped viruses"
-  ],
-  "correctAnswer": "C"
-},
-{
-  "question": "What is a viroid?",
-  "options": [
-    "A small infectious RNA molecule",
-    "An infectious protein",
-    "A complete virus with a capsid",
-    "A defective DNA virus"
-  ],
-  "correctAnswer": "A"
-},
-{
-  "question": "Which type of nucleic acid is characteristic of viroids?",
-  "options": [
-    "Double-stranded DNA",
-    "Single-stranded RNA",
-    "Double-stranded RNA",
-    "Single-stranded DNA"
-  ],
-  "correctAnswer": "B"
-},
-{
-  "question": "Which major structural component is absent from viroids?",
-  "options": [
-    "RNA",
-    "Nucleic acid",
-    "Capsid",
-    "Genetic material"
-  ],
-  "correctAnswer": "C"
-},
-{
-  "question": "Which statement correctly compares prions and viroids?",
-  "options": [
-    "Both contain DNA",
-    "Prions are infectious proteins, whereas viroids are small infectious RNA molecules",
-    "Prions are RNA molecules, whereas viroids are proteins",
-    "Both are complete viruses"
-  ],
-  "correctAnswer": "B"
-},
-{
-  "question": "Which of the following is NOT considered a complete viral particle?",
-  "options": [
-    "A mature virus containing its complete genome",
-    "A complete enveloped virion",
-    "A coreless virus",
-    "A mature non-enveloped virus containing its genome"
-  ],
-  "correctAnswer": "C"
-},
-{
-  "question": "Which viral replication stage follows uncoating?",
-  "options": [
-    "Viral release",
-    "Synthesis of viral macromolecules",
-    "Adsorption",
-    "Budding"
-  ],
-  "correctAnswer": "B"
-},
-{
-  "question": "Which viral replication stage directly precedes viral release?",
-  "options": [
-    "Assembly",
-    "Adsorption",
-    "Uncoating",
-    "Penetration"
-  ],
-  "correctAnswer": "A"
-   }
+      "question": "What is viral tropism?",
+      "options": [
+        "The ability of a virus to survive drying",
+        "The ability of a virus to form a capsid",
+        "The ability of a virus to specifically infect a particular cell, tissue, or host that supports its replication",
+        "The ability of a virus to resist ultraviolet radiation"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Viral tropism is the ability of a virus to specifically infect a particular cell, tissue, or host that supports its replication.",
+      "subtopic": "Viral tropism",
+      "optionExplanations": [
+        "Incorrect. This describes resistance to drying.",
+        "Incorrect. This describes capsid assembly.",
+        "Correct. This is the definition of viral tropism.",
+        "Incorrect. This describes UV resistance."
+      ],
+      "hint": "It defines the specific cells a virus can infect."
+    },
+    {
+      "question": "Which set of biological determinants directly governs both viral susceptibility and cellular permissiveness to define viral tropism?",
+      "options": [
+        "Host cell wall thickness and ribosomal RNA sedimentation coefficients.",
+        "Viral envelope lipid composition and genomic segment length.",
+        "Capsid icosahedral symmetry and environmental incubation temperature.",
+        "Specific host cell surface receptors and essential intracellular transcription factors."
+      ],
+      "correctAnswer": "D",
+      "explanation": "Viral tropism relies on two key constraints: susceptibility (determined by specific cell-surface receptors and co-receptors that allow entry) and permissiveness (determined by intracellular host factors, such as specific transcription factors, necessary for viral gene expression and replication).",
+      "subtopic": "Viral Tropism",
+      "optionExplanations": [
+        "Incorrect. Animal host cells lack cell walls, and ribosomal sedimentation coefficients are general translational properties unrelated to viral tropism.",
+        "Incorrect. Envelope lipids and segment length affect biophysical stability and genome structure, but do not determine cell-type-specific tropism.",
+        "Incorrect. Capsid symmetry dictates physical geometry, and temperature influences enzymatic kinetics, but neither governs cellular recognition or permissiveness.",
+        "Correct. Surface receptors mediate attachment/entry (susceptibility), while intracellular transcription factors enable replication (permissiveness), jointly defining tropism."
+      ],
+      "hint": "Think about the two phases of infection: host cell entry (susceptibility) and intracellular replication (permissiveness)."
+    },
+    {
+      "question": "Which of the following virus groupings exemplifies an organ- or tissue-system classification scheme based primarily on viral tropism and clinical pathology?",
+      "options": [
+        "Respiratory viruses, enteric/gastrointestinal viruses, dermatotropic viruses, and neurotropic viruses.",
+        "Positive-sense single-stranded RNA viruses, double-stranded RNA viruses, and reverse-transcribing DNA viruses.",
+        "Enveloped helical viruses, non-enveloped icosahedral viruses, and complex symmetry viruses.",
+        "Fastidious viruses, obligate intracellular viruses, and environmental filterable agent viruses."
+      ],
+      "correctAnswer": "A",
+      "explanation": "Classifying viruses according to target organs or anatomical sites of pathology divides them based on tissue tropism and clinical presentation (e.g., respiratory, enteric/gastrointestinal, neurotropic, dermatotropic, or hepatotropic viruses), in contrast to structural, genomic, or Baltimore classification systems.",
+      "subtopic": "Viral Classification and Tropism",
+      "optionExplanations": [
+        "Correct. Grouping by organ system or target site (e.g., neurotropic, dermatotropic, respiratory, enteric) constitutes a pathology- and tropism-based anatomical classification.",
+        "Incorrect. Categorizing by positive/negative-sense ssRNA, dsRNA, or reverse transcription follows the Baltimore classification system based on genome replication strategy.",
+        "Incorrect. Distinguishing between enveloped/non-enveloped and helical/icosahedral arrangements reflects physical and morphological structural classification.",
+        "Incorrect. Terms like obligate intracellular or filterable agents represent historical physiological and microbiological characteristics, not a target-organ system classification."
+      ],
+      "hint": "Distinguish between biological classification based on target tissue/pathology versus structural morphology or genomic replication mechanisms."
+    },
+    {
+      "question": "Why does a virus require the machinery of a host cell for replication?",
+      "options": [
+        "Because viruses contain no genetic material",
+        "Because viruses are metabolically inert",
+        "Because viruses cannot attach to cells",
+        "Because viruses are unable to contain proteins"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Viruses are metabolically inert and rely on host cell machinery for replication.",
+      "subtopic": "Viral replication",
+      "optionExplanations": [
+        "Incorrect. Viruses contain DNA or RNA.",
+        "Correct. Viruses are metabolically inert.",
+        "Incorrect. Viruses can attach to cells.",
+        "Incorrect. Viruses contain proteins."
+      ],
+      "hint": "They lack their own metabolism."
+    },
+    {
+      "question": "Which cellular component provides the protein-synthesizing machinery required for viral replication?",
+      "options": [
+        "Capsids",
+        "Peplomers",
+        "Ribosomes",
+        "Viral envelopes"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Ribosomes provide the protein-synthesizing machinery required for viral replication.",
+      "subtopic": "Viral replication",
+      "optionExplanations": [
+        "Incorrect. Capsids are viral structural proteins.",
+        "Incorrect. Peplomers are viral envelope spikes.",
+        "Correct. Ribosomes are the host cell's protein factories.",
+        "Incorrect. Viral envelopes are lipid membranes."
+      ],
+      "hint": "Which host organelle makes proteins?"
+    },
+    {
+      "question": "Which set of low-molecular-weight biological precursors must be supplied by the host cell metabolic machinery to sustain viral protein synthesis and genomic replication?",
+      "options": [
+        "Intact cellular ribosomes and structural histone octamers.",
+        "Nucleoside triphosphates, amino acids, and tRNA molecules.",
+        "Fatty acyl-CoA esters and complex phospholipid monomers exclusively.",
+        "Pre-assembled viral capsomers and functional envelope glycoproteins."
+      ],
+      "correctAnswer": "B",
+      "explanation": "Because viruses lack independent metabolic pathways and biosynthetic machinery, they depend entirely on host cellular pools of low-molecular-weight building blocks—specifically nucleoside triphosphates (for genome replication) and amino acids charged on host tRNAs (for viral protein translation).",
+      "subtopic": "Viral Replication and Host Cell Machinery",
+      "optionExplanations": [
+        "Incorrect. While viruses utilize host translational machinery, ribosomes and histones are complex macro-assemblies rather than the fundamental small chemical precursors used as building blocks.",
+        "Correct. Nucleoside triphosphates (building blocks for RNA/DNA) and amino acids (building blocks for proteins) are the primary small-molecule precursors provided by the host cell.",
+        "Incorrect. While lipid precursors are required by enveloped viruses for membrane synthesis, replication strictly requires nucleotide and amino acid pools for genomic and proteomic synthesis.",
+        "Incorrect. Capsomers and glycoproteins are viral-encoded structural end-products of translation and assembly, not low-molecular-weight precursor substrates supplied by the host."
+      ],
+      "hint": "Focus on the fundamental building blocks required by polymerase and ribosomal enzymes to synthesize viral nucleic acids and proteins."
+    },
+    {
+      "question": "How does a virus redirect the host cell to produce viral-specific proteins?",
+      "options": [
+        "By destroying all host ribosomes",
+        "Through viral mRNA, which is translated into viral-specific proteins",
+        "By converting ATP into DNA",
+        "Through the viral envelope alone"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Viral mRNA is translated by host ribosomes into viral-specific proteins.",
+      "subtopic": "Viral replication",
+      "optionExplanations": [
+        "Incorrect. Host ribosomes are used, not destroyed.",
+        "Correct. Viral mRNA is translated into viral proteins.",
+        "Incorrect. ATP is not converted to DNA.",
+        "Incorrect. The envelope is not involved in translation."
+      ],
+      "hint": "What molecule carries the genetic message to the ribosome?"
+    },
+    {
+      "question": "Viral mRNA is synthesized by transcription of which viral genomes according to the lecture?",
+      "options": [
+        "Only double-stranded RNA",
+        "Only positive-sense RNA",
+        "DNA or negative-sense RNA",
+        "Only circular DNA"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Viral mRNA is synthesized by transcription of DNA or negative-sense RNA genomes.",
+      "subtopic": "Viral replication",
+      "optionExplanations": [
+        "Incorrect. dsRNA is not the only source.",
+        "Incorrect. Positive-sense RNA is directly translated, not transcribed to mRNA.",
+        "Correct. DNA and negative-sense RNA are transcribed to mRNA.",
+        "Incorrect. Circular DNA is not the only source."
+      ],
+      "hint": "Which genomes need to be transcribed to make mRNA?"
+    },
+    {
+      "question": "Which of the following is a structural viral protein?",
+      "options": [
+        "Reverse transcriptase",
+        "Regulatory protein",
+        "RNA-dependent RNA polymerase",
+        "Capsid protein"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Capsid protein is a structural viral protein.",
+      "subtopic": "Viral proteins",
+      "optionExplanations": [
+        "Incorrect. Reverse transcriptase is a non-structural enzyme.",
+        "Incorrect. Regulatory proteins are non-structural.",
+        "Incorrect. RNA-dependent RNA polymerase is a non-structural enzyme.",
+        "Correct. Capsid protein is structural."
+      ],
+      "hint": "Which protein forms the physical structure of the virus?"
+    },
+    {
+      "question": "Which of the following is a non-structural viral protein?",
+      "options": [
+        "A viral enzymes",
+        "Capsid protein",
+        "Peplomer",
+        "Envelope lipid"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Viral enzymes are non-structural viral proteins.",
+      "subtopic": "Viral proteins",
+      "optionExplanations": [
+        "Correct. Viral enzymes are non-structural.",
+        "Incorrect. Capsid protein is structural.",
+        "Incorrect. Peplomer is a structural envelope protein.",
+        "Incorrect. Envelope lipid is not a protein."
+      ],
+      "hint": "Which of these is a functional protein?"
+    },
+    {
+      "question": "Which enzyme is carried as a virion component by retroviruses?",
+      "options": [
+        "DNA polymerase",
+        "Reverse transcriptase",
+        "Peptidase",
+        "ATP synthase"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Retroviruses carry reverse transcriptase as a virion component.",
+      "subtopic": "Viral proteins",
+      "optionExplanations": [
+        "Incorrect. They carry reverse transcriptase.",
+        "Correct. Reverse transcriptase is carried by retroviruses.",
+        "Incorrect. Peptidase is not the enzyme mentioned.",
+        "Incorrect. ATP synthase is not carried by retroviruses."
+      ],
+      "hint": "Which enzyme converts RNA to DNA?"
+    },
+    {
+      "question": "Which enzyme is carried by negative-sense RNA viruses as a virion component?",
+      "options": [
+        "Reverse transcriptase",
+        "DNA ligase",
+        "RNA-dependent RNA polymerase",
+        "ATP synthase"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Negative-sense RNA viruses carry RNA-dependent RNA polymerase as a virion component.",
+      "subtopic": "Viral proteins",
+      "optionExplanations": [
+        "Incorrect. Reverse transcriptase is carried by retroviruses.",
+        "Incorrect. DNA ligase is not carried by these viruses.",
+        "Correct. RNA-dependent RNA polymerase is carried by negative-sense RNA viruses.",
+        "Incorrect. ATP synthase is not carried by these viruses."
+      ],
+      "hint": "Which enzyme is needed to transcribe negative-sense RNA into positive-sense mRNA?"
+    },
+    {
+      "question": "Which statement about the number of proteins encoded by viruses is correct?",
+      "options": [
+        "All viruses encode exactly the same number of proteins",
+        "Small viruses always encode more proteins than large viruses",
+        "The number of proteins is unrelated to genome size",
+        "Large viruses can produce many proteins because they have larger genomes"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Large viruses can produce many proteins because they have larger genomes.",
+      "subtopic": "Viral proteins",
+      "optionExplanations": [
+        "Incorrect. The number varies greatly.",
+        "Incorrect. Large viruses typically encode more proteins.",
+        "Incorrect. Genome size is directly related to the number of proteins.",
+        "Correct. Larger genomes allow for more protein-coding capacity."
+      ],
+      "hint": "Think about the relationship between genome size and protein number."
+    },
+    {
+      "question": "What is the correct sequence of the six major steps of viral replication?",
+      "options": [
+        "Adsorption → penetration → uncoating → synthesis → assembly → release",
+        "Penetration → adsorption → synthesis → assembly → uncoating → release",
+        "Adsorption → synthesis → penetration → assembly → release → uncoating",
+        "Uncoating → adsorption → penetration → synthesis → release → assembly"
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct sequence is adsorption, penetration, uncoating, synthesis, assembly, and release.",
+      "subtopic": "Viral replication overview",
+      "optionExplanations": [
+        "Correct. This is the correct sequence.",
+        "Incorrect. Penetration follows adsorption.",
+        "Incorrect. Synthesis follows uncoating.",
+        "Incorrect. Uncoating follows penetration."
+      ],
+      "hint": "Start with attachment, end with release."
+    },
+    {
+      "question": "What is viral adsorption?",
+      "options": [
+        "Release of viral particles from the host cell",
+        "Recognition and attachment of the virus to the host cell through viral attachment proteins binding to specific receptors",
+        "Separation of the viral genome from the capsid",
+        "Formation of new viral particles"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Viral adsorption is the recognition and attachment of the virus to the host cell through viral attachment proteins binding to specific receptors.",
+      "subtopic": "Viral replication",
+      "optionExplanations": [
+        "Incorrect. This describes release.",
+        "Correct. This is the definition of adsorption.",
+        "Incorrect. This describes uncoating.",
+        "Incorrect. This describes assembly."
+      ],
+      "hint": "It is the first step of infection."
+    },
+    {
+      "question": "Which of the following cellular structures serves as the specific ligand binding partner for Viral Attachment Proteins (VAPs) during the adsorption phase of infection?",
+      "options": [
+        "Intracellular eukaryotic translation initiation factors (eIFs) within host cytosol.",
+        "Complementary protein, glycoprotein, or glycolipid cell-surface microdomains on the host plasma membrane.",
+        "Host genomic promoter sequences containing canonical TATA-box motifs.",
+        "Transmembrane ATP-binding cassette (ABC) transporter channels."
+      ],
+      "correctAnswer": "Complementary protein, glycoprotein, or glycolipid cell-surface microdomains on the host plasma membrane.",
+      "explanation": "Viral attachment proteins (VAPs), such as hemagglutinin or envelope glycoproteins, specifically recognize and bind to cell-surface receptors (proteins, glycoproteins, or glycolipids) on the host plasma membrane during the initial attachment phase, which determines host range and cellular tropism.",
+      "subtopic": "Viral Adsorption and Attachment",
+      "optionExplanations": [
+        "Incorrect. Translation initiation factors are cytosolic cellular machinery involved in protein synthesis, not surface receptors for viral adsorption.",
+        "Correct. VAPs recognize specific surface molecules—including proteins, carbohydrate moieties of glycoproteins, or glycolipids—to mediate attachment.",
+        "Incorrect. Host genomic promoter sequences are nuclear nucleic acid structures, inaccessible during initial virion attachment at the cell exterior.",
+        "Incorrect. ABC transporters are functional transmembrane pumps and do not serve as general attachment receptors for viral adsorption."
+      ],
+      "hint": "Consider the extracellular surface structures that interact with virion surface proteins prior to entry or membrane fusion."
+    },
+    {
+      "question": "What is the term used for viral penetration by endocytosis?",
+      "options": [
+        "Tropism",
+        "Budding",
+        "Assembly",
+        "Viropexis"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Viropexis is the term used for viral penetration by endocytosis.",
+      "subtopic": "Viral replication",
+      "optionExplanations": [
+        "Incorrect. Tropism is tissue specificity.",
+        "Incorrect. Budding is a release mechanism.",
+        "Incorrect. Assembly is a later step.",
+        "Correct. Viropexis refers to endocytosis."
+      ],
+      "hint": "It is a specific term for endocytic penetration."
+    },
+    {
+      "question": "How do non-enveloped viruses generally enter the host cell?",
+      "options": [
+        "By budding",
+        "By endocytosis",
+        "By nuclear membrane fusion only",
+        "By direct genome injection into the nucleus"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Non-enveloped viruses generally enter the host cell by endocytosis.",
+      "subtopic": "Viral replication",
+      "optionExplanations": [
+        "Incorrect. Budding is a release mechanism.",
+        "Correct. Endocytosis is the primary entry method.",
+        "Incorrect. Nuclear membrane fusion is not the general method.",
+        "Incorrect. Direct injection is not the general method."
+      ],
+      "hint": "They are taken up in vesicles."
+    },
+    {
+      "question": "During endocytosis of a non-enveloped virus, what is formed inside the host cell?",
+      "options": [
+        "A viral envelope",
+        "A new capsid",
+        "An endosomal vesicle",
+        "A viral nucleus"
+      ],
+      "correctAnswer": "C",
+      "explanation": "During endocytosis, an endosomal vesicle is formed inside the host cell.",
+      "subtopic": "Viral replication",
+      "optionExplanations": [
+        "Incorrect. Envelopes are not formed during entry.",
+        "Incorrect. Capsids are not formed during entry.",
+        "Correct. An endosomal vesicle forms.",
+        "Incorrect. Viruses do not have a nucleus."
+      ],
+      "hint": "What vesicle forms during endocytosis?"
+    },
+    {
+      "question": "How can enveloped viruses enter a host cell according to the lecture?",
+      "options": [
+        "Only by endocytosis",
+        "Only by membrane fusion",
+        "Only by direct penetration",
+        "By endocytosis or membrane fusion"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Enveloped viruses can enter by endocytosis or membrane fusion.",
+      "subtopic": "Viral replication",
+      "optionExplanations": [
+        "Incorrect. They can also use membrane fusion.",
+        "Incorrect. They can also use endocytosis.",
+        "Incorrect. They do not use direct penetration.",
+        "Correct. Both endocytosis and membrane fusion are used."
+      ],
+      "hint": "They have two main entry mechanisms."
+    },
+    {
+      "question": "In membrane fusion, what part of an enveloped virus is internalized into the host cell?",
+      "options": [
+        "Only the envelope",
+        "Only the viral spikes",
+        "The nucleocapsid",
+        "Only the matrix protein"
+      ],
+      "correctAnswer": "C",
+      "explanation": "In membrane fusion, the nucleocapsid is internalized into the host cell.",
+      "subtopic": "Viral replication",
+      "optionExplanations": [
+        "Incorrect. The envelope fuses with the membrane.",
+        "Incorrect. The spikes mediate fusion.",
+        "Correct. The nucleocapsid enters the cell.",
+        "Incorrect. The matrix protein is not the only part internalized."
+      ],
+      "hint": "What is the core structure that enters the cell?"
+    },
+    {
+      "question": "What is viral uncoating?",
+      "options": [
+        "Formation of the viral envelope",
+        "Separation of the viral genome from the outer viral structures",
+        "Attachment of the virus to the host receptor",
+        "Release of mature virions from the cell"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Viral uncoating is the separation of the viral genome from the outer viral structures.",
+      "subtopic": "Viral replication",
+      "optionExplanations": [
+        "Incorrect. This is assembly.",
+        "Correct. This is the definition of uncoating.",
+        "Incorrect. This is adsorption.",
+        "Incorrect. This is release."
+      ],
+      "hint": "The genome is released from the capsid."
+    },
+    {
+      "question": "Where does the process of viral uncoating occur according to the lecture?",
+      "options": [
+        "In the extracellular space",
+        "In the nucleus only",
+        "In the cytoplasm",
+        "Inside the viral envelope"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Viral uncoating occurs in the cytoplasm.",
+      "subtopic": "Viral replication",
+      "optionExplanations": [
+        "Incorrect. It occurs inside the cell.",
+        "Incorrect. It occurs in the cytoplasm, not only the nucleus.",
+        "Correct. Uncoating occurs in the cytoplasm.",
+        "Incorrect. The envelope is removed."
+      ],
+      "hint": "Where in the cell does uncoating take place?"
+    },
+    {
+      "question": "What happens to the infectivity of the internalized virus during uncoating?",
+      "options": [
+        "It increases permanently",
+        "It is abolished at this stage",
+        "It becomes independent of the host cell",
+        "It changes into bacterial infectivity"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Infectivity is abolished at the uncoating stage.",
+      "subtopic": "Viral replication",
+      "optionExplanations": [
+        "Incorrect. Infectivity is lost.",
+        "Correct. The virus loses infectivity during uncoating.",
+        "Incorrect. It remains dependent on the host cell.",
+        "Incorrect. It does not change into bacteria."
+      ],
+      "hint": "The virus is no longer infectious as a complete particle."
+    },
+    {
+      "question": "Where is the genome of most DNA viruses delivered after uncoating?",
+      "options": [
+        "The cytoplasm",
+        "The plasma membrane",
+        "The nucleus",
+        "The Golgi apparatus"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The genome of most DNA viruses is delivered to the nucleus after uncoating.",
+      "subtopic": "Viral replication",
+      "optionExplanations": [
+        "Incorrect. Most DNA viruses go to the nucleus.",
+        "Incorrect. The plasma membrane is not the target.",
+        "Correct. Most DNA viruses replicate in the nucleus.",
+        "Incorrect. The Golgi is not the target."
+      ],
+      "hint": "Where does DNA replication occur in eukaryotes?"
+    },
+    {
+      "question": "Which DNA virus is the exception whose genome remains in the cytoplasm?",
+      "options": [
+        "Herpesvirus",
+        "Poxvirus",
+        "Adenovirus",
+        "Papillomavirus"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Poxvirus is the exception whose genome remains in the cytoplasm.",
+      "subtopic": "Viral replication",
+      "optionExplanations": [
+        "Incorrect. Herpesvirus goes to the nucleus.",
+        "Correct. Poxvirus replicates in the cytoplasm.",
+        "Incorrect. Adenovirus goes to the nucleus.",
+        "Incorrect. Papillomavirus goes to the nucleus."
+      ],
+      "hint": "Which DNA virus is known for replicating in the cytoplasm?"
+    },
+    {
+      "question": "Where does the genome of most RNA viruses remain after uncoating?",
+      "options": [
+        "The nucleus",
+        "The cytoplasm",
+        "The Golgi apparatus",
+        "The extracellular space"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The genome of most RNA viruses remains in the cytoplasm after uncoating.",
+      "subtopic": "Viral replication",
+      "optionExplanations": [
+        "Incorrect. Most RNA viruses stay in the cytoplasm.",
+        "Correct. Most RNA viruses replicate in the cytoplasm.",
+        "Incorrect. The Golgi is not the primary site.",
+        "Incorrect. The genome remains inside the cell."
+      ],
+      "hint": "Where do most RNA viruses replicate?"
+    },
+    {
+      "question": "Which RNA virus group is the exception whose genome is delivered to the nucleus?",
+      "options": [
+        "Retroviruses",
+        "Picornaviruses",
+        "Coronaviruses",
+        "Rotaviruses"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Retroviruses are the exception whose genome is delivered to the nucleus.",
+      "subtopic": "Viral replication",
+      "optionExplanations": [
+        "Correct. Retroviruses integrate into the host genome in the nucleus.",
+        "Incorrect. Picornaviruses replicate in the cytoplasm.",
+        "Incorrect. Coronaviruses replicate in the cytoplasm.",
+        "Incorrect. Rotaviruses replicate in the cytoplasm."
+      ],
+      "hint": "Which RNA virus needs to integrate into the host genome?"
+    },
+    {
+      "question": "What is the stage of viral replication in which viral macromolecules are synthesized called?",
+      "options": [
+        "Adsorption phase",
+        "Penetration phase",
+        "Eclipse phase",
+        "Release phase"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The stage of viral replication in which viral macromolecules are synthesized is called the eclipse phase.",
+      "subtopic": "Viral replication",
+      "optionExplanations": [
+        "Incorrect. Adsorption is attachment.",
+        "Incorrect. Penetration is entry.",
+        "Correct. The eclipse phase is the synthesis stage.",
+        "Incorrect. Release is the final stage."
+      ],
+      "hint": "During this phase, no viral particles can be detected."
+    },
+    {
+      "question": "Why is the synthesis stage called the eclipse phase?",
+      "options": [
+        "Because the virus becomes visible under a microscope",
+        "Because no viral particles can be detected inside the infected host cell during this phase",
+        "Because the host cell immediately dies",
+        "Because the virus leaves the host cell"
+      ],
+      "correctAnswer": "B",
+      "explanation": "It is called the eclipse phase because no viral particles can be detected inside the infected host cell during this phase.",
+      "subtopic": "Viral replication",
+      "optionExplanations": [
+        "Incorrect. The virus is not visible.",
+        "Correct. No viral particles are detected.",
+        "Incorrect. The host cell does not immediately die.",
+        "Incorrect. The virus does not leave."
+      ],
+      "hint": "The virus seems to 'disappear' inside the cell."
+    },
+    {
+      "question": "What occurs during the eclipse phase?",
+      "options": [
+        "The viral genome is transcribed and translated into proteins required for viral macromolecule synthesis",
+        "The virus attaches to the host receptor",
+        "The mature virus buds from the cell",
+        "The viral envelope is destroyed outside the cell"
+      ],
+      "correctAnswer": "A",
+      "explanation": "During the eclipse phase, the viral genome is transcribed and translated into proteins required for viral macromolecule synthesis.",
+      "subtopic": "Viral replication",
+      "optionExplanations": [
+        "Correct. Viral macromolecules are synthesized.",
+        "Incorrect. Attachment occurs before the eclipse phase.",
+        "Incorrect. Budding occurs after the eclipse phase.",
+        "Incorrect. The envelope is not destroyed outside the cell."
+      ],
+      "hint": "What is being made during this phase?"
+    },
+    {
+      "question": "During the regulated gene expression cascade of DNA viruses, what is the primary functional class of viral products synthesized during the early transcription and translation phase?",
+      "options": [
+        "Structural capsomeric proteins and envelope glycoprotein spikes required for virion morphogenesis.",
+        "Non-structural enzymes, regulatory proteins, and replication factors necessary for viral genome replication.",
+        "Fully assembled mature virions ready for immediate exocytic cellular egress.",
+        "Host cell ribosomal subunits and cytoplasmic eukaryotic initiation factors."
+      ],
+      "correctAnswer": "B",
+      "explanation": "Early transcription and translation yield non-structural viral proteins—such as viral polymerases, helicases, and transcriptional regulators—which alter host metabolic pathways and execute genomic replication prior to the expression of late structural proteins.",
+      "subtopic": "Viral Gene Expression and Replication",
+      "optionExplanations": [
+        "Incorrect. Structural capsomers and envelope glycoproteins are encoded during late gene expression following genome replication.",
+        "Correct. Early gene expression produces non-structural regulatory factors and enzymes (e.g., polymerases) required to initiate viral replication.",
+        "Incorrect. Morphogenesis into complete virions requires late structural proteins and occurs after genome replication is complete.",
+        "Incorrect. Ribosomal subunits and initiation factors are host cellular machinery, not viral early gene products."
+      ],
+      "hint": "Think about which proteins are logically required *first* to copy the viral genome versus those needed later to build the outer physical shell."
+    },
+    {
+      "question": "Which of the following is an example of an early viral protein?",
+      "options": [
+        "A regulatory protein",
+        "A mature envelope lipid",
+        "A host-cell ribosome",
+        "A viral capsid only"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Regulatory proteins are examples of early viral proteins.",
+      "subtopic": "Viral gene expression",
+      "optionExplanations": [
+        "Correct. Regulatory proteins are early proteins.",
+        "Incorrect. Lipids are not proteins.",
+        "Incorrect. Ribosomes are host structures.",
+        "Incorrect. Capsids are late structural proteins."
+      ],
+      "hint": "Which of these is a non-structural protein made early?"
+    },
+    {
+      "question": "What is one major event occurring during late transcription and translation?",
+      "options": [
+        "Initial attachment of the virus to the host cell",
+        "Replication of the viral genome",
+        "Destruction of all host receptors",
+        "Viral adsorption"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Replication of the viral genome is a major event occurring during late transcription and translation.",
+      "subtopic": "Viral gene expression",
+      "optionExplanations": [
+        "Incorrect. Attachment occurs early.",
+        "Correct. Viral genome replication occurs during the late phase.",
+        "Incorrect. Host receptors are not destroyed.",
+        "Incorrect. Adsorption occurs early."
+      ],
+      "hint": "What major biosynthetic process happens in the late phase?"
+    },
+    {
+      "question": "In the temporally regulated replication cycle of DNA viruses, which functional class of viral proteins is predominantly translated during the late stage following genomic replication?",
+      "options": [
+        "Non-structural regulatory proteins, such as viral DNA polymerases and early transcriptional activators.",
+        "Structural proteins constituting capsomers, envelope glycoproteins, and virion assembly factors.",
+        "Host cell extracellular matrix proteins required for membrane fluidity.",
+        "Cellular ribosomal RNA molecules and nuclear histones."
+      ],
+      "correctAnswer": "B",
+      "explanation": "Viral gene expression is temporally orchestrated into early and late phases. The early phase encodes non-structural enzymes required for viral genome replication (such as DNA polymerases), whereas the late phase (occurring post-genome replication) encodes structural viral proteins (e.g., capsid proteins, envelope glycoproteins) needed for assembling progeny virions.",
+      "subtopic": "Viral Replication Cycle and Gene Expression",
+      "optionExplanations": [
+        "Incorrect. Non-structural enzymes (like DNA polymerases) are translated during the early phase to prepare for viral genome replication.",
+        "Correct. Late-stage transcription and translation focus on synthesizing structural proteins and assembly factors needed to build new virions.",
+        "Incorrect. Viruses shut down host translation and do not encode or upregulate host extracellular matrix proteins.",
+        "Incorrect. Ribosomal RNAs and histones are host cellular products, not viral proteins synthesized during late translation."
+      ],
+      "hint": "Distinguish between non-structural enzymatic proteins needed *before* replication (early) versus structural proteins needed for virion morphogenesis *after* replication (late)."
+    },
+    {
+      "question": "What is another term for viral assembly?",
+      "options": [
+        "Viral adsorption",
+        "Viral maturation",
+        "Viral tropism",
+        "Viral penetration"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Viral maturation is another term for viral assembly.",
+      "subtopic": "Viral replication",
+      "optionExplanations": [
+        "Incorrect. Adsorption is attachment.",
+        "Correct. Maturation is another term for assembly.",
+        "Incorrect. Tropism is tissue specificity.",
+        "Incorrect. Penetration is entry."
+      ],
+      "hint": "It is the stage where components come together."
+    },
+    {
+      "question": "What happens during viral assembly?",
+      "options": [
+        "All synthesized viral components irreversibly combine to form mature viral particles",
+        "The virus attaches to a host receptor",
+        "The viral genome is destroyed",
+        "The host cell produces bacterial particles"
+      ],
+      "correctAnswer": "A",
+      "explanation": "During viral assembly, all synthesized viral components irreversibly combine to form mature viral particles.",
+      "subtopic": "Viral replication",
+      "optionExplanations": [
+        "Correct. Components combine to form virions.",
+        "Incorrect. Attachment occurs early.",
+        "Incorrect. The genome is packaged, not destroyed.",
+        "Incorrect. Host cells do not produce bacteria."
+      ],
+      "hint": "What is being formed during assembly?"
+    },
+    {
+      "question": "What does functional viral packaging mean?",
+      "options": [
+        "Enclosing the complete viral genome inside its capsid",
+        "Removing the viral genome from the capsid",
+        "Replacing the viral genome with host DNA",
+        "Removing the viral envelope"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Functional viral packaging means enclosing the complete viral genome inside its capsid.",
+      "subtopic": "Viral replication",
+      "optionExplanations": [
+        "Correct. The complete genome is packaged.",
+        "Incorrect. The genome is enclosed, not removed.",
+        "Incorrect. Host DNA is not used.",
+        "Incorrect. The envelope is not removed."
+      ],
+      "hint": "What is the goal of packaging?"
+    },
+    {
+      "question": "Which set of aberrant physical structures typically arises when aberrant or non-functional viral packaging occurs during assembly?",
+      "options": [
+        "Fully infectious, wild-type progeny virions with enhanced replication kinetics.",
+        "Completely enveloped replication-competent helper viruses.",
+        "Defective interfering particles, pseudoviruses, and empty capsid shells lacking genomic core nucleic acid.",
+        "Obligate cell-wall-synthesizing bacterial spheroplasts."
+      ],
+      "correctAnswer": "C",
+      "explanation": "Non-functional or aberrant packaging during virion assembly leads to assembly errors such as empty capsid shells (coreless capsids), defective interfering particles containing truncated/damaged genomes, or pseudoviruses (capsids encapsidating host cellular nucleic acids or foreign viral genomes instead of the complete viral genome).",
+      "subtopic": "Viral Assembly and Aberrant Packaging",
+      "optionExplanations": [
+        "Incorrect. Aberrant or defective packaging compromises viral infectivity and replication kinetics rather than producing wild-type, highly infectious particles.",
+        "Incorrect. Helper viruses are fully functional intact viruses required to complement replication-defective strains, not defective assembly by-products.",
+        "Correct. Errors in genome packaging yield defective interfering particles, pseudoviruses, and genome-free empty capsids (coreless virions).",
+        "Incorrect. Bacterial spheroplasts are cell-wall-deficient prokaryotes, completely unrelated to eukaryotic viral capsid assembly errors."
+      ],
+      "hint": "Consider the structural and genomic defects that occur when a protein shell fails to correctly encapsidate its intended viral nucleic acid genome."
+    },
+    {
+      "question": "What is a complete virus?",
+      "options": [
+        "A capsid without nucleic acid",
+        "A virus containing only host chromosome material",
+        "A fully mature virus containing a complete viral genome and capsid, with or without an envelope",
+        "A virus containing an incomplete viral genome"
+      ],
+      "correctAnswer": "C",
+      "explanation": "A complete virus is a fully mature virus containing a complete viral genome and capsid, with or without an envelope.",
+      "subtopic": "Forms of viral particles",
+      "optionExplanations": [
+        "Incorrect. This describes a coreless virus.",
+        "Incorrect. This describes a pseudovirus.",
+        "Correct. This is the definition of a complete virus.",
+        "Incorrect. This describes a defective virus."
+      ],
+      "hint": "It has all necessary components."
+    },
+    {
+      "question": "What characterizes a defective virus?",
+      "options": [
+        "It contains no nucleic acid",
+        "It contains only host chromosome material",
+        "It contains a complete viral genome and always replicates independently",
+        "It contains an incomplete viral genome and cannot replicate without a helper virus"
+      ],
+      "correctAnswer": "D",
+      "explanation": "A defective virus contains an incomplete viral genome and cannot replicate without a helper virus.",
+      "subtopic": "Forms of viral particles",
+      "optionExplanations": [
+        "Incorrect. This describes a coreless virus.",
+        "Incorrect. This describes a pseudovirus.",
+        "Incorrect. Defective viruses cannot replicate independently.",
+        "Correct. This is the definition of a defective virus."
+      ],
+      "hint": "It needs help to replicate."
+    },
+    {
+      "question": "Which virus was given as an example of a defective virus?",
+      "options": [
+        "Hepatitis D virus",
+        "Herpesvirus",
+        "Coronavirus",
+        "Adenovirus"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Hepatitis D virus is an example of a defective virus.",
+      "subtopic": "Forms of viral particles",
+      "optionExplanations": [
+        "Correct. Hepatitis D is a defective virus.",
+        "Incorrect. Herpesvirus is a complete virus.",
+        "Incorrect. Coronavirus is a complete virus.",
+        "Incorrect. Adenovirus is a complete virus."
+      ],
+      "hint": "Which virus requires a helper virus?"
+    },
+    {
+      "question": "Which virus is required as a helper virus for hepatitis D virus replication?",
+      "options": [
+        "Hepatitis A virus",
+        "Hepatitis B virus",
+        "Hepatitis C virus",
+        "Hepatitis E virus"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Hepatitis B virus is required as a helper virus for hepatitis D virus replication.",
+      "subtopic": "Forms of viral particles",
+      "optionExplanations": [
+        "Incorrect. HAV is not the helper.",
+        "Correct. HBV is the helper virus for HDV.",
+        "Incorrect. HCV is not the helper.",
+        "Incorrect. HEV is not the helper."
+      ],
+      "hint": "Which hepatitis virus provides the envelope for HDV?"
+    },
+    {
+      "question": "What is the process by which a defective virus is formed called?",
+      "options": [
+        "Capsid mispackaging",
+        "Viral budding",
+        "Premature capsid inclusion",
+        "Membrane fusion"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Premature capsid inclusion is the process by which a defective virus is formed.",
+      "subtopic": "Forms of viral particles",
+      "optionExplanations": [
+        "Incorrect. Capsid mispackaging forms pseudoviruses.",
+        "Incorrect. Budding is a release mechanism.",
+        "Correct. Premature capsid inclusion forms defective viruses.",
+        "Incorrect. Membrane fusion is an entry mechanism."
+      ],
+      "hint": "It involves premature inclusion of the capsid."
+    },
+    {
+      "question": "What is a pseudovirus composed of?",
+      "options": [
+        "A complete viral genome and capsid",
+        "Only viral proteins",
+        "Only a viral envelope",
+        "Part of the host chromosome instead of viral nucleic acid, enclosed by a capsid with or without an envelope"
+      ],
+      "correctAnswer": "D",
+      "explanation": "A pseudovirus is composed of part of the host chromosome instead of viral nucleic acid, enclosed by a capsid with or without an envelope.",
+      "subtopic": "Forms of viral particles",
+      "optionExplanations": [
+        "Incorrect. It does not have a complete viral genome.",
+        "Incorrect. It contains host nucleic acid.",
+        "Incorrect. It has a capsid.",
+        "Correct. This is the definition of a pseudovirus."
+      ],
+      "hint": "It contains host genetic material instead of viral."
+    },
+    {
+      "question": "Why can a pseudovirus not replicate even in the presence of a helper virus?",
+      "options": [
+        "It contains no viral nucleic acid",
+        "It has no capsid",
+        "It has no envelope",
+        "It cannot enter a host cell"
+      ],
+      "correctAnswer": "A",
+      "explanation": "A pseudovirus cannot replicate even with a helper virus because it contains no viral nucleic acid.",
+      "subtopic": "Forms of viral particles",
+      "optionExplanations": [
+        "Correct. It lacks viral nucleic acid.",
+        "Incorrect. It has a capsid.",
+        "Incorrect. It may or may not have an envelope.",
+        "Incorrect. It can enter host cells."
+      ],
+      "hint": "It lacks the viral genetic material."
+    },
+    {
+      "question": "What is the process by which a pseudovirus is formed called?",
+      "options": [
+        "Premature capsid inclusion",
+        "Capsid mispackaging",
+        "Viral budding",
+        "Genome replication"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Capsid mispackaging is the process by which a pseudovirus is formed.",
+      "subtopic": "Forms of viral particles",
+      "optionExplanations": [
+        "Incorrect. Premature capsid inclusion forms defective viruses.",
+        "Correct. Capsid mispackaging forms pseudoviruses.",
+        "Incorrect. Budding is a release mechanism.",
+        "Incorrect. Genome replication is a synthesis process."
+      ],
+      "hint": "It involves mismatched packaging."
+    },
+    {
+      "question": "What is the ability of a coreless virus to infect or replicate?",
+      "options": [
+        "It can infect and replicate normally",
+        "It can infect but cannot replicate",
+        "It can replicate but cannot infect",
+        "It cannot infect or replicate"
+      ],
+      "correctAnswer": "D",
+      "explanation": "A coreless virus cannot infect or replicate.",
+      "subtopic": "Forms of viral particles",
+      "optionExplanations": [
+        "Incorrect. It cannot infect or replicate.",
+        "Incorrect. It cannot infect.",
+        "Incorrect. It cannot replicate.",
+        "Correct. It lacks nucleic acid and cannot infect or replicate."
+      ],
+      "hint": "It lacks the genome."
+    },
+    {
+      "question": "What is the last step of the viral replication cycle?",
+      "options": [
+        "Adsorption",
+        "Uncoating",
+        "Viral release",
+        "Assembly"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Viral release is the last step of the viral replication cycle.",
+      "subtopic": "Viral replication",
+      "optionExplanations": [
+        "Incorrect. Adsorption is the first step.",
+        "Incorrect. Uncoating is an early step.",
+        "Correct. Release is the final step.",
+        "Incorrect. Assembly is before release."
+      ],
+      "hint": "The virus exits the cell."
+    },
+    {
+      "question": "By which two mechanisms can assembled viral particles be released from the infected cell?",
+      "options": [
+        "Fusion and endocytosis",
+        "Cell lysis and budding",
+        "Adsorption and penetration",
+        "Transcription and translation"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Assembled viral particles can be released by cell lysis and budding.",
+      "subtopic": "Viral replication",
+      "optionExplanations": [
+        "Incorrect. These are entry mechanisms.",
+        "Correct. Lysis and budding are release mechanisms.",
+        "Incorrect. These are early steps.",
+        "Incorrect. These are synthesis processes."
+      ],
+      "hint": "One destroys the cell, the other doesn't."
+    },
+    {
+      "question": "How are non-enveloped (naked) viruses released from the infected cell?",
+      "options": [
+        "Only by budding",
+        "Only by membrane fusion",
+        "Only by cell lysis",
+        "By either budding or cell lysis"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Non-enveloped viruses are released only by cell lysis.",
+      "subtopic": "Viral replication",
+      "optionExplanations": [
+        "Incorrect. They do not bud.",
+        "Incorrect. Membrane fusion is an entry mechanism.",
+        "Correct. They are released by cell lysis.",
+        "Incorrect. They do not bud."
+      ],
+      "hint": "They lack an envelope, so they cannot bud."
+    },
+    {
+      "question": "Under which specific assembly and maturation pathway can an enveloped virus cause host cell lysis during release, rather than budding directly through the outer plasma membrane?",
+      "options": [
+        "When virion morphogenesis and envelope acquisition occur at internal intracellular membranes (e.g., ER/Golgi) prior to exocytic transport or cell destruction.",
+        "When virion maturation occurs strictly via direct plasma membrane budding without intracellular membrane accumulation.",
+        "When viral genome replication relies exclusively on host nuclear DNA repair enzymes.",
+        "When entry occurs via receptor-mediated endocytosis into low-pH endosomal compartments."
+      ],
+      "correctAnswer": "A",
+      "explanation": "Enveloped viruses typically acquire their lipid bilayer by budding through cell membranes. While plasma-membrane budding is non-lytic, viruses that acquire their envelope internally (such as at the endoplasmic reticulum or Golgi membrane, e.g., flaviviruses or herpesviruses during intracellular maturation) accumulate within intracellular vesicles and can ultimately trigger cell destruction/lysis or exocytosis during viral egress.",
+      "subtopic": "Viral Assembly and Release",
+      "optionExplanations": [
+        "Correct. Internal envelope acquisition (at cytoplasmic endomembrane systems) allows mature enveloped virions to accumulate within intracellular compartments prior to release by exocytosis or host lysis.",
+        "Incorrect. Direct plasma membrane budding typically results in non-lytic, continuous virion shedding rather than cell lysis.",
+        "Incorrect. Dependence on host nuclear repair enzymes is a genomic replication trait and does not govern the physical mechanism of envelope acquisition or release.",
+        "Incorrect. Receptor-mediated endocytosis describes the entry/penetration phase, not the exit/release mechanism of progeny virions."
+      ],
+      "hint": "Differentiate between envelope acquisition at the outer cell surface (plasma membrane) versus internal cytoplasmic endomembranes (ER/Golgi)."
+    },
+    {
+      "question": "When can an enveloped virus be released by cell lysis according to the lecture?",
+      "options": [
+        "When it acquires its envelope in the cytoplasm",
+        "When it has no envelope",
+        "When it contains only host DNA",
+        "When it enters by endocytosis"
+      ],
+      "correctAnswer": "A",
+      "explanation": "An enveloped virus can be released by cell lysis when it acquires its envelope in the cytoplasm.",
+      "subtopic": "Viral replication",
+      "optionExplanations": [
+        "Correct. Cytoplasmic envelope acquisition leads to lysis.",
+        "Incorrect. Non-enveloped viruses are released by lysis.",
+        "Incorrect. Host DNA is not relevant here.",
+        "Incorrect. Entry mechanism does not determine release."
+      ],
+      "hint": "Where does the envelope come from in this case?"
+    },
+    {
+      "question": "What is viral budding?",
+      "options": [
+        "The first attachment of a virus to a host cell",
+        "A late stage in replication in which nucleocapsids acquire a membrane and are released as enveloped viruses",
+        "The separation of the viral genome from its capsid",
+        "The destruction of the viral genome"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Viral budding is a late stage in replication in which nucleocapsids acquire a membrane and are released as enveloped viruses.",
+      "subtopic": "Viral replication",
+      "optionExplanations": [
+        "Incorrect. Attachment is early.",
+        "Correct. This is the definition of budding.",
+        "Incorrect. This describes uncoating.",
+        "Incorrect. The genome is not destroyed."
+      ],
+      "hint": "The virus takes a piece of membrane with it."
+    },
+    {
+      "question": "From where is the membrane acquired during viral budding derived?",
+      "options": [
+        "The viral genome",
+        "The viral capsid",
+        "The host cell membrane",
+        "The host cell DNA"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The membrane acquired during viral budding is derived from the host cell membrane.",
+      "subtopic": "Viral replication",
+      "optionExplanations": [
+        "Incorrect. The genome does not provide membranes.",
+        "Incorrect. The capsid is protein.",
+        "Correct. The host cell membrane provides the envelope.",
+        "Incorrect. DNA does not provide membranes."
+      ],
+      "hint": "Where does the lipid envelope come from?"
+    },
+    {
+      "question": "Which sequence correctly describes the major steps of viral budding?",
+      "options": [
+        "Genome destruction → capsid removal → cell lysis",
+        "Spike protein acquisition → M protein coating of the membrane's inner side → attraction of the nucleocapsid → envelopment and release",
+        "Adsorption → penetration → uncoating → genome replication",
+        "Capsid formation → genome destruction → endocytosis"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The major steps of viral budding are spike protein acquisition, M protein coating of the membrane's inner side, attraction of the nucleocapsid, and envelopment and release.",
+      "subtopic": "Viral replication",
+      "optionExplanations": [
+        "Incorrect. This is not the budding process.",
+        "Correct. This is the correct sequence for budding.",
+        "Incorrect. This is the general replication cycle.",
+        "Incorrect. This is not the budding process."
+      ],
+      "hint": "Think about how the virus pushes out of the membrane."
+    },
+    {
+      "question": "Which cellular membranes can serve as sites for viral budding?",
+      "options": [
+        "Only the plasma membrane",
+        "Only the nuclear membrane",
+        "Only the endoplasmic reticulum",
+        "The plasma membrane, nuclear membrane, endoplasmic reticulum, or Golgi apparatus"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Viral budding can occur at the plasma membrane, nuclear membrane, endoplasmic reticulum, or Golgi apparatus.",
+      "subtopic": "Viral replication",
+      "optionExplanations": [
+        "Incorrect. Multiple membranes can be used.",
+        "Incorrect. Multiple membranes can be used.",
+        "Incorrect. Multiple membranes can be used.",
+        "Correct. All these membranes can serve as budding sites."
+      ],
+      "hint": "Multiple organelles can provide membranes."
+    },
+    {
+      "question": "Which viral component is involved in attracting the nucleocapsid toward the membrane during budding?",
+      "options": [
+        "M protein",
+        "Viral RNA",
+        "Host ribosome",
+        "Capsomer"
+      ],
+      "correctAnswer": "A",
+      "explanation": "The M protein is involved in attracting the nucleocapsid toward the membrane during budding.",
+      "subtopic": "Viral replication",
+      "optionExplanations": [
+        "Correct. M protein attracts the nucleocapsid.",
+        "Incorrect. RNA is the genome.",
+        "Incorrect. Ribosomes are host structures.",
+        "Incorrect. Capsomers form the capsid."
+      ],
+      "hint": "Which protein coats the inner membrane?"
+    },
+    {
+      "question": "During budding, where does the M protein coat the membrane?",
+      "options": [
+        "The outer surface of the host cell",
+        "The inner side of the membrane",
+        "The viral genome",
+        "The host cell nucleus"
+      ],
+      "correctAnswer": "B",
+      "explanation": "During budding, the M protein coats the inner side of the membrane.",
+      "subtopic": "Viral replication",
+      "optionExplanations": [
+        "Incorrect. It coats the inner side.",
+        "Correct. M protein coats the inner side of the membrane.",
+        "Incorrect. It does not coat the genome.",
+        "Incorrect. It does not enter the nucleus."
+      ],
+      "hint": "It lines the inside of the cell membrane."
+    },
+    {
+      "question": "What happens to the nucleocapsid after it is attracted to the membrane during budding?",
+      "options": [
+        "It is destroyed",
+        "It enters the nucleus",
+        "It becomes enveloped by the membrane and is released as a viral particle",
+        "It loses its genome"
+      ],
+      "correctAnswer": "C",
+      "explanation": "After being attracted to the membrane, the nucleocapsid becomes enveloped by the membrane and is released as a viral particle.",
+      "subtopic": "Viral replication",
+      "optionExplanations": [
+        "Incorrect. It is not destroyed.",
+        "Incorrect. It does not enter the nucleus.",
+        "Correct. It becomes enveloped and released.",
+        "Incorrect. It retains its genome."
+      ],
+      "hint": "It gets wrapped up and released."
+    },
+    {
+      "question": "Which viral particle form contains both a nucleic acid genome and a capsid?",
+      "options": [
+        "Complete virus",
+        "Coreless virus",
+        "Pseudovirus",
+        "Viroid"
+      ],
+      "correctAnswer": "A",
+      "explanation": "A complete virus contains both a nucleic acid genome and a capsid.",
+      "subtopic": "Forms of viral particles",
+      "optionExplanations": [
+        "Correct. Complete viruses have both.",
+        "Incorrect. Coreless viruses lack nucleic acid.",
+        "Incorrect. Pseudoviruses contain host nucleic acid.",
+        "Incorrect. Viroids lack a capsid."
+      ],
+      "hint": "It is the standard infectious particle."
+    },
+    {
+      "question": "Which viral particle lacks a nucleic acid core?",
+      "options": [
+        "Defective virus",
+        "Coreless virus",
+        "Complete virus",
+        "Pseudovirus"
+      ],
+      "correctAnswer": "B",
+      "explanation": "A coreless virus lacks a nucleic acid core.",
+      "subtopic": "Forms of viral particles",
+      "optionExplanations": [
+        "Incorrect. Defective viruses have an incomplete genome.",
+        "Correct. Coreless viruses lack a core.",
+        "Incorrect. Complete viruses have a core.",
+        "Incorrect. Pseudoviruses have host nucleic acid."
+      ],
+      "hint": "It is empty inside."
+    },
+    {
+      "question": "Which particle contains part of the host chromosome instead of viral nucleic acid?",
+      "options": [
+        "Complete virus",
+        "Coreless virus",
+        "Pseudovirus",
+        "Defective virus"
+      ],
+      "correctAnswer": "C",
+      "explanation": "A pseudovirus contains part of the host chromosome instead of viral nucleic acid.",
+      "subtopic": "Forms of viral particles",
+      "optionExplanations": [
+        "Incorrect. Complete viruses have viral nucleic acid.",
+        "Incorrect. Coreless viruses have no nucleic acid.",
+        "Correct. Pseudoviruses contain host nucleic acid.",
+        "Incorrect. Defective viruses have viral nucleic acid."
+      ],
+      "hint": "It is a 'false' virus containing host material."
+    },
+    {
+      "question": "Which particle contains an incomplete viral genome and requires a helper virus for replication?",
+      "options": [
+        "Pseudovirus",
+        "Coreless virus",
+        "Complete virus",
+        "Defective virus"
+      ],
+      "correctAnswer": "D",
+      "explanation": "A defective virus contains an incomplete viral genome and requires a helper virus for replication.",
+      "subtopic": "Forms of viral particles",
+      "optionExplanations": [
+        "Incorrect. Pseudoviruses contain host nucleic acid.",
+        "Incorrect. Coreless viruses have no nucleic acid.",
+        "Incorrect. Complete viruses have complete genomes.",
+        "Correct. Defective viruses need a helper virus."
+      ],
+      "hint": "It needs assistance to replicate."
+    },
+    {
+      "question": "Which of the following best distinguishes a defective virus from a pseudovirus?",
+      "options": [
+        "A defective virus contains an incomplete viral genome, whereas a pseudovirus contains part of the host chromosome",
+        "A defective virus has no capsid, whereas a pseudovirus has a capsid",
+        "A defective virus contains host DNA, whereas a pseudovirus contains viral DNA",
+        "There is no difference between them"
+      ],
+      "correctAnswer": "A",
+      "explanation": "A defective virus contains an incomplete viral genome, whereas a pseudovirus contains part of the host chromosome.",
+      "subtopic": "Forms of viral particles",
+      "optionExplanations": [
+        "Correct. This is the key distinction.",
+        "Incorrect. Both have capsids.",
+        "Incorrect. The reverse is true.",
+        "Incorrect. They are different."
+      ],
+      "hint": "Compare the genetic material inside each."
+    },
+    {
+      "question": "Which of the following best describes a coreless virus?",
+      "options": [
+        "It contains an incomplete viral genome",
+        "It contains host chromosome material",
+        "It consists of a capsid with or without an envelope but lacks a nucleic acid core",
+        "It contains a complete viral genome"
+      ],
+      "correctAnswer": "C",
+      "explanation": "A coreless virus consists of a capsid with or without an envelope but lacks a nucleic acid core.",
+      "subtopic": "Forms of viral particles",
+      "optionExplanations": [
+        "Incorrect. This describes a defective virus.",
+        "Incorrect. This describes a pseudovirus.",
+        "Correct. This is the definition of a coreless virus.",
+        "Incorrect. It lacks a genome."
+      ],
+      "hint": "It is an empty shell."
+    },
+    {
+      "question": "What is a prion?",
+      "options": [
+        "An infectious RNA molecule",
+        "An infectious protein particle",
+        "A complete virus",
+        "A bacterial toxin"
+      ],
+      "correctAnswer": "B",
+      "explanation": "A prion is an infectious protein particle.",
+      "subtopic": "Subviral agents",
+      "optionExplanations": [
+        "Incorrect. Prions are proteins.",
+        "Correct. Prions are infectious proteins.",
+        "Incorrect. Prions are not complete viruses.",
+        "Incorrect. Prions are not toxins."
+      ],
+      "hint": "It is made of protein."
+    },
+    {
+      "question": "Which statement about prions is correct?",
+      "options": [
+        "They contain both DNA and RNA",
+        "They contain RNA but no protein",
+        "They are composed of infectious protein and lack nucleic acid",
+        "They are complete enveloped viruses"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Prions are composed of infectious protein and lack nucleic acid.",
+      "subtopic": "Subviral agents",
+      "optionExplanations": [
+        "Incorrect. They lack nucleic acid.",
+        "Incorrect. They are proteins.",
+        "Correct. They are infectious proteins without nucleic acid.",
+        "Incorrect. They are not complete viruses."
+      ],
+      "hint": "They are protein-only."
+    },
+    {
+      "question": "What is a viroid?",
+      "options": [
+        "A small infectious RNA molecule",
+        "An infectious protein",
+        "A complete virus with a capsid",
+        "A defective DNA virus"
+      ],
+      "correctAnswer": "A",
+      "explanation": "A viroid is a small infectious RNA molecule.",
+      "subtopic": "Subviral agents",
+      "optionExplanations": [
+        "Correct. Viroids are small RNA molecules.",
+        "Incorrect. Prions are proteins.",
+        "Incorrect. Viroids lack a capsid.",
+        "Incorrect. Viroids are RNA."
+      ],
+      "hint": "It is made of RNA."
+    },
+    {
+      "question": "Which type of nucleic acid is characteristic of viroids?",
+      "options": [
+        "Double-stranded DNA",
+        "Single-stranded RNA",
+        "Double-stranded RNA",
+        "Single-stranded DNA"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Viroids are characterized by single-stranded RNA.",
+      "subtopic": "Subviral agents",
+      "optionExplanations": [
+        "Incorrect. Viroids are RNA.",
+        "Correct. Viroids are single-stranded RNA.",
+        "Incorrect. Viroids are single-stranded.",
+        "Incorrect. Viroids are RNA."
+      ],
+      "hint": "They are small RNA molecules."
+    },
+    {
+      "question": "Which major structural component is absent from viroids?",
+      "options": [
+        "RNA",
+        "Nucleic acid",
+        "Capsid",
+        "Genetic material"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Viroids lack a capsid.",
+      "subtopic": "Subviral agents",
+      "optionExplanations": [
+        "Incorrect. They have RNA.",
+        "Incorrect. They have nucleic acid.",
+        "Correct. Viroids lack a capsid.",
+        "Incorrect. They have genetic material."
+      ],
+      "hint": "They are naked RNA."
+    },
+    {
+      "question": "Which statement correctly compares prions and viroids?",
+      "options": [
+        "Both contain DNA",
+        "Prions are infectious proteins, whereas viroids are small infectious RNA molecules",
+        "Prions are RNA molecules, whereas viroids are proteins",
+        "Both are complete viruses"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Prions are infectious proteins, whereas viroids are small infectious RNA molecules.",
+      "subtopic": "Subviral agents",
+      "optionExplanations": [
+        "Incorrect. Neither contains DNA.",
+        "Correct. This correctly compares them.",
+        "Incorrect. The reverse is true.",
+        "Incorrect. Neither is a complete virus."
+      ],
+      "hint": "One is protein, the other is RNA."
+    },
+    {
+      "question": "Which of the following is NOT considered a complete viral particle?",
+      "options": [
+        "A mature virus containing its complete genome",
+        "A complete enveloped virion",
+        "A coreless virus",
+        "A mature non-enveloped virus containing its genome"
+      ],
+      "correctAnswer": "C",
+      "explanation": "A coreless virus is not considered a complete viral particle because it lacks a nucleic acid core.",
+      "subtopic": "Forms of viral particles",
+      "optionExplanations": [
+        "Incorrect. This is a complete virus.",
+        "Incorrect. This is a complete virus.",
+        "Correct. Coreless viruses lack a genome.",
+        "Incorrect. This is a complete virus."
+      ],
+      "hint": "Which one is missing its genetic material?"
+    },
+    {
+      "question": "Which viral replication stage follows uncoating?",
+      "options": [
+        "Viral release",
+        "Synthesis of viral macromolecules",
+        "Adsorption",
+        "Budding"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Synthesis of viral macromolecules follows uncoating.",
+      "subtopic": "Viral replication",
+      "optionExplanations": [
+        "Incorrect. Release is the final step.",
+        "Correct. Synthesis follows uncoating.",
+        "Incorrect. Adsorption is the first step.",
+        "Incorrect. Budding is a release mechanism."
+      ],
+      "hint": "What happens after the genome is released?"
+    },
+    {
+      "question": "Which viral replication stage directly precedes viral release?",
+      "options": [
+        "Assembly",
+        "Adsorption",
+        "Uncoating",
+        "Penetration"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Assembly directly precedes viral release.",
+      "subtopic": "Viral replication",
+      "optionExplanations": [
+        "Correct. Assembly is the step before release.",
+        "Incorrect. Adsorption is the first step.",
+        "Incorrect. Uncoating is an early step.",
+        "Incorrect. Penetration is an early step."
+      ],
+      "hint": "What is the step right before the virus exits?"
+    }
   ]
-}
+    }
