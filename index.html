@@ -623,7 +623,10 @@
       state.result = null;
       state.redoQuestions = questionsOverride ? [...questionsOverride] : null;
       const questions = questionsOverride ? [...questionsOverride] : [...state.lecture.questions];
-      if (!questionsOverride && mode === 'exam') shuffle(questions);
+      
+      // RANDOMIZATION FEATURE ADDED: Shuffle questions for all modes (unless it's a redo override)
+      if (!questionsOverride) shuffle(questions);
+      
       state.lecture = { ...state.lecture, activeQuestions: questions };
       state.elapsedSeconds = 0;
       renderExam();
@@ -876,4 +879,4 @@
     loadCourses();
   </script>
 </body>
-</html>
+        </html>
