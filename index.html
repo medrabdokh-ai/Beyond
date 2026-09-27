@@ -8,8 +8,6 @@
   <title>Beyond The Imagination | Pharmacy Exam Platform</title>
   <link rel="icon" type="image/png" href="./usc-fop-logo.png" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
   <script>
     tailwind.config = {
       theme: {
@@ -23,8 +21,7 @@
             softblue: '#E0F2FE'
           },
           fontFamily: {
-            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-            display: ['Plus Jakarta Sans', 'Inter', 'sans-serif']
+            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif']
           }
         }
       }
@@ -36,148 +33,110 @@
     .focus-ring:focus-visible, button:focus-visible, a:focus-visible, input:focus-visible {
       outline: 3px solid rgba(14,165,233,.45); outline-offset: 3px;
     }
-
-    /* === Aurora Background === */
-    .aurora-bg {
-      position: absolute; inset: 0; overflow: hidden; z-index: -1;
-      background: radial-gradient(ellipse 80% 50% at 20% -20%, rgba(120,119,198,0.15), transparent),
-                  radial-gradient(ellipse 80% 50% at 80% -20%, rgba(14,165,233,0.15), transparent),
-                  radial-gradient(ellipse 80% 50% at 50% 120%, rgba(30,64,175,0.08), transparent);
-    }
-    .gradient-orb {
-      position: absolute; border-radius: 50%; filter: blur(60px); opacity: .5;
-      animation: orbFloat 20s ease-in-out infinite alternate;
-    }
-    @keyframes orbFloat {
-      0% { transform: translate(0,0) scale(1); }
-      100% { transform: translate(30px,-30px) scale(1.1); }
-    }
-
-    /* === Enhanced Blob === */
-    .blob { animation: floatBlob 8s ease-in-out infinite alternate; transform-origin: center; }
-    @keyframes floatBlob { from { transform: translate(0,0) rotate(-1deg) scale(1); } to { transform: translate(12px,-10px) rotate(1deg) scale(1.02); } }
-
-    /* === Accent Stroke === */
-    .accent-stroke { stroke-dasharray: 280; stroke-dashoffset: 280; animation: draw 1.2s ease-out .8s forwards; }
+    .accent-stroke { stroke-dasharray: 280; stroke-dashoffset: 280; animation: draw 1s ease-out .35s forwards; }
     @keyframes draw { to { stroke-dashoffset: 0; } }
-
-    /* === Scroll Reveal === */
-    .reveal { opacity: 0; transform: translateY(24px); transition: all .7s cubic-bezier(.16,1,.3,1); }
-    .reveal.active { opacity: 1; transform: translateY(0); }
-    .reveal-delay-1 { transition-delay: .1s; }
-    .reveal-delay-2 { transition-delay: .2s; }
-    .reveal-delay-3 { transition-delay: .3s; }
-
-    /* === Shimmer Button === */
-    .shimmer-btn { position: relative; overflow: hidden; isolation: isolate; }
-    .shimmer-btn::before {
-      content: ''; position: absolute; inset: 0;
-      background: linear-gradient(110deg, transparent 30%, rgba(255,255,255,.25) 50%, transparent 70%);
-      transform: translateX(-100%); transition: transform .6s ease;
-    }
-    .shimmer-btn:hover::before { transform: translateX(100%); }
-    .shimmer-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 25px -10px rgba(30,64,175,.5); }
-    .shimmer-btn:active { transform: translateY(0) scale(.98); }
-
-    /* === Glass & Hover Cards === */
-    .glass-card {
-      background: rgba(255,255,255,.8); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
-      border: 1px solid rgba(255,255,255,.6);
-    }
-    .hover-lift { transition: all .3s cubic-bezier(.4,0,.2,1); }
-    .hover-lift:hover { transform: translateY(-4px); box-shadow: 0 20px 40px -15px rgba(15,23,42,.15); }
-
-    /* === Nav Link Underline === */
-    .nav-link { position: relative; }
-    .nav-link::after {
-      content: ''; position: absolute; left: 50%; bottom: -2px; width: 0; height: 2px;
-      background: #1E40AF; border-radius: 999px; transition: all .3s ease; transform: translateX(-50%);
-    }
-    .nav-link:hover::after, .nav-link.text-royal::after { width: 70%; }
-
-    /* === Header Scroll Effect === */
-    header.scrolled { box-shadow: 0 1px 0 rgba(15,23,42,.06), 0 8px 24px rgba(15,23,42,.06); }
-
+    .blob { animation: floatBlob 10s ease-in-out infinite alternate; transform-origin: center; }
+    @keyframes floatBlob { from { transform: translate(0,0) rotate(-2deg); } to { transform: translate(10px,-8px) rotate(2deg); } }
     .thin-scrollbar::-webkit-scrollbar { width: 8px; }
     .thin-scrollbar::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 999px; }
-    .modal-backdrop { background: rgba(15, 23, 42, .62); backdrop-filter: blur(8px); }
+    .modal-backdrop { background: rgba(15, 23, 42, .62); }
     .safe-bottom { padding-bottom: max(1rem, env(safe-area-inset-bottom)); }
 
+    /* === Accordion animation === */
     .accordion-region {
-      display: grid; grid-template-rows: 0fr;
-      transition: grid-template-rows .4s cubic-bezier(.4,0,.2,1), opacity .3s ease; opacity: 0;
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows .35s cubic-bezier(.4,0,.2,1), opacity .25s ease;
+      opacity: 0;
     }
-    .accordion-region > .accordion-inner { overflow: hidden; min-height: 0; }
-    .accordion-region.open { grid-template-rows: 1fr; opacity: 1; }
+    .accordion-region > .accordion-inner {
+      overflow: hidden;
+      min-height: 0;
+    }
+    .accordion-region.open {
+      grid-template-rows: 1fr;
+      opacity: 1;
+    }
 
-    @keyframes slideInUp { from { opacity: 0; transform: translateY(12px) scale(.98); } to { opacity: 1; transform: translateY(0) scale(1); } }
-    .lecture-item { animation: slideInUp .4s cubic-bezier(.16,1,.3,1) backwards; }
+    /* === Lecture items stagger === */
+    @keyframes slideInUp {
+      from { opacity: 0; transform: translateY(8px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .lecture-item {
+      animation: slideInUp .35s ease-out backwards;
+    }
 
-    .option-btn { transition: all .2s cubic-bezier(.4,0,.2,1); }
-    .option-btn:not(:disabled):hover { transform: translateX(4px) scale(1.01); }
-    .option-btn:not(:disabled):active { transform: scale(.99); }
-    @keyframes pulseGlow { 0% { box-shadow: 0 0 0 0 rgba(16,185,129,.5); } 70% { box-shadow: 0 0 0 14px rgba(16,185,129,0); } 100% { box-shadow: 0 0 0 0 rgba(16,185,129,0); } }
-    .option-btn.correct-revealed { animation: pulseGlow .7s ease-out; }
-
-    @keyframes floatBadge { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
-    .float-badge { animation: floatBadge 3s ease-in-out infinite; }
+    /* === Option buttons === */
+    .option-btn {
+      transition: transform .15s ease, border-color .15s ease, background-color .15s ease;
+    }
+    .option-btn:not(:disabled):hover {
+      transform: translateX(4px);
+    }
+    .option-btn:not(:disabled):active {
+      transform: scale(.99);
+    }
+    @keyframes pulseGlow {
+      0%   { box-shadow: 0 0 0 0 rgba(16,185,129,.55); }
+      70%  { box-shadow: 0 0 0 12px rgba(16,185,129,0); }
+      100% { box-shadow: 0 0 0 0 rgba(16,185,129,0); }
+    }
+    .option-btn.correct-revealed {
+      animation: pulseGlow .7s ease-out;
+    }
 
     @media (prefers-reduced-motion: reduce) {
       *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; scroll-behavior: auto !important; }
     }
   </style>
 </head>
-<body class="bg-white text-ink antialiased overflow-x-hidden">
+<body class="bg-white text-ink antialiased">
   <a href="#main" class="sr-only focus:not-sr-only focus-ring fixed left-4 top-4 z-[100] rounded-lg bg-ink px-4 py-3 text-white">Skip to content</a>
 
-  <header id="header" class="sticky top-0 z-40 border-b border-slate-100 bg-white/80 backdrop-blur-xl transition-all duration-300">
+  <header class="sticky top-0 z-40 border-b border-slate-100 bg-white/95 backdrop-blur-sm">
     <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-4 lg:px-8">
-      <a href="#home" class="flex min-w-0 items-center gap-3 focus-ring group" aria-label="Beyond The Imagination home">
-        <div class="relative">
-          <img src="./usc-fop-logo.png" alt="USC FOP logo" class="h-11 w-11 shrink-0 rounded-xl object-cover shadow-sm ring-1 ring-slate-200 group-hover:ring-royal/20 transition-all duration-300 group-hover:scale-105" />
-          <span class="absolute -right-1 -top-1 grid h-3 w-3 place-items-center"><span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75"></span><span class="relative inline-flex h-2 w-2 rounded-full bg-emerald-500"></span></span>
-        </div>
+      <a href="#home" class="flex min-w-0 items-center gap-3 focus-ring" aria-label="Beyond The Imagination home">
+        <img src="./usc-fop-logo.png" alt="USC FOP logo" class="h-11 w-11 shrink-0 rounded-md object-cover" />
         <div class="min-w-0">
           <div class="truncate text-sm font-black leading-tight tracking-tight sm:text-base">Beyond The Imagination</div>
           <div class="truncate text-[11px] font-semibold text-slate-500">Dr.Abdullah Hazem Khalifa</div>
         </div>
       </a>
-      <nav class="hidden items-center gap-1 md:flex" aria-label="Primary navigation">
-        <a class="nav-link focus-ring rounded-full px-4 py-2 text-sm font-semibold text-royal bg-blue-50" href="#home" data-nav="home">Home</a>
-        <a class="nav-link focus-ring rounded-full px-4 py-2 text-sm font-semibold text-slate-500 hover:text-royal hover:bg-slate-50" href="#curriculum" data-nav="curriculum">Curriculum</a>
-        <a class="nav-link focus-ring rounded-full px-4 py-2 text-sm font-semibold text-slate-500 hover:text-royal hover:bg-slate-50" href="#exam-portal" data-nav="exam-portal">Exam Portal</a>
-        <a class="nav-link focus-ring rounded-full px-4 py-2 text-sm font-semibold text-slate-500 hover:text-royal hover:bg-slate-50" href="#about" data-nav="about">About</a>
+
+      <nav class="hidden items-center gap-7 md:flex" aria-label="Primary navigation">
+        <a class="nav-link focus-ring rounded-md px-2 py-1 text-sm font-semibold text-royal" href="#home" data-nav="home">Home</a>
+        <a class="nav-link focus-ring rounded-md px-2 py-1 text-sm font-semibold text-slate-500 hover:text-royal" href="#curriculum" data-nav="curriculum">Curriculum</a>
+        <a class="nav-link focus-ring rounded-md px-2 py-1 text-sm font-semibold text-slate-500 hover:text-royal" href="#exam-portal" data-nav="exam-portal">Exam Portal</a>
+        <a class="nav-link focus-ring rounded-md px-2 py-1 text-sm font-semibold text-slate-500 hover:text-royal" href="#about" data-nav="about">About</a>
       </nav>
+
       <div class="flex items-center gap-2">
         <button id="mobileMenuBtn" type="button" class="focus-ring inline-grid h-10 w-10 place-items-center rounded-full border border-slate-200 text-slate-700 md:hidden" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open navigation">
           <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
         </button>
-        <button id="getStartedBtn" type="button" class="shimmer-btn focus-ring hidden rounded-full bg-royal px-6 py-2.5 text-sm font-bold text-white transition sm:inline-flex">Get Started →</button>
+        <button id="getStartedBtn" type="button" class="focus-ring hidden rounded-full bg-royal px-5 py-2.5 text-sm font-bold text-white transition hover:bg-blue-800 sm:inline-flex">Get Started →</button>
       </div>
     </div>
     <div id="mobileMenu" class="hidden border-t border-slate-100 bg-white px-5 py-4 md:hidden" aria-label="Mobile navigation">
       <div class="flex flex-col gap-2">
-        <a class="rounded-xl px-3 py-2.5 font-semibold text-royal bg-blue-50" href="#home">Home</a>
-        <a class="rounded-xl px-3 py-2.5 font-semibold text-slate-600 hover:bg-slate-50" href="#curriculum">Curriculum</a>
-        <a class="rounded-xl px-3 py-2.5 font-semibold text-slate-600 hover:bg-slate-50" href="#exam-portal">Exam Portal</a>
-        <a class="rounded-xl px-3 py-2.5 font-semibold text-slate-600 hover:bg-slate-50" href="#about">About</a>
+        <a class="rounded-lg px-3 py-2 font-semibold text-royal" href="#home">Home</a>
+        <a class="rounded-lg px-3 py-2 font-semibold text-slate-600" href="#curriculum">Curriculum</a>
+        <a class="rounded-lg px-3 py-2 font-semibold text-slate-600" href="#exam-portal">Exam Portal</a>
+        <a class="rounded-lg px-3 py-2 font-semibold text-slate-600" href="#about">About</a>
       </div>
     </div>
   </header>
 
   <main id="main">
     <section id="home" class="relative overflow-hidden">
-      <div class="aurora-bg"></div>
-      <div class="gradient-orb h-[600px] w-[600px] bg-sky-200 -top-64 -right-64"></div>
-      <div class="gradient-orb h-[500px] w-[500px] bg-blue-200 -bottom-40 -left-40" style="animation-delay: -5s;"></div>
-
       <div class="mx-auto grid max-w-7xl items-center gap-10 px-5 pb-20 pt-14 sm:pt-20 lg:grid-cols-[1.05fr_.95fr] lg:px-8 lg:pb-24 lg:pt-24">
-        <div class="max-w-2xl reveal active">
-          <div class="mb-5 inline-flex items-center gap-2 rounded-full bg-white px-3 py-1.5 text-xs font-extrabold uppercase tracking-[.16em] text-royal shadow-sm ring-1 ring-slate-200">
-            <span class="h-2 w-2 animate-pulse rounded-full bg-emerald-500"></span> Pharmacy • Learn → Practice → Perform
+        <div class="max-w-2xl">
+          <div class="mb-5 inline-flex items-center gap-2 rounded-full bg-blue-50 px-3 py-1.5 text-xs font-extrabold uppercase tracking-[.16em] text-royal">
+            Pharmacy • Learn → Practice → Perform
           </div>
-          <h1 class="font-display text-5xl font-black leading-[1.02] tracking-[-.045em] text-ink sm:text-6xl lg:text-[5.3rem]">
-            Master Pharmacy Exams With <span class="relative inline-block whitespace-nowrap text-royal">Precision
+          <h1 class="text-5xl font-black leading-[1.02] tracking-[-.045em] text-ink sm:text-6xl lg:text-[5.3rem]">
+            Master Pharmacy Exams With <span class="relative inline-block whitespace-nowrap">Precision
               <svg class="pointer-events-none absolute -bottom-4 left-0 h-5 w-full" viewBox="0 0 290 22" fill="none" aria-hidden="true">
                 <path class="accent-stroke" d="M5 14C55 2 90 10 130 12C175 15 215 8 285 7" stroke="#0EA5E9" stroke-width="5" stroke-linecap="round"/>
               </svg>
@@ -187,24 +146,24 @@
             Turn every lecture into a repeatable study loop: build the high-yield foundation, test it with focused questions, then use analytics to target exactly what needs another pass.
           </p>
           <div class="mt-8 flex flex-col gap-3 sm:flex-row">
-            <button id="heroCurriculumBtn" type="button" class="shimmer-btn focus-ring rounded-full bg-royal px-8 py-4 text-sm font-bold text-white shadow-lg shadow-blue-500/20 transition">Explore Curriculum →</button>
-            <a id="heroDemoBtn" href="./demo.html" class="focus-ring group inline-flex items-center justify-center gap-2 rounded-full border-2 border-slate-200 bg-white px-8 py-4 text-sm font-bold text-ink transition hover:border-royal hover:text-royal hover:shadow-lg">Try Demo Exam <span class="transition-transform group-hover:translate-x-1">↗</span></a>
+            <button id="heroCurriculumBtn" type="button" class="focus-ring rounded-full bg-royal px-6 py-3.5 text-sm font-bold text-white shadow-none transition hover:bg-blue-800">Explore Curriculum →</button>
+            <a id="heroDemoBtn" href="./demo.html" class="focus-ring inline-flex items-center justify-center rounded-full border-2 border-slate-200 px-6 py-3.5 text-sm font-bold text-ink transition hover:border-royal hover:text-royal">Try Demo Exam</a>
           </div>
           <div class="mt-10 flex flex-wrap items-center gap-6 text-xs font-bold text-slate-400">
-            <span class="flex items-center gap-1.5"><span class="grid h-5 w-5 place-items-center rounded-full bg-emerald-100 text-emerald-600">✓</span> Keyboard friendly</span>
-            <span class="flex items-center gap-1.5"><span class="grid h-5 w-5 place-items-center rounded-full bg-blue-100 text-royal">✓</span> Instant feedback</span>
-            <span class="flex items-center gap-1.5"><span class="grid h-5 w-5 place-items-center rounded-full bg-amber-100 text-amber-600">✓</span> Performance analytics</span>
+            <span>✓ Keyboard friendly</span>
+            <span>✓ Instant feedback</span>
+            <span>✓ Performance analytics</span>
           </div>
         </div>
 
-        <div class="relative min-h-[390px] sm:min-h-[470px] lg:min-h-[550px] reveal reveal-delay-1" aria-label="Illustration of a pharmacy student preparing for an exam">
+        <div class="relative min-h-[390px] sm:min-h-[470px] lg:min-h-[550px]" aria-label="Illustration of a pharmacy student preparing for an exam">
           <svg class="blob absolute inset-0 h-full w-full" viewBox="0 0 600 540" fill="none" aria-hidden="true">
             <path d="M104 108C168 37 312 12 424 61C533 110 548 237 515 340C482 443 348 514 220 486C90 458 27 340 48 232C63 174 71 145 104 108Z" fill="#E0F2FE"/>
             <path d="M115 122C169 65 277 45 380 67C471 86 515 159 491 221C462 296 373 297 338 366C289 460 160 466 92 385C27 308 54 188 115 122Z" fill="#BAE6FD" opacity=".5"/>
           </svg>
-          <svg class="relative z-10 h-full w-full drop-shadow-xl" viewBox="0 0 600 540" fill="none" role="img" aria-label="Flat vector illustration of a monitor, clipboard, books, and student">
-            <circle cx="492" cy="74" r="20" fill="#EF4444" style="animation: floatBadge 4s ease-in-out infinite"/>
-            <circle cx="103" cy="448" r="27" fill="#1E40AF" style="animation: floatBadge 4s ease-in-out infinite reverse"/>
+          <svg class="relative z-10 h-full w-full" viewBox="0 0 600 540" fill="none" role="img" aria-label="Flat vector illustration of a monitor, clipboard, books, and student">
+            <circle cx="492" cy="74" r="20" fill="#EF4444"/>
+            <circle cx="103" cy="448" r="27" fill="#1E40AF"/>
             <rect x="137" y="128" width="290" height="188" rx="18" fill="white" stroke="#1E40AF" stroke-width="6"/>
             <rect x="166" y="158" width="232" height="124" rx="12" fill="#EFF6FF"/>
             <rect x="186" y="181" width="124" height="14" rx="7" fill="#1E40AF"/>
@@ -239,7 +198,7 @@
             <circle cx="508" cy="388" r="8" fill="#F59E0B"/>
             <circle cx="75" cy="188" r="8" fill="#EF4444"/>
           </svg>
-          <div class="float-badge absolute bottom-3 left-8 z-20 rounded-2xl border border-slate-100 bg-white px-5 py-4 shadow-xl shadow-slate-200/50">
+          <div class="absolute bottom-3 left-8 z-20 rounded-2xl border border-slate-100 bg-white px-5 py-4" style="box-shadow: 0 12px 0 rgba(30,64,175,.08);">
             <div class="text-[10px] font-black uppercase tracking-[.18em] text-slate-400">Study engine</div>
             <div class="mt-1 text-sm font-black text-ink">Understand → Retrieve → Apply</div>
           </div>
@@ -251,14 +210,15 @@
       <div class="pointer-events-none absolute -top-24 -right-24 h-80 w-80 rounded-full bg-sky-100/60 blur-3xl"></div>
       <div class="pointer-events-none absolute -bottom-24 -left-24 h-80 w-80 rounded-full bg-blue-100/50 blur-3xl"></div>
       <div class="relative mx-auto max-w-7xl px-5 lg:px-8">
-        <div class="flex flex-col justify-between gap-5 md:flex-row md:items-end reveal">
+        <div class="flex flex-col justify-between gap-5 md:flex-row md:items-end">
           <div>
-            <div class="inline-flex items-center gap-2 rounded-full bg-sky-100 px-3 py-1 text-xs font-black uppercase tracking-[.18em] text-skyx">Curriculum</div>
-            <h2 class="mt-3 text-3xl font-black tracking-tight sm:text-4xl">Your pharmacy exam map</h2>
+            <div class="text-xs font-black uppercase tracking-[.18em] text-skyx">Curriculum</div>
+            <h2 class="mt-2 text-3xl font-black tracking-tight sm:text-4xl">Your pharmacy exam map</h2>
             <p class="mt-3 max-w-2xl text-slate-500">Open a level, choose a semester, then jump straight into a lecture or a comprehensive exam.</p>
           </div>
           <div class="rounded-full border border-slate-200 bg-white px-4 py-2 text-xs font-bold text-slate-500 shadow-sm" id="curriculumStatus" aria-live="polite">Loading courses…</div>
         </div>
+
         <div id="curriculumAccordion" class="mt-8 space-y-3" aria-label="Pharmacy curriculum"></div>
       </div>
     </section>
@@ -266,53 +226,42 @@
     <section id="exam-portal" class="py-16 lg:py-20">
       <div class="mx-auto max-w-7xl px-5 lg:px-8">
         <div class="grid items-stretch gap-5 lg:grid-cols-[1.25fr_.75fr]">
-          <div class="reveal relative overflow-hidden rounded-[2rem] bg-royal p-7 text-white sm:p-9 hover-lift">
-            <div class="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-white/10 blur-3xl"></div>
-            <div class="absolute -bottom-20 -left-20 h-64 w-64 rounded-full bg-sky-400/20 blur-3xl"></div>
-            <div class="relative">
-              <div class="flex items-start justify-between gap-4">
-                <div>
-                  <div class="inline-flex rounded-full bg-white/15 px-3 py-1 text-xs font-black uppercase tracking-[.18em] text-blue-200 backdrop-blur">Exam Portal</div>
-                  <h2 class="mt-3 text-3xl font-black tracking-tight">Make your next attempt count.</h2>
-                </div>
-                <div class="hidden items-center gap-2 rounded-full bg-white/10 px-3 py-2 text-xs font-bold backdrop-blur sm:flex"><span class="h-2 w-2 animate-pulse rounded-full bg-emerald-400"></span> Live engine</div>
+          <div class="rounded-[2rem] bg-royal p-7 text-white sm:p-9">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <div class="text-xs font-black uppercase tracking-[.18em] text-blue-200">Exam Portal</div>
+                <h2 class="mt-2 text-3xl font-black tracking-tight">Make your next attempt count.</h2>
               </div>
-              <p class="mt-4 max-w-2xl text-sm leading-6 text-blue-100 sm:text-base">Pick a lecture and jump straight in. Answer each question and see the correct answer instantly, then review your weaknesses at the end.</p>
-              <div class="mt-7 grid gap-3 sm:grid-cols-3">
-                <div class="group rounded-2xl bg-white/10 p-4 backdrop-blur transition hover:bg-white/15 hover:-translate-y-1"><div class="text-xl font-black">01</div><div class="mt-1 text-xs font-bold text-blue-100">Answer sequentially</div></div>
-                <div class="group rounded-2xl bg-white/10 p-4 backdrop-blur transition hover:bg-white/15 hover:-translate-y-1"><div class="text-xl font-black">02</div><div class="mt-1 text-xs font-bold text-blue-100">Instant feedback</div></div>
-                <div class="group rounded-2xl bg-white/10 p-4 backdrop-blur transition hover:bg-white/15 hover:-translate-y-1"><div class="text-xl font-black">03</div><div class="mt-1 text-xs font-bold text-blue-100">Review weaknesses</div></div>
-              </div>
+              <div class="hidden rounded-full bg-white/10 px-3 py-2 text-xs font-bold sm:block">Live engine</div>
+            </div>
+            <p class="mt-4 max-w-2xl text-sm leading-6 text-blue-100 sm:text-base">Pick a lecture and jump straight in. Answer each question and see the correct answer instantly, then review your weaknesses at the end.</p>
+            <div class="mt-7 grid gap-3 sm:grid-cols-3">
+              <div class="rounded-2xl bg-white/10 p-4"><div class="text-xl font-black">01</div><div class="mt-1 text-xs font-bold text-blue-100">Answer sequentially</div></div>
+              <div class="rounded-2xl bg-white/10 p-4"><div class="text-xl font-black">02</div><div class="mt-1 text-xs font-bold text-blue-100">Instant feedback</div></div>
+              <div class="rounded-2xl bg-white/10 p-4"><div class="text-xl font-black">03</div><div class="mt-1 text-xs font-bold text-blue-100">Review weaknesses</div></div>
             </div>
           </div>
-          <div class="reveal reveal-delay-1 rounded-[2rem] border border-slate-200 bg-white p-7 sm:p-9 hover-lift">
-            <div class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-sky-400 to-blue-600 text-white shadow-lg">✦</div>
-            <div class="mt-3 text-xs font-black uppercase tracking-[.18em] text-slate-400">Demo</div>
-            <h3 class="mt-1 text-2xl font-black">Test the interface now.</h3>
+          <div class="rounded-[2rem] border border-slate-200 bg-white p-7 sm:p-9">
+            <div class="text-xs font-black uppercase tracking-[.18em] text-slate-400">Demo</div>
+            <h3 class="mt-2 text-2xl font-black">Test the interface now.</h3>
             <p class="mt-3 text-sm leading-6 text-slate-500">A built-in sample lecture launches the same preparation and assessment pipeline used by the curriculum.</p>
-            <a id="portalDemoBtn" href="./demo.html" class="shimmer-btn focus-ring mt-6 inline-flex w-full items-center justify-center rounded-full bg-skyx px-5 py-3.5 text-sm font-black text-white hover:bg-sky-600 shadow-lg shadow-sky-500/20">Launch Demo Exam →</a>
-            <div class="mt-4 text-center text-xs font-semibold text-slate-400">No account required • Instant start</div>
+            <a id="portalDemoBtn" href="./demo.html" class="focus-ring mt-6 inline-flex w-full items-center justify-center rounded-full bg-skyx px-5 py-3.5 text-sm font-black text-white hover:bg-sky-600">Launch Demo Exam →</a>
+            <div class="mt-4 text-center text-xs font-semibold text-slate-400">No account required</div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- ===== ABOUT ===== -->
     <section id="about" class="relative overflow-hidden border-t border-slate-100 bg-gradient-to-b from-white to-slate-50 py-16 lg:py-20">
       <div class="pointer-events-none absolute -top-24 right-0 h-72 w-72 rounded-full bg-sky-100/50 blur-3xl"></div>
-      <div class="relative mx-auto max-w-4xl px-5 lg:px-8 reveal">
-        <div class="relative overflow-hidden rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm sm:p-12 hover-lift">
-          <div class="absolute right-0 top-0 h-40 w-40 bg-gradient-to-br from-blue-50 to-sky-50 rounded-bl-[2rem] opacity-60"></div>
-          <div class="relative">
-            <div class="inline-flex rounded-full bg-slate-900 px-3 py-1 text-xs font-black uppercase tracking-[.18em] text-white">About</div>
-            <h2 class="mt-3 text-3xl font-black tracking-tight text-ink sm:text-4xl">About Beyond The Imagination</h2>
-            <p class="mt-6 text-base leading-8 text-slate-600 sm:text-lg">
-              This website is completely free designed for the USC students of the pharmacy College for enhancing the learning and self-assessment of the students comprehension and memorizing the lectures so they can get the top marks 😉
-            </p>
-            <div class="mt-6 flex items-center gap-3 text-sm font-bold text-slate-400">
-              <img src="./usc-fop-logo.png" class="h-8 w-8 rounded-lg object-cover ring-1 ring-slate-200" alt="" />
-              Trusted by USC Faculty of Pharmacy
-            </div>
-          </div>
+      <div class="relative mx-auto max-w-4xl px-5 lg:px-8">
+        <div class="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm sm:p-12">
+          <div class="text-xs font-black uppercase tracking-[.18em] text-skyx">About</div>
+          <h2 class="mt-2 text-3xl font-black tracking-tight text-ink sm:text-4xl">About Beyond The Imagination</h2>
+          <p class="mt-6 text-base leading-8 text-slate-600 sm:text-lg">
+            This website is completely free designed for the USC students of the pharmacy College for enhancing the learning and self-assessment of the students comprehension and memorizing the lectures so they can get the top marks 😉
+          </p>
         </div>
       </div>
     </section>
@@ -320,32 +269,614 @@
 
   <footer class="border-t border-slate-100 bg-white py-8">
     <div class="mx-auto flex max-w-7xl flex-col gap-2 px-5 text-xs text-slate-400 sm:flex-row sm:items-center sm:justify-between lg:px-8">
-      <div>© <span id="year"></span> Beyond The Imagination • Crafted with precision</div>
+      <div>© <span id="year"></span> Beyond The Imagination</div>
       <div class="font-semibold">Dr.Abdullah Hazem Khalifa</div>
     </div>
   </footer>
 
+  <!-- Exam / analytics modal -->
   <div id="appModal" class="modal-backdrop fixed inset-0 z-50 hidden p-0 sm:p-4" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-describedby="modalDescription">
     <div class="flex h-full items-end justify-center sm:items-center">
-      <div id="modalPanel" class="flex h-full w-full max-w-5xl flex-col overflow-hidden bg-white sm:h-[92vh] sm:rounded-[2rem] shadow-2xl animate-[slideInUp_.4s_ease]">
+      <div id="modalPanel" class="flex h-full w-full max-w-5xl flex-col overflow-hidden bg-white sm:h-[92vh] sm:rounded-[2rem]">
         <div class="flex shrink-0 items-center justify-between gap-4 border-b border-slate-100 px-5 py-4 sm:px-7">
           <div class="min-w-0">
             <div id="modalKicker" class="text-[10px] font-black uppercase tracking-[.18em] text-royal">Exam</div>
             <h2 id="modalTitle" class="truncate text-lg font-black text-ink sm:text-xl">Lecture</h2>
             <p id="modalDescription" class="truncate text-xs font-semibold text-slate-400">Ready</p>
           </div>
-          <button id="modalCloseBtn" type="button" class="focus-ring inline-grid h-10 w-10 shrink-0 place-items-center rounded-full border border-slate-200 text-slate-600 hover:bg-slate-50 hover:rotate-90 transition-all duration-300" aria-label="Close dialog">
+          <button id="modalCloseBtn" type="button" class="focus-ring inline-grid h-10 w-10 shrink-0 place-items-center rounded-full border border-slate-200 text-slate-600 hover:bg-slate-50" aria-label="Close dialog">
             <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
           </button>
         </div>
+
         <div id="modalBody" class="min-h-0 flex-1 overflow-y-auto thin-scrollbar"></div>
       </div>
     </div>
   </div>
 
-  <div id="toast" class="pointer-events-none fixed bottom-6 left-1/2 z-[60] hidden -translate-x-1/2 rounded-full bg-ink px-5 py-3 text-sm font-bold text-white shadow-2xl" role="status" aria-live="polite"></div>
+  <div id="toast" class="pointer-events-none fixed bottom-5 left-1/2 z-[80] hidden -translate-x-1/2 rounded-full bg-ink px-4 py-3 text-xs font-bold text-white" role="status" aria-live="polite"></div>
 
-  <!-- Your existing JavaScript logic goes here -->
+  <script>
+    const state = {
+      courses: null,
+      lecture: null,
+      currentQuestion: 0,
+      answers: [],
+      flagged: new Set(),
+      mode: 'practice',
+      timer: null,
+      elapsedSeconds: 0,
+      result: null,
+      modalScreen: 'exam',
+      previousFocus: null,
+      redoMode: false,
+      redoQuestions: []
+    };
 
+    const $ = (id) => document.getElementById(id);
+    const esc = (value='') => String(value).replace(/[&<>"']/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    const safeId = (value='') => value.replace(/[^a-z0-9_-]/gi, '-').toLowerCase();
+
+    // Subject → icon + accent gradient
+    const SUBJECT_STYLE = {
+      'pharmacology-1':         { icon: '🧬', grad: 'from-violet-100 to-purple-100' },
+      'phytochemistry':         { icon: '🌿', grad: 'from-emerald-100 to-green-100' },
+      'drug-design':            { icon: '💊', grad: 'from-blue-100 to-sky-100' },
+      'pharmaceutics-3':        { icon: '💉', grad: 'from-rose-100 to-pink-100' },
+      'biochemistry-2':         { icon: '⚗️', grad: 'from-amber-100 to-yellow-100' },
+      'parasitology-virology':  { icon: '🦠', grad: 'from-teal-100 to-cyan-100' }
+    };
+    const LEVEL_ACCENTS = ['bg-royal', 'bg-skyx', 'bg-violet-500', 'bg-emerald-500', 'bg-amber-500'];
+
+    function showToast(message) {
+      const el = $('toast');
+      el.textContent = message;
+      el.classList.remove('hidden');
+      clearTimeout(showToast._t);
+      showToast._t = setTimeout(() => el.classList.add('hidden'), 2400);
+    }
+
+    async function loadJSON(path) {
+      const response = await fetch(path, { cache: 'no-store' });
+      if (!response.ok) throw new Error(`Could not load ${path} (${response.status})`);
+      return response.json();
+    }
+
+    function setActiveNav(id) {
+      document.querySelectorAll('.nav-link').forEach((link) => {
+        const active = link.dataset.nav === id;
+        link.classList.toggle('text-royal', active);
+        link.classList.toggle('text-slate-500', !active);
+        link.setAttribute('aria-current', active ? 'page' : 'false');
+      });
+    }
+
+    function initNav() {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => { if (entry.isIntersecting) setActiveNav(entry.target.id); });
+      }, { rootMargin: '-35% 0px -55% 0px', threshold: 0.01 });
+      ['home','curriculum','exam-portal','about'].forEach(id => observer.observe($(id)));
+      document.querySelectorAll('a[href^="#"]').forEach(a => a.addEventListener('click', () => $('mobileMenu').classList.add('hidden')));
+      $('mobileMenuBtn').addEventListener('click', () => {
+        const open = $('mobileMenuBtn').getAttribute('aria-expanded') === 'true';
+        $('mobileMenuBtn').setAttribute('aria-expanded', String(!open));
+        $('mobileMenu').classList.toggle('hidden', open);
+      });
+      $('getStartedBtn').addEventListener('click', () => document.querySelector('#curriculum').scrollIntoView({ behavior: 'smooth' }));
+      $('heroCurriculumBtn').addEventListener('click', () => document.querySelector('#curriculum').scrollIntoView({ behavior: 'smooth' }));
+      $('modalCloseBtn').addEventListener('click', closeModal);
+      document.addEventListener('keydown', handleGlobalKeydown);
+    }
+
+    async function loadCourses() {
+      try {
+        state.courses = await loadJSON('./courses.json');
+        renderCurriculum();
+        $('curriculumStatus').textContent = `${state.courses.levels.length} levels loaded locally`;
+      } catch (error) {
+        console.error(error);
+        $('curriculumStatus').textContent = 'Could not load courses.json';
+        $('curriculumAccordion').innerHTML = `<div class="rounded-2xl border border-red-200 bg-red-50 p-5 text-sm font-semibold text-red-700">The curriculum file could not be loaded. Confirm <code>courses.json</code> is in the same folder as this page.</div>`;
+      }
+    }
+
+    function renderCurriculum() {
+      const wrap = $('curriculumAccordion');
+      wrap.innerHTML = state.courses.levels.map((level, index) => {
+        const levelId = `level-${safeId(level.id || index)}`;
+        const comingSoon = level.status === 'coming_soon';
+        const accent = comingSoon ? 'bg-slate-300' : LEVEL_ACCENTS[index % LEVEL_ACCENTS.length];
+        return `
+          <div class="relative overflow-hidden rounded-2xl border border-slate-200 bg-white transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:border-sky-200">
+            <span class="absolute left-0 top-0 h-full w-1.5 ${accent}"></span>
+            <button type="button" class="focus-ring flex w-full items-center justify-between gap-4 px-5 py-5 pl-6 text-left" aria-expanded="false" aria-controls="${levelId}" data-level-button="${esc(level.id)}">
+              <div class="flex min-w-0 items-center gap-4">
+                <span class="grid h-11 w-11 shrink-0 place-items-center rounded-xl ${comingSoon ? 'bg-slate-100 text-slate-400' : 'bg-gradient-to-br from-blue-50 to-sky-100 text-royal'} text-sm font-black shadow-sm">${esc(level.number)}</span>
+                <span class="min-w-0">
+                  <span class="block text-base font-black">${esc(level.title)}</span>
+                  <span class="block text-xs font-semibold text-slate-400">${comingSoon ? 'Content Coming Soon' : 'Open semesters and subjects'}</span>
+                </span>
+              </div>
+              <svg class="h-5 w-5 shrink-0 text-slate-400 transition-transform duration-300" data-chevron="${levelId}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m7 10 5 5 5-5"/></svg>
+            </button>
+            <div id="${levelId}" class="accordion-region" role="region" aria-label="${esc(level.title)} contents">
+              <div class="accordion-inner">
+                <div class="border-t border-slate-100 px-4 pb-4 pl-5"></div>
+              </div>
+            </div>
+          </div>`;
+      }).join('');
+      wrap.querySelectorAll('[data-level-button]').forEach(btn => btn.addEventListener('click', () => toggleLevel(btn.dataset.levelButton, btn)));
+    }
+
+    function toggleLevel(levelId, button) {
+      const level = state.courses.levels.find(item => String(item.id) === String(levelId));
+      const region = $(`level-${safeId(levelId)}`);
+      const inner = region.querySelector('.accordion-inner > div');
+      const isOpen = region.classList.contains('open');
+
+      document.querySelectorAll('.accordion-region.open').forEach(el => { if (el.id !== region.id) el.classList.remove('open'); });
+      document.querySelectorAll('[data-level-button]').forEach(el => {
+        if (el !== button) {
+          el.setAttribute('aria-expanded','false');
+          const ch = document.querySelector(`[data-chevron="${el.getAttribute('aria-controls')}"]`);
+          if (ch) ch.style.transform = '';
+        }
+      });
+
+      const chevron = document.querySelector(`[data-chevron="${region.id}"]`);
+
+      if (isOpen) {
+        region.classList.remove('open');
+        button.setAttribute('aria-expanded','false');
+        if (chevron) chevron.style.transform = '';
+        return;
+      }
+
+      button.setAttribute('aria-expanded','true');
+      if (chevron) chevron.style.transform = 'rotate(180deg)';
+
+      if (inner.innerHTML === '') {
+        const comingSoon = level.status === 'coming_soon';
+        inner.innerHTML = comingSoon
+          ? `<div class="mt-3 rounded-xl bg-slate-50 p-4 text-sm font-semibold text-slate-500">Content Coming Soon</div>`
+          : renderSemesters(level);
+        if (!comingSoon) bindSemesterAndSubjectControls(inner);
+      }
+
+      requestAnimationFrame(() => region.classList.add('open'));
+    }
+
+    function renderSemesters(level) {
+      return `<div class="space-y-3 pt-3">${(level.semesters || []).map((semester, sIndex) => {
+        const semId = `sem-${safeId(level.id)}-${sIndex}`;
+        const hasSubjects = (semester.subjects || []).length > 0;
+        return `<div class="overflow-hidden rounded-xl border border-slate-100 bg-white/70">
+          <button type="button" class="focus-ring flex w-full items-center justify-between gap-4 px-4 py-4 text-left transition hover:bg-slate-50/60" data-semester-button="${semId}" data-level-id="${esc(level.id)}" data-semester-index="${sIndex}" aria-controls="${semId}" aria-expanded="false">
+            <span class="flex items-center gap-3">
+              <span class="grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-slate-100 text-xs font-black text-slate-500">${sIndex + 1}</span>
+              <span>
+                <span class="block text-sm font-black">${esc(semester.name)}</span>
+                <span class="block text-xs font-semibold text-slate-400">${hasSubjects ? `${semester.subjects.length} subjects` : 'Content Coming Soon'}</span>
+              </span>
+            </span>
+            <svg class="h-4 w-4 text-slate-400 transition-transform duration-300" data-chevron="${semId}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m7 10 5 5 5-5"/></svg>
+          </button>
+          <div id="${semId}" class="accordion-region">
+            <div class="accordion-inner">
+              <div class="px-3 pb-3"></div>
+            </div>
+          </div>
+        </div>`;
+      }).join('')}</div>`;
+    }
+
+    function bindSemesterAndSubjectControls(region) {
+      region.querySelectorAll('[data-semester-button]').forEach(btn => btn.addEventListener('click', () => {
+        const box = $(btn.dataset.semesterButton);
+        const inner = box.querySelector('.accordion-inner > div');
+        const open = box.classList.contains('open');
+        btn.setAttribute('aria-expanded', String(!open));
+        const chevron = document.querySelector(`[data-chevron="${btn.dataset.semesterButton}"]`);
+        if (chevron) chevron.style.transform = open ? '' : 'rotate(180deg)';
+
+        if (!open && inner.innerHTML === '') {
+          const level = state.courses.levels.find(l => String(l.id) === String(btn.dataset.levelId));
+          const semester = level?.semesters?.[Number(btn.dataset.semesterIndex)];
+          inner.innerHTML = renderSubjects(semester);
+          bindSubjectControls(inner);
+        }
+        requestAnimationFrame(() => box.classList.toggle('open', !open));
+      }));
+    }
+
+    function renderSubjects(semester) {
+      if (!semester || !semester.subjects?.length) return `<div class="rounded-lg bg-white p-4 text-sm font-semibold text-slate-500">Content Coming Soon</div>`;
+      return `<div class="grid gap-2">${semester.subjects.map(subject => {
+        const subjId = `subj-${safeId(subject.id)}`;
+        const style = SUBJECT_STYLE[subject.id] || { icon: '📖', grad: 'from-slate-100 to-slate-50' };
+        return `<div class="overflow-hidden rounded-xl border border-slate-200 bg-white transition-all duration-200 hover:border-skyx/60 hover:shadow-md">
+          <button type="button" class="focus-ring group flex w-full items-center justify-between gap-4 px-4 py-4 text-left" data-subject-button="${subjId}" aria-controls="${subjId}" aria-expanded="false">
+            <span class="flex min-w-0 items-center gap-3">
+              <span class="grid h-10 w-10 shrink-0 place-items-center rounded-lg bg-gradient-to-br ${style.grad} text-lg">${style.icon}</span>
+              <span class="min-w-0">
+                <span class="block text-sm font-black transition-colors group-hover:text-royal">${esc(subject.name)}</span>
+                <span class="block text-xs font-semibold text-slate-400">${subject.lectures.length} lecture exams + comprehensive</span>
+              </span>
+            </span>
+            <svg class="h-4 w-4 shrink-0 text-slate-400 transition-transform duration-300" data-chevron="${subjId}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m7 10 5 5 5-5"/></svg>
+          </button>
+          <div id="${subjId}" class="accordion-region">
+            <div class="accordion-inner">
+              <div class="border-t border-slate-100 bg-slate-50/60 px-3 pb-3"></div>
+            </div>
+          </div>
+        </div>`;
+      }).join('')}</div>`;
+    }
+
+    function bindSubjectControls(container) {
+      container.querySelectorAll('[data-subject-button]').forEach(btn => btn.addEventListener('click', () => {
+        const box = $(btn.dataset.subjectButton);
+        const inner = box.querySelector('.accordion-inner > div');
+        const open = box.classList.contains('open');
+        btn.setAttribute('aria-expanded', String(!open));
+        const chevron = document.querySelector(`[data-chevron="${btn.dataset.subjectButton}"]`);
+        if (chevron) chevron.style.transform = open ? '' : 'rotate(180deg)';
+
+        if (!open && inner.innerHTML === '') {
+          const subjectId = btn.dataset.subjectButton.replace(/^subj-/,'');
+          const subject = findSubject(subjectId);
+          inner.innerHTML = renderLectureList(subject);
+          inner.querySelectorAll('[data-lecture]').forEach(link => link.addEventListener('click', () => openLecture(link.dataset.lecture, subject)));
+          const comprehensive = inner.querySelector('[data-comprehensive]');
+          if (comprehensive) comprehensive.addEventListener('click', () => openComprehensive(subject));
+        }
+        requestAnimationFrame(() => box.classList.toggle('open', !open));
+      }));
+    }
+
+    function findSubject(subjectId) {
+      for (const level of state.courses.levels || []) {
+        for (const sem of level.semesters || []) {
+          const found = (sem.subjects || []).find(s => safeId(s.id) === subjectId || safeId(s.name) === subjectId);
+          if (found) return found;
+        }
+      }
+      return null;
+    }
+
+    function renderLectureList(subject) {
+      if (!subject) return `<div class="p-4 text-sm text-red-600">Subject not found.</div>`;
+      return `<div class="space-y-2 pt-3">
+        ${subject.lectures.map((lecture, i) => `<button type="button" class="lecture-item focus-ring group relative flex w-full items-center gap-4 overflow-hidden rounded-xl border border-slate-200 bg-white p-4 text-left transition-all hover:-translate-y-0.5 hover:border-skyx hover:shadow-md" data-lecture="${esc(lecture.file)}" style="animation-delay:${i * 40}ms">
+          <span class="absolute inset-y-0 left-0 w-1 bg-gradient-to-b from-skyx to-royal opacity-0 transition-opacity duration-200 group-hover:opacity-100"></span>
+          <span class="grid h-10 w-10 shrink-0 place-items-center rounded-lg bg-gradient-to-br from-blue-50 to-sky-100 text-sm font-black text-royal">
+            ${String(i+1).padStart(2,'0')}
+          </span>
+          <span class="min-w-0 flex-1">
+            <span class="block truncate text-sm font-black transition-colors group-hover:text-royal">${esc(lecture.title)}</span>
+            <span class="block text-xs font-semibold text-slate-400">Tap to start the exam</span>
+          </span>
+          <span class="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-slate-100 text-slate-500 transition-all duration-200 group-hover:bg-royal group-hover:text-white group-hover:translate-x-1">
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M9 6l6 6-6 6"/></svg>
+          </span>
+        </button>`).join('')}
+        <button type="button" class="focus-ring group mt-2 flex w-full items-center justify-between gap-3 rounded-xl border-2 border-dashed border-royal/30 bg-gradient-to-r from-blue-50 to-sky-50 p-4 text-left transition-all hover:-translate-y-0.5 hover:border-royal hover:shadow-md" data-comprehensive>
+          <span class="flex items-center gap-3">
+            <span class="grid h-10 w-10 shrink-0 place-items-center rounded-lg bg-white text-lg shadow-sm">🏆</span>
+            <span>
+              <span class="block text-sm font-black text-royal">Comprehensive Exam</span>
+              <span class="block text-xs font-semibold text-blue-500">Merge, shuffle, and assess all lecture banks</span>
+            </span>
+          </span>
+          <span class="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-white text-royal shadow-sm transition-transform duration-200 group-hover:translate-x-1">↗</span>
+        </button>
+      </div>`;
+    }
+
+    async function openLecture(file, subject) {
+      state.redoMode = false;
+      state.previousFocus = document.activeElement;
+      openModal();
+      try {
+        const lecture = await loadJSON(`./${file}`);
+        state.lecture = { ...lecture, subjectName: subject.name, subjectId: subject.id };
+        startExam('practice');
+      } catch (error) {
+        console.error(error);
+        renderErrorScreen('Lecture data could not be loaded. Check the JSON file name in courses.json.');
+      }
+    }
+
+    async function openComprehensive(subject) {
+      state.redoMode = false;
+      state.previousFocus = document.activeElement;
+      openModal();
+      try {
+        const banks = await Promise.all(subject.lectures.map(l => loadJSON(`./${l.file}`)));
+        const questions = banks.flatMap(bank => (bank.questions || []).map(q => ({ ...q, lectureTitle: bank.title })));
+        shuffle(questions);
+        const base = banks[0];
+        state.lecture = {
+          id: `comprehensive-${safeId(subject.id)}`,
+          title: `${subject.name} — Comprehensive Exam`,
+          subjectName: subject.name,
+          questions,
+          passMark: base.passMark || 70
+        };
+        startExam('exam');
+      } catch (error) {
+        console.error(error);
+        renderErrorScreen('The comprehensive question bank could not be assembled.');
+      }
+    }
+
+    function shuffle(array) { for (let i=array.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1)); [array[i],array[j]]=[array[j],array[i]];} return array; }
+
+    function startExam(mode='practice', questionsOverride=null) {
+      state.mode = mode;
+      state.modalScreen = 'exam';
+      state.currentQuestion = 0;
+      state.answers = Array((questionsOverride || state.lecture.questions || []).length).fill(null);
+      state.flagged = new Set();
+      state.result = null;
+      state.redoQuestions = questionsOverride ? [...questionsOverride] : null;
+      const questions = questionsOverride ? [...questionsOverride] : [...state.lecture.questions];
+      
+      // RANDOMIZATION FEATURE ADDED: Shuffle questions for all modes (unless it's a redo override)
+      if (!questionsOverride) shuffle(questions);
+      
+      state.lecture = { ...state.lecture, activeQuestions: questions };
+      state.elapsedSeconds = 0;
+      renderExam();
+      startTimer();
+      setTimeout(() => document.querySelector('[data-option]')?.focus(), 50);
+    }
+
+    function startTimer() {
+      stopTimer();
+      state.elapsedSeconds = 0;
+      const timerEl = $('examTimer');
+      if (timerEl) timerEl.textContent = formatTime(state.elapsedSeconds);
+      state.timer = setInterval(() => {
+        state.elapsedSeconds += 1;
+        const el = $('examTimer');
+        if (el) el.textContent = formatTime(state.elapsedSeconds);
+      }, 1000);
+    }
+
+    function stopTimer() { if (state.timer) { clearInterval(state.timer); state.timer = null; } }
+    function formatTime(seconds) { const s=Math.max(0,seconds); return `${String(Math.floor(s/60)).padStart(2,'0')}:${String(s%60).padStart(2,'0')}`; }
+
+    function renderExam() {
+      const qs = state.lecture.activeQuestions || [];
+      const q = qs[state.currentQuestion];
+      const userAnswer = state.answers[state.currentQuestion];
+      const answered = state.mode === 'practice' && userAnswer !== null;
+
+      $('modalKicker').textContent = state.mode === 'exam' ? 'Exam Mode' : 'Practice Mode';
+      $('modalTitle').textContent = state.lecture.title;
+      $('modalDescription').textContent = `${qs.length} questions • ${state.lecture.subjectName || 'Pharmacy'}`;
+
+      $('modalBody').innerHTML = `
+        <div class="flex min-h-0 h-full flex-col">
+          <div class="shrink-0 border-b border-slate-100 px-5 py-4 sm:px-7">
+            <div class="flex flex-wrap items-center justify-between gap-3">
+              <div class="flex items-center gap-3"><span class="rounded-full bg-blue-50 px-3 py-1.5 text-xs font-black text-royal">Q${state.currentQuestion+1} / ${qs.length}</span><span class="text-xs font-bold text-slate-400">${state.mode === 'exam' ? 'Exam Mode' : 'Instant feedback'}</span></div>
+              <div class="flex items-center gap-2">
+                <div id="examTimer" class="rounded-full bg-slate-100 px-4 py-2 font-mono text-sm font-black text-ink" aria-live="off">${formatTime(state.elapsedSeconds)}</div>
+                <button type="button" id="flagBtn" class="focus-ring rounded-full border px-3 py-2 text-xs font-black ${state.flagged.has(state.currentQuestion) ? 'border-warmyellow bg-amber-50 text-warmyellow' : 'border-slate-200 text-slate-500'}" aria-pressed="${state.flagged.has(state.currentQuestion)}">${state.flagged.has(state.currentQuestion) ? '★ Flagged' : '☆ Flag'}</button>
+              </div>
+            </div>
+            <div class="mt-4 h-1.5 overflow-hidden rounded-full bg-slate-100"><div class="h-full rounded-full bg-skyx transition-all" style="width:${((state.currentQuestion+1)/qs.length)*100}%"></div></div>
+          </div>
+
+          <div class="min-h-0 flex-1 overflow-y-auto thin-scrollbar p-5 sm:p-7">
+            <div class="grid gap-7 lg:grid-cols-[1fr_240px]">
+              <div>
+                <div class="text-xs font-black uppercase tracking-[.16em] text-slate-400">Question ${state.currentQuestion+1}</div>
+                <h3 class="mt-3 text-2xl font-black leading-tight text-ink sm:text-3xl">${esc(q.question)}</h3>
+                ${q.image ? `<img src="${esc(q.image)}" alt="" class="mt-5 max-h-64 rounded-2xl border border-slate-200 object-contain"/>` : ''}
+                <div class="mt-6 grid gap-3" role="radiogroup" aria-label="Answer options">
+                  ${q.options.map((opt, i) => {
+                    const letter = String.fromCharCode(65+i);
+                    const isSelected = userAnswer === letter;
+                    const isCorrect = letter === q.correctAnswer;
+                    let cls = 'border-slate-200 bg-white hover:border-blue-200';
+                    let badge = 'bg-slate-100 text-slate-500';
+                    let pulse = '';
+                    if (answered) {
+                      if (isCorrect) { cls = 'border-emerald-500 bg-emerald-50'; badge = 'bg-emerald-500 text-white'; pulse = 'correct-revealed'; }
+                      else if (isSelected) { cls = 'border-red-500 bg-red-50'; badge = 'bg-red-500 text-white'; }
+                      else { cls = 'border-slate-200 bg-white opacity-70'; }
+                    } else if (isSelected) {
+                      cls = 'border-royal bg-blue-50'; badge = 'bg-royal text-white';
+                    }
+                    return `<button type="button" class="option-btn ${pulse} focus-ring flex w-full items-start gap-4 rounded-2xl border-2 ${cls} p-4 text-left" data-option="${letter}" aria-pressed="${isSelected}" ${answered ? 'disabled' : ''}>
+                      <span class="grid h-8 w-8 shrink-0 place-items-center rounded-lg ${badge} text-xs font-black">${letter}</span>
+                      <span class="pt-1 text-sm font-semibold leading-6 text-slate-700">${esc(opt)}</span>
+                      ${answered && isCorrect ? '<span class="ml-auto text-emerald-600 font-black">✓</span>' : ''}
+                      ${answered && isSelected && !isCorrect ? '<span class="ml-auto text-red-600 font-black">✗</span>' : ''}
+                    </button>`;
+                  }).join('')}
+                </div>
+
+                ${answered ? `
+                  <div class="mt-5 rounded-2xl border-2 ${userAnswer === q.correctAnswer ? 'border-emerald-200 bg-emerald-50' : 'border-red-200 bg-red-50'} p-5">
+                    <div class="text-xs font-black uppercase tracking-[.15em] ${userAnswer === q.correctAnswer ? 'text-emerald-700' : 'text-red-700'}">
+                      ${userAnswer === q.correctAnswer ? '✓ Correct' : '✗ Incorrect — the correct answer is ' + q.correctAnswer}
+                    </div>
+                    ${q.explanation ? `<div class="mt-3 text-sm leading-6 text-slate-700"><span class="font-black">Explanation:</span> ${esc(q.explanation)}</div>` : ''}
+                  </div>
+                ` : ''}
+
+                ${state.mode === 'practice' && !answered ? `<div class="mt-5 rounded-2xl border border-slate-200 bg-slate-50 p-4"><button id="hintBtn" type="button" class="focus-ring text-xs font-black text-royal">Need a hint?</button><div id="hintText" class="mt-2 hidden text-sm leading-6 text-slate-600">${esc(q.hint || 'Focus on the mechanism, definition, or discriminating feature described in the stem.')}</div></div>` : ''}
+              </div>
+
+              <aside class="h-max rounded-2xl bg-slate-50 p-4 lg:sticky lg:top-0" aria-label="Question navigator">
+                <div class="flex items-center justify-between"><div class="text-xs font-black uppercase tracking-[.15em] text-slate-400">Navigator</div><div class="text-xs font-bold text-slate-400">${state.flagged.size} flagged</div></div>
+                <div class="mt-3 grid grid-cols-5 gap-2">
+                  ${qs.map((_,i)=>`<button type="button" class="focus-ring aspect-square rounded-lg text-xs font-black transition-all ${i===state.currentQuestion?'bg-royal text-white scale-105 shadow-md':state.answers[i]?'bg-blue-100 text-royal':'bg-white text-slate-500 border border-slate-200 hover:border-skyx'} ${state.flagged.has(i)?'ring-2 ring-warmyellow ring-offset-1':''}" data-qnav="${i}" aria-label="Go to question ${i+1}">${i+1}</button>`).join('')}
+                </div>
+              </aside>
+            </div>
+          </div>
+
+          <div class="safe-bottom shrink-0 border-t border-slate-100 bg-white px-5 py-4 sm:px-7">
+            <div class="flex flex-col-reverse gap-3 sm:flex-row sm:items-center sm:justify-between">
+              <button type="button" id="prevQuestionBtn" class="focus-ring rounded-full border border-slate-200 px-5 py-3 text-sm font-black text-slate-600 transition hover:border-slate-300 disabled:opacity-40" ${state.currentQuestion===0?'disabled':''}>← Previous</button>
+              <div class="flex flex-col gap-2 sm:flex-row">
+                ${state.currentQuestion===qs.length-1 ? `<button type="button" id="submitExamBtn" class="focus-ring rounded-full bg-royal px-6 py-3 text-sm font-black text-white transition hover:bg-blue-800">${state.mode==='exam'?'Submit Exam':'Finish Practice'} →</button>` : `<button type="button" id="nextQuestionBtn" class="focus-ring rounded-full bg-royal px-6 py-3 text-sm font-black text-white transition hover:bg-blue-800">Next Question →</button>`}
+              </div>
+            </div>
+          </div>
+        </div>`;
+
+      $('flagBtn').addEventListener('click', () => { if(state.flagged.has(state.currentQuestion)) state.flagged.delete(state.currentQuestion); else state.flagged.add(state.currentQuestion); renderExam(); });
+      $('modalBody').querySelectorAll('[data-option]').forEach(btn => btn.addEventListener('click', () => chooseAnswer(btn.dataset.option)));
+      $('modalBody').querySelectorAll('[data-qnav]').forEach(btn => btn.addEventListener('click', () => { state.currentQuestion=Number(btn.dataset.qnav); renderExam(); }));
+      $('prevQuestionBtn').addEventListener('click', () => { if(state.currentQuestion>0){state.currentQuestion--;renderExam();} });
+      const next = $('nextQuestionBtn'); if(next) next.addEventListener('click', goNext);
+      const submit = $('submitExamBtn'); if(submit) submit.addEventListener('click', () => submitExam(false));
+      const hint = $('hintBtn'); if(hint) hint.addEventListener('click', () => $('hintText').classList.toggle('hidden'));
+    }
+
+    function chooseAnswer(letter) {
+      if (state.mode === 'practice' && state.answers[state.currentQuestion] !== null) return;
+      state.answers[state.currentQuestion] = letter;
+      renderExam();
+      if (state.mode === 'practice') {
+        const q = state.lecture.activeQuestions[state.currentQuestion];
+        setTimeout(() => {
+          const correct = q.correctAnswer === letter;
+          showToast(correct ? '✓ Correct — strong retrieval.' : `✗ Correct answer: ${q.correctAnswer}`);
+        }, 10);
+      }
+    }
+
+    function goNext() {
+      const qs = state.lecture.activeQuestions || [];
+      if (state.currentQuestion < qs.length - 1) { state.currentQuestion++; renderExam(); }
+    }
+
+    function submitExam(auto=false) {
+      if (!auto) {
+        const unanswered = state.answers.filter(Boolean).length;
+        if (state.mode === 'exam' && unanswered < state.answers.length) {
+          const proceed = confirm(`You have ${state.answers.length-unanswered} unanswered question(s). Submit anyway?`);
+          if (!proceed) return;
+        }
+      }
+      stopTimer();
+      const qs = state.lecture.activeQuestions || [];
+      const results = qs.map((q,i)=>({
+        ...q,
+        userAnswer: state.answers[i],
+        correct: state.answers[i] === q.correctAnswer,
+        flagged: state.flagged.has(i),
+        index: i
+      }));
+      const correctCount = results.filter(r=>r.correct).length;
+      const score = qs.length ? Math.round((correctCount/qs.length)*100) : 0;
+      state.result = { results, correctCount, score, pass: score >= Number(state.lecture.passMark || 70), elapsedSeconds: state.elapsedSeconds };
+      state.modalScreen = 'analytics';
+      renderAnalytics();
+    }
+
+    function renderAnalytics() {
+      const r = state.result;
+      const missed = r.results.filter(x=>!x.correct);
+      const subtopics = {};
+      r.results.forEach(q=>{
+        const key=q.subtopic||'General';
+        if(!subtopics[key]) subtopics[key]={correct:0,total:0};
+        subtopics[key].total++;
+        if(q.correct) subtopics[key].correct++;
+      });
+      $('modalKicker').textContent = 'Post-Exam Analytics';
+      $('modalTitle').textContent = state.lecture.title;
+      $('modalDescription').textContent = `${r.correctCount}/${r.results.length} correct • ${r.score}% • Time: ${formatTime(r.elapsedSeconds)}`;
+      $('modalBody').innerHTML = `<div class="space-y-7 p-5 sm:p-7">
+        <div class="grid gap-4 sm:grid-cols-[180px_1fr]">
+          <div class="grid place-items-center rounded-[2rem] bg-gradient-to-br from-slate-50 to-blue-50 p-7 text-center"><div class="text-5xl font-black tracking-tight text-ink">${r.score}%</div><div class="mt-2 rounded-full px-3 py-1 text-xs font-black ${r.pass?'bg-emerald-100 text-emerald-700':'bg-red-100 text-red-700'}">${r.pass?'PASS':'REVIEW & RETRY'}</div></div>
+          <div class="rounded-[2rem] border border-slate-200 p-6"><div class="text-xs font-black uppercase tracking-[.16em] text-slate-400">Attempt summary</div><div class="mt-4 grid gap-4 sm:grid-cols-3"><div><div class="text-2xl font-black">${r.correctCount}</div><div class="text-xs font-semibold text-slate-400">Correct</div></div><div><div class="text-2xl font-black">${r.results.length-r.correctCount}</div><div class="text-xs font-semibold text-slate-400">Missed</div></div><div><div class="text-2xl font-black">${formatTime(r.elapsedSeconds)}</div><div class="text-xs font-semibold text-slate-400">Time taken</div></div></div></div>
+        </div>
+
+        <section aria-labelledby="weaknessHeading"><div class="flex items-end justify-between gap-3"><div><div class="text-xs font-black uppercase tracking-[.16em] text-skyx">Weakness analytics</div><h3 id="weaknessHeading" class="mt-1 text-xl font-black">Performance by sub-topic</h3></div><div class="text-xs font-bold text-slate-400">Sorted by lowest accuracy</div></div>
+          <div class="mt-4 space-y-3">${Object.entries(subtopics).sort((a,b)=>(a[1].correct/a[1].total)-(b[1].correct/b[1].total)).map(([topic,v])=>{const p=Math.round((v.correct/v.total)*100);return `<div class="rounded-2xl border border-slate-200 p-4 transition hover:shadow-md"><div class="flex items-center justify-between gap-3"><span class="text-sm font-black">${esc(topic)}</span><span class="text-xs font-black text-slate-500">${p}% • ${v.correct}/${v.total}</span></div><div class="mt-3 h-2 rounded-full bg-slate-100"><div class="h-full rounded-full ${p<60?'bg-warmred':p<80?'bg-warmyellow':'bg-royal'}" style="width:${p}%"></div></div></div>`;}).join('')}</div>
+        </section>
+
+        <section aria-labelledby="reviewHeading"><div class="flex flex-wrap items-end justify-between gap-3"><div><div class="text-xs font-black uppercase tracking-[.16em] text-skyx">Question review</div><h3 id="reviewHeading" class="mt-1 text-xl font-black">Why each choice works — or does not</h3></div><button id="redoMissedBtn" type="button" class="focus-ring rounded-full bg-royal px-5 py-3 text-xs font-black text-white transition hover:bg-blue-800 disabled:opacity-40" ${missed.length?'':'disabled'}>Redo Missed Questions →</button></div>
+          <div class="mt-4 space-y-3">${r.results.map((q,i)=>renderReviewCard(q,i)).join('')}</div>
+        </section>
+
+        <div class="flex justify-end gap-3 border-t border-slate-100 pt-5"><button id="closeAnalyticsBtn" type="button" class="focus-ring rounded-full bg-slate-900 px-6 py-3 text-sm font-black text-white transition hover:bg-slate-800">Close</button></div>
+      </div>`;
+      $('redoMissedBtn').addEventListener('click', () => {
+        if (!missed.length) return;
+        state.redoMode=true;
+        startExam('practice', missed);
+      });
+      $('closeAnalyticsBtn').addEventListener('click', closeModal);
+    }
+
+    function renderReviewCard(q,i) {
+      const correctText = q.options?.[q.correctAnswer.charCodeAt(0)-65] || q.correctAnswer;
+      const userText = q.userAnswer ? q.options?.[q.userAnswer.charCodeAt(0)-65] : 'No answer selected';
+      return `<details class="group rounded-2xl border border-slate-200 p-4 transition hover:shadow-sm" ${!q.correct?'open':''}>
+        <summary class="focus-ring cursor-pointer list-none rounded-xl"><div class="flex items-start gap-3"><div class="grid h-8 w-8 shrink-0 place-items-center rounded-lg ${q.correct?'bg-emerald-100 text-emerald-700':'bg-red-100 text-red-700'} text-xs font-black">${i+1}</div><div class="min-w-0 flex-1"><div class="text-sm font-black">${esc(q.question)}</div><div class="mt-1 text-xs font-semibold ${q.correct?'text-emerald-600':'text-red-600'}">${q.correct?'Correct':'Needs review'}</div></div><div class="text-xs font-black text-slate-400 transition-transform group-open:rotate-180">⌄</div></div></summary>
+        <div class="mt-4 space-y-3 border-t border-slate-100 pt-4 text-sm leading-6">
+          <div class="rounded-xl bg-slate-50 p-3"><div class="text-[10px] font-black uppercase tracking-[.15em] text-slate-400">Your answer</div><div class="mt-1 font-semibold text-slate-700">${esc(userText)}</div></div>
+          <div class="rounded-xl bg-blue-50 p-3"><div class="text-[10px] font-black uppercase tracking-[.15em] text-royal">Correct answer</div><div class="mt-1 font-bold text-slate-700">${esc(correctText)}</div></div>
+          <div class="text-slate-600"><span class="font-black text-ink">Explanation:</span> ${esc(q.explanation || 'This answer best matches the principle tested in the question.')}</div>
+          ${q.optionExplanations ? `<div class="grid gap-2 sm:grid-cols-2">${q.optionExplanations.map((e,idx)=>`<div class="rounded-xl border border-slate-200 p-3 text-xs leading-5 text-slate-500"><span class="font-black text-slate-700">${String.fromCharCode(65+idx)}.</span> ${esc(e)}</div>`).join('')}</div>` : ''}
+        </div>
+      </details>`;
+    }
+
+    function renderErrorScreen(message) {
+      $('modalKicker').textContent = 'Data error';
+      $('modalTitle').textContent = 'Could not open this lecture';
+      $('modalDescription').textContent = 'Please check the local JSON data.';
+      $('modalBody').innerHTML = `<div class="m-5 rounded-2xl border border-red-200 bg-red-50 p-6 text-sm text-red-700">${esc(message)}</div>`;
+    }
+
+    function openModal() {
+      $('appModal').classList.remove('hidden');
+      document.body.classList.add('overflow-hidden');
+      setTimeout(() => $('modalCloseBtn').focus(), 50);
+    }
+
+    function closeModal() {
+      stopTimer();
+      $('appModal').classList.add('hidden');
+      document.body.classList.remove('overflow-hidden');
+      if (state.previousFocus && document.contains(state.previousFocus)) state.previousFocus.focus();
+      state.modalScreen = 'exam';
+    }
+
+    function handleGlobalKeydown(e) {
+      const modalOpen = !$('appModal').classList.contains('hidden');
+      if (!modalOpen) return;
+      if (e.key === 'Escape') { closeModal(); return; }
+      if (e.key === 'Tab') {
+        const focusable = [...$('appModal').querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])')].filter(el => !el.disabled && el.offsetParent !== null);
+        if (focusable.length) {
+          const first = focusable[0], last = focusable[focusable.length - 1];
+          if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+          else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+        }
+      }
+      if (state.modalScreen === 'exam' && !['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName)) {
+        if (e.key === 'ArrowRight') { e.preventDefault(); goNext(); }
+        if (e.key === 'ArrowLeft' && state.currentQuestion > 0) { e.preventDefault(); state.currentQuestion--; renderExam(); }
+      }
+    }
+
+    $('year').textContent = new Date().getFullYear();
+    initNav();
+    loadCourses();
+  </script>
 </body>
 </html>
