@@ -1,0 +1,1561 @@
+{
+  "id": "pharmaceutics-3-lecture-01",
+  "title": "Pharmaceutics III — Lecture 1: Preformulation",
+  "subjectName": "Pharmaceutics III",
+  "estimatedReadTime": "35-min read",
+  "estimatedExamTime": "111-min exam",
+  "durationMinutes": 111,
+  "passMark": 70,
+  "summary": [
+    "Preformulation is the physicochemical investigation of a drug substance alone and/or when combined with excipients before formulation.",
+    "It bridges drug discovery and pharmaceutical manufacturing and ensures a stable, effective, and manufacturable final product.",
+    "Goals of preformulation include establishing physicochemical parameters, aiding dosage form design, and studying drug-excipient compatibility.",
+    "Studies included in preformulation are organoleptic properties, purity, particle size, polymorphism, solubility, and dissolution.",
+    "Physical description includes color, odor, and taste; color relates to unsaturation and chromophores, while odor and taste relate to major functional groups.",
+    "Purity estimates known and significant impurities and can be assessed by TLC, HPLC, GC, and DSC.",
+    "Microscopic examination provides particle size, size range, crystal structure, particle shape, crystal habit, surface characteristics, agglomeration, and polymorphic differences.",
+    "Melting point depression can indicate drug-excipient compatibility and eutectic mixture formation.",
+    "A eutectic mixture melts at a temperature lower than either pure component alone; salol-thymol eutectic melts at 13°C at 65% salol.",
+    "Tablets are the most common oral solid dosage form and require the drug to be in a solid, compressible form.",
+    "Liquid APIs can be formulated as oral solutions/suspensions, soft gelatin capsules, solid ester or salt forms, or solid carriers such as melted PEG in hard gelatin capsules.",
+    "Particle size governs physical stability, solubility, dissolution rate, flow, sedimentation, and bioavailability.",
+    "Micronization increases dissolution rate for poorly water-soluble drugs such as griseofulvin and spironolactone, while macrocrystalline nitrofurantoin slows dissolution to reduce GI upset.",
+    "Polymorphism is the ability of an API to exist in multiple crystal lattice structures with identical molecular formula; amorphous forms are more soluble, crystalline forms are more stable.",
+    "Solubility is required for oral drugs to dissolve in GIT fluids before absorption; insoluble compounds show incomplete or erratic absorption.",
+    "Strategies to overcome poor solubility include chemical modification, salt formation, co-solvents, surfactants, solid dispersions, micronization, and novel delivery platforms.",
+    "The equilibrium solubility method determines solubility by adding excess drug to solvent, shaking at constant temperature until equilibrium, and analyzing the solution.",
+    "Ostwald-Freundlich equation relates solubility and particle size: log(S/S0) = 2γV / (2.303RT r).",
+    "Solubility of ionizable drugs depends on pH and pKa; for weak acids, S = Sa[1 + Ka/H+].",
+    "A weak acid drug can precipitate when pH drops because it converts from soluble ionized form to insoluble un-ionized free acid form."
+  ],
+  "keyTerms": [
+    {
+      "term": "Preformulation",
+      "definition": "The physicochemical investigation of a drug substance alone and/or when combined with excipients to establish fundamental physical and chemical properties before formulation."
+    },
+    {
+      "term": "Eutectic mixture",
+      "definition": "A mixture of two solid substances that, when mixed in a particular ratio, melts at a temperature lower than the melting point of either substance alone."
+    },
+    {
+      "term": "Polymorphism",
+      "definition": "The ability of an active pharmaceutical ingredient to exist in multiple crystal lattice structures while retaining identical molecular formula."
+    },
+    {
+      "term": "Amorphous form",
+      "definition": "A solid form that is more soluble than the crystalline form."
+    },
+    {
+      "term": "Crystalline form",
+      "definition": "A solid form that is more stable than the amorphous form."
+    },
+    {
+      "term": "Erratic absorption",
+      "definition": "The amount of drug absorbed is not consistent from one dose to another or from one patient to another."
+    },
+    {
+      "term": "Equilibrium solubility method",
+      "definition": "A method where excess drug is placed in solvent, shaken at constant temperature until equilibrium, and the solution is analyzed to determine dissolved drug."
+    },
+    {
+      "term": "Ostwald-Freundlich equation",
+      "definition": "An equation relating solubility and particle size: log(S/S0) = 2γV / (2.303RT r)."
+    },
+    {
+      "term": "S = Sa[1 + Ka/H+]",
+      "definition": "Equation calculating total solubility of a weakly acidic drug as a function of hydrogen ion concentration."
+    },
+    {
+      "term": "Micronization",
+      "definition": "Particle size reduction that increases specific surface area and dissolution rate for poorly water-soluble drugs."
+    }
+  ],
+  "resources": [],
+  "flashcards": [
+    {
+      "front": "What is preformulation?",
+      "back": "Physicochemical investigation of a drug substance alone and/or with excipients before formulation."
+    },
+    {
+      "front": "What are the goals of preformulation?",
+      "back": "Establish physicochemical parameters, aid dosage form design, and study drug-excipient compatibility."
+    },
+    {
+      "front": "What is a eutectic mixture?",
+      "back": "A mixture of two solids that melts at a temperature lower than either substance alone."
+    },
+    {
+      "front": "What is the eutectic temperature of salol-thymol?",
+      "back": "13°C."
+    },
+    {
+      "front": "Why is particle size important in tablets?",
+      "back": "It influences flow, mixing efficiency, solubility, dissolution rate, and bioavailability."
+    },
+    {
+      "front": "What is polymorphism?",
+      "back": "Ability of an API to exist in multiple crystal lattice structures with identical molecular formula."
+    },
+    {
+      "front": "Which is more soluble: amorphous or crystalline?",
+      "back": "Amorphous is more soluble."
+    },
+    {
+      "front": "What is the Ostwald-Freundlich equation?",
+      "back": "log(S/S0) = 2γV / (2.303RT r)."
+    },
+    {
+      "front": "What is the equation for solubility of a weak acid?",
+      "back": "S = Sa[1 + Ka/H+]."
+    },
+    {
+      "front": "Why can a weak acid drug precipitate when pH drops?",
+      "back": "It converts from soluble ionized form to insoluble un-ionized free acid form."
+    }
+  ],
+  "questions": [
+    {
+      "question": "Preformulation is defined as:",
+      "options": [
+        "Physicochemical investigation of drug substance alone and/or with excipients before formulation",
+        "Clinical testing of drug in patients",
+        "Manufacturing of tablets",
+        "Marketing of pharmaceuticals"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Preformulation is the physicochemical investigation of a drug substance alone and/or when combined with excipients before formulation.",
+      "subtopic": "Definition of Preformulation",
+      "hint": "It occurs before formulation."
+    },
+    {
+      "question": "Preformulation bridges:",
+      "options": [
+        "Drug discovery and pharmaceutical manufacturing",
+        "Clinical trials and marketing",
+        "Raw materials and packaging",
+        "Tablets and capsules"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Preformulation bridges drug discovery and pharmaceutical manufacturing.",
+      "subtopic": "Importance of Preformulation",
+      "hint": "It connects discovery to manufacturing."
+    },
+    {
+      "question": "Which is NOT a goal of preformulation?",
+      "options": [
+        "Establish physicochemical parameters",
+        "Help dosage form design",
+        "Study drug-excipient compatibility",
+        "Determine final market price"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Determining final market price is not a goal of preformulation.",
+      "subtopic": "Goals of Preformulation",
+      "hint": "Think about scientific goals."
+    },
+    {
+      "question": "Preformulation ensures final product is:",
+      "options": [
+        "Stable, effective, manufacturable",
+        "Cheap, colorful, tasty",
+        "Liquid, gas, solid",
+        "Toxic, unstable, insoluble"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Preformulation ensures a stable, effective, and manufacturable final product.",
+      "subtopic": "Importance of Preformulation",
+      "hint": "It ensures quality."
+    },
+    {
+      "question": "Studies included in preformulation include:",
+      "options": [
+        "Organoleptic properties, purity, particle size, polymorphism, solubility, dissolution",
+        "Clinical trials, marketing, sales",
+        "Only solubility",
+        "Only particle size"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Preformulation studies include organoleptic properties, purity, particle size, polymorphism, solubility, and dissolution.",
+      "subtopic": "Studies Included",
+      "hint": "Many physicochemical tests."
+    },
+    {
+      "question": "Preformulation is performed:",
+      "options": [
+        "Before formulation",
+        "After marketing",
+        "During clinical trials",
+        "Only after approval"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Preformulation is performed before formulation.",
+      "subtopic": "Definition of Preformulation",
+      "hint": "Pre means before."
+    },
+    {
+      "question": "Preformulation investigates drug substance:",
+      "options": [
+        "Alone and/or combined with excipients",
+        "Only in animals",
+        "Only in humans",
+        "Only in final package"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Preformulation investigates the drug substance alone and/or when combined with excipients.",
+      "subtopic": "Definition of Preformulation",
+      "hint": "It studies both drug and excipients."
+    },
+    {
+      "question": "Which is a physical property studied in preformulation?",
+      "options": [
+        "Particle size",
+        "Structure",
+        "Reactivity",
+        "Biological response"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Particle size is a physical property studied in preformulation.",
+      "subtopic": "Physical Properties",
+      "hint": "It relates to size."
+    },
+    {
+      "question": "Which is a chemical property studied in preformulation?",
+      "options": [
+        "Crystalline structure",
+        "Melting point",
+        "Reactivity",
+        "Solubility"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Reactivity is a chemical property studied in preformulation.",
+      "subtopic": "Chemical Properties",
+      "hint": "It involves chemical reactions."
+    },
+    {
+      "question": "Which is a biological property?",
+      "options": [
+        "Ability to reach site of action and elicit biologic response",
+        "Color",
+        "Odor",
+        "Taste"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Biological property is the ability to get to a site of action and elicit a biologic response.",
+      "subtopic": "Biological Properties",
+      "hint": "It relates to action in the body."
+    },
+    {
+      "question": "Course Pharmaceutics III covers:",
+      "options": [
+        "Powders, granules, tablets, hard and soft gelatin capsules",
+        "Only aerosols",
+        "Only preformulation",
+        "Only packaging"
+      ],
+      "correctAnswer": "A",
+      "explanation": "The course covers powders, granules, tablets, and hard and soft gelatin capsules.",
+      "subtopic": "Course Overview",
+      "hint": "Solid dosage forms."
+    },
+    {
+      "question": "CLO 1: Explain principles, formulation, and manufacturing methods of:",
+      "options": [
+        "Powders, granules, tablets, hard and soft gelatin capsules",
+        "Only tablets",
+        "Only capsules",
+        "Only aerosols"
+      ],
+      "correctAnswer": "A",
+      "explanation": "CLO 1 covers powders, granules, tablets, and hard and soft gelatin capsules.",
+      "subtopic": "Course Learning Outcomes",
+      "hint": "Multiple solid dosage forms."
+    },
+    {
+      "question": "CLO 2: Differentiate between solid dosage forms in terms of:",
+      "options": [
+        "Composition, preparation, properties, pharmaceutical applications",
+        "Price, color, taste",
+        "Marketing, sales",
+        "Only size"
+      ],
+      "correctAnswer": "A",
+      "explanation": "CLO 2 differentiates solid dosage forms by composition, preparation, properties, and pharmaceutical applications.",
+      "subtopic": "Course Learning Outcomes",
+      "hint": "Several comparison criteria."
+    },
+    {
+      "question": "CLO 3: Prepare selected:",
+      "options": [
+        "Powders, granules, tablets, capsules",
+        "Solutions, suspensions",
+        "Emulsions, creams",
+        "Aerosols, inhalers"
+      ],
+      "correctAnswer": "A",
+      "explanation": "CLO 3 is to prepare selected powders, granules, tablets, and capsules.",
+      "subtopic": "Course Learning Outcomes",
+      "hint": "Solid dosage forms."
+    },
+    {
+      "question": "CLO 4: Evaluate selected:",
+      "options": [
+        "Physicochemical and quality attributes of solid pharmaceutical dosage forms",
+        "Marketing strategies",
+        "Clinical trial protocols",
+        "Only dissolution"
+      ],
+      "correctAnswer": "A",
+      "explanation": "CLO 4 evaluates physicochemical and quality attributes of solid pharmaceutical dosage forms.",
+      "subtopic": "Course Learning Outcomes",
+      "hint": "Quality attributes."
+    },
+    {
+      "question": "CLO 5: Apply requirements for:",
+      "options": [
+        "Packaging, storage, quality evaluation of solid dosage forms",
+        "Only storage",
+        "Only packaging",
+        "Only quality"
+      ],
+      "correctAnswer": "A",
+      "explanation": "CLO 5 applies requirements for packaging, storage, and quality evaluation of solid dosage forms.",
+      "subtopic": "Course Learning Outcomes",
+      "hint": "Three areas."
+    },
+    {
+      "question": "CLO 6: Apply problem-solving skills to:",
+      "options": [
+        "Selected formulation and manufacturing problems of solid dosage forms",
+        "Marketing problems",
+        "Clinical problems",
+        "Only solubility"
+      ],
+      "correctAnswer": "A",
+      "explanation": "CLO 6 applies problem-solving skills to selected formulation and manufacturing problems of solid dosage forms.",
+      "subtopic": "Course Learning Outcomes",
+      "hint": "Formulation and manufacturing."
+    },
+    {
+      "question": "CLO 7: Analyze and interpret:",
+      "options": [
+        "Experimental data from preparation and evaluation of solid dosage forms",
+        "Marketing data",
+        "Clinical data",
+        "Only financial data"
+      ],
+      "correctAnswer": "A",
+      "explanation": "CLO 7 analyzes and interprets experimental data from preparation and evaluation of solid dosage forms.",
+      "subtopic": "Course Learning Outcomes",
+      "hint": "Experimental data."
+    },
+    {
+      "question": "Assessment: Final written exam weight is:",
+      "options": [
+        "50%",
+        "25%",
+        "10%",
+        "5%"
+      ],
+      "correctAnswer": "A",
+      "explanation": "The final written exam is worth 50% of the total course marks.",
+      "subtopic": "Assessment Methods",
+      "hint": "Highest weight."
+    },
+    {
+      "question": "Assessment: Final practical exam weight is:",
+      "options": [
+        "50%",
+        "25%",
+        "10%",
+        "5%"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The final practical exam is worth 25% of the total course marks.",
+      "subtopic": "Assessment Methods",
+      "hint": "Quarter of total."
+    },
+    {
+      "question": "Physical description includes:",
+      "options": [
+        "Color, odor, taste",
+        "Melting point, solubility",
+        "Particle size, polymorphism",
+        "Purity, dissolution"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Physical description includes color, odor, and taste.",
+      "subtopic": "Physical Description",
+      "hint": "Organoleptic properties."
+    },
+    {
+      "question": "Color of a drug is a function of:",
+      "options": [
+        "Chemical structure relating to unsaturation",
+        "Particle size",
+        "Melting point",
+        "Solubility"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Color is a function of a drug's chemical structure relating to a certain level of unsaturation.",
+      "subtopic": "Physical Description",
+      "hint": "Relates to unsaturation."
+    },
+    {
+      "question": "Color intensity relates to presence of:",
+      "options": [
+        "Chromophores",
+        "Impurities",
+        "Excipients",
+        "Solvents"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Color intensity relates to the presence of chromophores.",
+      "subtopic": "Physical Description",
+      "hint": "Color-causing groups."
+    },
+    {
+      "question": "Odor and taste are characteristics of:",
+      "options": [
+        "Major functional groups",
+        "Particle size",
+        "Crystal habit",
+        "Polymorphs"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Odor and taste are characteristics of major functional groups.",
+      "subtopic": "Physical Description",
+      "hint": "Functional groups."
+    },
+    {
+      "question": "Unpalatable taste may require:",
+      "options": [
+        "Less soluble chemical forms, flavors, or coating",
+        "Larger particle size",
+        "Higher melting point",
+        "More impurities"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Unpalatable taste may require less soluble chemical forms, flavors, or product coating.",
+      "subtopic": "Physical Description",
+      "hint": "Masking taste."
+    },
+    {
+      "question": "Purity estimates levels of:",
+      "options": [
+        "Known and significant impurities",
+        "Only water",
+        "Only color",
+        "Only particle size"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Purity is designed to estimate the levels of all known and significant impurities.",
+      "subtopic": "Purity",
+      "hint": "Impurities."
+    },
+    {
+      "question": "Impurity can affect:",
+      "options": [
+        "Stability and appearance",
+        "Only taste",
+        "Only odor",
+        "Only color"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Impurity can affect stability and appearance.",
+      "subtopic": "Purity",
+      "hint": "Stability and appearance."
+    },
+    {
+      "question": "Example of metal contamination is an issue of:",
+      "options": [
+        "Purity",
+        "Polymorphism",
+        "Particle size",
+        "Solubility"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Metal contamination is an example of an impurity issue, related to purity.",
+      "subtopic": "Purity",
+      "hint": "Impurity."
+    },
+    {
+      "question": "Which technique is used for purity analysis?",
+      "options": [
+        "TLC",
+        "X-ray diffraction",
+        "Microscopy",
+        "Rotary evaporation"
+      ],
+      "correctAnswer": "A",
+      "explanation": "TLC is listed as an example technique for purity analysis.",
+      "subtopic": "Purity",
+      "hint": "Chromatography."
+    },
+    {
+      "question": "Which technique is used for purity analysis?",
+      "options": [
+        "HPLC",
+        "UV",
+        "IR",
+        "NMR"
+      ],
+      "correctAnswer": "A",
+      "explanation": "HPLC is listed as an example technique for purity analysis.",
+      "subtopic": "Purity",
+      "hint": "Chromatography."
+    },
+    {
+      "question": "Microscopic examination gives indication of:",
+      "options": [
+        "Particle size and size range, crystal structure",
+        "Melting point",
+        "Solubility",
+        "pH"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Microscopic examination gives an indication of particle size, size range, and crystal structure.",
+      "subtopic": "Microscopic Examination",
+      "hint": "Size and crystals."
+    },
+    {
+      "question": "Photomicrographs of initial and subsequent batches provide info in case of:",
+      "options": [
+        "Problems in formulation processing due to changes in particle or crystal characteristics",
+        "Marketing issues",
+        "Clinical trials",
+        "Packaging"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Photomicrographs provide important information in case of problems in formulation processing attributable to changes in particle or crystal characteristics.",
+      "subtopic": "Microscopic Examination",
+      "hint": "Batch changes."
+    },
+    {
+      "question": "Spherical and oval powders flow:",
+      "options": [
+        "More easily than needle-shaped",
+        "Less easily than needle-shaped",
+        "Same as needle-shaped",
+        "Not at all"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Spherical and oval powders flow more easily than needle-shaped powders.",
+      "subtopic": "Microscopic Examination",
+      "hint": "Shape affects flow."
+    },
+    {
+      "question": "Under microscope, we can assess:",
+      "options": [
+        "Particle size and distribution, shape, crystal habit, surface, agglomeration, polymorphic differences",
+        "Only color",
+        "Only odor",
+        "Only taste"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Under the microscope, we can assess particle size and distribution, shape, crystal habit, surface characteristics, agglomeration, and polymorphic differences.",
+      "subtopic": "Microscopic Examination",
+      "hint": "Many particle features."
+    },
+    {
+      "question": "Crystal habit is:",
+      "options": [
+        "External shape of drug crystals",
+        "Internal structure",
+        "Solubility",
+        "Melting point"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Crystal habit is the external shape of drug crystals.",
+      "subtopic": "Microscopic Examination",
+      "hint": "External shape."
+    },
+    {
+      "question": "Agglomeration refers to:",
+      "options": [
+        "Whether particles tend to stick together",
+        "Particle size",
+        "Crystal habit",
+        "Polymorphism"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Agglomeration refers to whether particles tend to stick together.",
+      "subtopic": "Microscopic Examination",
+      "hint": "Sticking together."
+    },
+    {
+      "question": "Polymorphic differences under microscope may show:",
+      "options": [
+        "Different crystal forms may have different appearances",
+        "Same appearance always",
+        "Only color change",
+        "Only odor"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Different crystal forms may have different appearances under the microscope.",
+      "subtopic": "Microscopic Examination",
+      "hint": "Different forms."
+    },
+    {
+      "question": "Melting point of pure substance:",
+      "options": [
+        "Sharp melting point or melting range",
+        "Broad melting range",
+        "No melting point",
+        "Always 100°C"
+      ],
+      "correctAnswer": "A",
+      "explanation": "A pure substance has a sharp melting point or melting range.",
+      "subtopic": "Melting Point Depression",
+      "hint": "Pure substances are sharp."
+    },
+    {
+      "question": "Impurities may:",
+      "options": [
+        "Change melting point",
+        "Not affect melting point",
+        "Increase melting point only",
+        "Decrease boiling point"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Impurities may change melting point.",
+      "subtopic": "Melting Point Depression",
+      "hint": "They alter melting."
+    },
+    {
+      "question": "Melting point can be used as indicator for:",
+      "options": [
+        "Drug-excipient compatibility",
+        "Particle size",
+        "Solubility",
+        "Dissolution"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Melting point could be used as an indicator for drug-excipient compatibility.",
+      "subtopic": "Melting Point Depression",
+      "hint": "Compatibility."
+    },
+    {
+      "question": "Drug + excipient -> lower melting point -> possible:",
+      "options": [
+        "Softening/liquefaction -> potential processing problem",
+        "Increased stability",
+        "Better flow",
+        "Higher solubility"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Drug + excipient leading to lower melting point may cause possible softening/liquefaction and potential processing problems.",
+      "subtopic": "Melting Point Depression",
+      "hint": "Processing problem."
+    },
+    {
+      "question": "Drugs with low melting point may soften or partially melt during:",
+      "options": [
+        "Milling and compression",
+        "Storage only",
+        "Packaging only",
+        "Marketing"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Drugs with a low melting point may soften or partially melt when exposed to heat generated during milling and compression.",
+      "subtopic": "Melting Point Depression",
+      "hint": "Manufacturing processes."
+    },
+    {
+      "question": "Eutectic mixture is:",
+      "options": [
+        "Mixture of two solid substances that melts at temperature lower than either alone",
+        "Mixture that melts at higher temperature",
+        "Pure substance",
+        "Liquid mixture"
+      ],
+      "correctAnswer": "A",
+      "explanation": "A eutectic mixture is a mixture of two solid substances that, when mixed in a particular ratio, melts at a temperature lower than the melting point of either substance alone.",
+      "subtopic": "Eutectic Mixtures",
+      "hint": "Lower melting point."
+    },
+    {
+      "question": "Salol-thymol eutectic mixture melts at:",
+      "options": [
+        "13°C",
+        "25°C",
+        "42-46°C",
+        "48-52°C"
+      ],
+      "correctAnswer": "A",
+      "explanation": "The salol-thymol eutectic mixture melts at 13°C.",
+      "subtopic": "Eutectic Mixtures",
+      "hint": "Very low temperature."
+    },
+    {
+      "question": "Salol melting point is about:",
+      "options": [
+        "42-46°C",
+        "13°C",
+        "48-52°C",
+        "100°C"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Salol melting point is about 42-46°C.",
+      "subtopic": "Eutectic Mixtures",
+      "hint": "Around 44°C."
+    },
+    {
+      "question": "Thymol melting point is about:",
+      "options": [
+        "48-52°C",
+        "42-46°C",
+        "13°C",
+        "25°C"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Thymol melting point is about 48-52°C.",
+      "subtopic": "Eutectic Mixtures",
+      "hint": "Around 50°C."
+    },
+    {
+      "question": "Eutectic point of salol-thymol is at:",
+      "options": [
+        "65% salol",
+        "35% salol",
+        "50% salol",
+        "100% salol"
+      ],
+      "correctAnswer": "A",
+      "explanation": "The eutectic point of salol-thymol is at 65% salol.",
+      "subtopic": "Eutectic Mixtures",
+      "hint": "Majority salol."
+    },
+    {
+      "question": "According to the text, which region contains both components as pure solid phases?",
+      "options": [
+        "(iv)",
+        "(i)",
+        "(ii)",
+        "(iii)"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Region (iv) is the region in which both components are present as pure solid phases.",
+      "subtopic": "Phase Rule",
+      "hint": "Both solids."
+    },
+    {
+      "question": "A powder becomes damp or liquid due to eutectic formation can cause:",
+      "options": [
+        "Poor powder flow, sticking, difficulty filling capsules, problems with powder packaging",
+        "Better flow",
+        "Increased stability",
+        "Better taste"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Eutectic formation can cause poor powder flow, sticking to equipment, difficulty filling capsules, and problems with powder packaging.",
+      "subtopic": "Eutectic Mixtures",
+      "hint": "Processing problems."
+    },
+    {
+      "question": "Mixing salol and thymol at room temp causes liquefaction because room temp is higher than:",
+      "options": [
+        "Eutectic temperature (13°C)",
+        "Melting point of salol",
+        "Melting point of thymol",
+        "Boiling point"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Room temperature (~25°C) is higher than their eutectic temperature (13°C), causing spontaneous liquefaction.",
+      "subtopic": "Eutectic Mixtures",
+      "hint": "Compare 25°C to 13°C."
+    },
+    {
+      "question": "Tablets are:",
+      "options": [
+        "Most common oral solid dosage form",
+        "Rare",
+        "Liquid dosage form",
+        "Gas dosage form"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Tablets are the most common oral solid dosage form.",
+      "subtopic": "Tablets",
+      "hint": "Most common."
+    },
+    {
+      "question": "Tablets are made by:",
+      "options": [
+        "Mixing solid drug powders with excipients and compressing",
+        "Dissolving drug in water",
+        "Melting drug",
+        "Encapsulating liquid"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Tablets are made by mixing solid drug powders with excipients and compressing them.",
+      "subtopic": "Tablets",
+      "hint": "Compression."
+    },
+    {
+      "question": "Manufacturing tablets requires drug to be in:",
+      "options": [
+        "Solid, compressible form",
+        "Liquid form",
+        "Gas form",
+        "Solution form"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Manufacturing requires the drug to be in a solid, compressible form.",
+      "subtopic": "Tablets",
+      "hint": "Solid and compressible."
+    },
+    {
+      "question": "Liquid APIs cannot be directly compressed into conventional tablets without:",
+      "options": [
+        "Appropriate formulation modification",
+        "Heating",
+        "Cooling",
+        "Adding water"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Liquid APIs cannot be directly compressed into conventional tablets without appropriate formulation modification.",
+      "subtopic": "Liquid APIs",
+      "hint": "Formulation change."
+    },
+    {
+      "question": "Liquid APIs may be formulated as:",
+      "options": [
+        "Oral solutions or suspensions",
+        "Soft gelatin capsules",
+        "Solid ester or salt form",
+        "All of the above"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Liquid APIs may be formulated as oral solutions or suspensions, soft gelatin capsules, solid ester or salt forms, or solid carriers.",
+      "subtopic": "Liquid APIs",
+      "hint": "Multiple options."
+    },
+    {
+      "question": "Vitamins A, D, and E are examples of:",
+      "options": [
+        "Oily/liquid drugs in soft gelatin capsules",
+        "Solid tablets",
+        "Aerosols",
+        "Powders"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Vitamins A, D, and E are examples of oily/liquid drugs formulated in soft gelatin capsules.",
+      "subtopic": "Liquid APIs",
+      "hint": "Soft capsules."
+    },
+    {
+      "question": "Scopolamine hydrobromide is:",
+      "options": [
+        "Solid salt of liquid scopolamine",
+        "Liquid form",
+        "Gas",
+        "Excipient"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Scopolamine hydrobromide is a solid salt of liquid scopolamine, easily pressed into tablets.",
+      "subtopic": "Liquid APIs",
+      "hint": "Solid salt."
+    },
+    {
+      "question": "Solid carrier method involves mixing drug with:",
+      "options": [
+        "Melted semisolid material (e.g., HMW polyethylene glycol)",
+        "Water",
+        "Ethanol",
+        "Hexane"
+      ],
+      "correctAnswer": "A",
+      "explanation": "The solid carrier method mixes the drug with solid or melted semisolid material such as HMW polyethylene glycol.",
+      "subtopic": "Liquid APIs",
+      "hint": "PEG."
+    },
+    {
+      "question": "In solid carrier method, after cooling, PEG:",
+      "options": [
+        "Solidifies",
+        "Evaporates",
+        "Liquefies",
+        "Dissolves"
+      ],
+      "correctAnswer": "A",
+      "explanation": "When the PEG cools, it solidifies.",
+      "subtopic": "Liquid APIs",
+      "hint": "Cooling solidifies."
+    },
+    {
+      "question": "The solid carrier method fills the mixture into:",
+      "options": [
+        "Hard gelatin capsule",
+        "Soft gelatin capsule",
+        "Tablet",
+        "Aerosol"
+      ],
+      "correctAnswer": "A",
+      "explanation": "The mixture is poured into hard gelatin capsules and sealed.",
+      "subtopic": "Liquid APIs",
+      "hint": "Hard capsule."
+    },
+    {
+      "question": "Particle size determination and control is:",
+      "options": [
+        "Cornerstone of pharmaceutical preformulation",
+        "Not important",
+        "Only for liquids",
+        "Only for gases"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Particle size determination and control is the cornerstone of pharmaceutical preformulation.",
+      "subtopic": "Particle Size",
+      "hint": "Very important."
+    },
+    {
+      "question": "For tablets, particle size and shape influence:",
+      "options": [
+        "Flow and mixing efficiency of powders and granules",
+        "Only color",
+        "Only taste",
+        "Only odor"
+      ],
+      "correctAnswer": "A",
+      "explanation": "In tablets, size and shape influence the flow and the mixing efficiency of powders and granules.",
+      "subtopic": "Particle Size",
+      "hint": "Flow and mixing."
+    },
+    {
+      "question": "Particle size directly governs:",
+      "options": [
+        "Drug physical stability, solubility, dissolution rate, flow, sedimentation, bioavailability",
+        "Only color",
+        "Only odor",
+        "Only taste"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Particle size directly governs drug physical stability, solubility, dissolution rate, flow and sedimentation, and bioavailability.",
+      "subtopic": "Particle Size",
+      "hint": "Many properties."
+    },
+    {
+      "question": "For poorly water-soluble drugs (BCS Class II and IV), micronization:",
+      "options": [
+        "Increases specific surface area, increasing dissolution rate",
+        "Decreases dissolution rate",
+        "No effect",
+        "Increases particle size"
+      ],
+      "correctAnswer": "A",
+      "explanation": "For poorly water-soluble drugs, micronization increases specific surface area, thereby increasing dissolution rate.",
+      "subtopic": "Particle Size",
+      "hint": "Surface area increases."
+    },
+    {
+      "question": "Example of drug where micronization increases dissolution rate:",
+      "options": [
+        "Griseofulvin",
+        "Nitrofurantoin",
+        "Procaine penicillin",
+        "Salol"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Griseofulvin is an example where micronization increases dissolution rate.",
+      "subtopic": "Particle Size",
+      "hint": "Antifungal."
+    },
+    {
+      "question": "Spironolactone is an example of:",
+      "options": [
+        "Drug where micronization increases dissolution rate",
+        "Drug where macrocrystals preferred",
+        "Eutectic mixture",
+        "Liquid API"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Spironolactone is an example of a drug where micronization increases dissolution rate and surface area.",
+      "subtopic": "Particle Size",
+      "hint": "Diuretic."
+    },
+    {
+      "question": "Nitrofurantoin is formulated as macrocrystals to:",
+      "options": [
+        "Slow dissolution, reducing GI upset",
+        "Increase dissolution",
+        "Increase GI irritation",
+        "Increase nausea"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Nitrofurantoin is formulated as macrocrystals to slow dissolution, reducing GI upset while maintaining urinary antibacterial efficacy.",
+      "subtopic": "Particle Size",
+      "hint": "Slower dissolution."
+    },
+    {
+      "question": "Procaine penicillin larger particles:",
+      "options": [
+        "Dissolve slowly, providing sustained therapeutic blood level",
+        "Dissolve rapidly",
+        "Cause GI irritation",
+        "Are not used"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Procaine penicillin larger particles dissolve slowly, providing a sustained therapeutic blood level over an extended period.",
+      "subtopic": "Particle Size",
+      "hint": "Sustained release."
+    },
+    {
+      "question": "Fine materials may be relatively more open to attack from:",
+      "options": [
+        "Atmospheric oxygen, humidity, interacting excipient",
+        "Light only",
+        "Heat only",
+        "Cold only"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Fine materials may be relatively more open to attack from atmospheric oxygen, humidity, and interacting excipient than coarse materials.",
+      "subtopic": "Particle Size",
+      "hint": "Environmental factors."
+    },
+    {
+      "question": "Summary comparison: Griseofulvin size reduction leads to:",
+      "options": [
+        "Higher bioavailability; reduced dose",
+        "Minimizes GI irritation",
+        "Sustained release",
+        "No effect"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Griseofulvin size reduction increases dissolution rate and surface area, leading to higher bioavailability and reduced dose required.",
+      "subtopic": "Particle Size",
+      "hint": "Bioavailability."
+    },
+    {
+      "question": "Polymorphism is ability of API to exist in:",
+      "options": [
+        "Multiple crystal lattice structures while retaining identical molecular formula",
+        "Multiple molecular formulas",
+        "Liquid and gas forms",
+        "Only amorphous form"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Polymorphism is the ability of an API to exist in multiple crystal lattice structures while retaining identical molecular formula.",
+      "subtopic": "Polymorphism",
+      "hint": "Same formula, different lattices."
+    },
+    {
+      "question": "Amorphous form is:",
+      "options": [
+        "More soluble",
+        "More stable",
+        "Less soluble",
+        "Always crystalline"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Amorphous form is more soluble.",
+      "subtopic": "Polymorphism",
+      "hint": "Less ordered."
+    },
+    {
+      "question": "Crystalline form is:",
+      "options": [
+        "More stable",
+        "More soluble",
+        "Amorphous",
+        "Liquid"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Crystalline form is more stable.",
+      "subtopic": "Polymorphism",
+      "hint": "Ordered lattice."
+    },
+    {
+      "question": "Polymorphs may differ in:",
+      "options": [
+        "Flow, compaction, solubility, dissolution rate, melting point",
+        "Only color",
+        "Only odor",
+        "Only taste"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Polymorphs may have different characteristics such as flow, compaction, solubility, dissolution rate, and melting point.",
+      "subtopic": "Polymorphism",
+      "hint": "Many properties."
+    },
+    {
+      "question": "Polymorphs are detected by:",
+      "options": [
+        "DSC, hot stage microscope, X-ray diffraction, IR",
+        "TLC only",
+        "HPLC only",
+        "GC only"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Polymorphs are detected by DSC, hot stage microscope, X-ray diffraction, and infrared spectroscopy.",
+      "subtopic": "Polymorphism",
+      "hint": "Several analytical methods."
+    },
+    {
+      "question": "A drug must possess aqueous solubility to:",
+      "options": [
+        "Enter systemic circulation and exert therapeutic effect",
+        "Be colored",
+        "Be odorous",
+        "Be tasty"
+      ],
+      "correctAnswer": "A",
+      "explanation": "A drug must possess aqueous solubility to enter systemic circulation and exert a therapeutic effect.",
+      "subtopic": "Solubility",
+      "hint": "Systemic circulation."
+    },
+    {
+      "question": "Insoluble compounds show:",
+      "options": [
+        "Incomplete or erratic absorption",
+        "Complete absorption",
+        "No absorption",
+        "Better absorption"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Insoluble compounds show incomplete or erratic absorption.",
+      "subtopic": "Solubility",
+      "hint": "Poor absorption."
+    },
+    {
+      "question": "Erratic absorption means:",
+      "options": [
+        "Amount absorbed is not consistent from one dose to another or patient to another",
+        "Consistent absorption",
+        "No absorption",
+        "Immediate absorption"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Erratic absorption means the amount of drug absorbed is not consistent from one dose to another or from one patient to another.",
+      "subtopic": "Solubility",
+      "hint": "Inconsistent."
+    },
+    {
+      "question": "For oral drugs, drug must dissolve in:",
+      "options": [
+        "GIT fluids before entering bloodstream",
+        "Blood only",
+        "Liver only",
+        "Kidney only"
+      ],
+      "correctAnswer": "A",
+      "explanation": "For oral drugs, the drug must dissolve in GIT fluids before entering the bloodstream and finally being absorbed.",
+      "subtopic": "Solubility",
+      "hint": "GIT fluids."
+    },
+    {
+      "question": "Good solubility leads to:",
+      "options": [
+        "Better dissolution, better chance of absorption, bloodstream",
+        "Poor absorption",
+        "No absorption",
+        "Erratic absorption"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Good solubility leads to better dissolution, better chance of absorption, and entry into the bloodstream.",
+      "subtopic": "Solubility",
+      "hint": "Positive chain."
+    },
+    {
+      "question": "Strategies to overcome poor solubility include:",
+      "options": [
+        "Chemical modification, salt formation, co-solvents, surfactants, advanced formulations",
+        "Increasing particle size",
+        "Decreasing surface area",
+        "Avoiding solvents"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Strategies include chemical modification, salt formation, co-solvents and surfactants, and advanced formulations.",
+      "subtopic": "Solubility",
+      "hint": "Several approaches."
+    },
+    {
+      "question": "Salt formation is used to:",
+      "options": [
+        "Speed up or sustain release profiles",
+        "Increase melting point",
+        "Decrease solubility",
+        "Increase particle size"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Salt formation converts weakly acidic or basic drugs into salt forms to speed up or sustain release profiles.",
+      "subtopic": "Solubility",
+      "hint": "Release profiles."
+    },
+    {
+      "question": "Advanced formulations for poor solubility include:",
+      "options": [
+        "Solid dispersions, micronization, novel drug delivery platforms",
+        "Only tablets",
+        "Only capsules",
+        "Only suspensions"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Advanced formulations include solid dispersions, micronization, or novel drug delivery platforms.",
+      "subtopic": "Solubility",
+      "hint": "Novel platforms."
+    },
+    {
+      "question": "Equilibrium solubility method involves:",
+      "options": [
+        "Excess drug in solvent, shaken at constant temperature until equilibrium",
+        "Heating to boiling",
+        "Cooling to freezing",
+        "Adding excess excipient"
+      ],
+      "correctAnswer": "A",
+      "explanation": "The equilibrium solubility method places excess drug in solvent and shakes at constant temperature until equilibrium is reached.",
+      "subtopic": "Solubility",
+      "hint": "Equilibrium."
+    },
+    {
+      "question": "In equilibrium solubility method, after equilibrium:",
+      "options": [
+        "Separate undissolved drug and analyze solution",
+        "Discard solution",
+        "Add more drug",
+        "Heat"
+      ],
+      "correctAnswer": "A",
+      "explanation": "After equilibrium, the undissolved drug is separated from the solution, and the solution is analyzed to measure dissolved drug.",
+      "subtopic": "Solubility",
+      "hint": "Analysis."
+    },
+    {
+      "question": "Solubility of a substance increases as:",
+      "options": [
+        "Particle size decreases",
+        "Particle size increases",
+        "Temperature decreases",
+        "pH increases always"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Solubility of a substance increases as its particle size decreases.",
+      "subtopic": "Solubility and Particle Size",
+      "hint": "Smaller particles."
+    },
+    {
+      "question": "Ostwald-Freundlich equation relates:",
+      "options": [
+        "Solubility and particle size",
+        "Solubility and pH",
+        "Melting point and purity",
+        "Flow and shape"
+      ],
+      "correctAnswer": "A",
+      "explanation": "The Ostwald-Freundlich equation relates solubility and particle size.",
+      "subtopic": "Solubility and Particle Size",
+      "hint": "Particle size."
+    },
+    {
+      "question": "In Ostwald-Freundlich equation, S is:",
+      "options": [
+        "Solubility of small particles",
+        "Solubility of large particles",
+        "Surface tension",
+        "Molar volume"
+      ],
+      "correctAnswer": "A",
+      "explanation": "In the Ostwald-Freundlich equation, S is the solubility of the small particles.",
+      "subtopic": "Solubility and Particle Size",
+      "hint": "Small particles."
+    },
+    {
+      "question": "In Ostwald-Freundlich equation, S0 is:",
+      "options": [
+        "Solubility of large particles",
+        "Solubility of small particles",
+        "Gas constant",
+        "Absolute temperature"
+      ],
+      "correctAnswer": "A",
+      "explanation": "In the Ostwald-Freundlich equation, S0 is the solubility of the large particles.",
+      "subtopic": "Solubility and Particle Size",
+      "hint": "Large particles."
+    },
+    {
+      "question": "In Ostwald-Freundlich equation, γ is:",
+      "options": [
+        "Surface tension",
+        "Molar volume",
+        "Gas constant",
+        "Radius"
+      ],
+      "correctAnswer": "A",
+      "explanation": "In the Ostwald-Freundlich equation, γ is surface tension.",
+      "subtopic": "Solubility and Particle Size",
+      "hint": "Surface."
+    },
+    {
+      "question": "In Ostwald-Freundlich equation, V is:",
+      "options": [
+        "Molar volume",
+        "Surface tension",
+        "Solubility",
+        "Radius"
+      ],
+      "correctAnswer": "A",
+      "explanation": "In the Ostwald-Freundlich equation, V is molar volume.",
+      "subtopic": "Solubility and Particle Size",
+      "hint": "Volume."
+    },
+    {
+      "question": "In Ostwald-Freundlich equation, R is:",
+      "options": [
+        "Gas constant",
+        "Radius",
+        "Surface tension",
+        "Molar volume"
+      ],
+      "correctAnswer": "A",
+      "explanation": "In the Ostwald-Freundlich equation, R is the gas constant.",
+      "subtopic": "Solubility and Particle Size",
+      "hint": "Constant."
+    },
+    {
+      "question": "In Ostwald-Freundlich equation, T is:",
+      "options": [
+        "Absolute temperature",
+        "Time",
+        "Surface tension",
+        "Radius"
+      ],
+      "correctAnswer": "A",
+      "explanation": "In the Ostwald-Freundlich equation, T is absolute temperature.",
+      "subtopic": "Solubility and Particle Size",
+      "hint": "Temperature."
+    },
+    {
+      "question": "In Ostwald-Freundlich equation, r is:",
+      "options": [
+        "Radius of small particles",
+        "Gas constant",
+        "Solubility",
+        "Molar volume"
+      ],
+      "correctAnswer": "A",
+      "explanation": "In the Ostwald-Freundlich equation, r is the radius of the small particles.",
+      "subtopic": "Solubility and Particle Size",
+      "hint": "Radius."
+    },
+    {
+      "question": "If desired increase in solubility was 5%, S/S0 is:",
+      "options": [
+        "105/100",
+        "100/105",
+        "5/100",
+        "100/5"
+      ],
+      "correctAnswer": "A",
+      "explanation": "If desired increase in solubility was 5%, S = 105% and S0 = 100%, so S/S0 = 105/100.",
+      "subtopic": "Solubility and Particle Size",
+      "hint": "105% over 100%."
+    },
+    {
+      "question": "Example calculation: surface tension 125 dynes/cm, molar volume 45 cm³, T=27°C, desired increase 5%. Required particle size is:",
+      "options": [
+        "9.2×10^-6 cm",
+        "9.2×10^-5 mm",
+        "0.092 μm",
+        "All of the above"
+      ],
+      "correctAnswer": "D",
+      "explanation": "The calculated radius is 9.2×10^-6 cm, which equals 9.2×10^-5 mm and 0.092 μm.",
+      "subtopic": "Solubility and Particle Size",
+      "hint": "Unit conversions."
+    },
+    {
+      "question": "Solubility of ionizable drugs is strongly dependent on:",
+      "options": [
+        "pH of dissolution medium and pKa",
+        "Only temperature",
+        "Only particle size",
+        "Only color"
+      ],
+      "correctAnswer": "A",
+      "explanation": "The solubility of ionizable drugs is strongly dependent on the pH of the dissolution medium and the ionization constant pKa of the drug molecule.",
+      "subtopic": "Solubility and pH",
+      "hint": "pH and pKa."
+    },
+    {
+      "question": "Equation S = Sa[1 + Ka/H+] calculates:",
+      "options": [
+        "Total solubility of a weakly acidic drug as function of H+",
+        "Solubility of base",
+        "Particle size",
+        "Melting point"
+      ],
+      "correctAnswer": "A",
+      "explanation": "The equation calculates the total solubility of a weakly acidic drug as a function of hydrogen ion concentration H+.",
+      "subtopic": "Solubility and pH",
+      "hint": "Weak acid."
+    },
+    {
+      "question": "In S = Sa[1 + Ka/H+], S is:",
+      "options": [
+        "Saturation solubility of the salt form",
+        "Saturation solubility of free acid",
+        "Acid dissociation constant",
+        "Hydrogen ion concentration"
+      ],
+      "correctAnswer": "A",
+      "explanation": "In the equation, S is the saturation solubility of the salt form.",
+      "subtopic": "Solubility and pH",
+      "hint": "Salt form."
+    },
+    {
+      "question": "In S = Sa[1 + Ka/H+], Sa is:",
+      "options": [
+        "Saturation solubility of the free acid",
+        "Saturation solubility of salt",
+        "Acid dissociation constant",
+        "Hydrogen ion concentration"
+      ],
+      "correctAnswer": "A",
+      "explanation": "In the equation, Sa is the saturation solubility of the free acid.",
+      "subtopic": "Solubility and pH",
+      "hint": "Free acid."
+    },
+    {
+      "question": "In S = Sa[1 + Ka/H+], Ka is:",
+      "options": [
+        "Acid dissociation constant",
+        "Solubility",
+        "Hydrogen ion concentration",
+        "Surface tension"
+      ],
+      "correctAnswer": "A",
+      "explanation": "In the equation, Ka is the acid dissociation constant.",
+      "subtopic": "Solubility and pH",
+      "hint": "Dissociation."
+    },
+    {
+      "question": "In S = Sa[1 + Ka/H+], H+ is:",
+      "options": [
+        "Hydrogen ion concentration",
+        "Solubility",
+        "Acid dissociation constant",
+        "Surface tension"
+      ],
+      "correctAnswer": "A",
+      "explanation": "In the equation, H+ is the hydrogen ion concentration.",
+      "subtopic": "Solubility and pH",
+      "hint": "Ion concentration."
+    },
+    {
+      "question": "A weak acid drug precipitates when pH drops because:",
+      "options": [
+        "It converts from soluble ionized form to insoluble un-ionized free acid form",
+        "It becomes more ionized",
+        "It becomes a salt",
+        "It increases solubility"
+      ],
+      "correctAnswer": "A",
+      "explanation": "When pH drops, the drug converts from its soluble ionized form back into its insoluble un-ionized free acid form, causing precipitation.",
+      "subtopic": "Solubility and pH",
+      "hint": "Ionized vs un-ionized."
+    },
+    {
+      "question": "In eye drop example, precipitate formed because pH dropped to:",
+      "options": [
+        "6",
+        "7",
+        "8",
+        "5"
+      ],
+      "correctAnswer": "A",
+      "explanation": "The pharmacist found the pH of the eye drops was 6, and the drug precipitated.",
+      "subtopic": "Solubility and pH",
+      "hint": "Slightly acidic."
+    },
+    {
+      "question": "Minimum safe pH calculation uses:",
+      "options": [
+        "S = Sa[1 + Ka/H+]",
+        "Ostwald-Freundlich",
+        "Phase rule",
+        "Noyes-Whitney"
+      ],
+      "correctAnswer": "A",
+      "explanation": "The minimum safe pH calculation uses the equation S = Sa[1 + Ka/H+].",
+      "subtopic": "Solubility and pH",
+      "hint": "Solubility-pH equation."
+    },
+    {
+      "question": "In example, molecular weight of salt is:",
+      "options": [
+        "285",
+        "263",
+        "3.1",
+        "5.86"
+      ],
+      "correctAnswer": "A",
+      "explanation": "The molecular weight of the salt is 285.",
+      "subtopic": "Solubility and pH",
+      "hint": "Salt."
+    },
+    {
+      "question": "In example, molecular weight of free acid is:",
+      "options": [
+        "263",
+        "285",
+        "3.1",
+        "5.86"
+      ],
+      "correctAnswer": "A",
+      "explanation": "The molecular weight of the free acid is 263.",
+      "subtopic": "Solubility and pH",
+      "hint": "Free acid."
+    },
+    {
+      "question": "In example, acid form solubility (Sa) is:",
+      "options": [
+        "3.1 mg/mL",
+        "0.0117 M",
+        "0.105 M",
+        "0.0808 M"
+      ],
+      "correctAnswer": "A",
+      "explanation": "The acid form solubility (Sa) is 3.1 mg/mL.",
+      "subtopic": "Solubility and pH",
+      "hint": "mg/mL."
+    },
+    {
+      "question": "In example, Ka is:",
+      "options": [
+        "5.86 × 10^-6",
+        "5.86 × 10^-5",
+        "3.1 × 10^-6",
+        "0.105"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Ka is 5.86 × 10^-6.",
+      "subtopic": "Solubility and pH",
+      "hint": "Small value."
+    },
+    {
+      "question": "In example, 3% solution means:",
+      "options": [
+        "3 g in 100 mL",
+        "3 mg in 100 mL",
+        "30 g in 100 mL",
+        "0.3 g in 100 mL"
+      ],
+      "correctAnswer": "A",
+      "explanation": "3% means 3 g in 100 mL.",
+      "subtopic": "Solubility and pH",
+      "hint": "Percentage."
+    },
+    {
+      "question": "In example, to maintain 3% solution without precipitation, total solubility St at target pH must be at least:",
+      "options": [
+        "0.105 M",
+        "0.0117 M",
+        "0.0808 M",
+        "0.285 M"
+      ],
+      "correctAnswer": "A",
+      "explanation": "To maintain 3% solution without precipitation, the drug's total solubility St at the target pH must be at least 0.105 M.",
+      "subtopic": "Solubility and pH",
+      "hint": "Molarity required."
+    }
+  ]
+}
