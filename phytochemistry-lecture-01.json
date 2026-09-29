@@ -1,0 +1,1746 @@
+{
+  "id": "phytochemistry-lecture-01",
+  "title": "Phytochemistry 1 — From Plant to Medicine: General Introduction & Extraction Methods",
+  "subjectName": "Phytochemistry",
+  "estimatedReadTime": "35-min read",
+  "estimatedExamTime": "100-min exam",
+  "durationMinutes": 100,
+  "passMark": 70,
+  "summary": [
+    "Phytochemistry is the study of chemicals produced by plants, especially secondary metabolites synthesized for self-defense against pests, pathogens, herbivores, UV radiation, and environmental stress.",
+    "The field covers the structural composition of plant metabolites, biosynthetic pathways, mechanisms of action, and medicinal, industrial, and commercial applications.",
+    "Primary metabolites are essential for fundamental plant processes such as growth, development, and reproduction; they include carbohydrates, proteins, nucleic acids, and lipids.",
+    "Secondary metabolites are not directly involved in normal growth but are crucial for survival and ecological interactions; they include alkaloids, terpenes, flavonoids, phenols, and glycosides.",
+    "Modern pharmacology began in 1803 when scientists started isolating pure active compounds from plants, including morphine (1803–1817), strychnine (1817), quinine and caffeine (1820), nicotine (1828), atropine (1833), and cocaine (1855).",
+    "The plant-to-drug workflow includes collection, drying, extraction, screening, isolation, preclinical study, clinical trials, and approval.",
+    "Drying methods include air/shade drying, oven drying, freeze-drying (lyophilization), microwave-assisted and infrared drying, and rotary evaporation for liquid extracts.",
+    "Extraction can be cold (maceration, percolation, partitioning) or hot (infusion, digestion, decoction, Soxhlet); cold methods are gentle on labile molecules while hot methods are faster and more efficient but risk degrading thermolabile compounds.",
+    "Advanced extraction techniques include Soxhlet, ultrasound-assisted extraction (UAE), microwave-assisted extraction (MAE), and supercritical fluid extraction (SFE).",
+    "Solvent selection follows the principle of 'like dissolves like' and considers polarity, pH, stability, cost, and safety.",
+    "Nonpolar compounds are extracted with nonpolar solvents (hexane, petroleum ether); medium polarity compounds with ethanol or methanol; polar compounds with water or aqueous ethanol.",
+    "Sequential extraction with increasing polarity simplifies the chemical complexity of biomass.",
+    "pH affects extraction by altering the ionization state of molecules; alkaloids are better extracted at high pH, glycosides may hydrolyze at extreme pH, and anthocyanins prefer acidic pH.",
+    "Factors affecting extraction yield include solvent properties, particle size, temperature, duration, and solvent-to-solid ratio (10:1 v/w).",
+    "Partitioning is a soft separation method using two immiscible solvents of increasing polarity, based on the partition coefficient, and serves as an initial extract purification step."
+  ],
+  "keyTerms": [
+    {
+      "term": "Phytochemistry",
+      "definition": "The study of chemicals produced by plants, especially secondary metabolites synthesized for self-defense against pests, pathogens, herbivores, UV radiation, and environmental stress."
+    },
+    {
+      "term": "Primary metabolites",
+      "definition": "Compounds essential for fundamental plant processes such as growth, development, and reproduction; they are ubiquitous across all plant species and include carbohydrates, proteins, nucleic acids, and lipids."
+    },
+    {
+      "term": "Secondary metabolites",
+      "definition": "Compounds not directly involved in normal growth and development but crucial for a plant's survival in its environment; they mediate ecological interactions and include alkaloids, terpenes, flavonoids, phenols, and glycosides."
+    },
+    {
+      "term": "Lyophilization (Freeze-drying)",
+      "definition": "A drying method that removes water from a frozen sample by sublimation under vacuum, suitable for heat-sensitive materials."
+    },
+    {
+      "term": "Maceration",
+      "definition": "A cold extraction method where powdered drug is soaked in solvent at room temperature for at least 3 days with frequent agitation."
+    },
+    {
+      "term": "Percolation",
+      "definition": "A cold extraction method where solvent is allowed to percolate through a bed of powdered plant material."
+    },
+    {
+      "term": "Decoction",
+      "definition": "A hot extraction method involving boiling of plant material in water to extract heat-stable compounds."
+    },
+    {
+      "term": "Soxhlet extraction",
+      "definition": "A continuous hot extraction method that uses a Soxhlet apparatus to extract large sample amounts with minimal solvent; high yield but heat may degrade sensitive compounds."
+    },
+    {
+      "term": "Ultrasound-assisted extraction (UAE)",
+      "definition": "An advanced extraction technique using 20–2000 kHz waves to increase cell wall permeability via cavitation, enabling faster extraction without heat."
+    },
+    {
+      "term": "Microwave-assisted extraction (MAE)",
+      "definition": "An advanced extraction technique where microwave energy heats solvents in contact with the sample, reducing time, cost, and solvent volume, though heat risk remains."
+    },
+    {
+      "term": "Supercritical fluid extraction (SFE)",
+      "definition": "An advanced extraction technique using pressurized CO₂ as solvent; it is fast, efficient, leaves no toxic residues, and causes no thermal degradation, but requires expensive equipment."
+    },
+    {
+      "term": "Partition coefficient",
+      "definition": "The ratio of concentrations of a compound in two immiscible phases at equilibrium; it determines the distribution of a compound between two immiscible solvents."
+    },
+    {
+      "term": "Partitioning",
+      "definition": "A soft separation method using two immiscible organic solvents of increasing polarity, based on the solubility of natural products, serving as an initial extract purification step."
+    },
+    {
+      "term": "Polarity index",
+      "definition": "A numerical scale that indicates the relative polarity of a solvent; higher values indicate greater polarity (e.g., water = 10.2, hexane = 0.1)."
+    }
+  ],
+  "resources": [],
+  "flashcards": [
+    {
+      "front": "What is phytochemistry?",
+      "back": "The study of chemicals produced by plants, especially secondary metabolites synthesized for self-defense against pests, pathogens, herbivores, UV radiation, and environmental stress."
+    },
+    {
+      "front": "What are primary metabolites?",
+      "back": "Compounds essential for fundamental plant processes such as growth, development, and reproduction; they include carbohydrates, proteins, nucleic acids, and lipids."
+    },
+    {
+      "front": "What are secondary metabolites?",
+      "back": "Compounds not directly involved in normal growth but crucial for a plant's survival and ecological interactions; they include alkaloids, terpenes, flavonoids, phenols, and glycosides."
+    },
+    {
+      "front": "Which plant compound was isolated in 1803–1817?",
+      "back": "Morphine was isolated from opium."
+    },
+    {
+      "front": "Name the compounds isolated in 1820.",
+      "back": "Quinine and caffeine."
+    },
+    {
+      "front": "What is the correct order of the plant-to-drug workflow?",
+      "back": "Collection → Drying → Extraction → Screening → Isolation → Preclinical Study → Clinical Trials → Approval."
+    },
+    {
+      "front": "What is lyophilization?",
+      "back": "Freeze-drying, a method that removes water from a frozen sample by sublimation under vacuum, suitable for heat-sensitive materials."
+    },
+    {
+      "front": "What is the difference between cold and hot extraction?",
+      "back": "Cold extraction (maceration, percolation, partitioning) uses no heat and is gentle on labile molecules but slow; hot extraction (infusion, digestion, decoction, Soxhlet) accelerates extraction and gives higher yields but risks degrading thermolabile compounds."
+    },
+    {
+      "front": "What is Soxhlet extraction?",
+      "back": "A continuous hot extraction method that uses a Soxhlet apparatus to extract large sample amounts with minimal solvent; high yield but heat may degrade sensitive compounds."
+    },
+    {
+      "front": "What is ultrasound-assisted extraction (UAE)?",
+      "back": "An advanced extraction technique using 20–2000 kHz waves to increase cell wall permeability via cavitation, enabling faster extraction without heat."
+    },
+    {
+      "front": "What is microwave-assisted extraction (MAE)?",
+      "back": "An advanced extraction technique where microwave energy heats solvents in contact with the sample, reducing time, cost, and solvent volume, though heat risk remains."
+    },
+    {
+      "front": "What is supercritical fluid extraction (SFE)?",
+      "back": "An advanced extraction technique using pressurized CO₂ as solvent; fast, efficient, no toxic residues, no thermal degradation, but expensive equipment required."
+    },
+    {
+      "front": "What is the principle of 'like dissolves like'?",
+      "back": "The principle that polar solvents dissolve polar compounds and nonpolar solvents dissolve nonpolar compounds."
+    },
+    {
+      "front": "Give examples of nonpolar compounds extracted with nonpolar solvents.",
+      "back": "Essential oils, lipids, waxes, fatty acids."
+    },
+    {
+      "front": "Give examples of polar compounds extracted with polar solvents.",
+      "back": "Glycosides, phenolic acids, sugars, amino acids."
+    },
+    {
+      "front": "What are the key parameters for extraction method selection?",
+      "back": "Polarity, pH, stability, cost, and safety."
+    },
+    {
+      "front": "How does pH affect alkaloid extraction?",
+      "back": "Alkaloids are basic compounds and are more soluble in organic solvents at high pH (alkaline)."
+    },
+    {
+      "front": "How does pH affect anthocyanin extraction?",
+      "back": "Anthocyanins are highly pH-sensitive and prefer acidic pH for stability."
+    },
+    {
+      "front": "What are the factors affecting extraction yield?",
+      "back": "1) Properties of the solvent; 2) Particle size of raw materials; 3) Extraction temperature; 4) Extraction duration; 5) Solvent-to-solid ratio (10:1 v/w)."
+    },
+    {
+      "front": "What is partitioning?",
+      "back": "A soft separation method using two immiscible organic solvents of increasing polarity, based on the solubility of natural products, serving as an initial extract purification step."
+    }
+  ],
+  "questions": [
+    {
+      "question": "Which of the following statements best describes the role of secondary metabolites in plants?",
+      "options": [
+        "They are essential for energy storage and structural components.",
+        "They are directly involved in growth, development, and reproduction.",
+        "They mediate ecological interactions and defense against pests and pathogens.",
+        "They serve as the primary genetic information carriers."
+      ],
+      "correctAnswer": "C",
+      "explanation": "Secondary metabolites are not directly involved in normal growth and development but are crucial for a plant's survival in its environment, mediating ecological interactions and defense.",
+      "subtopic": "Primary vs. Secondary Metabolites",
+      "optionExplanations": [
+        "Incorrect. Energy storage and structural components are roles of primary metabolites.",
+        "Incorrect. Growth, development, and reproduction are functions of primary metabolites.",
+        "Correct. Secondary metabolites mediate ecological interactions and defense.",
+        "Incorrect. Genetic information is carried by nucleic acids, which are primary metabolites."
+      ],
+      "hint": "Think about the ecological roles of secondary metabolites."
+    },
+    {
+      "question": "Which of the following is NOT a primary metabolite?",
+      "options": [
+        "Carbohydrates",
+        "Proteins",
+        "Alkaloids",
+        "Lipids"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Alkaloids are secondary metabolites, while carbohydrates, proteins, and lipids are primary metabolites.",
+      "subtopic": "Primary vs. Secondary Metabolites",
+      "optionExplanations": [
+        "Incorrect. Carbohydrates are primary metabolites.",
+        "Incorrect. Proteins are primary metabolites.",
+        "Correct. Alkaloids are secondary metabolites.",
+        "Incorrect. Lipids are primary metabolites."
+      ],
+      "hint": "Which one is not essential for fundamental plant processes?"
+    },
+    {
+      "question": "In which year was strychnine isolated?",
+      "options": [
+        "1803–1817",
+        "1817",
+        "1820",
+        "1828"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Strychnine was isolated in 1817, as shown in the historical timeline.",
+      "subtopic": "History of Phytochemistry",
+      "optionExplanations": [
+        "Incorrect. 1803–1817 is the period for morphine isolation.",
+        "Correct. Strychnine was isolated in 1817.",
+        "Incorrect. 1820 is when quinine and caffeine were isolated.",
+        "Incorrect. 1828 is when nicotine was isolated."
+      ],
+      "hint": "Look at the timeline on page 6."
+    },
+    {
+      "question": "Which compound was isolated in 1828?",
+      "options": [
+        "Atropine",
+        "Cocaine",
+        "Nicotine",
+        "Quinine"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Nicotine was isolated in 1828.",
+      "subtopic": "History of Phytochemistry",
+      "optionExplanations": [
+        "Incorrect. Atropine was isolated in 1833.",
+        "Incorrect. Cocaine was isolated in 1855.",
+        "Correct. Nicotine was isolated in 1828.",
+        "Incorrect. Quinine was isolated in 1820."
+      ],
+      "hint": "It is a stimulant found in tobacco."
+    },
+    {
+      "question": "What is the correct sequence of the plant-to-drug workflow?",
+      "options": [
+        "Collection → Drying → Extraction → Screening → Isolation → Preclinical Study → Clinical Trials → Approval",
+        "Collection → Extraction → Drying → Screening → Isolation → Preclinical Study → Clinical Trials → Approval",
+        "Drying → Collection → Extraction → Isolation → Screening → Preclinical Study → Clinical Trials → Approval",
+        "Collection → Drying → Screening → Extraction → Isolation → Preclinical Study → Clinical Trials → Approval"
+      ],
+      "correctAnswer": "A",
+      "explanation": "The correct order is Collection → Drying → Extraction → Screening → Isolation → Preclinical Study → Clinical Trials → Approval, as shown in the workflow diagram.",
+      "subtopic": "Plant-to-Drug Workflow",
+      "optionExplanations": [
+        "Correct. This is the correct order.",
+        "Incorrect. Drying occurs before extraction.",
+        "Incorrect. Collection is the first step, not drying.",
+        "Incorrect. Extraction occurs before screening."
+      ],
+      "hint": "Refer to the staircase diagram on page 7."
+    },
+    {
+      "question": "Which drying method is most suitable for heat-sensitive aqueous extracts?",
+      "options": [
+        "Oven drying",
+        "Air/shade drying",
+        "Lyophilization",
+        "Microwave-assisted drying"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Lyophilization (freeze-drying) is suitable for heat-sensitive aqueous extracts because it removes water by sublimation under vacuum without heat.",
+      "subtopic": "Drying Methods",
+      "optionExplanations": [
+        "Incorrect. Oven drying uses heat and can degrade sensitive compounds.",
+        "Incorrect. Air/shade drying is slow but may still expose to ambient conditions.",
+        "Correct. Lyophilization is ideal for heat-sensitive materials.",
+        "Incorrect. Microwave-assisted drying uses heat."
+      ],
+      "hint": "It involves freezing and vacuum."
+    },
+    {
+      "question": "What is the primary purpose of a rotary evaporator?",
+      "options": [
+        "To freeze-dry aqueous extracts",
+        "To remove solvent under reduced pressure with gentle heat",
+        "To extract volatile oils by steam distillation",
+        "To separate compounds by adsorption"
+      ],
+      "correctAnswer": "B",
+      "explanation": "A rotary evaporator removes solvent under reduced pressure with gentle heat.",
+      "subtopic": "Drying Methods",
+      "optionExplanations": [
+        "Incorrect. Freeze-drying is done by a lyophilizer.",
+        "Correct. Rotary evaporator removes solvent under reduced pressure.",
+        "Incorrect. Steam distillation is a separate extraction method.",
+        "Incorrect. Adsorption is a chromatographic separation principle."
+      ],
+      "hint": "It is used after extraction to concentrate liquid extracts."
+    },
+    {
+      "question": "Which of the following is a cold extraction method?",
+      "options": [
+        "Decoction",
+        "Infusion",
+        "Maceration",
+        "Digestion"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Maceration is a cold extraction method where powdered drug is soaked in solvent at room temperature for at least 3 days.",
+      "subtopic": "Extraction Methods",
+      "optionExplanations": [
+        "Incorrect. Decoction is a hot extraction method.",
+        "Incorrect. Infusion is a hot extraction method.",
+        "Correct. Maceration is a cold extraction method.",
+        "Incorrect. Digestion is a hot extraction method."
+      ],
+      "hint": "Which method uses no heat?"
+    },
+    {
+      "question": "What is the minimum duration for maceration?",
+      "options": [
+        "1 day",
+        "2 days",
+        "3 days",
+        "7 days"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Maceration involves soaking powdered drug in solvent at room temperature for at least 3 days with frequent agitation.",
+      "subtopic": "Extraction Methods",
+      "optionExplanations": [
+        "Incorrect. 1 day is too short.",
+        "Incorrect. 2 days is too short.",
+        "Correct. At least 3 days.",
+        "Incorrect. 7 days is longer than the minimum."
+      ],
+      "hint": "Refer to page 10."
+    },
+    {
+      "question": "Which of the following is an advantage of cold extraction over hot extraction?",
+      "options": [
+        "Faster extraction",
+        "Higher yields",
+        "Minimal degradation of labile molecules",
+        "Requires less solvent"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Cold extraction uses no heat, resulting in minimal degradation of labile molecules.",
+      "subtopic": "Extraction Methods",
+      "optionExplanations": [
+        "Incorrect. Hot extraction is faster.",
+        "Incorrect. Hot extraction generally gives higher yields.",
+        "Correct. Cold extraction is gentle on labile molecules.",
+        "Incorrect. Solvent usage is not the primary advantage."
+      ],
+      "hint": "Think about thermolabile compounds."
+    },
+    {
+      "question": "Which of the following is a non-conventional (modern) extraction method?",
+      "options": [
+        "Soxhlet",
+        "Maceration",
+        "Ultrasound-assisted extraction (UAE)",
+        "Percolation"
+      ],
+      "correctAnswer": "C",
+      "explanation": "UAE is a non-conventional (modern) extraction method that uses ultrasound waves.",
+      "subtopic": "Advanced Extraction Techniques",
+      "optionExplanations": [
+        "Incorrect. Soxhlet is a conventional method.",
+        "Incorrect. Maceration is a conventional method.",
+        "Correct. UAE is a modern method.",
+        "Incorrect. Percolation is a conventional method."
+      ],
+      "hint": "Which method uses physical energy to disrupt plant cells?"
+    },
+    {
+      "question": "How does ultrasound-assisted extraction increase extraction efficiency?",
+      "options": [
+        "By heating the solvent to high temperatures",
+        "By increasing cell wall permeability via cavitation",
+        "By using pressurized CO₂ as solvent",
+        "By applying microwave energy"
+      ],
+      "correctAnswer": "B",
+      "explanation": "UAE uses 20–2000 kHz waves to increase cell wall permeability via cavitation, enabling faster extraction without heat.",
+      "subtopic": "Advanced Extraction Techniques",
+      "optionExplanations": [
+        "Incorrect. UAE does not rely on heat.",
+        "Correct. Cavitation increases cell wall permeability.",
+        "Incorrect. Pressurized CO₂ is used in SFE.",
+        "Incorrect. Microwave energy is used in MAE."
+      ],
+      "hint": "Think about bubble formation and collapse."
+    },
+    {
+      "question": "Which advanced extraction technique uses pressurized CO₂ as solvent?",
+      "options": [
+        "Soxhlet",
+        "Ultrasound-assisted extraction",
+        "Microwave-assisted extraction",
+        "Supercritical fluid extraction"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Supercritical fluid extraction (SFE) uses pressurized CO₂ as solvent.",
+      "subtopic": "Advanced Extraction Techniques",
+      "optionExplanations": [
+        "Incorrect. Soxhlet uses organic solvents.",
+        "Incorrect. UAE uses ultrasound waves.",
+        "Incorrect. MAE uses microwave energy.",
+        "Correct. SFE uses pressurized CO₂."
+      ],
+      "hint": "It is fast, efficient, and leaves no toxic residues."
+    },
+    {
+      "question": "What is the main disadvantage of Soxhlet extraction?",
+      "options": [
+        "It requires large amounts of solvent",
+        "It cannot extract large sample amounts",
+        "Heat may degrade sensitive compounds",
+        "It is a cold extraction method"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Soxhlet extraction uses heat, which may degrade sensitive compounds.",
+      "subtopic": "Advanced Extraction Techniques",
+      "optionExplanations": [
+        "Incorrect. Soxhlet uses minimal solvent.",
+        "Incorrect. Soxhlet can extract large sample amounts.",
+        "Correct. Heat may degrade sensitive compounds.",
+        "Incorrect. Soxhlet is a hot extraction method."
+      ],
+      "hint": "Consider the temperature used."
+    },
+    {
+      "question": "Which solvent is most suitable for extracting nonpolar compounds such as essential oils?",
+      "options": [
+        "Water",
+        "Ethanol",
+        "Hexane",
+        "Methanol"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Nonpolar compounds such as essential oils are extracted with nonpolar solvents like hexane.",
+      "subtopic": "Polarity & Solvent Selection",
+      "optionExplanations": [
+        "Incorrect. Water is polar.",
+        "Incorrect. Ethanol is medium polarity.",
+        "Correct. Hexane is nonpolar.",
+        "Incorrect. Methanol is medium polarity."
+      ],
+      "hint": "Follow 'like dissolves like'."
+    },
+    {
+      "question": "Which solvent is most suitable for extracting glycosides?",
+      "options": [
+        "Hexane",
+        "Petroleum ether",
+        "Water",
+        "Chloroform"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Glycosides are polar compounds and are extracted with polar solvents such as water or aqueous ethanol.",
+      "subtopic": "Polarity & Solvent Selection",
+      "optionExplanations": [
+        "Incorrect. Hexane is nonpolar.",
+        "Incorrect. Petroleum ether is nonpolar.",
+        "Correct. Water is polar.",
+        "Incorrect. Chloroform has medium polarity."
+      ],
+      "hint": "Glycosides have sugar moieties."
+    },
+    {
+      "question": "What is the polarity index of water?",
+      "options": [
+        "0.1",
+        "4.0",
+        "5.1",
+        "10.2"
+      ],
+      "correctAnswer": "D",
+      "explanation": "The polarity index of water is 10.2, the highest in the table.",
+      "subtopic": "Polarity & Solvent Selection",
+      "optionExplanations": [
+        "Incorrect. 0.1 is the polarity index of hexane.",
+        "Incorrect. 4.0 is the polarity index of n-propyl alcohol.",
+        "Incorrect. 5.1 is the polarity index of acetone.",
+        "Correct. Water has a polarity index of 10.2."
+      ],
+      "hint": "Water is the most polar solvent listed."
+    },
+    {
+      "question": "Which solvent has a polarity index of 0.1?",
+      "options": [
+        "Hexane",
+        "Toluene",
+        "Ethyl ether",
+        "Chloroform"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Hexane has a polarity index of 0.1.",
+      "subtopic": "Polarity & Solvent Selection",
+      "optionExplanations": [
+        "Correct. Hexane has a polarity index of 0.1.",
+        "Incorrect. Toluene has a polarity index of 2.4.",
+        "Incorrect. Ethyl ether has a polarity index of 2.8.",
+        "Incorrect. Chloroform has a polarity index of 4.1."
+      ],
+      "hint": "It is a nonpolar solvent."
+    },
+    {
+      "question": "Why is sequential extraction with increasing polarity used?",
+      "options": [
+        "To extract all compounds simultaneously",
+        "To simplify the chemical complexity of biomass",
+        "To degrade thermolabile compounds",
+        "To increase the pH of the extract"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Sequential extraction with increasing polarity simplifies the chemical complexity of biomass by separating compounds into different polarity fractions.",
+      "subtopic": "Polarity & Solvent Selection",
+      "optionExplanations": [
+        "Incorrect. It separates compounds rather than extracting all at once.",
+        "Correct. It simplifies the chemical complexity.",
+        "Incorrect. It does not degrade compounds.",
+        "Incorrect. It is not related to pH adjustment."
+      ],
+      "hint": "Think about fractionation."
+    },
+    {
+      "question": "How does pH affect the extraction of alkaloids?",
+      "options": [
+        "Alkaloids are better extracted at low pH",
+        "Alkaloids are better extracted at high pH",
+        "pH has no effect on alkaloid extraction",
+        "Alkaloids are only extracted at neutral pH"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Alkaloids are basic compounds and are more soluble in organic solvents at high pH (alkaline), thus better extracted at high pH.",
+      "subtopic": "pH Effects on Extraction",
+      "optionExplanations": [
+        "Incorrect. Low pH would ionize alkaloids, reducing organic solvent solubility.",
+        "Correct. High pH favors alkaloid extraction.",
+        "Incorrect. pH significantly affects alkaloid solubility.",
+        "Incorrect. Neutral pH is not optimal for alkaloids."
+      ],
+      "hint": "Alkaloids are basic."
+    },
+    {
+      "question": "Why are anthocyanins preferably extracted at acidic pH?",
+      "options": [
+        "They are more stable and retain color at acidic pH",
+        "They are more soluble in nonpolar solvents at acidic pH",
+        "They hydrolyze at acidic pH",
+        "They are better extracted at high pH"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Anthocyanins are highly pH-sensitive, and their color and stability are optimal at acidic pH.",
+      "subtopic": "pH Effects on Extraction",
+      "optionExplanations": [
+        "Correct. Acidic pH stabilizes anthocyanins.",
+        "Incorrect. Anthocyanins are polar compounds.",
+        "Incorrect. They hydrolyze at extreme pH, but acidic pH is preferred.",
+        "Incorrect. High pH causes degradation."
+      ],
+      "hint": "Think about the color of anthocyanins."
+    },
+    {
+      "question": "What is the recommended solvent-to-solid ratio for extraction?",
+      "options": [
+        "1:1 v/w",
+        "5:1 v/w",
+        "10:1 v/w",
+        "20:1 v/w"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The solvent-to-solid ratio is 10:1 v/w.",
+      "subtopic": "Factors Affecting Extraction",
+      "optionExplanations": [
+        "Incorrect. 1:1 is too low.",
+        "Incorrect. 5:1 is lower than recommended.",
+        "Correct. 10:1 v/w is recommended.",
+        "Incorrect. 20:1 is higher than recommended."
+      ],
+      "hint": "Refer to page 21."
+    },
+    {
+      "question": "Which of the following is NOT a factor affecting extraction yield?",
+      "options": [
+        "Particle size of raw materials",
+        "Extraction temperature",
+        "Color of the solvent",
+        "Solvent-to-solid ratio"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The color of the solvent is not a factor affecting extraction yield. The factors are solvent properties, particle size, temperature, duration, and solvent-to-solid ratio.",
+      "subtopic": "Factors Affecting Extraction",
+      "optionExplanations": [
+        "Incorrect. Particle size is a factor.",
+        "Incorrect. Temperature is a factor.",
+        "Correct. Color of the solvent is not a factor.",
+        "Incorrect. Solvent-to-solid ratio is a factor."
+      ],
+      "hint": "Which is not related to extraction efficiency?"
+    },
+    {
+      "question": "What type of extract results from extraction with nonpolar solvents?",
+      "options": [
+        "Hydrophilic",
+        "Lipophilic",
+        "Amphiphilic",
+        "Hydrophobic"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Nonpolar solvents yield lipophilic ('fat-loving') extracts.",
+      "subtopic": "Extraction Outcomes",
+      "optionExplanations": [
+        "Incorrect. Hydrophilic extracts result from polar solvents.",
+        "Correct. Lipophilic extracts result from nonpolar solvents.",
+        "Incorrect. Amphiphilic is not a term used here.",
+        "Incorrect. Hydrophobic is similar but the lecture uses 'lipophilic'."
+      ],
+      "hint": "Fat-loving."
+    },
+    {
+      "question": "What is the principle behind partitioning?",
+      "options": [
+        "Adsorption",
+        "Partition coefficient",
+        "Ion exchange",
+        "Size exclusion"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Partitioning is based on the partition coefficient, which determines the distribution of compounds between two immiscible phases.",
+      "subtopic": "Partitioning",
+      "optionExplanations": [
+        "Incorrect. Adsorption is the principle of chromatography.",
+        "Correct. Partition coefficient governs partitioning.",
+        "Incorrect. Ion exchange is a different separation method.",
+        "Incorrect. Size exclusion is a different separation method."
+      ],
+      "hint": "It involves two immiscible solvents."
+    },
+    {
+      "question": "Which of the following is a characteristic of partitioning?",
+      "options": [
+        "It uses heat",
+        "It is based on adsorption",
+        "It is a soft separation method",
+        "It is a final purification step"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Partitioning is a soft separation method (no heat) and is an initial extract purification step.",
+      "subtopic": "Partitioning",
+      "optionExplanations": [
+        "Incorrect. Partitioning uses no heat.",
+        "Incorrect. Partitioning is based on solubility, not adsorption.",
+        "Correct. It is a soft separation method.",
+        "Incorrect. It is an initial purification step."
+      ],
+      "hint": "No heat is applied."
+    },
+    {
+      "question": "Which of the following is NOT a step in the plant-to-drug workflow?",
+      "options": [
+        "Collection",
+        "Drying",
+        "Fermentation",
+        "Extraction"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Fermentation is not listed in the plant-to-drug workflow. The steps are collection, drying, extraction, screening, isolation, preclinical study, clinical trials, and approval.",
+      "subtopic": "Plant-to-Drug Workflow",
+      "optionExplanations": [
+        "Incorrect. Collection is the first step.",
+        "Incorrect. Drying is the second step.",
+        "Correct. Fermentation is not in the workflow.",
+        "Incorrect. Extraction is the third step."
+      ],
+      "hint": "Refer to the staircase diagram."
+    },
+    {
+      "question": "What is the role of a lyophilizer?",
+      "options": [
+        "To extract volatile oils",
+        "To remove solvent under reduced pressure",
+        "To freeze-dry heat-sensitive aqueous extracts",
+        "To separate compounds by partitioning"
+      ],
+      "correctAnswer": "C",
+      "explanation": "A lyophilizer is used for freeze-drying heat-sensitive aqueous extracts.",
+      "subtopic": "Drying Methods",
+      "optionExplanations": [
+        "Incorrect. Volatile oils are extracted by distillation.",
+        "Incorrect. Rotary evaporator removes solvent under reduced pressure.",
+        "Correct. Lyophilizer freeze-dries heat-sensitive extracts.",
+        "Incorrect. Partitioning is a separation method."
+      ],
+      "hint": "It involves freezing and vacuum."
+    },
+    {
+      "question": "Which of the following compounds was isolated from opium?",
+      "options": [
+        "Quinine",
+        "Morphine",
+        "Nicotine",
+        "Atropine"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Morphine was isolated from opium in 1803–1817.",
+      "subtopic": "History of Phytochemistry",
+      "optionExplanations": [
+        "Incorrect. Quinine was isolated from cinchona bark.",
+        "Correct. Morphine was isolated from opium.",
+        "Incorrect. Nicotine was isolated from tobacco.",
+        "Incorrect. Atropine was isolated from belladonna."
+      ],
+      "hint": "It is a narcotic analgesic."
+    },
+    {
+      "question": "Which of the following is NOT a secondary metabolite?",
+      "options": [
+        "Alkaloids",
+        "Terpenes",
+        "Nucleic acids",
+        "Flavonoids"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Nucleic acids are primary metabolites, essential for genetic information. Alkaloids, terpenes, and flavonoids are secondary metabolites.",
+      "subtopic": "Primary vs. Secondary Metabolites",
+      "optionExplanations": [
+        "Incorrect. Alkaloids are secondary metabolites.",
+        "Incorrect. Terpenes are secondary metabolites.",
+        "Correct. Nucleic acids are primary metabolites.",
+        "Incorrect. Flavonoids are secondary metabolites."
+      ],
+      "hint": "Which one is essential for fundamental plant processes?"
+    },
+    {
+      "question": "What is the main advantage of hot extraction over cold extraction?",
+      "options": [
+        "Minimal degradation of labile molecules",
+        "Faster and more efficient with higher yields",
+        "Requires no solvent",
+        "Preserves all thermolabile compounds"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Hot extraction is faster, more efficient, and gives higher yields, but risks degrading thermolabile compounds.",
+      "subtopic": "Extraction Methods",
+      "optionExplanations": [
+        "Incorrect. Cold extraction minimizes degradation.",
+        "Correct. Hot extraction is faster and more efficient.",
+        "Incorrect. Hot extraction requires solvent.",
+        "Incorrect. Hot extraction may degrade thermolabile compounds."
+      ],
+      "hint": "Think about heat and efficiency."
+    },
+    {
+      "question": "Which extraction method is best for hard woody tissues like bark and roots?",
+      "options": [
+        "Maceration",
+        "Decoction",
+        "Percolation",
+        "Partitioning"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Hard woody tissues favor boiling methods like decoction, which uses heat to penetrate tough matrices.",
+      "subtopic": "Plant Matrix Characteristics",
+      "optionExplanations": [
+        "Incorrect. Maceration is cold and may not penetrate woody tissues well.",
+        "Correct. Decoction is a boiling method suitable for hard tissues.",
+        "Incorrect. Percolation is cold and less effective for woody tissues.",
+        "Incorrect. Partitioning is a separation method, not extraction."
+      ],
+      "hint": "Use heat for tough materials."
+    },
+    {
+      "question": "What happens to finer particles during extraction?",
+      "options": [
+        "They decrease mass transfer",
+        "They enhance mass transfer",
+        "They have no effect on extraction",
+        "They reduce yield"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Finer particles enhance mass transfer, improving extraction efficiency.",
+      "subtopic": "Plant Matrix Characteristics",
+      "optionExplanations": [
+        "Incorrect. Finer particles increase mass transfer.",
+        "Correct. Finer particles enhance mass transfer.",
+        "Incorrect. Particle size significantly affects extraction.",
+        "Incorrect. Finer particles typically increase yield."
+      ],
+      "hint": "Smaller particles have more surface area."
+    },
+    {
+      "question": "Which solvent is classified as medium polarity?",
+      "options": [
+        "Hexane",
+        "Water",
+        "Ethanol",
+        "Petroleum ether"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Ethanol is a medium polarity solvent, suitable for extracting flavonoids and tannins.",
+      "subtopic": "Polarity & Solvent Selection",
+      "optionExplanations": [
+        "Incorrect. Hexane is nonpolar.",
+        "Incorrect. Water is polar.",
+        "Correct. Ethanol is medium polarity.",
+        "Incorrect. Petroleum ether is nonpolar."
+      ],
+      "hint": "It is commonly used in tinctures."
+    },
+    {
+      "question": "What is the polarity index of ethanol?",
+      "options": [
+        "4.3",
+        "5.1",
+        "5.2",
+        "6.1"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Ethanol has a polarity index of 5.2.",
+      "subtopic": "Polarity & Solvent Selection",
+      "optionExplanations": [
+        "Incorrect. 4.3 is the polarity index of ethyl acetate.",
+        "Incorrect. 5.1 is the polarity index of acetone.",
+        "Correct. Ethanol has a polarity index of 5.2.",
+        "Incorrect. 6.1 is the polarity index of propylene carbonate."
+      ],
+      "hint": "It is slightly more polar than acetone."
+    },
+    {
+      "question": "Which of the following is NOT a criterion for a good extraction solvent?",
+      "options": [
+        "Selective",
+        "Volatile",
+        "Toxic",
+        "Chemically inert"
+      ],
+      "correctAnswer": "C",
+      "explanation": "A good solvent should be non-toxic, selective, volatile, cheap, preservative, and chemically inert.",
+      "subtopic": "Polarity & Solvent Selection",
+      "optionExplanations": [
+        "Incorrect. Selectivity is desirable.",
+        "Incorrect. Volatility is desirable.",
+        "Correct. Toxicity is undesirable.",
+        "Incorrect. Chemical inertness is desirable."
+      ],
+      "hint": "Which property is harmful?"
+    },
+    {
+      "question": "What is the primary focus of phytochemistry and drug discovery?",
+      "options": [
+        "Primary metabolites",
+        "Secondary metabolites",
+        "Inorganic compounds",
+        "Synthetic polymers"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Phytochemistry and drug discovery primarily focus on secondary metabolites due to their unique and potent biological activities.",
+      "subtopic": "Primary vs. Secondary Metabolites",
+      "optionExplanations": [
+        "Incorrect. Primary metabolites are ubiquitous and less diverse.",
+        "Correct. Secondary metabolites are the main focus.",
+        "Incorrect. Inorganic compounds are not the focus.",
+        "Incorrect. Synthetic polymers are not natural products."
+      ],
+      "hint": "These compounds mediate ecological interactions."
+    },
+    {
+      "question": "Which of the following is an example of a secondary metabolite?",
+      "options": [
+        "Glucose",
+        "DNA",
+        "Alkaloid",
+        "Amino acid"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Alkaloids are secondary metabolites. Glucose, DNA, and amino acids are primary metabolites.",
+      "subtopic": "Primary vs. Secondary Metabolites",
+      "optionExplanations": [
+        "Incorrect. Glucose is a primary metabolite.",
+        "Incorrect. DNA is a primary metabolite.",
+        "Correct. Alkaloids are secondary metabolites.",
+        "Incorrect. Amino acids are primary metabolites."
+      ],
+      "hint": "It often has medicinal properties."
+    },
+    {
+      "question": "What is the significance of 1803 in the history of medicine?",
+      "options": [
+        "Discovery of penicillin",
+        "Start of isolating pure active compounds from plants",
+        "First synthesis of aspirin",
+        "Discovery of DNA structure"
+      ],
+      "correctAnswer": "B",
+      "explanation": "In 1803, a new era in medicine began when scientists started isolating pure active compounds from plants, launching modern pharmacology.",
+      "subtopic": "History of Phytochemistry",
+      "optionExplanations": [
+        "Incorrect. Penicillin was discovered in 1928.",
+        "Correct. 1803 marked the beginning of isolating pure active compounds.",
+        "Incorrect. Aspirin was synthesized later.",
+        "Incorrect. DNA structure was discovered in 1953."
+      ],
+      "hint": "It launched modern pharmacology."
+    },
+    {
+      "question": "Which compound was isolated in 1855?",
+      "options": [
+        "Atropine",
+        "Cocaine",
+        "Nicotine",
+        "Strychnine"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Cocaine was isolated in 1855.",
+      "subtopic": "History of Phytochemistry",
+      "optionExplanations": [
+        "Incorrect. Atropine was isolated in 1833.",
+        "Correct. Cocaine was isolated in 1855.",
+        "Incorrect. Nicotine was isolated in 1828.",
+        "Incorrect. Strychnine was isolated in 1817."
+      ],
+      "hint": "It is a local anesthetic."
+    },
+    {
+      "question": "What is the purpose of screening in the plant-to-drug workflow?",
+      "options": [
+        "To dry the plant material",
+        "To identify bioactive compounds",
+        "To isolate pure compounds",
+        "To conduct clinical trials"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Screening is the step where extracts are tested to identify bioactive compounds.",
+      "subtopic": "Plant-to-Drug Workflow",
+      "optionExplanations": [
+        "Incorrect. Drying is a separate earlier step.",
+        "Correct. Screening identifies bioactive compounds.",
+        "Incorrect. Isolation comes after screening.",
+        "Incorrect. Clinical trials are much later."
+      ],
+      "hint": "It involves biological testing."
+    },
+    {
+      "question": "Which of the following is NOT an advanced extraction technique?",
+      "options": [
+        "Soxhlet",
+        "Ultrasound-assisted extraction",
+        "Microwave-assisted extraction",
+        "Supercritical fluid extraction"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Soxhlet is a conventional (traditional) extraction method, while UAE, MAE, and SFE are advanced (modern) techniques.",
+      "subtopic": "Advanced Extraction Techniques",
+      "optionExplanations": [
+        "Correct. Soxhlet is conventional.",
+        "Incorrect. UAE is advanced.",
+        "Incorrect. MAE is advanced.",
+        "Incorrect. SFE is advanced."
+      ],
+      "hint": "Which one is traditional?"
+    },
+    {
+      "question": "What is the main advantage of supercritical fluid extraction (SFE)?",
+      "options": [
+        "Uses no solvent",
+        "No thermal degradation and no toxic residues",
+        "Requires cheap equipment",
+        "Can only extract nonpolar compounds"
+      ],
+      "correctAnswer": "B",
+      "explanation": "SFE causes no thermal degradation and leaves no toxic residues, making it ideal for sensitive compounds.",
+      "subtopic": "Advanced Extraction Techniques",
+      "optionExplanations": [
+        "Incorrect. SFE uses CO₂ as solvent.",
+        "Correct. No thermal degradation and no toxic residues.",
+        "Incorrect. SFE requires expensive equipment.",
+        "Incorrect. SFE can extract a range of compounds."
+      ],
+      "hint": "It uses pressurized CO₂."
+    },
+    {
+      "question": "Which of the following statements about microwave-assisted extraction (MAE) is correct?",
+      "options": [
+        "It uses ultrasound waves",
+        "It reduces time, cost, and solvent volume",
+        "It is a cold extraction method",
+        "It uses pressurized CO₂"
+      ],
+      "correctAnswer": "B",
+      "explanation": "MAE uses microwave energy to heat solvents, reducing time, cost, and solvent volume, though heat risk remains.",
+      "subtopic": "Advanced Extraction Techniques",
+      "optionExplanations": [
+        "Incorrect. UAE uses ultrasound waves.",
+        "Correct. MAE reduces time, cost, and solvent volume.",
+        "Incorrect. MAE uses heat.",
+        "Incorrect. SFE uses pressurized CO₂."
+      ],
+      "hint": "It uses microwaves."
+    },
+    {
+      "question": "What is the principle of 'like dissolves like' in solvent selection?",
+      "options": [
+        "Polar solvents dissolve nonpolar compounds",
+        "Nonpolar solvents dissolve polar compounds",
+        "Polar solvents dissolve polar compounds and nonpolar solvents dissolve nonpolar compounds",
+        "Solvents dissolve all compounds equally"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The principle states that polar solvents dissolve polar compounds and nonpolar solvents dissolve nonpolar compounds.",
+      "subtopic": "Polarity & Solvent Selection",
+      "optionExplanations": [
+        "Incorrect. Polar solvents dissolve polar compounds.",
+        "Incorrect. Nonpolar solvents dissolve nonpolar compounds.",
+        "Correct. Like dissolves like.",
+        "Incorrect. Solvents have selectivity."
+      ],
+      "hint": "Match polarities."
+    },
+    {
+      "question": "Which of the following is a polar compound?",
+      "options": [
+        "Essential oil",
+        "Lipid",
+        "Wax",
+        "Glycoside"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Glycosides are polar compounds, while essential oils, lipids, and waxes are nonpolar.",
+      "subtopic": "Polarity & Solvent Selection",
+      "optionExplanations": [
+        "Incorrect. Essential oils are nonpolar.",
+        "Incorrect. Lipids are nonpolar.",
+        "Incorrect. Waxes are nonpolar.",
+        "Correct. Glycosides are polar."
+      ],
+      "hint": "It contains sugar moieties."
+    },
+    {
+      "question": "What is the effect of extreme pH on glycosides?",
+      "options": [
+        "They are more stable",
+        "They undergo hydrolysis",
+        "They become more soluble in organic solvents",
+        "They are converted to alkaloids"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Glycosides may undergo hydrolysis at extreme acidic or alkaline pH, leading to breakdown of the molecule.",
+      "subtopic": "pH Effects on Extraction",
+      "optionExplanations": [
+        "Incorrect. Extreme pH destabilizes glycosides.",
+        "Correct. Glycosides hydrolyze at extreme pH.",
+        "Incorrect. Hydrolysis reduces solubility in organic solvents.",
+        "Incorrect. They do not convert to alkaloids."
+      ],
+      "hint": "Think about bond cleavage."
+    },
+    {
+      "question": "Which of the following is a lipophilic extract?",
+      "options": [
+        "Extract obtained with water",
+        "Extract obtained with aqueous ethanol",
+        "Extract obtained with hexane",
+        "Extract obtained with methanol"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Lipophilic ('fat-loving') extracts result from extraction with nonpolar solvents like hexane.",
+      "subtopic": "Extraction Outcomes",
+      "optionExplanations": [
+        "Incorrect. Water yields hydrophilic extracts.",
+        "Incorrect. Aqueous ethanol yields hydrophilic extracts.",
+        "Correct. Hexane yields lipophilic extracts.",
+        "Incorrect. Methanol yields hydrophilic extracts."
+      ],
+      "hint": "Nonpolar solvent."
+    },
+    {
+      "question": "What is the purpose of partitioning in the extraction process?",
+      "options": [
+        "To dry the extract",
+        "To purify the initial extract",
+        "To degrade thermolabile compounds",
+        "To increase the polarity of the extract"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Partitioning is an initial extract purification step that separates compounds based on their solubility in two immiscible solvents.",
+      "subtopic": "Partitioning",
+      "optionExplanations": [
+        "Incorrect. Drying is a separate step.",
+        "Correct. Partitioning purifies the initial extract.",
+        "Incorrect. Partitioning is a soft method that does not degrade compounds.",
+        "Incorrect. It separates compounds by polarity, not increases it."
+      ],
+      "hint": "It uses two immiscible solvents."
+    },
+    {
+      "question": "Which of the following is NOT a characteristic of partitioning?",
+      "options": [
+        "Uses two immiscible solvents",
+        "Based on partition coefficient",
+        "Uses heat",
+        "Soft separation method"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Partitioning is a soft separation method that uses no heat.",
+      "subtopic": "Partitioning",
+      "optionExplanations": [
+        "Incorrect. It uses two immiscible solvents.",
+        "Incorrect. It is based on the partition coefficient.",
+        "Correct. It does not use heat.",
+        "Incorrect. It is a soft separation method."
+      ],
+      "hint": "No heat is applied."
+    },
+    {
+      "question": "Which of the following compounds is isolated from cinchona bark?",
+      "options": [
+        "Morphine",
+        "Quinine",
+        "Nicotine",
+        "Atropine"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Quinine is isolated from cinchona bark.",
+      "subtopic": "History of Phytochemistry",
+      "optionExplanations": [
+        "Incorrect. Morphine is from opium.",
+        "Correct. Quinine is from cinchona bark.",
+        "Incorrect. Nicotine is from tobacco.",
+        "Incorrect. Atropine is from belladonna."
+      ],
+      "hint": "It is an antimalarial."
+    },
+    {
+      "question": "What is the first step in the plant-to-drug workflow?",
+      "options": [
+        "Drying",
+        "Extraction",
+        "Collection",
+        "Screening"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The first step is collection of the plant material.",
+      "subtopic": "Plant-to-Drug Workflow",
+      "optionExplanations": [
+        "Incorrect. Drying is the second step.",
+        "Incorrect. Extraction is the third step.",
+        "Correct. Collection is the first step.",
+        "Incorrect. Screening is the fourth step."
+      ],
+      "hint": "It involves gathering the plant."
+    },
+    {
+      "question": "Which of the following is a conventional extraction method?",
+      "options": [
+        "Ultrasound-assisted extraction",
+        "Microwave-assisted extraction",
+        "Supercritical fluid extraction",
+        "Soxhlet"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Soxhlet is a conventional (traditional) extraction method.",
+      "subtopic": "Extraction Methods",
+      "optionExplanations": [
+        "Incorrect. UAE is modern.",
+        "Incorrect. MAE is modern.",
+        "Incorrect. SFE is modern.",
+        "Correct. Soxhlet is conventional."
+      ],
+      "hint": "It uses a continuous hot extraction apparatus."
+    },
+    {
+      "question": "What is the main disadvantage of using heat in extraction?",
+      "options": [
+        "It is slower",
+        "It gives lower yields",
+        "It may degrade thermolabile compounds",
+        "It requires more solvent"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Heat accelerates extraction but risks degrading thermolabile compounds.",
+      "subtopic": "Extraction Methods",
+      "optionExplanations": [
+        "Incorrect. Heat makes extraction faster.",
+        "Incorrect. Heat generally increases yields.",
+        "Correct. Heat may degrade thermolabile compounds.",
+        "Incorrect. Heat does not necessarily require more solvent."
+      ],
+      "hint": "Think about sensitive molecules."
+    },
+    {
+      "question": "Which solvent would be best for extracting flavonoids?",
+      "options": [
+        "Hexane",
+        "Petroleum ether",
+        "Ethanol",
+        "Water"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Flavonoids are medium polarity compounds and are best extracted with ethanol or methanol.",
+      "subtopic": "Polarity & Solvent Selection",
+      "optionExplanations": [
+        "Incorrect. Hexane is nonpolar.",
+        "Incorrect. Petroleum ether is nonpolar.",
+        "Correct. Ethanol is medium polarity.",
+        "Incorrect. Water is polar."
+      ],
+      "hint": "Medium polarity solvent."
+    },
+    {
+      "question": "Which of the following is NOT a factor influencing the choice of extraction method?",
+      "options": [
+        "Polarity of the target compound",
+        "pH of the solvent",
+        "Color of the plant material",
+        "Stability of the compound"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The color of the plant material is not a key parameter for method selection. The key parameters are polarity, pH, stability, cost, and safety.",
+      "subtopic": "Key Parameters for Method Selection",
+      "optionExplanations": [
+        "Incorrect. Polarity is a key parameter.",
+        "Incorrect. pH is a key parameter.",
+        "Correct. Color is not a key parameter.",
+        "Incorrect. Stability is a key parameter."
+      ],
+      "hint": "Which factor does not affect extraction efficiency?"
+    },
+    {
+      "question": "What is the role of pH in the extraction of acidic compounds?",
+      "options": [
+        "Acidic compounds are better extracted at low pH",
+        "Acidic compounds are better extracted at high pH",
+        "pH has no effect on acidic compounds",
+        "Acidic compounds are only extracted at neutral pH"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Adjusting pH can optimize solubility; acidic compounds are generally better extracted at low pH where they are unionized and more soluble in organic solvents.",
+      "subtopic": "pH Effects on Extraction",
+      "optionExplanations": [
+        "Correct. Low pH favors extraction of acidic compounds.",
+        "Incorrect. High pH would ionize acidic compounds.",
+        "Incorrect. pH significantly affects acidic compounds.",
+        "Incorrect. Neutral pH is not optimal."
+      ],
+      "hint": "Acidic compounds are neutral at low pH."
+    },
+    {
+      "question": "Which of the following compounds is a primary metabolite?",
+      "options": [
+        "Alkaloid",
+        "Terpene",
+        "Flavonoid",
+        "Amino acid"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Amino acids are primary metabolites, while alkaloids, terpenes, and flavonoids are secondary metabolites.",
+      "subtopic": "Primary vs. Secondary Metabolites",
+      "optionExplanations": [
+        "Incorrect. Alkaloids are secondary.",
+        "Incorrect. Terpenes are secondary.",
+        "Incorrect. Flavonoids are secondary.",
+        "Correct. Amino acids are primary."
+      ],
+      "hint": "It is a building block of proteins."
+    },
+    {
+      "question": "What is the significance of the year 1817 in phytochemistry?",
+      "options": [
+        "Morphine was isolated",
+        "Strychnine was isolated",
+        "Quinine was isolated",
+        "Nicotine was isolated"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Strychnine was isolated in 1817.",
+      "subtopic": "History of Phytochemistry",
+      "optionExplanations": [
+        "Incorrect. Morphine was isolated in 1803–1817.",
+        "Correct. Strychnine was isolated in 1817.",
+        "Incorrect. Quinine was isolated in 1820.",
+        "Incorrect. Nicotine was isolated in 1828."
+      ],
+      "hint": "It is a poison."
+    },
+    {
+      "question": "Which of the following is a characteristic of a good extraction solvent?",
+      "options": [
+        "High toxicity",
+        "High boiling point",
+        "Chemically reactive",
+        "Low toxicity"
+      ],
+      "correctAnswer": "D",
+      "explanation": "A good solvent should have low toxicity, low boiling point, and be chemically inert.",
+      "subtopic": "Polarity & Solvent Selection",
+      "optionExplanations": [
+        "Incorrect. Low toxicity is desired.",
+        "Incorrect. Low boiling point is desired.",
+        "Incorrect. Chemical inertness is desired.",
+        "Correct. Low toxicity is a desirable property."
+      ],
+      "hint": "Safety is a priority."
+    },
+    {
+      "question": "What is the purpose of drying plant materials before extraction?",
+      "options": [
+        "To increase moisture content",
+        "To prevent degradation and improve extraction efficiency",
+        "To increase the weight of the material",
+        "To make the material more polar"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Drying removes moisture, which prevents degradation (e.g., enzymatic or microbial) and improves extraction efficiency by allowing better solvent penetration.",
+      "subtopic": "Drying Methods",
+      "optionExplanations": [
+        "Incorrect. Drying reduces moisture.",
+        "Correct. Drying prevents degradation and improves extraction.",
+        "Incorrect. Drying reduces weight.",
+        "Incorrect. Drying does not affect polarity."
+      ],
+      "hint": "Moisture can cause spoilage."
+    },
+    {
+      "question": "Which of the following is NOT a cold extraction method?",
+      "options": [
+        "Maceration",
+        "Percolation",
+        "Partitioning",
+        "Decoction"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Decoction is a hot extraction method, while maceration, percolation, and partitioning are cold methods.",
+      "subtopic": "Extraction Methods",
+      "optionExplanations": [
+        "Incorrect. Maceration is cold.",
+        "Incorrect. Percolation is cold.",
+        "Incorrect. Partitioning is cold.",
+        "Correct. Decoction is hot."
+      ],
+      "hint": "Which method uses boiling?"
+    },
+    {
+      "question": "What is the primary advantage of using sequential extraction with increasing polarity?",
+      "options": [
+        "It extracts all compounds at once",
+        "It separates compounds into different polarity fractions",
+        "It degrades all compounds",
+        "It requires no solvent"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Sequential extraction with increasing polarity separates compounds into different polarity fractions, simplifying the chemical complexity of the biomass.",
+      "subtopic": "Polarity & Solvent Selection",
+      "optionExplanations": [
+        "Incorrect. It separates compounds rather than extracting all at once.",
+        "Correct. It separates compounds by polarity.",
+        "Incorrect. It does not degrade compounds.",
+        "Incorrect. It requires solvents."
+      ],
+      "hint": "Think about fractionation."
+    },
+    {
+      "question": "Which of the following is a medium polarity compound?",
+      "options": [
+        "Essential oil",
+        "Lipid",
+        "Flavonoid",
+        "Sugar"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Flavonoids are medium polarity compounds, extracted with ethanol or methanol.",
+      "subtopic": "Polarity & Solvent Selection",
+      "optionExplanations": [
+        "Incorrect. Essential oils are nonpolar.",
+        "Incorrect. Lipids are nonpolar.",
+        "Correct. Flavonoids are medium polarity.",
+        "Incorrect. Sugars are polar."
+      ],
+      "hint": "They are polyphenolic compounds."
+    },
+    {
+      "question": "What is the effect of particle size on extraction efficiency?",
+      "options": [
+        "Larger particles enhance mass transfer",
+        "Finer particles enhance mass transfer",
+        "Particle size has no effect",
+        "Finer particles decrease yield"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Finer particles enhance mass transfer by increasing surface area, improving extraction efficiency.",
+      "subtopic": "Factors Affecting Extraction",
+      "optionExplanations": [
+        "Incorrect. Larger particles have less surface area.",
+        "Correct. Finer particles enhance mass transfer.",
+        "Incorrect. Particle size significantly affects extraction.",
+        "Incorrect. Finer particles typically increase yield."
+      ],
+      "hint": "More surface area."
+    },
+    {
+      "question": "Which of the following is NOT a step in the plant-to-drug workflow?",
+      "options": [
+        "Preclinical study",
+        "Clinical trials",
+        "Marketing",
+        "Isolation"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Marketing is not listed as a step in the workflow; the final step is approval. Marketing occurs after approval.",
+      "subtopic": "Plant-to-Drug Workflow",
+      "optionExplanations": [
+        "Incorrect. Preclinical study is step 6.",
+        "Incorrect. Clinical trials are step 7.",
+        "Correct. Marketing is not in the workflow.",
+        "Incorrect. Isolation is step 5."
+      ],
+      "hint": "It comes after approval."
+    },
+    {
+      "question": "Which extraction method is best for thermolabile compounds?",
+      "options": [
+        "Soxhlet",
+        "Decoction",
+        "Maceration",
+        "Microwave-assisted extraction"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Maceration is a cold extraction method that minimizes degradation of thermolabile compounds.",
+      "subtopic": "Extraction Methods",
+      "optionExplanations": [
+        "Incorrect. Soxhlet uses heat.",
+        "Incorrect. Decoction uses boiling.",
+        "Correct. Maceration is cold and gentle.",
+        "Incorrect. MAE uses heat."
+      ],
+      "hint": "Use no heat."
+    },
+    {
+      "question": "What is the primary role of a rotary evaporator in the extraction process?",
+      "options": [
+        "To extract compounds from plant material",
+        "To remove solvent from the extract",
+        "To separate compounds by polarity",
+        "To dry the plant material"
+      ],
+      "correctAnswer": "B",
+      "explanation": "A rotary evaporator removes solvent under reduced pressure with gentle heat after extraction.",
+      "subtopic": "Drying Methods",
+      "optionExplanations": [
+        "Incorrect. Extraction is done by other methods.",
+        "Correct. Rotary evaporator removes solvent.",
+        "Incorrect. Separation is done by partitioning or chromatography.",
+        "Incorrect. Drying is done before extraction."
+      ],
+      "hint": "It concentrates the extract."
+    },
+    {
+      "question": "Which of the following is a polar solvent?",
+      "options": [
+        "Hexane",
+        "Chloroform",
+        "Water",
+        "Toluene"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Water is a polar solvent with a polarity index of 10.2.",
+      "subtopic": "Polarity & Solvent Selection",
+      "optionExplanations": [
+        "Incorrect. Hexane is nonpolar.",
+        "Incorrect. Chloroform is medium polarity.",
+        "Correct. Water is polar.",
+        "Incorrect. Toluene is nonpolar."
+      ],
+      "hint": "It has a high polarity index."
+    },
+    {
+      "question": "What is the recommended solvent-to-solid ratio for extraction?",
+      "options": [
+        "5:1 v/w",
+        "10:1 v/w",
+        "15:1 v/w",
+        "20:1 v/w"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The recommended solvent-to-solid ratio is 10:1 v/w.",
+      "subtopic": "Factors Affecting Extraction",
+      "optionExplanations": [
+        "Incorrect. 5:1 is lower than recommended.",
+        "Correct. 10:1 v/w is recommended.",
+        "Incorrect. 15:1 is higher than recommended.",
+        "Incorrect. 20:1 is higher than recommended."
+      ],
+      "hint": "Refer to page 21."
+    },
+    {
+      "question": "Which of the following compounds is a secondary metabolite?",
+      "options": [
+        "Glucose",
+        "Protein",
+        "Terpene",
+        "DNA"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Terpenes are secondary metabolites, while glucose, proteins, and DNA are primary metabolites.",
+      "subtopic": "Primary vs. Secondary Metabolites",
+      "optionExplanations": [
+        "Incorrect. Glucose is a primary metabolite.",
+        "Incorrect. Proteins are primary metabolites.",
+        "Correct. Terpenes are secondary metabolites.",
+        "Incorrect. DNA is a primary metabolite."
+      ],
+      "hint": "They are volatile compounds."
+    },
+    {
+      "question": "What is the significance of the year 1820 in phytochemistry?",
+      "options": [
+        "Morphine was isolated",
+        "Strychnine was isolated",
+        "Quinine and caffeine were isolated",
+        "Nicotine was isolated"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Quinine and caffeine were isolated in 1820.",
+      "subtopic": "History of Phytochemistry",
+      "optionExplanations": [
+        "Incorrect. Morphine was isolated in 1803–1817.",
+        "Incorrect. Strychnine was isolated in 1817.",
+        "Correct. Quinine and caffeine were isolated in 1820.",
+        "Incorrect. Nicotine was isolated in 1828."
+      ],
+      "hint": "Two compounds were isolated this year."
+    },
+    {
+      "question": "Which of the following is a characteristic of a good extraction solvent?",
+      "options": [
+        "High boiling point",
+        "High toxicity",
+        "Low boiling point",
+        "Chemically reactive"
+      ],
+      "correctAnswer": "C",
+      "explanation": "A good solvent should have a low boiling point for easy removal, low toxicity, and be chemically inert.",
+      "subtopic": "Polarity & Solvent Selection",
+      "optionExplanations": [
+        "Incorrect. Low boiling point is desired.",
+        "Incorrect. Low toxicity is desired.",
+        "Correct. Low boiling point facilitates solvent removal.",
+        "Incorrect. Chemical inertness is desired."
+      ],
+      "hint": "It should be easy to evaporate."
+    },
+    {
+      "question": "What is the primary purpose of drying plant materials before extraction?",
+      "options": [
+        "To increase moisture content",
+        "To prevent degradation and improve extraction efficiency",
+        "To increase the weight of the material",
+        "To make the material more polar"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Drying removes moisture, which prevents degradation (e.g., enzymatic or microbial) and improves extraction efficiency by allowing better solvent penetration.",
+      "subtopic": "Drying Methods",
+      "optionExplanations": [
+        "Incorrect. Drying reduces moisture.",
+        "Correct. Drying prevents degradation and improves extraction.",
+        "Incorrect. Drying reduces weight.",
+        "Incorrect. Drying does not affect polarity."
+      ],
+      "hint": "Moisture can cause spoilage."
+    },
+    {
+      "question": "Which of the following is NOT a cold extraction method?",
+      "options": [
+        "Maceration",
+        "Percolation",
+        "Partitioning",
+        "Decoction"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Decoction is a hot extraction method, while maceration, percolation, and partitioning are cold methods.",
+      "subtopic": "Extraction Methods",
+      "optionExplanations": [
+        "Incorrect. Maceration is cold.",
+        "Incorrect. Percolation is cold.",
+        "Incorrect. Partitioning is cold.",
+        "Correct. Decoction is hot."
+      ],
+      "hint": "Which method uses boiling?"
+    },
+    {
+      "question": "What is the primary advantage of using sequential extraction with increasing polarity?",
+      "options": [
+        "It extracts all compounds at once",
+        "It separates compounds into different polarity fractions",
+        "It degrades all compounds",
+        "It requires no solvent"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Sequential extraction with increasing polarity separates compounds into different polarity fractions, simplifying the chemical complexity of the biomass.",
+      "subtopic": "Polarity & Solvent Selection",
+      "optionExplanations": [
+        "Incorrect. It separates compounds rather than extracting all at once.",
+        "Correct. It separates compounds by polarity.",
+        "Incorrect. It does not degrade compounds.",
+        "Incorrect. It requires solvents."
+      ],
+      "hint": "Think about fractionation."
+    },
+    {
+      "question": "Which of the following is a medium polarity compound?",
+      "options": [
+        "Essential oil",
+        "Lipid",
+        "Flavonoid",
+        "Sugar"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Flavonoids are medium polarity compounds, extracted with ethanol or methanol.",
+      "subtopic": "Polarity & Solvent Selection",
+      "optionExplanations": [
+        "Incorrect. Essential oils are nonpolar.",
+        "Incorrect. Lipids are nonpolar.",
+        "Correct. Flavonoids are medium polarity.",
+        "Incorrect. Sugars are polar."
+      ],
+      "hint": "They are polyphenolic compounds."
+    },
+    {
+      "question": "What is the effect of particle size on extraction efficiency?",
+      "options": [
+        "Larger particles enhance mass transfer",
+        "Finer particles enhance mass transfer",
+        "Particle size has no effect",
+        "Finer particles decrease yield"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Finer particles enhance mass transfer by increasing surface area, improving extraction efficiency.",
+      "subtopic": "Factors Affecting Extraction",
+      "optionExplanations": [
+        "Incorrect. Larger particles have less surface area.",
+        "Correct. Finer particles enhance mass transfer.",
+        "Incorrect. Particle size significantly affects extraction.",
+        "Incorrect. Finer particles typically increase yield."
+      ],
+      "hint": "More surface area."
+    },
+    {
+      "question": "Which of the following is NOT a step in the plant-to-drug workflow?",
+      "options": [
+        "Preclinical study",
+        "Clinical trials",
+        "Marketing",
+        "Isolation"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Marketing is not listed as a step in the workflow; the final step is approval. Marketing occurs after approval.",
+      "subtopic": "Plant-to-Drug Workflow",
+      "optionExplanations": [
+        "Incorrect. Preclinical study is step 6.",
+        "Incorrect. Clinical trials are step 7.",
+        "Correct. Marketing is not in the workflow.",
+        "Incorrect. Isolation is step 5."
+      ],
+      "hint": "It comes after approval."
+    },
+    {
+      "question": "Which extraction method is best for thermolabile compounds?",
+      "options": [
+        "Soxhlet",
+        "Decoction",
+        "Maceration",
+        "Microwave-assisted extraction"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Maceration is a cold extraction method that minimizes degradation of thermolabile compounds.",
+      "subtopic": "Extraction Methods",
+      "optionExplanations": [
+        "Incorrect. Soxhlet uses heat.",
+        "Incorrect. Decoction uses boiling.",
+        "Correct. Maceration is cold and gentle.",
+        "Incorrect. MAE uses heat."
+      ],
+      "hint": "Use no heat."
+    },
+    {
+      "question": "What is the primary role of a rotary evaporator in the extraction process?",
+      "options": [
+        "To extract compounds from plant material",
+        "To remove solvent from the extract",
+        "To separate compounds by polarity",
+        "To dry the plant material"
+      ],
+      "correctAnswer": "B",
+      "explanation": "A rotary evaporator removes solvent under reduced pressure with gentle heat after extraction.",
+      "subtopic": "Drying Methods",
+      "optionExplanations": [
+        "Incorrect. Extraction is done by other methods.",
+        "Correct. Rotary evaporator removes solvent.",
+        "Incorrect. Separation is done by partitioning or chromatography.",
+        "Incorrect. Drying is done before extraction."
+      ],
+      "hint": "It concentrates the extract."
+    },
+    {
+      "question": "Which of the following is a polar solvent?",
+      "options": [
+        "Hexane",
+        "Chloroform",
+        "Water",
+        "Toluene"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Water is a polar solvent with a polarity index of 10.2.",
+      "subtopic": "Polarity & Solvent Selection",
+      "optionExplanations": [
+        "Incorrect. Hexane is nonpolar.",
+        "Incorrect. Chloroform is medium polarity.",
+        "Correct. Water is polar.",
+        "Incorrect. Toluene is nonpolar."
+      ],
+      "hint": "It has a high polarity index."
+    },
+    {
+      "question": "What is the recommended solvent-to-solid ratio for extraction?",
+      "options": [
+        "5:1 v/w",
+        "10:1 v/w",
+        "15:1 v/w",
+        "20:1 v/w"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The recommended solvent-to-solid ratio is 10:1 v/w.",
+      "subtopic": "Factors Affecting Extraction",
+      "optionExplanations": [
+        "Incorrect. 5:1 is lower than recommended.",
+        "Correct. 10:1 v/w is recommended.",
+        "Incorrect. 15:1 is higher than recommended.",
+        "Incorrect. 20:1 is higher than recommended."
+      ],
+      "hint": "Refer to page 21."
+    }
+  ]
+    }
