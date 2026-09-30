@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1E40AF" />
+  <meta name="description" content="Exam page — Beyond The Imagination pharmacy examination platform." />
+  <title>Exam | Beyond The Imagination</title>
+  <link rel="icon" type="image/png" href="./usc-fop-logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            royal: '#1E40AF',
+            skyx: '#0EA5E9',
+            ink: '#0F172A',
+            warmred: '#EF4444',
+            warmyellow: '#F59E0B',
+            softblue: '#E0F2FE',
+            violetx: '#7C3AED'
+          },
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            display: ['"Plus Jakarta Sans"', 'Inter', 'ui-sans-serif', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    :root { color-scheme: light; --royal:#1E40AF; --skyx:#0EA5E9; --ink:#0F172A; }
+    html { scroll-behavior: smooth; }
+    body { font-family: Inter, ui-sans-serif, system-ui, sans-serif; background:#fbfcff; overflow-x:hidden; }
+
+    ::selection { background: rgba(14,165,233,.22); color:#0F172A; }
+
+    .focus-ring:focus-visible, button:focus-visible, a:focus-visible, input:focus-visible {
+      outline: 3px solid rgba(14,165,233,.5); outline-offset: 3px; border-radius: .5rem;
+    }
+
+    .aurora-bg {
+      position: fixed; inset: 0; z-index: -3; overflow: hidden; pointer-events: none;
+      background:
+        radial-gradient(1100px 780px at 8% -5%, #e0f2fe 0%, transparent 55%),
+        radial-gradient(900px 700px at 95% 5%, #ede9fe 0%, transparent 52%),
+        radial-gradient(1000px 800px at 50% 105%, #e0f7ff 0%, transparent 58%),
+        #fbfcff;
+    }
+    .orb { position: absolute; border-radius: 50%; filter: blur(80px); opacity: .5; will-change: transform; }
+    .orb-1 { width: 520px; height: 520px; top: -140px; left: -120px; background: radial-gradient(circle at 30% 30%, #93c5fd, #38bdf8 60%, transparent 70%); animation: drift1 24s ease-in-out infinite alternate; }
+    .orb-2 { width: 460px; height: 460px; top: 8%; right: -140px; background: radial-gradient(circle at 60% 40%, #c4b5fd, #a78bfa 60%, transparent 72%); animation: drift2 28s ease-in-out infinite alternate; }
+    .orb-3 { width: 600px; height: 600px; bottom: -220px; left: 30%; background: radial-gradient(circle at 50% 50%, #bae6fd, #7dd3fc 60%, transparent 72%); opacity: .35; animation: drift3 30s ease-in-out infinite alternate; }
+    @keyframes drift1 { to { transform: translate3d(90px, 70px, 0) scale(1.12); } }
+    @keyframes drift2 { to { transform: translate3d(-80px, 90px, 0) scale(1.08); } }
+    @keyframes drift3 { to { transform: translate3d(60px, -70px, 0) scale(1.05); } }
+
+    .grid-overlay {
+      position: absolute; inset: 0;
+      background-image:
+        linear-gradient(rgba(15,23,42,.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(15,23,42,.035) 1px, transparent 1px);
+      background-size: 62px 62px;
+      mask-image: radial-gradient(ellipse 90% 60% at 50% 0%, #000 20%, transparent 78%);
+      -webkit-mask-image: radial-gradient(ellipse 90% 60% at 50% 0%, #000 20%, transparent 78%);
+    }
+    .noise {
+      position: fixed; inset: 0; z-index: -1; pointer-events: none; opacity: .028; mix-blend-mode: multiply;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    }
+
+    .font-display { font-family: 'Plus Jakarta Sans', Inter, sans-serif; }
+
+    .site-header { transition: background-color .35s ease, box-shadow .35s ease, border-color .35s ease, backdrop-filter .35s ease; }
+    .site-header.scrolled {
+      background: rgba(255,255,255,.82);
+      backdrop-filter: blur(18px) saturate(180%);
+      -webkit-backdrop-filter: blur(18px) saturate(180%);
+      border-color: rgba(226,232,240,.9);
+      box-shadow: 0 10px 40px -22px rgba(15,23,42,.28);
+    }
+    .logo-badge {
+      position: relative; border-radius: .85rem;
+      background: linear-gradient(135deg, #eff6ff, #e0f2fe);
+      padding: 3px;
+      box-shadow: 0 6px 18px -10px rgba(30,64,175,.6);
+    }
+
+    .btn-primary {
+      position: relative; overflow: hidden; isolation: isolate;
+      background: linear-gradient(135deg, #1E40AF 0%, #2563eb 45%, #0EA5E9 100%);
+      background-size: 180% 180%;
+      box-shadow: 0 12px 30px -14px rgba(30,64,175,.85), inset 0 1px 0 rgba(255,255,255,.25);
+      transition: transform .25s cubic-bezier(.34,1.56,.64,1), box-shadow .3s ease, background-position .6s ease;
+    }
+    .btn-primary:hover { transform: translateY(-2px); background-position: 100% 50%; box-shadow: 0 20px 44px -16px rgba(30,64,175,.9), inset 0 1px 0 rgba(255,255,255,.3); }
+    .btn-primary:active { transform: translateY(0) scale(.985); }
+
+    .btn-ghost {
+      position: relative; overflow: hidden;
+      transition: transform .25s cubic-bezier(.34,1.56,.64,1), border-color .3s, color .3s, background-color .3s, box-shadow .3s;
+    }
+    .btn-ghost:hover { transform: translateY(-2px); box-shadow: 0 14px 30px -20px rgba(15,23,42,.5); }
+    .btn-ghost:active { transform: translateY(0) scale(.985); }
+
+    @keyframes slideInUp { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+    .option-btn { transition: transform .16s ease, border-color .16s ease, background-color .16s ease, box-shadow .2s ease; }
+    .option-btn:not(:disabled):hover { transform: translateX(5px); box-shadow: 0 10px 26px -18px rgba(15,23,42,.5); }
+    .option-btn:not(:disabled):active { transform: translateX(5px) scale(.99); }
+    @keyframes pulseGlow {
+      0% { box-shadow: 0 0 0 0 rgba(16,185,129,.55); }
+      70% { box-shadow: 0 0 0 14px rgba(16,185,129,0); }
+      100% { box-shadow: 0 0 0 0 rgba(16,185,129,0); }
+    }
+    .option-btn.correct-revealed { animation: pulseGlow .75s ease-out; }
+
+    @keyframes gradShift { 0%,100% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } }
+    .modal-topbar { height: 4px; background: linear-gradient(90deg, #1E40AF, #0EA5E9, #7C3AED, #0EA5E9, #1E40AF); background-size: 250% 100%; animation: gradShift 6s linear infinite; }
+
+    .shadow-soft { box-shadow: 0 1px 2px rgba(15,23,42,.04), 0 10px 30px -14px rgba(15,23,42,.16); }
+    .shadow-lift { box-shadow: 0 2px 4px rgba(15,23,42,.04), 0 24px 60px -26px rgba(15,23,42,.28); }
+
+    .dot-grid {
+      background-image: radial-gradient(rgba(30,64,175,.16) 1px, transparent 1px);
+      background-size: 18px 18px;
+    }
+
+    .thin-scrollbar::-webkit-scrollbar { width: 8px; }
+    .thin-scrollbar::-webkit-scrollbar-track { background: transparent; }
+    .thin-scrollbar::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 999px; }
+    .thin-scrollbar::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; scroll-behavior: auto !important; }
+    }
+  </style>
+</head>
+<body class="bg-white text-ink antialiased min-h-screen flex flex-col">
+
+  <div class="aurora-bg" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="grid-overlay"></div>
+  </div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <a href="#examRoot" class="sr-only focus:not-sr-only focus-ring fixed left-4 top-4 z-[100] rounded-lg bg-ink px-4 py-3 text-white">Skip to content</a>
+
+  <!-- ============ Sticky header with Back to Home ============ -->
+  <header class="site-header sticky top-0 z-40 border-b border-slate-100/80 bg-white/70 backdrop-blur-md">
+    <div class="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3 sm:px-6 sm:py-3.5">
+      <a href="./index.html" class="btn-ghost focus-ring group inline-flex shrink-0 items-center gap-2 rounded-full border border-slate-200 bg-white/90 px-3.5 py-2 text-xs font-black text-ink sm:text-sm">
+        <svg class="h-4 w-4 transition-transform duration-300 group-hover:-translate-x-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+        <span class="hidden sm:inline">Back to Home</span>
+        <span class="sm:hidden">Home</span>
+      </a>
+
+      <div class="min-w-0 flex-1 text-center">
+        <div id="kicker" class="text-[10px] font-black uppercase tracking-[.18em] text-royal">Loading…</div>
+        <div id="title" class="truncate font-display text-sm font-extrabold text-ink sm:text-base">Preparing exam</div>
+      </div>
+
+      <div class="flex shrink-0 items-center gap-2">
+        <div id="examTimer" class="rounded-full bg-slate-100 px-3 py-2 font-mono text-xs font-black text-ink tabular-nums sm:px-4 sm:text-sm" aria-live="off">00:00</div>
+        <button id="flagBtn" type="button" hidden class="focus-ring hidden rounded-full border border-slate-200 px-3 py-2 text-xs font-black text-slate-500 transition hover:border-amber-200 hover:text-warmyellow sm:px-3.5" aria-pressed="false">☆ Flag</button>
+      </div>
+    </div>
+
+    <div class="h-1.5 bg-slate-100">
+      <div id="progressBar" class="h-full w-0 rounded-r-full bg-gradient-to-r from-royal to-skyx transition-all duration-500 ease-out"></div>
+    </div>
+  </header>
+
+  <!-- ============ Main exam content ============ -->
+  <main id="examRoot" class="relative mx-auto w-full max-w-6xl flex-1 px-4 py-6 sm:px-6 sm:py-8">
+    <div id="content" class="min-h-[60vh]">
+      <!-- rendered by JS -->
+    </div>
+  </main>
+
+  <!-- ============ Sticky bottom bar (Prev / Next / Submit) ============ -->
+  <footer id="bottomBar" class="sticky bottom-0 z-30 hidden border-t border-slate-100 bg-white/95 backdrop-blur-md">
+    <div class="mx-auto flex max-w-6xl flex-col-reverse gap-3 px-4 py-3 sm:flex-row sm:items-center sm:justify-between sm:px-6">
+      <button id="prevBtn" type="button" class="focus-ring rounded-full border border-slate-200 px-5 py-3 text-sm font-black text-slate-600 transition hover:-translate-y-0.5 hover:border-slate-300 hover:shadow-soft disabled:opacity-40 disabled:hover:translate-y-0">← Previous</button>
+      <div class="flex flex-col gap-2 sm:flex-row">
+        <button id="nextBtn" type="button" class="btn-primary focus-ring rounded-full px-6 py-3 text-sm font-black text-white">Next Question →</button>
+        <button id="submitBtn" type="button" class="btn-primary focus-ring hidden rounded-full px-6 py-3 text-sm font-black text-white">Submit →</button>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast" class="pointer-events-none fixed bottom-5 left-1/2 z-[80] hidden -translate-x-1/2 rounded-full bg-ink px-5 py-3 text-xs font-bold text-white shadow-lift" role="status" aria-live="polite"></div>
+
+  <script>
+    const state = {
+      courses: null,
+      lecture: null,
+      currentQuestion: 0,
+      answers: [],
+      flagged: new Set(),
+      mode: 'practice',
+      timer: null,
+      elapsedSeconds: 0,
+      result: null,
+      screen: 'loading', // loading | error | exam | analytics
+      subjectKey: null
+    };
+
+    const $ = (id) => document.getElementById(id);
+    const esc = (value='') => String(value).replace(/[&<>"']/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    const safeId = (value='') => value.replace(/[^a-z0-9_-]/gi, '-').toLowerCase();
+
+    function showToast(message) {
+      const el = $('toast');
+      el.textContent = message;
+      el.classList.remove('hidden');
+      el.style.animation = 'none';
+      void el.offsetWidth;
+      el.style.animation = 'slideInUp .3s ease-out';
+      clearTimeout(showToast._t);
+      showToast._t = setTimeout(() => el.classList.add('hidden'), 2400);
+    }
+
+    async function loadJSON(path) {
+      const response = await fetch(path, { cache: 'no-store' });
+      if (!response.ok) throw new Error(`Could not load ${path} (${response.status})`);
+      return response.json();
+    }
+
+    function shuffle(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+      return array;
+    }
+
+    function findSubjectByKey(courses, key) {
+      const target = safeId(key);
+      for (const level of courses.levels || []) {
+        for (const sem of level.semesters || []) {
+          const found = (sem.subjects || []).find(s => safeId(s.id) === target);
+          if (found) return found;
+        }
+      }
+      return null;
+    }
+
+    function formatTime(seconds) {
+      const s = Math.max(0, seconds);
+      return `${String(Math.floor(s / 60)).padStart(2, '0')}:${String(s % 60).padStart(2, '0')}`;
+    }
+
+    function startTimer() {
+      stopTimer();
+      state.elapsedSeconds = 0;
+      const el = $('examTimer');
+      if (el) el.textContent = formatTime(0);
+      state.timer = setInterval(() => {
+        state.elapsedSeconds += 1;
+        const t = $('examTimer');
+        if (t) t.textContent = formatTime(state.elapsedSeconds);
+      }, 1000);
+    }
+    function stopTimer() { if (state.timer) { clearInterval(state.timer); state.timer = null; } }
+
+    // ---------- Screen renderers ----------
+
+    function renderLoading() {
+      state.screen = 'loading';
+      $('kicker').textContent = 'Loading…';
+      $('title').textContent = 'Preparing exam';
+      $('progressBar').style.width = '0%';
+      $('flagBtn').hidden = true;
+      $('bottomBar').classList.add('hidden');
+      $('content').innerHTML = `
+        <div class="grid place-items-center py-24">
+          <div class="text-center">
+            <div class="mx-auto grid h-14 w-14 place-items-center rounded-2xl bg-gradient-to-br from-royal to-skyx text-white shadow-lift">
+              <svg class="h-6 w-6 animate-spin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 12a9 9 0 1 1-6.22-8.56"/></svg>
+            </div>
+            <div class="mt-5 font-display text-lg font-extrabold">Loading exam…</div>
+            <div class="mt-1 text-sm text-slate-500">Fetching the question bank.</div>
+          </div>
+        </div>`;
+    }
+
+    function renderError(message) {
+      state.screen = 'error';
+      stopTimer();
+      $('kicker').textContent = 'Error';
+      $('title').textContent = 'Could not open this exam';
+      $('progressBar').style.width = '0%';
+      $('flagBtn').hidden = true;
+      $('bottomBar').classList.add('hidden');
+      $('content').innerHTML = `
+        <div class="mx-auto max-w-xl">
+          <div class="rounded-3xl border border-red-200 bg-red-50 p-7 shadow-soft">
+            <div class="grid h-12 w-12 place-items-center rounded-2xl bg-white text-2xl shadow-sm">⚠️</div>
+            <h2 class="mt-5 font-display text-xl font-extrabold text-red-800">Could not open this exam</h2>
+            <p class="mt-2 text-sm leading-6 text-red-700">${esc(message)}</p>
+            <a href="./index.html" class="btn-primary focus-ring mt-6 inline-flex items-center gap-2 rounded-full px-5 py-3 text-sm font-black text-white">
+              <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+              Back to Home
+            </a>
+          </div>
+        </div>`;
+    }
+
+    function renderExam() {
+      state.screen = 'exam';
+      const qs = state.lecture.activeQuestions || [];
+      const q = qs[state.currentQuestion];
+      const userAnswer = state.answers[state.currentQuestion];
+      const answered = state.mode === 'practice' && userAnswer !== null;
+      const isLast = state.currentQuestion === qs.length - 1;
+
+      $('kicker').textContent = state.mode === 'exam' ? 'Exam Mode' : 'Practice Mode';
+      $('title').textContent = state.lecture.title;
+      $('progressBar').style.width = `${((state.currentQuestion + 1) / qs.length) * 100}%`;
+
+      const flagBtn = $('flagBtn');
+      flagBtn.hidden = false;
+      const isFlagged = state.flagged.has(state.currentQuestion);
+      flagBtn.textContent = isFlagged ? '★ Flagged' : '☆ Flag';
+      flagBtn.setAttribute('aria-pressed', String(isFlagged));
+      flagBtn.classList.toggle('border-warmyellow', isFlagged);
+      flagBtn.classList.toggle('bg-amber-50', isFlagged);
+      flagBtn.classList.toggle('text-warmyellow', isFlagged);
+      flagBtn.classList.toggle('border-slate-200', !isFlagged);
+      flagBtn.classList.toggle('text-slate-500', !isFlagged);
+
+      $('content').innerHTML = `
+        <div class="grid gap-6 lg:grid-cols-[1fr_260px]">
+          <div class="min-w-0">
+            <div class="flex flex-wrap items-center justify-between gap-3">
+              <span class="rounded-full bg-blue-50 px-3.5 py-1.5 text-xs font-black text-royal">Q${state.currentQuestion + 1} / ${qs.length}</span>
+              <span class="text-xs font-bold text-slate-400">${state.mode === 'exam' ? 'Exam Mode' : 'Instant feedback'}</span>
+            </div>
+
+            <h2 class="mt-5 font-display text-2xl font-extrabold leading-tight text-ink sm:text-3xl">${esc(q.question)}</h2>
+            ${q.image ? `<img src="${esc(q.image)}" alt="" class="mt-5 max-h-72 rounded-2xl border border-slate-200 object-contain shadow-soft"/>` : ''}
+
+            <div class="mt-6 grid gap-3" role="radiogroup" aria-label="Answer options">
+              ${q.options.map((opt, i) => {
+                const letter = String.fromCharCode(65 + i);
+                const isSelected = userAnswer === letter;
+                const isCorrect = letter === q.correctAnswer;
+                let cls = 'border-slate-200 bg-white hover:border-blue-300 hover:bg-blue-50/40';
+                let badge = 'bg-slate-100 text-slate-500';
+                let pulse = '';
+                if (answered) {
+                  if (isCorrect) { cls = 'border-emerald-500 bg-emerald-50'; badge = 'bg-emerald-500 text-white'; pulse = 'correct-revealed'; }
+                  else if (isSelected) { cls = 'border-red-500 bg-red-50'; badge = 'bg-red-500 text-white'; }
+                  else { cls = 'border-slate-200 bg-white opacity-70'; }
+                } else if (isSelected) {
+                  cls = 'border-royal bg-blue-50 ring-2 ring-blue-100'; badge = 'bg-royal text-white';
+                }
+                return `<button type="button" class="option-btn ${pulse} focus-ring flex w-full items-start gap-4 rounded-2xl border-2 ${cls} p-4 text-left" data-option="${letter}" aria-pressed="${isSelected}" ${answered ? 'disabled' : ''}>
+                  <span class="grid h-8 w-8 shrink-0 place-items-center rounded-lg ${badge} text-xs font-black">${letter}</span>
+                  <span class="pt-1 text-sm font-semibold leading-6 text-slate-700">${esc(opt)}</span>
+                  ${answered && isCorrect ? '<span class="ml-auto font-black text-emerald-600">✓</span>' : ''}
+                  ${answered && isSelected && !isCorrect ? '<span class="ml-auto font-black text-red-600">✗</span>' : ''}
+                </button>`;
+              }).join('')}
+            </div>
+
+            ${answered ? `
+              <div class="mt-5 rounded-2xl border-2 ${userAnswer === q.correctAnswer ? 'border-emerald-200 bg-emerald-50' : 'border-red-200 bg-red-50'} p-5" style="animation: slideInUp .3s ease-out">
+                <div class="text-xs font-black uppercase tracking-[.15em] ${userAnswer === q.correctAnswer ? 'text-emerald-700' : 'text-red-700'}">
+                  ${userAnswer === q.correctAnswer ? '✓ Correct' : '✗ Incorrect — correct answer is ' + q.correctAnswer}
+                </div>
+                ${q.explanation ? `<div class="mt-3 text-sm leading-6 text-slate-700"><span class="font-black">Explanation:</span> ${esc(q.explanation)}</div>` : ''}
+              </div>
+            ` : ''}
+
+            ${state.mode === 'practice' && !answered ? `<div class="mt-5 rounded-2xl border border-slate-200 bg-slate-50 p-4"><button id="hintBtn" type="button" class="focus-ring text-xs font-black text-royal transition hover:text-skyx">Need a hint?</button><div id="hintText" class="mt-2 hidden text-sm leading-6 text-slate-600">${esc(q.hint || 'Focus on the mechanism, definition, or discriminating feature described in the stem.')}</div></div>` : ''}
+          </div>
+
+          <aside class="h-max rounded-2xl border border-slate-100 bg-white/80 p-4 shadow-soft lg:sticky lg:top-24">
+            <div class="flex items-center justify-between">
+              <div class="text-xs font-black uppercase tracking-[.15em] text-slate-400">Navigator</div>
+              <div class="text-xs font-bold text-slate-400">${state.flagged.size} flagged</div>
+            </div>
+            <div class="mt-3 grid grid-cols-5 gap-2 lg:grid-cols-5">
+              ${qs.map((_, i) => `<button type="button" class="focus-ring aspect-square rounded-lg text-xs font-black transition-all duration-200 ${i === state.currentQuestion ? 'bg-gradient-to-br from-royal to-skyx text-white scale-105 shadow-md' : state.answers[i] ? 'bg-blue-100 text-royal hover:bg-blue-200' : 'bg-white text-slate-500 border border-slate-200 hover:border-skyx hover:text-royal'} ${state.flagged.has(i) ? 'ring-2 ring-warmyellow ring-offset-1' : ''}" data-qnav="${i}" aria-label="Go to question ${i + 1}">${i + 1}</button>`).join('')}
+            </div>
+          </aside>
+        </div>`;
+
+      // Bottom bar
+      $('bottomBar').classList.remove('hidden');
+      $('prevBtn').disabled = state.currentQuestion === 0;
+      $('nextBtn').classList.toggle('hidden', isLast);
+      $('submitBtn').classList.toggle('hidden', !isLast);
+      $('submitBtn').textContent = state.mode === 'exam' ? 'Submit Exam →' : 'Finish Practice →';
+
+      // Wire up controls
+      flagBtn.onclick = () => {
+        if (state.flagged.has(state.currentQuestion)) state.flagged.delete(state.currentQuestion);
+        else state.flagged.add(state.currentQuestion);
+        renderExam();
+      };
+      $('content').querySelectorAll('[data-option]').forEach(btn => btn.addEventListener('click', () => chooseAnswer(btn.dataset.option)));
+      $('content').querySelectorAll('[data-qnav]').forEach(btn => btn.addEventListener('click', () => { state.currentQuestion = Number(btn.dataset.qnav); renderExam(); }));
+      const hint = $('hintBtn'); if (hint) hint.addEventListener('click', () => $('hintText').classList.toggle('hidden'));
+
+      setTimeout(() => document.querySelector('[data-option]')?.focus(), 40);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function chooseAnswer(letter) {
+      if (state.mode === 'practice' && state.answers[state.currentQuestion] !== null) return;
+      state.answers[state.currentQuestion] = letter;
+      renderExam();
+      if (state.mode === 'practice') {
+        const q = state.lecture.activeQuestions[state.currentQuestion];
+        setTimeout(() => {
+          const correct = q.correctAnswer === letter;
+          showToast(correct ? '✓ Correct — strong retrieval.' : `✗ Correct answer: ${q.correctAnswer}`);
+        }, 10);
+      }
+    }
+
+    function goNext() {
+      const qs = state.lecture.activeQuestions || [];
+      if (state.currentQuestion < qs.length - 1) { state.currentQuestion++; renderExam(); }
+    }
+    function goPrev() {
+      if (state.currentQuestion > 0) { state.currentQuestion--; renderExam(); }
+    }
+
+    function submitExam() {
+      const unanswered = state.answers.filter(Boolean).length;
+      if (state.mode === 'exam' && unanswered < state.answers.length) {
+        const proceed = confirm(`You have ${state.answers.length - unanswered} unanswered question(s). Submit anyway?`);
+        if (!proceed) return;
+      }
+      stopTimer();
+      const qs = state.lecture.activeQuestions || [];
+      const results = qs.map((q, i) => ({
+        ...q,
+        userAnswer: state.answers[i],
+        correct: state.answers[i] === q.correctAnswer,
+        flagged: state.flagged.has(i),
+        index: i
+      }));
+      const correctCount = results.filter(r => r.correct).length;
+      const score = qs.length ? Math.round((correctCount / qs.length) * 100) : 0;
+      state.result = { results, correctCount, score, pass: score >= Number(state.lecture.passMark || 70), elapsedSeconds: state.elapsedSeconds };
+      renderAnalytics();
+    }
+
+    function renderAnalytics() {
+      state.screen = 'analytics';
+      const r = state.result;
+      const missed = r.results.filter(x => !x.correct);
+      const subtopics = {};
+      r.results.forEach(q => {
+        const key = q.subtopic || 'General';
+        if (!subtopics[key]) subtopics[key] = { correct: 0, total: 0 };
+        subtopics[key].total++;
+        if (q.correct) subtopics[key].correct++;
+      });
+
+      $('kicker').textContent = 'Post-Exam Analytics';
+      $('title').textContent = state.lecture.title;
+      $('progressBar').style.width = '100%';
+      $('flagBtn').hidden = true;
+      $('bottomBar').classList.add('hidden');
+      $('examTimer').textContent = formatTime(r.elapsedSeconds);
+
+      $('content').innerHTML = `
+        <div class="space-y-7">
+          <div class="grid gap-4 sm:grid-cols-[200px_1fr]">
+            <div class="relative grid place-items-center overflow-hidden rounded-[2rem] bg-gradient-to-br from-slate-50 to-blue-50 p-7 text-center ring-1 ring-slate-100">
+              <div class="pointer-events-none absolute -right-10 -top-10 h-32 w-32 rounded-full ${r.pass ? 'bg-emerald-200/50' : 'bg-red-200/40'} blur-2xl"></div>
+              <div class="relative font-display text-5xl font-extrabold tracking-tight text-ink">${r.score}%</div>
+              <div class="relative mt-3 rounded-full px-3.5 py-1 text-xs font-black ${r.pass ? 'bg-emerald-100 text-emerald-700' : 'bg-red-100 text-red-700'}">${r.pass ? 'PASS' : 'REVIEW & RETRY'}</div>
+            </div>
+            <div class="rounded-[2rem] border border-slate-200 bg-white/80 p-6 shadow-soft">
+              <div class="text-xs font-black uppercase tracking-[.16em] text-slate-400">Attempt summary</div>
+              <div class="mt-5 grid gap-4 sm:grid-cols-3">
+                <div><div class="font-display text-3xl font-extrabold text-emerald-600">${r.correctCount}</div><div class="text-xs font-semibold text-slate-400">Correct</div></div>
+                <div><div class="font-display text-3xl font-extrabold text-red-500">${r.results.length - r.correctCount}</div><div class="text-xs font-semibold text-slate-400">Missed</div></div>
+                <div><div class="font-display text-3xl font-extrabold text-ink">${formatTime(r.elapsedSeconds)}</div><div class="text-xs font-semibold text-slate-400">Time taken</div></div>
+              </div>
+            </div>
+          </div>
+
+          <section>
+            <div class="flex items-end justify-between gap-3">
+              <div>
+                <div class="inline-flex items-center gap-2 text-xs font-black uppercase tracking-[.16em] text-skyx"><span class="h-1.5 w-1.5 rounded-full bg-skyx"></span> Weakness analytics</div>
+                <h3 class="mt-1.5 font-display text-xl font-extrabold">Performance by sub-topic</h3>
+              </div>
+              <div class="text-xs font-bold text-slate-400">Sorted by lowest accuracy</div>
+            </div>
+            <div class="mt-4 space-y-3">
+              ${Object.entries(subtopics).sort((a, b) => (a[1].correct / a[1].total) - (b[1].correct / b[1].total)).map(([topic, v]) => {
+                const p = Math.round((v.correct / v.total) * 100);
+                return `<div class="rounded-2xl border border-slate-200 bg-white/80 p-4 transition hover:-translate-y-0.5 hover:shadow-soft">
+                  <div class="flex items-center justify-between gap-3"><span class="text-sm font-black">${esc(topic)}</span><span class="text-xs font-black text-slate-500">${p}% • ${v.correct}/${v.total}</span></div>
+                  <div class="mt-3 h-2 overflow-hidden rounded-full bg-slate-100"><div class="h-full rounded-full ${p < 60 ? 'bg-warmred' : p < 80 ? 'bg-warmyellow' : 'bg-royal'} transition-all duration-700" style="width:${p}%"></div></div>
+                </div>`;
+              }).join('')}
+            </div>
+          </section>
+
+          <section>
+            <div class="flex flex-wrap items-end justify-between gap-3">
+              <div>
+                <div class="inline-flex items-center gap-2 text-xs font-black uppercase tracking-[.16em] text-skyx"><span class="h-1.5 w-1.5 rounded-full bg-skyx"></span> Question review</div>
+                <h3 class="mt-1.5 font-display text-xl font-extrabold">Why each choice works — or does not</h3>
+              </div>
+              <button id="redoMissedBtn" type="button" class="btn-primary focus-ring rounded-full px-5 py-3 text-xs font-black text-white disabled:opacity-40 disabled:hover:translate-y-0" ${missed.length ? '' : 'disabled'}>Redo Missed Questions →</button>
+            </div>
+            <div class="mt-4 space-y-3">
+              ${r.results.map((q, i) => renderReviewCard(q, i)).join('')}
+            </div>
+          </section>
+
+          <div class="flex flex-wrap justify-end gap-3 border-t border-slate-100 pt-5">
+            <a href="./index.html" class="btn-ghost focus-ring inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-6 py-3 text-sm font-black text-ink">
+              <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+              Back to Home
+            </a>
+          </div>
+        </div>`;
+
+      const redoBtn = $('redoMissedBtn');
+      if (redoBtn) redoBtn.addEventListener('click', () => {
+        if (!missed.length) return;
+        startExam(missed);
+      });
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function renderReviewCard(q, i) {
+      const correctText = q.options?.[q.correctAnswer.charCodeAt(0) - 65] || q.correctAnswer;
+      const userText = q.userAnswer ? q.options?.[q.userAnswer.charCodeAt(0) - 65] : 'No answer selected';
+      return `<details class="group rounded-2xl border border-slate-200 bg-white/80 p-4 transition hover:shadow-soft" ${!q.correct ? 'open' : ''}>
+        <summary class="focus-ring cursor-pointer list-none rounded-xl">
+          <div class="flex items-start gap-3">
+            <div class="grid h-8 w-8 shrink-0 place-items-center rounded-lg ${q.correct ? 'bg-emerald-100 text-emerald-700' : 'bg-red-100 text-red-700'} text-xs font-black">${i + 1}</div>
+            <div class="min-w-0 flex-1">
+              <div class="text-sm font-black leading-6">${esc(q.question)}</div>
+              <div class="mt-1 text-xs font-semibold ${q.correct ? 'text-emerald-600' : 'text-red-600'}">${q.correct ? 'Correct' : 'Needs review'}</div>
+            </div>
+            <div class="mt-1 text-xs font-black text-slate-400 transition-transform duration-300 group-open:rotate-180">⌄</div>
+          </div>
+        </summary>
+        <div class="mt-4 space-y-3 border-t border-slate-100 pt-4 text-sm leading-6">
+          <div class="rounded-xl bg-slate-50 p-3.5"><div class="text-[10px] font-black uppercase tracking-[.15em] text-slate-400">Your answer</div><div class="mt-1 font-semibold text-slate-700">${esc(userText)}</div></div>
+          <div class="rounded-xl bg-blue-50 p-3.5"><div class="text-[10px] font-black uppercase tracking-[.15em] text-royal">Correct answer</div><div class="mt-1 font-bold text-slate-700">${esc(correctText)}</div></div>
+          <div class="text-slate-600"><span class="font-black text-ink">Explanation:</span> ${esc(q.explanation || 'This answer best matches the principle tested in the question.')}</div>
+          ${q.optionExplanations ? `<div class="grid gap-2 sm:grid-cols-2">${q.optionExplanations.map((e, idx) => `<div class="rounded-xl border border-slate-200 p-3 text-xs leading-5 text-slate-500"><span class="font-black text-slate-700">${String.fromCharCode(65 + idx)}.</span> ${esc(e)}</div>`).join('')}</div>` : ''}
+        </div>
+      </details>`;
+    }
+
+    // ---------- Boot ----------
+
+    function startExam(questionsOverride = null) {
+      state.currentQuestion = 0;
+      state.answers = Array((questionsOverride || state.lecture.questions || []).length).fill(null);
+      state.flagged = new Set();
+      state.result = null;
+      const questions = questionsOverride ? [...questionsOverride] : [...state.lecture.questions];
+      if (!questionsOverride) shuffle(questions);
+      state.lecture = { ...state.lecture, activeQuestions: questions };
+      startTimer();
+      renderExam();
+    }
+
+    async function boot() {
+      renderLoading();
+      const params = new URLSearchParams(location.search);
+      const subjectKey = params.get('subject');
+      const lectureFile = params.get('lecture');
+      const isComprehensive = params.get('comprehensive') === '1';
+
+      if (!subjectKey) { renderError('No subject was specified in the URL. Please open this page from the curriculum list.'); return; }
+      state.subjectKey = subjectKey;
+
+      try {
+        const courses = await loadJSON('./courses.json');
+        state.courses = courses;
+        const subject = findSubjectByKey(courses, subjectKey);
+        if (!subject) { renderError(`Subject "${subjectKey}" was not found in courses.json.`); return; }
+
+        if (isComprehensive) {
+          const banks = await Promise.all(subject.lectures.map(l => loadJSON(`./${l.file}`)));
+          const questions = banks.flatMap(bank => (bank.questions || []).map(q => ({ ...q, lectureTitle: bank.title })));
+          shuffle(questions);
+          state.mode = 'exam';
+          state.lecture = {
+            id: `comprehensive-${safeId(subject.id)}`,
+            title: `${subject.name} — Comprehensive Exam`,
+            subjectName: subject.name,
+            questions,
+            passMark: banks[0]?.passMark || 70
+          };
+        } else if (lectureFile) {
+          const lecture = await loadJSON(`./${lectureFile}`);
+          state.mode = 'practice';
+          state.lecture = { ...lecture, subjectName: subject.name, subjectId: subject.id };
+        } else {
+          renderError('No lecture was specified. Open this page from the curriculum list.');
+          return;
+        }
+
+        startExam();
+      } catch (error) {
+        console.error(error);
+        renderError(error.message || 'Failed to load the exam data.');
+      }
+    }
+
+    // Global controls
+    function initGlobalControls() {
+      $('prevBtn').addEventListener('click', goPrev);
+      $('nextBtn').addEventListener('click', goNext);
+      $('submitBtn').addEventListener('click', submitExam);
+
+      document.addEventListener('keydown', (e) => {
+        if (state.screen !== 'exam') return;
+        const tag = document.activeElement?.tagName;
+        if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return;
+        if (e.key === 'ArrowRight') { e.preventDefault(); goNext(); }
+        if (e.key === 'ArrowLeft') { e.preventDefault(); goPrev(); }
+      });
+
+      const header = document.querySelector('.site-header');
+      const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 8);
+      onScroll();
+      window.addEventListener('scroll', onScroll, { passive: true });
+    }
+
+    initGlobalControls();
+    boot();
+  </script>
+</body>
+</html>
