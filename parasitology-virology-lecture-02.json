@@ -267,6 +267,766 @@
       "hint": "Review Table 7 on antigenic drift vs. shift."
     },
     {
+      "question": "Which stage of infection is characterized by a vague sense of not being well?",
+      "options": [
+        "Incubation period",
+        "Prodromal period",
+        "Illness period",
+        "Convalescence period"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The prodromal period is characterized by a vague sense of not being well, as shown in Figure 18. The incubation period has no symptoms, the illness period is the full-blown illness (acme), and the convalescence period is when the body repairs damage.",
+      "subtopic": "Stages of Infection",
+      "optionExplanations": [
+        "Incorrect. Incubation period is the time between entry of the pathogen and appearance of first symptoms, with no symptoms.",
+        "Correct. Prodromal period is characterized by a vague sense of not being well.",
+        "Incorrect. Illness period is the full-blown illness (acme).",
+        "Incorrect. Convalescence period is when the body is repairing damage."
+      ],
+      "hint": "Review Figure 18 on the stages of infection."
+    },
+    {
+      "question": "A skin wart caused by human papillomavirus (HPV) is an example of which type of viral infection?",
+      "options": [
+        "Systemic viral infection",
+        "Local viral infection",
+        "Chronic viral infection",
+        "Slow viral infection"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Local viral infection is confined to the skin or mucus membrane of a certain body site, such as skin warts caused by HPV. Systemic infections spread via blood, lymphatics, or nerves.",
+      "subtopic": "Site of Infection",
+      "optionExplanations": [
+        "Incorrect. Systemic infections spread via blood, lymphatics, or nerves.",
+        "Correct. Skin warts are confined to the skin, making it a local viral infection.",
+        "Incorrect. Chronic infection refers to duration, not site.",
+        "Incorrect. Slow infection refers to duration and course, not site."
+      ],
+      "hint": "Consider whether the infection is confined to the site of entry."
+    },
+    {
+      "question": "Which of the following viruses causes a chronic viral infection?",
+      "options": [
+        "Herpes simplex virus",
+        "Varicella-zoster virus",
+        "Hepatitis B virus",
+        "JC polyomavirus"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Chronic viral infection is characterized by continuous production of the virus in small quantities by infected cells without being eliminated by the immune system, so the virus is constantly detected. Examples include hepatitis B virus (HBV) and hepatitis C virus (HCV).",
+      "subtopic": "Chronic Viral Infection",
+      "optionExplanations": [
+        "Incorrect. HSV causes latent infection.",
+        "Incorrect. VZV causes latent infection.",
+        "Correct. HBV causes chronic infection.",
+        "Incorrect. JC polyomavirus causes slow viral infection."
+      ],
+      "hint": "Review the examples of chronic viral infections."
+    },
+    {
+      "question": "Which of the following is a rare complication of HSV-2 infection that occurs ONLY in HIV patients and other immunocompromised individuals?",
+      "options": [
+        "Aseptic meningitis",
+        "Neonatal herpes",
+        "Retinal necrosis",
+        "Genital herpes"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Rare complications of HSV-2 that occur ONLY in HIV patients and other immunocompromised individuals include pneumonitis, hepatitis, retinal necrosis, and disseminated infection.",
+      "subtopic": "HSV-2 Infections",
+      "optionExplanations": [
+        "Incorrect. Aseptic meningitis is usually mild and self-limiting, not a rare complication limited to immunocompromised.",
+        "Incorrect. Neonatal herpes occurs during delivery, not limited to HIV patients.",
+        "Correct. Retinal necrosis is a rare complication of HSV-2 in immunocompromised individuals.",
+        "Incorrect. Genital herpes is the primary manifestation, not a rare complication."
+      ],
+      "hint": "Review the rare complications of HSV-2 in HIV patients."
+    },
+    {
+      "question": "In abortive infection, what happens when a virus enters a non-permissive cell?",
+      "options": [
+        "The virus replicates completely and produces progeny virions.",
+        "The virus fails to replicate completely but synthesizes some early viral proteins, leading to cell death.",
+        "The viral genome integrates into the host chromosome.",
+        "The virus remains dormant without causing any effect."
+      ],
+      "correctAnswer": "B",
+      "explanation": "In abortive infection, the virus particles penetrate cells known as non-permissive cells, which do not allow viral replication but allow the synthesis of some early viral proteins, leading to the death of these cells.",
+      "subtopic": "Cellular Outcomes of Viral Infection",
+      "optionExplanations": [
+        "Incorrect. This describes productive infection.",
+        "Correct. Abortive infection leads to synthesis of early viral proteins and cell death without full replication.",
+        "Incorrect. This describes transforming infection.",
+        "Incorrect. This describes latent infection."
+      ],
+      "hint": "Review the definition of abortive infection."
+    },
+    {
+      "question": "Which of the following is a consequence of latent viral infection?",
+      "options": [
+        "Oncogenic transformation due to integration of non-eradicated viral genome into the human chromosome",
+        "Immediate cell lysis and release of virions",
+        "Continuous production of small quantities of virions",
+        "Abortive replication in non-permissive cells"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Latent infection can result in oncogenic transformation due to integration of non-eradicated viral genome into the human chromosome, as stated in the Important Note on page 5.",
+      "subtopic": "Latent Viral Infection",
+      "optionExplanations": [
+        "Correct. Integration of the viral genome can lead to oncogenic transformation.",
+        "Incorrect. Immediate cell lysis is characteristic of productive/lytic infection.",
+        "Incorrect. Continuous production is characteristic of chronic infection.",
+        "Incorrect. Abortive replication occurs in non-permissive cells and is a separate cellular outcome."
+      ],
+      "hint": "Review the Important Note about latent infection and oncogenic transformation."
+    },
+    {
+      "question": "A patient with shingles can transmit the virus to a susceptible individual, causing which of the following?",
+      "options": [
+        "Shingles",
+        "Chickenpox",
+        "Herpes labialis",
+        "Genital herpes"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Shingles is caused by reactivation of latent varicella-zoster virus (VZV). A patient with shingles can transmit VZV to a susceptible individual, causing chickenpox (varicella) in that individual.",
+      "subtopic": "VZV Infections",
+      "optionExplanations": [
+        "Incorrect. Shingles occurs upon reactivation in a previously infected individual, not from transmission.",
+        "Correct. Transmission of VZV from a shingles patient causes chickenpox in a susceptible host.",
+        "Incorrect. Herpes labialis is caused by HSV-1.",
+        "Incorrect. Genital herpes is caused by HSV-2."
+      ],
+      "hint": "Consider the relationship between chickenpox and shingles."
+    },
+    {
+      "question": "Which virus is also known as Kaposi sarcoma-associated herpesvirus (KSHV)?",
+      "options": [
+        "Human herpesvirus 4 (HHV-4)",
+        "Human herpesvirus 5 (HHV-5)",
+        "Human herpesvirus 6 (HHV-6)",
+        "Human herpesvirus 8 (HHV-8)"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Human herpesvirus 8 (HHV-8) is also known as Kaposi sarcoma-associated herpesvirus (KSHV), as listed under Gammaherpesvirinae.",
+      "subtopic": "Herpesviridae Classification",
+      "optionExplanations": [
+        "Incorrect. HHV-4 is Epstein-Barr virus (EBV).",
+        "Incorrect. HHV-5 is Cytomegalovirus (CMV).",
+        "Incorrect. HHV-6 is a betaherpesvirus.",
+        "Correct. HHV-8 is KSHV."
+      ],
+      "hint": "Review the Gammaherpesvirinae subfamily."
+    },
+    {
+      "question": "Neonatal herpes can present as which of the following?",
+      "options": [
+        "Encephalitis",
+        "Aseptic meningitis",
+        "Genital herpes",
+        "Herpetic whitlow"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Neonatal herpes occurs during delivery through contact with vesicular lesions in the birth canal, leading to encephalitis or mild local lesion up to an asymptomatic infection.",
+      "subtopic": "HSV-2 Infections",
+      "optionExplanations": [
+        "Correct. Neonatal herpes can present as encephalitis.",
+        "Incorrect. Aseptic meningitis is a separate manifestation of HSV-2, usually mild and self-limiting, not the typical presentation of neonatal herpes.",
+        "Incorrect. Genital herpes is the primary manifestation in adults, not neonates.",
+        "Incorrect. Herpetic whitlow is a form of HSV-1 infection."
+      ],
+      "hint": "Review the forms of HSV-2 infection, particularly neonatal herpes."
+    },
+    {
+      "question": "Which of the following viruses is transmitted via the respiratory route?",
+      "options": [
+        "Hepatitis B virus",
+        "Poliovirus",
+        "Measles virus",
+        "Dengue virus"
+      ],
+      "correctAnswer": "C",
+      "explanation": "According to Table 3, measles virus is transmitted via the respiratory route. HBV is bloodborne, poliovirus is fecal-oral, and dengue virus is vector-borne.",
+      "subtopic": "Mode of Transmission",
+      "optionExplanations": [
+        "Incorrect. HBV is transmitted via the bloodborne route.",
+        "Incorrect. Poliovirus is transmitted via the fecal-oral route.",
+        "Correct. Measles virus is transmitted via the respiratory route.",
+        "Incorrect. Dengue virus is transmitted via the vector-borne route."
+      ],
+      "hint": "Review Table 3 on route of transmission of viral infections."
+    },
+    {
+      "question": "What is the result of antigenic shift?",
+      "options": [
+        "Emergence of a new strain within the same subtype",
+        "Emergence of a new subtype",
+        "Minor gradual change in viral surface proteins",
+        "Epidemics that are easily treated"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Antigenic shift is an abrupt major change in viral surface proteins due to acquisition of new genome segments, resulting in the emergence of a new subtype. This can cause pandemics and is difficult to treat.",
+      "subtopic": "Viral Genetic Alterations",
+      "optionExplanations": [
+        "Incorrect. This is the result of antigenic drift.",
+        "Correct. Antigenic shift results in emergence of a new subtype.",
+        "Incorrect. This describes antigenic drift.",
+        "Incorrect. Antigenic shift causes pandemics that are difficult to treat."
+      ],
+      "hint": "Review Table 7 on antigenic drift vs. shift."
+    },
+    {
+      "question": "Which of the following is a live attenuated vaccine?",
+      "options": [
+        "Salk polio vaccine",
+        "Hepatitis B subunit vaccine",
+        "MMR (measles, mumps, rubella) vaccine",
+        "Comirnaty mRNA vaccine"
+      ],
+      "correctAnswer": "C",
+      "explanation": "According to Table 2, measles, mumps, and rubella vaccines are live attenuated. The Salk polio vaccine is inactivated, the hepatitis B vaccine is subunit, and Comirnaty is an mRNA-based molecular vaccine.",
+      "subtopic": "Viral Vaccines",
+      "optionExplanations": [
+        "Incorrect. Salk polio vaccine is inactivated (killed).",
+        "Incorrect. Hepatitis B vaccine is a subunit vaccine.",
+        "Correct. MMR is a live attenuated vaccine.",
+        "Incorrect. Comirnaty is an mRNA-based molecular vaccine."
+      ],
+      "hint": "Review Table 2 on types of viral vaccines."
+    },
+    {
+      "question": "What is the suffix for a virus family name according to ICTV nomenclature?",
+      "options": [
+        "-virales",
+        "-viridae",
+        "-virinae",
+        "-virus"
+      ],
+      "correctAnswer": "B",
+      "explanation": "According to ICTV nomenclature, the family name ends with the suffix -viridae. The order ends with -virales, the subfamily with -virinae, and the genus with -virus.",
+      "subtopic": "Virus Nomenclature",
+      "optionExplanations": [
+        "Incorrect. -virales is the suffix for order.",
+        "Correct. -viridae is the suffix for family.",
+        "Incorrect. -virinae is the suffix for subfamily.",
+        "Incorrect. -virus is the suffix for genus."
+      ],
+      "hint": "Review the ICTV nomenclature rules."
+    },
+    {
+      "question": "A patient presents with a corneal ulcer. Which form of HSV-1 infection is this?",
+      "options": [
+        "Initial form",
+        "Recurrent form",
+        "Latent form",
+        "Asymptomatic form"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Keratoconjunctivitis caused by HSV-1 occurs in two forms: corneal ulceration (initial form) and corneal scarring and even blindness (recurrent form).",
+      "subtopic": "HSV-1 Infections",
+      "optionExplanations": [
+        "Correct. Corneal ulceration is the initial form of HSV-1 keratoconjunctivitis.",
+        "Incorrect. Corneal scarring is the recurrent form.",
+        "Incorrect. Latent form refers to the dormant state in ganglia.",
+        "Incorrect. Asymptomatic form is not a recognized form of keratoconjunctivitis."
+      ],
+      "hint": "Review the forms of HSV-1 keratoconjunctivitis."
+    },
+    {
+      "question": "Which virus is often subclinical in healthy adults?",
+      "options": [
+        "Herpes simplex virus type 1",
+        "Cytomegalovirus",
+        "Varicella-zoster virus",
+        "Hepatitis B virus"
+      ],
+      "correctAnswer": "B",
+      "explanation": "According to the lecture, CMV infection is often subclinical (asymptomatic) in healthy adults.",
+      "subtopic": "Subclinical Viral Infection",
+      "optionExplanations": [
+        "Incorrect. HSV-1 typically causes symptomatic oral lesions.",
+        "Correct. CMV is often asymptomatic in healthy adults.",
+        "Incorrect. VZV causes chickenpox and shingles.",
+        "Incorrect. HBV can cause acute or chronic hepatitis."
+      ],
+      "hint": "Review the examples of subclinical viral infections."
+    },
+    {
+      "question": "Which of the following is a slow viral infection?",
+      "options": [
+        "Progressive multifocal leukoencephalopathy (PML)",
+        "Shingles",
+        "Chronic hepatitis",
+        "Acute gastroenteritis"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Progressive multifocal leukoencephalopathy (PML) caused by JC polyomavirus is an example of a slow viral infection, characterized by a very long incubation period, slow progressive course, and gradual deterioration of tissue, especially in the CNS.",
+      "subtopic": "Slow Viral Infection",
+      "optionExplanations": [
+        "Correct. PML is a slow viral infection.",
+        "Incorrect. Shingles is a reactivation of latent VZV.",
+        "Incorrect. Chronic hepatitis is a chronic viral infection.",
+        "Incorrect. Acute gastroenteritis is an acute viral infection."
+      ],
+      "hint": "Review the example of slow viral infection."
+    },
+    {
+      "question": "Which of the following is NOT a mode of transmission for HIV?",
+      "options": [
+        "Sexual",
+        "Bloodborne",
+        "Vertical",
+        "Respiratory"
+      ],
+      "correctAnswer": "D",
+      "explanation": "HIV is transmitted sexually, via blood (bloodborne), and vertically (mother to child). It is not transmitted via the respiratory route.",
+      "subtopic": "Mode of Transmission",
+      "optionExplanations": [
+        "Incorrect. HIV is transmitted sexually.",
+        "Incorrect. HIV is transmitted via blood.",
+        "Incorrect. HIV is transmitted vertically.",
+        "Correct. HIV is not transmitted via the respiratory route."
+      ],
+      "hint": "Review Table 3 on route of transmission."
+    },
+    {
+      "question": "Which of the following is a DNA virus?",
+      "options": [
+        "Influenza virus",
+        "Human immunodeficiency virus",
+        "Adenovirus",
+        "Rotavirus"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Adenoviruses are DNA viruses, listed among the DNA viruses in the lecture. Influenza, HIV, and rotavirus are RNA viruses.",
+      "subtopic": "DNA Viruses",
+      "optionExplanations": [
+        "Incorrect. Influenza virus is an RNA virus.",
+        "Incorrect. HIV is an RNA virus.",
+        "Correct. Adenovirus is a DNA virus.",
+        "Incorrect. Rotavirus is an RNA virus."
+      ],
+      "hint": "Review the list of DNA viruses on page 18."
+    },
+    {
+      "question": "What is the correct order of taxonomic ranks from largest to smallest according to ICTV?",
+      "options": [
+        "Family, Order, Genus, Subfamily",
+        "Order, Family, Subfamily, Genus",
+        "Genus, Family, Order, Subfamily",
+        "Subfamily, Family, Order, Genus"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The correct order from largest to smallest is Order, Family, Subfamily, Genus.",
+      "subtopic": "Virus Nomenclature",
+      "optionExplanations": [
+        "Incorrect. Order comes before Family.",
+        "Correct. Order, Family, Subfamily, Genus is the correct hierarchical order.",
+        "Incorrect. Genus is the smallest rank, not the largest.",
+        "Incorrect. Subfamily is below Family, not above Order."
+      ],
+      "hint": "Review the ICTV nomenclature hierarchy."
+    },
+    {
+      "question": "A patient presents with fever blisters on the mucocutaneous junction of the lips and nose. Which virus is most likely responsible?",
+      "options": [
+        "Herpes simplex virus type 1",
+        "Herpes simplex virus type 2",
+        "Varicella-zoster virus",
+        "Cytomegalovirus"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Herpes labialis is the milder recurrent form of HSV-1 infection characterized by fever blisters (cold sores) and vesicle formation on the mucocutaneous junction of the lips and nose.",
+      "subtopic": "HSV-1 Infections",
+      "optionExplanations": [
+        "Correct. HSV-1 causes herpes labialis.",
+        "Incorrect. HSV-2 primarily causes genital lesions.",
+        "Incorrect. VZV causes chickenpox and shingles.",
+        "Incorrect. CMV is often asymptomatic in healthy individuals."
+      ],
+      "hint": "Consider the site of the lesions and the virus that causes cold sores."
+    },
+    {
+      "question": "Which of the following is a chronic viral infection?",
+      "options": [
+        "Herpes simplex virus type 1",
+        "Varicella-zoster virus",
+        "Hepatitis B virus",
+        "JC polyomavirus"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Chronic viral infection is characterized by continuous production of the virus in small quantities. Hepatitis B virus (HBV) and hepatitis C virus (HCV) are examples.",
+      "subtopic": "Chronic Viral Infection",
+      "optionExplanations": [
+        "Incorrect. HSV-1 causes latent infection.",
+        "Incorrect. VZV causes latent infection.",
+        "Correct. HBV causes chronic infection.",
+        "Incorrect. JC polyomavirus causes slow viral infection."
+      ],
+      "hint": "Review the examples of chronic viral infections."
+    },
+    {
+      "question": "Which of the following is characteristic of slow viral infection?",
+      "options": [
+        "Short incubation period",
+        "Rapid progression once symptoms start",
+        "Very long incubation period",
+        "Continuous production of small quantities of virus"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Slow viral infection is characterized by a very long incubation period (months to years) before clinical signs appear, a slow/progressive course once symptoms start, and gradual deterioration of tissue.",
+      "subtopic": "Slow Viral Infection",
+      "optionExplanations": [
+        "Incorrect. Slow viral infections have a very long incubation period, not short.",
+        "Incorrect. The course is slow/progressive, not rapid.",
+        "Correct. Very long incubation period is a key characteristic.",
+        "Incorrect. Continuous production of small quantities is characteristic of chronic infection."
+      ],
+      "hint": "Review the definition of slow viral infection."
+    },
+    {
+      "question": "Which of the following is a complication of HSV-2 that is usually mild and self-limiting?",
+      "options": [
+        "Encephalitis",
+        "Aseptic meningitis",
+        "Neonatal herpes",
+        "Retinal necrosis"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Aseptic meningitis is a complication of HSV-2 that is usually mild and self-limiting.",
+      "subtopic": "HSV-2 Infections",
+      "optionExplanations": [
+        "Incorrect. Encephalitis is a severe complication, often associated with HSV-1 or neonatal herpes.",
+        "Correct. Aseptic meningitis is usually mild and self-limiting.",
+        "Incorrect. Neonatal herpes can be severe, causing encephalitis or disseminated infection.",
+        "Incorrect. Retinal necrosis is a rare complication in immunocompromised patients."
+      ],
+      "hint": "Review the forms of HSV-2 infection."
+    },
+    {
+      "question": "What is a permissive cell?",
+      "options": [
+        "A cell that allows viral replication and production of new virus particles",
+        "A cell that does not allow viral replication",
+        "A cell that integrates the viral genome into its chromosome",
+        "A cell that is killed by abortive infection"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Permissive cells are cells that allow viral replication and the production of new virus particles. Viruses that enter these cells are known as virulent or lytic viruses.",
+      "subtopic": "Cellular Outcomes of Viral Infection",
+      "optionExplanations": [
+        "Correct. Permissive cells allow viral replication and production of progeny virions.",
+        "Incorrect. Non-permissive cells do not allow viral replication.",
+        "Incorrect. Integration of the viral genome occurs in transforming infection.",
+        "Incorrect. Abortive infection occurs in non-permissive cells, leading to cell death."
+      ],
+      "hint": "Review the Important Note on permissive and non-permissive cells."
+    },
+    {
+      "question": "Which of the following is an example of a severe viral infection?",
+      "options": [
+        "Common cold",
+        "Seasonal flu",
+        "Rabies",
+        "Genital herpes"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Severe viral infections cause serious, sometimes life-threatening illness, often with organ damage or systemic failure. Rabies is an example of a severe/fatal viral infection.",
+      "subtopic": "Severity of Infection",
+      "optionExplanations": [
+        "Incorrect. Common cold is a mild infection.",
+        "Incorrect. Seasonal flu is a moderate infection.",
+        "Correct. Rabies is a severe/fatal infection.",
+        "Incorrect. Genital herpes is a moderate infection in most cases."
+      ],
+      "hint": "Review the examples of severe viral infections."
+    },
+    {
+      "question": "Which virus is transmitted postnatally via breast milk?",
+      "options": [
+        "Rubella virus",
+        "Cytomegalovirus",
+        "Zika virus",
+        "Parvovirus B19"
+      ],
+      "correctAnswer": "B",
+      "explanation": "According to Table 4, postnatal transmission occurs after birth via breast milk or close contact, and examples include HIV, HTLV-1, and CMV.",
+      "subtopic": "Vertical Transmission",
+      "optionExplanations": [
+        "Incorrect. Rubella is transmitted transplacentally.",
+        "Correct. CMV can be transmitted postnatally via breast milk.",
+        "Incorrect. Zika is transmitted transplacentally.",
+        "Incorrect. Parvovirus B19 is transmitted transplacentally."
+      ],
+      "hint": "Review Table 4 on types of vertical transmission."
+    },
+    {
+      "question": "Which of the following is NOT transmitted transplacentally?",
+      "options": [
+        "Rubella virus",
+        "Cytomegalovirus",
+        "Zika virus",
+        "Herpes simplex virus type 2"
+      ],
+      "correctAnswer": "D",
+      "explanation": "According to Table 4, transplacental transmission occurs with Rubella, CMV, Zika, Parvovirus B19, HIV, and HBV (rarely). HSV-2 is transmitted perinatally, not transplacentally.",
+      "subtopic": "Vertical Transmission",
+      "optionExplanations": [
+        "Incorrect. Rubella is transmitted transplacentally.",
+        "Incorrect. CMV is transmitted transplacentally.",
+        "Incorrect. Zika is transmitted transplacentally.",
+        "Correct. HSV-2 is transmitted perinatally, not transplacentally."
+      ],
+      "hint": "Review Table 4 on vertical transmission."
+    },
+    {
+      "question": "Which of the following has the longest incubation period according to Table 6?",
+      "options": [
+        "Influenza",
+        "Rabies",
+        "AIDS",
+        "Hepatitis A"
+      ],
+      "correctAnswer": "C",
+      "explanation": "According to Table 6, the incubation period of AIDS is 1-10 years, which is longer than influenza (1-2 days), rabies (30-100 days), and hepatitis A (15-40 days).",
+      "subtopic": "Incubation Periods",
+      "optionExplanations": [
+        "Incorrect. Influenza incubation period is 1-2 days.",
+        "Incorrect. Rabies incubation period is 30-100 days.",
+        "Correct. AIDS incubation period is 1-10 years.",
+        "Incorrect. Hepatitis A incubation period is 15-40 days."
+      ],
+      "hint": "Review Table 6 on incubation periods."
+    },
+    {
+      "question": "What is the result of antigenic drift?",
+      "options": [
+        "Emergence of a new subtype",
+        "Emergence of a new strain within the same subtype",
+        "Pandemic",
+        "Difficult to treat"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Antigenic drift is a gradual minor change in viral surface proteins due to accumulated gene mutations, resulting in the emergence of a new strain within the same subtype. It causes epidemics and is easier to treat.",
+      "subtopic": "Viral Genetic Alterations",
+      "optionExplanations": [
+        "Incorrect. Emergence of a new subtype is the result of antigenic shift.",
+        "Correct. Antigenic drift results in a new strain within the same subtype.",
+        "Incorrect. Pandemics are caused by antigenic shift.",
+        "Incorrect. Antigenic drift is easier to treat, not difficult."
+      ],
+      "hint": "Review Table 7 on antigenic drift vs. shift."
+    },
+    {
+      "question": "Which virus establishes latency in the trigeminal ganglia?",
+      "options": [
+        "Herpes simplex virus type 1",
+        "Herpes simplex virus type 2",
+        "Varicella-zoster virus",
+        "Cytomegalovirus"
+      ],
+      "correctAnswer": "A",
+      "explanation": "HSV-1 becomes latent in the trigeminal ganglia, while HSV-2 becomes latent in lumbar and sacral ganglia.",
+      "subtopic": "HSV Pathogenesis",
+      "optionExplanations": [
+        "Correct. HSV-1 establishes latency in the trigeminal ganglia.",
+        "Incorrect. HSV-2 becomes latent in lumbar and sacral ganglia.",
+        "Incorrect. VZV becomes latent in sensory ganglia, but the lecture specifically mentions trigeminal ganglia for HSV-1.",
+        "Incorrect. CMV latency is not discussed in this context."
+      ],
+      "hint": "Review the pathogenesis of HSV-1 and HSV-2."
+    },
+    {
+      "question": "Which stage of infection is characterized by a vague sense of not being well?",
+      "options": [
+        "Incubation period",
+        "Prodromal period",
+        "Illness period",
+        "Convalescence period"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The prodromal period is characterized by a vague sense of not being well, as shown in Figure 18.",
+      "subtopic": "Stages of Infection",
+      "optionExplanations": [
+        "Incorrect. Incubation period has no symptoms.",
+        "Correct. Prodromal period is characterized by a vague sense of not being well.",
+        "Incorrect. Illness period is the full-blown illness (acme).",
+        "Incorrect. Convalescence period is when the body repairs damage."
+      ],
+      "hint": "Review Figure 18 on the stages of infection."
+    },
+    {
+      "question": "During which stage of infection does the body repair damage?",
+      "options": [
+        "Incubation period",
+        "Prodromal period",
+        "Illness period",
+        "Convalescence period"
+      ],
+      "correctAnswer": "D",
+      "explanation": "The convalescence period is characterized by the body repairing damage, as shown in Figure 18.",
+      "subtopic": "Stages of Infection",
+      "optionExplanations": [
+        "Incorrect. Incubation period is before symptoms appear.",
+        "Incorrect. Prodromal period is characterized by vague symptoms.",
+        "Incorrect. Illness period is the peak of disease.",
+        "Correct. Convalescence period is when the body repairs damage."
+      ],
+      "hint": "Review Figure 18 on the stages of infection."
+    },
+    {
+      "question": "Which of the following is transmitted via the fecal-oral route?",
+      "options": [
+        "Influenza virus",
+        "Hepatitis B virus",
+        "Hepatitis A virus",
+        "Dengue virus"
+      ],
+      "correctAnswer": "C",
+      "explanation": "According to Table 3, hepatitis A virus is transmitted via the fecal-oral route. Influenza is respiratory, HBV is bloodborne, and dengue is vector-borne.",
+      "subtopic": "Mode of Transmission",
+      "optionExplanations": [
+        "Incorrect. Influenza virus is transmitted via the respiratory route.",
+        "Incorrect. Hepatitis B virus is transmitted via the bloodborne route.",
+        "Correct. Hepatitis A virus is transmitted via the fecal-oral route.",
+        "Incorrect. Dengue virus is transmitted via the vector-borne route."
+      ],
+      "hint": "Review Table 3 on route of transmission."
+    },
+    {
+      "question": "A patient has a common cold caused by rhinovirus. What is the severity of this infection?",
+      "options": [
+        "Subclinical",
+        "Mild",
+        "Moderate",
+        "Severe"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Mild viral infections are minor and self-limiting, characterized by mild symptoms and complete recovery without complications. The common cold caused by rhinovirus is an example of a mild infection.",
+      "subtopic": "Severity of Infection",
+      "optionExplanations": [
+        "Incorrect. Subclinical infections have no symptoms.",
+        "Correct. Common cold is a mild infection.",
+        "Incorrect. Moderate infections cause clear clinical symptoms and may require supportive care (e.g., seasonal flu).",
+        "Incorrect. Severe infections are life-threatening."
+      ],
+      "hint": "Review the examples of mild viral infections."
+    },
+    {
+      "question": "A patient recovers from measles. What is the outcome of this infection?",
+      "options": [
+        "Resolving infection",
+        "Persistent infection",
+        "Fatal infection",
+        "Latent infection"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Resolving infection is when the virus is eliminated completely and the host recovers. Measles is an example of a resolving infection.",
+      "subtopic": "Outcome of Infection",
+      "optionExplanations": [
+        "Correct. Measles is a resolving infection.",
+        "Incorrect. Persistent infection means the virus remains in the host (e.g., HBV, HSV).",
+        "Incorrect. Fatal infection means death before clearance of virus (e.g., rabies, Ebola).",
+        "Incorrect. Latent infection is a type of persistent infection."
+      ],
+      "hint": "Review Table 2 on types of viral infections based on outcome."
+    },
+    {
+      "question": "In which type of cellular infection does the virus integrate into the host chromosome?",
+      "options": [
+        "Productive infection",
+        "Abortive infection",
+        "Latent infection",
+        "Transforming infection"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Transforming infection is characterized by integration of the viral genome into the host chromosome, potentially leading to oncogenic transformation.",
+      "subtopic": "Cellular Outcomes of Viral Infection",
+      "optionExplanations": [
+        "Incorrect. Productive infection produces progeny virions without integration.",
+        "Incorrect. Abortive infection fails to replicate completely.",
+        "Incorrect. Latent infection persists without active replication but does not necessarily integrate.",
+        "Correct. Transforming infection involves integration into the host chromosome."
+      ],
+      "hint": "Review Table 5 on outcomes of viral infection on cellular level."
+    },
+    {
+      "question": "What is the size of HSV according to the lecture?",
+      "options": [
+        "20-30 nm",
+        "50-100 nm",
+        "155-240 nm",
+        "300-400 nm"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Herpesviruses have a relatively large size, e.g., HSV has a size of 155-240 nm.",
+      "subtopic": "Herpesviridae General Characteristics",
+      "optionExplanations": [
+        "Incorrect. 20-30 nm is too small for HSV.",
+        "Incorrect. 50-100 nm is the size of some smaller viruses.",
+        "Correct. HSV has a size of 155-240 nm.",
+        "Incorrect. 300-400 nm is larger than HSV."
+      ],
+      "hint": "Review the general characteristics of Herpesviruses."
+    },
+    {
+      "question": "Which of the following is true about HSV-2?",
+      "options": [
+        "It is responsible for 90% of lesions above the waist.",
+        "It becomes latent in the trigeminal ganglia.",
+        "It is transmitted sexually through direct sexual contact.",
+        "It is a non-enveloped virus."
+      ],
+      "correctAnswer": "C",
+      "explanation": "HSV-2 is transmitted sexually through direct sexual contact. HSV-1 is responsible for 90% of lesions above the waist and becomes latent in the trigeminal ganglia. HSV-2 is an enveloped virus.",
+      "subtopic": "HSV-2 Infections",
+      "optionExplanations": [
+        "Incorrect. HSV-1 is responsible for 90% of lesions above the waist.",
+        "Incorrect. HSV-2 becomes latent in lumbar and sacral ganglia.",
+        "Correct. HSV-2 is transmitted sexually.",
+        "Incorrect. HSV-2 is an enveloped virus."
+      ],
+      "hint": "Review the differences between HSV-1 and HSV-2."
+    },
+    {
+      "question": "What is the main role of immunity in limiting the spread of HSV infection?",
+      "options": [
+        "Humoral immunity",
+        "Cell-mediated immunity",
+        "Innate immunity",
+        "Mucosal immunity"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Cell-mediated immunity plays the main role in limiting the spread of HSV infection rather than humoral immunity, as the existing high titre of circulating antibodies still cannot prevent re-infection.",
+      "subtopic": "HSV Pathogenesis",
+      "optionExplanations": [
+        "Incorrect. Humoral immunity (antibodies) cannot prevent re-infection.",
+        "Correct. Cell-mediated immunity plays the main role.",
+        "Incorrect. Innate immunity is not the main limiting factor described.",
+        "Incorrect. Mucosal immunity is not the main role described."
+      ],
+      "hint": "Review the pathogenesis of HSV."
+    },
+    {
+      "question": "Which form of HSV-1 infection affects the temporal lobe and has a high mortality rate?",
+      "options": [
+        "Herpes labialis",
+        "Keratoconjunctivitis",
+        "Herpetic encephalitis",
+        "Gingivostomatitis"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Herpetic encephalitis usually affects the temporal lobe, resulting in a high mortality rate and severe neurological complications in individuals who survive.",
+      "subtopic": "HSV-1 Infections",
+      "optionExplanations": [
+        "Incorrect. Herpes labialis presents with cold sores on the lips and nose.",
+        "Incorrect. Keratoconjunctivitis affects the eye.",
+        "Correct. Herpetic encephalitis affects the temporal lobe and has high mortality.",
+        "Incorrect. Gingivostomatitis affects the oral cavity."
+      ],
+      "hint": "Review the forms of HSV-1 infection."
+    },
+    {
       "question": "A 3-year-old child presents with fever and vesicular lesions on the gingiva, oral mucosa, lips, and tongue. The lesions heal spontaneously within 2-3 weeks. Which of the following is the most likely causative agent?",
       "options": [
         "Herpes simplex virus type 2",
