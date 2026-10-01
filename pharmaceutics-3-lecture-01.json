@@ -587,25 +587,6 @@
       "hint": "Think of pH and ionization."
     },
     {
-      "question": "For a weakly acidic drug, the total solubility equation is:",
-      "options": [
-        "S = Sa[1 + Ka/H+]",
-        "S = Sa[1 + H+/Ka]",
-        "S = Sa[1 + Ka*H+]",
-        "S = Sa[1 - Ka/H+]"
-      ],
-      "correctAnswer": "A",
-      "explanation": "S = Sa[1 + Ka/H+] calculates total solubility of a weakly acidic drug as a function of hydrogen ion concentration.",
-      "subtopic": "Solubility and pH",
-      "optionExplanations": [
-        "Correct. This is the equation.",
-        "Incorrect. Inverted.",
-        "Incorrect. Multiplied.",
-        "Incorrect. Subtracted."
-      ],
-      "hint": "Ka divided by H+."
-    },
-    {
       "question": "In the ophthalmic antibiotic example, at pH 6, total solubility (St) was 0.0808 M. Required concentration for 3% solution is 0.105 M. What does this indicate?",
       "options": [
         "The drug will remain soluble at pH 6",
@@ -623,120 +604,6 @@
         "Incorrect. The drug is a weak acid."
       ],
       "hint": "Compare St to required concentration."
-    },
-    {
-      "question": "Which of the following is NOT a biological property considered in preformulation?",
-      "options": [
-        "Ability to reach the site of action",
-        "Ability to elicit a biologic response",
-        "Color and organoleptic properties",
-        "None of the above"
-      ],
-      "correctAnswer": "C",
-      "explanation": "Biological properties include reaching site of action and eliciting response. Color is physical/organoleptic.",
-      "subtopic": "Studies Included",
-      "optionExplanations": [
-        "Incorrect. This is a biological property.",
-        "Incorrect. This is a biological property.",
-        "Correct. Color is not a biological property.",
-        "Incorrect. Color is not biological."
-      ],
-      "hint": "Biological relates to the body."
-    },
-    {
-      "question": "In the Ostwald-Freundlich equation, what does 'S' represent?",
-      "options": [
-        "Solubility of large particles",
-        "Solubility of small particles",
-        "Surface tension of the medium",
-        "Molar volume of the drug"
-      ],
-      "correctAnswer": "B",
-      "explanation": "S is solubility of small particles; S0 is solubility of large particles.",
-      "subtopic": "Solubility and Particle Size",
-      "optionExplanations": [
-        "Incorrect. S0 is for large particles.",
-        "Correct. S is for small particles.",
-        "Incorrect. γ is surface tension.",
-        "Incorrect. V is molar volume."
-      ],
-      "hint": "S is for small."
-    },
-    {
-      "question": "In the Ostwald-Freundlich equation, what does 'γ' represent?",
-      "options": [
-        "Solubility of the drug",
-        "Surface tension of the medium",
-        "Molar volume of the drug",
-        "Gas constant"
-      ],
-      "correctAnswer": "B",
-      "explanation": "γ is the surface tension.",
-      "subtopic": "Solubility and Particle Size",
-      "optionExplanations": [
-        "Incorrect. S is solubility.",
-        "Correct. γ is surface tension.",
-        "Incorrect. V is molar volume.",
-        "Incorrect. R is gas constant."
-      ],
-      "hint": "It is measured in dynes/cm."
-    },
-    {
-      "question": "In the solubility equation for a weak acid, what does 'Sa' represent?",
-      "options": [
-        "Saturation solubility of the salt form",
-        "Saturation solubility of the free acid",
-        "Acid dissociation constant",
-        "Hydrogen ion concentration"
-      ],
-      "correctAnswer": "B",
-      "explanation": "Sa is the saturation solubility of the free acid.",
-      "subtopic": "Solubility and pH",
-      "optionExplanations": [
-        "Incorrect. S is solubility of salt form.",
-        "Correct. Sa is solubility of free acid.",
-        "Incorrect. Ka is acid dissociation constant.",
-        "Incorrect. H+ is hydrogen ion concentration."
-      ],
-      "hint": "Sa is for the acid form."
-    },
-    {
-      "question": "In the solubility equation for a weak acid, what does 'Ka' represent?",
-      "options": [
-        "Saturation solubility of the drug",
-        "Acid dissociation constant",
-        "Hydrogen ion concentration",
-        "Molar volume of the drug"
-      ],
-      "correctAnswer": "B",
-      "explanation": "Ka is the acid dissociation constant.",
-      "subtopic": "Solubility and pH",
-      "optionExplanations": [
-        "Incorrect. S is solubility.",
-        "Correct. Ka is acid dissociation constant.",
-        "Incorrect. H+ is hydrogen ion concentration.",
-        "Incorrect. V is molar volume."
-      ],
-      "hint": "It indicates acid strength."
-    },
-    {
-      "question": "What is the purpose of adding excess drug in the equilibrium solubility method?",
-      "options": [
-        "To ensure saturation is reached",
-        "To speed up the dissolution reaction",
-        "To prevent chemical degradation",
-        "To change the pH of the solution"
-      ],
-      "correctAnswer": "A",
-      "explanation": "Excess drug ensures the solvent becomes saturated and equilibrium is reached.",
-      "subtopic": "Solubility",
-      "optionExplanations": [
-        "Correct. Excess ensures saturation.",
-        "Incorrect. It does not speed up reaction.",
-        "Incorrect. It does not prevent degradation.",
-        "Incorrect. It does not change pH."
-      ],
-      "hint": "Think of saturation."
     },
     {
       "question": "Which of the following drugs is formulated with larger particles to provide a sustained therapeutic blood level?",
@@ -758,25 +625,6 @@
       "hint": "It is an antibiotic."
     },
     {
-      "question": "Which of the following drugs is formulated as macrocrystals to minimize GI irritation?",
-      "options": [
-        "Griseofulvin",
-        "Spironolactone",
-        "Procaine Penicillin",
-        "Nitrofurantoin"
-      ],
-      "correctAnswer": "D",
-      "explanation": "Nitrofurantoin is formulated as macrocrystals to slow dissolution, reducing GI upset while maintaining efficacy.",
-      "subtopic": "Particle Size",
-      "optionExplanations": [
-        "Incorrect. Griseofulvin is micronized.",
-        "Incorrect. Spironolactone is micronized.",
-        "Incorrect. Procaine Penicillin uses larger particles for sustained release.",
-        "Correct. Nitrofurantoin uses macrocrystals for GI tolerance."
-      ],
-      "hint": "It is a urinary antibacterial."
-    },
-    {
       "question": "What is the main difference between amorphous and crystalline forms of a drug?",
       "options": [
         "Amorphous is more soluble and less stable; crystalline is more stable",
@@ -794,25 +642,6 @@
         "Incorrect. Crystalline is preferred for stability."
       ],
       "hint": "Amorphous lacks ordered lattice."
-    },
-    {
-      "question": "Which of the following is an example of a drug where size reduction alters release duration or toxicity?",
-      "options": [
-        "Griseofulvin",
-        "Spironolactone",
-        "Nitrofurantoin",
-        "Aspirin"
-      ],
-      "correctAnswer": "C",
-      "explanation": "Nitrofurantoin is an example where size reduction alters release duration or toxicity. Rapid dissolution causes severe GIT irritation.",
-      "subtopic": "Particle Size",
-      "optionExplanations": [
-        "Incorrect. Griseofulvin benefits from size reduction for solubility.",
-        "Incorrect. Spironolactone benefits from size reduction for solubility.",
-        "Correct. Nitrofurantoin toxicity is altered by size.",
-        "Incorrect. Aspirin is not mentioned."
-      ],
-      "hint": "Think of GI irritation."
     },
     {
       "question": "Using the Ostwald-Freundlich equation, if the radius of a drug particle is halved, what happens to its solubility?",
@@ -853,44 +682,6 @@
       "hint": "T is in the denominator."
     },
     {
-      "question": "Which variable in the Ostwald-Freundlich equation represents the molar volume of the drug?",
-      "options": [
-        "γ",
-        "V",
-        "R",
-        "ρ"
-      ],
-      "correctAnswer": "B",
-      "explanation": "V is the molar volume of the drug.",
-      "subtopic": "Ostwald-Freundlich Equation",
-      "optionExplanations": [
-        "Incorrect. γ is surface tension.",
-        "Correct. V is molar volume.",
-        "Incorrect. R is gas constant.",
-        "Incorrect. ρ is density."
-      ],
-      "hint": "V stands for volume."
-    },
-    {
-      "question": "In the Ostwald-Freundlich equation, what does 'ρ' represent?",
-      "options": [
-        "Surface tension",
-        "Molar volume",
-        "Density of the particle",
-        "Gas constant"
-      ],
-      "correctAnswer": "C",
-      "explanation": "ρ is the density of the particle.",
-      "subtopic": "Ostwald-Freundlich Equation",
-      "optionExplanations": [
-        "Incorrect. γ is surface tension.",
-        "Incorrect. V is molar volume.",
-        "Correct. ρ is density.",
-        "Incorrect. R is gas constant."
-      ],
-      "hint": "It is mass per unit volume."
-    },
-    {
       "question": "A drug has a solubility of 1 mg/mL for large particles. If micronization reduces the radius to 0.1 μm, what is the expected effect on solubility?",
       "options": [
         "Solubility decreases significantly",
@@ -908,25 +699,6 @@
         "Incorrect. Solubility does not become zero."
       ],
       "hint": "Smaller radius, higher solubility."
-    },
-    {
-      "question": "The Ostwald-Freundlich equation is derived from which fundamental concept?",
-      "options": [
-        "Noyes-Whitney dissolution equation",
-        "Kelvin equation for vapor pressure",
-        "Henderson-Hasselbalch equation",
-        "Stokes-Einstein equation"
-      ],
-      "correctAnswer": "B",
-      "explanation": "The Ostwald-Freundlich equation is derived from the Kelvin equation, which describes vapor pressure dependence on curvature.",
-      "subtopic": "Ostwald-Freundlich Equation",
-      "optionExplanations": [
-        "Incorrect. Noyes-Whitney describes dissolution rate.",
-        "Correct. Kelvin equation relates curvature to vapor pressure.",
-        "Incorrect. Henderson-Hasselbalch relates pH and pKa.",
-        "Incorrect. Stokes-Einstein relates diffusion and size."
-      ],
-      "hint": "Think of curvature and vapor pressure."
     },
     {
       "question": "What is the primary limitation of the Ostwald-Freundlich equation for very small particles?",
@@ -1138,25 +910,6 @@
       "hint": "Use Henderson-Hasselbalch."
     },
     {
-      "question": "Which of the following is true regarding the solubility-pH profile of a weak acid?",
-      "options": [
-        "Solubility is independent of pH",
-        "Solubility increases linearly with pH",
-        "Solubility increases exponentially with pH",
-        "Solubility follows a sigmoidal curve"
-      ],
-      "correctAnswer": "D",
-      "explanation": "The solubility-pH profile of a weak acid is sigmoidal: low at acidic pH, increasing sharply near pKa, then plateauing at high pH.",
-      "subtopic": "Solubility and pH",
-      "optionExplanations": [
-        "Incorrect. It depends on pH.",
-        "Incorrect. Not linear.",
-        "Incorrect. Not exponential.",
-        "Correct. Sigmoidal shape."
-      ],
-      "hint": "Think of titration curve."
-    },
-    {
       "question": "In the solubility-pH equation, what does a very low Ka value indicate about the weak acid?",
       "options": [
         "The acid is strong and fully ionized",
@@ -1195,25 +948,6 @@
       "hint": "Ionized form is more soluble."
     },
     {
-      "question": "What is the effect of adding a common ion (e.g., H+ for a weak acid) on its solubility?",
-      "options": [
-        "Solubility increases",
-        "Solubility decreases",
-        "Solubility remains unchanged",
-        "Solubility becomes zero"
-      ],
-      "correctAnswer": "B",
-      "explanation": "Common ion effect: adding H+ shifts equilibrium toward un-ionized form, decreasing solubility.",
-      "subtopic": "Solubility and pH",
-      "optionExplanations": [
-        "Incorrect. It decreases.",
-        "Correct. Common ion decreases solubility.",
-        "Incorrect. It changes.",
-        "Incorrect. It does not become zero."
-      ],
-      "hint": "Le Chatelier's principle."
-    },
-    {
       "question": "In the context of the solubility-pH equation, what is the significance of the term 'Ka/H+'?",
       "options": [
         "It represents the fraction of ionized drug",
@@ -1250,25 +984,6 @@
         "Incorrect. pKa 6 would show less change."
       ],
       "hint": "Use two-point calculation."
-    },
-    {
-      "question": "Which of the following is NOT a valid assumption of the solubility-pH equation for weak acids?",
-      "options": [
-        "The un-ionized form has constant intrinsic solubility Sa",
-        "The ionized form is infinitely soluble",
-        "The activity coefficients are unity",
-        "The drug does not degrade in solution"
-      ],
-      "correctAnswer": "B",
-      "explanation": "The equation assumes ionized form is soluble, but not infinitely soluble. Other assumptions are valid.",
-      "subtopic": "Solubility and pH",
-      "optionExplanations": [
-        "Incorrect. Sa is assumed constant.",
-        "Correct. Ionized form is not infinitely soluble.",
-        "Incorrect. Activity coefficients assumed unity.",
-        "Incorrect. Degradation is assumed absent."
-      ],
-      "hint": "Think of realistic solubility limits."
     },
     {
       "question": "For a weak acid with pKa = 4 and Sa = 0.001 M, what is the total solubility at pH 6?",
@@ -2751,25 +2466,6 @@
         "Incorrect. Molar volume is constant."
       ],
       "hint": "Surface energy."
-    },
-    {
-      "question": "Which of the following is a correct statement about the effect of particle size on the angle of repose?",
-      "options": [
-        "Smaller particles generally have a lower angle of repose",
-        "Smaller particles generally have a higher angle of repose",
-        "Angle of repose is independent of particle size",
-        "Angle of repose is independent of particle shape"
-      ],
-      "correctAnswer": "B",
-      "explanation": "Smaller particles tend to have higher angle of repose due to increased cohesion, indicating poorer flow.",
-      "subtopic": "Particle Size",
-      "optionExplanations": [
-        "Incorrect. They have higher angle.",
-        "Correct. Smaller particles flow poorly.",
-        "Incorrect. Size affects flow.",
-        "Incorrect. Shape also affects."
-      ],
-      "hint": "Cohesion."
     },
     {
       "question": "What is the primary advantage of using micronization for a poorly soluble drug?",
